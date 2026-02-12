@@ -1,4 +1,6 @@
 [book]
 title = "Learning JavaScript"
 authors = ["Osamu377"]
-language = "en"
+language = "ja"
+[output.html]
+additional-js = ["assets/fzf.umd.js", "assets/elasticlunr.js"]
