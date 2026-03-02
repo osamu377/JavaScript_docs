@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ebef5985.js";
+            window.path_to_searchindex_js = "searchindex-64f2fd54.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -227,27 +227,6 @@ snacks[1] = "アイス"; // 1番ロッカー（2つめ）のグミを、アイ�
 console.log(snacks); // ["チョコ", "アイス"]
 
 </code></pre>
-<p><strong>オブジェクトと const の意外な関係</strong></p>
-<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で宣言された変数は、後から値を変更できないはずでは？」そう思った人は、ここまでの説明をとてもよく覚えている人です。</p>
-<p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
-<p>JavaScriptの初心者が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
-<p>「 <code>const</code> は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
-<ul>
-<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに入れ替えることはできません（別の箱に名札を付け替えるのは禁止）。</li>
-<li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
-</ul>
-<p>「強力なガムテープで名札が貼られたロッカー」をイメージしてください。ガムテープで固定されているので、名札を別の新しいロッカーに貼り直すことはできません。でも、ロッカーの蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
-<p>例えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
-<p>先ほどの例では、<code>const</code>を使って宣言した<code>snacks</code>というロッカーの一つを開けて、中身を“グミ“から“アイス“に入れ替えました。これはエラーにはなりません。</p>
-<p>しかし、</p>
-<pre><code class="language-javascript">const snacks = ["チョコ", "グミ"];
-
-snacks = ["チョコ", "アイス"];
-
-</code></pre>
-<p>はエラーになります。<code>snacks</code> というラベルを「“チョコ“と“グミ“が入ったロッカー」からはがして、「“チョコ“と“アイス“が入った別のロッカー」に貼ろうとしているからです。</p>
-<p><code>const</code> は <code>snacks</code> というラベルと、それを入れる入れ物との関係を固定して、ラベルの張替えを許しません。</p>
-<p>しかし、あくまでラベルと入れ物との関係であって、入れ物が同じであれば、その中身が変わっても、エラーにはならないのです。</p>
 <h4 id="まとめ--の役割やくわり"><a class="header" href="#まとめ--の役割やくわり">まとめ：<code>[ ]</code> の役割（やくわり）</a></h4>
 <div class="table-wrapper">
 <table>

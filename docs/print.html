@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ebef5985.js";
+            window.path_to_searchindex_js = "searchindex-64f2fd54.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -273,6 +273,48 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱（はしら）、壁（かべ）、床（ゆか）、あるいはペンキ、インテリア、壁紙、といった部品になるのは、前に説明した通りです。</p>
 <p>実は、この「Webページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
 <p>したがって、JavaScriptでWebページを操るためには、まずWebページの部品そのものについて、理解しなければなりません。そのため、次のステップでは、Webページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
+<h2 id="iv-イベントとは"><a class="header" href="#iv-イベントとは">IV. イベントとは</a></h2>
+<h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
+<p>ふだん、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
+<p>例えば、あなたがこんな動きをしたとき、それがすべて「イベント」になります。</p>
+<ul>
+<li>ボタンを**カチッ（クリック）**としたとき。</li>
+<li>キーボードで<strong>文字を入力</strong>したとき。</li>
+<li>画面を**上下に動かした（スクロール）**とき。</li>
+</ul>
+<p>このように、**「ユーザーが何かをした！」**という出来事のことを、JavaScriptでは「イベント」と呼びます。</p>
+<hr>
+<h3 id="2-もししたらするという約束"><a class="header" href="#2-もししたらするという約束">2. 「もし〜したら、〜する」という約束</a></h3>
+<p>イベントの考え方は、皆さんの日常（にちじょう）にある <strong>「センサー」</strong> と同じです。</p>
+<ul>
+<li><strong>自動ドア：</strong> 「人が前に来たら（イベント）、ドアを開ける」</li>
+<li><strong>目覚まし時計：</strong> 「朝の7時になったら（イベント）、音を鳴らす」</li>
+<li><strong>ウェブサイト：</strong> 「ボタンが押されたら（イベント）、メッセージを出す」</li>
+</ul>
+<p>JavaScriptを学ぶと、この <strong>「もし〜が起きたら、この仕事をやってね！」</strong> というマニュアルを書けるようになります。</p>
+<hr>
+<h3 id="3-留学生への導入メッセージ"><a class="header" href="#3-留学生への導入メッセージ">3. 留学生への導入メッセージ</a></h3>
+<blockquote>
+<p>「今はまだ、難しい呪文（じゅもん）を覚える必要はありません。
+画面の中で起きる**『クリック』や『入力』などの変化の一つひとつに、名前（イベント）がついているんだな**、ということだけ覚えておいてください。
+皆さんが『何か』をしたときに、サイトが『反応（はんのう）』するのは、このイベントのおかげなんですよ！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>言葉</th><th>イメージ</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>イベント</strong></td><td>「何かが起きた！」という合図</td></tr>
+<tr><td><strong>きっかけ</strong></td><td>ユーザーがマウスやキーボードを動かすこと</td></tr>
+<tr><td><strong>反応（はんのう）</strong></td><td>画面の色が変わったり、窓が開いたりすること</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>「ウェブページを生きているように動かすための『スイッチ』」。それがイベントです。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="html"><a class="header" href="#html">HTML</a></h1>
 <p><strong>留学生（りゅうがくせい）のためのHTML基礎（きそ）ガイド：JavaScriptを学ぶ前に</strong></p>
@@ -2227,6 +2269,28 @@ message.textContent = "こんにちは、日本へようこそ！";
 message.style.color = "red";
 
 </code></pre>
+<p><strong>オブジェクトと const の意外な関係</strong></p>
+<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で宣言された変数は、後から値を変更できないはずでは？」そう思った人は、変数の説明をとてもよく覚えている人です。</p>
+<p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
+<p>JavaScriptの初心者が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
+<p>「 <code>const</code> で宣言した変数は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
+<ul>
+<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに入れ替えることはできません（別の箱に名札を付け替えるのは禁止）。</li>
+<li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
+</ul>
+<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
+<p>例えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
+<p>先ほどの例では、<code>const</code>を使って宣言した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に入れ替えました。これはエラーにはなりません。</p>
+<p>しかし、</p>
+<pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
+const message = document.getElementById("greeting");
+
+// 2. タグがpのパーツを探す
+message = document.querySelector("p")
+</code></pre>
+<p>はエラーになります。<code>message</code> というラベルを「“greeting“というIDの箱」からはがして、「“p“というタグの別の箱」に貼ろうとしているからです。</p>
+<p><code>const</code> は <code>message</code> というラベルと、それを入れる入れ物との関係を固定して、ラベルの張替えを許しません。</p>
+<p>しかし、あくまで <strong>ラベルと入れ物との関係</strong> であって、 <strong>入れ物が同じであれば、その中身が変わっても、かまわない</strong> のです。</p>
 <hr>
 <h3 id="5-留学生へのアドバイスwindow-と-document-の使い分け"><a class="header" href="#5-留学生へのアドバイスwindow-と-document-の使い分け">5. 留学生へのアドバイス：<code>window</code> と <code>document</code> の使い分け</a></h3>
 <p>「どっちを使えばいいの？」と聞かれたら、こう答えてあげてください。</p>
@@ -2859,11 +2923,105 @@ function greet() {
 </div>
 <hr>
 <p>いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は完璧です。</p>
+<h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
+<p>JavaScriptはWebページの上で起こるさまざまな「事件」に反応して、動きます。</p>
+<ul>
+<li>マウスでWebページのボタンをクリックする</li>
+<li>ボックスに文字を入力する</li>
+<li>画面をスクロールする</li>
+</ul>
+<p>そうした「事件」をJavaScriptでは <strong>「イベント」</strong> と呼びます。</p>
+<p>JavaScriptにおける <strong>Event（イベント）オブジェクト</strong> は、ウェブサイトで「何かが起きたとき」に作られる、たくさんの情報が詰まった <strong>「報告書（ほうこくしょ）」</strong> のようなものです。</p>
+<p><strong>「クリックやキー入力という『事件』が起きたときに、警察官が書くメモ」</strong> なのです。</p>
+<hr>
+<h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
+<p>マウスをクリックした、キーボードを叩いた、画面をスクロールした…。これらはすべて「イベント」です。
+イベントが発生したとき、JavaScriptは自動的に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
+<pre><code class="language-javascript">// ボタンがクリックされたとき
+button.addEventListener("click", function(event) {
+  // この「event」という引数が、Eventオブジェクト（報告書）です
+  console.log(event); 
+});
+
+</code></pre>
+<hr>
+<h3 id="2-よく使うプロパティ何が起きたかの情報"><a class="header" href="#2-よく使うプロパティ何が起きたかの情報">2. よく使うプロパティ（何が起きたかの情報）</a></h3>
+<p>報告書に書かれている、大切なチェック項目です。</p>
+<h4 id="eventtargetターゲット"><a class="header" href="#eventtargetターゲット"><strong><code>event.target</code>（ターゲット）</strong></a></h4>
+<p>「誰が」事件を起こしたか、つまり <strong>イベントが発生したパーツ（要素）</strong> を指します。</p>
+<ul>
+<li><strong>例：</strong> クリックされた「ボタンそのもの」を指します。</li>
+</ul>
+<h4 id="eventtypeタイプ"><a class="header" href="#eventtypeタイプ"><strong><code>event.type</code>（タイプ）</strong></a></h4>
+<p>イベントの <strong>種類（なまえ）</strong> です。</p>
+<ul>
+<li><strong>例：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
+</ul>
+<h4 id="eventkeyキー"><a class="header" href="#eventkeyキー"><strong><code>event.key</code>（キー）</strong></a></h4>
+<p>キーボードのイベント（keydownなど）のとき、<strong>どのキーを押したか</strong> を教えてくれます。</p>
+<ul>
+<li><strong>例：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
+</ul>
+<h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
+<p>マウスがクリックされたときの <strong>画面上の座標（ざひょう）</strong>、つまり「場所」です。</p>
+<hr>
+<h3 id="3-よく使うメソッドイベントへの命令"><a class="header" href="#3-よく使うメソッドイベントへの命令">3. よく使うメソッド（イベントへの命令）</a></h3>
+<p>報告書を受け取ったあと、その後の動きをコントロールする命令です。</p>
+<h4 id="eventpreventdefaultプリベントデフォルト"><a class="header" href="#eventpreventdefaultプリベントデフォルト"><strong><code>event.preventDefault()</code>（プリベント・デフォルト）</strong></a></h4>
+<p>ブラウザがもともと持っている <strong>「決まった動き」をキャンセル</strong> します。</p>
+<ul>
+<li><strong>イメージ：</strong> 「リンク（<code>&lt;a&gt;</code>）を押したけど、ページを移動させないで！」というときに使います。</li>
+<li><strong>よく使う場所：</strong> フォームの入力が間違っているとき、送信を止めるために使います。</li>
+</ul>
+<h4 id="eventstoppropagationストッププロパゲーション"><a class="header" href="#eventstoppropagationストッププロパゲーション"><strong><code>event.stopPropagation()</code>（ストップ・プロパゲーション）</strong></a></h4>
+<p>イベントが <strong>「親の要素」に伝わるのを止めます。</strong>（イベントのバブリング停止）</p>
+<ul>
+<li><strong>イメージ：</strong> 小さいボタンを押したのに、後ろにある大きい枠（わく）までクリックされたことになってしまうのを防ぎます。</li>
+</ul>
+<hr>
+<h3 id="4-実際に動かしてみよう-7"><a class="header" href="#4-実際に動かしてみよう-7">4. 実際に動かしてみよう！</a></h3>
+<p>留学生に「入力されたキーをチェックする」コードを見せてあげましょう。</p>
+<pre><code class="language-javascript">const input = document.querySelector("input");
+
+input.addEventListener("keydown", function(event) {
+  // どのキーを押したか報告書を見る
+  console.log("押されたキーは: " + event.key);
+  
+  // もし Enterキー だったら
+  if (event.key === "Enter") {
+    alert("Enterが押されました！送信します。");
+  }
+});
+
+</code></pre>
+<hr>
+<h3 id="5-留学生へのアドバイス名前は何でもいい"><a class="header" href="#5-留学生へのアドバイス名前は何でもいい">5. 留学生へのアドバイス：名前は何でもいい？</a></h3>
+<p>関数（かんすう）のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
+<blockquote>
+<p>「カッコの中の名前は <code>e</code> や <code>evt</code> と短く書くプログラマーも多いよ。
+でも、中身は同じ <strong>『イベントの報告書』</strong> だから安心してね！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル-9"><a class="header" href="#まとめテーブル-9">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>
+<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー入力事件」か</td></tr>
+<tr><td><strong><code>preventDefault()</code></strong></td><td>元の動きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
+<tr><td><strong><code>stopPropagation()</code></strong></td><td>伝言を止める</td><td>「周りの人には内緒（ないしょ）にして！」</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>いかがでしょうか？ Eventオブジェクトが使えるようになると、「ユーザーが何をしたか」に合わせた細かいリアクションができるようになります。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="domツリー"><a class="header" href="#domツリー">DOMツリー</a></h1>
-<p>Webプログラミングを学んでいると必ず出てくる <strong>DOM（ドム）ツリー</strong> という言葉。
-みなさんは、<strong>「HTMLを『木』のように整理して、JavaScriptで動かしやすくした設計図（せっけいず）」</strong> というふうに考えてください。</p>
-<p>このセクションでは、　前セクションで説明したDOMツリーを、よりくわしく、よりこまかく説明します。</p>
+<p>前のセクションで <strong>DOM（ドム）ツリー</strong> について、少しだけ触れました。しかし、その中には、「ブラウザに表示されている<strong>HTML（ウェブページの中身）</strong> すべて」が含まれています。とてもたくさんの種類のオブジェクトが含まれます。</p>
+<p>そのため、ここで新たなセクションを作って、もっと詳しく解説します。</p>
 <hr>
 <h2 id="i-domとは"><a class="header" href="#i-domとは">I. DOMとは？</a></h2>
 <h3 id="1-domツリーってなに"><a class="header" href="#1-domツリーってなに">1. DOMツリーってなに？</a></h3>
@@ -2904,7 +3062,7 @@ This file is licensed under the Creative Commons <a href="https://creativecommon
 <p>「HTMLファイルはただの『文字の集まり（テキスト）』だけど、ブラウザがそれを <strong>DOMツリーという『生きている木』</strong> に変えてくれるんだ。
 JavaScriptはこの木を自由に育てるための道具だよ。木の関係（親・子・兄弟）が分かれば、どんな複雑なページも自由に操（あやつ）れるようになるよ！」</p>
 </blockquote>
-<h3 id="まとめテーブル-9"><a class="header" href="#まとめテーブル-9">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-10"><a class="header" href="#まとめテーブル-10">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -3055,7 +3213,7 @@ if (userName === "") {
 <li><strong><code>remove()</code></strong>：そのパーツを画面から消します。</li>
 </ul>
 <hr>
-<h3 id="4-実際に動かしてみよう-7"><a class="header" href="#4-実際に動かしてみよう-7">4. 実際に動かしてみよう！</a></h3>
+<h3 id="4-実際に動かしてみよう-8"><a class="header" href="#4-実際に動かしてみよう-8">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「画像を切り替えるボタン」の仕組みを説明するコード例です。</p>
 <pre><code class="language-javascript">// 1. &lt;img&gt;タグ（Elementオブジェクト）を見つける
 const myImage = document.querySelector("#profile-pic");
@@ -3253,102 +3411,74 @@ badApple.remove(); // 画面から消える
 <p>いかがでしょうか？「生成・追加・削除」ができるようになると、ユーザーがボタンを押すたびに画面がどんどん変わる、本格的なアプリが作れるようになります。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="イベント処理"><a class="header" href="#イベント処理">イベント処理</a></h1>
-<h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
-<p>JavaScriptはWebページの上で起こるさまざまな「事件」に反応して、動きます。</p>
-<ul>
-<li>マウスでWebページのボタンをクリックする</li>
-<li>ボックスに文字を入力する</li>
-<li>画面をスクロールする</li>
-</ul>
-<p>そうした「事件」をJavaScriptでは <strong>「イベント」</strong> と呼びます。</p>
-<p>JavaScriptにおける <strong>Event（イベント）オブジェクト</strong> は、ウェブサイトで「何かが起きたとき」に作られる、たくさんの情報が詰まった <strong>「報告書（ほうこくしょ）」</strong> のようなものです。</p>
-<p>留学生の方には、**「クリックやキー入力という『事件』が起きたときに、警察官が書くメモ」**だと例えると分かりやすいですよ。</p>
+<p>「イベント（何かが起きた瞬間）」を、実際にJavaScriptでつかまえて仕事をさせるための命令が <strong><code>addEventListener()</code></strong> です。</p>
+<p>留学生の方には、これを**「もし〜が起きたら、この仕事をやってね」という『待ち合わせの約束』**だと教えてあげてください。</p>
 <hr>
-<h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
-<p>マウスをクリックした、キーボードを叩いた、画面をスクロールした…。これらはすべて「イベント」です。
-イベントが発生したとき、JavaScriptは自動的に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
-<pre><code class="language-javascript">// ボタンがクリックされたとき
-button.addEventListener("click", function(event) {
-  // この「event」という引数が、Eventオブジェクト（報告書）です
-  console.log(event); 
+<h3 id="1-addeventlistener-の役割"><a class="header" href="#1-addeventlistener-の役割">1. <code>addEventListener</code> の役割</a></h3>
+<p>ブラウザ（主役のオブジェクト）に対して、「特定のイベントが起きたら、準備しておいたプログラムを動かして！」と予約（よやく）を入れます。</p>
+<hr>
+<h3 id="2-書き方の基本3つのパーツ"><a class="header" href="#2-書き方の基本3つのパーツ">2. 書き方の基本：3つのパーツ</a></h3>
+<p><code>addEventListener</code> を書くときは、次の3つの情報をセットにします。</p>
+<pre><code class="language-javascript">要素.addEventListener("いつ", どうするか);
+
+</code></pre>
+<ol>
+<li><strong>要素：</strong> だれに？（ボタン、画像、入力欄など）</li>
+<li><strong>いつ（イベント名）：</strong> 何が起きたら？（<code>click</code>, <code>input</code>, <code>mouseover</code> など）</li>
+<li><strong>どうするか（関数）：</strong> どんな仕事をするか？</li>
+</ol>
+<h4 id="具体的なコードの例"><a class="header" href="#具体的なコードの例"><strong>具体的なコードの例</strong></a></h4>
+<pre><code class="language-javascript">const btn = document.getElementById("myButton");
+
+// 1.「btn」に 2.「click」されたら 3.「中身のプログラム」を実行！
+btn.addEventListener("click", function() {
+  alert("ボタンが押されました！ 🚀");
 });
 
 </code></pre>
 <hr>
-<h3 id="2-よく使うプロパティ何が起きたかの情報"><a class="header" href="#2-よく使うプロパティ何が起きたかの情報">2. よく使うプロパティ（何が起きたかの情報）</a></h3>
-<p>報告書に書かれている、大切なチェック項目です。</p>
-<h4 id="eventtargetターゲット"><a class="header" href="#eventtargetターゲット"><strong><code>event.target</code>（ターゲット）</strong></a></h4>
-<p>「誰が」事件を起こしたか、つまり <strong>イベントが発生したパーツ（要素）</strong> を指します。</p>
-<ul>
-<li><strong>例：</strong> クリックされた「ボタンそのもの」を指します。</li>
-</ul>
-<h4 id="eventtypeタイプ"><a class="header" href="#eventtypeタイプ"><strong><code>event.type</code>（タイプ）</strong></a></h4>
-<p>イベントの <strong>種類（なまえ）</strong> です。</p>
-<ul>
-<li><strong>例：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
-</ul>
-<h4 id="eventkeyキー"><a class="header" href="#eventkeyキー"><strong><code>event.key</code>（キー）</strong></a></h4>
-<p>キーボードのイベント（keydownなど）のとき、<strong>どのキーを押したか</strong> を教えてくれます。</p>
-<ul>
-<li><strong>例：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
-</ul>
-<h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
-<p>マウスがクリックされたときの <strong>画面上の座標（ざひょう）</strong>、つまり「場所」です。</p>
-<hr>
-<h3 id="3-よく使うメソッドイベントへの命令"><a class="header" href="#3-よく使うメソッドイベントへの命令">3. よく使うメソッド（イベントへの命令）</a></h3>
-<p>報告書を受け取ったあと、その後の動きをコントロールする命令です。</p>
-<h4 id="eventpreventdefaultプリベントデフォルト"><a class="header" href="#eventpreventdefaultプリベントデフォルト"><strong><code>event.preventDefault()</code>（プリベント・デフォルト）</strong></a></h4>
-<p>ブラウザがもともと持っている <strong>「決まった動き」をキャンセル</strong> します。</p>
-<ul>
-<li><strong>イメージ：</strong> 「リンク（<code>&lt;a&gt;</code>）を押したけど、ページを移動させないで！」というときに使います。</li>
-<li><strong>よく使う場所：</strong> フォームの入力が間違っているとき、送信を止めるために使います。</li>
-</ul>
-<h4 id="eventstoppropagationストッププロパゲーション"><a class="header" href="#eventstoppropagationストッププロパゲーション"><strong><code>event.stopPropagation()</code>（ストップ・プロパゲーション）</strong></a></h4>
-<p>イベントが <strong>「親の要素」に伝わるのを止めます。</strong>（イベントのバブリング停止）</p>
-<ul>
-<li><strong>イメージ：</strong> 小さいボタンを押したのに、後ろにある大きい枠（わく）までクリックされたことになってしまうのを防ぎます。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう-8"><a class="header" href="#4-実際に動かしてみよう-8">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「入力されたキーをチェックする」コードを見せてあげましょう。</p>
-<pre><code class="language-javascript">const input = document.querySelector("input");
-
-input.addEventListener("keydown", function(event) {
-  // どのキーを押したか報告書を見る
-  console.log("押されたキーは: " + event.key);
-  
-  // もし Enterキー だったら
-  if (event.key === "Enter") {
-    alert("Enterが押されました！送信します。");
-  }
-});
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイス名前は何でもいい"><a class="header" href="#5-留学生へのアドバイス名前は何でもいい">5. 留学生へのアドバイス：名前は何でもいい？</a></h3>
-<p>関数（かんすう）のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
+<h3 id="3-留学生への例え話ホテルのフロント"><a class="header" href="#3-留学生への例え話ホテルのフロント">3. 留学生への例え話：ホテルのフロント</a></h3>
+<p>これをホテルのサービスに例えると、とても分かりやすくなります。</p>
 <blockquote>
-<p>「カッコの中の名前は <code>e</code> や <code>evt</code> と短く書くプログラマーも多いよ。
-でも、中身は同じ <strong>『イベントの報告書』</strong> だから安心してね！」</p>
+<p>「お客さん（あなた）がフロント（ブラウザ）に頼むんだ。
+<strong>『朝の7時（イベント）』になったら、『私を起こして（仕事）』ね。</strong>
+フロントの人は、その約束をメモに書いて、時間が来るのをじっと待っててくれる。これが <code>addEventListener</code> の仕組みだよ！」</p>
 </blockquote>
 <hr>
-<h3 id="まとめテーブル-10"><a class="header" href="#まとめテーブル-10">まとめテーブル</a></h3>
+<h3 id="4-なぜリスナーlistenerと呼ぶの"><a class="header" href="#4-なぜリスナーlistenerと呼ぶの">4. なぜ「リスナー（Listener）」と呼ぶの？</a></h3>
+<p>この命令で登録されたプログラムのことを、専門用語で「イベントリスナー」と呼びます。</p>
+<ul>
+<li><strong>Listen（リッスン）：</strong> 聴（き）く、耳をすます。</li>
+<li><strong>Listener（リスナー）：</strong> 聞き手。</li>
+</ul>
+<blockquote>
+<p>「プログラムがずっと**『耳をすませて』、イベントが起きる音を待っている**から、リスナーって呼ぶんだよ」と教えてあげてください。</p>
+</blockquote>
+<hr>
+<h3 id="5-addeventlistener-のすごいところ"><a class="header" href="#5-addeventlistener-のすごいところ">5. <code>addEventListener</code> のすごいところ</a></h3>
+<p>昔の書き方（<code>onclick</code> など）と違って、1つのボタンに**「2つ以上の約束」**をすることができます。</p>
+<ul>
+<li>「クリックされたら、色を変えて」</li>
+<li>「クリックされたら、ログを記録して」</li>
+</ul>
+<p>このように、たくさんの約束を重ねて予約できるのが、この命令の強みです。</p>
+<hr>
+<h3 id="まとめテーブル-11"><a class="header" href="#まとめテーブル-11">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>パーツ</th><th>役割</th><th>例え話</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>
-<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー入力事件」か</td></tr>
-<tr><td><strong><code>preventDefault()</code></strong></td><td>元の動きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
-<tr><td><strong><code>stopPropagation()</code></strong></td><td>伝言を止める</td><td>「周りの人には内緒（ないしょ）にして！」</td></tr>
+<tr><td><strong>要素 (target)</strong></td><td>どこで起きるか</td><td>玄関のドア</td></tr>
+<tr><td><strong>イベント名 (type)</strong></td><td>何が起きるか</td><td>チャイムが鳴る</td></tr>
+<tr><td><strong>リスナー (function)</strong></td><td>何をするか</td><td>「はーい！」と返事をして開ける</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？Eventオブジェクトが使えるようになると、「ユーザーが何をしたか」に合わせた細かいリアクションができるようになります。</p>
-<p><strong>次は、マウスが画面のどこにあるかを追いかける（トラッキング）ような、楽しいプログラムを作ってみますか？</strong></p>
+<p>いかがでしょうか？「予約を入れて、耳をすませて待つ」。このイメージができれば、JavaScriptでページを動かす準備はバッチリです！</p>
+<p><strong>次は、クリック以外によく使う「マウスが乗ったとき」や「キーボードを打ったとき」のイベント名についても調べてみますか？</strong></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="window操作"><a class="header" href="#window操作">Window操作</a></h1>
 <h2 id="i-windowの操作"><a class="header" href="#i-windowの操作">I. Windowの操作</a></h2>
@@ -3429,7 +3559,7 @@ function goToTop() {
 <strong>本当に大切なときだけ使うのが、良いエンジニアのルールだよ！</strong>」</p>
 </blockquote>
 <hr>
-<h3 id="まとめテーブル-11"><a class="header" href="#まとめテーブル-11">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-12"><a class="header" href="#まとめテーブル-12">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -3543,27 +3673,22 @@ const countdown = setInterval(function() {
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="組み込みくみこみオブジェクト"><a class="header" href="#組み込みくみこみオブジェクト">組み込み（くみこみ）オブジェクト</a></h1>
 <p><strong>JavaScriptの便利な道具「組み込みオブジェクト」を学ぼう</strong></p>
-<p>みなさん、こんにちは！ 留学生のみなさんがプログラミングを学ぶとき、日本語の壁と技術の壁、両方を感じることがあるかもしれません。でも安心してください。JavaScript（ジャバスクリプト）の世界には、最初から用意されている「便利な道具箱」がたくさんあります。これを <strong>組み込み（くみこみ）オブジェクト</strong> と呼びます。</p>
-<p>このドキュメントでは、プログラミングの基礎から、データを上手に扱うためのテクニックまで、やさしい日本語で解説していきます。</p>
-<p>そこで「組み込みオブジェクト」です。組み込みオブジェクトは、JavaScriptがあらかじめ用意している機械のようなものなので、あなたがデータを入れれば、すぐに使うことができます。</p>
+<p>JavaScript（ジャバスクリプト）には、ここまで学んできたブラウザオブジェクト以外にも、最初から用意されている「便利な道具箱」がたくさんあります。これを <strong>組み込み（くみこみ）オブジェクト</strong> と呼びます。</p>
 <hr>
-<h2 id="i-オブジェクトとは-1"><a class="header" href="#i-オブジェクトとは-1">I. オブジェクトとは</a></h2>
+<p><strong>オブジェクトとは</strong></p>
 <p>まず「オブジェクト」について復習しましょう。一言でいうと、オブジェクトは <strong>「関係（かんけい）がある 情報を まとめたもの」</strong> でしたね。</p>
 <p>そして、オブジェクトのすごいところは、<strong>データ（特徴）</strong> だけでなく、<strong>関数（動き）</strong> も一緒にまとめられることでした。</p>
 <ul>
 <li><strong>プロパティ（特徴）：</strong> 名前、身長、色、値段など</li>
 <li><strong>メソッド（動き）：</strong> 走る、話す、計算するなど</li>
 </ul>
-<h2 id="ii-全体まとめ"><a class="header" href="#ii-全体まとめ">II. 全体まとめ</a></h2>
+<p><strong>まとめ</strong></p>
 <p>JavaScriptの組み込みオブジェクトを学ぶことは、留学生のみなさんがプログラミングの「初心者」から「中級者」へステップアップするための大きな一歩です。</p>
 <ol>
 <li>配列やオブジェクトでデータをきれいに並べ、</li>
 <li>forEachやfor-inで効率よく処理し、</li>
 <li>StringやMath、Dateで情報を賢く加工する。</li>
 </ol>
-<p><strong>最終メッセージ</strong></p>
-<p>プログラミングの学習は、一歩ずつ進めば大丈夫です。一度に全部覚えようとしなくていいですよ。「あ、あんな便利な道具があったな」と思い出せれば合格です。</p>
-<p>留学生のみなさん、これからも楽しくコードを書いていきましょう。あなたの成長を心から応援しています！</p>
 <p>では、最初の組み込みオブジェクトとして、「配列（はいれつ）」について、みてみましょう。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="配列"><a class="header" href="#配列">配列</a></h1>
@@ -3619,27 +3744,6 @@ snacks[1] = "アイス"; // 1番ロッカー（2つめ）のグミを、アイ�
 console.log(snacks); // ["チョコ", "アイス"]
 
 </code></pre>
-<p><strong>オブジェクトと const の意外な関係</strong></p>
-<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で宣言された変数は、後から値を変更できないはずでは？」そう思った人は、ここまでの説明をとてもよく覚えている人です。</p>
-<p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
-<p>JavaScriptの初心者が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
-<p>「 <code>const</code> は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
-<ul>
-<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに入れ替えることはできません（別の箱に名札を付け替えるのは禁止）。</li>
-<li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
-</ul>
-<p>「強力なガムテープで名札が貼られたロッカー」をイメージしてください。ガムテープで固定されているので、名札を別の新しいロッカーに貼り直すことはできません。でも、ロッカーの蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
-<p>例えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
-<p>先ほどの例では、<code>const</code>を使って宣言した<code>snacks</code>というロッカーの一つを開けて、中身を“グミ“から“アイス“に入れ替えました。これはエラーにはなりません。</p>
-<p>しかし、</p>
-<pre><code class="language-javascript">const snacks = ["チョコ", "グミ"];
-
-snacks = ["チョコ", "アイス"];
-
-</code></pre>
-<p>はエラーになります。<code>snacks</code> というラベルを「“チョコ“と“グミ“が入ったロッカー」からはがして、「“チョコ“と“アイス“が入った別のロッカー」に貼ろうとしているからです。</p>
-<p><code>const</code> は <code>snacks</code> というラベルと、それを入れる入れ物との関係を固定して、ラベルの張替えを許しません。</p>
-<p>しかし、あくまでラベルと入れ物との関係であって、入れ物が同じであれば、その中身が変わっても、エラーにはならないのです。</p>
 <h4 id="まとめ--の役割やくわり"><a class="header" href="#まとめ--の役割やくわり">まとめ：<code>[ ]</code> の役割（やくわり）</a></h4>
 <div class="table-wrapper">
 <table>
@@ -4104,7 +4208,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 <li>メモリを節約できて、動きも速い。</li>
 <li><code>new String()</code> は、特別な理由がない限り、<strong>使わなくて大丈夫</strong>です。</li>
 </ul>
-<h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
+<h3 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4373,7 +4477,7 @@ console.log(`${year}年${month}月${date}日`);
 // 結果：2026年2月20日
 
 </code></pre>
-<h3 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h3>
+<h3 id="まとめ-2"><a class="header" href="#まとめ-2">まとめ</a></h3>
 <p>留学生へのアドバイス：</p>
 <ol>
 <li><strong><code>new Date()</code></strong> は「今の時計」を作る合言葉！</li>
@@ -5541,7 +5645,7 @@ fruits.forEach((item) =&gt; {
 </ul>
 <p>このように、<strong>「主役（しゅやく）が入れ替（いれかえ）わる」</strong> のがポイントです。</p>
 <hr>
-<h3 id="まとめ-2"><a class="header" href="#まとめ-2">まとめ</a></h3>
+<h3 id="まとめ-3"><a class="header" href="#まとめ-3">まとめ</a></h3>
 <ul>
 <li><strong>コールバック関数</strong> ＝ 他のプログラムに「これ、あとで使ってね」と渡す関数のこと。</li>
 <li><strong>forEach</strong> ＝ リストのデータ一つずつに、コールバック関数を動かしてあげる役（やく）割。</li>

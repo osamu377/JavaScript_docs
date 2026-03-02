@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ebef5985.js";
+            window.path_to_searchindex_js = "searchindex-64f2fd54.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -272,6 +272,48 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱（はしら）、壁（かべ）、床（ゆか）、あるいはペンキ、インテリア、壁紙、といった部品になるのは、前に説明した通りです。</p>
 <p>実は、この「Webページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
 <p>したがって、JavaScriptでWebページを操るためには、まずWebページの部品そのものについて、理解しなければなりません。そのため、次のステップでは、Webページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
+<h2 id="iv-イベントとは"><a class="header" href="#iv-イベントとは">IV. イベントとは</a></h2>
+<h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
+<p>ふだん、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
+<p>例えば、あなたがこんな動きをしたとき、それがすべて「イベント」になります。</p>
+<ul>
+<li>ボタンを**カチッ（クリック）**としたとき。</li>
+<li>キーボードで<strong>文字を入力</strong>したとき。</li>
+<li>画面を**上下に動かした（スクロール）**とき。</li>
+</ul>
+<p>このように、**「ユーザーが何かをした！」**という出来事のことを、JavaScriptでは「イベント」と呼びます。</p>
+<hr>
+<h3 id="2-もししたらするという約束"><a class="header" href="#2-もししたらするという約束">2. 「もし〜したら、〜する」という約束</a></h3>
+<p>イベントの考え方は、皆さんの日常（にちじょう）にある <strong>「センサー」</strong> と同じです。</p>
+<ul>
+<li><strong>自動ドア：</strong> 「人が前に来たら（イベント）、ドアを開ける」</li>
+<li><strong>目覚まし時計：</strong> 「朝の7時になったら（イベント）、音を鳴らす」</li>
+<li><strong>ウェブサイト：</strong> 「ボタンが押されたら（イベント）、メッセージを出す」</li>
+</ul>
+<p>JavaScriptを学ぶと、この <strong>「もし〜が起きたら、この仕事をやってね！」</strong> というマニュアルを書けるようになります。</p>
+<hr>
+<h3 id="3-留学生への導入メッセージ"><a class="header" href="#3-留学生への導入メッセージ">3. 留学生への導入メッセージ</a></h3>
+<blockquote>
+<p>「今はまだ、難しい呪文（じゅもん）を覚える必要はありません。
+画面の中で起きる**『クリック』や『入力』などの変化の一つひとつに、名前（イベント）がついているんだな**、ということだけ覚えておいてください。
+皆さんが『何か』をしたときに、サイトが『反応（はんのう）』するのは、このイベントのおかげなんですよ！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>言葉</th><th>イメージ</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>イベント</strong></td><td>「何かが起きた！」という合図</td></tr>
+<tr><td><strong>きっかけ</strong></td><td>ユーザーがマウスやキーボードを動かすこと</td></tr>
+<tr><td><strong>反応（はんのう）</strong></td><td>画面の色が変わったり、窓が開いたりすること</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>「ウェブページを生きているように動かすための『スイッチ』」。それがイベントです。</p>
 
                     </main>
 

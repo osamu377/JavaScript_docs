@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ebef5985.js";
+            window.path_to_searchindex_js = "searchindex-64f2fd54.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -312,6 +312,28 @@ message.textContent = "こんにちは、日本へようこそ！";
 message.style.color = "red";
 
 </code></pre>
+<p><strong>オブジェクトと const の意外な関係</strong></p>
+<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で宣言された変数は、後から値を変更できないはずでは？」そう思った人は、変数の説明をとてもよく覚えている人です。</p>
+<p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
+<p>JavaScriptの初心者が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
+<p>「 <code>const</code> で宣言した変数は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
+<ul>
+<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに入れ替えることはできません（別の箱に名札を付け替えるのは禁止）。</li>
+<li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
+</ul>
+<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
+<p>例えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
+<p>先ほどの例では、<code>const</code>を使って宣言した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に入れ替えました。これはエラーにはなりません。</p>
+<p>しかし、</p>
+<pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
+const message = document.getElementById("greeting");
+
+// 2. タグがpのパーツを探す
+message = document.querySelector("p")
+</code></pre>
+<p>はエラーになります。<code>message</code> というラベルを「“greeting“というIDの箱」からはがして、「“p“というタグの別の箱」に貼ろうとしているからです。</p>
+<p><code>const</code> は <code>message</code> というラベルと、それを入れる入れ物との関係を固定して、ラベルの張替えを許しません。</p>
+<p>しかし、あくまで <strong>ラベルと入れ物との関係</strong> であって、 <strong>入れ物が同じであれば、その中身が変わっても、かまわない</strong> のです。</p>
 <hr>
 <h3 id="5-留学生へのアドバイスwindow-と-document-の使い分け"><a class="header" href="#5-留学生へのアドバイスwindow-と-document-の使い分け">5. 留学生へのアドバイス：<code>window</code> と <code>document</code> の使い分け</a></h3>
 <p>「どっちを使えばいいの？」と聞かれたら、こう答えてあげてください。</p>
@@ -944,6 +966,101 @@ function greet() {
 </div>
 <hr>
 <p>いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は完璧です。</p>
+<h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
+<p>JavaScriptはWebページの上で起こるさまざまな「事件」に反応して、動きます。</p>
+<ul>
+<li>マウスでWebページのボタンをクリックする</li>
+<li>ボックスに文字を入力する</li>
+<li>画面をスクロールする</li>
+</ul>
+<p>そうした「事件」をJavaScriptでは <strong>「イベント」</strong> と呼びます。</p>
+<p>JavaScriptにおける <strong>Event（イベント）オブジェクト</strong> は、ウェブサイトで「何かが起きたとき」に作られる、たくさんの情報が詰まった <strong>「報告書（ほうこくしょ）」</strong> のようなものです。</p>
+<p><strong>「クリックやキー入力という『事件』が起きたときに、警察官が書くメモ」</strong> なのです。</p>
+<hr>
+<h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
+<p>マウスをクリックした、キーボードを叩いた、画面をスクロールした…。これらはすべて「イベント」です。
+イベントが発生したとき、JavaScriptは自動的に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
+<pre><code class="language-javascript">// ボタンがクリックされたとき
+button.addEventListener("click", function(event) {
+  // この「event」という引数が、Eventオブジェクト（報告書）です
+  console.log(event); 
+});
+
+</code></pre>
+<hr>
+<h3 id="2-よく使うプロパティ何が起きたかの情報"><a class="header" href="#2-よく使うプロパティ何が起きたかの情報">2. よく使うプロパティ（何が起きたかの情報）</a></h3>
+<p>報告書に書かれている、大切なチェック項目です。</p>
+<h4 id="eventtargetターゲット"><a class="header" href="#eventtargetターゲット"><strong><code>event.target</code>（ターゲット）</strong></a></h4>
+<p>「誰が」事件を起こしたか、つまり <strong>イベントが発生したパーツ（要素）</strong> を指します。</p>
+<ul>
+<li><strong>例：</strong> クリックされた「ボタンそのもの」を指します。</li>
+</ul>
+<h4 id="eventtypeタイプ"><a class="header" href="#eventtypeタイプ"><strong><code>event.type</code>（タイプ）</strong></a></h4>
+<p>イベントの <strong>種類（なまえ）</strong> です。</p>
+<ul>
+<li><strong>例：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
+</ul>
+<h4 id="eventkeyキー"><a class="header" href="#eventkeyキー"><strong><code>event.key</code>（キー）</strong></a></h4>
+<p>キーボードのイベント（keydownなど）のとき、<strong>どのキーを押したか</strong> を教えてくれます。</p>
+<ul>
+<li><strong>例：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
+</ul>
+<h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
+<p>マウスがクリックされたときの <strong>画面上の座標（ざひょう）</strong>、つまり「場所」です。</p>
+<hr>
+<h3 id="3-よく使うメソッドイベントへの命令"><a class="header" href="#3-よく使うメソッドイベントへの命令">3. よく使うメソッド（イベントへの命令）</a></h3>
+<p>報告書を受け取ったあと、その後の動きをコントロールする命令です。</p>
+<h4 id="eventpreventdefaultプリベントデフォルト"><a class="header" href="#eventpreventdefaultプリベントデフォルト"><strong><code>event.preventDefault()</code>（プリベント・デフォルト）</strong></a></h4>
+<p>ブラウザがもともと持っている <strong>「決まった動き」をキャンセル</strong> します。</p>
+<ul>
+<li><strong>イメージ：</strong> 「リンク（<code>&lt;a&gt;</code>）を押したけど、ページを移動させないで！」というときに使います。</li>
+<li><strong>よく使う場所：</strong> フォームの入力が間違っているとき、送信を止めるために使います。</li>
+</ul>
+<h4 id="eventstoppropagationストッププロパゲーション"><a class="header" href="#eventstoppropagationストッププロパゲーション"><strong><code>event.stopPropagation()</code>（ストップ・プロパゲーション）</strong></a></h4>
+<p>イベントが <strong>「親の要素」に伝わるのを止めます。</strong>（イベントのバブリング停止）</p>
+<ul>
+<li><strong>イメージ：</strong> 小さいボタンを押したのに、後ろにある大きい枠（わく）までクリックされたことになってしまうのを防ぎます。</li>
+</ul>
+<hr>
+<h3 id="4-実際に動かしてみよう-7"><a class="header" href="#4-実際に動かしてみよう-7">4. 実際に動かしてみよう！</a></h3>
+<p>留学生に「入力されたキーをチェックする」コードを見せてあげましょう。</p>
+<pre><code class="language-javascript">const input = document.querySelector("input");
+
+input.addEventListener("keydown", function(event) {
+  // どのキーを押したか報告書を見る
+  console.log("押されたキーは: " + event.key);
+  
+  // もし Enterキー だったら
+  if (event.key === "Enter") {
+    alert("Enterが押されました！送信します。");
+  }
+});
+
+</code></pre>
+<hr>
+<h3 id="5-留学生へのアドバイス名前は何でもいい"><a class="header" href="#5-留学生へのアドバイス名前は何でもいい">5. 留学生へのアドバイス：名前は何でもいい？</a></h3>
+<p>関数（かんすう）のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
+<blockquote>
+<p>「カッコの中の名前は <code>e</code> や <code>evt</code> と短く書くプログラマーも多いよ。
+でも、中身は同じ <strong>『イベントの報告書』</strong> だから安心してね！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル-9"><a class="header" href="#まとめテーブル-9">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>
+<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー入力事件」か</td></tr>
+<tr><td><strong><code>preventDefault()</code></strong></td><td>元の動きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
+<tr><td><strong><code>stopPropagation()</code></strong></td><td>伝言を止める</td><td>「周りの人には内緒（ないしょ）にして！」</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>いかがでしょうか？ Eventオブジェクトが使えるようになると、「ユーザーが何をしたか」に合わせた細かいリアクションができるようになります。</p>
 
                     </main>
 
