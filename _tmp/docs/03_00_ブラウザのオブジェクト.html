@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78abab6b.js";
+            window.path_to_searchindex_js = "searchindex-ebef5985.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -178,7 +178,7 @@
 <p><strong>初心者のためのJavaScript：ブラウザを動かす「オブジェクト」の仕組み</strong></p>
 <p>みなさん、こんにちは！IT専門学校（せんもんがっこう）でプログラミングを教えているシニア講師（こうし）です。留学生（りゅうがくせい）のみなさんも、これからJavaScriptを使ってウェブサイトに「動き」をつける方法を楽しく学んでいきましょう。</p>
 <p>プログラミングは難（むずか）しく見えますが、実は <strong>「ブラウザという家（いえ）」の中にある「道具（どうぐ）」の使い方</strong>を覚（おぼ）えるだけなんです。今日は、その道具である「オブジェクト」について、プロの視点（してん）からやさしく解説（かいせつ）します。</p>
-<h2 id="1-javascriptは誰が何をするかを指示するマニュアル"><a class="header" href="#1-javascriptは誰が何をするかを指示するマニュアル">1. JavaScriptは「誰が」「何をするか」を指示するマニュアル</a></h2>
+<h2 id="i-javascriptは誰が何をするかを指示するマニュアル"><a class="header" href="#i-javascriptは誰が何をするかを指示するマニュアル">I. JavaScriptは「誰が」「何をするか」を指示するマニュアル</a></h2>
 <p>ここでもう一度、最初に説明したイメージを思い出してください。</p>
 <ul>
 <li><strong>Webページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
@@ -246,7 +246,7 @@
 </div>
 <p>まずは、この家の「家主（やぬし）」であり、すべてを管理（かんり）している「Windowオブジェクト」から見ていきましょう。</p>
 <hr>
-<h2 id="2-すべての基点windowオブジェクト"><a class="header" href="#2-すべての基点windowオブジェクト">2. すべての基点：Windowオブジェクト</a></h2>
+<h2 id="ii-すべての基点windowオブジェクト"><a class="header" href="#ii-すべての基点windowオブジェクト">II. すべての基点：Windowオブジェクト</a></h2>
 <p>ブラウザのタブを開（ひら）いたとき、その画面全体（がめんぜんたい）を管理しているのがWindow（ウィンドウ）オブジェクトです。これはJavaScriptの世界（せかい）の「王様（おうさま）」です。</p>
 <ul>
 <li>階層（かいそう：重なりの順番）のイメージ： Windowオブジェクトはすべての「ルート（根っこ）」です。Windowという大きな箱（はこ）の中に、この後説明するDocument（書類）やLocation（場所）など、すべての道具が入っています。</li>
@@ -260,7 +260,7 @@
 </ul>
 <p>次は、王様が持っている大切な「書類」、つまりページの中身を指す「Document」についてお話しします。</p>
 <hr>
-<h2 id="3-ウェブページを操るdomとdocumentオブジェクト"><a class="header" href="#3-ウェブページを操るdomとdocumentオブジェクト">3. ウェブページを操る：DOMとDocumentオブジェクト</a></h2>
+<h2 id="iii-ウェブページを操るdomとdocumentオブジェクト"><a class="header" href="#iii-ウェブページを操るdomとdocumentオブジェクト">III. ウェブページを操る：DOMとDocumentオブジェクト</a></h2>
 <p>ウェブページに表示（ひょうじ）されている文字や画像（がぞう）そのものを操作（そうさ）するのがDocument（ドキュメント）オブジェクトです。</p>
 <p>ここで大切なのが <strong>DOM（Document Object Model）です。HTMLの構造（こうぞう）は、枝分かれした「木（ツリー）」</strong> のような親子関係（おやこかんけい）になっています。これを「DOMツリー」と呼びます。</p>
 <p>DOMツリーの中から、操作したい「特定のパーツ」を見つけることを、プログラミングでは <strong>「要素の取得（しゅとく）」</strong> や <strong>「セレクタ」</strong> と呼びます。</p>
@@ -328,7 +328,7 @@ const firstLink = document.querySelector("nav a"); // navの中の最初のaタ�
 </table>
 </div>
 <hr>
-<h2 id="12-まとめオブジェクトを自由に操るために"><a class="header" href="#12-まとめオブジェクトを自由に操るために">12. まとめ：オブジェクトを自由に操るために</a></h2>
+<h2 id="iv-まとめオブジェクトを自由に操るために"><a class="header" href="#iv-まとめオブジェクトを自由に操るために">IV. まとめ：オブジェクトを自由に操るために</a></h2>
 <p>お疲れ様（おつかれさま）でした！今回学んだオブジェクトたちは、バラバラではなく、みんなで協力（きょうりょく）して一つのページを動かしています。</p>
 <p>いかがでしょうか？「どうやって特定のパーツを指名するか」が分かれば、DOM操作の半分はマスターしたも同然です！</p>
 <p>ターゲットが見つかったら、次は具体的にその「部品」をどう動かすかを見ていきましょう。</p>

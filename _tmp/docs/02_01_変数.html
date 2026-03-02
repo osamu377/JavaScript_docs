@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78abab6b.js";
+            window.path_to_searchindex_js = "searchindex-ebef5985.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -180,10 +180,10 @@
 <p>留学生の皆さんが日本語を学ぶとき、単語を覚えて整理するように、プログラミングでもデータを整理して名前をつける作業が必要です。変数を使いこなせるようになると、プログラムの中でデータを自由に再利用（さいりよう）し、複雑な処理を組み立てることができるようになります。</p>
 <p>では、まず、「変数とは何か」から、はじめましょう。</p>
 <hr>
-<h2 id="1-変数とは何かデータを保存する名前付きの箱"><a class="header" href="#1-変数とは何かデータを保存する名前付きの箱">1. 変数とは何か：データを保存する「名前付きの箱」</a></h2>
+<h2 id="i-変数とは何かデータを保存する名前付きの箱"><a class="header" href="#i-変数とは何かデータを保存する名前付きの箱">I. 変数とは何か：データを保存する「名前付きの箱」</a></h2>
 <p>プログラミングにおける「変数」とは、プログラムの中で扱う数値や文字列などのデータを保存しておくための「<strong>名前のついた箱</strong>」のようなものです。</p>
 <p>空港で荷物を預けるシーンを想像してみてください。たくさんのスーツケースがあるとき、『どれが誰のものか？』『中身が何か？』を見分けるために「名前のラベル」を貼りますよね。これが変数です。ラベル（変数名）があるからこそ、後で必要なときに迷わずそのデータを取り出すことができます。</p>
-<p><strong>「代入」</strong></p>
+<h3 id="1代入"><a class="header" href="#1代入">1.「代入」</a></h3>
 <p>「名前のついた箱」である <strong>「変数」の中にデータを入れる</strong> ことを、プログラミングでは <strong>「代入」</strong> と言います。</p>
 <ul>
 <li><strong>名前（ラベル）</strong>: 変数名（例: <code>score</code>, <code>myName</code>）</li>
@@ -204,7 +204,7 @@
 // プログラムの途中は省略します
 score = 80; // 一度、100を入れた変数scoreに、80を再代入します
 </code></pre>
-<p><strong>変数宣言とキーワードの種類</strong></p>
+<h3 id="2-変数宣言とキーワードの種類"><a class="header" href="#2-変数宣言とキーワードの種類">2. 変数宣言とキーワードの種類</a></h3>
 <p>変数を利用するには、まずシステムにその変数名を使うことを知らせる「<strong>変数宣言</strong>」が必要です。現代のJavaScriptでは、主に <strong><code>const</code></strong> と <strong><code>let</code></strong> という2つのキーワードを使用して宣言を行います。</p>
 <p>なぜ変数を宣言するキーワードが2つあるのでしょうか？ 実は、JavaScriptには2種類の箱があります。プログラムを効率的に、そしてミスなく作るためには、これらを使い分けることが重要です。</p>
 <p>キーワードは、プログラムが動いている途中で「値を変更するかどうか」で使い分けます。</p>
@@ -224,7 +224,7 @@ score = 80; // 一度、100を入れた変数scoreに、80を再代入します
 <p><code>const</code> で宣言された変数は、後から値を変更できません。一度決めた値が「変わらない」ことが約束されいてると、後からコードを読み返したときに迷わず、バグ（ミス）を減らすことができるからです。</p>
 <p>ですから、みなさんは、<strong>できるだけ <code>const</code> を使いましょう</strong>。そして、<strong>後から値を変更しなければならないときだけ <code>let</code> を使いましょう</strong>。</p>
 <p>※ むかしは <code>let</code>の代わりに <code>var</code> が使われていましたが、知らないうちに変数の中身が書きかえられてしまうかもしれないので、現在は、「使わないのがよい」とされています。</p>
-<p><strong>変数の初期化</strong></p>
+<h3 id="3-変数の初期化"><a class="header" href="#3-変数の初期化">3. 変数の初期化</a></h3>
 <p>変数を宣言する際、同時に値を代入することを「<strong>初期化（しょきか）</strong>」と呼びます。</p>
 <ul>
 <li><strong>宣言と初期化を同時に行う例</strong>:
@@ -238,7 +238,7 @@ myName = "Chris"; // 後から値を代入する
 </code></pre>
 </li>
 </ul>
-<p><strong>変数の名前の付け方</strong></p>
+<h3 id="4-変数の名前の付け方"><a class="header" href="#4-変数の名前の付け方">4. 変数の名前の付け方</a></h3>
 <p>変数に名前を付けるときには、いくつかの守るべきルールと慣習があります。</p>
 <ul>
 <li><strong>大文字と小文字は区別される</strong>: <code>Name</code> と <code>name</code> は別の変数として扱われます。</li>
@@ -263,15 +263,15 @@ myName = "Chris"; // 後から値を代入する
 </ul>
 <p>ここでは「文字列型」「数値型」「論理型」について説明します。「配列」と「オブジェクト」については、あとの章で説明します。</p>
 <hr>
-<h2 id="2-文字列型-stringテキストデータを扱う"><a class="header" href="#2-文字列型-stringテキストデータを扱う">2. 文字列型 (String)：テキストデータを扱う</a></h2>
+<h2 id="ii-文字列型-stringテキストデータを扱う"><a class="header" href="#ii-文字列型-stringテキストデータを扱う">II. 文字列型 (String)：テキストデータを扱う</a></h2>
 <p>Webページで「こんにちは」というメッセージを表示したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
-<p><strong>文字列の定義</strong></p>
-<p>文字列を作るには、テキストを**引用符（クォーテーション）**で囲みます。</p>
+<h3 id="1-文字列の定義"><a class="header" href="#1-文字列の定義">1. 文字列の定義</a></h3>
+<p>文字列を作るには、テキストを <strong>引用符（クォーテーション）</strong> で囲みます。</p>
 <ul>
 <li>シングルクォーテーション：‘こんにちは’</li>
 <li>ダブルクォーテーション：“こんにちは” どちらを使っても構いませんが、一つのプログラムの中で統一するのが良い習慣です。</li>
 </ul>
-<p><strong>テンプレートリテラル：最新のスマートな書き方</strong></p>
+<h3 id="2-テンプレートリテラル最新のスマートな書き方"><a class="header" href="#2-テンプレートリテラル最新のスマートな書き方">2. テンプレートリテラル：最新のスマートな書き方</a></h3>
 <p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、変数の埋め込みや改行が非常に簡単になります。</p>
 <pre><code class="language-javascript">const name = "佐藤";
 // 変数を文章の中に埋め込む
@@ -294,15 +294,15 @@ console.log(multiLine);">実行</button></p>
 <!--a href="./html/03_01_templit.html">ここをクリックして例をみてみましょう。</a-->
 <p>文字の次は、計算に欠かせない「数値」の扱いに進みます。</p>
 <hr>
-<h2 id="3-数値型-number-と特別な値-nan--infinity"><a class="header" href="#3-数値型-number-と特別な値-nan--infinity">3. 数値型 (Number) と特別な値 (NaN / Infinity)</a></h2>
+<h2 id="iii-数値型-number-と特別な値-nan--infinity"><a class="header" href="#iii-数値型-number-と特別な値-nan--infinity">III. 数値型 (Number) と特別な値 (NaN / Infinity)</a></h2>
 <p>JavaScriptでは、整数（100）も小数（3.14）も、すべて同じ「数値（すうち）」型として扱います。</p>
-<p><strong>算術演算子（計算の記号）</strong></p>
+<h3 id="1-算術演算子計算の記号"><a class="header" href="#1-算術演算子計算の記号">1. 算術演算子（計算の記号）</a></h3>
 <p>数値を使って、算数と同じように計算ができます。</p>
 <ul>
 <li><code>+</code>（足し算） <code>-</code>（引き算） <code>*</code>（掛け算） <code>/</code>（割り算） <code>%</code>（余り）</li>
 </ul>
 <p>※ 算術演算子については、あとで、もっと詳（くわ）しく説明します。</p>
-<p><strong>特別な数値：NaNとInfinity</strong></p>
+<h3 id="2-特別な数値nanとinfinity"><a class="header" href="#2-特別な数値nanとinfinity">2. 特別な数値：NaNとInfinity</a></h3>
 <p>数値型には、注意が必要な特殊な値があります。</p>
 <ul>
 <li><strong>NaN (Not a Number)</strong> ：「数値ではない」状態です。例えば、文字列を無理やり計算しようとした時に発生します。</li>
@@ -310,11 +310,11 @@ console.log(multiLine);">実行</button></p>
 </ul>
 <p>計算の次は、プログラムが「正しいか間違いか」を判断するためのデータを見てみましょう。</p>
 <hr>
-<h2 id="4-論理型-booleanyesかnoかの判断基準"><a class="header" href="#4-論理型-booleanyesかnoかの判断基準">4. 論理型 (Boolean)：YesかNoかの判断基準</a></h2>
+<h2 id="iv-論理型-booleanyesかnoかの判断基準"><a class="header" href="#iv-論理型-booleanyesかnoかの判断基準">IV. 論理型 (Boolean)：YesかNoかの判断基準</a></h2>
 <p>プログラムが「もし〜なら、これをする」という制御（せいぎょ）を行う際、その土台となるのが「論理（ろんり）」型です。</p>
-<p><strong>2つの値だけ</strong></p>
+<h3 id="1-2つの値だけ"><a class="header" href="#1-2つの値だけ">1. 2つの値だけ</a></h3>
 <p>論理型には、true（真／正しい） と false（偽／間違い） の2つの値しか存在しません。</p>
-<p><strong>比較と組み合わせ</strong></p>
+<h3 id="2-比較と組み合わせ"><a class="header" href="#2-比較と組み合わせ">2. 比較と組み合わせ</a></h3>
 <p>比較演算子を使うと、結果として論理型の値が得られます。</p>
 <ul>
 <li>score === 100 （スコアは100と厳密に等しいか？）</li>
@@ -336,7 +336,7 @@ console.log(multiLine);">実行</button></p>
 <p>※ 比較演算子と論理演算子については、次の章で、もっと詳（くわ）しく説明します</p>
 <p>論理型を正しく理解すると、複雑なシステムの判断ロジックを整理して、ユーザーの入力に対して「正しく反応する」プログラムを書くことができるようになります。</p>
 <hr>
-<h2 id="5-未定義型-undefined値が決まっていない状態"><a class="header" href="#5-未定義型-undefined値が決まっていない状態">5. 未定義型 (Undefined)：値が決まっていない状態</a></h2>
+<h2 id="v-未定義型-undefined値が決まっていない状態"><a class="header" href="#v-未定義型-undefined値が決まっていない状態">V. 未定義型 (Undefined)：値が決まっていない状態</a></h2>
 <p>変数を作ったけれど、中身をまだ何も入れていないとき、JavaScriptはその状態を undefined と表現します。これは「未定義（みていぎ）」型という特殊な型になります。「未定義」とは「まだ定義されていない」という意味です。</p>
 <p><strong>「空の箱」と「存在しない箱」の違い</strong></p>
 <p>初心者の方が間違いやすいのが、以下の違いです。</p>
@@ -346,22 +346,22 @@ console.log(multiLine);">実行</button></p>
 </ul>
 <p>💡 デバッグのヒント 実行結果に undefined と表示されたら、「データの代入を忘れていないか？」「スペルミスをしていないか？」を疑ってみましょう。これはミスを特定するための重要な手がかりになります。</p>
 <hr>
-<h2 id="6-型の変換-type-conversion"><a class="header" href="#6-型の変換-type-conversion">6. 型の変換 (Type Conversion)</a></h2>
+<h2 id="vi-型の変換-type-conversion"><a class="header" href="#vi-型の変換-type-conversion">VI. 型の変換 (Type Conversion)</a></h2>
 <p>Webサイトの入力フォームから受け取るデータは、数字に見えても実際には「文字列」です。これを使って計算するには「型の変換」が必要です。</p>
-<p><strong>データの抽出：parseInt()</strong></p>
+<h3 id="1-データの抽出parseint"><a class="header" href="#1-データの抽出parseint">1. データの抽出：parseInt()</a></h3>
 <p>文字列の中から数字だけを取り出す便利な機能があります。</p>
 <pre><code>console.log(parseInt("55kg"));    // 55 （数字の部分だけ取り出す）
 console.log(parseInt("12.99ドル")); // 12 （整数部分だけ取り出す）
 console.log(parseInt("A123"));    // NaN （先頭が文字だと失敗する）
 </code></pre>
-<p><strong>安全な数値入力の受け取りフロー</strong></p>
+<h3 id="2-安全な数値入力の受け取りフロー"><a class="header" href="#2-安全な数値入力の受け取りフロー">2. 安全な数値入力の受け取りフロー</a></h3>
 <p>プロの現場では、以下のように段階を踏んでデータを処理します。</p>
 <ol>
 <li>受け取る：prompt() などで文字列として入力を受け取る。</li>
 <li>変換する：Number() や parseInt() で数値に変える。</li>
 <li>チェックする：isNaN() で、正しく数字になったか確認する。</li>
 </ol>
-<p><strong>🔍 学習者の味方：typeof 演算子</strong></p>
+<h3 id="3--学習者の味方typeof-演算子"><a class="header" href="#3--学習者の味方typeof-演算子">3. 🔍 学習者の味方：typeof 演算子</a></h3>
 <p>「今のこの変数は、何型なんだろう？」と迷ったときは、typeof を使いましょう。</p>
 <pre><code>const value = "123";
 console.log(typeof value); // "string" と表示される
@@ -371,7 +371,7 @@ console.log(typeof numValue); // "number" と表示される
 </code></pre>
 <p>自分の書いたコードが思ったとおりに動いているか、コンソールで typeof を使って確認するクセをつけましょう。</p>
 <hr>
-<h2 id="7-まとめプログラミングの基礎を固める"><a class="header" href="#7-まとめプログラミングの基礎を固める">7. まとめ：プログラミングの基礎を固める</a></h2>
+<h2 id="vii-まとめプログラミングの基礎を固める"><a class="header" href="#vii-まとめプログラミングの基礎を固める">VII. まとめ：プログラミングの基礎を固める</a></h2>
 <p>変数と型の知識(ちしき)は、これからの学習の土台(どだい)になります。</p>
 <p>💡 <strong>最重要ポイント</strong></p>
 <ul>

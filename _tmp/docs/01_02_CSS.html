@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78abab6b.js";
+            window.path_to_searchindex_js = "searchindex-ebef5985.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -187,7 +187,7 @@
 <p>これから、このHTMLをCSSを使って、デザインを変更してゆきます。</p>
 <p>まず、デザインの基本である「文字のスタイル」について学びましょう。</p>
 <hr>
-<h2 id="1-文字のスタイル文字のデザインを変える"><a class="header" href="#1-文字のスタイル文字のデザインを変える">1. 文字のスタイル（文字のデザインを変える）</a></h2>
+<h2 id="i-文字のスタイル文字のデザインを変える"><a class="header" href="#i-文字のスタイル文字のデザインを変える">I. 文字のスタイル（文字のデザインを変える）</a></h2>
 <p>Webサイトにおいて、文字は情報を伝えるための最も大切な要素です。文字の「読みやすさ」は、ユーザーの体験（UX “User eXperience“のこと）に大きな影響を与えます。</p>
 <p><strong>基本の3つのプロパティ</strong></p>
 <p>まずは、よく使われる以下の3つの命令（プロパティ）を覚えましょう。</p>
@@ -198,6 +198,10 @@
 </ol>
 <p><strong>CSSの書き方の基本</strong></p>
 <p>CSSは、「どの場所に（セレクタ）」「何の項目を（プロパティ）」「どう変えるか（値）」というルールで書きます。</p>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p>ここで <strong>セレクタ</strong> という言葉を覚えてください。Webページを分解して、その一部を取り出すときに、必要な部分を探すためヒントとして使う、名前や特徴です。あとで、非常に重要になってきます。</p>
+</blockquote>
 <pre><code>/* h1タグ（見出し）のデザインを変える例 */
 h1 {
   font-size: 24px;      /* 大きさを24ピクセルにする */
@@ -208,8 +212,8 @@ h1 {
 <p><a href="./html/01_02_CSS_02.html">ここをクリック</a>してみましょう。</p>
 <p>文字のスタイルをマスターしたら、次は特定の「タグ」そのものに命令を出す方法を学びます。</p>
 <hr>
-<h2 id="2-タグのスタイルhtml要素に直接命令する"><a class="header" href="#2-タグのスタイルhtml要素に直接命令する">2. タグのスタイル（HTML要素に直接命令する）</a></h2>
-<p>「タグセレクタ」とは、<code>&lt;h1&gt;</code>や<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code>といったHTMLのタグ名に対して、直接スタイルを適用する方法です。ページ全体のデザインを一度に整えるのにとても便利です。</p>
+<h2 id="ii-タグのスタイルhtml要素に直接命令する"><a class="header" href="#ii-タグのスタイルhtml要素に直接命令する">II. タグのスタイル（HTML要素に直接命令する）</a></h2>
+<p>「タグ セレクタ」とは、<code>&lt;h1&gt;</code>や<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code>といったHTMLのタグ名に対して、スタイルを適用する方法です。ページ全体のデザインを一度に整えるのにとても便利です。</p>
 <p><strong>テーブル（表）のスタイル例</strong></p>
 <p>「テーブル（表）」をきれいに見せるためのプロパティを比較（ひかく）してみましょう。</p>
 <div class="table-wrapper">
@@ -246,30 +250,30 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 </code></pre>
-<p>※注意：border（枠線）は各セル（<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>）に設定し、border-collapseは全体の親である<code>&lt;table&gt;</code>に設定するのが正しいルールです。</p>
+<p>※ 注意：border（枠線）は各セル（<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>）に設定し、border-collapseは全体の親である<code>&lt;table&gt;</code>に設定するのが正しいルールです。</p>
 <p><a href="./html/01_02_CSS_03.html">ここをクリック</a>してみましょう。</p>
 <hr>
-<h2 id="3-特定の要素クラスのスタイル"><a class="header" href="#3-特定の要素クラスのスタイル">3. 特定の要素（クラス）のスタイル</a></h2>
+<h2 id="iii-特定の要素クラスのスタイル"><a class="header" href="#iii-特定の要素クラスのスタイル">III. 特定の要素（クラス）のスタイル</a></h2>
 <p>「クラス（Class）」を使うと、特定のグループに名前をつけて、その名前を呼ぶことでスタイルを適用できます。同じデザインを何度も書かなくて済むため、コードの管理がとても楽になります。</p>
+<p><strong>クラスを使うステップ</strong></p>
+<ol>
+<li>HTMLで名前をつける： <code>&lt;p class="highlight"&gt;</code> のように書きます。</li>
+<li>CSSでデザインを決める： <code>.highlight { color: red; }</code> のように、先頭にドットをつけて書きます。</li>
+</ol>
 <p><strong>クラス名のルール</strong></p>
 <ul>
 <li>名前の始まりには必ず .（ドット） をつけます（例：.main-title）。</li>
 <li>名前は、そのグループが何であるかわかる 意味のある英語 を使います。</li>
 <li>複数の単語を繋げる場合は、JavaScriptと同じ camelCase（キャメルケース） （例：.submitButton）を使うのがおすすめです。JSとCSSで名前の付け方を統一（とういつ）すると、ケアレスミス（不注意な間違い）を減らすことができます。</li>
 </ul>
-<p><strong>クラスを使うステップ</strong></p>
-<ol>
-<li>HTMLで名前をつける： <code>&lt;p class="highlight"&gt;</code> のように書きます。</li>
-<li>CSSでデザインを決める： <code>.highlight { color: red; }</code> のように、先頭にドットをつけて書きます。</li>
-</ol>
 <p><strong>JavaScriptへの繋がり</strong></p>
-<p>JavaScriptには、getElementsByClassName という「クラス名を使って要素を見つける」命令があります。CSSでクラスを使ってグループ化しておけば、後でJavaScriptからそのグループだけを一度に動かすことが非常に簡単になります。</p>
+<p>JavaScriptには、<code>getElementsByClassName()</code> という「クラス名を使って要素を見つける」命令があります。CSSでクラスを使ってグループ化しておけば、後でJavaScriptからそのグループだけを一度に動かすことが非常に簡単になります。</p>
 <pre><code>/* highlightクラスのデザインを変える例 */
 .highlight { color: red; }
 </code></pre>
 <p><a href="./html/01_02_CSS_04.html">ここをクリック</a>してみましょう。</p>
 <hr>
-<h2 id="4-特定の状態のスタイル"><a class="header" href="#4-特定の状態のスタイル">4. 特定の状態のスタイル</a></h2>
+<h2 id="iv-特定の状態のスタイル"><a class="header" href="#iv-特定の状態のスタイル">IV. 特定の状態のスタイル</a></h2>
 <p>Webページには「ふだんの状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong>疑似（ぎじ）クラス</strong> と呼びます。</p>
 <p><strong>代表的な疑似クラス：:hover</strong></p>
 <p>最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。</p>
@@ -289,7 +293,7 @@ a:hover {
 </code></pre>
 <p><a href="./html/01_02_CSS_05.html">ここをクリック</a>してみましょう。</p>
 <hr>
-<h2 id="5-javascriptからcssを操作する重要ルール"><a class="header" href="#5-javascriptからcssを操作する重要ルール">5. JavaScriptからCSSを操作する重要ルール</a></h2>
+<h2 id="v-javascriptからcssを操作する重要ルール"><a class="header" href="#v-javascriptからcssを操作する重要ルール">V. JavaScriptからCSSを操作する重要ルール</a></h2>
 <p>JavaScriptを使ってデザインを書き換えるとき、CSSのプロパティ名の書き方が少し変わるという「重要なルール」があります。</p>
 <p><strong>キャメルケースへの変換（へんかん）</strong></p>
 <p>CSSでハイフン（-）を使っていた名前は、JavaScriptではハイフンを消して、次の文字を大文字にする 「キャメルケース」 に書き換えます。</p>
@@ -320,14 +324,14 @@ document.getElementById("title").style.color = "red";
 <p>このように、ドット（.）で繋ぐことで、操作したい場所へ順番にたどり着くことができます。</p>
 <p>【参考】この「道のり」を英語を使って「パス(path)」と呼ぶことがあります。</p>
 <hr>
-<h2 id="6-css基礎のまとめ"><a class="header" href="#6-css基礎のまとめ">6. CSS基礎のまとめ</a></h2>
+<h2 id="vi-css基礎のまとめ"><a class="header" href="#vi-css基礎のまとめ">VI. CSS基礎のまとめ</a></h2>
 <ul>
 <li>文字スタイル： font-size や color で読みやすくする。</li>
 <li>タグスタイル： タグに直接命令し、border（1px solid black）などで整える。</li>
 <li>クラス： 名前をつけてグループ化し、JavaScriptからも操作しやすくする。</li>
 <li>疑似（ぎじ）クラス： :hover でユーザーの動きに反応させる。</li>
 </ul>
-<p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための近道（ちかみち）です。また、CSSで自分の思い通りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは「自分の書いたコードで画面が変わる楽しさ」を大切にしてください。</p>
+<p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための近道（ちかみち）です。また、CSSで自分の思い通りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは <strong>「自分の書いたコードで画面が変わる楽しさ」</strong> を大切にしてください。</p>
 
                     </main>
 

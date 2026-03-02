@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78abab6b.js";
+            window.path_to_searchindex_js = "searchindex-ebef5985.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -174,8 +174,8 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="オブジェクトの中を見てみる"><a class="header" href="#オブジェクトの中を見てみる">オブジェクトの中を見てみる</a></h1>
-<h2 id="1-オブジェクトとは"><a class="header" href="#1-オブジェクトとは">1. オブジェクトとは？</a></h2>
+                        <h1 id="オブジェクトの中を見てみてみよう"><a class="header" href="#オブジェクトの中を見てみてみよう">オブジェクトの中を見てみてみよう</a></h1>
+<h2 id="i-オブジェクトとは"><a class="header" href="#i-オブジェクトとは">I. オブジェクトとは？</a></h2>
 <p>オブジェクトについて、もう少し詳しく説明しましょう。</p>
 <p>ここまでは「オブジェクトを使う」という目的のために必要なことを、できるだけ簡単に説明してきました。いわば、自動販売機を外側から見ていたようなものです。</p>
 <p>自動販売機を使うには</p>
@@ -189,7 +189,7 @@
 <p>心配しなくても、難しいことはありません。</p>
 <p>一言でいうと、オブジェクトは <strong>「関係（かんけい）がある 情報を まとめたもの」</strong> です。</p>
 <p>ここでは、<strong>「プロフィールのカード」</strong> や <strong>「キャラクター」</strong> に例えて説明します。</p>
-<h2 id="2-イメージは自己紹介じこしょうかいカード"><a class="header" href="#2-イメージは自己紹介じこしょうかいカード">2. イメージは「自己紹介（じこしょうかい）カード」</a></h2>
+<h2 id="ii-イメージは自己紹介じこしょうかいカード"><a class="header" href="#ii-イメージは自己紹介じこしょうかいカード">II. イメージは「自己紹介（じこしょうかい）カード」</a></h2>
 <p>例えば、ある留学生のことを変数（へんすう）で表してみます。すると、こんなふうになります。</p>
 <ul>
 <li><code>let name = "マリア";</code></li>
@@ -197,7 +197,7 @@
 <li><code>let country = "ブラジル";</code></li>
 </ul>
 <p>しかし、これだと、情報がバラバラで管理（かんり）が大変です。そこで、これらを1枚のカードにまとめてみます。</p>
-<h2 id="3-オブジェクトの書き方"><a class="header" href="#3-オブジェクトの書き方">3. オブジェクトの書き方</a></h2>
+<h2 id="iii-オブジェクトの書き方"><a class="header" href="#iii-オブジェクトの書き方">III. オブジェクトの書き方</a></h2>
 <p>JavaScriptでは <code>{ }</code> を使って、このように書きます。</p>
 <pre><code class="language-javascript">const student = {
   name: "マリア",  // 名前
@@ -207,7 +207,7 @@
 
 </code></pre>
 <p>このように、<strong>いくつかの情報を1枚のカードにまとめたもの</strong> 、それが「オブジェクト」です。</p>
-<h2 id="4-プロパティ"><a class="header" href="#4-プロパティ">4. プロパティ</a></h2>
+<h2 id="iv-プロパティ"><a class="header" href="#iv-プロパティ">IV. プロパティ</a></h2>
 <p>カードの中の一つ一つの情報を <strong>「プロパティ」</strong> と言います。カードの中から情報を取り出すときは、<strong>「.（ドット）」</strong> を使います。</p>
 <ul>
 <li><code>student.name</code> → 「マリア」が出てくる！</li>
@@ -217,13 +217,13 @@
 <pre><code>document.body.style.backgroundColor = "red";
 </code></pre>
 <p>このコードは、documentオブジェクトの中のbodyオブジェクトの、backgroundColor（プロパティ）を“red“に変えるという命令です。</p>
-<h2 id="5-メソッド-特徴と動きをセットにできる"><a class="header" href="#5-メソッド-特徴と動きをセットにできる">5. メソッド: 「特徴」と「動き」をセットにできる</a></h2>
+<h2 id="v-メソッド-特徴と動きをセットにできる"><a class="header" href="#v-メソッド-特徴と動きをセットにできる">V. メソッド: 「特徴」と「動き」をセットにできる</a></h2>
 <p>オブジェクトのすごいところは、<strong>データ（特徴）</strong> だけでなく、<strong>関数（動き）</strong> も一緒にまとめられることです。オブジェクトに含まれる関数を <strong>メソッド</strong> と言います。</p>
 <ul>
 <li><strong>プロパティ（特徴）：</strong> 名前、身長、色、値段など</li>
 <li><strong>メソッド（動き）：</strong> 走る、話す、計算するなど</li>
 </ul>
-<h2 id="6-ゲームのキャラクターで例えると"><a class="header" href="#6-ゲームのキャラクターで例えると">6. ゲームのキャラクターで例えると：</a></h2>
+<h2 id="vi-ゲームのキャラクターで例えると"><a class="header" href="#vi-ゲームのキャラクターで例えると">VI. ゲームのキャラクターで例えると：</a></h2>
 <p>「オブジェクト」の考え方は、ゲームのキャラクターに例えると非常に分かりやすくなります。</p>
 <ul>
 <li>オブジェクト： キャラクター自身（例：勇者アレン）</li>
@@ -242,7 +242,7 @@
 };
 
 </code></pre>
-<h2 id="7-なぜオブジェクトを使うの"><a class="header" href="#7-なぜオブジェクトを使うの">7. なぜ「オブジェクト」を使うの？</a></h2>
+<h2 id="vii-なぜオブジェクトを使うの"><a class="header" href="#vii-なぜオブジェクトを使うの">VII. なぜ「オブジェクト」を使うの？</a></h2>
 <p>世界にあるものは、すべて「名前」や「状態（じょうたい）」や「動き」を持っていますよね。</p>
 <ul>
 <li><strong>車：</strong> 名前、色、スピード、ブレーキをかける動き</li>
