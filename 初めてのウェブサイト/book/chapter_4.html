@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ウェブサイトをデザインするCSS - 初めてのウェブサイト</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-d399a07a.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-53e519e3.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">初めてのウェブサイト</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="ウェブサイトをデザインするcss"><a class="header" href="#ウェブサイトをデザインするcss">ウェブサイトをデザインするCSS</a></h1>
+<h2 id="1-はじめにcssとは何でしょうか"><a class="header" href="#1-はじめにcssとは何でしょうか">1. はじめに：CSSとは何でしょうか？</a></h2>
+<p>ウェブサイトを作るとき、文字や画像などの「内容」を準備するだけでは、まだデザインが完成していません。そこで使われるのが**CSS（シーエスエス）**です。</p>
+<p>CSSは、ウェブサイトの「見た目」を整えるための専用の言葉です。HTMLで作成した文章に色をつけたり、大きさを変えたり、好きな場所に並べたりすることができます。</p>
+<p>HTML（内容）とCSS（スタイル）の違い</p>
+<p>ウェブサイトは、主に2つの役割が組み合わさってできています。</p>
+<ul>
+<li>HTML（内容）： 「ここにタイトルがある」「ここに文章がある」という、サイトの骨組み（土台）を作ります。</li>
+<li>CSS（スタイル）： 「タイトルを青色にする」「文章の横幅を600ピクセルにする」といった、見た目を美しく飾ります。</li>
+</ul>
+<p>CSSを使ってデザインを整えることで、ウェブサイトはもっと読みやすくなり、訪れた人に「使いやすい」と感じてもらえるようになります。</p>
+<p>CSSの定義</p>
+<ul>
+<li>スタイルシート言語： プログラミング言語ではなく、見た目を指定するための特別な言葉です。</li>
+<li>要素（えれめんと）の装飾： HTMLで書かれた特定の場所を選んで、その見た目を変えることができます。</li>
+</ul>
+<p>次のセクションでは、CSSを実際にどうやって書くのか、その基本ルールを学びましょう。</p>
+<hr>
+<h2 id="2-cssの書き方構文を覚えましょう"><a class="header" href="#2-cssの書き方構文を覚えましょう">2. CSSの書き方（構文）を覚えましょう</a></h2>
+<p>CSSを書くときには、決まった形（構文：こうぶん）があります。「どこの」「何を」「どう変えるか」という順番で指示を書きます。</p>
+<p>CSSを構成するパーツ</p>
+<p>CSSは、以下のパーツを組み合わせて作ります。</p>
+<ol>
+<li>セレクター（選びたい場所）： デザインを変えたいHTMLの要素（タグなど）を指定します。</li>
+<li>プロパティ（変えたい項目）： 色、大きさ、場所など、何を変えるかを選びます。</li>
+<li>値（あたい：設定する内容）： 具体的にどんな色にするか、どのくらいの大きさにするかを決めます。</li>
+</ol>
+<p>宣言とルールセット</p>
+<p>CSSでは、プロパティと値を組み合わせたペアを**「宣言（せんげん：Declaration）」と呼びます。そして、セレクターと { } で囲まれた複数の宣言をまとめたものを「ルールセット（Ruleset）」**、または短く「ルール」と呼びます。</p>
+<p>書き方のルールとコード例</p>
+<p>プロパティの後には必ずコロン : を、値の後には必ずセミコロン ; を書くのがルールです。</p>
+<p>p {
+color: red; /* 宣言1：文字の色（プロパティ）を赤（値）にします <em>/
+font-size: 16px; /</em> 宣言2：文字の大きさ（プロパティ）を16ピクセル（値）にします */
+}</p>
+<p>書き方を理解したら、次は作成したCSSをHTMLに読み込ませる方法を確認しましょう。</p>
+<hr>
+<h2 id="3-htmlにcssを読み込ませる方法"><a class="header" href="#3-htmlにcssを読み込ませる方法">3. HTMLにCSSを読み込ませる方法</a></h2>
+<p>CSSを書くだけでは、ウェブサイトにデザインは反映されません。HTMLとCSSを正しく「つなぐ」手順が必要です。</p>
+<p>正確な設定が大切な理由</p>
+<p>ウェブサイトを作るときは、ファイルを整理するために styles という名前のフォルダを作り、その中に style.css というファイルを作成するのが一般的です。</p>
+<p>HTMLファイルの <head> （ヘッド：サイトの設定を書く場所）の中に、以下の1行を書き込みます。</head></p>
+<link href="styles/style.css" rel="stylesheet" />
+<p>【トラブルを避けるポイント】 もしフォルダの名前やファイルの名前が1文字でも間違っていると、デザインはまったく表示されません。styles/style.css という「道すじ（パス）」が、実際のフォルダ構成とぴったり合っているか、慎重に確認しましょう。</p>
+<p>つなぎ方がわかったら、次は文字のデザインをきれいにしてみましょう。</p>
+<hr>
+<h2 id="4-文字のデザインをきれいにするフォントとテキスト"><a class="header" href="#4-文字のデザインをきれいにするフォントとテキスト">4. 文字のデザインをきれいにする（フォントとテキスト）</a></h2>
+<p>文字の見た目は、サイトを訪れる人の「読みやすさ」に大きく影響します。適切なフォントを選ぶことは、サイトを「信頼できるプロのような印象」にするための大切な戦略です。</p>
+<p>Google Fonts（グーグルフォント）の利用</p>
+<p>標準のフォント以外を使いたいときは、Google Fontsなどのサービスを使います。HTMLの <head> 内に、自分の CSS（style.css）よりも前に読み込ませるのがポイントです。</head></p>
+<!-- Google Fontsの読み込み例（自分のCSSより前に書きます） -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="styles/style.css" rel="stylesheet" />
+<p>読みやすさを高めるプロパティ</p>
+<p>以下の設定を組み合わせることで、テキストの印象を劇的に変えることができます。</p>
+<ul>
+<li>font-family（フォントの種類）： 文字の形を決めます。</li>
+<li>font-size（文字の大きさ）： 読みやすい大きさに調整します（例: 10px, 20px）。</li>
+<li>text-align（文字の配置）： center を指定すると、文字を中央に寄せられます。</li>
+<li>line-height（行の高さ）： 行と行の間隔を広げて、読みやすくします。</li>
+<li>letter-spacing（文字の間隔）： 文字と文字の隙間を調整します。</li>
+</ul>
+<p>文字の次は、ウェブサイトのレイアウトを決める「ボックス」の考え方に進みます。</p>
+<hr>
+<h2 id="5-すべては箱ボックスでできている"><a class="header" href="#5-すべては箱ボックスでできている">5. すべては「箱（ボックス）」でできている</a></h2>
+<p>CSSの世界では、すべての要素（見出し、文章、画像など）は「箱（ボックス）」の中に入っていると考えます。これを**「ボックスモデル」**と呼びます。</p>
+<p>ボックスを構成する4つのパーツ</p>
+<p>ボックスは、中心から外側に向かって4つの層でできています。</p>
+<p>要素	やさしい日本語での説明
+Content（コンテンツ）	文字や画像が入る、一番中心のスペース。
+Padding（パディング）	中身（コンテンツ）と枠線の間にある「内側の余白」。
+Border（ボーダー）	ボックスを囲む「枠線（境界線）」。
+Margin（マージン）	枠線の外側にある、他の要素との「外側の余白（すきま）」。</p>
+<p>これらの数値を調整することで、要素同士がくっつきすぎないように、心地よい距離感を作ることができます。</p>
+<hr>
+<h2 id="6-ページ全体のレイアウトを整える色と配置"><a class="header" href="#6-ページ全体のレイアウトを整える色と配置">6. ページ全体のレイアウトを整える（色と配置）</a></h2>
+<p>背景に色をつけたり、全体を真ん中に寄せたりすることで、サイトはより本格的になります。ここでは、MDN（技術ドキュメント）で紹介されている具体的な設定を使ってみましょう。</p>
+<p>全体の色と幅を決める</p>
+<p>まず、ページ全体の背景色を濃い青（例: dark blue）にし、コンテンツを表示する body の横幅を 600px に固定します。</p>
+<p>html {
+background-color: #00539F; /* ページ全体の背景を青にします */
+}</p>
+<p>body {
+width: 600px; /* 全体の幅を600ピクセルに固定します <em>/
+margin: 0 auto; /</em> 上下は0、左右は「自動（auto）」で分けて中央に寄せます <em>/
+background-color: #FF9500; /</em> bodyの背景を赤みのあるオレンジにします <em>/
+padding: 0 20px 20px 20px; /</em> 内側に余白を作ります <em>/
+border: 5px solid black; /</em> 黒い枠線で囲みます */
+}</p>
+<ul>
+<li>margin: 0 auto; の仕組み： auto（自動）を指定すると、ブラウザが左右の余ったスペースを半分ずつに分けてくれます。その結果、コンテンツが画面の真ん中に配置されます。</li>
+</ul>
+<p>タイトルに影をつける</p>
+<p>text-shadow（テキスト・シャドウ）を使うと、文字に影をつけて目立たせることができます。</p>
+<p>h1 {
+text-shadow: 3px 3px 1px black; /* 横に3px、縦に3px、ぼかし1px、黒い影 */
+}</p>
+<p>画像を中央に置く</p>
+<p>画像（img）を中央に置くには、少し工夫が必要です。</p>
+<p>img {
+display: block; /* 画像を「ボックス」として扱うように変えます <em>/
+margin: 0 auto; /</em> これで中央に寄るようになります */
+}</p>
+<ul>
+<li>なぜ display: block; が必要なのか： 画像はもともと「インライン要素（文字のように横に並ぶ要素）」なので、そのままでは margin: 0 auto のルールがうまく効きません。そのため、一度「ブロック要素（箱のような要素）」に変える必要があります。</li>
+</ul>
+<hr>
+<h2 id="7-おわりに素敵なウェブサイトを作るために"><a class="header" href="#7-おわりに素敵なウェブサイトを作るために">7. おわりに：素敵なウェブサイトを作るために</a></h2>
+<p>今回学んだ「ルールセットの書き方」や「ボックスモデル」の考え方は、ウェブ制作のあらゆる場面で使われる最も大切な土台です。この基礎があるからこそ、将来的に動きのあるアニメーションや、複雑なレイアウトも作れるようになります。</p>
+<p>最後に、学習を続けるためのアドバイスを3つお伝えします。</p>
+<ol>
+<li>値をいろいろ変えてみる： ピクセル数（px）や色（#000000など）を書き換えて、画面がどう変わるか自分の目で確かめてみましょう。</li>
+<li>他のサイトを「箱」として見る： 普段見ているサイトも、「ここはパディングが広いな」「この箱は真ん中にあるな」と意識して見てみてください。</li>
+<li>1つずつ試す： 一度にたくさん書こうとせず、1つのルールを書くたびに保存して、ブラウザで確認しながら進めるのが上達の近道です。</li>
+</ol>
+<p>楽しみながら、あなただけの素敵なウェブサイトを完成させてください！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
