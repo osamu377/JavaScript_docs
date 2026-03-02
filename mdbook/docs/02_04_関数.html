@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-78abab6b.js";
+            window.path_to_searchindex_js = "searchindex-ebef5985.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-bc46d24f.js"></script>
@@ -180,7 +180,7 @@
 <p>実は、今までにも、関数は使っていました。<code>alert()</code>, <code>Number()</code>などは、あらかじめJavaScriptが用意している関数です。</p>
 <p>一緒に学んでいきましょう。</p>
 <hr>
-<h2 id="1-用語の整理"><a class="header" href="#1-用語の整理">1. 用語の整理</a></h2>
+<h2 id="i-用語の整理"><a class="header" href="#i-用語の整理">I. 用語の整理</a></h2>
 <p>関数について説明する前に、整理しておきたい言葉があります。前に出てきた言葉ですが、ここで復習しておきましょう。</p>
 <p>プログラミングを勉強していると、漢字が並んでいて難しく感じますよね。<strong>「演算子」</strong> と <strong>「式」</strong> と <strong>「文」</strong> です。これらは、プログラミングの <strong>「文法（ぶんぽう）」</strong> の名前です。そして、どれもプログラムの動きを書くためのものです。</p>
 <p>日本語の「単語（たんご）」「句（く）」「文（ぶん）」の違いに似ています。</p>
@@ -228,7 +228,7 @@
 <p><strong>見分けかたのコツ：</strong>
 最後に <code>;</code>（セミコロン）がついているものは、ほとんどの場合 <strong>「文」</strong> です。日本語の「。」（まる）と同じです。</p>
 </blockquote>
-<h2 id="2-関数かんすうとは何か"><a class="header" href="#2-関数かんすうとは何か">2. 関数（かんすう）とは何か？</a></h2>
+<h2 id="ii-関数かんすうとは何か"><a class="header" href="#ii-関数かんすうとは何か">II. 関数（かんすう）とは何か？</a></h2>
 <p>「関数（かんすう）」は、プログラミングの中でとても便利な <strong>「魔法の箱（まほうのはこ）」</strong> や <strong>「自動販売機（じどうはんばいき）」</strong> のようなものです。</p>
 <p>漢字で見ると難しそうですが、その中身は、いくつかの <strong>「文」</strong> を一つ（ひとつ）にまとめた <strong>「セット」</strong> です。とてもシンプルですよ！</p>
 <p><strong>関数は「料理マシン」と同じ！</strong></p>
@@ -254,7 +254,7 @@
 </ul>
 <p>次は、この便利な「関数」をどうやって作るのか、ルールを見ていきましょう。</p>
 <hr>
-<h2 id="2-関数の作り方定義ていぎ"><a class="header" href="#2-関数の作り方定義ていぎ">2. 関数の作り方（定義：ていぎ）</a></h2>
+<h2 id="iii-関数の作り方定義ていぎ"><a class="header" href="#iii-関数の作り方定義ていぎ">III. 関数の作り方（定義：ていぎ）</a></h2>
 <p>関数を新しく作ることを「定義（ていぎ）」と言います。 JavaScriptでは、誰が見ても分かりやすいように、名前の付け方に世界共通のルールがあります。</p>
 <p><strong>基本の書き方</strong></p>
 <p>以下のキーワードと記号を組み合わせて作ります。</p>
@@ -279,7 +279,7 @@ function sayHello() {
 </code></pre>
 <p>これで「準備」ができました。次は、これを目的に合わせて「動かす」方法を説明します。</p>
 <hr>
-<h2 id="3-関数の呼び出し実行じっこう"><a class="header" href="#3-関数の呼び出し実行じっこう">3. 関数の呼び出し（実行：じっこう）</a></h2>
+<h2 id="iv-関数の呼び出し実行じっこう"><a class="header" href="#iv-関数の呼び出し実行じっこう">IV. 関数の呼び出し（実行：じっこう）</a></h2>
 <p>関数を作っただけでは、プログラムは動きません。作った関数を動かすことを <strong>「呼び出し」</strong> と言います。初心者の方は「定義（準備）」と「呼び出し（実行）」を分けて考えることがとても大切です。</p>
 <p><strong>呼び出しの仕組み</strong></p>
 <p>関数名のあとに () をつけると、中身が動き出します。 sayHello(); と書くと、先ほど {} の中に書いたメッセージが表示されます。</p>
@@ -305,7 +305,7 @@ function sayHello() {
 </script>
 <p><button onclick="sayHello()">ボタンを押してね</button></p>
 <br>
-<h2 id="4-引数ひきすうの活用と注意点"><a class="header" href="#4-引数ひきすうの活用と注意点">4. 引数（ひきすう）の活用と注意点</a></h2>
+<h2 id="v-引数ひきすうの活用と注意点"><a class="header" href="#v-引数ひきすうの活用と注意点">V. 引数（ひきすう）の活用と注意点</a></h2>
 <p>今度は引数をとる関数を作ってみましょう。</p>
 <p>「名前を呼んで、挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
 <pre><code class="language-javascript">// 1. マシンを作る（定義：ていぎ）
@@ -341,7 +341,7 @@ function sayHelloName(name) {
 <br>
 <p>次は、変数の「使える範囲」について学びます。</p>
 <hr>
-<h2 id="5-変数のスコープscope変数の見える範囲"><a class="header" href="#5-変数のスコープscope変数の見える範囲">5. 変数のスコープ（Scope）：変数の見える範囲</a></h2>
+<h2 id="vi-変数のスコープscope変数の見える範囲"><a class="header" href="#vi-変数のスコープscope変数の見える範囲">VI. 変数のスコープ（Scope）：変数の見える範囲</a></h2>
 <p>変数は、どこからでも見えるわけではありません。この「見える範囲」をスコープと呼びます。スコープを正しく使うことで、プログラムのミス（バグ）を減らすことができます。</p>
 <p>プログラミングの「スコープ（Scope）」は、日本語でいうと <strong>「有効（ゆうこう）な範囲（はんい）」</strong>、つまり <strong>「その変数がどこまで使えるか」というルールのこと</strong> です。</p>
 <h3 id="グローバルスコープ-global-scope"><a class="header" href="#グローバルスコープ-global-scope">グローバルスコープ (Global Scope)</a></h3>
@@ -478,7 +478,7 @@ let age = 25; // ❌ エラー！「もうありますよ！」と教えてく�
 つまり、「もう決まっていて動かない」という意味だと教えると分かりやすいですよ。</p>
 </blockquote>
 <hr>
-<h2 id="6-無名関数むめいかんすう"><a class="header" href="#6-無名関数むめいかんすう">6. 無名関数（むめいかんすう）</a></h2>
+<h2 id="vii-無名関数むめいかんすう"><a class="header" href="#vii-無名関数むめいかんすう">VII. 無名関数（むめいかんすう）</a></h2>
 <p>ここまで「関数（マシン）」についてお話ししました。次は、そのマシンの <strong>「ちょっと特別な形」</strong> である、<strong>無名関数（むめいかんすう）とアロー関数</strong> について説明します。</p>
 <p>どちらも、今のJavaScriptでは毎日使うとても大切な書き方です！</p>
 <hr>
@@ -558,7 +558,7 @@ setTimeout(() =&gt; {
 </blockquote>
 <p>いかがでしょうか？「矢印（<code>=&gt;</code>）が出てきたら、短い関数の合図だ！」と覚えると簡単ですよ。</p>
 <hr>
-<h2 id="7-まとめ"><a class="header" href="#7-まとめ">7. まとめ</a></h2>
+<h2 id="viii-まとめ"><a class="header" href="#viii-まとめ">VIII. まとめ</a></h2>
 <p>JavaScriptの「関数」をマスターするために、5つのポイントを振り返りましょう。</p>
 <ul>
 <li>定義： function を使い、動詞から始まる名前をつけてセットにしましょう。</li>
