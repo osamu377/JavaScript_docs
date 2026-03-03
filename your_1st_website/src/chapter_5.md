@@ -41,12 +41,6 @@ JavaScriptの全体像が分かったところで、次はコードを書くた�
 3. 条件分岐 (Conditionals)： 「もし〜なら、Aをする。そうでなければBをする」という「判断の仕組み」です。
 4. イベント (Events)： 「ボタンをクリックした」など、ブラウザで起きる「きっかけ」のことです。
 
-**API（エーピーアイ）について**
-
-APIは、JavaScriptがブラウザなどの環境と「対話するための機能」です。例えば「DOM API」という道具を使うと、HTMLの文字を変えたり、新しい要素を追加したりすることができます。
-
-基本の道具を理解したら、次は実際に自分のウェブサイトにJavaScriptを取り入れる方法を学びます。
-
 
 --------------------------------------------------------------------------------
 
@@ -66,7 +60,7 @@ HTML、CSS、JavaScriptの3つが「いっしょに働く（連携する）」�
 
 * 解説： これはCSSを読み込む `<link>` と同じ役割です。これでHTMLにJavaScriptの力が加わります。
 
-要素を選んで動かす
+**要素を選んで動かす**
 
 JavaScriptでHTMLを変えるときは、「まず場所を選び、次に内容を変える」という順番で動かします。
 
@@ -98,17 +92,18 @@ myHeading.textContent = 'Hello world!';
 
 実践コード
 
-※実行するには、images フォルダの中に2枚の画像ファイルが必要です。
+※ 実行するには、images フォルダの中に2枚の画像ファイルが必要です。ここでは、二つの画像ファイルの名前を、「photo1.jpg」「photo2.jpg」とます。
+
 
 ```javascript
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/firefox-icon.png') {
-    myImage.setAttribute('src', 'images/firefox2.png');
+  if (mySrc === 'images/images/photo1.jpg') {
+    myImage.setAttribute('src', 'images/photo2.jpg');
   } else {
-    myImage.setAttribute('src', 'images/firefox-icon.png');
+    myImage.setAttribute('src', 'images/photo1.jpg');
   }
 }
 ```
