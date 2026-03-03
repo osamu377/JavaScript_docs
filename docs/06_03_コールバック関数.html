@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
+            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d67824dc.js"></script>
+        <script src="toc-51c4b39c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,14 +174,15 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <p>留学生（りゅうがくせい）のみなさんにもわかりやすいように、**「コールバック関数（かんすう）」**をやさしい日本語で説明（せつめい）します。</p>
+                        <h1 id="コールバック関数"><a class="header" href="#コールバック関数">コールバック関数</a></h1>
+<p>留学生（りゅうがくせい）のみなさんにもわかりやすいように、**「コールバック関数（かんすう）」**をやさしい日本語で説明（せつめい）します。</p>
 <hr>
-<h2 id="1-コールバック関数を一言ひとことでいうと"><a class="header" href="#1-コールバック関数を一言ひとことでいうと">1. コールバック関数を一言（ひとこと）でいうと？</a></h2>
+<h2 id="i-コールバック関数を一言ひとことでいうと"><a class="header" href="#i-コールバック関数を一言ひとことでいうと">I. コールバック関数を一言（ひとこと）でいうと？</a></h2>
 <p><strong>「あとで やってね！という お願（ねが）いのメモ」</strong> です。</p>
 <p>ふつうのプログラムは、上から下へ順番（じゅんばん）に進（すす）みます。
 でも、コールバック関数は「今すぐ」ではなく、<strong>「ある時（とき）が来たら」</strong> 動くように予約（よ予約）する命令（めいれい）です。</p>
 <hr>
-<h2 id="2-お店でのちゅうもんで-たとえてみましょう"><a class="header" href="#2-お店でのちゅうもんで-たとえてみましょう">2. 「お店でのちゅうもん」で たとえてみましょう</a></h2>
+<h2 id="ii-お店でのちゅうもんで-たとえてみましょう"><a class="header" href="#ii-お店でのちゅうもんで-たとえてみましょう">II. 「お店でのちゅうもん」で たとえてみましょう</a></h2>
 <p>あなたがレストランへ行きました。</p>
 <ol>
 <li><strong>あなた（メインプログラム）：</strong> 店員さんに「オムライスをください。<strong>できあがったら、ベルを鳴（な）らしてください</strong>」と言いました。</li>
@@ -190,7 +191,7 @@
 </ol>
 <p>この「できあがったら、〇〇してね」という**「〇〇」の部分**がコールバック関数です。</p>
 <hr>
-<h2 id="3-foreach-の中での動き"><a class="header" href="#3-foreach-の中での動き">3. <code>forEach</code> の中での動き</a></h2>
+<h2 id="iii-foreach-の中での動き"><a class="header" href="#iii-foreach-の中での動き">III. <code>forEach</code> の中での動き</a></h2>
 <p><code>forEach</code> は、配列（はいれつ／データのリスト）の中身を一つずつ見（み）ていく命令です。</p>
 <pre><code class="language-javascript">// 果物（くだもの）の名前のリスト
 const fruits = ["りんご", "バナナ", "みかん"];
@@ -210,7 +211,7 @@ fruits.forEach((item) =&gt; {
 </ul>
 <p>これを、リストが終わるまで繰り返（くりかえ）します。</p>
 <hr>
-<h2 id="4-なぜコールバックという名前なの"><a class="header" href="#4-なぜコールバックという名前なの">4. なぜ「コールバック」という名前なの？</a></h2>
+<h2 id="iv-なぜコールバックという名前なの"><a class="header" href="#iv-なぜコールバックという名前なの">IV. なぜ「コールバック」という名前なの？</a></h2>
 <p>英語（えいご）の <strong>“Call back”（電話をかけなおす）</strong> と同じ意味です。</p>
 <ul>
 <li><strong>ふつうの関数：</strong> あなたが関数を「呼ぶ（Call）」。</li>
@@ -223,11 +224,10 @@ fruits.forEach((item) =&gt; {
 <li><strong>コールバック関数</strong> ＝ 他のプログラムに「これ、あとで使ってね」と渡す関数のこと。</li>
 <li><strong>forEach</strong> ＝ リストのデータ一つずつに、コールバック関数を動かしてあげる役（やく）割。</li>
 </ul>
-<p><strong>次は、このコールバック関数を使って「数字（すうじ）の合計（ごうけい）」を計算（けいさん）するコードを書いてみましょうか？</strong></p>
-<p>「数字（すうじ）の合計（ごうけい）」を計算（けいさん）するコードですね。
-やさしい日本語（にほんご）で説明（せつめい）しながら書（か）きます。</p>
 <hr>
-<h2 id="1-合計ごうけいを計算するプログラム"><a class="header" href="#1-合計ごうけいを計算するプログラム">1. 合計（ごうけい）を計算するプログラム</a></h2>
+<h2 id="v-プログラム例"><a class="header" href="#v-プログラム例">V. プログラム例</a></h2>
+<p>「数字（すうじ）の合計（ごうけい）」を計算（けいさん）するコードを書いてみます。やさしい日本語（にほんご）で説明（せつめい）しながら書（か）きます。</p>
+<h3 id="1-合計ごうけいを計算するプログラム"><a class="header" href="#1-合計ごうけいを計算するプログラム">1. 合計（ごうけい）を計算するプログラム</a></h3>
 <p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
 <pre><code class="language-javascript">// 1. 数字のリストを作ります
 const numbers = [10, 20, 30, 40];
@@ -247,10 +247,10 @@ console.log("ぜんぶの合計は " + total + " です！");
 
 </code></pre>
 <hr>
-<h2 id="2-プログラムの動うごきを解説かいせつ"><a class="header" href="#2-プログラムの動うごきを解説かいせつ">2. プログラムの動（うご）きを解説（かいせつ）</a></h2>
-<h3 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h3>
+<h3 id="2-プログラムの動うごきを解説かいせつ"><a class="header" href="#2-プログラムの動うごきを解説かいせつ">2. プログラムの動（うご）きを解説（かいせつ）</a></h3>
+<h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
 <p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h3 id="②-コールバック関数の仕事しごと"><a class="header" href="#②-コールバック関数の仕事しごと">② コールバック関数の仕事（しごと）</a></h3>
+<h4 id="②-コールバック関数の仕事しごと"><a class="header" href="#②-コールバック関数の仕事しごと">② コールバック関数の仕事（しごと）</a></h4>
 <p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック関数）です。</p>
 <ul>
 <li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
@@ -260,17 +260,13 @@ console.log("ぜんぶの合計は " + total + " です！");
 </ul>
 <p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
 <hr>
-<h2 id="3-もっと短みじかく書く方法"><a class="header" href="#3-もっと短みじかく書く方法">3. もっと短（みじか）く書く方法</a></h2>
+<h3 id="3-もっと短みじかく書く方法"><a class="header" href="#3-もっと短みじかく書く方法">3. もっと短（みじか）く書く方法</a></h3>
 <p>プログラミングに慣（な）れてきたら、こんな書き方もできます。</p>
 <ul>
 <li><code>total = total + num;</code></li>
 <li><strong><code>total += num;</code></strong> （これでも同じ意味になります！）</li>
 </ul>
 <hr>
-<h3 id="次つぎのステップ"><a class="header" href="#次つぎのステップ">次（つぎ）のステップ</a></h3>
-<p>このコードを少（すこ）し変（か）えて、<strong>「50より大（おお）きい数字だけ」を合計する</strong>プログラムを作ってみることもできます。</p>
-<p>やってみたいですか？ それとも、他（ほか）に知（し）りたいことがありますか？</p>
-
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -279,7 +275,7 @@ console.log("ぜんぶの合計は " + total + " です！");
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_04_三つのfor.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="06_04_高度なループ処理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -293,7 +289,7 @@ console.log("ぜんぶの合計は " + total + " です！");
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_04_三つのfor.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="06_04_高度なループ処理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

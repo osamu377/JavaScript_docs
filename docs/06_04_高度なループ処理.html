@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>付録 - 留学生のためのJavaScript学習ガイド</title>
+        <title>高度なループ処理 - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,21 +174,91 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="付録"><a class="header" href="#付録">付録</a></h1>
-<p><strong>付録について</strong></p>
-<p>この章は、これまでの各章で説明しきれなかったものや、参考資料、別の視点での説明など、補足資料をまとめています。</p>
-<p>これまでと違って、順番に見てゆく必要はありません。</p>
-<p>必要なところや興味を持ったところを、好きな順番で読んでください。</p>
+                        <h1 id="三つのfor"><a class="header" href="#三つのfor">三つのfor</a></h1>
+<h2 id="i-古典的なfor"><a class="header" href="#i-古典的なfor">I. 古典的なfor</a></h2>
+<pre><code class="language-JavaScript">for (let i = 0; i &lt; 3; i++) {
+  console.log(i + "番目：こんにちは！");
+}
+</code></pre>
+<h2 id="ii-配列の応用とforeach"><a class="header" href="#ii-配列の応用とforeach">II. 配列の応用とforEach</a></h2>
+<p>大量のデータを効率よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
+<h3 id="1-foreachとコールバック関数"><a class="header" href="#1-foreachとコールバック関数">1. forEachとコールバック関数</a></h3>
+<p>以前、関数は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
+<p>forEach を使うときは、この関数をさらに便利に使います。</p>
+<ul>
+<li>例え話: forEach は「店員さん」、渡す関数は「店員さんに渡すチェックメモ（コールバック関数）」です。 店員さんは、配列の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+</ul>
+<h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: 合計（ごうけい）を計算する</a></h3>
+<p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
+<pre><code class="language-javascript">// 1. 数字の「配列」を作ります。
+const numbers = [10, 20, 30, 40];
+
+// 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
+let total = 0;
+
+// 3. forEach （上の例えでは「店員さん」）は、配列の中身を一つずつ取って、メモ通りに処理します。
+numbers.forEach((num) =&gt; {
+  // ここがコールバック関数です！ 店員さんに「この仕事をしてください」と渡すメモです！
+  total = total + num; 
+  console.log(num + " を足しました。今は " + total + " です。");
+});
+
+// 4. 最後に答えを表示します
+console.log("ぜんぶの合計は " + total + " です！");
+
+</code></pre>
+<h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの動（うご）きを解説（かいせつ）</a></h3>
+<h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
+<p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
+<h4 id="②-コールバック関数の仕事しごと"><a class="header" href="#②-コールバック関数の仕事しごと">② コールバック関数の仕事（しごと）</a></h4>
+<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック関数）です。</p>
+<ul>
+<li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
+<li>コールバック関数に <code>10</code> を渡（わた）す。</li>
+<li>関数が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
+<li>次の <code>20</code> でも同じことをする。</li>
+</ul>
+<p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
+<p>So What?（なぜ大切なの？）</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left">配列が自動的に回数を決めてくれる</td></tr>
+<tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
+</tbody>
+</table>
+</div>
+<p>コードが読みやすくなると、開発のスピードが上がり、ミスも減ります。</p>
+<hr>
+<h2 id="iii-繰り返し処理の応用for-in文"><a class="header" href="#iii-繰り返し処理の応用for-in文">III. 繰り返し処理の応用：for-in文</a></h2>
+<p>※ オブジェクトの性質を利用した応用的な繰り返し処理です。</p>
+<p>配列ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>ループの種類</th><th>対象</th><th>使いどころ</th></tr>
+</thead>
+<tbody>
+<tr><td>for文</td><td>数値の回数、配列</td><td>決まった回数繰り返したいとき</td></tr>
+<tr><td>while文</td><td>条件</td><td>条件が満たされるまで続けたいとき</td></tr>
+<tr><td>for-in文</td><td>オブジェクトのプロパティ</td><td>オブジェクトの「キー」を全部調べたいとき</td></tr>
+</tbody>
+</table>
+</div>
+<p>So What?（なぜ大切なの？） オブジェクトの中にどんなデータがいくつ入っているか、事前にはわからない場合があります。for-in を使えば、どんなに項目が多くても漏れなくすべて処理できるため、柔軟なプログラムが作れます。</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="05_02_オブジェクト指向プログラミング.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="06_03_コールバック関数.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_01_用語集.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="06_05_かっこの種類.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -198,11 +268,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="05_02_オブジェクト指向プログラミング.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="06_03_コールバック関数.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_01_用語集.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="06_05_かっこの種類.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

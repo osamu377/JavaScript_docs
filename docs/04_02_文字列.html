@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
+            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d67824dc.js"></script>
+        <script src="toc-51c4b39c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -175,7 +175,7 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="文字列"><a class="header" href="#文字列">文字列</a></h1>
-<h2 id="1-string型-プリミティブ-とstringオブジェクト"><a class="header" href="#1-string型-プリミティブ-とstringオブジェクト">1. String型 (プリミティブ) とStringオブジェクト</a></h2>
+<h2 id="i-string型-プリミティブ-とstringオブジェクト"><a class="header" href="#i-string型-プリミティブ-とstringオブジェクト">I. String型 (プリミティブ) とStringオブジェクト</a></h2>
 <p>プログラミングを学んでいると、同じ「文字列」を扱うのに、<strong>String型（プリミティブ）とStringオブジェクト</strong> という2つの言葉が出てきて混乱することがあります。</p>
 <p>留学生の方には、<strong>「中身だけのリンゴ」</strong> と <strong>「箱に入ったリンゴ」</strong> の違いに例えて説明すると、スッキリ理解してもらえます！</p>
 <h3 id="1-二つの違いのイメージ"><a class="header" href="#1-二つの違いのイメージ">1. 二つの違いのイメージ</a></h3>
@@ -261,7 +261,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 </blockquote>
 <p>いかがでしょうか？「ふだんは身軽なプリミティブ、道具を使うときだけ魔法で変身」という仕組みは伝わりそうでしょうか。</p>
 <hr>
-<h2 id="2-文字列の加工かこう"><a class="header" href="#2-文字列の加工かこう">2. 文字列の加工（かこう）</a></h2>
+<h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の加工（かこう）</a></h2>
 <p>Stringオブジェクト（文字列）には、文字を自由に操るための便利な「道具（メソッド）」がたくさんあります。</p>
 <p>留学生の方には、<strong>「長い文章という『テープ』を、ハサミで切ったり、シールを貼ったりして加工する」</strong> イメージで説明すると伝わりやすいですよ。</p>
 <p>よく使われる5つのメソッドを紹介します。</p>
@@ -342,7 +342,7 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 </blockquote>
 <p>いかがでしょうか？ 「文字列の加工」ができるようになると、ユーザーが入力したデータをきれいに整理できるようになります。</p>
 <hr>
-<h2 id="3-文字の検索"><a class="header" href="#3-文字の検索">3. 文字の検索</a></h2>
+<h2 id="iii-文字の検索"><a class="header" href="#iii-文字の検索">III. 文字の検索</a></h2>
 <p>文字列（String）の中から「特定の文字」を見つけたり、場所を調べたりするときに欠かせない <strong><code>charAt</code></strong> と <strong><code>indexOf</code></strong> について説明します。</p>
 <p>どちらも「何番目にあるか」という <strong>インデックス（番号）</strong> をキーワードにして動きます。</p>
 <hr>
@@ -415,7 +415,7 @@ if (email.indexOf("@") !== -1) {
 </blockquote>
 <hr>
 <p>いかがでしょうか？「番号から文字」か「文字から番号」か、このペアで覚えるととても使いやすくなります。</p>
-<h2 id="4-文字列の応用"><a class="header" href="#4-文字列の応用">4. 文字列の応用</a></h2>
+<h2 id="iv-文字列の応用"><a class="header" href="#iv-文字列の応用">IV. 文字列の応用</a></h2>
 <p>Webサイトで扱う情報の多くは「テキスト（文字列）」です。これをどう操作するかが、プログラミングの腕の見せ所です。</p>
 <h3 id="文字列の作成と結合"><a class="header" href="#文字列の作成と結合">文字列の作成と結合</a></h3>
 <p>最新のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を使うのがとても便利です。</p>
@@ -430,7 +430,7 @@ if (email.indexOf("@") !== -1) {
 <li>parseFloat(): 小数点を含む数値に変換します。</li>
 </ul>
 <p>So What?（なぜ大切なの？） 数字ではない文字を無理に数値に変えようとすると NaN（Not a Number：数値ではないというエラー値）になります。Web開発ではユーザーが何を打つか分かりません。isNaN() 関数を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
-<hr>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

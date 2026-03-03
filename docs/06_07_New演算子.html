@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>三つのfor - 留学生のためのJavaScript学習ガイド</title>
+        <title>New演算子 - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
+            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d67824dc.js"></script>
+        <script src="toc-51c4b39c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,85 +174,116 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="三つのfor"><a class="header" href="#三つのfor">三つのfor</a></h1>
-<h2 id="3-配列の応用とforeach"><a class="header" href="#3-配列の応用とforeach">3. 配列の応用とforEach</a></h2>
-<p>大量のデータを効率よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
-<p><strong>forEachとコールバック関数</strong></p>
-<p>以前、関数は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
-<p>forEach を使うときは、この関数をさらに便利に使います。</p>
+                        <h1 id="new演算子"><a class="header" href="#new演算子">new演算子</a></h1>
+<p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
+これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す魔法の呪文**です。</p>
+<p>留学生の方には、**「たい焼きの型」と「本物のたい焼き」**に例えて説明すると、とてもスッキリ納得（なっとく）してもらえます！</p>
+<hr>
+<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「実体（じったい）を作る」もの</a></h2>
+<p>プログラミングの世界には、**「設計図（せきずいず）」<strong>と、その設計図から作られた</strong>「本物」**の2つがあります。</p>
 <ul>
-<li>例え話: forEach は「店員さん」、渡す関数は「店員さんに渡すチェックメモ（コールバック関数）」です。 店員さんは、配列の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+<li><strong>型（クラスやコンストラクタ）：</strong> たい焼きの「鉄板（てっぱん）」です。これだけでは食べられません。</li>
+<li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい焼き」です。</li>
 </ul>
-<p><strong>サンプルプログラム: 合計（ごうけい）を計算する</strong></p>
-<p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
-<pre><code class="language-javascript">// 1. 数字の「配列」を作ります。
-const numbers = [10, 20, 30, 40];
-
-// 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
-let total = 0;
-
-// 3. forEach （上の例えでは「店員さん」）は、配列の中身を一つずつ取って、メモ通りに処理します。
-numbers.forEach((num) =&gt; {
-  // ここがコールバック関数です！ 店員さんに「この仕事をしてください」と渡すメモです！
-  total = total + num; 
-  console.log(num + " を足しました。今は " + total + " です。");
-});
-
-// 4. 最後に答えを表示します
-console.log("ぜんぶの合計は " + total + " です！");
+<pre><code class="language-javascript">// Date という「時計の設計図」を使って、
+// new で「今動いている本物の時計」を新しく作る
+const myClock = new Date();
 
 </code></pre>
-<p><em>プログラムの動（うご）きを解説（かいせつ）</em></p>
-<p>① <code>let total = 0;</code></p>
-<p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<p>② コールバック関数の仕事（しごと）</p>
-<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック関数）です。</p>
-<ul>
-<li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
-<li>コールバック関数に <code>10</code> を渡（わた）す。</li>
-<li>関数が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
-<li>次の <code>20</code> でも同じことをする。</li>
-</ul>
-<p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
-<p>So What?（なぜ大切なの？）</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
-</thead>
-<tbody>
-<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left">配列が自動的に回数を決めてくれる</td></tr>
-<tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
-</tbody>
-</table>
-</div>
-<p>コードが読みやすくなると、開発のスピードが上がり、ミスも減ります。</p>
-<h2 id="8-繰り返し処理の応用for-in文"><a class="header" href="#8-繰り返し処理の応用for-in文">8. 繰り返し処理の応用：for-in文</a></h2>
-<p>※オブジェクトの性質を利用した応用的な繰り返し処理です。</p>
-<p>配列ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>ループの種類</th><th>対象</th><th>使いどころ</th></tr>
-</thead>
-<tbody>
-<tr><td>for文</td><td>数値の回数、配列</td><td>決まった回数繰り返したいとき</td></tr>
-<tr><td>while文</td><td>条件</td><td>条件が満たされるまで続けたいとき</td></tr>
-<tr><td>for-in文</td><td>オブジェクトのプロパティ</td><td>オブジェクトの「キー」を全部調べたいとき</td></tr>
-</tbody>
-</table>
-</div>
-<p>So What?（なぜ大切なの？） オブジェクトの中にどんなデータがいくつ入っているか、事前にはわからない場合があります。for-in を使えば、どんなに項目が多くても漏れなくすべて処理できるため、柔軟なプログラムが作れます。</p>
 <hr>
+<h2 id="ii-なぜ-new-が必要なの"><a class="header" href="#ii-なぜ-new-が必要なの">II. なぜ <code>new</code> が必要なの？</a></h2>
+<p>例えば、SNSの「ユーザー」というデータを作るとしましょう。
+全員の情報をバラバラに作るのは大変ですが、<code>new</code> を使えば同じ形のデータをいくつでも簡単に作れます。</p>
+<pre><code class="language-javascript">// 1. ユーザーの「設計図（型）」を作る
+function User(name) {
+  this.name = name;
+  this.sayHi = function() {
+    console.log("こんにちは、" + this.name + "です！");
+  };
+}
+
+// 2. new を使って、本物のユーザーをどんどん作る
+const user1 = new User("マリア");
+const user2 = new User("ジョン");
+
+user1.sayHi(); // 「こんにちは、マリアです！」
+user2.sayHi(); // 「こんにちは、ジョンです！」
+
+</code></pre>
+<ul>
+<li><code>User</code> はただの設計図です。</li>
+<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という実体</strong>が誕生します。</li>
+</ul>
+<hr>
+<h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
+<p>留学生に教えるとき、<code>new</code> が裏側でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
+<ol>
+<li><strong>新しい空（から）の箱</strong>を作る。</li>
+<li>その箱に、名前や中身を<strong>コピー</strong>して入れる。</li>
+<li>完成した箱を**「はい、どうぞ！」と渡す（return）**。</li>
+</ol>
+<hr>
+<h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
+<p>ここが一番のポイントです。JavaScriptには2つのパターンがあります。</p>
+<ul>
+<li>
+<p><strong><code>new</code> が必要なもの（重いもの・複雑なもの）</strong></p>
+</li>
+<li>
+<p><code>new Date()</code> ：日付</p>
+</li>
+<li>
+<p><code>new User()</code> ：自分で作った特別な型</p>
+</li>
+<li>
+<p><strong><code>new</code> がいらないもの（軽くてシンプルなもの）</strong></p>
+</li>
+<li>
+<p><code>"Hello"</code> ：文字列（String型）</p>
+</li>
+<li>
+<p><code>123</code> ：数字（Number型）</p>
+</li>
+<li>
+<p><code>true</code> ：真偽値（Boolean型）</p>
+</li>
+</ul>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p><strong>留学生へのアドバイス：</strong>
+「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong>んだよ！」と教えてあげてください。</p>
+</blockquote>
+<hr>
+<h2 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>言葉</th><th>意味</th><th>例え話</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>設計図（Class）</strong></td><td>データの形を決めたもの</td><td>たい焼きの型</td></tr>
+<tr><td><strong><code>new</code></strong></td><td>実体を作るためのコマンド</td><td>記事を流し込む動作</td></tr>
+<tr><td><strong>実体（Instance）</strong></td><td><code>new</code> で作られた本物のデータ</td><td>焼きたてのたい焼き</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote class="blockquote-tag blockquote-tag-tip">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>「new」のイメージ</strong>
+英語の「New（新しい）」そのままです。「新しい実体（じったい）を1つ、今ここで生み出すぞ！」という気持ちで使いましょう。</p>
+</blockquote>
+<hr>
+<p>いかがでしょうか？「型から本物を作る呪文」というイメージは持てましたか？</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="06_03_コールバック関数.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="06_06_数学オブジェクト.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_05_かっこの種類.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="06_08_入出力.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -262,11 +293,11 @@ console.log("ぜんぶの合計は " + total + " です！");
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="06_03_コールバック関数.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="06_06_数学オブジェクト.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_05_かっこの種類.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="06_08_入出力.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

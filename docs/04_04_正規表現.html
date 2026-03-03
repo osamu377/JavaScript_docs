@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
+            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d67824dc.js"></script>
+        <script src="toc-51c4b39c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -179,7 +179,7 @@
 <p>JavaScriptでは、<strong>RegExp（レグエクスプ）</strong> オブジェクトを使います。</p>
 <p>RegExpは <strong>「魔法の虫めがね」</strong> です。たくさんの文字の中から、自分の探したい「パターン」だけをピカッと光らせて見つけることができます。</p>
 <hr>
-<h2 id="1-正規表現ってなに"><a class="header" href="#1-正規表現ってなに">1. 「正規表現」ってなに？</a></h2>
+<h2 id="i-正規表現ってなに"><a class="header" href="#i-正規表現ってなに">I. 「正規表現」ってなに？</a></h2>
 <p>普通の検索（<code>indexOf</code> など）は、「特定の言葉」を探します。
 RegExpは、<strong>「言葉のルール（パターン）」</strong> を探します。</p>
 <ul>
@@ -188,7 +188,7 @@ RegExpは、<strong>「言葉のルール（パターン）」</strong> を探�
 </ul>
 <p>このように、あやふやなルールで検索できるのがすごいところです。</p>
 <hr>
-<h2 id="2-regexpオブジェクトの作り方"><a class="header" href="#2-regexpオブジェクトの作り方">2. RegExpオブジェクトの作り方</a></h2>
+<h2 id="ii-regexpオブジェクトの作り方"><a class="header" href="#ii-regexpオブジェクトの作り方">II. RegExpオブジェクトの作り方</a></h2>
 <p>2つの書き方がありますが、よく使われるのは <strong><code>/ /</code>（スラッシュ）</strong> で囲む方法です。</p>
 <pre><code class="language-javascript">// 1. スラッシュで囲む（リテラル） ★おすすめ
 const pattern1 = /abc/;
@@ -198,7 +198,7 @@ const pattern2 = new RegExp("abc");
 
 </code></pre>
 <hr>
-<h2 id="3-よく使う魔法の記号１"><a class="header" href="#3-よく使う魔法の記号１">3. よく使う「魔法の記号」（１）</a></h2>
+<h2 id="iii-よく使う魔法の記号１"><a class="header" href="#iii-よく使う魔法の記号１">III. よく使う「魔法の記号」（１）</a></h2>
 <p>正規表現（RegExp）のメタ文字は、文字の <strong>「種類」</strong> や <strong>「数」</strong> を指定する特別なルールです。
 <strong>「トランプのジョーカー」</strong> や <strong>「算数のルール」</strong> に例えて説明すると、パズルのように楽しく理解できます。</p>
 <p>よく使われる7つの記号を、やさしく解説しましょう！</p>
@@ -264,7 +264,7 @@ const pattern2 = new RegExp("abc");
 </ul>
 </blockquote>
 <hr>
-<h3 id="5-キャレット"><a class="header" href="#5-キャレット">5. ^（キャレット）</a></h3>
+<h3 id="5-キャレット"><a class="header" href="#5-キャレット">5. <code>^</code>（キャレット）</a></h3>
 <p><strong>→「行がここから始まる」</strong></p>
 <ul>
 <li><strong>イメージ：</strong> マラソンの「スタートライン」です。</li>
@@ -325,7 +325,7 @@ const pattern2 = new RegExp("abc");
 </div>
 <p>いかがでしょうか？ 記号の「パワー」を知ると、短いコードで複雑なチェックができるようになります。</p>
 <hr>
-<h2 id="4-よく使う魔法の記号２"><a class="header" href="#4-よく使う魔法の記号２">4. よく使う「魔法の記号」（２）</a></h2>
+<h2 id="iv-よく使う魔法の記号２"><a class="header" href="#iv-よく使う魔法の記号２">IV. よく使う「魔法の記号」（２）</a></h2>
 <p>正規表現（RegExp）のメタ文字、さらに便利なものを紹介します！
 今回は、文字を <strong>「グループ化」</strong> したり、<strong>「回数を正確に指定」</strong> したりする、少し高度なルールです。</p>
 <p><strong>「チーム作り」</strong> や <strong>「回数の予約」</strong> に例えて説明ます。</p>
@@ -424,7 +424,8 @@ const pattern2 = new RegExp("abc");
 <p>この2つを知ると、さらに便利に使ってもらえます。</p>
 </blockquote>
 <p>いかがでしょうか？「完璧なパターンを自分で書く」ことよりも、「ルールで検索できる便利な道具がある」ことを知ることが第一歩です！</p>
-<h2 id="5-実際に使ってみよう"><a class="header" href="#5-実際に使ってみよう">5. 実際に使ってみよう</a></h2>
+<hr>
+<h2 id="v-実際に使ってみよう"><a class="header" href="#v-実際に使ってみよう">V. 実際に使ってみよう</a></h2>
 <p>よくある「メールアドレスの入力チェック」のようなイメージです。</p>
 <pre><code class="language-javascript">const myPattern = /apple/; // 「apple」という文字があるか？
 const text = "I have an apple.";
@@ -443,7 +444,7 @@ console.log(numPattern.test("abc123def")); // true
 </code></pre>
 <p>これまで学んだ「魔法の記号（メタ文字）」を組み合わせて、実際に使える <strong>「郵便番号」</strong> と <strong>「電話番号」</strong> のパターンを作ってみましょう！</p>
 <p>パズルを組み立てるような感覚で見ていくと、楽しく覚えられます。</p>
-<h3 id="郵便番号のパターン"><a class="header" href="#郵便番号のパターン">「郵便番号」のパターン</a></h3>
+<h3 id="1-郵便番号のパターン"><a class="header" href="#1-郵便番号のパターン">1. 「郵便番号」のパターン</a></h3>
 <p>日本の郵便番号は、<strong>「数字3つ ＋ ハイフン ＋ 数字4つ」</strong> という形です。</p>
 <h4 id="正規表現-d3-d4"><a class="header" href="#正規表現-d3-d4">正規表現： <code>/^\d{3}-\d{4}$/</code></a></h4>
 <ul>
@@ -456,7 +457,7 @@ console.log(numPattern.test("abc123def")); // true
 <p><strong>これを使うと：</strong>
 「123-4567」は <strong>OK</strong> ですが、「123-456」や「1234-567」は <strong>NG</strong> になります。</p>
 <hr>
-<h3 id="電話番号のパターン"><a class="header" href="#電話番号のパターン">「電話番号」のパターン</a></h3>
+<h3 id="2-電話番号のパターン"><a class="header" href="#2-電話番号のパターン">2. 「電話番号」のパターン</a></h3>
 <p>日本の電話番号は、場所によって桁数（けたすう）が違いますが、一般的には <strong>「数字2〜4個 ＋ ハイフン ＋ 数字2〜4個 ＋ ハイフン ＋ 数字4個」</strong> という形が多いです。</p>
 <h4 id="正規表現-d24-d24-d4"><a class="header" href="#正規表現-d24-d24-d4">正規表現： <code>/^\d{2,4}-\d{2,4}-\d{4}$/</code></a></h4>
 <ul>
@@ -469,14 +470,14 @@ console.log(numPattern.test("abc123def")); // true
 <p><strong>これを使うと：</strong>
 「03-1234-5678」も「090-1234-5678」も <strong>OK</strong> になります。</p>
 <hr>
-<h3 id="もっと自由にハイフンがあってもなくてもいい場合"><a class="header" href="#もっと自由にハイフンがあってもなくてもいい場合">もっと自由に！「ハイフンがあってもなくてもいい」場合</a></h3>
+<h3 id="3-もっと自由にハイフンがあってもなくてもいい場合"><a class="header" href="#3-もっと自由にハイフンがあってもなくてもいい場合">3. もっと自由に！「ハイフンがあってもなくてもいい」場合</a></h3>
 <p>留学生が「ハイフンを書かない人」もいるかもしれない、と考えたときは <strong><code>?</code></strong> の出番です。</p>
 <h4 id="正規表現-d3-d4-1"><a class="header" href="#正規表現-d3-d4-1">正規表現： <code>/^\d{3}-?\d{4}$/</code></a></h4>
 <ul>
 <li><strong><code>-?</code></strong> ： ハイフンが <strong>「0回か1回」</strong>。つまり、「あってもなくてもいいよ！」という意味です。</li>
 </ul>
 <hr>
-<h3 id="覚え方のコツ"><a class="header" href="#覚え方のコツ">覚え方のコツ</a></h3>
+<h3 id="4-覚え方のコツ"><a class="header" href="#4-覚え方のコツ">4. 覚え方のコツ</a></h3>
 <blockquote>
 <p>「正規表現は、<strong>左から右へ順番に読んでいく</strong>んだよ。
 <code>^</code>（入り口）から入って、<code>\d</code>（数字）の関所（せきしょ）をいくつか通って、最後は <code>$</code>（出口）にたどり着く。
@@ -508,17 +509,18 @@ console.log(numPattern.test("abc123def")); // true
 </table>
 </div>
 <p>いかがでしょうか？これで「正しいデータだけを受け付ける」という、とても実践的（じっせんてき）なプログラムが作れるようになります。</p>
-<h2 id="6-実践的な例-その２"><a class="header" href="#6-実践的な例-その２">6. 実践的な例 その２</a></h2>
+<hr>
+<h2 id="vi-実践的な例-その２"><a class="header" href="#vi-実践的な例-その２">VI. 実践的な例 その２</a></h2>
 <p>「正しいパスワードの形」をチェックするコードです。これまでの集大成（しゅうたいせい）として、とても良い練習になります！</p>
 <p><strong>「パスワードの門番（もんばん）」</strong> を作るイメージで説明します。</p>
-<h3 id="パスワードのルール仕様"><a class="header" href="#パスワードのルール仕様">パスワードのルール（仕様）</a></h3>
+<h3 id="1-パスワードのルール仕様"><a class="header" href="#1-パスワードのルール仕様">1. パスワードのルール（仕様）</a></h3>
 <p>今回は、よくあるこのようなルールをチェックします。</p>
 <ol>
 <li><strong>長さ：</strong> 8文字から16文字の間</li>
 <li><strong>文字：</strong> 英小文字（a-z）、数字（0-9）、特定の記号（@#!）が使える</li>
 <li><strong>最初：</strong> 必ず英小文字から始まる</li>
 </ol>
-<h3 id="パスワードチェックのコード"><a class="header" href="#パスワードチェックのコード">パスワードチェックのコード</a></h3>
+<h3 id="2-パスワードチェックのコード"><a class="header" href="#2-パスワードチェックのコード">2. パスワードチェックのコード</a></h3>
 <pre><code class="language-javascript">// パスワードの正規表現（せいきひょうげん）
 // 意味：最初は小文字、そのあとは英数字か記号が7〜15回続く（合計8〜16文字）
 const passPattern = /^[a-z][a-z0-9@#!]{7,15}$/;
@@ -539,7 +541,7 @@ checkPassword("abc");           // NG (短すぎる)
 checkPassword("thisIsAVeryLongPassword"); // NG (長すぎる)
 
 </code></pre>
-<h3 id="この暗号の読みとき方解説"><a class="header" href="#この暗号の読みとき方解説">この「暗号」の読みとき方（解説）</a></h3>
+<h3 id="3-この暗号の読みとき方解説"><a class="header" href="#3-この暗号の読みとき方解説">3. この「暗号」の読みとき方（解説）</a></h3>
 <p>左から順番に「門（もん）」を通過するイメージで考えてください。</p>
 <ol>
 <li><strong><code>^</code></strong> ： ここからチェック開始！</li>

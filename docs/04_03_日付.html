@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
+            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d67824dc.js"></script>
+        <script src="toc-51c4b39c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,8 +178,8 @@
 <p>プログラミングで「日付（ひづけ）」や「時間（じかん）」をあつかうときは、<strong>Dateオブジェクト</strong> を使います。</p>
 <p>留学生の方には、Dateオブジェクトは <strong>「世界中どこでも使える、魔法の時計（とけい）」</strong> だと教えてあげてください。</p>
 <hr>
-<h2 id="1-dateオブジェクト"><a class="header" href="#1-dateオブジェクト">1. Dateオブジェクト</a></h2>
-<h3 id="dateオブジェクトの作り方"><a class="header" href="#dateオブジェクトの作り方">Dateオブジェクトの作り方</a></h3>
+<h2 id="i-dateオブジェクト"><a class="header" href="#i-dateオブジェクト">I. Dateオブジェクト</a></h2>
+<h3 id="1-dateオブジェクトの作り方"><a class="header" href="#1-dateオブジェクトの作り方">1. Dateオブジェクトの作り方</a></h3>
 <p>JavaScriptで時計を動かすには、まず <code>new Date()</code> と書きます。</p>
 <p>new を使うことで、メモリの中に新しい「日付というデータの箱（実体）」を作り、その場所を指し示すようになります。</p>
 <pre><code class="language-javascript">// 今（現在）の日付と時間を手に入れる
@@ -203,7 +203,7 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 <li>オブジェクト型（Dateなど）: データそのものではなく、データが保存されているメモリ上の「場所（参照：さんしょう）」が変数に入っています。</li>
 </ul>
 <p>So What?（なぜ大切なの？） これらの組み込みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、開発スピードを劇的に速めることができます。</p>
-<h3 id="よく使うメソッド情報の取り出し方"><a class="header" href="#よく使うメソッド情報の取り出し方">よく使うメソッド（情報の取り出し方）</a></h3>
+<h3 id="2-よく使うメソッド情報の取り出し方"><a class="header" href="#2-よく使うメソッド情報の取り出し方">2. よく使うメソッド（情報の取り出し方）</a></h3>
 <p>作った時計から、「年」「月」「日」をバラバラに取り出すことができます。</p>
 <div class="table-wrapper">
 <table>
@@ -220,7 +220,7 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 </table>
 </div>
 <hr>
-<h3 id="初心者が絶対ぜったいに間違えるポイント"><a class="header" href="#初心者が絶対ぜったいに間違えるポイント">初心者が絶対（ぜったい）に間違えるポイント</a></h3>
+<h3 id="3-初心者が絶対ぜったいに間違えるポイント"><a class="header" href="#3-初心者が絶対ぜったいに間違えるポイント">3. 初心者が絶対（ぜったい）に間違えるポイント</a></h3>
 <p>Dateオブジェクトには、初心者泣かせの「ひっかけ問題」が2つあります。ここを優しく教えてあげましょう。</p>
 <h4 id="①-月monthは-0-から数える"><a class="header" href="#①-月monthは-0-から数える">① 月（Month）は 0 から数える</a></h4>
 <p>配列と同じで、**1月は <code>0**</code> です。</p>
@@ -239,7 +239,7 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 <li><strong><code>getDay()</code></strong> ： 月、火…という <strong>「曜日」</strong></li>
 </ul>
 <hr>
-<h3 id="かっこいい日付の表示かた日本でのマナー"><a class="header" href="#かっこいい日付の表示かた日本でのマナー">かっこいい日付の表示かた（日本でのマナー）</a></h3>
+<h3 id="4-かっこいい日付の表示かた日本でのマナー"><a class="header" href="#4-かっこいい日付の表示かた日本でのマナー">4. かっこいい日付の表示かた（日本でのマナー）</a></h3>
 <p>日本でよく使う「2026年2月20日」という形式にするコード例です。</p>
 <pre><code class="language-javascript">const today = new Date();
 
@@ -260,12 +260,12 @@ console.log(`${year}年${month}月${date}日`);
 </ol>
 <p>いかがでしょうか？「月が0から始まる」というルールさえクリアすれば、Dateオブジェクトはとても頼りになる道具になります。</p>
 <hr>
-<h2 id="日付の計算"><a class="header" href="#日付の計算">日付の計算</a></h2>
+<h2 id="ii-日付の計算"><a class="header" href="#ii-日付の計算">II. 日付の計算</a></h2>
 <p>日付（ひづけ）の計算（けいさん）は、プログラミングでとてもよく使います。
 例えば、「今日から3日後はいつ？」「テストまであと何日？」という計算です。</p>
 <p><strong>「Dateオブジェクトは、数字を書きかえるだけで自動でカレンダーをめくってくれる、かしこい時計（とけい）」</strong> です。</p>
 <hr>
-<h3 id="基本きほんのやりかたset-メソッドを使う"><a class="header" href="#基本きほんのやりかたset-メソッドを使う">基本（きほん）のやりかた：<code>set</code> メソッドを使う</a></h3>
+<h3 id="1-基本きほんのやりかたset-メソッドを使う"><a class="header" href="#1-基本きほんのやりかたset-メソッドを使う">1. 基本（きほん）のやりかた：<code>set</code> メソッドを使う</a></h3>
 <p>日付を計算するときは、まず今の情報を「ゲット（<code>get</code>）」して、計算したあとに「セット（<code>set</code>）」しなおします。</p>
 <h4 id="例今日から5日後を計算する"><a class="header" href="#例今日から5日後を計算する">例：今日から「5日後」を計算する</a></h4>
 <pre><code class="language-javascript">const today = new Date(); // ① 今日の時計を作る
@@ -279,7 +279,7 @@ today.setDate(futureDate);
 console.log(today.toLocaleDateString()); // 5日後の日付が出ます
 
 </code></pre>
-<h3 id="ここがすごい繰り上がりくりあがりの自動計算"><a class="header" href="#ここがすごい繰り上がりくりあがりの自動計算">ここがすごい！「繰り上がり（くりあがり）」の自動計算</a></h3>
+<h3 id="2-ここがすごい繰り上がりくりあがりの自動計算"><a class="header" href="#2-ここがすごい繰り上がりくりあがりの自動計算">2. ここがすごい！「繰り上がり（くりあがり）」の自動計算</a></h3>
 <p>留学生が一番感動（かんどう）するのは、JavaScriptが**「月末（げつまつ）」を勝手に計算してくれる**ところです。</p>
 <p>例えば、**「1月31日の1日後」**を計算するとします。
 普通なら「次は2月1日だ」と自分で考える必要がありますが、JavaScriptはこうなります：</p>
@@ -295,7 +295,7 @@ console.log(endOfMonth.toLocaleDateString()); // 自動で「2026/2/1」にな�
 <li><strong>13月になっても大丈夫：</strong> <code>setMonth(12)</code>（13番目の月）とすると、次の年の1月に進みます。</li>
 </ul>
 <hr>
-<h3 id="あと何日の計算ミリ秒のひき算"><a class="header" href="#あと何日の計算ミリ秒のひき算">「あと何日？」の計算（ミリ秒のひき算）</a></h3>
+<h3 id="3-あと何日の計算ミリ秒のひき算"><a class="header" href="#3-あと何日の計算ミリ秒のひき算">3. 「あと何日？」の計算（ミリ秒のひき算）</a></h3>
 <p>「今日からイベントまであと何日？」を計算するときは、少し特殊な方法を使います。
 日付を <strong>「ミリ秒（とても小さな数字）」</strong> に直して引き算をします。</p>
 <pre><code class="language-javascript">const today = new Date();
@@ -338,7 +338,7 @@ console.log(`イベントまであと ${diffDays} 日です！`);
 <hr>
 <p>いかがでしょうか？「自分でカレンダーをめくらなくていい」というメリットが伝われば、日付の計算が楽しくなりますよ。</p>
 <p>So What?（なぜ大切なの？） これらの組み込みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、開発スピードを劇的に速めることができます。</p>
-<hr>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
