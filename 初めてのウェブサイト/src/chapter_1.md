@@ -95,8 +95,7 @@
 3. オンラインにアップロードする： 「サーバー」と呼ばれる、インターネット上の場所へファイルを送ります。
 
 > [!note]
-> 授業では、このステップは実施しません。
-
+> 授業では、このステップは実施しません。興味のある方は、<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">ここをクリック</a>してMDNの関連サイトを参照してください。
 
 --------------------------------------------------------------------------------
 
