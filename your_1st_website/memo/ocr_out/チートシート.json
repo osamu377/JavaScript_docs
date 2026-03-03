@@ -1,0 +1,6037 @@
+{
+  "contents": [
+    [
+      {
+        "boundingBox": [
+          [
+            42,
+            30
+          ],
+          [
+            42,
+            67
+          ],
+          [
+            80,
+            30
+          ],
+          [
+            80,
+            67
+          ]
+        ],
+        "id": 0,
+        "isVertical": "true",
+        "text": "△",
+        "isTextline": "true",
+        "confidence": 0.566
+      },
+      {
+        "boundingBox": [
+          [
+            90,
+            34
+          ],
+          [
+            90,
+            60
+          ],
+          [
+            366,
+            34
+          ],
+          [
+            366,
+            60
+          ]
+        ],
+        "id": 1,
+        "isVertical": "true",
+        "text": "Visual Studio Code",
+        "isTextline": "true",
+        "confidence": 0.844
+      },
+      {
+        "boundingBox": [
+          [
+            88,
+            77
+          ],
+          [
+            88,
+            95
+          ],
+          [
+            327,
+            77
+          ],
+          [
+            327,
+            95
+          ]
+        ],
+        "id": 2,
+        "isVertical": "true",
+        "text": "Keyboard shortcuts for Windows",
+        "isTextline": "true",
+        "confidence": 0.828
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            124
+          ],
+          [
+            31,
+            136
+          ],
+          [
+            80,
+            124
+          ],
+          [
+            80,
+            136
+          ]
+        ],
+        "id": 3,
+        "isVertical": "true",
+        "text": "Genera",
+        "isTextline": "true",
+        "confidence": 0.72
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            147
+          ],
+          [
+            28,
+            161
+          ],
+          [
+            108,
+            147
+          ],
+          [
+            108,
+            161
+          ]
+        ],
+        "id": 4,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+P,F1",
+        "isTextline": "true",
+        "confidence": 0.773
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            147
+          ],
+          [
+            146,
+            161
+          ],
+          [
+            263,
+            147
+          ],
+          [
+            263,
+            161
+          ]
+        ],
+        "id": 5,
+        "isVertical": "true",
+        "text": "Show Command Palette",
+        "isTextline": "true",
+        "confidence": 0.867
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            163
+          ],
+          [
+            28,
+            177
+          ],
+          [
+            66,
+            163
+          ],
+          [
+            66,
+            177
+          ]
+        ],
+        "id": 6,
+        "isVertical": "true",
+        "text": "Cul+P",
+        "isTextline": "true",
+        "confidence": 0.753
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            163
+          ],
+          [
+            146,
+            178
+          ],
+          [
+            263,
+            163
+          ],
+          [
+            263,
+            178
+          ]
+        ],
+        "id": 7,
+        "isVertical": "true",
+        "text": "Quick Open, Go to File_",
+        "isTextline": "true",
+        "confidence": 0.872
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            179
+          ],
+          [
+            28,
+            193
+          ],
+          [
+            95,
+            179
+          ],
+          [
+            95,
+            193
+          ]
+        ],
+        "id": 8,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+N",
+        "isTextline": "true",
+        "confidence": 0.839
+      },
+      {
+        "boundingBox": [
+          [
+            147,
+            180
+          ],
+          [
+            147,
+            194
+          ],
+          [
+            254,
+            180
+          ],
+          [
+            254,
+            194
+          ]
+        ],
+        "id": 9,
+        "isVertical": "true",
+        "text": "New window/instance",
+        "isTextline": "true",
+        "confidence": 0.89
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            195
+          ],
+          [
+            28,
+            209
+          ],
+          [
+            97,
+            195
+          ],
+          [
+            97,
+            209
+          ]
+        ],
+        "id": 10,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+W",
+        "isTextline": "true",
+        "confidence": 0.785
+      },
+      {
+        "boundingBox": [
+          [
+            147,
+            195
+          ],
+          [
+            147,
+            209
+          ],
+          [
+            258,
+            195
+          ],
+          [
+            258,
+            209
+          ]
+        ],
+        "id": 11,
+        "isVertical": "true",
+        "text": "Close window/instance",
+        "isTextline": "true",
+        "confidence": 0.861
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            211
+          ],
+          [
+            28,
+            225
+          ],
+          [
+            62,
+            211
+          ],
+          [
+            62,
+            225
+          ]
+        ],
+        "id": 12,
+        "isVertical": "true",
+        "text": "(al+,",
+        "isTextline": "true",
+        "confidence": 0.729
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            210
+          ],
+          [
+            146,
+            225
+          ],
+          [
+            215,
+            210
+          ],
+          [
+            215,
+            225
+          ]
+        ],
+        "id": 13,
+        "isVertical": "true",
+        "text": "User Setings",
+        "isTextline": "true",
+        "confidence": 0.852
+      },
+      {
+        "boundingBox": [
+          [
+            29,
+            226
+          ],
+          [
+            29,
+            240
+          ],
+          [
+            97,
+            226
+          ],
+          [
+            97,
+            240
+          ]
+        ],
+        "id": 14,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctrl+S",
+        "isTextline": "true",
+        "confidence": 0.708
+      },
+      {
+        "boundingBox": [
+          [
+            147,
+            227
+          ],
+          [
+            147,
+            241
+          ],
+          [
+            243,
+            227
+          ],
+          [
+            243,
+            241
+          ]
+        ],
+        "id": 15,
+        "isVertical": "true",
+        "text": "Keyboard Shortcuts",
+        "isTextline": "true",
+        "confidence": 0.761
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            262
+          ],
+          [
+            31,
+            274
+          ],
+          [
+            115,
+            262
+          ],
+          [
+            115,
+            274
+          ]
+        ],
+        "id": 16,
+        "isVertical": "true",
+        "text": "Basic editing",
+        "isTextline": "true",
+        "confidence": 0.769
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            701
+          ],
+          [
+            31,
+            713
+          ],
+          [
+            103,
+            701
+          ],
+          [
+            103,
+            713
+          ]
+        ],
+        "id": 17,
+        "isVertical": "true",
+        "text": "Navigation",
+        "isTextline": "true",
+        "confidence": 0.788
+      },
+      {
+        "boundingBox": [
+          [
+            30,
+            727
+          ],
+          [
+            30,
+            736
+          ],
+          [
+            231,
+            727
+          ],
+          [
+            231,
+            736
+          ]
+        ],
+        "id": 18,
+        "isVertical": "true",
+        "text": "Ctil Show all Svmbols",
+        "isTextline": "true",
+        "confidence": 0.716
+      },
+      {
+        "boundingBox": [
+          [
+            148,
+            726
+          ],
+          [
+            148,
+            738
+          ],
+          [
+            232,
+            726
+          ],
+          [
+            232,
+            738
+          ]
+        ],
+        "id": 19,
+        "isVertical": "true",
+        "text": "Show all Symbols",
+        "isTextline": "true",
+        "confidence": 0.309
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            743
+          ],
+          [
+            31,
+            753
+          ],
+          [
+            206,
+            743
+          ],
+          [
+            206,
+            753
+          ]
+        ],
+        "id": 20,
+        "isVertical": "true",
+        "text": "Ctrl+G Goto Line.",
+        "isTextline": "true",
+        "confidence": 0.811
+      },
+      {
+        "boundingBox": [
+          [
+            29,
+            757
+          ],
+          [
+            29,
+            770
+          ],
+          [
+            202,
+            757
+          ],
+          [
+            202,
+            770
+          ]
+        ],
+        "id": 21,
+        "isVertical": "true",
+        "text": "Ctrl+P Goto Fle.",
+        "isTextline": "true",
+        "confidence": 0.648
+      },
+      {
+        "boundingBox": [
+          [
+            30,
+            773
+          ],
+          [
+            30,
+            786
+          ],
+          [
+            219,
+            773
+          ],
+          [
+            219,
+            786
+          ]
+        ],
+        "id": 22,
+        "isVertical": "true",
+        "text": "Ctri+Shift+O Go to Symbol.",
+        "isTextline": "true",
+        "confidence": 0.766
+      },
+      {
+        "boundingBox": [
+          [
+            29,
+            789
+          ],
+          [
+            29,
+            802
+          ],
+          [
+            252,
+            789
+          ],
+          [
+            252,
+            802
+          ]
+        ],
+        "id": 23,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+M Show Problems panel",
+        "isTextline": "true",
+        "confidence": 0.696
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            804
+          ],
+          [
+            28,
+            818
+          ],
+          [
+            279,
+            804
+          ],
+          [
+            279,
+            818
+          ]
+        ],
+        "id": 24,
+        "isVertical": "true",
+        "text": "F8 Go to next error or warning",
+        "isTextline": "true",
+        "confidence": 0.572
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            820
+          ],
+          [
+            28,
+            833
+          ],
+          [
+            297,
+            820
+          ],
+          [
+            297,
+            833
+          ]
+        ],
+        "id": 25,
+        "isVertical": "true",
+        "text": "Shift+F8 Go to previous error or warning",
+        "isTextline": "true",
+        "confidence": 0.797
+      },
+      {
+        "boundingBox": [
+          [
+            29,
+            836
+          ],
+          [
+            29,
+            849
+          ],
+          [
+            288,
+            836
+          ],
+          [
+            288,
+            849
+          ]
+        ],
+        "id": 26,
+        "isVertical": "true",
+        "text": "Ctul+Shift+Tab Navigate editor group history",
+        "isTextline": "true",
+        "confidence": 0.794
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            854
+          ],
+          [
+            31,
+            864
+          ],
+          [
+            234,
+            854
+          ],
+          [
+            234,
+            864
+          ]
+        ],
+        "id": 27,
+        "isVertical": "true",
+        "text": "Alt+ 1- Go back/forward",
+        "isTextline": "true",
+        "confidence": 0.726
+      },
+      {
+        "boundingBox": [
+          [
+            422,
+            31
+          ],
+          [
+            422,
+            41
+          ],
+          [
+            652,
+            31
+          ],
+          [
+            652,
+            41
+          ]
+        ],
+        "id": 28,
+        "isVertical": "true",
+        "text": "Ctrl+MTogqle Tab moves focus",
+        "isTextline": "true",
+        "confidence": 0.582
+      },
+      {
+        "boundingBox": [
+          [
+            420,
+            63
+          ],
+          [
+            420,
+            75
+          ],
+          [
+            546,
+            63
+          ],
+          [
+            546,
+            75
+          ]
+        ],
+        "id": 29,
+        "isVertical": "true",
+        "text": "Search and replace",
+        "isTextline": "true",
+        "confidence": 0.735
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            87
+          ],
+          [
+            417,
+            101
+          ],
+          [
+            455,
+            87
+          ],
+          [
+            455,
+            101
+          ]
+        ],
+        "id": 30,
+        "isVertical": "true",
+        "text": "Ctl+F",
+        "isTextline": "true",
+        "confidence": 0.764
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            87
+          ],
+          [
+            536,
+            101
+          ],
+          [
+            566,
+            87
+          ],
+          [
+            566,
+            101
+          ]
+        ],
+        "id": 31,
+        "isVertical": "true",
+        "text": "Find",
+        "isTextline": "true",
+        "confidence": 0.697
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            102
+          ],
+          [
+            417,
+            117
+          ],
+          [
+            457,
+            102
+          ],
+          [
+            457,
+            117
+          ]
+        ],
+        "id": 32,
+        "isVertical": "true",
+        "text": "Ctl+H",
+        "isTextline": "true",
+        "confidence": 0.841
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            103
+          ],
+          [
+            536,
+            117
+          ],
+          [
+            581,
+            103
+          ],
+          [
+            581,
+            117
+          ]
+        ],
+        "id": 33,
+        "isVertical": "true",
+        "text": "Replace",
+        "isTextline": "true",
+        "confidence": 0.816
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            118
+          ],
+          [
+            418,
+            133
+          ],
+          [
+            485,
+            118
+          ],
+          [
+            485,
+            133
+          ]
+        ],
+        "id": 34,
+        "isVertical": "true",
+        "text": "B/Shit+F3",
+        "isTextline": "true",
+        "confidence": 0.821
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            118
+          ],
+          [
+            536,
+            133
+          ],
+          [
+            629,
+            118
+          ],
+          [
+            629,
+            133
+          ]
+        ],
+        "id": 35,
+        "isVertical": "true",
+        "text": "Find next/previous",
+        "isTextline": "true",
+        "confidence": 0.847
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            134
+          ],
+          [
+            418,
+            148
+          ],
+          [
+            470,
+            134
+          ],
+          [
+            470,
+            148
+          ]
+        ],
+        "id": 36,
+        "isVertical": "true",
+        "text": "Alt+Enter",
+        "isTextline": "true",
+        "confidence": 0.801
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            134
+          ],
+          [
+            536,
+            148
+          ],
+          [
+            703,
+            134
+          ],
+          [
+            703,
+            148
+          ]
+        ],
+        "id": 37,
+        "isVertical": "true",
+        "text": "Select all occurences of Find match",
+        "isTextline": "true",
+        "confidence": 0.836
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            150
+          ],
+          [
+            418,
+            165
+          ],
+          [
+            457,
+            150
+          ],
+          [
+            457,
+            165
+          ]
+        ],
+        "id": 38,
+        "isVertical": "true",
+        "text": "Ctl+D",
+        "isTextline": "true",
+        "confidence": 0.828
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            150
+          ],
+          [
+            536,
+            164
+          ],
+          [
+            694,
+            150
+          ],
+          [
+            694,
+            164
+          ]
+        ],
+        "id": 39,
+        "isVertical": "true",
+        "text": "Add selection to next Find match",
+        "isTextline": "true",
+        "confidence": 0.872
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            167
+          ],
+          [
+            418,
+            180
+          ],
+          [
+            489,
+            167
+          ],
+          [
+            489,
+            180
+          ]
+        ],
+        "id": 40,
+        "isVertical": "true",
+        "text": "Ctrl+KCtrl+D",
+        "isTextline": "true",
+        "confidence": 0.836
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            167
+          ],
+          [
+            536,
+            180
+          ],
+          [
+            719,
+            167
+          ],
+          [
+            719,
+            180
+          ]
+        ],
+        "id": 41,
+        "isVertical": "true",
+        "text": "Move last selection to next Find match",
+        "isTextline": "true",
+        "confidence": 0.86
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            182
+          ],
+          [
+            418,
+            196
+          ],
+          [
+            487,
+            182
+          ],
+          [
+            487,
+            196
+          ]
+        ],
+        "id": 42,
+        "isVertical": "true",
+        "text": "Alt+C/R/W",
+        "isTextline": "true",
+        "confidence": 0.767
+      },
+      {
+        "boundingBox": [
+          [
+            542,
+            184
+          ],
+          [
+            542,
+            197
+          ],
+          [
+            739,
+            184
+          ],
+          [
+            739,
+            197
+          ]
+        ],
+        "id": 43,
+        "isVertical": "true",
+        "text": "Toggle case-sensitive / regex / whole word",
+        "isTextline": "true",
+        "confidence": 0.752
+      },
+      {
+        "boundingBox": [
+          [
+            421,
+            217
+          ],
+          [
+            421,
+            228
+          ],
+          [
+            596,
+            217
+          ],
+          [
+            596,
+            228
+          ]
+        ],
+        "id": 44,
+        "isVertical": "true",
+        "text": "Multi-cursor and selection",
+        "isTextline": "true",
+        "confidence": 0.769
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            241
+          ],
+          [
+            418,
+            256
+          ],
+          [
+            468,
+            241
+          ],
+          [
+            468,
+            256
+          ]
+        ],
+        "id": 45,
+        "isVertical": "true",
+        "text": "Alt+Cid",
+        "isTextline": "true",
+        "confidence": 0.798
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            242
+          ],
+          [
+            537,
+            256
+          ],
+          [
+            602,
+            242
+          ],
+          [
+            602,
+            256
+          ]
+        ],
+        "id": 46,
+        "isVertical": "true",
+        "text": "Insert cursor",
+        "isTextline": "true",
+        "confidence": 0.8
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            256
+          ],
+          [
+            418,
+            270
+          ],
+          [
+            491,
+            256
+          ],
+          [
+            491,
+            270
+          ]
+        ],
+        "id": 47,
+        "isVertical": "true",
+        "text": "Ctrl+Alt+1/1",
+        "isTextline": "true",
+        "confidence": 0.783
+      },
+      {
+        "boundingBox": [
+          [
+            538,
+            257
+          ],
+          [
+            538,
+            270
+          ],
+          [
+            669,
+            257
+          ],
+          [
+            669,
+            270
+          ]
+        ],
+        "id": 48,
+        "isVertical": "true",
+        "text": "Insert cursor above / below",
+        "isTextline": "true",
+        "confidence": 0.762
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            272
+          ],
+          [
+            418,
+            287
+          ],
+          [
+            457,
+            272
+          ],
+          [
+            457,
+            287
+          ]
+        ],
+        "id": 49,
+        "isVertical": "true",
+        "text": "Ctrl+U",
+        "isTextline": "true",
+        "confidence": 0.838
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            273
+          ],
+          [
+            537,
+            286
+          ],
+          [
+            667,
+            273
+          ],
+          [
+            667,
+            286
+          ]
+        ],
+        "id": 50,
+        "isVertical": "true",
+        "text": "Undo last cursor operation",
+        "isTextline": "true",
+        "confidence": 0.879
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            288
+          ],
+          [
+            417,
+            303
+          ],
+          [
+            477,
+            288
+          ],
+          [
+            477,
+            303
+          ]
+        ],
+        "id": 51,
+        "isVertical": "true",
+        "text": "Shift+Alt+1",
+        "isTextline": "true",
+        "confidence": 0.735
+      },
+      {
+        "boundingBox": [
+          [
+            533,
+            289
+          ],
+          [
+            533,
+            302
+          ],
+          [
+            728,
+            289
+          ],
+          [
+            728,
+            302
+          ]
+        ],
+        "id": 52,
+        "isVertical": "true",
+        "text": "Insert cursor at end of each line selected",
+        "isTextline": "true",
+        "confidence": 0.644
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            304
+          ],
+          [
+            417,
+            319
+          ],
+          [
+            455,
+            304
+          ],
+          [
+            455,
+            319
+          ]
+        ],
+        "id": 53,
+        "isVertical": "true",
+        "text": "Ctl+L",
+        "isTextline": "true",
+        "confidence": 0.807
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            304
+          ],
+          [
+            536,
+            319
+          ],
+          [
+            626,
+            304
+          ],
+          [
+            626,
+            319
+          ]
+        ],
+        "id": 54,
+        "isVertical": "true",
+        "text": "Select current ine",
+        "isTextline": "true",
+        "confidence": 0.789
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            320
+          ],
+          [
+            418,
+            334
+          ],
+          [
+            482,
+            320
+          ],
+          [
+            482,
+            334
+          ]
+        ],
+        "id": 55,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+L",
+        "isTextline": "true",
+        "confidence": 0.757
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            321
+          ],
+          [
+            537,
+            334
+          ],
+          [
+            731,
+            321
+          ],
+          [
+            731,
+            334
+          ]
+        ],
+        "id": 56,
+        "isVertical": "true",
+        "text": "Select all occurrences of current selection",
+        "isTextline": "true",
+        "confidence": 0.607
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            336
+          ],
+          [
+            417,
+            350
+          ],
+          [
+            460,
+            336
+          ],
+          [
+            460,
+            350
+          ]
+        ],
+        "id": 57,
+        "isVertical": "true",
+        "text": "Cul+F2",
+        "isTextline": "true",
+        "confidence": 0.787
+      },
+      {
+        "boundingBox": [
+          [
+            534,
+            337
+          ],
+          [
+            534,
+            350
+          ],
+          [
+            715,
+            337
+          ],
+          [
+            715,
+            350
+          ]
+        ],
+        "id": 58,
+        "isVertical": "true",
+        "text": "Select all occurrences of current word",
+        "isTextline": "true",
+        "confidence": 0.722
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            351
+          ],
+          [
+            417,
+            365
+          ],
+          [
+            483,
+            351
+          ],
+          [
+            483,
+            365
+          ]
+        ],
+        "id": 59,
+        "isVertical": "true",
+        "text": "Shift+Alt+-",
+        "isTextline": "true",
+        "confidence": 0.808
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            352
+          ],
+          [
+            536,
+            366
+          ],
+          [
+            621,
+            352
+          ],
+          [
+            621,
+            366
+          ]
+        ],
+        "id": 60,
+        "isVertical": "true",
+        "text": "Expand selection",
+        "isTextline": "true",
+        "confidence": 0.811
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            367
+          ],
+          [
+            417,
+            381
+          ],
+          [
+            482,
+            367
+          ],
+          [
+            482,
+            381
+          ]
+        ],
+        "id": 61,
+        "isVertical": "true",
+        "text": "Shift+At+-",
+        "isTextline": "true",
+        "confidence": 0.836
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            367
+          ],
+          [
+            536,
+            381
+          ],
+          [
+            617,
+            367
+          ],
+          [
+            617,
+            381
+          ]
+        ],
+        "id": 62,
+        "isVertical": "true",
+        "text": "Shrink selection",
+        "isTextline": "true",
+        "confidence": 0.851
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            383
+          ],
+          [
+            417,
+            398
+          ],
+          [
+            477,
+            383
+          ],
+          [
+            477,
+            398
+          ]
+        ],
+        "id": 63,
+        "isVertical": "true",
+        "text": "Shit+Alt+",
+        "isTextline": "true",
+        "confidence": 0.842
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            384
+          ],
+          [
+            536,
+            397
+          ],
+          [
+            648,
+            384
+          ],
+          [
+            648,
+            397
+          ]
+        ],
+        "id": 64,
+        "isVertical": "true",
+        "text": "Column (box) selection",
+        "isTextline": "true",
+        "confidence": 0.842
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            398
+          ],
+          [
+            418,
+            412
+          ],
+          [
+            488,
+            398
+          ],
+          [
+            488,
+            412
+          ]
+        ],
+        "id": 65,
+        "isVertical": "true",
+        "text": "(drag mouse)",
+        "isTextline": "true",
+        "confidence": 0.851
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            413
+          ],
+          [
+            417,
+            427
+          ],
+          [
+            491,
+            413
+          ],
+          [
+            491,
+            427
+          ]
+        ],
+        "id": 66,
+        "isVertical": "true",
+        "text": "Ctil+Shift+Alt",
+        "isTextline": "true",
+        "confidence": 0.865
+      },
+      {
+        "boundingBox": [
+          [
+            535,
+            414
+          ],
+          [
+            535,
+            427
+          ],
+          [
+            649,
+            414
+          ],
+          [
+            649,
+            427
+          ]
+        ],
+        "id": 67,
+        "isVertical": "true",
+        "text": "Column (box) selection",
+        "isTextline": "true",
+        "confidence": 0.82
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            428
+          ],
+          [
+            418,
+            442
+          ],
+          [
+            489,
+            428
+          ],
+          [
+            489,
+            442
+          ]
+        ],
+        "id": 68,
+        "isVertical": "true",
+        "text": "+ (arrow key)",
+        "isTextline": "true",
+        "confidence": 0.865
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            442
+          ],
+          [
+            418,
+            457
+          ],
+          [
+            491,
+            442
+          ],
+          [
+            491,
+            457
+          ]
+        ],
+        "id": 69,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+Alt",
+        "isTextline": "true",
+        "confidence": 0.866
+      },
+      {
+        "boundingBox": [
+          [
+            535,
+            443
+          ],
+          [
+            535,
+            456
+          ],
+          [
+            718,
+            443
+          ],
+          [
+            718,
+            456
+          ]
+        ],
+        "id": 70,
+        "isVertical": "true",
+        "text": "Column (box) selection page up/down",
+        "isTextline": "true",
+        "confidence": 0.813
+      },
+      {
+        "boundingBox": [
+          [
+            419,
+            456
+          ],
+          [
+            419,
+            472
+          ],
+          [
+            488,
+            456
+          ],
+          [
+            488,
+            472
+          ]
+        ],
+        "id": 71,
+        "isVertical": "true",
+        "text": "+PgUp/PgDn",
+        "isTextline": "true",
+        "confidence": 0.863
+      },
+      {
+        "boundingBox": [
+          [
+            421,
+            491
+          ],
+          [
+            421,
+            504
+          ],
+          [
+            572,
+            491
+          ],
+          [
+            572,
+            504
+          ]
+        ],
+        "id": 72,
+        "isVertical": "true",
+        "text": "Rich lanquages editing",
+        "isTextline": "true",
+        "confidence": 0.867
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            516
+          ],
+          [
+            418,
+            530
+          ],
+          [
+            509,
+            516
+          ],
+          [
+            509,
+            530
+          ]
+        ],
+        "id": 73,
+        "isVertical": "true",
+        "text": "Ctrl+Space, Ctrl+l",
+        "isTextline": "true",
+        "confidence": 0.808
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            516
+          ],
+          [
+            536,
+            531
+          ],
+          [
+            630,
+            516
+          ],
+          [
+            630,
+            531
+          ]
+        ],
+        "id": 74,
+        "isVertical": "true",
+        "text": "Trigger suggestion",
+        "isTextline": "true",
+        "confidence": 0.819
+      },
+      {
+        "boundingBox": [
+          [
+            419,
+            535
+          ],
+          [
+            419,
+            549
+          ],
+          [
+            506,
+            535
+          ],
+          [
+            506,
+            549
+          ]
+        ],
+        "id": 75,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+Space",
+        "isTextline": "true",
+        "confidence": 0.801
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            535
+          ],
+          [
+            537,
+            549
+          ],
+          [
+            651,
+            535
+          ],
+          [
+            651,
+            549
+          ]
+        ],
+        "id": 76,
+        "isVertical": "true",
+        "text": "Trigger parameter hints",
+        "isTextline": "true",
+        "confidence": 0.812
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            551
+          ],
+          [
+            418,
+            565
+          ],
+          [
+            480,
+            551
+          ],
+          [
+            480,
+            565
+          ]
+        ],
+        "id": 77,
+        "isVertical": "true",
+        "text": "Shit+Alt+F",
+        "isTextline": "true",
+        "confidence": 0.832
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            551
+          ],
+          [
+            537,
+            566
+          ],
+          [
+            627,
+            551
+          ],
+          [
+            627,
+            566
+          ]
+        ],
+        "id": 78,
+        "isVertical": "true",
+        "text": "Format document",
+        "isTextline": "true",
+        "confidence": 0.869
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            566
+          ],
+          [
+            417,
+            580
+          ],
+          [
+            487,
+            566
+          ],
+          [
+            487,
+            580
+          ]
+        ],
+        "id": 79,
+        "isVertical": "true",
+        "text": "Ctrl+KCtrl+F",
+        "isTextline": "true",
+        "confidence": 0.8
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            567
+          ],
+          [
+            536,
+            581
+          ],
+          [
+            620,
+            567
+          ],
+          [
+            620,
+            581
+          ]
+        ],
+        "id": 80,
+        "isVertical": "true",
+        "text": "Format selection",
+        "isTextline": "true",
+        "confidence": 0.812
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            582
+          ],
+          [
+            418,
+            596
+          ],
+          [
+            441,
+            582
+          ],
+          [
+            441,
+            596
+          ]
+        ],
+        "id": 81,
+        "isVertical": "true",
+        "text": "F2",
+        "isTextline": "true",
+        "confidence": 0.73
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            582
+          ],
+          [
+            536,
+            596
+          ],
+          [
+            617,
+            582
+          ],
+          [
+            617,
+            596
+          ]
+        ],
+        "id": 82,
+        "isVertical": "true",
+        "text": "Go to Definition",
+        "isTextline": "true",
+        "confidence": 0.797
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            598
+          ],
+          [
+            417,
+            613
+          ],
+          [
+            462,
+            598
+          ],
+          [
+            462,
+            613
+          ]
+        ],
+        "id": 83,
+        "isVertical": "true",
+        "text": "Alt-FI2",
+        "isTextline": "true",
+        "confidence": 0.784
+      },
+      {
+        "boundingBox": [
+          [
+            537,
+            598
+          ],
+          [
+            537,
+            612
+          ],
+          [
+            614,
+            598
+          ],
+          [
+            614,
+            612
+          ]
+        ],
+        "id": 84,
+        "isVertical": "true",
+        "text": "Peek Definition",
+        "isTextline": "true",
+        "confidence": 0.837
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            614
+          ],
+          [
+            417,
+            629
+          ],
+          [
+            473,
+            614
+          ],
+          [
+            473,
+            629
+          ]
+        ],
+        "id": 85,
+        "isVertical": "true",
+        "text": "Ctl+KFI2",
+        "isTextline": "true",
+        "confidence": 0.8
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            614
+          ],
+          [
+            536,
+            628
+          ],
+          [
+            667,
+            614
+          ],
+          [
+            667,
+            628
+          ]
+        ],
+        "id": 86,
+        "isVertical": "true",
+        "text": "Open Definition to the side",
+        "isTextline": "true",
+        "confidence": 0.824
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            630
+          ],
+          [
+            418,
+            644
+          ],
+          [
+            452,
+            630
+          ],
+          [
+            452,
+            644
+          ]
+        ],
+        "id": 87,
+        "isVertical": "true",
+        "text": "Ctrl+.",
+        "isTextline": "true",
+        "confidence": 0.724
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            630
+          ],
+          [
+            536,
+            644
+          ],
+          [
+            586,
+            630
+          ],
+          [
+            586,
+            644
+          ]
+        ],
+        "id": 88,
+        "isVertical": "true",
+        "text": "QuickFx",
+        "isTextline": "true",
+        "confidence": 0.77
+      },
+      {
+        "boundingBox": [
+          [
+            417,
+            646
+          ],
+          [
+            417,
+            660
+          ],
+          [
+            470,
+            646
+          ],
+          [
+            470,
+            660
+          ]
+        ],
+        "id": 89,
+        "isVertical": "true",
+        "text": "Shift+F12",
+        "isTextline": "true",
+        "confidence": 0.778
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            646
+          ],
+          [
+            536,
+            660
+          ],
+          [
+            622,
+            646
+          ],
+          [
+            622,
+            660
+          ]
+        ],
+        "id": 90,
+        "isVertical": "true",
+        "text": "Show References",
+        "isTextline": "true",
+        "confidence": 0.807
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            663
+          ],
+          [
+            418,
+            676
+          ],
+          [
+            436,
+            663
+          ],
+          [
+            436,
+            676
+          ]
+        ],
+        "id": 91,
+        "isVertical": "true",
+        "text": "F2",
+        "isTextline": "true",
+        "confidence": 0.669
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            662
+          ],
+          [
+            536,
+            677
+          ],
+          [
+            618,
+            662
+          ],
+          [
+            618,
+            677
+          ]
+        ],
+        "id": 92,
+        "isVertical": "true",
+        "text": "Rename Symbol",
+        "isTextline": "true",
+        "confidence": 0.862
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            677
+          ],
+          [
+            418,
+            691
+          ],
+          [
+            487,
+            677
+          ],
+          [
+            487,
+            691
+          ]
+        ],
+        "id": 93,
+        "isVertical": "true",
+        "text": "Ctl+KCtrl-X",
+        "isTextline": "true",
+        "confidence": 0.793
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            677
+          ],
+          [
+            536,
+            692
+          ],
+          [
+            652,
+            677
+          ],
+          [
+            652,
+            692
+          ]
+        ],
+        "id": 94,
+        "isVertical": "true",
+        "text": "Trim trailing whitespace",
+        "isTextline": "true",
+        "confidence": 0.814
+      },
+      {
+        "boundingBox": [
+          [
+            418,
+            693
+          ],
+          [
+            418,
+            707
+          ],
+          [
+            468,
+            693
+          ],
+          [
+            468,
+            707
+          ]
+        ],
+        "id": 95,
+        "isVertical": "true",
+        "text": "Ctl+KM",
+        "isTextline": "true",
+        "confidence": 0.82
+      },
+      {
+        "boundingBox": [
+          [
+            536,
+            694
+          ],
+          [
+            536,
+            708
+          ],
+          [
+            641,
+            694
+          ],
+          [
+            641,
+            708
+          ]
+        ],
+        "id": 96,
+        "isVertical": "true",
+        "text": "Change file language",
+        "isTextline": "true",
+        "confidence": 0.815
+      },
+      {
+        "boundingBox": [
+          [
+            421,
+            728
+          ],
+          [
+            421,
+            741
+          ],
+          [
+            553,
+            728
+          ],
+          [
+            553,
+            741
+          ]
+        ],
+        "id": 97,
+        "isVertical": "true",
+        "text": "Editor management",
+        "isTextline": "true",
+        "confidence": 0.843
+      },
+      {
+        "boundingBox": [
+          [
+            420,
+            753
+          ],
+          [
+            420,
+            765
+          ],
+          [
+            598,
+            753
+          ],
+          [
+            598,
+            765
+          ]
+        ],
+        "id": 98,
+        "isVertical": "true",
+        "text": "Ctrl+F4, Ctrl+W Close editor",
+        "isTextline": "true",
+        "confidence": 0.638
+      },
+      {
+        "boundingBox": [
+          [
+            420,
+            769
+          ],
+          [
+            420,
+            782
+          ],
+          [
+            598,
+            769
+          ],
+          [
+            598,
+            782
+          ]
+        ],
+        "id": 99,
+        "isVertical": "true",
+        "text": "Ctl+KF Close folder",
+        "isTextline": "true",
+        "confidence": 0.681
+      },
+      {
+        "boundingBox": [
+          [
+            419,
+            785
+          ],
+          [
+            419,
+            798
+          ],
+          [
+            596,
+            785
+          ],
+          [
+            596,
+            798
+          ]
+        ],
+        "id": 100,
+        "isVertical": "true",
+        "text": "Spil Spiteditor",
+        "isTextline": "true",
+        "confidence": 0.585
+      },
+      {
+        "boundingBox": [
+          [
+            419,
+            801
+          ],
+          [
+            419,
+            814
+          ],
+          [
+            487,
+            801
+          ],
+          [
+            487,
+            814
+          ]
+        ],
+        "id": 101,
+        "isVertical": "true",
+        "text": "Ctil+1/2/3",
+        "isTextline": "true",
+        "confidence": 0.637
+      },
+      {
+        "boundingBox": [
+          [
+            420,
+            817
+          ],
+          [
+            420,
+            829
+          ],
+          [
+            715,
+            817
+          ],
+          [
+            715,
+            829
+          ]
+        ],
+        "id": 102,
+        "isVertical": "true",
+        "text": "Ctri+KCtrl+-/- Focus into previous/next editor group",
+        "isTextline": "true",
+        "confidence": 0.833
+      },
+      {
+        "boundingBox": [
+          [
+            420,
+            833
+          ],
+          [
+            420,
+            845
+          ],
+          [
+            642,
+            833
+          ],
+          [
+            642,
+            845
+          ]
+        ],
+        "id": 103,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+PgUp/PgDn Move editor left/right",
+        "isTextline": "true",
+        "confidence": 0.851
+      },
+      {
+        "boundingBox": [
+          [
+            421,
+            850
+          ],
+          [
+            421,
+            860
+          ],
+          [
+            658,
+            850
+          ],
+          [
+            658,
+            860
+          ]
+        ],
+        "id": 104,
+        "isVertical": "true",
+        "text": "Ctrl+K-/-Move active editor group",
+        "isTextline": "true",
+        "confidence": 0.832
+      },
+      {
+        "boundingBox": [
+          [
+            812,
+            32
+          ],
+          [
+            812,
+            45
+          ],
+          [
+            927,
+            32
+          ],
+          [
+            927,
+            45
+          ]
+        ],
+        "id": 105,
+        "isVertical": "true",
+        "text": "File management",
+        "isTextline": "true",
+        "confidence": 0.772
+      },
+      {
+        "boundingBox": [
+          [
+            812,
+            292
+          ],
+          [
+            812,
+            305
+          ],
+          [
+            859,
+            292
+          ],
+          [
+            859,
+            305
+          ]
+        ],
+        "id": 106,
+        "isVertical": "true",
+        "text": "Display",
+        "isTextline": "true",
+        "confidence": 0.619
+      },
+      {
+        "boundingBox": [
+          [
+            812,
+            565
+          ],
+          [
+            812,
+            579
+          ],
+          [
+            855,
+            565
+          ],
+          [
+            855,
+            579
+          ]
+        ],
+        "id": 107,
+        "isVertical": "true",
+        "text": "Debug",
+        "isTextline": "true",
+        "confidence": 0.648
+      },
+      {
+        "boundingBox": [
+          [
+            810,
+            591
+          ],
+          [
+            810,
+            604
+          ],
+          [
+            826,
+            591
+          ],
+          [
+            826,
+            604
+          ]
+        ],
+        "id": 108,
+        "isVertical": "true",
+        "text": "a",
+        "isTextline": "true",
+        "confidence": 0.603
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            591
+          ],
+          [
+            927,
+            605
+          ],
+          [
+            1019,
+            591
+          ],
+          [
+            1019,
+            605
+          ]
+        ],
+        "id": 109,
+        "isVertical": "true",
+        "text": "Toggle breakpoint",
+        "isTextline": "true",
+        "confidence": 0.732
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            607
+          ],
+          [
+            809,
+            619
+          ],
+          [
+            826,
+            607
+          ],
+          [
+            826,
+            619
+          ]
+        ],
+        "id": 110,
+        "isVertical": "true",
+        "text": "FS",
+        "isTextline": "true",
+        "confidence": 0.655
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            606
+          ],
+          [
+            927,
+            620
+          ],
+          [
+            1002,
+            606
+          ],
+          [
+            1002,
+            620
+          ]
+        ],
+        "id": 111,
+        "isVertical": "true",
+        "text": "Start/Continue",
+        "isTextline": "true",
+        "confidence": 0.859
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            621
+          ],
+          [
+            807,
+            635
+          ],
+          [
+            856,
+            621
+          ],
+          [
+            856,
+            635
+          ]
+        ],
+        "id": 112,
+        "isVertical": "true",
+        "text": "ShiftF5",
+        "isTextline": "true",
+        "confidence": 0.768
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            622
+          ],
+          [
+            927,
+            636
+          ],
+          [
+            957,
+            622
+          ],
+          [
+            957,
+            636
+          ]
+        ],
+        "id": 113,
+        "isVertical": "true",
+        "text": "Stop",
+        "isTextline": "true",
+        "confidence": 0.766
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            637
+          ],
+          [
+            807,
+            651
+          ],
+          [
+            881,
+            637
+          ],
+          [
+            881,
+            651
+          ]
+        ],
+        "id": 114,
+        "isVertical": "true",
+        "text": "FI1/Shit+FIL",
+        "isTextline": "true",
+        "confidence": 0.76
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            638
+          ],
+          [
+            927,
+            652
+          ],
+          [
+            997,
+            638
+          ],
+          [
+            997,
+            652
+          ]
+        ],
+        "id": 115,
+        "isVertical": "true",
+        "text": "Step into/out",
+        "isTextline": "true",
+        "confidence": 0.816
+      },
+      {
+        "boundingBox": [
+          [
+            808,
+            653
+          ],
+          [
+            808,
+            667
+          ],
+          [
+            831,
+            653
+          ],
+          [
+            831,
+            667
+          ]
+        ],
+        "id": 116,
+        "isVertical": "true",
+        "text": "FIO",
+        "isTextline": "true",
+        "confidence": 0.728
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            654
+          ],
+          [
+            927,
+            668
+          ],
+          [
+            979,
+            654
+          ],
+          [
+            979,
+            668
+          ]
+        ],
+        "id": 117,
+        "isVertical": "true",
+        "text": "Step over",
+        "isTextline": "true",
+        "confidence": 0.766
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            670
+          ],
+          [
+            927,
+            684
+          ],
+          [
+            988,
+            670
+          ],
+          [
+            988,
+            684
+          ]
+        ],
+        "id": 118,
+        "isVertical": "true",
+        "text": "Show hover",
+        "isTextline": "true",
+        "confidence": 0.696
+      },
+      {
+        "boundingBox": [
+          [
+            812,
+            698
+          ],
+          [
+            812,
+            710
+          ],
+          [
+            940,
+            698
+          ],
+          [
+            940,
+            710
+          ]
+        ],
+        "id": 119,
+        "isVertical": "true",
+        "text": "Inteqrated terminal",
+        "isTextline": "true",
+        "confidence": 0.741
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            722
+          ],
+          [
+            809,
+            737
+          ],
+          [
+            841,
+            722
+          ],
+          [
+            841,
+            737
+          ]
+        ],
+        "id": 120,
+        "isVertical": "true",
+        "text": "Cal+",
+        "isTextline": "true",
+        "confidence": 0.757
+      },
+      {
+        "boundingBox": [
+          [
+            928,
+            723
+          ],
+          [
+            928,
+            737
+          ],
+          [
+            1049,
+            723
+          ],
+          [
+            1049,
+            737
+          ]
+        ],
+        "id": 121,
+        "isVertical": "true",
+        "text": "Show integrated terminal",
+        "isTextline": "true",
+        "confidence": 0.863
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            739
+          ],
+          [
+            927,
+            752
+          ],
+          [
+            1027,
+            739
+          ],
+          [
+            1027,
+            752
+          ]
+        ],
+        "id": 122,
+        "isVertical": "true",
+        "text": "Create new terminal",
+        "isTextline": "true",
+        "confidence": 0.778
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            754
+          ],
+          [
+            807,
+            769
+          ],
+          [
+            847,
+            754
+          ],
+          [
+            847,
+            769
+          ]
+        ],
+        "id": 123,
+        "isVertical": "true",
+        "text": "Cul+C",
+        "isTextline": "true",
+        "confidence": 0.749
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            754
+          ],
+          [
+            927,
+            769
+          ],
+          [
+            1002,
+            754
+          ],
+          [
+            1002,
+            769
+          ]
+        ],
+        "id": 124,
+        "isVertical": "true",
+        "text": "Copy selection",
+        "isTextline": "true",
+        "confidence": 0.87
+      },
+      {
+        "boundingBox": [
+          [
+            808,
+            769
+          ],
+          [
+            808,
+            784
+          ],
+          [
+            847,
+            769
+          ],
+          [
+            847,
+            784
+          ]
+        ],
+        "id": 125,
+        "isVertical": "true",
+        "text": "Cul+V",
+        "isTextline": "true",
+        "confidence": 0.78
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            770
+          ],
+          [
+            927,
+            784
+          ],
+          [
+            1049,
+            770
+          ],
+          [
+            1049,
+            784
+          ]
+        ],
+        "id": 126,
+        "isVertical": "true",
+        "text": "Paste into active terminal",
+        "isTextline": "true",
+        "confidence": 0.883
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            785
+          ],
+          [
+            807,
+            799
+          ],
+          [
+            859,
+            785
+          ],
+          [
+            859,
+            799
+          ]
+        ],
+        "id": 127,
+        "isVertical": "true",
+        "text": "Cul+1/1",
+        "isTextline": "true",
+        "confidence": 0.722
+      },
+      {
+        "boundingBox": [
+          [
+            926,
+            786
+          ],
+          [
+            926,
+            800
+          ],
+          [
+            1004,
+            786
+          ],
+          [
+            1004,
+            800
+          ]
+        ],
+        "id": 128,
+        "isVertical": "true",
+        "text": "Scroll up/down",
+        "isTextline": "true",
+        "confidence": 0.831
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            802
+          ],
+          [
+            809,
+            816
+          ],
+          [
+            1029,
+            802
+          ],
+          [
+            1029,
+            816
+          ]
+        ],
+        "id": 129,
+        "isVertical": "true",
+        "text": "Shift+PgUp / PgDn Scroll page up/down",
+        "isTextline": "true",
+        "confidence": 0.658
+      },
+      {
+        "boundingBox": [
+          [
+            810,
+            818
+          ],
+          [
+            810,
+            831
+          ],
+          [
+            1028,
+            818
+          ],
+          [
+            1028,
+            831
+          ]
+        ],
+        "id": 130,
+        "isVertical": "true",
+        "text": "Ctri+Home/End Scroll to to top/bottom",
+        "isTextline": "true",
+        "confidence": 0.706
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            852
+          ],
+          [
+            809,
+            862
+          ],
+          [
+            1097,
+            852
+          ],
+          [
+            1097,
+            862
+          ]
+        ],
+        "id": 131,
+        "isVertical": "true",
+        "text": "Other operating systems' keyboard shortcuts and additional",
+        "isTextline": "true",
+        "confidence": 0.788
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            867
+          ],
+          [
+            809,
+            877
+          ],
+          [
+            1099,
+            867
+          ],
+          [
+            1099,
+            877
+          ]
+        ],
+        "id": 132,
+        "isVertical": "true",
+        "text": "unassigned shortcuts available at aka.ms/vscodekeybindings",
+        "isTextline": "true",
+        "confidence": 0.728
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            285
+          ],
+          [
+            27,
+            300
+          ],
+          [
+            66,
+            285
+          ],
+          [
+            66,
+            300
+          ]
+        ],
+        "id": 133,
+        "isVertical": "true",
+        "text": "Cul+X",
+        "isTextline": "true",
+        "confidence": 0.797
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            286
+          ],
+          [
+            146,
+            300
+          ],
+          [
+            270,
+            286
+          ],
+          [
+            270,
+            300
+          ]
+        ],
+        "id": 134,
+        "isVertical": "true",
+        "text": "Cut line (empty selection)",
+        "isTextline": "true",
+        "confidence": 0.864
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            301
+          ],
+          [
+            27,
+            315
+          ],
+          [
+            65,
+            301
+          ],
+          [
+            65,
+            315
+          ]
+        ],
+        "id": 135,
+        "isVertical": "true",
+        "text": "Cul+C",
+        "isTextline": "true",
+        "confidence": 0.795
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            301
+          ],
+          [
+            146,
+            316
+          ],
+          [
+            277,
+            301
+          ],
+          [
+            277,
+            316
+          ]
+        ],
+        "id": 136,
+        "isVertical": "true",
+        "text": "Copy line (empty selection)",
+        "isTextline": "true",
+        "confidence": 0.853
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            317
+          ],
+          [
+            27,
+            332
+          ],
+          [
+            78,
+            317
+          ],
+          [
+            78,
+            332
+          ]
+        ],
+        "id": 137,
+        "isVertical": "true",
+        "text": "Al+1/1",
+        "isTextline": "true",
+        "confidence": 0.823
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            317
+          ],
+          [
+            146,
+            332
+          ],
+          [
+            243,
+            317
+          ],
+          [
+            243,
+            332
+          ]
+        ],
+        "id": 138,
+        "isVertical": "true",
+        "text": "Move line up/down",
+        "isTextline": "true",
+        "confidence": 0.883
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            333
+          ],
+          [
+            27,
+            347
+          ],
+          [
+            109,
+            333
+          ],
+          [
+            109,
+            347
+          ]
+        ],
+        "id": 139,
+        "isVertical": "true",
+        "text": "Shift+At+1/t",
+        "isTextline": "true",
+        "confidence": 0.806
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            348
+          ],
+          [
+            27,
+            362
+          ],
+          [
+            94,
+            348
+          ],
+          [
+            94,
+            362
+          ]
+        ],
+        "id": 140,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+K",
+        "isTextline": "true",
+        "confidence": 0.803
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            348
+          ],
+          [
+            146,
+            363
+          ],
+          [
+            204,
+            348
+          ],
+          [
+            204,
+            363
+          ]
+        ],
+        "id": 141,
+        "isVertical": "true",
+        "text": "Delete line",
+        "isTextline": "true",
+        "confidence": 0.845
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            334
+          ],
+          [
+            146,
+            348
+          ],
+          [
+            241,
+            334
+          ],
+          [
+            241,
+            348
+          ]
+        ],
+        "id": 142,
+        "isVertical": "true",
+        "text": "Copy line up/down",
+        "isTextline": "true",
+        "confidence": 0.846
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            364
+          ],
+          [
+            27,
+            378
+          ],
+          [
+            84,
+            364
+          ],
+          [
+            84,
+            378
+          ]
+        ],
+        "id": 143,
+        "isVertical": "true",
+        "text": "Ctrl+Enter",
+        "isTextline": "true",
+        "confidence": 0.83
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            365
+          ],
+          [
+            146,
+            379
+          ],
+          [
+            229,
+            365
+          ],
+          [
+            229,
+            379
+          ]
+        ],
+        "id": 144,
+        "isVertical": "true",
+        "text": "Insert line below",
+        "isTextline": "true",
+        "confidence": 0.877
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            380
+          ],
+          [
+            28,
+            395
+          ],
+          [
+            112,
+            380
+          ],
+          [
+            112,
+            395
+          ]
+        ],
+        "id": 145,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+Enter",
+        "isTextline": "true",
+        "confidence": 0.802
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            381
+          ],
+          [
+            146,
+            395
+          ],
+          [
+            230,
+            381
+          ],
+          [
+            230,
+            395
+          ]
+        ],
+        "id": 146,
+        "isVertical": "true",
+        "text": "Insert line above",
+        "isTextline": "true",
+        "confidence": 0.87
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            396
+          ],
+          [
+            27,
+            411
+          ],
+          [
+            93,
+            396
+          ],
+          [
+            93,
+            411
+          ]
+        ],
+        "id": 147,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+",
+        "isTextline": "true",
+        "confidence": 0.817
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            397
+          ],
+          [
+            146,
+            411
+          ],
+          [
+            273,
+            397
+          ],
+          [
+            273,
+            411
+          ]
+        ],
+        "id": 148,
+        "isVertical": "true",
+        "text": "Jump to matching bracket",
+        "isTextline": "true",
+        "confidence": 0.839
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            412
+          ],
+          [
+            27,
+            427
+          ],
+          [
+            77,
+            412
+          ],
+          [
+            77,
+            427
+          ]
+        ],
+        "id": 149,
+        "isVertical": "true",
+        "text": "Cal・1/1",
+        "isTextline": "true",
+        "confidence": 0.823
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            413
+          ],
+          [
+            146,
+            427
+          ],
+          [
+            244,
+            413
+          ],
+          [
+            244,
+            427
+          ]
+        ],
+        "id": 150,
+        "isVertical": "true",
+        "text": "Indent/outdent line",
+        "isTextline": "true",
+        "confidence": 0.881
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            428
+          ],
+          [
+            27,
+            443
+          ],
+          [
+            91,
+            428
+          ],
+          [
+            91,
+            443
+          ]
+        ],
+        "id": 151,
+        "isVertical": "true",
+        "text": "Home/End",
+        "isTextline": "true",
+        "confidence": 0.796
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            443
+          ],
+          [
+            27,
+            458
+          ],
+          [
+            87,
+            443
+          ],
+          [
+            87,
+            458
+          ]
+        ],
+        "id": 152,
+        "isVertical": "true",
+        "text": "Ctrl+Home",
+        "isTextline": "true",
+        "confidence": 0.783
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            428
+          ],
+          [
+            146,
+            443
+          ],
+          [
+            281,
+            428
+          ],
+          [
+            281,
+            443
+          ]
+        ],
+        "id": 153,
+        "isVertical": "true",
+        "text": "Go to beginning/end of line",
+        "isTextline": "true",
+        "confidence": 0.858
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            443
+          ],
+          [
+            145,
+            458
+          ],
+          [
+            257,
+            443
+          ],
+          [
+            257,
+            458
+          ]
+        ],
+        "id": 154,
+        "isVertical": "true",
+        "text": "Go to beginning of file",
+        "isTextline": "true",
+        "confidence": 0.83
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            459
+          ],
+          [
+            145,
+            474
+          ],
+          [
+            229,
+            459
+          ],
+          [
+            229,
+            474
+          ]
+        ],
+        "id": 155,
+        "isVertical": "true",
+        "text": "Goto end of file",
+        "isTextline": "true",
+        "confidence": 0.855
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            459
+          ],
+          [
+            27,
+            474
+          ],
+          [
+            77,
+            459
+          ],
+          [
+            77,
+            474
+          ]
+        ],
+        "id": 156,
+        "isVertical": "true",
+        "text": "Ctrl+End",
+        "isTextline": "true",
+        "confidence": 0.813
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            475
+          ],
+          [
+            27,
+            490
+          ],
+          [
+            78,
+            475
+          ],
+          [
+            78,
+            490
+          ]
+        ],
+        "id": 157,
+        "isVertical": "true",
+        "text": "Cul+1/1",
+        "isTextline": "true",
+        "confidence": 0.81
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            475
+          ],
+          [
+            145,
+            490
+          ],
+          [
+            242,
+            475
+          ],
+          [
+            242,
+            490
+          ]
+        ],
+        "id": 158,
+        "isVertical": "true",
+        "text": "Scroll line up/down",
+        "isTextline": "true",
+        "confidence": 0.864
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            491
+          ],
+          [
+            27,
+            506
+          ],
+          [
+            116,
+            491
+          ],
+          [
+            116,
+            506
+          ]
+        ],
+        "id": 159,
+        "isVertical": "true",
+        "text": "Alt+PgUp/PgDn",
+        "isTextline": "true",
+        "confidence": 0.815
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            491
+          ],
+          [
+            146,
+            506
+          ],
+          [
+            249,
+            491
+          ],
+          [
+            249,
+            506
+          ]
+        ],
+        "id": 160,
+        "isVertical": "true",
+        "text": "Scroll page up/down",
+        "isTextline": "true",
+        "confidence": 0.854
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            507
+          ],
+          [
+            27,
+            522
+          ],
+          [
+            93,
+            507
+          ],
+          [
+            93,
+            522
+          ]
+        ],
+        "id": 161,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+]",
+        "isTextline": "true",
+        "confidence": 0.84
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            507
+          ],
+          [
+            146,
+            522
+          ],
+          [
+            251,
+            507
+          ],
+          [
+            251,
+            522
+          ]
+        ],
+        "id": 162,
+        "isVertical": "true",
+        "text": "Fold (collapse) region",
+        "isTextline": "true",
+        "confidence": 0.888
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            523
+          ],
+          [
+            28,
+            538
+          ],
+          [
+            91,
+            523
+          ],
+          [
+            91,
+            538
+          ]
+        ],
+        "id": 163,
+        "isVertical": "true",
+        "text": "(trl+Shit+]",
+        "isTextline": "true",
+        "confidence": 0.785
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            538
+          ],
+          [
+            27,
+            553
+          ],
+          [
+            95,
+            538
+          ],
+          [
+            95,
+            553
+          ]
+        ],
+        "id": 164,
+        "isVertical": "true",
+        "text": "Ctil+K Ctl+",
+        "isTextline": "true",
+        "confidence": 0.794
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            523
+          ],
+          [
+            146,
+            538
+          ],
+          [
+            275,
+            523
+          ],
+          [
+            275,
+            538
+          ]
+        ],
+        "id": 165,
+        "isVertical": "true",
+        "text": "Unfold (uncollapse) region",
+        "isTextline": "true",
+        "confidence": 0.865
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            538
+          ],
+          [
+            145,
+            553
+          ],
+          [
+            285,
+            538
+          ],
+          [
+            285,
+            553
+          ]
+        ],
+        "id": 166,
+        "isVertical": "true",
+        "text": "Fold (collapse) all subregions",
+        "isTextline": "true",
+        "confidence": 0.813
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            555
+          ],
+          [
+            145,
+            569
+          ],
+          [
+            308,
+            555
+          ],
+          [
+            308,
+            569
+          ]
+        ],
+        "id": 167,
+        "isVertical": "true",
+        "text": "Unfold (uncollapse) all subregions",
+        "isTextline": "true",
+        "confidence": 0.834
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            554
+          ],
+          [
+            27,
+            569
+          ],
+          [
+            96,
+            554
+          ],
+          [
+            96,
+            569
+          ]
+        ],
+        "id": 168,
+        "isVertical": "true",
+        "text": "(trl+K (trl+]",
+        "isTextline": "true",
+        "confidence": 0.813
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            570
+          ],
+          [
+            146,
+            585
+          ],
+          [
+            270,
+            570
+          ],
+          [
+            270,
+            585
+          ]
+        ],
+        "id": 169,
+        "isVertical": "true",
+        "text": "Fold (collapse) all regions",
+        "isTextline": "true",
+        "confidence": 0.859
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            570
+          ],
+          [
+            27,
+            585
+          ],
+          [
+            97,
+            570
+          ],
+          [
+            97,
+            585
+          ]
+        ],
+        "id": 170,
+        "isVertical": "true",
+        "text": "Cul+KCul+0",
+        "isTextline": "true",
+        "confidence": 0.787
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            586
+          ],
+          [
+            27,
+            600
+          ],
+          [
+            96,
+            586
+          ],
+          [
+            96,
+            600
+          ]
+        ],
+        "id": 171,
+        "isVertical": "true",
+        "text": "(trl+K Cul+)",
+        "isTextline": "true",
+        "confidence": 0.803
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            586
+          ],
+          [
+            146,
+            601
+          ],
+          [
+            292,
+            586
+          ],
+          [
+            292,
+            601
+          ]
+        ],
+        "id": 172,
+        "isVertical": "true",
+        "text": "Unfold (uncollapse) all regions",
+        "isTextline": "true",
+        "confidence": 0.839
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            602
+          ],
+          [
+            145,
+            617
+          ],
+          [
+            240,
+            602
+          ],
+          [
+            240,
+            617
+          ]
+        ],
+        "id": 173,
+        "isVertical": "true",
+        "text": "Add line comment",
+        "isTextline": "true",
+        "confidence": 0.837
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            602
+          ],
+          [
+            27,
+            616
+          ],
+          [
+            98,
+            602
+          ],
+          [
+            98,
+            616
+          ]
+        ],
+        "id": 174,
+        "isVertical": "true",
+        "text": "Ctil+K Ctl+C",
+        "isTextline": "true",
+        "confidence": 0.796
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            618
+          ],
+          [
+            145,
+            632
+          ],
+          [
+            257,
+            618
+          ],
+          [
+            257,
+            632
+          ]
+        ],
+        "id": 175,
+        "isVertical": "true",
+        "text": "Remove line comment",
+        "isTextline": "true",
+        "confidence": 0.85
+      },
+      {
+        "boundingBox": [
+          [
+            28,
+            618
+          ],
+          [
+            28,
+            632
+          ],
+          [
+            99,
+            618
+          ],
+          [
+            99,
+            632
+          ]
+        ],
+        "id": 176,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctri+U",
+        "isTextline": "true",
+        "confidence": 0.755
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            634
+          ],
+          [
+            27,
+            648
+          ],
+          [
+            64,
+            634
+          ],
+          [
+            64,
+            648
+          ]
+        ],
+        "id": 177,
+        "isVertical": "true",
+        "text": "Cul+/",
+        "isTextline": "true",
+        "confidence": 0.773
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            633
+          ],
+          [
+            145,
+            648
+          ],
+          [
+            251,
+            633
+          ],
+          [
+            251,
+            648
+          ]
+        ],
+        "id": 178,
+        "isVertical": "true",
+        "text": "Toggle line comment",
+        "isTextline": "true",
+        "confidence": 0.811
+      },
+      {
+        "boundingBox": [
+          [
+            145,
+            650
+          ],
+          [
+            145,
+            664
+          ],
+          [
+            259,
+            650
+          ],
+          [
+            259,
+            664
+          ]
+        ],
+        "id": 179,
+        "isVertical": "true",
+        "text": "Toggle block comment",
+        "isTextline": "true",
+        "confidence": 0.745
+      },
+      {
+        "boundingBox": [
+          [
+            27,
+            649
+          ],
+          [
+            27,
+            663
+          ],
+          [
+            92,
+            649
+          ],
+          [
+            92,
+            663
+          ]
+        ],
+        "id": 180,
+        "isVertical": "true",
+        "text": "Shift+Alt+A",
+        "isTextline": "true",
+        "confidence": 0.659
+      },
+      {
+        "boundingBox": [
+          [
+            31,
+            669
+          ],
+          [
+            31,
+            677
+          ],
+          [
+            58,
+            669
+          ],
+          [
+            58,
+            677
+          ]
+        ],
+        "id": 181,
+        "isVertical": "true",
+        "text": "AR+Z",
+        "isTextline": "true",
+        "confidence": 0.312
+      },
+      {
+        "boundingBox": [
+          [
+            146,
+            666
+          ],
+          [
+            146,
+            680
+          ],
+          [
+            236,
+            666
+          ],
+          [
+            236,
+            680
+          ]
+        ],
+        "id": 182,
+        "isVertical": "true",
+        "text": "Toggle word wrap",
+        "isTextline": "true",
+        "confidence": 0.626
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            316
+          ],
+          [
+            927,
+            330
+          ],
+          [
+            1016,
+            316
+          ],
+          [
+            1016,
+            330
+          ]
+        ],
+        "id": 183,
+        "isVertical": "true",
+        "text": "Toggle full screen",
+        "isTextline": "true",
+        "confidence": 0.823
+      },
+      {
+        "boundingBox": [
+          [
+            809,
+            315
+          ],
+          [
+            809,
+            330
+          ],
+          [
+            1017,
+            315
+          ],
+          [
+            1017,
+            330
+          ]
+        ],
+        "id": 184,
+        "isVertical": "true",
+        "text": "Fil Toggle Toggle Togen",
+        "isTextline": "true",
+        "confidence": 0.582
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            331
+          ],
+          [
+            807,
+            346
+          ],
+          [
+            871,
+            331
+          ],
+          [
+            871,
+            346
+          ]
+        ],
+        "id": 185,
+        "isVertical": "true",
+        "text": "Shift+Alt+0",
+        "isTextline": "true",
+        "confidence": 0.843
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            347
+          ],
+          [
+            807,
+            362
+          ],
+          [
+            865,
+            347
+          ],
+          [
+            865,
+            362
+          ]
+        ],
+        "id": 186,
+        "isVertical": "true",
+        "text": "(al+=/・",
+        "isTextline": "true",
+        "confidence": 0.765
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            362
+          ],
+          [
+            807,
+            377
+          ],
+          [
+            847,
+            362
+          ],
+          [
+            847,
+            377
+          ]
+        ],
+        "id": 187,
+        "isVertical": "true",
+        "text": "Cul+8",
+        "isTextline": "true",
+        "confidence": 0.794
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            378
+          ],
+          [
+            807,
+            393
+          ],
+          [
+            874,
+            378
+          ],
+          [
+            874,
+            393
+          ]
+        ],
+        "id": 188,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+E",
+        "isTextline": "true",
+        "confidence": 0.839
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            394
+          ],
+          [
+            807,
+            408
+          ],
+          [
+            874,
+            394
+          ],
+          [
+            874,
+            408
+          ]
+        ],
+        "id": 189,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+F",
+        "isTextline": "true",
+        "confidence": 0.844
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            410
+          ],
+          [
+            807,
+            424
+          ],
+          [
+            876,
+            410
+          ],
+          [
+            876,
+            424
+          ]
+        ],
+        "id": 190,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+G",
+        "isTextline": "true",
+        "confidence": 0.838
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            426
+          ],
+          [
+            807,
+            440
+          ],
+          [
+            875,
+            426
+          ],
+          [
+            875,
+            440
+          ]
+        ],
+        "id": 191,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+D",
+        "isTextline": "true",
+        "confidence": 0.839
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            442
+          ],
+          [
+            807,
+            456
+          ],
+          [
+            875,
+            442
+          ],
+          [
+            875,
+            456
+          ]
+        ],
+        "id": 192,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+X",
+        "isTextline": "true",
+        "confidence": 0.835
+      },
+      {
+        "boundingBox": [
+          [
+            928,
+            332
+          ],
+          [
+            928,
+            346
+          ],
+          [
+            1117,
+            332
+          ],
+          [
+            1117,
+            346
+          ]
+        ],
+        "id": 193,
+        "isVertical": "true",
+        "text": "Toggle editor layout (horizontal/vertical)",
+        "isTextline": "true",
+        "confidence": 0.844
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            347
+          ],
+          [
+            927,
+            362
+          ],
+          [
+            994,
+            347
+          ],
+          [
+            994,
+            362
+          ]
+        ],
+        "id": 194,
+        "isVertical": "true",
+        "text": "Zoom in/out",
+        "isTextline": "true",
+        "confidence": 0.855
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            363
+          ],
+          [
+            927,
+            377
+          ],
+          [
+            1043,
+            363
+          ],
+          [
+            1043,
+            377
+          ]
+        ],
+        "id": 195,
+        "isVertical": "true",
+        "text": "Toggle Sidebar visibility",
+        "isTextline": "true",
+        "confidence": 0.881
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            379
+          ],
+          [
+            927,
+            393
+          ],
+          [
+            1068,
+            379
+          ],
+          [
+            1068,
+            393
+          ]
+        ],
+        "id": 196,
+        "isVertical": "true",
+        "text": "Show Explorer / Toggle focus",
+        "isTextline": "true",
+        "confidence": 0.86
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            394
+          ],
+          [
+            927,
+            409
+          ],
+          [
+            994,
+            394
+          ],
+          [
+            994,
+            409
+          ]
+        ],
+        "id": 197,
+        "isVertical": "true",
+        "text": "Show Search",
+        "isTextline": "true",
+        "confidence": 0.888
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            410
+          ],
+          [
+            927,
+            425
+          ],
+          [
+            1031,
+            410
+          ],
+          [
+            1031,
+            425
+          ]
+        ],
+        "id": 198,
+        "isVertical": "true",
+        "text": "Show Source Control",
+        "isTextline": "true",
+        "confidence": 0.874
+      },
+      {
+        "boundingBox": [
+          [
+            926,
+            426
+          ],
+          [
+            926,
+            441
+          ],
+          [
+            994,
+            426
+          ],
+          [
+            994,
+            441
+          ]
+        ],
+        "id": 199,
+        "isVertical": "true",
+        "text": "Show Debug",
+        "isTextline": "true",
+        "confidence": 0.897
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            442
+          ],
+          [
+            927,
+            456
+          ],
+          [
+            1011,
+            442
+          ],
+          [
+            1011,
+            456
+          ]
+        ],
+        "id": 200,
+        "isVertical": "true",
+        "text": "Show Extensions",
+        "isTextline": "true",
+        "confidence": 0.867
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            458
+          ],
+          [
+            807,
+            472
+          ],
+          [
+            876,
+            458
+          ],
+          [
+            876,
+            472
+          ]
+        ],
+        "id": 201,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+H",
+        "isTextline": "true",
+        "confidence": 0.844
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            473
+          ],
+          [
+            807,
+            488
+          ],
+          [
+            873,
+            473
+          ],
+          [
+            873,
+            488
+          ]
+        ],
+        "id": 202,
+        "isVertical": "true",
+        "text": "(trl+Shit+)",
+        "isTextline": "true",
+        "confidence": 0.824
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            458
+          ],
+          [
+            927,
+            473
+          ],
+          [
+            1003,
+            458
+          ],
+          [
+            1003,
+            473
+          ]
+        ],
+        "id": 203,
+        "isVertical": "true",
+        "text": "Replace in files",
+        "isTextline": "true",
+        "confidence": 0.871
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            473
+          ],
+          [
+            927,
+            488
+          ],
+          [
+            1032,
+            473
+          ],
+          [
+            1032,
+            488
+          ]
+        ],
+        "id": 204,
+        "isVertical": "true",
+        "text": "Toggle Search details",
+        "isTextline": "true",
+        "confidence": 0.888
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            489
+          ],
+          [
+            807,
+            504
+          ],
+          [
+            875,
+            489
+          ],
+          [
+            875,
+            504
+          ]
+        ],
+        "id": 205,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+U",
+        "isTextline": "true",
+        "confidence": 0.834
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            490
+          ],
+          [
+            927,
+            504
+          ],
+          [
+            1023,
+            490
+          ],
+          [
+            1023,
+            504
+          ]
+        ],
+        "id": 206,
+        "isVertical": "true",
+        "text": "Show Output panel",
+        "isTextline": "true",
+        "confidence": 0.881
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            505
+          ],
+          [
+            807,
+            520
+          ],
+          [
+            875,
+            505
+          ],
+          [
+            875,
+            520
+          ]
+        ],
+        "id": 207,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+V",
+        "isTextline": "true",
+        "confidence": 0.824
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            506
+          ],
+          [
+            927,
+            520
+          ],
+          [
+            1050,
+            506
+          ],
+          [
+            1050,
+            520
+          ]
+        ],
+        "id": 208,
+        "isVertical": "true",
+        "text": "Open Markdown preview",
+        "isTextline": "true",
+        "confidence": 0.857
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            522
+          ],
+          [
+            927,
+            535
+          ],
+          [
+            1100,
+            522
+          ],
+          [
+            1100,
+            535
+          ]
+        ],
+        "id": 209,
+        "isVertical": "true",
+        "text": "Open Markdown preview to the side",
+        "isTextline": "true",
+        "confidence": 0.817
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            521
+          ],
+          [
+            807,
+            536
+          ],
+          [
+            856,
+            521
+          ],
+          [
+            856,
+            536
+          ]
+        ],
+        "id": 210,
+        "isVertical": "true",
+        "text": "Crl-KV",
+        "isTextline": "true",
+        "confidence": 0.774
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            537
+          ],
+          [
+            927,
+            551
+          ],
+          [
+            1054,
+            537
+          ],
+          [
+            1054,
+            551
+          ]
+        ],
+        "id": 211,
+        "isVertical": "true",
+        "text": "Zen Mode (Esc Esc to exit)",
+        "isTextline": "true",
+        "confidence": 0.82
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            536
+          ],
+          [
+            807,
+            552
+          ],
+          [
+            855,
+            536
+          ],
+          [
+            855,
+            552
+          ]
+        ],
+        "id": 212,
+        "isVertical": "true",
+        "text": "CH-*KZ",
+        "isTextline": "true",
+        "confidence": 0.785
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            56
+          ],
+          [
+            807,
+            71
+          ],
+          [
+            848,
+            56
+          ],
+          [
+            848,
+            71
+          ]
+        ],
+        "id": 213,
+        "isVertical": "true",
+        "text": "Cal+N",
+        "isTextline": "true",
+        "confidence": 0.828
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            72
+          ],
+          [
+            807,
+            87
+          ],
+          [
+            848,
+            72
+          ],
+          [
+            848,
+            87
+          ]
+        ],
+        "id": 214,
+        "isVertical": "true",
+        "text": "Ctl+0",
+        "isTextline": "true",
+        "confidence": 0.82
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            88
+          ],
+          [
+            807,
+            103
+          ],
+          [
+            846,
+            88
+          ],
+          [
+            846,
+            103
+          ]
+        ],
+        "id": 215,
+        "isVertical": "true",
+        "text": "Cal+5",
+        "isTextline": "true",
+        "confidence": 0.829
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            103
+          ],
+          [
+            807,
+            117
+          ],
+          [
+            874,
+            103
+          ],
+          [
+            874,
+            117
+          ]
+        ],
+        "id": 216,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+s",
+        "isTextline": "true",
+        "confidence": 0.836
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            119
+          ],
+          [
+            807,
+            134
+          ],
+          [
+            854,
+            119
+          ],
+          [
+            854,
+            134
+          ]
+        ],
+        "id": 217,
+        "isVertical": "true",
+        "text": "Cul+KS",
+        "isTextline": "true",
+        "confidence": 0.836
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            135
+          ],
+          [
+            807,
+            150
+          ],
+          [
+            853,
+            135
+          ],
+          [
+            853,
+            150
+          ]
+        ],
+        "id": 218,
+        "isVertical": "true",
+        "text": "Cul・F4",
+        "isTextline": "true",
+        "confidence": 0.845
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            151
+          ],
+          [
+            807,
+            166
+          ],
+          [
+            882,
+            151
+          ],
+          [
+            882,
+            166
+          ]
+        ],
+        "id": 219,
+        "isVertical": "true",
+        "text": "Ctrl+K Cul-W",
+        "isTextline": "true",
+        "confidence": 0.864
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            167
+          ],
+          [
+            807,
+            182
+          ],
+          [
+            874,
+            167
+          ],
+          [
+            874,
+            182
+          ]
+        ],
+        "id": 220,
+        "isVertical": "true",
+        "text": "Ctrl+Shit+T",
+        "isTextline": "true",
+        "confidence": 0.858
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            183
+          ],
+          [
+            807,
+            198
+          ],
+          [
+            873,
+            183
+          ],
+          [
+            873,
+            198
+          ]
+        ],
+        "id": 221,
+        "isVertical": "true",
+        "text": "Ctrl-K Enter",
+        "isTextline": "true",
+        "confidence": 0.842
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            199
+          ],
+          [
+            807,
+            214
+          ],
+          [
+            858,
+            199
+          ],
+          [
+            858,
+            214
+          ]
+        ],
+        "id": 222,
+        "isVertical": "true",
+        "text": "Ctrl+Tab",
+        "isTextline": "true",
+        "confidence": 0.843
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            214
+          ],
+          [
+            807,
+            229
+          ],
+          [
+            885,
+            214
+          ],
+          [
+            885,
+            229
+          ]
+        ],
+        "id": 223,
+        "isVertical": "true",
+        "text": "Ctrl+Shitt+Tab",
+        "isTextline": "true",
+        "confidence": 0.848
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            230
+          ],
+          [
+            807,
+            244
+          ],
+          [
+            855,
+            230
+          ],
+          [
+            855,
+            244
+          ]
+        ],
+        "id": 224,
+        "isVertical": "true",
+        "text": "Cul+KP",
+        "isTextline": "true",
+        "confidence": 0.822
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            246
+          ],
+          [
+            807,
+            261
+          ],
+          [
+            856,
+            246
+          ],
+          [
+            856,
+            261
+          ]
+        ],
+        "id": 225,
+        "isVertical": "true",
+        "text": "Cul-KR",
+        "isTextline": "true",
+        "confidence": 0.801
+      },
+      {
+        "boundingBox": [
+          [
+            807,
+            262
+          ],
+          [
+            807,
+            277
+          ],
+          [
+            856,
+            262
+          ],
+          [
+            856,
+            277
+          ]
+        ],
+        "id": 226,
+        "isVertical": "true",
+        "text": "Cul-KO",
+        "isTextline": "true",
+        "confidence": 0.815
+      },
+      {
+        "boundingBox": [
+          [
+            926,
+            56
+          ],
+          [
+            926,
+            71
+          ],
+          [
+            975,
+            56
+          ],
+          [
+            975,
+            71
+          ]
+        ],
+        "id": 227,
+        "isVertical": "true",
+        "text": "New File",
+        "isTextline": "true",
+        "confidence": 0.848
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            72
+          ],
+          [
+            927,
+            87
+          ],
+          [
+            984,
+            72
+          ],
+          [
+            984,
+            87
+          ]
+        ],
+        "id": 228,
+        "isVertical": "true",
+        "text": "Open File-",
+        "isTextline": "true",
+        "confidence": 0.822
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            88
+          ],
+          [
+            927,
+            103
+          ],
+          [
+            958,
+            88
+          ],
+          [
+            958,
+            103
+          ]
+        ],
+        "id": 229,
+        "isVertical": "true",
+        "text": "Sme",
+        "isTextline": "true",
+        "confidence": 0.818
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            103
+          ],
+          [
+            927,
+            118
+          ],
+          [
+            977,
+            103
+          ],
+          [
+            977,
+            118
+          ]
+        ],
+        "id": 230,
+        "isVertical": "true",
+        "text": "Savek.",
+        "isTextline": "true",
+        "confidence": 0.834
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            119
+          ],
+          [
+            927,
+            134
+          ],
+          [
+            972,
+            119
+          ],
+          [
+            972,
+            134
+          ]
+        ],
+        "id": 231,
+        "isVertical": "true",
+        "text": "Save Al",
+        "isTextline": "true",
+        "confidence": 0.86
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            135
+          ],
+          [
+            927,
+            150
+          ],
+          [
+            960,
+            135
+          ],
+          [
+            960,
+            150
+          ]
+        ],
+        "id": 232,
+        "isVertical": "true",
+        "text": "Close",
+        "isTextline": "true",
+        "confidence": 0.859
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            151
+          ],
+          [
+            927,
+            166
+          ],
+          [
+            975,
+            151
+          ],
+          [
+            975,
+            166
+          ]
+        ],
+        "id": 233,
+        "isVertical": "true",
+        "text": "Close All",
+        "isTextline": "true",
+        "confidence": 0.87
+      },
+      {
+        "boundingBox": [
+          [
+            928,
+            168
+          ],
+          [
+            928,
+            182
+          ],
+          [
+            1031,
+            168
+          ],
+          [
+            1031,
+            182
+          ]
+        ],
+        "id": 234,
+        "isVertical": "true",
+        "text": "Reopen ciosed editor",
+        "isTextline": "true",
+        "confidence": 0.891
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            184
+          ],
+          [
+            927,
+            197
+          ],
+          [
+            1080,
+            184
+          ],
+          [
+            1080,
+            197
+          ]
+        ],
+        "id": 235,
+        "isVertical": "true",
+        "text": "Keep preview mode editor open",
+        "isTextline": "true",
+        "confidence": 0.876
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            199
+          ],
+          [
+            927,
+            214
+          ],
+          [
+            984,
+            199
+          ],
+          [
+            984,
+            214
+          ]
+        ],
+        "id": 236,
+        "isVertical": "true",
+        "text": "Open next",
+        "isTextline": "true",
+        "confidence": 0.877
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            215
+          ],
+          [
+            927,
+            229
+          ],
+          [
+            1002,
+            215
+          ],
+          [
+            1002,
+            229
+          ]
+        ],
+        "id": 237,
+        "isVertical": "true",
+        "text": "Open previous",
+        "isTextline": "true",
+        "confidence": 0.894
+      },
+      {
+        "boundingBox": [
+          [
+            927,
+            231
+          ],
+          [
+            927,
+            244
+          ],
+          [
+            1040,
+            231
+          ],
+          [
+            1040,
+            244
+          ]
+        ],
+        "id": 238,
+        "isVertical": "true",
+        "text": "Copy path of active file",
+        "isTextline": "true",
+        "confidence": 0.887
+      },
+      {
+        "boundingBox": [
+          [
+            928,
+            247
+          ],
+          [
+            928,
+            260
+          ],
+          [
+            1061,
+            247
+          ],
+          [
+            1061,
+            260
+          ]
+        ],
+        "id": 239,
+        "isVertical": "true",
+        "text": "Reveal active file in Explorer",
+        "isTextline": "true",
+        "confidence": 0.891
+      },
+      {
+        "boundingBox": [
+          [
+            928,
+            263
+          ],
+          [
+            928,
+            276
+          ],
+          [
+            1117,
+            263
+          ],
+          [
+            1117,
+            276
+          ]
+        ],
+        "id": 240,
+        "isVertical": "true",
+        "text": "Show active file in new window/instance",
+        "isTextline": "true",
+        "confidence": 0.844
+      }
+    ]
+  ],
+  "imginfo": {
+    "img_width": 1180,
+    "img_height": 906,
+    "img_path": "C:\\Users\\student1\\OneDrive - 埼玉コンピュータ＆医療事務専門学校\\ドキュメント\\MyDocs\\JavaScript_new\\初めてのウェブサイト\\memo\\チートシート.png",
+    "img_name": "チートシート.png"
+  }
+}

@@ -1,6 +1,0 @@
-[book]
-title = "初めてのウェブサイト"
-authors = ["Osamu377"]
-language = "ja-JP"
-
-[output.html]

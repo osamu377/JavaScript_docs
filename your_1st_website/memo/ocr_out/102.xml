@@ -1,0 +1,73 @@
+<OCRDATASET>
+<PAGE IMAGENAME="102.png" WIDTH="364" HEIGHT="847">
+<TEXTBLOCK CONF="0.475">
+    <LINE TYPE="タイトル本文" X="8" Y="7" WIDTH="230" HEIGHT="8" CONF="0.423" PRED_CHAR_CNT="2.000" ORDER="2" STRING="Ctrl+MToole Tab moves focus" />
+    <LINE TYPE="タイトル本文" X="7" Y="38" WIDTH="125" HEIGHT="12" CONF="0.870" PRED_CHAR_CNT="3.000" ORDER="5" STRING="Search and replace" />
+    <SHAPE><POLYGON POINTS="8,7,8,16,238,16,238,7" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.364">
+    <LINE TYPE="本文" X="6" Y="63" WIDTH="143" HEIGHT="12" CONF="0.670" PRED_CHAR_CNT="3.000" ORDER="7" STRING="Crind" />
+    <LINE TYPE="本文" X="6" Y="79" WIDTH="159" HEIGHT="11" CONF="0.634" PRED_CHAR_CNT="3.000" ORDER="11" STRING="Ctrl+H Replace" />
+    <LINE TYPE="本文" X="7" Y="95" WIDTH="206" HEIGHT="11" CONF="0.756" PRED_CHAR_CNT="3.000" ORDER="14" STRING="F3/Shift+F3 Find next/previous" />
+    <LINE TYPE="本文" X="6" Y="111" WIDTH="284" HEIGHT="11" CONF="0.613" PRED_CHAR_CNT="2.000" ORDER="16" STRING="Alt+Enter Select all occurences of Find match" />
+    <LINE TYPE="本文" X="6" Y="127" WIDTH="274" HEIGHT="11" CONF="0.711" PRED_CHAR_CNT="2.000" ORDER="19" STRING="Ctrl+D Addddddddddddddo next Find match" />
+    <LINE TYPE="本文" X="7" Y="143" WIDTH="297" HEIGHT="11" CONF="0.847" PRED_CHAR_CNT="2.000" ORDER="22" STRING="Ctri+KCtrl+D Move last selection to next Find match" />
+    <LINE TYPE="本文" X="7" Y="160" WIDTH="316" HEIGHT="11" CONF="0.880" PRED_CHAR_CNT="1.000" ORDER="26" STRING="Alt+C/R/W Toggle case-sensitive / regex / whole word" />
+    <SHAPE><POLYGON POINTS="6,58,6,172,344,172,344,58" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.796">
+    <LINE TYPE="タイトル本文" X="7" Y="191" WIDTH="174" HEIGHT="12" CONF="0.907" PRED_CHAR_CNT="2.000" ORDER="27" STRING="Multi-cursor and selection" />
+  <LINE TYPE="本文" X="7" Y="219" WIDTH="178" HEIGHT="10" CONF="0.720" PRED_CHAR_CNT="3.000" ORDER="29" STRING="Alt+Click insert cursor" />
+    <LINE TYPE="本文" X="7" Y="234" WIDTH="246" HEIGHT="10" CONF="0.826" PRED_CHAR_CNT="2.000" ORDER="31" STRING="Ctrl+Alt+1/1 Insert cursor above / below" />
+    <LINE TYPE="本文" X="8" Y="250" WIDTH="242" HEIGHT="10" CONF="0.817" PRED_CHAR_CNT="2.000" ORDER="34" STRING="Ctri+Undo last cursor operation" />
+    <LINE TYPE="本文" X="10" Y="265" WIDTH="303" HEIGHT="11" CONF="0.808" PRED_CHAR_CNT="1.000" ORDER="36" STRING="Shift+Alt+l Insert cursor at end of each line selected" />
+    <LINE TYPE="本文" X="7" Y="282" WIDTH="202" HEIGHT="9" CONF="0.860" PRED_CHAR_CNT="3.000" ORDER="37" STRING="Cti+L Select current ine" />
+    <LINE TYPE="本文" X="7" Y="297" WIDTH="310" HEIGHT="11" CONF="0.858" PRED_CHAR_CNT="1.000" ORDER="39" STRING="Ctrl+Shift+L Select all occurrences of current selection" />
+    <LINE TYPE="本文" X="10" Y="313" WIDTH="291" HEIGHT="11" CONF="0.741" PRED_CHAR_CNT="2.000" ORDER="41" STRING="Ctri+F2Select all occurrences of current word" />
+    <LINE TYPE="本文" X="7" Y="329" WIDTH="197" HEIGHT="10" CONF="0.828" PRED_CHAR_CNT="3.000" ORDER="45" STRING="Shift+Alt+-Expand selection" />
+    <LINE TYPE="本文" X="7" Y="345" WIDTH="194" HEIGHT="10" CONF="0.793" PRED_CHAR_CNT="3.000" ORDER="48" STRING="Shift+Alt+- Shrink selection" />
+    <LINE TYPE="本文" X="7" Y="361" WIDTH="226" HEIGHT="10" CONF="0.547" PRED_CHAR_CNT="2.000" ORDER="52" STRING="Shift+Alt+ Column (box) selection" />
+    <LINE TYPE="本文" X="7" Y="375" WIDTH="64" HEIGHT="11" CONF="0.606" PRED_CHAR_CNT="3.000" ORDER="54" STRING="(drag mouse)" />
+    <LINE TYPE="本文" X="7" Y="391" WIDTH="225" HEIGHT="10" CONF="0.735" PRED_CHAR_CNT="2.000" ORDER="56" STRING="Ctrl+Shift+Alt Column (box) selection" />
+    <LINE TYPE="本文" X="7" Y="405" WIDTH="65" HEIGHT="11" CONF="0.617" PRED_CHAR_CNT="3.000" ORDER="57" STRING="+ (arrow key)" />
+    <LINE TYPE="本文" X="8" Y="420" WIDTH="295" HEIGHT="10" CONF="0.798" PRED_CHAR_CNT="1.000" ORDER="60" STRING="Ctrl+Shift+Alt Column (box) selection page up/down" />
+    <LINE TYPE="本文" X="8" Y="434" WIDTH="63" HEIGHT="11" CONF="0.725" PRED_CHAR_CNT="3.000" ORDER="62" STRING="+PgUp/PgDn" />
+    <SHAPE><POLYGON POINTS="6,216,6,445,341,445,341,216" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.859">
+    <LINE TYPE="タイトル本文" X="7" Y="466" WIDTH="151" HEIGHT="15" CONF="0.907" PRED_CHAR_CNT="3.000" ORDER="63" STRING="Rich languages editing" />
+    <LINE TYPE="本文" X="8" Y="494" WIDTH="205" HEIGHT="9" CONF="0.634" PRED_CHAR_CNT="2.000" ORDER="65" STRING="Ctrl+Space Ctrl+l Trigger suggestion" />
+    <LINE TYPE="本文" X="8" Y="513" WIDTH="227" HEIGHT="10" CONF="0.775" PRED_CHAR_CNT="2.000" ORDER="70" STRING="Ctrl+Shift+Space Trigger parameter hints" />
+    <LINE TYPE="本文" X="7" Y="529" WIDTH="203" HEIGHT="9" CONF="0.740" PRED_CHAR_CNT="3.000" ORDER="74" STRING="Shift+Alt+FFormat document" />
+    <LINE TYPE="本文" X="8" Y="545" WIDTH="195" HEIGHT="8" CONF="0.787" PRED_CHAR_CNT="2.000" ORDER="75" STRING="Ctrl+KCti+FFormat selection" />
+    <LINE TYPE="本文" X="8" Y="560" WIDTH="192" HEIGHT="9" CONF="0.848" PRED_CHAR_CNT="3.000" ORDER="78" STRING="F12Goto Definition" />
+    <LINE TYPE="本文" X="8" Y="577" WIDTH="189" HEIGHT="8" CONF="0.786" PRED_CHAR_CNT="3.000" ORDER="80" STRING="Alt+F12Peek Definition" />
+    <LINE TYPE="本文" X="9" Y="592" WIDTH="242" HEIGHT="10" CONF="0.809" PRED_CHAR_CNT="2.000" ORDER="82" STRING="Ctrl+K F12Open Definition to the side" />
+    <LINE TYPE="本文" X="8" Y="609" WIDTH="161" HEIGHT="9" CONF="0.778" PRED_CHAR_CNT="3.000" ORDER="85" STRING="Ctrl+.Quick Fick Fic" />
+    <LINE TYPE="本文" X="7" Y="624" WIDTH="198" HEIGHT="10" CONF="0.759" PRED_CHAR_CNT="3.000" ORDER="88" STRING="Shift+Fl2 Show References" />
+    <LINE TYPE="本文" X="7" Y="640" WIDTH="195" HEIGHT="10" CONF="0.796" PRED_CHAR_CNT="3.000" ORDER="92" STRING="F2 Symbol" />
+    <LINE TYPE="本文" X="7" Y="655" WIDTH="229" HEIGHT="10" CONF="0.813" PRED_CHAR_CNT="2.000" ORDER="95" STRING="Ctrl+KCtrl+X Trim trailing whitespace" />
+    <LINE TYPE="本文" X="7" Y="672" WIDTH="217" HEIGHT="9" CONF="0.798" PRED_CHAR_CNT="3.000" ORDER="98" STRING="Ctrl+KMChange fle lanquage" />
+    <LINE TYPE="本文" X="126" Y="670" WIDTH="99" HEIGHT="12" CONF="0.573" PRED_CHAR_CNT="3.000" ORDER="96" STRING="Change file language" />
+    <LINE TYPE="タイトル本文" X="8" Y="703" WIDTH="132" HEIGHT="14" CONF="0.897" PRED_CHAR_CNT="3.000" ORDER="99" STRING="Editor management" />
+    <SHAPE><POLYGON POINTS="6,494,6,681,249,681,249,494" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.849">
+    <LINE TYPE="本文" X="8" Y="731" WIDTH="174" HEIGHT="8" CONF="0.698" PRED_CHAR_CNT="3.000" ORDER="101" STRING="Cti+F4 (ti+W(lose editose editor" />
+    <LINE TYPE="本文" X="8" Y="747" WIDTH="175" HEIGHT="8" CONF="0.832" PRED_CHAR_CNT="3.000" ORDER="104" STRING="Ctrl+KFClose folder" />
+    <LINE TYPE="本文" X="8" Y="763" WIDTH="171" HEIGHT="8" CONF="0.822" PRED_CHAR_CNT="3.000" ORDER="107" STRING="Ctrl+ Solt editor" />
+    <LINE TYPE="本文" X="7" Y="778" WIDTH="288" HEIGHT="10" CONF="0.828" PRED_CHAR_CNT="2.000" ORDER="109" STRING="Ctrl+1/2/3 Focus into 151,2nd or group" />
+    <LINE TYPE="本文" X="8" Y="793" WIDTH="292" HEIGHT="10" CONF="0.873" PRED_CHAR_CNT="1.000" ORDER="110" STRING="Ctrl+KCtrl+-/-Focus into previous/next editor group" />
+    <LINE TYPE="本文" X="8" Y="809" WIDTH="219" HEIGHT="11" CONF="0.836" PRED_CHAR_CNT="2.000" ORDER="112" STRING="Ctrl+Shift+PgUp/PgDn Move editor left/right" />
+    <LINE TYPE="本文" X="8" Y="826" WIDTH="235" HEIGHT="9" CONF="0.845" PRED_CHAR_CNT="2.000" ORDER="113" STRING="Ctrl+K-!Move active editor qroup" />
+    <SHAPE><POLYGON POINTS="7,730,7,836,299,836,299,730" /></SHAPE>
+    </TEXTBLOCK>
+  <BLOCK TYPE="表組" X="6" Y="58" WIDTH="338" HEIGHT="114" CONF="0.690">
+    </BLOCK>
+<BLOCK TYPE="表組" X="6" Y="216" WIDTH="335" HEIGHT="229" CONF="0.444">
+    </BLOCK>
+  <BLOCK TYPE="図版" X="6" Y="58" WIDTH="338" HEIGHT="114" CONF="0.255" />
+  <BLOCK TYPE="柱" X="8" Y="7" WIDTH="230" HEIGHT="8" CONF="0.434" />
+</PAGE>
+
+</OCRDATASET>

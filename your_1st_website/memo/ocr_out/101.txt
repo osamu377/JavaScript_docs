@@ -1,0 +1,43 @@
+General
+Ctrl+Shift+P.F1Show Command Palette
+Ctrl+POuick Open.Go to File.
+Ctri+Shift+New window/instance
+Ctrl+Shift+WClose window/instance
+Ctrl+,User Setings
+Ctrl+K Ctrl+5 Keyboard Shortcuts
+Basic editing
+Ctri+XCut line (empty selection]
+Ctrl+Copy line (empty selection)
+Alt+1/4Move line up/down
+Shift+Alt+1/1 Copy line up/down
+Ctrl+Shift+KDelete line
+Ctrl+Enter insertlinebelow
+Ctrl+Shift+Enter Insert line above
+Ctrl+Shift+\Jump to matching bracket
+Ctrl+1 Indent/outdent line
+Home/EndGo to beginninning/end of line
+Ctrl+HomeGo to beginning of file
+Ctrl+EndGoto end of file
+Ctrl+1/15croll line up/down
+Alt+PqUp/PaDn Scroll page up/down
+Ctrl+Shift+{Fold (collapse) region
+Ctrl+Shift+]Unfold (uncollapse) region
+Ctrl+K Ctrl+[Fold (collapse) all subregions
+Ctri+K Ctri+] (uncollapse) all subreqions
+Ctrl+K (collapse) reqiopse) all reqions
+Ctrl+KCtrl+JUnfold (uncollapse) all reqions
+Ctrl+K Ctri+CAdd line comment
+Ctrl+K Ctrl+URemove line comment
+Ctri+/Toggle line comment
+Shift+Alt+A Togleblock comment
+Alt+ZTogale word wrap
+Navigation
+Ctyl+TShow all Svmbols
+Ctrl+GGoto Line.
+Ctrl+PGoto File.
+Ctrl+Shift+OGoto Svmbol.
+Ctri+Shift+M Show Problems panel
+F8Go to next error or warning
+Shift+F8Goto previous error or warning
+Ctrl+Shift+Tab Navigate editor qroup history
+Alt+-/-Go back/fonwarc

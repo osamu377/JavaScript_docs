@@ -1,0 +1,57 @@
+<OCRDATASET>
+<PAGE IMAGENAME="101.png" WIDTH="369" HEIGHT="761">
+  <TEXTBLOCK CONF="0.939">
+    <LINE TYPE="タイトル本文" X="17" Y="10" WIDTH="49" HEIGHT="12" CONF="0.802" PRED_CHAR_CNT="3.000" ORDER="0" STRING="General" />
+  <LINE TYPE="本文" X="17" Y="37" WIDTH="228" HEIGHT="9" CONF="0.849" PRED_CHAR_CNT="2.000" ORDER="1" STRING="Ctrl+Shift+P.F1Show Command Palette" />
+    <LINE TYPE="本文" X="17" Y="53" WIDTH="228" HEIGHT="9" CONF="0.869" PRED_CHAR_CNT="2.000" ORDER="2" STRING="Ctrl+POuick Open.Go to File." />
+    <LINE TYPE="本文" X="17" Y="70" WIDTH="219" HEIGHT="8" CONF="0.855" PRED_CHAR_CNT="2.000" ORDER="3" STRING="Ctri+Shift+New window/instance" />
+    <LINE TYPE="本文" X="17" Y="85" WIDTH="223" HEIGHT="9" CONF="0.845" PRED_CHAR_CNT="2.000" ORDER="4" STRING="Ctrl+Shift+WClose window/instance" />
+    <LINE TYPE="本文" X="17" Y="101" WIDTH="179" HEIGHT="9" CONF="0.861" PRED_CHAR_CNT="3.000" ORDER="6" STRING="Ctrl+,User Setings" />
+    <LINE TYPE="本文" X="17" Y="117" WIDTH="208" HEIGHT="9" CONF="0.841" PRED_CHAR_CNT="2.000" ORDER="7" STRING="Ctrl+K Ctrl+5 Keyboard Shortcuts" />
+    <LINE TYPE="タイトル本文" X="17" Y="148" WIDTH="83" HEIGHT="14" CONF="0.843" PRED_CHAR_CNT="3.000" ORDER="8" STRING="Basic editing" />
+    <SHAPE><POLYGON POINTS="16,37,16,126,246,126,246,37" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.929">
+    <LINE TYPE="本文" X="17" Y="176" WIDTH="234" HEIGHT="9" CONF="0.840" PRED_CHAR_CNT="2.000" ORDER="9" STRING="Ctri+XCut line (empty selection]" />
+    <LINE TYPE="本文" X="17" Y="192" WIDTH="242" HEIGHT="9" CONF="0.834" PRED_CHAR_CNT="2.000" ORDER="10" STRING="Ctrl+Copy line (empty selection)" />
+    <LINE TYPE="本文" X="17" Y="208" WIDTH="208" HEIGHT="9" CONF="0.862" PRED_CHAR_CNT="3.000" ORDER="11" STRING="Alt+1/4Move line up/down" />
+    <LINE TYPE="本文" X="16" Y="224" WIDTH="206" HEIGHT="9" CONF="0.842" PRED_CHAR_CNT="2.000" ORDER="12" STRING="Shift+Alt+1/1 Copy line up/down" />
+    <LINE TYPE="本文" X="17" Y="239" WIDTH="167" HEIGHT="8" CONF="0.809" PRED_CHAR_CNT="3.000" ORDER="13" STRING="Ctrl+Shift+KDelete line" />
+    <LINE TYPE="本文" X="17" Y="255" WIDTH="193" HEIGHT="8" CONF="0.819" PRED_CHAR_CNT="3.000" ORDER="15" STRING="Ctrl+Enter insertlinebelow" />
+    <LINE TYPE="本文" X="17" Y="271" WIDTH="194" HEIGHT="8" CONF="0.815" PRED_CHAR_CNT="2.000" ORDER="17" STRING="Ctrl+Shift+Enter Insert line above" />
+    <LINE TYPE="本文" X="17" Y="287" WIDTH="238" HEIGHT="9" CONF="0.840" PRED_CHAR_CNT="2.000" ORDER="19" STRING="Ctrl+Shift+\Jump to matching bracket" />
+    <LINE TYPE="本文" X="17" Y="303" WIDTH="208" HEIGHT="9" CONF="0.845" PRED_CHAR_CNT="2.000" ORDER="21" STRING="Ctrl+1 Indent/outdent line" />
+    <LINE TYPE="本文" X="18" Y="318" WIDTH="246" HEIGHT="10" CONF="0.781" PRED_CHAR_CNT="2.000" ORDER="23" STRING="Home/EndGo to beginninning/end of line" />
+    <LINE TYPE="本文" X="17" Y="334" WIDTH="222" HEIGHT="9" CONF="0.843" PRED_CHAR_CNT="2.000" ORDER="25" STRING="Ctrl+HomeGo to beginning of file" />
+    <LINE TYPE="本文" X="17" Y="350" WIDTH="193" HEIGHT="8" CONF="0.866" PRED_CHAR_CNT="3.000" ORDER="26" STRING="Ctrl+EndGoto end of file" />
+    <LINE TYPE="本文" X="17" Y="366" WIDTH="207" HEIGHT="9" CONF="0.851" PRED_CHAR_CNT="3.000" ORDER="27" STRING="Ctrl+1/15croll line up/down" />
+    <LINE TYPE="本文" X="16" Y="381" WIDTH="215" HEIGHT="10" CONF="0.832" PRED_CHAR_CNT="2.000" ORDER="29" STRING="Alt+PqUp/PaDn Scroll page up/down" />
+    <LINE TYPE="本文" X="17" Y="397" WIDTH="217" HEIGHT="11" CONF="0.829" PRED_CHAR_CNT="2.000" ORDER="30" STRING="Ctrl+Shift+{Fold (collapse) region" />
+    <LINE TYPE="本文" X="17" Y="413" WIDTH="239" HEIGHT="11" CONF="0.280" PRED_CHAR_CNT="2.000" ORDER="32" STRING="Ctrl+Shift+]Unfold (uncollapse) region" />
+    <LINE TYPE="本文" X="17" Y="428" WIDTH="251" HEIGHT="11" CONF="0.847" PRED_CHAR_CNT="2.000" ORDER="34" STRING="Ctrl+K Ctrl+[Fold (collapse) all subregions" />
+    <LINE TYPE="本文" X="16" Y="444" WIDTH="275" HEIGHT="10" CONF="0.862" PRED_CHAR_CNT="2.000" ORDER="35" STRING="Ctri+K Ctri+] (uncollapse) all subreqions" />
+    <LINE TYPE="本文" X="16" Y="460" WIDTH="236" HEIGHT="10" CONF="0.859" PRED_CHAR_CNT="2.000" ORDER="36" STRING="Ctrl+K (collapse) reqiopse) all reqions" />
+    <LINE TYPE="本文" X="17" Y="476" WIDTH="258" HEIGHT="10" CONF="0.877" PRED_CHAR_CNT="2.000" ORDER="37" STRING="Ctrl+KCtrl+JUnfold (uncollapse) all reqions" />
+    <LINE TYPE="本文" X="17" Y="492" WIDTH="204" HEIGHT="10" CONF="0.854" PRED_CHAR_CNT="2.000" ORDER="38" STRING="Ctrl+K Ctri+CAdd line comment" />
+    <LINE TYPE="本文" X="17" Y="508" WIDTH="221" HEIGHT="10" CONF="0.868" PRED_CHAR_CNT="2.000" ORDER="39" STRING="Ctrl+K Ctrl+URemove line comment" />
+    <LINE TYPE="本文" X="17" Y="523" WIDTH="216" HEIGHT="10" CONF="0.865" PRED_CHAR_CNT="2.000" ORDER="40" STRING="Ctri+/Toggle line comment" />
+    <LINE TYPE="本文" X="16" Y="540" WIDTH="225" HEIGHT="9" CONF="0.866" PRED_CHAR_CNT="2.000" ORDER="41" STRING="Shift+Alt+A Togleblock comment" />
+    <LINE TYPE="本文" X="16" Y="556" WIDTH="202" HEIGHT="9" CONF="0.883" PRED_CHAR_CNT="3.000" ORDER="43" STRING="Alt+ZTogale word wrap" />
+    <LINE TYPE="タイトル本文" X="16" Y="588" WIDTH="72" HEIGHT="14" CONF="0.860" PRED_CHAR_CNT="3.000" ORDER="44" STRING="Navigation" />
+  <SHAPE><POLYGON POINTS="16,176,16,565,273,565,273,176" /></SHAPE>
+    </TEXTBLOCK>
+  <TEXTBLOCK CONF="0.917">
+    <LINE TYPE="本文" X="17" Y="615" WIDTH="198" HEIGHT="8" CONF="0.858" PRED_CHAR_CNT="3.000" ORDER="45" STRING="Ctyl+TShow all Svmbols" />
+    <LINE TYPE="本文" X="17" Y="631" WIDTH="171" HEIGHT="8" CONF="0.873" PRED_CHAR_CNT="3.000" ORDER="46" STRING="Ctrl+GGoto Line." />
+    <LINE TYPE="本文" X="17" Y="647" WIDTH="168" HEIGHT="8" CONF="0.890" PRED_CHAR_CNT="3.000" ORDER="47" STRING="Ctrl+PGoto File." />
+    <LINE TYPE="本文" X="17" Y="663" WIDTH="187" HEIGHT="8" CONF="0.877" PRED_CHAR_CNT="3.000" ORDER="48" STRING="Ctrl+Shift+OGoto Svmbol." />
+    <LINE TYPE="本文" X="17" Y="679" WIDTH="217" HEIGHT="8" CONF="0.790" PRED_CHAR_CNT="2.000" ORDER="49" STRING="Ctri+Shift+M Show Problems panel" />
+  <LINE TYPE="本文" X="17" Y="694" WIDTH="243" HEIGHT="9" CONF="0.878" PRED_CHAR_CNT="2.000" ORDER="50" STRING="F8Go to next error or warning" />
+    <LINE TYPE="本文" X="17" Y="710" WIDTH="262" HEIGHT="9" CONF="0.869" PRED_CHAR_CNT="2.000" ORDER="51" STRING="Shift+F8Goto previous error or warning" />
+    <LINE TYPE="本文" X="17" Y="726" WIDTH="253" HEIGHT="9" CONF="0.859" PRED_CHAR_CNT="2.000" ORDER="52" STRING="Ctrl+Shift+Tab Navigate editor qroup history" />
+    <LINE TYPE="本文" X="16" Y="742" WIDTH="201" HEIGHT="8" CONF="0.883" PRED_CHAR_CNT="3.000" ORDER="53" STRING="Alt+-/-Go back/fonwarc" />
+    <SHAPE><POLYGON POINTS="16,614,16,751,278,751,278,614" /></SHAPE>
+    </TEXTBLOCK>
+</PAGE>
+
+</OCRDATASET>

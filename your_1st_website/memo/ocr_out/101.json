@@ -1,0 +1,1087 @@
+{
+  "contents": [
+    [
+      {
+        "boundingBox": [
+          [
+            17,
+            10
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            66,
+            10
+          ],
+          [
+            66,
+            22
+          ]
+        ],
+        "id": 0,
+        "isVertical": "true",
+        "text": "General",
+        "isTextline": "true",
+        "confidence": 0.802
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            37
+          ],
+          [
+            17,
+            46
+          ],
+          [
+            245,
+            37
+          ],
+          [
+            245,
+            46
+          ]
+        ],
+        "id": 1,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+P.F1Show Command Palette",
+        "isTextline": "true",
+        "confidence": 0.849
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            53
+          ],
+          [
+            17,
+            62
+          ],
+          [
+            245,
+            53
+          ],
+          [
+            245,
+            62
+          ]
+        ],
+        "id": 2,
+        "isVertical": "true",
+        "text": "Ctrl+POuick Open.Go to File.",
+        "isTextline": "true",
+        "confidence": 0.869
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            70
+          ],
+          [
+            17,
+            78
+          ],
+          [
+            236,
+            70
+          ],
+          [
+            236,
+            78
+          ]
+        ],
+        "id": 3,
+        "isVertical": "true",
+        "text": "Ctri+Shift+New window/instance",
+        "isTextline": "true",
+        "confidence": 0.855
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            85
+          ],
+          [
+            17,
+            94
+          ],
+          [
+            240,
+            85
+          ],
+          [
+            240,
+            94
+          ]
+        ],
+        "id": 4,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+WClose window/instance",
+        "isTextline": "true",
+        "confidence": 0.845
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            101
+          ],
+          [
+            17,
+            110
+          ],
+          [
+            196,
+            101
+          ],
+          [
+            196,
+            110
+          ]
+        ],
+        "id": 5,
+        "isVertical": "true",
+        "text": "Ctrl+,User Setings",
+        "isTextline": "true",
+        "confidence": 0.861
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            117
+          ],
+          [
+            17,
+            126
+          ],
+          [
+            225,
+            117
+          ],
+          [
+            225,
+            126
+          ]
+        ],
+        "id": 6,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctrl+5 Keyboard Shortcuts",
+        "isTextline": "true",
+        "confidence": 0.841
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            148
+          ],
+          [
+            17,
+            162
+          ],
+          [
+            100,
+            148
+          ],
+          [
+            100,
+            162
+          ]
+        ],
+        "id": 7,
+        "isVertical": "true",
+        "text": "Basic editing",
+        "isTextline": "true",
+        "confidence": 0.843
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            176
+          ],
+          [
+            17,
+            185
+          ],
+          [
+            251,
+            176
+          ],
+          [
+            251,
+            185
+          ]
+        ],
+        "id": 8,
+        "isVertical": "true",
+        "text": "Ctri+XCut line (empty selection]",
+        "isTextline": "true",
+        "confidence": 0.84
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            192
+          ],
+          [
+            17,
+            201
+          ],
+          [
+            259,
+            192
+          ],
+          [
+            259,
+            201
+          ]
+        ],
+        "id": 9,
+        "isVertical": "true",
+        "text": "Ctrl+Copy line (empty selection)",
+        "isTextline": "true",
+        "confidence": 0.834
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            208
+          ],
+          [
+            17,
+            217
+          ],
+          [
+            225,
+            208
+          ],
+          [
+            225,
+            217
+          ]
+        ],
+        "id": 10,
+        "isVertical": "true",
+        "text": "Alt+1/4Move line up/down",
+        "isTextline": "true",
+        "confidence": 0.862
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            224
+          ],
+          [
+            16,
+            233
+          ],
+          [
+            222,
+            224
+          ],
+          [
+            222,
+            233
+          ]
+        ],
+        "id": 11,
+        "isVertical": "true",
+        "text": "Shift+Alt+1/1 Copy line up/down",
+        "isTextline": "true",
+        "confidence": 0.842
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            239
+          ],
+          [
+            17,
+            247
+          ],
+          [
+            184,
+            239
+          ],
+          [
+            184,
+            247
+          ]
+        ],
+        "id": 12,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+KDelete line",
+        "isTextline": "true",
+        "confidence": 0.809
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            255
+          ],
+          [
+            17,
+            263
+          ],
+          [
+            210,
+            255
+          ],
+          [
+            210,
+            263
+          ]
+        ],
+        "id": 13,
+        "isVertical": "true",
+        "text": "Ctrl+Enter insertlinebelow",
+        "isTextline": "true",
+        "confidence": 0.819
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            271
+          ],
+          [
+            17,
+            279
+          ],
+          [
+            211,
+            271
+          ],
+          [
+            211,
+            279
+          ]
+        ],
+        "id": 14,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+Enter Insert line above",
+        "isTextline": "true",
+        "confidence": 0.815
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            287
+          ],
+          [
+            17,
+            296
+          ],
+          [
+            255,
+            287
+          ],
+          [
+            255,
+            296
+          ]
+        ],
+        "id": 15,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+\\Jump to matching bracket",
+        "isTextline": "true",
+        "confidence": 0.84
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            303
+          ],
+          [
+            17,
+            312
+          ],
+          [
+            225,
+            303
+          ],
+          [
+            225,
+            312
+          ]
+        ],
+        "id": 16,
+        "isVertical": "true",
+        "text": "Ctrl+1 Indent/outdent line",
+        "isTextline": "true",
+        "confidence": 0.845
+      },
+      {
+        "boundingBox": [
+          [
+            18,
+            318
+          ],
+          [
+            18,
+            328
+          ],
+          [
+            264,
+            318
+          ],
+          [
+            264,
+            328
+          ]
+        ],
+        "id": 17,
+        "isVertical": "true",
+        "text": "Home/EndGo to beginninning/end of line",
+        "isTextline": "true",
+        "confidence": 0.781
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            334
+          ],
+          [
+            17,
+            343
+          ],
+          [
+            239,
+            334
+          ],
+          [
+            239,
+            343
+          ]
+        ],
+        "id": 18,
+        "isVertical": "true",
+        "text": "Ctrl+HomeGo to beginning of file",
+        "isTextline": "true",
+        "confidence": 0.843
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            350
+          ],
+          [
+            17,
+            358
+          ],
+          [
+            210,
+            350
+          ],
+          [
+            210,
+            358
+          ]
+        ],
+        "id": 19,
+        "isVertical": "true",
+        "text": "Ctrl+EndGoto end of file",
+        "isTextline": "true",
+        "confidence": 0.866
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            366
+          ],
+          [
+            17,
+            375
+          ],
+          [
+            224,
+            366
+          ],
+          [
+            224,
+            375
+          ]
+        ],
+        "id": 20,
+        "isVertical": "true",
+        "text": "Ctrl+1/15croll line up/down",
+        "isTextline": "true",
+        "confidence": 0.851
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            381
+          ],
+          [
+            16,
+            391
+          ],
+          [
+            231,
+            381
+          ],
+          [
+            231,
+            391
+          ]
+        ],
+        "id": 21,
+        "isVertical": "true",
+        "text": "Alt+PqUp/PaDn Scroll page up/down",
+        "isTextline": "true",
+        "confidence": 0.832
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            397
+          ],
+          [
+            17,
+            408
+          ],
+          [
+            234,
+            397
+          ],
+          [
+            234,
+            408
+          ]
+        ],
+        "id": 22,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+{Fold (collapse) region",
+        "isTextline": "true",
+        "confidence": 0.829
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            413
+          ],
+          [
+            17,
+            424
+          ],
+          [
+            256,
+            413
+          ],
+          [
+            256,
+            424
+          ]
+        ],
+        "id": 23,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+]Unfold (uncollapse) region",
+        "isTextline": "true",
+        "confidence": 0.28
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            428
+          ],
+          [
+            17,
+            439
+          ],
+          [
+            268,
+            428
+          ],
+          [
+            268,
+            439
+          ]
+        ],
+        "id": 24,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctrl+[Fold (collapse) all subregions",
+        "isTextline": "true",
+        "confidence": 0.847
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            444
+          ],
+          [
+            16,
+            454
+          ],
+          [
+            291,
+            444
+          ],
+          [
+            291,
+            454
+          ]
+        ],
+        "id": 25,
+        "isVertical": "true",
+        "text": "Ctri+K Ctri+] (uncollapse) all subreqions",
+        "isTextline": "true",
+        "confidence": 0.862
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            460
+          ],
+          [
+            16,
+            470
+          ],
+          [
+            252,
+            460
+          ],
+          [
+            252,
+            470
+          ]
+        ],
+        "id": 26,
+        "isVertical": "true",
+        "text": "Ctrl+K (collapse) reqiopse) all reqions",
+        "isTextline": "true",
+        "confidence": 0.859
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            476
+          ],
+          [
+            17,
+            486
+          ],
+          [
+            275,
+            476
+          ],
+          [
+            275,
+            486
+          ]
+        ],
+        "id": 27,
+        "isVertical": "true",
+        "text": "Ctrl+KCtrl+JUnfold (uncollapse) all reqions",
+        "isTextline": "true",
+        "confidence": 0.877
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            492
+          ],
+          [
+            17,
+            502
+          ],
+          [
+            221,
+            492
+          ],
+          [
+            221,
+            502
+          ]
+        ],
+        "id": 28,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctri+CAdd line comment",
+        "isTextline": "true",
+        "confidence": 0.854
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            508
+          ],
+          [
+            17,
+            518
+          ],
+          [
+            238,
+            508
+          ],
+          [
+            238,
+            518
+          ]
+        ],
+        "id": 29,
+        "isVertical": "true",
+        "text": "Ctrl+K Ctrl+URemove line comment",
+        "isTextline": "true",
+        "confidence": 0.868
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            523
+          ],
+          [
+            17,
+            533
+          ],
+          [
+            233,
+            523
+          ],
+          [
+            233,
+            533
+          ]
+        ],
+        "id": 30,
+        "isVertical": "true",
+        "text": "Ctri+/Toggle line comment",
+        "isTextline": "true",
+        "confidence": 0.865
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            540
+          ],
+          [
+            16,
+            549
+          ],
+          [
+            241,
+            540
+          ],
+          [
+            241,
+            549
+          ]
+        ],
+        "id": 31,
+        "isVertical": "true",
+        "text": "Shift+Alt+A Togleblock comment",
+        "isTextline": "true",
+        "confidence": 0.866
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            556
+          ],
+          [
+            16,
+            565
+          ],
+          [
+            218,
+            556
+          ],
+          [
+            218,
+            565
+          ]
+        ],
+        "id": 32,
+        "isVertical": "true",
+        "text": "Alt+ZTogale word wrap",
+        "isTextline": "true",
+        "confidence": 0.883
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            588
+          ],
+          [
+            16,
+            602
+          ],
+          [
+            88,
+            588
+          ],
+          [
+            88,
+            602
+          ]
+        ],
+        "id": 33,
+        "isVertical": "true",
+        "text": "Navigation",
+        "isTextline": "true",
+        "confidence": 0.86
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            615
+          ],
+          [
+            17,
+            623
+          ],
+          [
+            215,
+            615
+          ],
+          [
+            215,
+            623
+          ]
+        ],
+        "id": 34,
+        "isVertical": "true",
+        "text": "Ctyl+TShow all Svmbols",
+        "isTextline": "true",
+        "confidence": 0.858
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            631
+          ],
+          [
+            17,
+            639
+          ],
+          [
+            188,
+            631
+          ],
+          [
+            188,
+            639
+          ]
+        ],
+        "id": 35,
+        "isVertical": "true",
+        "text": "Ctrl+GGoto Line.",
+        "isTextline": "true",
+        "confidence": 0.873
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            647
+          ],
+          [
+            17,
+            655
+          ],
+          [
+            185,
+            647
+          ],
+          [
+            185,
+            655
+          ]
+        ],
+        "id": 36,
+        "isVertical": "true",
+        "text": "Ctrl+PGoto File.",
+        "isTextline": "true",
+        "confidence": 0.89
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            663
+          ],
+          [
+            17,
+            671
+          ],
+          [
+            204,
+            663
+          ],
+          [
+            204,
+            671
+          ]
+        ],
+        "id": 37,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+OGoto Svmbol.",
+        "isTextline": "true",
+        "confidence": 0.877
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            679
+          ],
+          [
+            17,
+            687
+          ],
+          [
+            234,
+            679
+          ],
+          [
+            234,
+            687
+          ]
+        ],
+        "id": 38,
+        "isVertical": "true",
+        "text": "Ctri+Shift+M Show Problems panel",
+        "isTextline": "true",
+        "confidence": 0.79
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            694
+          ],
+          [
+            17,
+            703
+          ],
+          [
+            260,
+            694
+          ],
+          [
+            260,
+            703
+          ]
+        ],
+        "id": 39,
+        "isVertical": "true",
+        "text": "F8Go to next error or warning",
+        "isTextline": "true",
+        "confidence": 0.878
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            710
+          ],
+          [
+            17,
+            719
+          ],
+          [
+            279,
+            710
+          ],
+          [
+            279,
+            719
+          ]
+        ],
+        "id": 40,
+        "isVertical": "true",
+        "text": "Shift+F8Goto previous error or warning",
+        "isTextline": "true",
+        "confidence": 0.869
+      },
+      {
+        "boundingBox": [
+          [
+            17,
+            726
+          ],
+          [
+            17,
+            735
+          ],
+          [
+            270,
+            726
+          ],
+          [
+            270,
+            735
+          ]
+        ],
+        "id": 41,
+        "isVertical": "true",
+        "text": "Ctrl+Shift+Tab Navigate editor qroup history",
+        "isTextline": "true",
+        "confidence": 0.859
+      },
+      {
+        "boundingBox": [
+          [
+            16,
+            742
+          ],
+          [
+            16,
+            750
+          ],
+          [
+            217,
+            742
+          ],
+          [
+            217,
+            750
+          ]
+        ],
+        "id": 42,
+        "isVertical": "true",
+        "text": "Alt+-/-Go back/fonwarc",
+        "isTextline": "true",
+        "confidence": 0.883
+      }
+    ]
+  ],
+  "imginfo": {
+    "img_width": 369,
+    "img_height": 761,
+    "img_path": "C:\\Users\\student1\\OneDrive - 埼玉コンピュータ＆医療事務専門学校\\ドキュメント\\MyDocs\\JavaScript_new\\初めてのウェブサイト\\memo\\png\\101.png",
+    "img_name": "101.png"
+  }
+}

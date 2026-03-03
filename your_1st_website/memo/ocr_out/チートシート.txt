@@ -1,0 +1,241 @@
+△
+Visual Studio Code
+Keyboard shortcuts for Windows
+Genera
+Ctrl+Shift+P,F1
+Show Command Palette
+Cul+P
+Quick Open, Go to File_
+Ctrl+Shift+N
+New window/instance
+Ctrl+Shift+W
+Close window/instance
+(al+,
+User Setings
+Ctrl+K Ctrl+S
+Keyboard Shortcuts
+Basic editing
+Navigation
+Ctil Show all Svmbols
+Show all Symbols
+Ctrl+G Goto Line.
+Ctrl+P Goto Fle.
+Ctri+Shift+O Go to Symbol.
+Ctrl+Shift+M Show Problems panel
+F8 Go to next error or warning
+Shift+F8 Go to previous error or warning
+Ctul+Shift+Tab Navigate editor group history
+Alt+ 1- Go back/forward
+Ctrl+MTogqle Tab moves focus
+Search and replace
+Ctl+F
+Find
+Ctl+H
+Replace
+B/Shit+F3
+Find next/previous
+Alt+Enter
+Select all occurences of Find match
+Ctl+D
+Add selection to next Find match
+Ctrl+KCtrl+D
+Move last selection to next Find match
+Alt+C/R/W
+Toggle case-sensitive / regex / whole word
+Multi-cursor and selection
+Alt+Cid
+Insert cursor
+Ctrl+Alt+1/1
+Insert cursor above / below
+Ctrl+U
+Undo last cursor operation
+Shift+Alt+1
+Insert cursor at end of each line selected
+Ctl+L
+Select current ine
+Ctrl+Shit+L
+Select all occurrences of current selection
+Cul+F2
+Select all occurrences of current word
+Shift+Alt+-
+Expand selection
+Shift+At+-
+Shrink selection
+Shit+Alt+
+Column (box) selection
+(drag mouse)
+Ctil+Shift+Alt
+Column (box) selection
++ (arrow key)
+Ctrl+Shift+Alt
+Column (box) selection page up/down
++PgUp/PgDn
+Rich lanquages editing
+Ctrl+Space, Ctrl+l
+Trigger suggestion
+Ctrl+Shift+Space
+Trigger parameter hints
+Shit+Alt+F
+Format document
+Ctrl+KCtrl+F
+Format selection
+F2
+Go to Definition
+Alt-FI2
+Peek Definition
+Ctl+KFI2
+Open Definition to the side
+Ctrl+.
+QuickFx
+Shift+F12
+Show References
+F2
+Rename Symbol
+Ctl+KCtrl-X
+Trim trailing whitespace
+Ctl+KM
+Change file language
+Editor management
+Ctrl+F4, Ctrl+W Close editor
+Ctl+KF Close folder
+Spil Spiteditor
+Ctil+1/2/3
+Ctri+KCtrl+-/- Focus into previous/next editor group
+Ctrl+Shift+PgUp/PgDn Move editor left/right
+Ctrl+K-/-Move active editor group
+File management
+Display
+Debug
+a
+Toggle breakpoint
+FS
+Start/Continue
+ShiftF5
+Stop
+FI1/Shit+FIL
+Step into/out
+FIO
+Step over
+Show hover
+Inteqrated terminal
+Cal+
+Show integrated terminal
+Create new terminal
+Cul+C
+Copy selection
+Cul+V
+Paste into active terminal
+Cul+1/1
+Scroll up/down
+Shift+PgUp / PgDn Scroll page up/down
+Ctri+Home/End Scroll to to top/bottom
+Other operating systems' keyboard shortcuts and additional
+unassigned shortcuts available at aka.ms/vscodekeybindings
+Cul+X
+Cut line (empty selection)
+Cul+C
+Copy line (empty selection)
+Al+1/1
+Move line up/down
+Shift+At+1/t
+Ctrl+Shit+K
+Delete line
+Copy line up/down
+Ctrl+Enter
+Insert line below
+Ctrl+Shift+Enter
+Insert line above
+Ctrl+Shit+
+Jump to matching bracket
+Cal・1/1
+Indent/outdent line
+Home/End
+Ctrl+Home
+Go to beginning/end of line
+Go to beginning of file
+Goto end of file
+Ctrl+End
+Cul+1/1
+Scroll line up/down
+Alt+PgUp/PgDn
+Scroll page up/down
+Ctrl+Shit+]
+Fold (collapse) region
+(trl+Shit+]
+Ctil+K Ctl+
+Unfold (uncollapse) region
+Fold (collapse) all subregions
+Unfold (uncollapse) all subregions
+(trl+K (trl+]
+Fold (collapse) all regions
+Cul+KCul+0
+(trl+K Cul+)
+Unfold (uncollapse) all regions
+Add line comment
+Ctil+K Ctl+C
+Remove line comment
+Ctrl+K Ctri+U
+Cul+/
+Toggle line comment
+Toggle block comment
+Shift+Alt+A
+AR+Z
+Toggle word wrap
+Toggle full screen
+Fil Toggle Toggle Togen
+Shift+Alt+0
+(al+=/・
+Cul+8
+Ctrl+Shit+E
+Ctrl+Shift+F
+Ctrl+Shift+G
+Ctrl+Shit+D
+Ctrl+Shit+X
+Toggle editor layout (horizontal/vertical)
+Zoom in/out
+Toggle Sidebar visibility
+Show Explorer / Toggle focus
+Show Search
+Show Source Control
+Show Debug
+Show Extensions
+Ctrl+Shit+H
+(trl+Shit+)
+Replace in files
+Toggle Search details
+Ctrl+Shit+U
+Show Output panel
+Ctrl+Shit+V
+Open Markdown preview
+Open Markdown preview to the side
+Crl-KV
+Zen Mode (Esc Esc to exit)
+CH-*KZ
+Cal+N
+Ctl+0
+Cal+5
+Ctrl+Shift+s
+Cul+KS
+Cul・F4
+Ctrl+K Cul-W
+Ctrl+Shit+T
+Ctrl-K Enter
+Ctrl+Tab
+Ctrl+Shitt+Tab
+Cul+KP
+Cul-KR
+Cul-KO
+New File
+Open File-
+Sme
+Savek.
+Save Al
+Close
+Close All
+Reopen ciosed editor
+Keep preview mode editor open
+Open next
+Open previous
+Copy path of active file
+Reveal active file in Explorer
+Show active file in new window/instance

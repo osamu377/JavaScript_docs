@@ -1,0 +1,47 @@
+Ctrl+MToole Tab moves focus
+Search and replace
+Crind
+Ctrl+H Replace
+F3/Shift+F3 Find next/previous
+Alt+Enter Select all occurences of Find match
+Ctrl+D Addddddddddddddo next Find match
+Ctri+KCtrl+D Move last selection to next Find match
+Alt+C/R/W Toggle case-sensitive / regex / whole word
+Multi-cursor and selection
+Alt+Click insert cursor
+Ctrl+Alt+1/1 Insert cursor above / below
+Ctri+Undo last cursor operation
+Shift+Alt+l Insert cursor at end of each line selected
+Cti+L Select current ine
+Ctrl+Shift+L Select all occurrences of current selection
+Ctri+F2Select all occurrences of current word
+Shift+Alt+-Expand selection
+Shift+Alt+- Shrink selection
+Shift+Alt+ Column (box) selection
+(drag mouse)
+Ctrl+Shift+Alt Column (box) selection
++ (arrow key)
+Ctrl+Shift+Alt Column (box) selection page up/down
++PgUp/PgDn
+Rich languages editing
+Ctrl+Space Ctrl+l Trigger suggestion
+Ctrl+Shift+Space Trigger parameter hints
+Shift+Alt+FFormat document
+Ctrl+KCti+FFormat selection
+F12Goto Definition
+Alt+F12Peek Definition
+Ctrl+K F12Open Definition to the side
+Ctrl+.Quick Fick Fic
+Shift+Fl2 Show References
+F2 Symbol
+Ctrl+KCtrl+X Trim trailing whitespace
+Ctrl+KMChange fle lanquage
+Change file language
+Editor management
+Cti+F4 (ti+W(lose editose editor
+Ctrl+KFClose folder
+Ctrl+ Solt editor
+Ctrl+1/2/3 Focus into 151,2nd or group
+Ctrl+KCtrl+-/-Focus into previous/next editor group
+Ctrl+Shift+PgUp/PgDn Move editor left/right
+Ctrl+K-!Move active editor qroup

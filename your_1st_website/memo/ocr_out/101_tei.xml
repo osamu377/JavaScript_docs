@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+        <respStmt>
+          <resp>Automated Transcription</resp>
+          <name ref="https://github.com/ndl-lab/ndlkotenocr-lite">NDL古典籍OCR-Liteアプリケーション</name>
+        </respStmt>
+        <respStmt>
+          <resp>Conversion to TEI encoding</resp>
+          <name>Kiyonori Nagasaki</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface>
+      <graphic url="C:\Users\student1\OneDrive%20-%20埼玉コンピュータ＆医療事務専門学校\ドキュメント\MyDocs\JavaScript_new\初めてのウェブサイト\memo\png\101.png" width="369px" height="761px" />
+      <zone xml:id="L0000_000" ulx="17" uly="10" lrx="66" lry="22" />
+      <zone xml:id="L0000_001" ulx="17" uly="37" lrx="245" lry="46" />
+      <zone xml:id="L0000_002" ulx="17" uly="53" lrx="245" lry="62" />
+      <zone xml:id="L0000_003" ulx="17" uly="70" lrx="236" lry="78" />
+      <zone xml:id="L0000_004" ulx="17" uly="85" lrx="240" lry="94" />
+      <zone xml:id="L0000_005" ulx="17" uly="101" lrx="196" lry="110" />
+      <zone xml:id="L0000_006" ulx="17" uly="117" lrx="225" lry="126" />
+      <zone xml:id="L0000_007" ulx="17" uly="148" lrx="100" lry="162" />
+      <zone xml:id="L0000_008" ulx="17" uly="176" lrx="251" lry="185" />
+      <zone xml:id="L0000_009" ulx="17" uly="192" lrx="259" lry="201" />
+      <zone xml:id="L0000_010" ulx="17" uly="208" lrx="225" lry="217" />
+      <zone xml:id="L0000_011" ulx="16" uly="224" lrx="222" lry="233" />
+      <zone xml:id="L0000_012" ulx="17" uly="239" lrx="184" lry="247" />
+      <zone xml:id="L0000_013" ulx="17" uly="255" lrx="210" lry="263" />
+      <zone xml:id="L0000_014" ulx="17" uly="271" lrx="211" lry="279" />
+      <zone xml:id="L0000_015" ulx="17" uly="287" lrx="255" lry="296" />
+      <zone xml:id="L0000_016" ulx="17" uly="303" lrx="225" lry="312" />
+      <zone xml:id="L0000_017" ulx="18" uly="318" lrx="264" lry="328" />
+      <zone xml:id="L0000_018" ulx="17" uly="334" lrx="239" lry="343" />
+      <zone xml:id="L0000_019" ulx="17" uly="350" lrx="210" lry="358" />
+      <zone xml:id="L0000_020" ulx="17" uly="366" lrx="224" lry="375" />
+      <zone xml:id="L0000_021" ulx="16" uly="381" lrx="231" lry="391" />
+      <zone xml:id="L0000_022" ulx="17" uly="397" lrx="234" lry="408" />
+      <zone xml:id="L0000_023" ulx="17" uly="413" lrx="256" lry="424" />
+      <zone xml:id="L0000_024" ulx="17" uly="428" lrx="268" lry="439" />
+      <zone xml:id="L0000_025" ulx="16" uly="444" lrx="291" lry="454" />
+      <zone xml:id="L0000_026" ulx="16" uly="460" lrx="252" lry="470" />
+      <zone xml:id="L0000_027" ulx="17" uly="476" lrx="275" lry="486" />
+      <zone xml:id="L0000_028" ulx="17" uly="492" lrx="221" lry="502" />
+      <zone xml:id="L0000_029" ulx="17" uly="508" lrx="238" lry="518" />
+      <zone xml:id="L0000_030" ulx="17" uly="523" lrx="233" lry="533" />
+      <zone xml:id="L0000_031" ulx="16" uly="540" lrx="241" lry="549" />
+      <zone xml:id="L0000_032" ulx="16" uly="556" lrx="218" lry="565" />
+      <zone xml:id="L0000_033" ulx="16" uly="588" lrx="88" lry="602" />
+      <zone xml:id="L0000_034" ulx="17" uly="615" lrx="215" lry="623" />
+      <zone xml:id="L0000_035" ulx="17" uly="631" lrx="188" lry="639" />
+      <zone xml:id="L0000_036" ulx="17" uly="647" lrx="185" lry="655" />
+      <zone xml:id="L0000_037" ulx="17" uly="663" lrx="204" lry="671" />
+      <zone xml:id="L0000_038" ulx="17" uly="679" lrx="234" lry="687" />
+      <zone xml:id="L0000_039" ulx="17" uly="694" lrx="260" lry="703" />
+      <zone xml:id="L0000_040" ulx="17" uly="710" lrx="279" lry="719" />
+      <zone xml:id="L0000_041" ulx="17" uly="726" lrx="270" lry="735" />
+      <zone xml:id="L0000_042" ulx="16" uly="742" lrx="217" lry="750" />
+    </surface>
+    <surface>
+      <graphic url="C:\Users\student1\OneDrive%20-%20埼玉コンピュータ＆医療事務専門学校\ドキュメント\MyDocs\JavaScript_new\初めてのウェブサイト\memo\png\102.png" width="364px" height="847px" />
+      <zone xml:id="L0001_000" ulx="8" uly="7" lrx="238" lry="15" />
+      <zone xml:id="L0001_001" ulx="7" uly="38" lrx="132" lry="50" />
+      <zone xml:id="L0001_002" ulx="6" uly="63" lrx="149" lry="75" />
+      <zone xml:id="L0001_003" ulx="6" uly="79" lrx="165" lry="90" />
+      <zone xml:id="L0001_004" ulx="7" uly="95" lrx="213" lry="106" />
+      <zone xml:id="L0001_005" ulx="6" uly="111" lrx="290" lry="122" />
+      <zone xml:id="L0001_006" ulx="6" uly="127" lrx="280" lry="138" />
+      <zone xml:id="L0001_007" ulx="7" uly="143" lrx="304" lry="154" />
+      <zone xml:id="L0001_008" ulx="7" uly="160" lrx="323" lry="171" />
+      <zone xml:id="L0001_009" ulx="7" uly="191" lrx="181" lry="203" />
+      <zone xml:id="L0001_010" ulx="7" uly="219" lrx="185" lry="229" />
+      <zone xml:id="L0001_011" ulx="7" uly="234" lrx="253" lry="244" />
+      <zone xml:id="L0001_012" ulx="8" uly="250" lrx="250" lry="260" />
+      <zone xml:id="L0001_013" ulx="10" uly="265" lrx="313" lry="276" />
+      <zone xml:id="L0001_014" ulx="7" uly="282" lrx="209" lry="291" />
+      <zone xml:id="L0001_015" ulx="7" uly="297" lrx="317" lry="308" />
+      <zone xml:id="L0001_016" ulx="10" uly="313" lrx="301" lry="324" />
+      <zone xml:id="L0001_017" ulx="7" uly="329" lrx="204" lry="339" />
+      <zone xml:id="L0001_018" ulx="7" uly="345" lrx="201" lry="355" />
+      <zone xml:id="L0001_019" ulx="7" uly="361" lrx="233" lry="371" />
+      <zone xml:id="L0001_020" ulx="7" uly="375" lrx="71" lry="386" />
+      <zone xml:id="L0001_021" ulx="7" uly="391" lrx="232" lry="401" />
+      <zone xml:id="L0001_022" ulx="7" uly="405" lrx="72" lry="416" />
+      <zone xml:id="L0001_023" ulx="8" uly="420" lrx="303" lry="430" />
+      <zone xml:id="L0001_024" ulx="8" uly="434" lrx="71" lry="445" />
+      <zone xml:id="L0001_025" ulx="7" uly="466" lrx="158" lry="481" />
+      <zone xml:id="L0001_026" ulx="8" uly="494" lrx="213" lry="503" />
+      <zone xml:id="L0001_027" ulx="8" uly="513" lrx="235" lry="523" />
+      <zone xml:id="L0001_028" ulx="7" uly="529" lrx="210" lry="538" />
+      <zone xml:id="L0001_029" ulx="8" uly="545" lrx="203" lry="553" />
+      <zone xml:id="L0001_030" ulx="8" uly="560" lrx="200" lry="569" />
+      <zone xml:id="L0001_031" ulx="8" uly="577" lrx="197" lry="585" />
+      <zone xml:id="L0001_032" ulx="9" uly="592" lrx="251" lry="602" />
+      <zone xml:id="L0001_033" ulx="8" uly="609" lrx="169" lry="618" />
+      <zone xml:id="L0001_034" ulx="7" uly="624" lrx="205" lry="634" />
+      <zone xml:id="L0001_035" ulx="7" uly="640" lrx="202" lry="650" />
+      <zone xml:id="L0001_036" ulx="7" uly="655" lrx="236" lry="665" />
+      <zone xml:id="L0001_037" ulx="7" uly="672" lrx="224" lry="681" />
+      <zone xml:id="L0001_038" ulx="126" uly="670" lrx="225" lry="682" />
+      <zone xml:id="L0001_039" ulx="8" uly="703" lrx="140" lry="717" />
+      <zone xml:id="L0001_040" ulx="8" uly="731" lrx="182" lry="739" />
+      <zone xml:id="L0001_041" ulx="8" uly="747" lrx="183" lry="755" />
+      <zone xml:id="L0001_042" ulx="8" uly="763" lrx="179" lry="771" />
+      <zone xml:id="L0001_043" ulx="7" uly="778" lrx="295" lry="788" />
+      <zone xml:id="L0001_044" ulx="8" uly="793" lrx="300" lry="803" />
+      <zone xml:id="L0001_045" ulx="8" uly="809" lrx="227" lry="820" />
+      <zone xml:id="L0001_046" ulx="8" uly="826" lrx="243" lry="835" />
+    </surface>
+    <surface>
+      <graphic url="C:\Users\student1\OneDrive%20-%20埼玉コンピュータ＆医療事務専門学校\ドキュメント\MyDocs\JavaScript_new\初めてのウェブサイト\memo\png\103.png" width="361px" height="863px" />
+      <zone xml:id="L0002_000" ulx="16" uly="9" lrx="130" lry="22" />
+      <zone xml:id="L0002_001" ulx="15" uly="36" lrx="175" lry="46" />
+      <zone xml:id="L0002_002" ulx="15" uly="52" lrx="186" lry="62" />
+      <zone xml:id="L0002_003" ulx="133" uly="50" lrx="187" lry="63" />
+      <zone xml:id="L0002_004" ulx="15" uly="68" lrx="158" lry="78" />
+      <zone xml:id="L0002_005" ulx="15" uly="83" lrx="177" lry="93" />
+      <zone xml:id="L0002_006" ulx="132" uly="81" lrx="179" lry="94" />
+      <zone xml:id="L0002_007" ulx="16" uly="98" lrx="171" lry="109" />
+      <zone xml:id="L0002_008" ulx="15" uly="115" lrx="161" lry="125" />
+      <zone xml:id="L0002_009" ulx="132" uly="113" lrx="162" lry="126" />
+      <zone xml:id="L0002_010" ulx="15" uly="131" lrx="175" lry="141" />
+      <zone xml:id="L0002_011" ulx="133" uly="129" lrx="176" lry="142" />
+      <zone xml:id="L0002_012" ulx="15" uly="146" lrx="233" lry="157" />
+      <zone xml:id="L0002_013" ulx="14" uly="163" lrx="282" lry="174" />
+      <zone xml:id="L0002_014" ulx="15" uly="178" lrx="184" lry="189" />
+      <zone xml:id="L0002_015" ulx="15" uly="193" lrx="203" lry="204" />
+      <zone xml:id="L0002_016" ulx="15" uly="209" lrx="241" lry="220" />
+      <zone xml:id="L0002_017" ulx="14" uly="225" lrx="263" lry="236" />
+      <zone xml:id="L0002_018" ulx="16" uly="242" lrx="318" lry="252" />
+      <zone xml:id="L0002_019" ulx="15" uly="268" lrx="63" lry="282" />
+      <zone xml:id="L0002_020" ulx="16" uly="295" lrx="216" lry="304" />
+      <zone xml:id="L0002_021" ulx="134" uly="294" lrx="217" lry="306" />
+      <zone xml:id="L0002_022" ulx="16" uly="311" lrx="319" lry="321" />
+      <zone xml:id="L0002_023" ulx="15" uly="327" lrx="194" lry="337" />
+      <zone xml:id="L0002_024" ulx="15" uly="342" lrx="243" lry="352" />
+      <zone xml:id="L0002_025" ulx="16" uly="358" lrx="268" lry="368" />
+      <zone xml:id="L0002_026" ulx="16" uly="374" lrx="192" lry="383" />
+      <zone xml:id="L0002_027" ulx="14" uly="390" lrx="230" lry="399" />
+      <zone xml:id="L0002_028" ulx="16" uly="407" lrx="193" lry="416" />
+      <zone xml:id="L0002_029" ulx="16" uly="422" lrx="210" lry="432" />
+      <zone xml:id="L0002_030" ulx="16" uly="438" lrx="204" lry="448" />
+      <zone xml:id="L0002_031" ulx="16" uly="453" lrx="233" lry="463" />
+      <zone xml:id="L0002_032" ulx="16" uly="469" lrx="224" lry="479" />
+      <zone xml:id="L0002_033" ulx="16" uly="485" lrx="251" lry="495" />
+      <zone xml:id="L0002_034" ulx="14" uly="501" lrx="302" lry="511" />
+      <zone xml:id="L0002_035" ulx="16" uly="517" lrx="254" lry="527" />
+      <zone xml:id="L0002_036" ulx="16" uly="542" lrx="58" lry="556" />
+      <zone xml:id="L0002_037" ulx="16" uly="570" lrx="219" lry="580" />
+      <zone xml:id="L0002_038" ulx="16" uly="586" lrx="203" lry="596" />
+      <zone xml:id="L0002_039" ulx="15" uly="601" lrx="156" lry="611" />
+      <zone xml:id="L0002_040" ulx="133" uly="600" lrx="158" lry="612" />
+      <zone xml:id="L0002_041" ulx="16" uly="617" lrx="196" lry="627" />
+      <zone xml:id="L0002_042" ulx="15" uly="633" lrx="178" lry="643" />
+      <zone xml:id="L0002_043" ulx="16" uly="650" lrx="188" lry="658" />
+      <zone xml:id="L0002_044" ulx="16" uly="675" lrx="143" lry="688" />
+      <zone xml:id="L0002_045" ulx="16" uly="702" lrx="250" lry="712" />
+      <zone xml:id="L0002_046" ulx="16" uly="718" lrx="226" lry="727" />
+      <zone xml:id="L0002_047" ulx="16" uly="735" lrx="201" lry="743" />
+      <zone xml:id="L0002_048" ulx="16" uly="749" lrx="250" lry="759" />
+      <zone xml:id="L0002_049" ulx="16" uly="766" lrx="204" lry="775" />
+      <zone xml:id="L0002_050" ulx="15" uly="781" lrx="230" lry="791" />
+      <zone xml:id="L0002_051" ulx="16" uly="797" lrx="229" lry="807" />
+      <zone xml:id="L0002_052" ulx="12" uly="830" lrx="300" lry="839" />
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <p>
+        <pb n="101.png" facs="#101.png" />
+        <lb n="0" facs="#L0000_000" />General<lb n="1" facs="#L0000_001" />Ctrl+Shift+P.F1Show Command Palette<lb n="2" facs="#L0000_002" />Ctrl+POuick Open.Go to File.<lb n="3" facs="#L0000_003" />Ctri+Shift+New window/instance<lb n="4" facs="#L0000_004" />Ctrl+Shift+WClose window/instance<lb n="5" facs="#L0000_005" />Ctrl+,User Setings<lb n="6" facs="#L0000_006" />Ctrl+K Ctrl+5 Keyboard Shortcuts<lb n="7" facs="#L0000_007" />Basic editing<lb n="8" facs="#L0000_008" />Ctri+XCut line (empty selection]<lb n="9" facs="#L0000_009" />Ctrl+Copy line (empty selection)<lb n="10" facs="#L0000_010" />Alt+1/4Move line up/down<lb n="11" facs="#L0000_011" />Shift+Alt+1/1 Copy line up/down<lb n="12" facs="#L0000_012" />Ctrl+Shift+KDelete line<lb n="13" facs="#L0000_013" />Ctrl+Enter insertlinebelow<lb n="14" facs="#L0000_014" />Ctrl+Shift+Enter Insert line above<lb n="15" facs="#L0000_015" />Ctrl+Shift+\Jump to matching bracket<lb n="16" facs="#L0000_016" />Ctrl+1 Indent/outdent line<lb n="17" facs="#L0000_017" />Home/EndGo to beginninning/end of line<lb n="18" facs="#L0000_018" />Ctrl+HomeGo to beginning of file<lb n="19" facs="#L0000_019" />Ctrl+EndGoto end of file<lb n="20" facs="#L0000_020" />Ctrl+1/15croll line up/down<lb n="21" facs="#L0000_021" />Alt+PqUp/PaDn Scroll page up/down<lb n="22" facs="#L0000_022" />Ctrl+Shift+{Fold (collapse) region<lb n="23" facs="#L0000_023" />Ctrl+Shift+]Unfold (uncollapse) region<lb n="24" facs="#L0000_024" />Ctrl+K Ctrl+[Fold (collapse) all subregions<lb n="25" facs="#L0000_025" />Ctri+K Ctri+] (uncollapse) all subreqions<lb n="26" facs="#L0000_026" />Ctrl+K (collapse) reqiopse) all reqions<lb n="27" facs="#L0000_027" />Ctrl+KCtrl+JUnfold (uncollapse) all reqions<lb n="28" facs="#L0000_028" />Ctrl+K Ctri+CAdd line comment<lb n="29" facs="#L0000_029" />Ctrl+K Ctrl+URemove line comment<lb n="30" facs="#L0000_030" />Ctri+/Toggle line comment<lb n="31" facs="#L0000_031" />Shift+Alt+A Togleblock comment<lb n="32" facs="#L0000_032" />Alt+ZTogale word wrap<lb n="33" facs="#L0000_033" />Navigation<lb n="34" facs="#L0000_034" />Ctyl+TShow all Svmbols<lb n="35" facs="#L0000_035" />Ctrl+GGoto Line.<lb n="36" facs="#L0000_036" />Ctrl+PGoto File.<lb n="37" facs="#L0000_037" />Ctrl+Shift+OGoto Svmbol.<lb n="38" facs="#L0000_038" />Ctri+Shift+M Show Problems panel<lb n="39" facs="#L0000_039" />F8Go to next error or warning<lb n="40" facs="#L0000_040" />Shift+F8Goto previous error or warning<lb n="41" facs="#L0000_041" />Ctrl+Shift+Tab Navigate editor qroup history<lb n="42" facs="#L0000_042" />Alt+-/-Go back/fonwarc<pb n="102.png" facs="#102.png" />
+        <lb n="0" facs="#L0001_000" />Ctrl+MToole Tab moves focus<lb n="1" facs="#L0001_001" />Search and replace<lb n="2" facs="#L0001_002" />Crind<lb n="3" facs="#L0001_003" />Ctrl+H Replace<lb n="4" facs="#L0001_004" />F3/Shift+F3 Find next/previous<lb n="5" facs="#L0001_005" />Alt+Enter Select all occurences of Find match<lb n="6" facs="#L0001_006" />Ctrl+D Addddddddddddddo next Find match<lb n="7" facs="#L0001_007" />Ctri+KCtrl+D Move last selection to next Find match<lb n="8" facs="#L0001_008" />Alt+C/R/W Toggle case-sensitive / regex / whole word<lb n="9" facs="#L0001_009" />Multi-cursor and selection<lb n="10" facs="#L0001_010" />Alt+Click insert cursor<lb n="11" facs="#L0001_011" />Ctrl+Alt+1/1 Insert cursor above / below<lb n="12" facs="#L0001_012" />Ctri+Undo last cursor operation<lb n="13" facs="#L0001_013" />Shift+Alt+l Insert cursor at end of each line selected<lb n="14" facs="#L0001_014" />Cti+L Select current ine<lb n="15" facs="#L0001_015" />Ctrl+Shift+L Select all occurrences of current selection<lb n="16" facs="#L0001_016" />Ctri+F2Select all occurrences of current word<lb n="17" facs="#L0001_017" />Shift+Alt+-Expand selection<lb n="18" facs="#L0001_018" />Shift+Alt+- Shrink selection<lb n="19" facs="#L0001_019" />Shift+Alt+ Column (box) selection<lb n="20" facs="#L0001_020" />(drag mouse)<lb n="21" facs="#L0001_021" />Ctrl+Shift+Alt Column (box) selection<lb n="22" facs="#L0001_022" />+ (arrow key)<lb n="23" facs="#L0001_023" />Ctrl+Shift+Alt Column (box) selection page up/down<lb n="24" facs="#L0001_024" />+PgUp/PgDn<lb n="25" facs="#L0001_025" />Rich languages editing<lb n="26" facs="#L0001_026" />Ctrl+Space Ctrl+l Trigger suggestion<lb n="27" facs="#L0001_027" />Ctrl+Shift+Space Trigger parameter hints<lb n="28" facs="#L0001_028" />Shift+Alt+FFormat document<lb n="29" facs="#L0001_029" />Ctrl+KCti+FFormat selection<lb n="30" facs="#L0001_030" />F12Goto Definition<lb n="31" facs="#L0001_031" />Alt+F12Peek Definition<lb n="32" facs="#L0001_032" />Ctrl+K F12Open Definition to the side<lb n="33" facs="#L0001_033" />Ctrl+.Quick Fick Fic<lb n="34" facs="#L0001_034" />Shift+Fl2 Show References<lb n="35" facs="#L0001_035" />F2 Symbol<lb n="36" facs="#L0001_036" />Ctrl+KCtrl+X Trim trailing whitespace<lb n="37" facs="#L0001_037" />Ctrl+KMChange fle lanquage<lb n="38" facs="#L0001_038" />Change file language<lb n="39" facs="#L0001_039" />Editor management<lb n="40" facs="#L0001_040" />Cti+F4 (ti+W(lose editose editor<lb n="41" facs="#L0001_041" />Ctrl+KFClose folder<lb n="42" facs="#L0001_042" />Ctrl+ Solt editor<lb n="43" facs="#L0001_043" />Ctrl+1/2/3 Focus into 151,2nd or group<lb n="44" facs="#L0001_044" />Ctrl+KCtrl+-/-Focus into previous/next editor group<lb n="45" facs="#L0001_045" />Ctrl+Shift+PgUp/PgDn Move editor left/right<lb n="46" facs="#L0001_046" />Ctrl+K-!Move active editor qroup<pb n="103.png" facs="#103.png" />
+        <lb n="0" facs="#L0002_000" />File management<lb n="1" facs="#L0002_001" />Ctrl+N New File<lb n="2" facs="#L0002_002" />Ctrl+O Open File..<lb n="3" facs="#L0002_003" />Open File_<lb n="4" facs="#L0002_004" />Save<lb n="5" facs="#L0002_005" />Cti+Shift+S Save As.<lb n="6" facs="#L0002_006" />SaveAs.<lb n="7" facs="#L0002_007" />Ctrl+KSSave All<lb n="8" facs="#L0002_008" />Ctrl+F4 Close<lb n="9" facs="#L0002_009" />Close<lb n="10" facs="#L0002_010" />Ctrl+K Ctrl+W Close All<lb n="11" facs="#L0002_011" />Close All<lb n="12" facs="#L0002_012" />Ctrl+Shift+T Reopen closed editor<lb n="13" facs="#L0002_013" />Ctrl+K Enter Keep preview mode editor open<lb n="14" facs="#L0002_014" />Ctrl+Tab Open next<lb n="15" facs="#L0002_015" />Ctrl+Shift+Tab Open previous<lb n="16" facs="#L0002_016" />Ctrl+KP Copy path of active file<lb n="17" facs="#L0002_017" />Ctrl+KR Reveal active fle in Explorer<lb n="18" facs="#L0002_018" />Ctrl+KOShow active file in new window/instance<lb n="19" facs="#L0002_019" />Display<lb n="20" facs="#L0002_020" />F*1Toole full screen<lb n="21" facs="#L0002_021" />Toggle full screen<lb n="22" facs="#L0002_022" />Shift+Alt+0Togqle editor layout (horizontal/vertical)<lb n="23" facs="#L0002_023" />Ctrl+=/- Zoom in/out<lb n="24" facs="#L0002_024" />Ctrl+BToggle Sidebar visibility<lb n="25" facs="#L0002_025" />Ctrl+Shift+EShow Explorer/Tocus<lb n="26" facs="#L0002_026" />Ctrl+Shift+FShow Search<lb n="27" facs="#L0002_027" />Ctrl+Shift+G Show Source Control<lb n="28" facs="#L0002_028" />Ctrl+Shift+D Show Debug<lb n="29" facs="#L0002_029" />Ctrl+Shift++ Show Extensions<lb n="30" facs="#L0002_030" />Ctrl+Shift+H Replace in files<lb n="31" facs="#L0002_031" />Ctrl+Shift+) Togle Search details<lb n="32" facs="#L0002_032" />Ctrl+Shift+UShow Output panel<lb n="33" facs="#L0002_033" />Ctrl+Shift+VOpen Markdown preview<lb n="34" facs="#L0002_034" />Ctrl+KVOOpen Markdown preview to the side<lb n="35" facs="#L0002_035" />Ctrl+KZZen Mode (Esc Esc to exit)<lb n="36" facs="#L0002_036" />Debug<lb n="37" facs="#L0002_037" />F9Toqale breakpoint<lb n="38" facs="#L0002_038" />F5 Start/Conue<lb n="39" facs="#L0002_039" />Shift+F5 Stop<lb n="40" facs="#L0002_040" />Stop<lb n="41" facs="#L0002_041" />F11/Shift+F11 Step into/out<lb n="42" facs="#L0002_042" />Flo Step over<lb n="43" facs="#L0002_043" />Ctrl+K Ctrl+IShowhover<lb n="44" facs="#L0002_044" />Integrated terminal<lb n="45" facs="#L0002_045" />Ctri+Show integrated terminal<lb n="46" facs="#L0002_046" />Ctrl+Shift+'Create new terminal<lb n="47" facs="#L0002_047" />Ctrl+CCoovselection<lb n="48" facs="#L0002_048" />Ctri+VPaste into active terminal<lb n="49" facs="#L0002_049" />Ctrl+1/1Scrollup/down<lb n="50" facs="#L0002_050" />Shift+PaUp/PaDn Scroll paqe up/down<lb n="51" facs="#L0002_051" />Ctrl+Home/End Scroll to top/bottom<lb n="52" facs="#L0002_052" />Other operating systems' keyboard shortcuts and additional</p>
+    </body>
+  </text>
+</TEI>

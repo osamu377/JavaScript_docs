@@ -1,0 +1,141 @@
+△
+Visual Studio Code
+Keyboard shortcuts for Windows
+Genera
+Ctrl+Shift+P, F1 Show Command Palette
+Ctrl-P Quick Open Go to to File.
+Ctrl+Shift+N New window/instance
+Ctrl-Shift+W Close window/instance
+Ctrl+,User Settings
+Ctrl+K Ctri+5 Kevboard Shortcuts
+Basic editing
+Ctrl+X Cut line (empty selection)
+Ctrl-C Copy line (empty selection)
+Alt+1/|Move line up/down
+Shift+Alt+1/1/1 Copy line up/down
+Cti+Shift+K Delete line
+Ctrl-Enter Insert line below
+Ctrl+Shift+Enter Insert line above
+Ctrl+Shift+\ Jump to matching bracket
+Ctrl+]//Indent/outdent line
+Home / End Go to beginning/end of line
+Ctrl+Home Go to beginning of fle
+Ctrl-End Go to end of file
+Ctrl+1/1 Scroll line up/down
+Alt+PgUp /PgDn Scroll page up/down
+Ctrl+Shift+] Fold (collapse) reqion
+Ctrl+Shift+] Unfold (uncollapse) reqion
+Ctrl+K Ctrl+{ Fold (collapse) all subregions
+Ctri+K Ctri+] Unfold (uncollapse) all subreqions
+Ctrl-K Ctri+0 Fold (collapse) all reqions
+Ctri+K Ctri+) Unfold (uncollapse) all regions
+Ctrl+K Ctrl+C Add line comment
+Ctrl+K Ctrl+U Remove line comment
+Ctul+/ Togle ine comment
+Shift+Alt+AToggle block comment
+Alt+ZTogale word wrap
+Navigation
+Ctrl+TShow all Symbols
+Ctrl+GGoto Line.
+Ctrl+PGo to File.
+Ctrl+Shift+O Go to Symbol
+Ctri-Shift+M Show Problems panel
+F8Go to next etror or warninc
+Shift+F8 Go previous ertor waming
+Ctrl+Shift+Tab Navigate editor qroup history
+Alt+-1-Goback/forward
+Ctri+M Toggle Tab moves focus
+Search and replace
+Ctrl+F Find
+Ctrl+H Replace
+F3/Shift++F3 Find next/previous
+Alt+Enter Select all occurences of Find match
+Ctrl+D Adddd selection to next Find match
+Ctri+K Ctrl+D Move last selection to next Find match
+Alt+C /R/W Toggle case-sensitive / regex / whole word
+Multi-cursor and selection
+Alt+Click Insert cursor
+Ctri+Alt+1/1 Insert cursor above /below
+Ctri+U Undo last cursor operation
+Shift+Alt+1 Insert cursor at end of each line selected
+Ctri+L Select curent ine
+Ctrl+Shift+L Select all occurrences of current selection
+Ctri+F2 Select all occurrences of current word
+Shift+Alt+- Expand selection
+Shift+Alt+- Shrink selection
+Shift+Alt + Column (box) selection
+(drag mouse)
+Ctrl+Shift+Alt Column (box) selection
++ (arrow key)
+Ctrl+Shift+Alt Column (box) selection page up/down
+PqUp/PgDn
+Rich languages editing
+Ctrl+Space, Ctrl+1 Trigger suggestion
+Ctrl+Shift+Space Trigger parameter hints
+Shift+Alt+F Format document
+Ctrl+K Ctri+Format selection
+F12 Go Definitior
+Alt+F12Peek Definition
+Ctrl+K F12 Open Definition to the side
+Ctrl+.Ouick Fix
+Shift+F12 Show References
+F2 Rename Svmbol
+Ctrl+K Trim trring whitespace
+Ctrl+KMChange file lanquage
+Editor management
+Ctri+F4. Ctri+W Close editor
+Ctrl+KF Close folder
+Ctrl+) Soit editor
+Ctul+1/2/3Focus into 14,2mor 3m editor qroup
+Ctri+K -/-/- Focus into previous/next editor group
+Ctrl+Shift+PqUp /PaDn Move editor left/night
+Ctrl+K-} Move active editor qroup
+File management
+Ctrl+N New File
+Ctrl+O Open File.
+Ctrl+S Save
+Ctrl+Shit+S Save As.
+Ctrl+KS Save All
+Save All
+Ctrl+F4 Close
+Ctrl+K Ctrl+W Close All
+Ctrl+Shift+T Reopen closed editor
+Ctrl+K Enter Keep preview mode editor open
+Ctrl+Tab Open next
+Ctrl+Shift+Tab Open previous
+Ctrl+KP Copy five fie
+Ctrl+KR Reveal active file in Explorer
+Ctrl+KO Show active file in new window/instance
+Display
+Fll Toagle full screen
+Shift+Alt+0 Toqale editor layout (horizontal/vertical)
+Cul+ =/- com in/out
+Ctrl+B Togle Sibility
+Curl+Shift+E Show Explorer / Tocus
+Ctrl+Shitt+F Show Search
+Ctrl+Shift+G Show Source Control
+Ctrl+Shit+D Show Debua
+Ctrl+Shift+X Show Extensions
+Ctrl+Shift+H Replace in files
+Ctrl+Shift+] Togle Search details
+Ctrl+Shift+U Show Output panel
+Ctrl+Shift+V Open Markdown preview
+Ctrl+KV Open Markdown preview to the side
+Ctrl+KZ Zen Mode (Esc Esc to exit)
+Debug
+9 Toale breakooint
+Start/Continue
+Shift+FS Ston
+F11/Shift+F11 Step into/out
+F10 Step over
+Ctrl+KCtrl+1 Showhover
+Integrated termina
+Ctrl+Show inal
+Ctrl+Shift+ Create new terminal
+Ctrl+C Copy lection
+CtrlyVPaste into active terminal
+Cti+1/1Scroll up/down
+Shift+PqUp/down Scroll page up/down
+Ctrl+Home/ End Scroll to top/bottom
+Other operating systems' keyboard shortcuts and additional
+unassigned shortcuts available at aka.ms/vscodekeybindings

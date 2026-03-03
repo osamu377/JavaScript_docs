@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+        <respStmt>
+          <resp>Automated Transcription</resp>
+          <name ref="https://github.com/ndl-lab/ndlkotenocr-lite">NDL古典籍OCR-Liteアプリケーション</name>
+        </respStmt>
+        <respStmt>
+          <resp>Conversion to TEI encoding</resp>
+          <name>Kiyonori Nagasaki</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface>
+      <graphic url="C:\Users\student1\OneDrive%20-%20埼玉コンピュータ＆医療事務専門学校\ドキュメント\MyDocs\JavaScript_new\初めてのウェブサイト\memo\チートシート.png" width="1180px" height="906px" />
+      <zone xml:id="L0000_000" ulx="42" uly="30" lrx="80" lry="67" />
+      <zone xml:id="L0000_001" ulx="90" uly="34" lrx="366" lry="60" />
+      <zone xml:id="L0000_002" ulx="88" uly="77" lrx="327" lry="95" />
+      <zone xml:id="L0000_003" ulx="31" uly="124" lrx="80" lry="136" />
+      <zone xml:id="L0000_004" ulx="28" uly="147" lrx="108" lry="161" />
+      <zone xml:id="L0000_005" ulx="146" uly="147" lrx="263" lry="161" />
+      <zone xml:id="L0000_006" ulx="28" uly="163" lrx="66" lry="177" />
+      <zone xml:id="L0000_007" ulx="146" uly="163" lrx="263" lry="178" />
+      <zone xml:id="L0000_008" ulx="28" uly="179" lrx="95" lry="193" />
+      <zone xml:id="L0000_009" ulx="147" uly="180" lrx="254" lry="194" />
+      <zone xml:id="L0000_010" ulx="28" uly="195" lrx="97" lry="209" />
+      <zone xml:id="L0000_011" ulx="147" uly="195" lrx="258" lry="209" />
+      <zone xml:id="L0000_012" ulx="28" uly="211" lrx="62" lry="225" />
+      <zone xml:id="L0000_013" ulx="146" uly="210" lrx="215" lry="225" />
+      <zone xml:id="L0000_014" ulx="29" uly="226" lrx="97" lry="240" />
+      <zone xml:id="L0000_015" ulx="147" uly="227" lrx="243" lry="241" />
+      <zone xml:id="L0000_016" ulx="31" uly="262" lrx="115" lry="274" />
+      <zone xml:id="L0000_017" ulx="31" uly="701" lrx="103" lry="713" />
+      <zone xml:id="L0000_018" ulx="30" uly="727" lrx="231" lry="736" />
+      <zone xml:id="L0000_019" ulx="148" uly="726" lrx="232" lry="738" />
+      <zone xml:id="L0000_020" ulx="31" uly="743" lrx="206" lry="753" />
+      <zone xml:id="L0000_021" ulx="29" uly="757" lrx="202" lry="770" />
+      <zone xml:id="L0000_022" ulx="30" uly="773" lrx="219" lry="786" />
+      <zone xml:id="L0000_023" ulx="29" uly="789" lrx="252" lry="802" />
+      <zone xml:id="L0000_024" ulx="28" uly="804" lrx="279" lry="818" />
+      <zone xml:id="L0000_025" ulx="28" uly="820" lrx="297" lry="833" />
+      <zone xml:id="L0000_026" ulx="29" uly="836" lrx="288" lry="849" />
+      <zone xml:id="L0000_027" ulx="31" uly="854" lrx="234" lry="864" />
+      <zone xml:id="L0000_028" ulx="422" uly="31" lrx="652" lry="41" />
+      <zone xml:id="L0000_029" ulx="420" uly="63" lrx="546" lry="75" />
+      <zone xml:id="L0000_030" ulx="417" uly="87" lrx="455" lry="101" />
+      <zone xml:id="L0000_031" ulx="536" uly="87" lrx="566" lry="101" />
+      <zone xml:id="L0000_032" ulx="417" uly="102" lrx="457" lry="117" />
+      <zone xml:id="L0000_033" ulx="536" uly="103" lrx="581" lry="117" />
+      <zone xml:id="L0000_034" ulx="418" uly="118" lrx="485" lry="133" />
+      <zone xml:id="L0000_035" ulx="536" uly="118" lrx="629" lry="133" />
+      <zone xml:id="L0000_036" ulx="418" uly="134" lrx="470" lry="148" />
+      <zone xml:id="L0000_037" ulx="536" uly="134" lrx="703" lry="148" />
+      <zone xml:id="L0000_038" ulx="418" uly="150" lrx="457" lry="165" />
+      <zone xml:id="L0000_039" ulx="536" uly="150" lrx="694" lry="164" />
+      <zone xml:id="L0000_040" ulx="418" uly="167" lrx="489" lry="180" />
+      <zone xml:id="L0000_041" ulx="536" uly="167" lrx="719" lry="180" />
+      <zone xml:id="L0000_042" ulx="418" uly="182" lrx="487" lry="196" />
+      <zone xml:id="L0000_043" ulx="542" uly="184" lrx="739" lry="197" />
+      <zone xml:id="L0000_044" ulx="421" uly="217" lrx="596" lry="228" />
+      <zone xml:id="L0000_045" ulx="418" uly="241" lrx="468" lry="256" />
+      <zone xml:id="L0000_046" ulx="537" uly="242" lrx="602" lry="256" />
+      <zone xml:id="L0000_047" ulx="418" uly="256" lrx="491" lry="270" />
+      <zone xml:id="L0000_048" ulx="538" uly="257" lrx="669" lry="270" />
+      <zone xml:id="L0000_049" ulx="418" uly="272" lrx="457" lry="287" />
+      <zone xml:id="L0000_050" ulx="537" uly="273" lrx="667" lry="286" />
+      <zone xml:id="L0000_051" ulx="417" uly="288" lrx="477" lry="303" />
+      <zone xml:id="L0000_052" ulx="533" uly="289" lrx="728" lry="302" />
+      <zone xml:id="L0000_053" ulx="417" uly="304" lrx="455" lry="319" />
+      <zone xml:id="L0000_054" ulx="536" uly="304" lrx="626" lry="319" />
+      <zone xml:id="L0000_055" ulx="418" uly="320" lrx="482" lry="334" />
+      <zone xml:id="L0000_056" ulx="537" uly="321" lrx="731" lry="334" />
+      <zone xml:id="L0000_057" ulx="417" uly="336" lrx="460" lry="350" />
+      <zone xml:id="L0000_058" ulx="534" uly="337" lrx="715" lry="350" />
+      <zone xml:id="L0000_059" ulx="417" uly="351" lrx="483" lry="365" />
+      <zone xml:id="L0000_060" ulx="536" uly="352" lrx="621" lry="366" />
+      <zone xml:id="L0000_061" ulx="417" uly="367" lrx="482" lry="381" />
+      <zone xml:id="L0000_062" ulx="536" uly="367" lrx="617" lry="381" />
+      <zone xml:id="L0000_063" ulx="417" uly="383" lrx="477" lry="398" />
+      <zone xml:id="L0000_064" ulx="536" uly="384" lrx="648" lry="397" />
+      <zone xml:id="L0000_065" ulx="418" uly="398" lrx="488" lry="412" />
+      <zone xml:id="L0000_066" ulx="417" uly="413" lrx="491" lry="427" />
+      <zone xml:id="L0000_067" ulx="535" uly="414" lrx="649" lry="427" />
+      <zone xml:id="L0000_068" ulx="418" uly="428" lrx="489" lry="442" />
+      <zone xml:id="L0000_069" ulx="418" uly="442" lrx="491" lry="457" />
+      <zone xml:id="L0000_070" ulx="535" uly="443" lrx="718" lry="456" />
+      <zone xml:id="L0000_071" ulx="419" uly="456" lrx="488" lry="472" />
+      <zone xml:id="L0000_072" ulx="421" uly="491" lrx="572" lry="504" />
+      <zone xml:id="L0000_073" ulx="418" uly="516" lrx="509" lry="530" />
+      <zone xml:id="L0000_074" ulx="536" uly="516" lrx="630" lry="531" />
+      <zone xml:id="L0000_075" ulx="419" uly="535" lrx="506" lry="549" />
+      <zone xml:id="L0000_076" ulx="537" uly="535" lrx="651" lry="549" />
+      <zone xml:id="L0000_077" ulx="418" uly="551" lrx="480" lry="565" />
+      <zone xml:id="L0000_078" ulx="537" uly="551" lrx="627" lry="566" />
+      <zone xml:id="L0000_079" ulx="417" uly="566" lrx="487" lry="580" />
+      <zone xml:id="L0000_080" ulx="536" uly="567" lrx="620" lry="581" />
+      <zone xml:id="L0000_081" ulx="418" uly="582" lrx="441" lry="596" />
+      <zone xml:id="L0000_082" ulx="536" uly="582" lrx="617" lry="596" />
+      <zone xml:id="L0000_083" ulx="417" uly="598" lrx="462" lry="613" />
+      <zone xml:id="L0000_084" ulx="537" uly="598" lrx="614" lry="612" />
+      <zone xml:id="L0000_085" ulx="417" uly="614" lrx="473" lry="629" />
+      <zone xml:id="L0000_086" ulx="536" uly="614" lrx="667" lry="628" />
+      <zone xml:id="L0000_087" ulx="418" uly="630" lrx="452" lry="644" />
+      <zone xml:id="L0000_088" ulx="536" uly="630" lrx="586" lry="644" />
+      <zone xml:id="L0000_089" ulx="417" uly="646" lrx="470" lry="660" />
+      <zone xml:id="L0000_090" ulx="536" uly="646" lrx="622" lry="660" />
+      <zone xml:id="L0000_091" ulx="418" uly="663" lrx="436" lry="676" />
+      <zone xml:id="L0000_092" ulx="536" uly="662" lrx="618" lry="677" />
+      <zone xml:id="L0000_093" ulx="418" uly="677" lrx="487" lry="691" />
+      <zone xml:id="L0000_094" ulx="536" uly="677" lrx="652" lry="692" />
+      <zone xml:id="L0000_095" ulx="418" uly="693" lrx="468" lry="707" />
+      <zone xml:id="L0000_096" ulx="536" uly="694" lrx="641" lry="708" />
+      <zone xml:id="L0000_097" ulx="421" uly="728" lrx="553" lry="741" />
+      <zone xml:id="L0000_098" ulx="420" uly="753" lrx="598" lry="765" />
+      <zone xml:id="L0000_099" ulx="420" uly="769" lrx="598" lry="782" />
+      <zone xml:id="L0000_100" ulx="419" uly="785" lrx="596" lry="798" />
+      <zone xml:id="L0000_101" ulx="419" uly="801" lrx="487" lry="814" />
+      <zone xml:id="L0000_102" ulx="420" uly="817" lrx="715" lry="829" />
+      <zone xml:id="L0000_103" ulx="420" uly="833" lrx="642" lry="845" />
+      <zone xml:id="L0000_104" ulx="421" uly="850" lrx="658" lry="860" />
+      <zone xml:id="L0000_105" ulx="812" uly="32" lrx="927" lry="45" />
+      <zone xml:id="L0000_106" ulx="812" uly="292" lrx="859" lry="305" />
+      <zone xml:id="L0000_107" ulx="812" uly="565" lrx="855" lry="579" />
+      <zone xml:id="L0000_108" ulx="810" uly="591" lrx="826" lry="604" />
+      <zone xml:id="L0000_109" ulx="927" uly="591" lrx="1019" lry="605" />
+      <zone xml:id="L0000_110" ulx="809" uly="607" lrx="826" lry="619" />
+      <zone xml:id="L0000_111" ulx="927" uly="606" lrx="1002" lry="620" />
+      <zone xml:id="L0000_112" ulx="807" uly="621" lrx="856" lry="635" />
+      <zone xml:id="L0000_113" ulx="927" uly="622" lrx="957" lry="636" />
+      <zone xml:id="L0000_114" ulx="807" uly="637" lrx="881" lry="651" />
+      <zone xml:id="L0000_115" ulx="927" uly="638" lrx="997" lry="652" />
+      <zone xml:id="L0000_116" ulx="808" uly="653" lrx="831" lry="667" />
+      <zone xml:id="L0000_117" ulx="927" uly="654" lrx="979" lry="668" />
+      <zone xml:id="L0000_118" ulx="927" uly="670" lrx="988" lry="684" />
+      <zone xml:id="L0000_119" ulx="812" uly="698" lrx="940" lry="710" />
+      <zone xml:id="L0000_120" ulx="809" uly="722" lrx="841" lry="737" />
+      <zone xml:id="L0000_121" ulx="928" uly="723" lrx="1049" lry="737" />
+      <zone xml:id="L0000_122" ulx="927" uly="739" lrx="1027" lry="752" />
+      <zone xml:id="L0000_123" ulx="807" uly="754" lrx="847" lry="769" />
+      <zone xml:id="L0000_124" ulx="927" uly="754" lrx="1002" lry="769" />
+      <zone xml:id="L0000_125" ulx="808" uly="769" lrx="847" lry="784" />
+      <zone xml:id="L0000_126" ulx="927" uly="770" lrx="1049" lry="784" />
+      <zone xml:id="L0000_127" ulx="807" uly="785" lrx="859" lry="799" />
+      <zone xml:id="L0000_128" ulx="926" uly="786" lrx="1004" lry="800" />
+      <zone xml:id="L0000_129" ulx="809" uly="802" lrx="1029" lry="816" />
+      <zone xml:id="L0000_130" ulx="810" uly="818" lrx="1028" lry="831" />
+      <zone xml:id="L0000_131" ulx="809" uly="852" lrx="1097" lry="862" />
+      <zone xml:id="L0000_132" ulx="809" uly="867" lrx="1099" lry="877" />
+      <zone xml:id="L0000_133" ulx="27" uly="285" lrx="66" lry="300" />
+      <zone xml:id="L0000_134" ulx="146" uly="286" lrx="270" lry="300" />
+      <zone xml:id="L0000_135" ulx="27" uly="301" lrx="65" lry="315" />
+      <zone xml:id="L0000_136" ulx="146" uly="301" lrx="277" lry="316" />
+      <zone xml:id="L0000_137" ulx="27" uly="317" lrx="78" lry="332" />
+      <zone xml:id="L0000_138" ulx="146" uly="317" lrx="243" lry="332" />
+      <zone xml:id="L0000_139" ulx="27" uly="333" lrx="109" lry="347" />
+      <zone xml:id="L0000_140" ulx="27" uly="348" lrx="94" lry="362" />
+      <zone xml:id="L0000_141" ulx="146" uly="348" lrx="204" lry="363" />
+      <zone xml:id="L0000_142" ulx="146" uly="334" lrx="241" lry="348" />
+      <zone xml:id="L0000_143" ulx="27" uly="364" lrx="84" lry="378" />
+      <zone xml:id="L0000_144" ulx="146" uly="365" lrx="229" lry="379" />
+      <zone xml:id="L0000_145" ulx="28" uly="380" lrx="112" lry="395" />
+      <zone xml:id="L0000_146" ulx="146" uly="381" lrx="230" lry="395" />
+      <zone xml:id="L0000_147" ulx="27" uly="396" lrx="93" lry="411" />
+      <zone xml:id="L0000_148" ulx="146" uly="397" lrx="273" lry="411" />
+      <zone xml:id="L0000_149" ulx="27" uly="412" lrx="77" lry="427" />
+      <zone xml:id="L0000_150" ulx="146" uly="413" lrx="244" lry="427" />
+      <zone xml:id="L0000_151" ulx="27" uly="428" lrx="91" lry="443" />
+      <zone xml:id="L0000_152" ulx="27" uly="443" lrx="87" lry="458" />
+      <zone xml:id="L0000_153" ulx="146" uly="428" lrx="281" lry="443" />
+      <zone xml:id="L0000_154" ulx="145" uly="443" lrx="257" lry="458" />
+      <zone xml:id="L0000_155" ulx="145" uly="459" lrx="229" lry="474" />
+      <zone xml:id="L0000_156" ulx="27" uly="459" lrx="77" lry="474" />
+      <zone xml:id="L0000_157" ulx="27" uly="475" lrx="78" lry="490" />
+      <zone xml:id="L0000_158" ulx="145" uly="475" lrx="242" lry="490" />
+      <zone xml:id="L0000_159" ulx="27" uly="491" lrx="116" lry="506" />
+      <zone xml:id="L0000_160" ulx="146" uly="491" lrx="249" lry="506" />
+      <zone xml:id="L0000_161" ulx="27" uly="507" lrx="93" lry="522" />
+      <zone xml:id="L0000_162" ulx="146" uly="507" lrx="251" lry="522" />
+      <zone xml:id="L0000_163" ulx="28" uly="523" lrx="91" lry="538" />
+      <zone xml:id="L0000_164" ulx="27" uly="538" lrx="95" lry="553" />
+      <zone xml:id="L0000_165" ulx="146" uly="523" lrx="275" lry="538" />
+      <zone xml:id="L0000_166" ulx="145" uly="538" lrx="285" lry="553" />
+      <zone xml:id="L0000_167" ulx="145" uly="555" lrx="308" lry="569" />
+      <zone xml:id="L0000_168" ulx="27" uly="554" lrx="96" lry="569" />
+      <zone xml:id="L0000_169" ulx="146" uly="570" lrx="270" lry="585" />
+      <zone xml:id="L0000_170" ulx="27" uly="570" lrx="97" lry="585" />
+      <zone xml:id="L0000_171" ulx="27" uly="586" lrx="96" lry="600" />
+      <zone xml:id="L0000_172" ulx="146" uly="586" lrx="292" lry="601" />
+      <zone xml:id="L0000_173" ulx="145" uly="602" lrx="240" lry="617" />
+      <zone xml:id="L0000_174" ulx="27" uly="602" lrx="98" lry="616" />
+      <zone xml:id="L0000_175" ulx="145" uly="618" lrx="257" lry="632" />
+      <zone xml:id="L0000_176" ulx="28" uly="618" lrx="99" lry="632" />
+      <zone xml:id="L0000_177" ulx="27" uly="634" lrx="64" lry="648" />
+      <zone xml:id="L0000_178" ulx="145" uly="633" lrx="251" lry="648" />
+      <zone xml:id="L0000_179" ulx="145" uly="650" lrx="259" lry="664" />
+      <zone xml:id="L0000_180" ulx="27" uly="649" lrx="92" lry="663" />
+      <zone xml:id="L0000_181" ulx="31" uly="669" lrx="58" lry="677" />
+      <zone xml:id="L0000_182" ulx="146" uly="666" lrx="236" lry="680" />
+      <zone xml:id="L0000_183" ulx="927" uly="316" lrx="1016" lry="330" />
+      <zone xml:id="L0000_184" ulx="809" uly="315" lrx="1017" lry="330" />
+      <zone xml:id="L0000_185" ulx="807" uly="331" lrx="871" lry="346" />
+      <zone xml:id="L0000_186" ulx="807" uly="347" lrx="865" lry="362" />
+      <zone xml:id="L0000_187" ulx="807" uly="362" lrx="847" lry="377" />
+      <zone xml:id="L0000_188" ulx="807" uly="378" lrx="874" lry="393" />
+      <zone xml:id="L0000_189" ulx="807" uly="394" lrx="874" lry="408" />
+      <zone xml:id="L0000_190" ulx="807" uly="410" lrx="876" lry="424" />
+      <zone xml:id="L0000_191" ulx="807" uly="426" lrx="875" lry="440" />
+      <zone xml:id="L0000_192" ulx="807" uly="442" lrx="875" lry="456" />
+      <zone xml:id="L0000_193" ulx="928" uly="332" lrx="1117" lry="346" />
+      <zone xml:id="L0000_194" ulx="927" uly="347" lrx="994" lry="362" />
+      <zone xml:id="L0000_195" ulx="927" uly="363" lrx="1043" lry="377" />
+      <zone xml:id="L0000_196" ulx="927" uly="379" lrx="1068" lry="393" />
+      <zone xml:id="L0000_197" ulx="927" uly="394" lrx="994" lry="409" />
+      <zone xml:id="L0000_198" ulx="927" uly="410" lrx="1031" lry="425" />
+      <zone xml:id="L0000_199" ulx="926" uly="426" lrx="994" lry="441" />
+      <zone xml:id="L0000_200" ulx="927" uly="442" lrx="1011" lry="456" />
+      <zone xml:id="L0000_201" ulx="807" uly="458" lrx="876" lry="472" />
+      <zone xml:id="L0000_202" ulx="807" uly="473" lrx="873" lry="488" />
+      <zone xml:id="L0000_203" ulx="927" uly="458" lrx="1003" lry="473" />
+      <zone xml:id="L0000_204" ulx="927" uly="473" lrx="1032" lry="488" />
+      <zone xml:id="L0000_205" ulx="807" uly="489" lrx="875" lry="504" />
+      <zone xml:id="L0000_206" ulx="927" uly="490" lrx="1023" lry="504" />
+      <zone xml:id="L0000_207" ulx="807" uly="505" lrx="875" lry="520" />
+      <zone xml:id="L0000_208" ulx="927" uly="506" lrx="1050" lry="520" />
+      <zone xml:id="L0000_209" ulx="927" uly="522" lrx="1100" lry="535" />
+      <zone xml:id="L0000_210" ulx="807" uly="521" lrx="856" lry="536" />
+      <zone xml:id="L0000_211" ulx="927" uly="537" lrx="1054" lry="551" />
+      <zone xml:id="L0000_212" ulx="807" uly="536" lrx="855" lry="552" />
+      <zone xml:id="L0000_213" ulx="807" uly="56" lrx="848" lry="71" />
+      <zone xml:id="L0000_214" ulx="807" uly="72" lrx="848" lry="87" />
+      <zone xml:id="L0000_215" ulx="807" uly="88" lrx="846" lry="103" />
+      <zone xml:id="L0000_216" ulx="807" uly="103" lrx="874" lry="117" />
+      <zone xml:id="L0000_217" ulx="807" uly="119" lrx="854" lry="134" />
+      <zone xml:id="L0000_218" ulx="807" uly="135" lrx="853" lry="150" />
+      <zone xml:id="L0000_219" ulx="807" uly="151" lrx="882" lry="166" />
+      <zone xml:id="L0000_220" ulx="807" uly="167" lrx="874" lry="182" />
+      <zone xml:id="L0000_221" ulx="807" uly="183" lrx="873" lry="198" />
+      <zone xml:id="L0000_222" ulx="807" uly="199" lrx="858" lry="214" />
+      <zone xml:id="L0000_223" ulx="807" uly="214" lrx="885" lry="229" />
+      <zone xml:id="L0000_224" ulx="807" uly="230" lrx="855" lry="244" />
+      <zone xml:id="L0000_225" ulx="807" uly="246" lrx="856" lry="261" />
+      <zone xml:id="L0000_226" ulx="807" uly="262" lrx="856" lry="277" />
+      <zone xml:id="L0000_227" ulx="926" uly="56" lrx="975" lry="71" />
+      <zone xml:id="L0000_228" ulx="927" uly="72" lrx="984" lry="87" />
+      <zone xml:id="L0000_229" ulx="927" uly="88" lrx="958" lry="103" />
+      <zone xml:id="L0000_230" ulx="927" uly="103" lrx="977" lry="118" />
+      <zone xml:id="L0000_231" ulx="927" uly="119" lrx="972" lry="134" />
+      <zone xml:id="L0000_232" ulx="927" uly="135" lrx="960" lry="150" />
+      <zone xml:id="L0000_233" ulx="927" uly="151" lrx="975" lry="166" />
+      <zone xml:id="L0000_234" ulx="928" uly="168" lrx="1031" lry="182" />
+      <zone xml:id="L0000_235" ulx="927" uly="184" lrx="1080" lry="197" />
+      <zone xml:id="L0000_236" ulx="927" uly="199" lrx="984" lry="214" />
+      <zone xml:id="L0000_237" ulx="927" uly="215" lrx="1002" lry="229" />
+      <zone xml:id="L0000_238" ulx="927" uly="231" lrx="1040" lry="244" />
+      <zone xml:id="L0000_239" ulx="928" uly="247" lrx="1061" lry="260" />
+      <zone xml:id="L0000_240" ulx="928" uly="263" lrx="1117" lry="276" />
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <p>
+        <pb n="チートシート.png" facs="#チートシート.png" />
+        <lb n="0" facs="#L0000_000" />△<lb n="1" facs="#L0000_001" />Visual Studio Code<lb n="2" facs="#L0000_002" />Keyboard shortcuts for Windows<lb n="3" facs="#L0000_003" />Genera<lb n="4" facs="#L0000_004" />Ctrl+Shift+P,F1<lb n="5" facs="#L0000_005" />Show Command Palette<lb n="6" facs="#L0000_006" />Cul+P<lb n="7" facs="#L0000_007" />Quick Open, Go to File_<lb n="8" facs="#L0000_008" />Ctrl+Shift+N<lb n="9" facs="#L0000_009" />New window/instance<lb n="10" facs="#L0000_010" />Ctrl+Shift+W<lb n="11" facs="#L0000_011" />Close window/instance<lb n="12" facs="#L0000_012" />(al+,<lb n="13" facs="#L0000_013" />User Setings<lb n="14" facs="#L0000_014" />Ctrl+K Ctrl+S<lb n="15" facs="#L0000_015" />Keyboard Shortcuts<lb n="16" facs="#L0000_016" />Basic editing<lb n="17" facs="#L0000_017" />Navigation<lb n="18" facs="#L0000_018" />Ctil Show all Svmbols<lb n="19" facs="#L0000_019" />Show all Symbols<lb n="20" facs="#L0000_020" />Ctrl+G Goto Line.<lb n="21" facs="#L0000_021" />Ctrl+P Goto Fle.<lb n="22" facs="#L0000_022" />Ctri+Shift+O Go to Symbol.<lb n="23" facs="#L0000_023" />Ctrl+Shift+M Show Problems panel<lb n="24" facs="#L0000_024" />F8 Go to next error or warning<lb n="25" facs="#L0000_025" />Shift+F8 Go to previous error or warning<lb n="26" facs="#L0000_026" />Ctul+Shift+Tab Navigate editor group history<lb n="27" facs="#L0000_027" />Alt+ 1- Go back/forward<lb n="28" facs="#L0000_028" />Ctrl+MTogqle Tab moves focus<lb n="29" facs="#L0000_029" />Search and replace<lb n="30" facs="#L0000_030" />Ctl+F<lb n="31" facs="#L0000_031" />Find<lb n="32" facs="#L0000_032" />Ctl+H<lb n="33" facs="#L0000_033" />Replace<lb n="34" facs="#L0000_034" />B/Shit+F3<lb n="35" facs="#L0000_035" />Find next/previous<lb n="36" facs="#L0000_036" />Alt+Enter<lb n="37" facs="#L0000_037" />Select all occurences of Find match<lb n="38" facs="#L0000_038" />Ctl+D<lb n="39" facs="#L0000_039" />Add selection to next Find match<lb n="40" facs="#L0000_040" />Ctrl+KCtrl+D<lb n="41" facs="#L0000_041" />Move last selection to next Find match<lb n="42" facs="#L0000_042" />Alt+C/R/W<lb n="43" facs="#L0000_043" />Toggle case-sensitive / regex / whole word<lb n="44" facs="#L0000_044" />Multi-cursor and selection<lb n="45" facs="#L0000_045" />Alt+Cid<lb n="46" facs="#L0000_046" />Insert cursor<lb n="47" facs="#L0000_047" />Ctrl+Alt+1/1<lb n="48" facs="#L0000_048" />Insert cursor above / below<lb n="49" facs="#L0000_049" />Ctrl+U<lb n="50" facs="#L0000_050" />Undo last cursor operation<lb n="51" facs="#L0000_051" />Shift+Alt+1<lb n="52" facs="#L0000_052" />Insert cursor at end of each line selected<lb n="53" facs="#L0000_053" />Ctl+L<lb n="54" facs="#L0000_054" />Select current ine<lb n="55" facs="#L0000_055" />Ctrl+Shit+L<lb n="56" facs="#L0000_056" />Select all occurrences of current selection<lb n="57" facs="#L0000_057" />Cul+F2<lb n="58" facs="#L0000_058" />Select all occurrences of current word<lb n="59" facs="#L0000_059" />Shift+Alt+-<lb n="60" facs="#L0000_060" />Expand selection<lb n="61" facs="#L0000_061" />Shift+At+-<lb n="62" facs="#L0000_062" />Shrink selection<lb n="63" facs="#L0000_063" />Shit+Alt+<lb n="64" facs="#L0000_064" />Column (box) selection<lb n="65" facs="#L0000_065" />(drag mouse)<lb n="66" facs="#L0000_066" />Ctil+Shift+Alt<lb n="67" facs="#L0000_067" />Column (box) selection<lb n="68" facs="#L0000_068" />+ (arrow key)<lb n="69" facs="#L0000_069" />Ctrl+Shift+Alt<lb n="70" facs="#L0000_070" />Column (box) selection page up/down<lb n="71" facs="#L0000_071" />+PgUp/PgDn<lb n="72" facs="#L0000_072" />Rich lanquages editing<lb n="73" facs="#L0000_073" />Ctrl+Space, Ctrl+l<lb n="74" facs="#L0000_074" />Trigger suggestion<lb n="75" facs="#L0000_075" />Ctrl+Shift+Space<lb n="76" facs="#L0000_076" />Trigger parameter hints<lb n="77" facs="#L0000_077" />Shit+Alt+F<lb n="78" facs="#L0000_078" />Format document<lb n="79" facs="#L0000_079" />Ctrl+KCtrl+F<lb n="80" facs="#L0000_080" />Format selection<lb n="81" facs="#L0000_081" />F2<lb n="82" facs="#L0000_082" />Go to Definition<lb n="83" facs="#L0000_083" />Alt-FI2<lb n="84" facs="#L0000_084" />Peek Definition<lb n="85" facs="#L0000_085" />Ctl+KFI2<lb n="86" facs="#L0000_086" />Open Definition to the side<lb n="87" facs="#L0000_087" />Ctrl+.<lb n="88" facs="#L0000_088" />QuickFx<lb n="89" facs="#L0000_089" />Shift+F12<lb n="90" facs="#L0000_090" />Show References<lb n="91" facs="#L0000_091" />F2<lb n="92" facs="#L0000_092" />Rename Symbol<lb n="93" facs="#L0000_093" />Ctl+KCtrl-X<lb n="94" facs="#L0000_094" />Trim trailing whitespace<lb n="95" facs="#L0000_095" />Ctl+KM<lb n="96" facs="#L0000_096" />Change file language<lb n="97" facs="#L0000_097" />Editor management<lb n="98" facs="#L0000_098" />Ctrl+F4, Ctrl+W Close editor<lb n="99" facs="#L0000_099" />Ctl+KF Close folder<lb n="100" facs="#L0000_100" />Spil Spiteditor<lb n="101" facs="#L0000_101" />Ctil+1/2/3<lb n="102" facs="#L0000_102" />Ctri+KCtrl+-/- Focus into previous/next editor group<lb n="103" facs="#L0000_103" />Ctrl+Shift+PgUp/PgDn Move editor left/right<lb n="104" facs="#L0000_104" />Ctrl+K-/-Move active editor group<lb n="105" facs="#L0000_105" />File management<lb n="106" facs="#L0000_106" />Display<lb n="107" facs="#L0000_107" />Debug<lb n="108" facs="#L0000_108" />a<lb n="109" facs="#L0000_109" />Toggle breakpoint<lb n="110" facs="#L0000_110" />FS<lb n="111" facs="#L0000_111" />Start/Continue<lb n="112" facs="#L0000_112" />ShiftF5<lb n="113" facs="#L0000_113" />Stop<lb n="114" facs="#L0000_114" />FI1/Shit+FIL<lb n="115" facs="#L0000_115" />Step into/out<lb n="116" facs="#L0000_116" />FIO<lb n="117" facs="#L0000_117" />Step over<lb n="118" facs="#L0000_118" />Show hover<lb n="119" facs="#L0000_119" />Inteqrated terminal<lb n="120" facs="#L0000_120" />Cal+<lb n="121" facs="#L0000_121" />Show integrated terminal<lb n="122" facs="#L0000_122" />Create new terminal<lb n="123" facs="#L0000_123" />Cul+C<lb n="124" facs="#L0000_124" />Copy selection<lb n="125" facs="#L0000_125" />Cul+V<lb n="126" facs="#L0000_126" />Paste into active terminal<lb n="127" facs="#L0000_127" />Cul+1/1<lb n="128" facs="#L0000_128" />Scroll up/down<lb n="129" facs="#L0000_129" />Shift+PgUp / PgDn Scroll page up/down<lb n="130" facs="#L0000_130" />Ctri+Home/End Scroll to to top/bottom<lb n="131" facs="#L0000_131" />Other operating systems' keyboard shortcuts and additional<lb n="132" facs="#L0000_132" />unassigned shortcuts available at aka.ms/vscodekeybindings<lb n="133" facs="#L0000_133" />Cul+X<lb n="134" facs="#L0000_134" />Cut line (empty selection)<lb n="135" facs="#L0000_135" />Cul+C<lb n="136" facs="#L0000_136" />Copy line (empty selection)<lb n="137" facs="#L0000_137" />Al+1/1<lb n="138" facs="#L0000_138" />Move line up/down<lb n="139" facs="#L0000_139" />Shift+At+1/t<lb n="140" facs="#L0000_140" />Ctrl+Shit+K<lb n="141" facs="#L0000_141" />Delete line<lb n="142" facs="#L0000_142" />Copy line up/down<lb n="143" facs="#L0000_143" />Ctrl+Enter<lb n="144" facs="#L0000_144" />Insert line below<lb n="145" facs="#L0000_145" />Ctrl+Shift+Enter<lb n="146" facs="#L0000_146" />Insert line above<lb n="147" facs="#L0000_147" />Ctrl+Shit+<lb n="148" facs="#L0000_148" />Jump to matching bracket<lb n="149" facs="#L0000_149" />Cal・1/1<lb n="150" facs="#L0000_150" />Indent/outdent line<lb n="151" facs="#L0000_151" />Home/End<lb n="152" facs="#L0000_152" />Ctrl+Home<lb n="153" facs="#L0000_153" />Go to beginning/end of line<lb n="154" facs="#L0000_154" />Go to beginning of file<lb n="155" facs="#L0000_155" />Goto end of file<lb n="156" facs="#L0000_156" />Ctrl+End<lb n="157" facs="#L0000_157" />Cul+1/1<lb n="158" facs="#L0000_158" />Scroll line up/down<lb n="159" facs="#L0000_159" />Alt+PgUp/PgDn<lb n="160" facs="#L0000_160" />Scroll page up/down<lb n="161" facs="#L0000_161" />Ctrl+Shit+]<lb n="162" facs="#L0000_162" />Fold (collapse) region<lb n="163" facs="#L0000_163" />(trl+Shit+]<lb n="164" facs="#L0000_164" />Ctil+K Ctl+<lb n="165" facs="#L0000_165" />Unfold (uncollapse) region<lb n="166" facs="#L0000_166" />Fold (collapse) all subregions<lb n="167" facs="#L0000_167" />Unfold (uncollapse) all subregions<lb n="168" facs="#L0000_168" />(trl+K (trl+]<lb n="169" facs="#L0000_169" />Fold (collapse) all regions<lb n="170" facs="#L0000_170" />Cul+KCul+0<lb n="171" facs="#L0000_171" />(trl+K Cul+)<lb n="172" facs="#L0000_172" />Unfold (uncollapse) all regions<lb n="173" facs="#L0000_173" />Add line comment<lb n="174" facs="#L0000_174" />Ctil+K Ctl+C<lb n="175" facs="#L0000_175" />Remove line comment<lb n="176" facs="#L0000_176" />Ctrl+K Ctri+U<lb n="177" facs="#L0000_177" />Cul+/<lb n="178" facs="#L0000_178" />Toggle line comment<lb n="179" facs="#L0000_179" />Toggle block comment<lb n="180" facs="#L0000_180" />Shift+Alt+A<lb n="181" facs="#L0000_181" />AR+Z<lb n="182" facs="#L0000_182" />Toggle word wrap<lb n="183" facs="#L0000_183" />Toggle full screen<lb n="184" facs="#L0000_184" />Fil Toggle Toggle Togen<lb n="185" facs="#L0000_185" />Shift+Alt+0<lb n="186" facs="#L0000_186" />(al+=/・<lb n="187" facs="#L0000_187" />Cul+8<lb n="188" facs="#L0000_188" />Ctrl+Shit+E<lb n="189" facs="#L0000_189" />Ctrl+Shift+F<lb n="190" facs="#L0000_190" />Ctrl+Shift+G<lb n="191" facs="#L0000_191" />Ctrl+Shit+D<lb n="192" facs="#L0000_192" />Ctrl+Shit+X<lb n="193" facs="#L0000_193" />Toggle editor layout (horizontal/vertical)<lb n="194" facs="#L0000_194" />Zoom in/out<lb n="195" facs="#L0000_195" />Toggle Sidebar visibility<lb n="196" facs="#L0000_196" />Show Explorer / Toggle focus<lb n="197" facs="#L0000_197" />Show Search<lb n="198" facs="#L0000_198" />Show Source Control<lb n="199" facs="#L0000_199" />Show Debug<lb n="200" facs="#L0000_200" />Show Extensions<lb n="201" facs="#L0000_201" />Ctrl+Shit+H<lb n="202" facs="#L0000_202" />(trl+Shit+)<lb n="203" facs="#L0000_203" />Replace in files<lb n="204" facs="#L0000_204" />Toggle Search details<lb n="205" facs="#L0000_205" />Ctrl+Shit+U<lb n="206" facs="#L0000_206" />Show Output panel<lb n="207" facs="#L0000_207" />Ctrl+Shit+V<lb n="208" facs="#L0000_208" />Open Markdown preview<lb n="209" facs="#L0000_209" />Open Markdown preview to the side<lb n="210" facs="#L0000_210" />Crl-KV<lb n="211" facs="#L0000_211" />Zen Mode (Esc Esc to exit)<lb n="212" facs="#L0000_212" />CH-*KZ<lb n="213" facs="#L0000_213" />Cal+N<lb n="214" facs="#L0000_214" />Ctl+0<lb n="215" facs="#L0000_215" />Cal+5<lb n="216" facs="#L0000_216" />Ctrl+Shift+s<lb n="217" facs="#L0000_217" />Cul+KS<lb n="218" facs="#L0000_218" />Cul・F4<lb n="219" facs="#L0000_219" />Ctrl+K Cul-W<lb n="220" facs="#L0000_220" />Ctrl+Shit+T<lb n="221" facs="#L0000_221" />Ctrl-K Enter<lb n="222" facs="#L0000_222" />Ctrl+Tab<lb n="223" facs="#L0000_223" />Ctrl+Shitt+Tab<lb n="224" facs="#L0000_224" />Cul+KP<lb n="225" facs="#L0000_225" />Cul-KR<lb n="226" facs="#L0000_226" />Cul-KO<lb n="227" facs="#L0000_227" />New File<lb n="228" facs="#L0000_228" />Open File-<lb n="229" facs="#L0000_229" />Sme<lb n="230" facs="#L0000_230" />Savek.<lb n="231" facs="#L0000_231" />Save Al<lb n="232" facs="#L0000_232" />Close<lb n="233" facs="#L0000_233" />Close All<lb n="234" facs="#L0000_234" />Reopen ciosed editor<lb n="235" facs="#L0000_235" />Keep preview mode editor open<lb n="236" facs="#L0000_236" />Open next<lb n="237" facs="#L0000_237" />Open previous<lb n="238" facs="#L0000_238" />Copy path of active file<lb n="239" facs="#L0000_239" />Reveal active file in Explorer<lb n="240" facs="#L0000_240" />Show active file in new window/instance</p>
+    </body>
+  </text>
+</TEI>
