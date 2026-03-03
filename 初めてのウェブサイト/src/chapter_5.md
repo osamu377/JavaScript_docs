@@ -14,7 +14,7 @@
 
 JavaScriptを使うと、ユーザーの操作に合わせてサイトの表示を変えることができます。ただ情報を読むだけのページから、ユーザーといっしょに動く「体験」へと変えることができる、とても大切な技術です。
 
-JavaScriptでできること
+**JavaScriptでできること**
 
 JavaScriptを使って、以下のような動きを作ることができます：
 
@@ -41,7 +41,7 @@ JavaScriptの全体像が分かったところで、次はコードを書くた�
 3. 条件分岐 (Conditionals)： 「もし〜なら、Aをする。そうでなければBをする」という「判断の仕組み」です。
 4. イベント (Events)： 「ボタンをクリックした」など、ブラウザで起きる「きっかけ」のことです。
 
-API（エーピーアイ）について
+**API（エーピーアイ）について**
 
 APIは、JavaScriptがブラウザなどの環境と「対話するための機能」です。例えば「DOM API」という道具を使うと、HTMLの文字を変えたり、新しい要素を追加したりすることができます。
 
@@ -55,25 +55,27 @@ APIは、JavaScriptがブラウザなどの環境と「対話するための機�
 
 HTML、CSS、JavaScriptの3つが「いっしょに働く（連携する）」ことで、ひとつの動くページが完成します。
 
-設定の手順
+**設定の手順**
 
 1. フォルダとファイルを作る： ウェブサイトのフォルダの中に scripts というフォルダを作り、その中に main.js という名前のファイルを作ります。
-2. HTMLとつなげる： HTMLファイルの <head> タグが終わる直前（</head> のすぐ上）に、以下のコードを書きます。
+2. HTMLとつなげる： HTMLファイルの `<head>` タグが終わる直前（`</head>` のすぐ上）に、以下のコードを書きます。
 
+```html
 <script src="scripts/main.js"></script>
+```
 
-
-* 解説： これはCSSを読み込む <link> と同じ役割です。これでHTMLにJavaScriptの力が加わります。
+* 解説： これはCSSを読み込む `<link>` と同じ役割です。これでHTMLにJavaScriptの力が加わります。
 
 要素を選んで動かす
 
 JavaScriptでHTMLを変えるときは、「まず場所を選び、次に内容を変える」という順番で動かします。
 
+```javascript
 let myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
+```
 
-
-* 1行目： document.querySelector('h1') で <h1> 要素を選び、myHeading という変数（入れ物）に入れます。
+* 1行目： document.querySelector('h1') で `<h1>` 要素を選び、myHeading という変数（入れ物）に入れます。
 * 2行目： 選んだ場所の textContent（文字の内容）を 'Hello world!' に書き換えます。
 
 ヒント： コードの中に // を書くと、その行は「コメント」になります。ブラウザは読み飛ばすので、自分へのメモとして使えます。
@@ -98,6 +100,7 @@ myHeading.textContent = 'Hello world!';
 
 ※実行するには、images フォルダの中に2枚の画像ファイルが必要です。
 
+```javascript
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
@@ -108,7 +111,7 @@ myImage.onclick = function() {
     myImage.setAttribute('src', 'images/firefox-icon.png');
   }
 }
-
+```
 
 * myImage.onclick： 画像がクリックされたときに動く「きっかけ」です。
 * getAttribute： 今の画像の設定を「調べる」ための道具です。
@@ -123,14 +126,15 @@ myImage.onclick = function() {
 
 ブラウザにデータを保存すれば、ユーザーが再びサイトに来たときに「こんにちは、〇〇さん」と挨拶することができます。
 
-Web Storage API の仕組み
+**Web Storage API の仕組み**
 
 「localStorage（ローカルストレージ）」という機能を使うと、ブラウザにデータを保存できます。ページを閉じても、データは消えません。
 
-ユーザーの名前を保存して表示する
+**ユーザーの名前を保存して表示する**
 
 以下のコードは、ページを開いたときに「名前があるかどうか」をチェックする大切なプログラム（初期化コード）です。
 
+```javascrpt
 function setUserName() {
   let myName = prompt('あなたの名前を入力してください。');
   if (!myName) {
@@ -148,13 +152,13 @@ if (!localStorage.getItem('name')) {
   let storedName = localStorage.getItem('name');
   myHeading.textContent = 'Mozilla is cool, ' + storedName;
 }
-
+```
 
 * prompt()： 入力画面を出して、ユーザーに文字を打ってもらいます。
 * ! (否定演算子)： 「〜ではない」という意味です。!myName は「名前が入力されていない（空っぽ）」ことを表します。
 * setItem / getItem： データを「保存する」のと「取り出す」ための命令です。
 
-「null」への対応
+**「null」への対応**
 
 ユーザーが「キャンセル」を押すと、結果は null（ヌル） になります。これは「何もない状態」という意味です。そのため、上のコードでは if (!myName) を使い、名前が正しく入力されるまで何度も入力画面を出すようにしています。
 

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja" class="light sidebar-visible" dir="ltr">
+<html lang="ja-JP" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-d399a07a.js";
+            window.path_to_searchindex_js = "searchindex-1453a6c4.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-53e519e3.js"></script>
+        <script src="toc-39f1f835.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,16 +176,16 @@
                     <main>
                         <h1 id="ウェブサイトをデザインするcss"><a class="header" href="#ウェブサイトをデザインするcss">ウェブサイトをデザインするCSS</a></h1>
 <h2 id="1-はじめにcssとは何でしょうか"><a class="header" href="#1-はじめにcssとは何でしょうか">1. はじめに：CSSとは何でしょうか？</a></h2>
-<p>ウェブサイトを作るとき、文字や画像などの「内容」を準備するだけでは、まだデザインが完成していません。そこで使われるのが**CSS（シーエスエス）**です。</p>
+<p>ウェブサイトを作るとき、文字や画像などの「内容」を準備するだけでは、まだデザインが完成していません。そこで使われるのが <strong>CSS（シーエスエス）</strong> です。</p>
 <p>CSSは、ウェブサイトの「見た目」を整えるための専用の言葉です。HTMLで作成した文章に色をつけたり、大きさを変えたり、好きな場所に並べたりすることができます。</p>
-<p>HTML（内容）とCSS（スタイル）の違い</p>
+<p><strong>HTML（内容）とCSS（スタイル）の違い</strong></p>
 <p>ウェブサイトは、主に2つの役割が組み合わさってできています。</p>
 <ul>
 <li>HTML（内容）： 「ここにタイトルがある」「ここに文章がある」という、サイトの骨組み（土台）を作ります。</li>
 <li>CSS（スタイル）： 「タイトルを青色にする」「文章の横幅を600ピクセルにする」といった、見た目を美しく飾ります。</li>
 </ul>
 <p>CSSを使ってデザインを整えることで、ウェブサイトはもっと読みやすくなり、訪れた人に「使いやすい」と感じてもらえるようになります。</p>
-<p>CSSの定義</p>
+<p><strong>CSSの定義</strong></p>
 <ul>
 <li>スタイルシート言語： プログラミング言語ではなく、見た目を指定するための特別な言葉です。</li>
 <li>要素（えれめんと）の装飾： HTMLで書かれた特定の場所を選んで、その見た目を変えることができます。</li>
@@ -202,32 +202,35 @@
 <li>値（あたい：設定する内容）： 具体的にどんな色にするか、どのくらいの大きさにするかを決めます。</li>
 </ol>
 <p>宣言とルールセット</p>
-<p>CSSでは、プロパティと値を組み合わせたペアを**「宣言（せんげん：Declaration）」と呼びます。そして、セレクターと { } で囲まれた複数の宣言をまとめたものを「ルールセット（Ruleset）」**、または短く「ルール」と呼びます。</p>
+<p>CSSでは、プロパティと値を組み合わせたペアを <strong>「宣言（せんげん：Declaration）」と呼びます。そして、セレクターと { } で囲まれた複数の宣言をまとめたものを「ルールセット（Ruleset）」</strong> 、または短く「ルール」と呼びます。</p>
 <p>書き方のルールとコード例</p>
-<p>プロパティの後には必ずコロン : を、値の後には必ずセミコロン ; を書くのがルールです。</p>
-<p>p {
-color: red; /* 宣言1：文字の色（プロパティ）を赤（値）にします <em>/
-font-size: 16px; /</em> 宣言2：文字の大きさ（プロパティ）を16ピクセル（値）にします */
-}</p>
+<p>プロパティの後には必ずコロン <strong><code>:</code></strong> を、値の後には必ずセミコロン <strong><code>;</code></strong> を書くのがルールです。</p>
+<pre><code class="language-css">p {
+  color: red; /* 宣言1：文字の色（プロパティ）を赤（値）にします */
+  font-size: 16px; /* 宣言2：文字の大きさ（プロパティ）を16ピクセル（値）にします */
+}
+</code></pre>
 <p>書き方を理解したら、次は作成したCSSをHTMLに読み込ませる方法を確認しましょう。</p>
 <hr>
 <h2 id="3-htmlにcssを読み込ませる方法"><a class="header" href="#3-htmlにcssを読み込ませる方法">3. HTMLにCSSを読み込ませる方法</a></h2>
 <p>CSSを書くだけでは、ウェブサイトにデザインは反映されません。HTMLとCSSを正しく「つなぐ」手順が必要です。</p>
-<p>正確な設定が大切な理由</p>
+<p><strong>正確な設定が大切な理由</strong></p>
 <p>ウェブサイトを作るときは、ファイルを整理するために styles という名前のフォルダを作り、その中に style.css というファイルを作成するのが一般的です。</p>
-<p>HTMLファイルの <head> （ヘッド：サイトの設定を書く場所）の中に、以下の1行を書き込みます。</head></p>
-<link href="styles/style.css" rel="stylesheet" />
+<p>HTMLファイルの <code>&lt;head&gt;</code> （ヘッド：サイトの設定を書く場所）の中に、以下の1行を書き込みます。</p>
+<pre><code class="language-html">&lt;link href="styles/style.css" rel="stylesheet" /&gt;
+</code></pre>
 <p>【トラブルを避けるポイント】 もしフォルダの名前やファイルの名前が1文字でも間違っていると、デザインはまったく表示されません。styles/style.css という「道すじ（パス）」が、実際のフォルダ構成とぴったり合っているか、慎重に確認しましょう。</p>
 <p>つなぎ方がわかったら、次は文字のデザインをきれいにしてみましょう。</p>
 <hr>
 <h2 id="4-文字のデザインをきれいにするフォントとテキスト"><a class="header" href="#4-文字のデザインをきれいにするフォントとテキスト">4. 文字のデザインをきれいにする（フォントとテキスト）</a></h2>
 <p>文字の見た目は、サイトを訪れる人の「読みやすさ」に大きく影響します。適切なフォントを選ぶことは、サイトを「信頼できるプロのような印象」にするための大切な戦略です。</p>
-<p>Google Fonts（グーグルフォント）の利用</p>
-<p>標準のフォント以外を使いたいときは、Google Fontsなどのサービスを使います。HTMLの <head> 内に、自分の CSS（style.css）よりも前に読み込ませるのがポイントです。</head></p>
-<!-- Google Fontsの読み込み例（自分のCSSより前に書きます） -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-<link href="styles/style.css" rel="stylesheet" />
-<p>読みやすさを高めるプロパティ</p>
+<p><strong>Google Fonts（グーグルフォント）の利用</strong></p>
+<p>標準のフォント以外を使いたいときは、Google Fontsなどのサービスを使います。HTMLの <code>&lt;head&gt;</code> 内に、自分の CSS（style.css）よりも前に読み込ませるのがポイントです。</p>
+<pre><code class="language-html">&lt;!-- Google Fontsの読み込み例（自分のCSSより前に書きます） --&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /&gt;
+&lt;link href="styles/style.css" rel="stylesheet" /&gt;
+</code></pre>
+<p><strong>読みやすさを高めるプロパティ</strong></p>
 <p>以下の設定を組み合わせることで、テキストの印象を劇的に変えることができます。</p>
 <ul>
 <li>font-family（フォントの種類）： 文字の形を決めます。</li>
@@ -239,44 +242,56 @@ font-size: 16px; /</em> 宣言2：文字の大きさ（プロパティ）を16�
 <p>文字の次は、ウェブサイトのレイアウトを決める「ボックス」の考え方に進みます。</p>
 <hr>
 <h2 id="5-すべては箱ボックスでできている"><a class="header" href="#5-すべては箱ボックスでできている">5. すべては「箱（ボックス）」でできている</a></h2>
-<p>CSSの世界では、すべての要素（見出し、文章、画像など）は「箱（ボックス）」の中に入っていると考えます。これを**「ボックスモデル」**と呼びます。</p>
+<p>CSSの世界では、すべての要素（見出し、文章、画像など）は「箱（ボックス）」の中に入っていると考えます。これを <strong>「ボックスモデル」</strong> と呼びます。</p>
 <p>ボックスを構成する4つのパーツ</p>
 <p>ボックスは、中心から外側に向かって4つの層でできています。</p>
-<p>要素	やさしい日本語での説明
-Content（コンテンツ）	文字や画像が入る、一番中心のスペース。
-Padding（パディング）	中身（コンテンツ）と枠線の間にある「内側の余白」。
-Border（ボーダー）	ボックスを囲む「枠線（境界線）」。
-Margin（マージン）	枠線の外側にある、他の要素との「外側の余白（すきま）」。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>要素</th><th>やさしい日本語での説明</th></tr>
+</thead>
+<tbody>
+<tr><td>Content（コンテンツ）</td><td>文字や画像が入る、一番中心のスペース。</td></tr>
+<tr><td>Padding（パディング）</td><td>中身（コンテンツ）と枠線の間にある「内側の余白」。</td></tr>
+<tr><td>Border（ボーダー）</td><td>ボックスを囲む「枠線（境界線）」。</td></tr>
+<tr><td>Margin（マージン）</td><td>枠線の外側にある、他の要素との「外側の余白（すきま）」。</td></tr>
+</tbody>
+</table>
+</div>
 <p>これらの数値を調整することで、要素同士がくっつきすぎないように、心地よい距離感を作ることができます。</p>
 <hr>
 <h2 id="6-ページ全体のレイアウトを整える色と配置"><a class="header" href="#6-ページ全体のレイアウトを整える色と配置">6. ページ全体のレイアウトを整える（色と配置）</a></h2>
 <p>背景に色をつけたり、全体を真ん中に寄せたりすることで、サイトはより本格的になります。ここでは、MDN（技術ドキュメント）で紹介されている具体的な設定を使ってみましょう。</p>
-<p>全体の色と幅を決める</p>
+<p><strong>全体の色と幅を決める</strong></p>
 <p>まず、ページ全体の背景色を濃い青（例: dark blue）にし、コンテンツを表示する body の横幅を 600px に固定します。</p>
-<p>html {
-background-color: #00539F; /* ページ全体の背景を青にします */
-}</p>
-<p>body {
-width: 600px; /* 全体の幅を600ピクセルに固定します <em>/
-margin: 0 auto; /</em> 上下は0、左右は「自動（auto）」で分けて中央に寄せます <em>/
-background-color: #FF9500; /</em> bodyの背景を赤みのあるオレンジにします <em>/
-padding: 0 20px 20px 20px; /</em> 内側に余白を作ります <em>/
-border: 5px solid black; /</em> 黒い枠線で囲みます */
-}</p>
+<pre><code class="language-css">html {
+  background-color: #00539F; /* ページ全体の背景を青にします */
+}
+
+body {
+  width: 600px; /* 全体の幅を600ピクセルに固定します */
+  margin: 0 auto; /* 上下は0、左右は「自動（auto）」で分けて中央に寄せます */
+  background-color: #FF9500; /* bodyの背景を赤みのあるオレンジにします */
+  padding: 0 20px 20px 20px; /* 内側に余白を作ります */
+  border: 5px solid black; /* 黒い枠線で囲みます */
+}
+</code></pre>
 <ul>
 <li>margin: 0 auto; の仕組み： auto（自動）を指定すると、ブラウザが左右の余ったスペースを半分ずつに分けてくれます。その結果、コンテンツが画面の真ん中に配置されます。</li>
 </ul>
-<p>タイトルに影をつける</p>
+<p><strong>タイトルに影をつける</strong></p>
 <p>text-shadow（テキスト・シャドウ）を使うと、文字に影をつけて目立たせることができます。</p>
-<p>h1 {
-text-shadow: 3px 3px 1px black; /* 横に3px、縦に3px、ぼかし1px、黒い影 */
-}</p>
-<p>画像を中央に置く</p>
+<pre><code class="language-css">h1 {
+  text-shadow: 3px 3px 1px black; /* 横に3px、縦に3px、ぼかし1px、黒い影 */
+}
+</code></pre>
+<p><strong>画像を中央に置く</strong></p>
 <p>画像（img）を中央に置くには、少し工夫が必要です。</p>
-<p>img {
-display: block; /* 画像を「ボックス」として扱うように変えます <em>/
-margin: 0 auto; /</em> これで中央に寄るようになります */
-}</p>
+<pre><code class="language-css">img {
+  display: block; /* 画像を「ボックス」として扱うように変えます */
+  margin: 0 auto; /* これで中央に寄るようになります */
+}
+</code></pre>
 <ul>
 <li>なぜ display: block; が必要なのか： 画像はもともと「インライン要素（文字のように横に並ぶ要素）」なので、そのままでは margin: 0 auto のルールがうまく効きません。そのため、一度「ブロック要素（箱のような要素）」に変える必要があります。</li>
 </ul>

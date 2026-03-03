@@ -1,4 +1,6 @@
 [book]
 title = "初めてのウェブサイト"
 authors = ["Osamu377"]
-language = "ja"
+language = "ja-JP"
+
+[output.html]

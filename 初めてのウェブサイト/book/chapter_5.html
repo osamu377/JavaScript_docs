@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja" class="light sidebar-visible" dir="ltr">
+<html lang="ja-JP" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-d399a07a.js";
+            window.path_to_searchindex_js = "searchindex-1453a6c4.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-53e519e3.js"></script>
+        <script src="toc-39f1f835.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -181,7 +181,7 @@
 <h2 id="1-はじめにjavascriptジャバスクリプトとは何か"><a class="header" href="#1-はじめにjavascriptジャバスクリプトとは何か">1. はじめに：JavaScript（ジャバスクリプト）とは何か</a></h2>
 <p>ウェブサイトを作るとき、HTMLは「骨組み（内容）」を、CSSは「見た目（デザイン）」を作ります。そこに「動き（インタラクティブ性）」を加えるのがJavaScriptの役割です。</p>
 <p>JavaScriptを使うと、ユーザーの操作に合わせてサイトの表示を変えることができます。ただ情報を読むだけのページから、ユーザーといっしょに動く「体験」へと変えることができる、とても大切な技術です。</p>
-<p>JavaScriptでできること</p>
+<p><strong>JavaScriptでできること</strong></p>
 <p>JavaScriptを使って、以下のような動きを作ることができます：</p>
 <ul>
 <li>チェックする： フォームに入力されたデータが正しいか確認します。</li>
@@ -201,29 +201,29 @@
 <li>条件分岐 (Conditionals)： 「もし〜なら、Aをする。そうでなければBをする」という「判断の仕組み」です。</li>
 <li>イベント (Events)： 「ボタンをクリックした」など、ブラウザで起きる「きっかけ」のことです。</li>
 </ol>
-<p>API（エーピーアイ）について</p>
+<p><strong>API（エーピーアイ）について</strong></p>
 <p>APIは、JavaScriptがブラウザなどの環境と「対話するための機能」です。例えば「DOM API」という道具を使うと、HTMLの文字を変えたり、新しい要素を追加したりすることができます。</p>
 <p>基本の道具を理解したら、次は実際に自分のウェブサイトにJavaScriptを取り入れる方法を学びます。</p>
 <hr>
 <h2 id="3-実践ウェブサイトにjavascriptを入れる"><a class="header" href="#3-実践ウェブサイトにjavascriptを入れる">3. 実践：ウェブサイトにJavaScriptを入れる</a></h2>
 <p>HTML、CSS、JavaScriptの3つが「いっしょに働く（連携する）」ことで、ひとつの動くページが完成します。</p>
-<p>設定の手順</p>
+<p><strong>設定の手順</strong></p>
 <ol>
 <li>フォルダとファイルを作る： ウェブサイトのフォルダの中に scripts というフォルダを作り、その中に main.js という名前のファイルを作ります。</li>
-<li>HTMLとつなげる： HTMLファイルの <head> タグが終わる直前（</head> のすぐ上）に、以下のコードを書きます。</li>
+<li>HTMLとつなげる： HTMLファイルの <code>&lt;head&gt;</code> タグが終わる直前（<code>&lt;/head&gt;</code> のすぐ上）に、以下のコードを書きます。</li>
 </ol>
-<script src="scripts/main.js"></script>
+<pre><code class="language-html">&lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+</code></pre>
 <ul>
-<li>解説： これはCSSを読み込む <link> と同じ役割です。これでHTMLにJavaScriptの力が加わります。</li>
+<li>解説： これはCSSを読み込む <code>&lt;link&gt;</code> と同じ役割です。これでHTMLにJavaScriptの力が加わります。</li>
 </ul>
 <p>要素を選んで動かす</p>
 <p>JavaScriptでHTMLを変えるときは、「まず場所を選び、次に内容を変える」という順番で動かします。</p>
-<p>let myHeading = document.querySelector(‘h1’);
-myHeading.textContent = ‘Hello world!’;</p>
+<pre><code class="language-javascript">let myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+</code></pre>
 <ul>
-<li>1行目： document.querySelector(‘h1’) で 
-<h1> 要素を選び、myHeading という変数（入れ物）に入れます。</h1>
-</li>
+<li>1行目： document.querySelector(‘h1’) で <code>&lt;h1&gt;</code> 要素を選び、myHeading という変数（入れ物）に入れます。</li>
 <li>2行目： 選んだ場所の textContent（文字の内容）を ‘Hello world!’ に書き換えます。</li>
 </ul>
 <p>ヒント： コードの中に // を書くと、その行は「コメント」になります。ブラウザは読み飛ばすので、自分へのメモとして使えます。</p>
@@ -240,15 +240,17 @@ myHeading.textContent = ‘Hello world!’;</p>
 </ol>
 <p>実践コード</p>
 <p>※実行するには、images フォルダの中に2枚の画像ファイルが必要です。</p>
-<p>let myImage = document.querySelector(‘img’);</p>
-<p>myImage.onclick = function() {
-let mySrc = myImage.getAttribute(‘src’);
-if (mySrc === ‘images/firefox-icon.png’) {
-myImage.setAttribute(‘src’, ‘images/firefox2.png’);
-} else {
-myImage.setAttribute(‘src’, ‘images/firefox-icon.png’);
+<pre><code class="language-javascript">let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if (mySrc === 'images/firefox-icon.png') {
+    myImage.setAttribute('src', 'images/firefox2.png');
+  } else {
+    myImage.setAttribute('src', 'images/firefox-icon.png');
+  }
 }
-}</p>
+</code></pre>
 <ul>
 <li>myImage.onclick： 画像がクリックされたときに動く「きっかけ」です。</li>
 <li>getAttribute： 今の画像の設定を「調べる」ための道具です。</li>
@@ -258,32 +260,34 @@ myImage.setAttribute(‘src’, ‘images/firefox-icon.png’);
 <hr>
 <h2 id="5-データの保存パーソナライズされたメッセージ"><a class="header" href="#5-データの保存パーソナライズされたメッセージ">5. データの保存：パーソナライズされたメッセージ</a></h2>
 <p>ブラウザにデータを保存すれば、ユーザーが再びサイトに来たときに「こんにちは、〇〇さん」と挨拶することができます。</p>
-<p>Web Storage API の仕組み</p>
+<p><strong>Web Storage API の仕組み</strong></p>
 <p>「localStorage（ローカルストレージ）」という機能を使うと、ブラウザにデータを保存できます。ページを閉じても、データは消えません。</p>
-<p>ユーザーの名前を保存して表示する</p>
+<p><strong>ユーザーの名前を保存して表示する</strong></p>
 <p>以下のコードは、ページを開いたときに「名前があるかどうか」をチェックする大切なプログラム（初期化コード）です。</p>
-<p>function setUserName() {
-let myName = prompt(‘あなたの名前を入力してください。’);
-if (!myName) {
-setUserName();
-} else {
-localStorage.setItem(‘name’, myName);
-myHeading.textContent = ’Mozilla is cool, ’ + myName;
+<pre><code class="language-javascrpt">function setUserName() {
+  let myName = prompt('あなたの名前を入力してください。');
+  if (!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.textContent = 'Mozilla is cool, ' + myName;
+  }
 }
-}</p>
-<p>// ここからスタート（初期化コード）
-if (!localStorage.getItem(‘name’)) {
-setUserName();
+
+// ここからスタート（初期化コード）
+if (!localStorage.getItem('name')) {
+  setUserName();
 } else {
-let storedName = localStorage.getItem(‘name’);
-myHeading.textContent = ’Mozilla is cool, ’ + storedName;
-}</p>
+  let storedName = localStorage.getItem('name');
+  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+}
+</code></pre>
 <ul>
 <li>prompt()： 入力画面を出して、ユーザーに文字を打ってもらいます。</li>
 <li>! (否定演算子)： 「〜ではない」という意味です。!myName は「名前が入力されていない（空っぽ）」ことを表します。</li>
 <li>setItem / getItem： データを「保存する」のと「取り出す」ための命令です。</li>
 </ul>
-<p>「null」への対応</p>
+<p><strong>「null」への対応</strong></p>
 <p>ユーザーが「キャンセル」を押すと、結果は null（ヌル） になります。これは「何もない状態」という意味です。そのため、上のコードでは if (!myName) を使い、名前が正しく入力されるまで何度も入力画面を出すようにしています。</p>
 <hr>
 <h2 id="6-まとめと次のステップ"><a class="header" href="#6-まとめと次のステップ">6. まとめと次のステップ</a></h2>
@@ -303,9 +307,6 @@ myHeading.textContent = ’Mozilla is cool, ’ + storedName;
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="chapter_6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -317,9 +318,6 @@ myHeading.textContent = ’Mozilla is cool, ’ + storedName;
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="chapter_6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                    </a>
             </nav>
 
         </div>
