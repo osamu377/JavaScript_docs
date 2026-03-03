@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-06227269.js";
+            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-bc46d24f.js"></script>
+        <script src="toc-d67824dc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,7 +174,77 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        
+                        <h1 id="数学オブジェクト"><a class="header" href="#数学オブジェクト">数学オブジェクト</a></h1>
+<p>JavaScriptを学習中の皆さん、こんにちは！
+今日は、JavaScriptの中で**「計算の天才（てんさい）」**として活躍する <strong><code>Math</code>オブジェクト</strong> について説明します。</p>
+<p>留学生の方には、<code>Math</code>オブジェクトのことを**「数学（すうがく）の道具箱（どうぐばこ）」**だと教えてあげてください。自分で難しい計算式を書かなくても、この道具箱を開ければすぐに答えが出てきます。</p>
+<hr>
+<h3 id="1-mathオブジェクトの特徴"><a class="header" href="#1-mathオブジェクトの特徴">1. <code>Math</code>オブジェクトの特徴</a></h3>
+<p>他のオブジェクト（<code>Student</code>クラスなど）と違って、<code>Math</code>オブジェクトは <strong><code>new</code> を使って作る必要がありません。</strong></p>
+<p>ブラウザの中に最初から「数学の専門家」として座っているので、いきなり <code>Math.〜</code> と呼び出すだけで仕事をしてくれます。</p>
+<hr>
+<h3 id="2-よく使う4つの道具メソッド"><a class="header" href="#2-よく使う4つの道具メソッド">2. よく使う「4つの道具（メソッド）」</a></h3>
+<p>これだけ覚えれば、日常のプログラミングで困ることはありません。</p>
+<h4 id="①-mathrandomサイコロを振る"><a class="header" href="#①-mathrandomサイコロを振る"><strong>① <code>Math.random()</code>：サイコロを振る</strong></a></h4>
+<p>0から1の間で、バラバラな数字（乱数）を作ります。</p>
+<ul>
+<li><strong>使い道：</strong> ゲームのダメージ計算、おみくじ、ラッキーカラーなど。</li>
+<li><strong>イメージ：</strong> ガラガラ抽選器（ちゅうせんき）を回す。</li>
+</ul>
+<h4 id="②-mathround四捨五入ししゃごにゅう"><a class="header" href="#②-mathround四捨五入ししゃごにゅう"><strong>② <code>Math.round()</code>：四捨五入（ししゃごにゅう）</strong></a></h4>
+<p>小数点以下が <code>.5</code> 以上なら切り上げ、<code>.4</code> 以下なら切り捨てます。</p>
+<ul>
+<li><strong>使い道：</strong> 平均点（へいきんてん）をきれいな数字にするとき。</li>
+</ul>
+<h4 id="③-mathceil-と-mathfloor天井てんじょうと床ゆか"><a class="header" href="#③-mathceil-と-mathfloor天井てんじょうと床ゆか"><strong>③ <code>Math.ceil()</code> と <code>Math.floor()</code>：天井（てんじょう）と床（ゆか）</strong></a></h4>
+<ul>
+<li><strong><code>Math.ceil()</code>（切り上げ）：</strong> 小数点があれば、上の数字へジャンプ！</li>
+<li><strong><code>Math.floor()</code>（切り捨て）：</strong> 小数点を消して、下の数字へダウン！</li>
+<li><strong>覚え方：</strong> <code>Ceiling</code> は天井、<code>Floor</code> は床という意味です。</li>
+</ul>
+<hr>
+<h3 id="3-コードで見てみよう"><a class="header" href="#3-コードで見てみよう">3. コードで見てみよう！</a></h3>
+<p>留学生と一緒に、コンソールで試してみてください。</p>
+<pre><code class="language-javascript">console.log(Math.PI);          // 3.14159... (円周率も入っています)
+
+console.log(Math.round(4.6));   // 5（四捨五入）
+console.log(Math.floor(4.6));   // 4（床：切り捨て）
+console.log(Math.ceil(4.1));    // 5（天井：切り上げ）
+
+// 1から10までのランダムな整数（せいすう）を作る魔法の式
+const luckyNumber = Math.floor(Math.random() * 10) + 1;
+console.log("あなたのラッキーナンバーは：" + luckyNumber);
+
+</code></pre>
+<hr>
+<h3 id="4-留学生への例え話電卓でんたくのボタン"><a class="header" href="#4-留学生への例え話電卓でんたくのボタン">4. 留学生への例え話：電卓（でんたく）のボタン</a></h3>
+<blockquote>
+<p>「<code>Math</code>オブジェクトは、高機能（こうきのう）な電卓（Scientific Calculator）についている<strong>特別なボタン</strong>だと思ってね。
+√（ルート）の計算や、一番大きい数字を探すとき、自分で計算するのは大変だよね。そんなときは <code>Math.sqrt()</code> や <code>Math.max()</code> というボタンを押すだけで、JavaScriptがすぐに答えを教えてくれるんだよ！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>命令 (Method)</th><th>意味</th><th>英語のイメージ</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>Math.random()</code></strong></td><td>0〜1のランダムな数字</td><td>Random</td></tr>
+<tr><td><strong><code>Math.floor()</code></strong></td><td>切り捨て</td><td>Floor（床に落とす）</td></tr>
+<tr><td><strong><code>Math.ceil()</code></strong></td><td>切り上げ</td><td>Ceiling（天井に届く）</td></tr>
+<tr><td><strong><code>Math.round()</code></strong></td><td>四捨五入</td><td>Round off</td></tr>
+<tr><td><strong><code>Math.max()</code></strong></td><td>一番大きい数字を選ぶ</td><td>Maximum</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-留学生へのワンポイント"><a class="header" href="#-留学生へのワンポイント">📝 留学生へのワンポイント</a></h3>
+<blockquote>
+<p>「一番よく使うのは <strong><code>Math.floor(Math.random() * N)</code></strong> という組み合わせだよ。これで『0からN-1までのランダムな整数』が作れるんだ。ゲームを作るときに必ず使うから、このセットだけはメモしておこう！」</p>
+</blockquote>
+<p>いかがでしょうか？「数学は苦手…」という学生さんでも、<code>Math</code>オブジェクトが代わりに計算してくれると知れば、きっと安心してくれるはずです。</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

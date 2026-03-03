@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>継承 - 留学生のためのJavaScript学習ガイド</title>
+        <title>ユーザー定義オブジェクト - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-06227269.js";
+            window.path_to_searchindex_js = "searchindex-e0eeb4bb.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-bc46d24f.js"></script>
+        <script src="toc-d67824dc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,16 +174,109 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        
+                        <h1 id="ユーザー定義オブジェクト"><a class="header" href="#ユーザー定義オブジェクト">ユーザー定義オブジェクト</a></h1>
+<p>JavaScriptの「ユーザー定義オブジェクト」は、あらかじめ用意されている道具（ブラウザやシステムが作ったもの）ではなく、**「自分たちで自由に作る新しいキャラクターや道具」**のことです。</p>
+<p>留学生の方には、**「RPGゲームのキャラクター図鑑（ずかん）」**を作るイメージで説明してあげると、ワクワクしながら理解してもらえます。</p>
+<hr>
+<h3 id="1-ユーザー定義オブジェクトとは"><a class="header" href="#1-ユーザー定義オブジェクトとは">1. ユーザー定義オブジェクトとは？</a></h3>
+<p>JavaScriptでは、波括弧 <code>{ }</code> を使って、<strong>自分だけのオブジェクトを作る</strong> ことができます。これを「オブジェクト リテラル」と呼びます。</p>
+<p>たとえば、**「学生（Student）」**という新しいモノをプログラムの中で作りたいとき、名前、年齢、国籍などを一つにまとめたのが「ユーザー定義オブジェクト」です。</p>
+<hr>
+<h3 id="2-オブジェクトの中身は2種類"><a class="header" href="#2-オブジェクトの中身は2種類">2. オブジェクトの「中身」は2種類</a></h3>
+<p>オブジェクトの中には、必ずこの2つが入っています。</p>
+<ol>
+<li><strong>プロパティ（Property）：</strong> そのモノの「特徴（データ）」</li>
+</ol>
+<ul>
+<li>例：名前は「アリ」さん、国籍は「エジプト」。</li>
+</ul>
+<ol start="2">
+<li><strong>メソッド（Method）：</strong> そのモノができる「動き（仕事）」</li>
+</ol>
+<ul>
+<li>例：「自己紹介する」、「テストを受ける」。</li>
+</ul>
+<hr>
+<h3 id="3-書き方のイメージ自分だけの図鑑作り"><a class="header" href="#3-書き方のイメージ自分だけの図鑑作り">3. 書き方のイメージ：自分だけの図鑑作り</a></h3>
+<p>留学生と一緒に、こんなコードのイメージを考えてみてください。</p>
+<pre><code class="language-javascript">// 「学生」という名前のオブジェクトを自分で定義（ていぎ）する
+const student = {
+  // プロパティ（特徴）
+  name: "Ali",
+  country: "Egypt",
+  age: 20,
+
+  // メソッド（動き）
+  sayHello: function() {
+    console.log("こんにちは！私は " + this.name + " です。");
+  }
+};
+
+// 使い方
+console.log(student.name); // "Ali" が出てくる
+student.sayHello();        // "こんにちは！私は Ali です。" としゃべる！
+
+</code></pre>
+<h2 id="4-プロパティとメソッドの利用情報の取り出しと実行"><a class="header" href="#4-プロパティとメソッドの利用情報の取り出しと実行">4. プロパティとメソッドの利用：情報の取り出しと実行</a></h2>
+<p>作ったオブジェクトの中身を使うには、2つの書き方があります。</p>
+<ol>
+<li>ドット記法（きほう）： person.name のように、ドット . でつなぎます。プロパティ名が分かっているときに使います。</li>
+<li>ブラケット記法： person[“name”] のように、角括弧 [ ] を使います。</li>
+</ol>
+<p>こうした記法は、これまで学んできたものと同じです。</p>
+<p>「So What?（だから何？）」：なぜ2つあるのか</p>
+<p>ドット記法は速く書けて便利ですが、ブラケット記法は「変数」を使って中身を選べるのが強（つよ）みです。</p>
+<pre><code class="language-javascript">const key = "name";
+console.log(person[key]); // "Allen" と表示されます。keyの中身を変えれば、取れるデータも変わります。
+</code></pre>
+<p>また、メソッドを呼び出すときに <code>person.greet()</code> と丸括弧 () を書くのは、「そのアクションを今すぐ動かしてください」という合図（あいず）です。</p>
+<hr>
+<h3 id="5-留学生への例え話お弁当箱べんとうばこ"><a class="header" href="#5-留学生への例え話お弁当箱べんとうばこ">5. 留学生への例え話：お弁当箱（べんとうばこ）</a></h3>
+<blockquote>
+<p>「変数が『1つのリンゴ』だとしたら、オブジェクトは <strong>『お弁当箱』</strong> だよ。
+お弁当箱の中に、ご飯（名前）、おかず（年齢）、デザート（国籍）をきれいに並べて、**『これはアリさんのお弁当です』**と名前をつけて管理するんだ。
+バラバラに持ち運ぶより、箱に入っていたほうが分かりやすいし、使いやすいよね！」</p>
+</blockquote>
+<hr>
+<h3 id="6-なぜユーザー定義が必要なの"><a class="header" href="#6-なぜユーザー定義が必要なの">6. なぜ「ユーザー定義」が必要なの？</a></h3>
+<blockquote>
+<p>「たくさんの学生のデータを扱うとき、変数だけで書くと <code>name1</code>, <code>name2</code>, <code>age1</code>, <code>age2</code>…と、頭がパニックになってしまうよ。
+<strong>『1人の人間には、たくさんの情報がつまっている』</strong> という現実の世界と同じ考え方をプログラムに持ち込むために、自分でオブジェクトを作るんだよ。」</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>言葉</th><th>意味</th><th>覚え方のヒント</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>ユーザー定義</strong></td><td>自分で作ること</td><td>「私専用（せんよう）」</td></tr>
+<tr><td><strong>プロパティ</strong></td><td>特徴、データ</td><td>「〜は〜だ」</td></tr>
+<tr><td><strong>メソッド</strong></td><td>仕事、動き</td><td>「〜をする」</td></tr>
+<tr><td><strong>インスタンス</strong></td><td>設計図から作った実物</td><td>「アリさん本人」</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>いかがでしょうか？「自分たちで新しいモノの形を決められる」というのが、オブジェクト指向プログラミングの第一歩です。
+留学生のみなさんの「自己紹介（じこしょうかい）カード」をオブジェクトにしてみましょう。</p>
+<p><strong>開発（かいはつ）のアドバイス</strong></p>
+<ul>
+<li>名前は英語で： JavaScriptのルールとして、プロパティ名は name のように意味（いみ）のわかる英語で書くのが一般的（いっぱんてき）です。</li>
+<li>なぜ const なのか？： オブジェクトを作るとき、よく const を使います。これは「箱そのもの」を変えないためです。箱の中身（年齢など）が変わっても、箱自体（personという変数）が別物にならなければ、const で問題（もんだい）ありません。</li>
+<li>書き方のコツ： 複数のプロパティを書くときは、カンマ , を忘れないでください。忘れるとエラーになります。</li>
+</ul>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="05_01_オブジェクト指向プログラミング.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="05_00_オブジェクトの定義と継承.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_00_付録.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="05_02_オブジェクト指向プログラミング.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -193,11 +286,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="05_01_オブジェクト指向プログラミング.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="05_00_オブジェクトの定義と継承.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_00_付録.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="05_02_オブジェクト指向プログラミング.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
