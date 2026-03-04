@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ed5d5011.js";
+            window.path_to_searchindex_js = "searchindex-91ec85ee.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-51c4b39c.js"></script>
+        <script src="toc-7748c030.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -265,12 +265,13 @@ myName = "Chris"; // 後から値を代入する
 <hr>
 <h2 id="ii-文字列型-stringテキストデータを扱う"><a class="header" href="#ii-文字列型-stringテキストデータを扱う">II. 文字列型 (String)：テキストデータを扱う</a></h2>
 <p>Webページで「こんにちは」というメッセージを表示したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
-<h3 id="1-文字列の定義"><a class="header" href="#1-文字列の定義">1. 文字列の定義</a></h3>
+<h3 id="1-文字列を作る"><a class="header" href="#1-文字列を作る">1. 文字列を作る</a></h3>
 <p>文字列を作るには、テキストを <strong>引用符（クォーテーション）</strong> で囲みます。</p>
 <ul>
-<li>シングルクォーテーション：‘こんにちは’</li>
-<li>ダブルクォーテーション：“こんにちは” どちらを使っても構いませんが、一つのプログラムの中で統一するのが良い習慣です。</li>
+<li>シングルクォーテーション： <strong>‘こんにちは’</strong></li>
+<li>ダブルクォーテーション： <strong>“こんにちは”</strong></li>
 </ul>
+<p>どちらを使っても構いませんが、一つのプログラムの中で統一するのが良い習慣です。</p>
 <h3 id="2-テンプレートリテラル最新のスマートな書き方"><a class="header" href="#2-テンプレートリテラル最新のスマートな書き方">2. テンプレートリテラル：最新のスマートな書き方</a></h3>
 <p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、変数の埋め込みや改行が非常に簡単になります。</p>
 <pre><code class="language-javascript">const name = "佐藤";
@@ -337,7 +338,7 @@ console.log(multiLine);">実行</button></p>
 <p>論理型を正しく理解すると、複雑なシステムの判断ロジックを整理して、ユーザーの入力に対して「正しく反応する」プログラムを書くことができるようになります。</p>
 <hr>
 <h2 id="v-未定義型-undefined値が決まっていない状態"><a class="header" href="#v-未定義型-undefined値が決まっていない状態">V. 未定義型 (Undefined)：値が決まっていない状態</a></h2>
-<p>変数を作ったけれど、中身をまだ何も入れていないとき、JavaScriptはその状態を undefined と表現します。これは「未定義（みていぎ）」型という特殊な型になります。「未定義」とは「まだ定義されていない」という意味です。</p>
+<p>変数を作ったけれど、中身をまだ何も入れていないとき、JavaScriptはその状態を undefined と表現します。これは「未定義（みていぎ）」型という特殊な型になります。「未定義」とは「まだ定義されていない」「まだ、どういうものか決まっていない、わからない」という意味です。</p>
 <p><strong>「空の箱」と「存在しない箱」の違い</strong></p>
 <p>初心者の方が間違いやすいのが、以下の違いです。</p>
 <ul>

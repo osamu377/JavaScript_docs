@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>イベント処理 - 留学生のためのJavaScript学習ガイド</title>
+        <title>自分のオブジェクトを作る - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,84 +174,109 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="イベント処理"><a class="header" href="#イベント処理">イベント処理</a></h1>
-<p>「イベント（何かが起きた瞬間）」を、実際にJavaScriptでつかまえて仕事をさせるための命令が <strong><code>addEventListener()</code></strong> です。</p>
-<p>留学生の方には、これを**「もし〜が起きたら、この仕事をやってね」という『待ち合わせの約束』**だと教えてあげてください。</p>
+                        <h1 id="自分のオブジェクトを作る"><a class="header" href="#自分のオブジェクトを作る">自分のオブジェクトを作る</a></h1>
+<p>JavaScriptの「ユーザー定義オブジェクト」は、あらかじめ用意されている道具（ブラウザやシステムが作ったもの）ではなく、**「自分たちで自由に作る新しいキャラクターや道具」**のことです。</p>
+<p>留学生の方には、**「RPGゲームのキャラクター図鑑（ずかん）」**を作るイメージで説明してあげると、ワクワクしながら理解してもらえます。</p>
 <hr>
-<h3 id="1-addeventlistener-の役割"><a class="header" href="#1-addeventlistener-の役割">1. <code>addEventListener</code> の役割</a></h3>
-<p>ブラウザ（主役のオブジェクト）に対して、「特定のイベントが起きたら、準備しておいたプログラムを動かして！」と予約（よやく）を入れます。</p>
+<h2 id="i-ユーザー定義オブジェクトとは"><a class="header" href="#i-ユーザー定義オブジェクトとは">I. ユーザー定義オブジェクトとは？</a></h2>
+<p>JavaScriptでは、波括弧 <code>{ }</code> を使って、<strong>自分だけのオブジェクトを作る</strong> ことができます。これを「オブジェクト リテラル」と呼びます。</p>
+<p>たとえば、**「学生（Student）」**という新しいモノをプログラムの中で作りたいとき、名前、年齢、国籍などを一つにまとめたのが「ユーザー定義オブジェクト」です。</p>
 <hr>
-<h3 id="2-書き方の基本3つのパーツ"><a class="header" href="#2-書き方の基本3つのパーツ">2. 書き方の基本：3つのパーツ</a></h3>
-<p><code>addEventListener</code> を書くときは、次の3つの情報をセットにします。</p>
-<pre><code class="language-javascript">要素.addEventListener("いつ", どうするか);
-
-</code></pre>
+<h2 id="ii-オブジェクトの中身は2種類"><a class="header" href="#ii-オブジェクトの中身は2種類">II. オブジェクトの「中身」は2種類</a></h2>
+<p>オブジェクトの中には、必ずこの2つが入っています。</p>
 <ol>
-<li><strong>要素：</strong> だれに？（ボタン、画像、入力欄など）</li>
-<li><strong>いつ（イベント名）：</strong> 何が起きたら？（<code>click</code>, <code>input</code>, <code>mouseover</code> など）</li>
-<li><strong>どうするか（関数）：</strong> どんな仕事をするか？</li>
+<li><strong>プロパティ（Property）：</strong> そのモノの「特徴（データ）」</li>
 </ol>
-<h4 id="具体的なコードの例"><a class="header" href="#具体的なコードの例"><strong>具体的なコードの例</strong></a></h4>
-<pre><code class="language-javascript">const btn = document.getElementById("myButton");
+<ul>
+<li>例：名前は「アリ」さん、国籍は「エジプト」。</li>
+</ul>
+<ol start="2">
+<li><strong>メソッド（Method）：</strong> そのモノができる「動き（仕事）」</li>
+</ol>
+<ul>
+<li>例：「自己紹介する」、「テストを受ける」。</li>
+</ul>
+<hr>
+<h2 id="iii-書き方のイメージ自分だけの図鑑作り"><a class="header" href="#iii-書き方のイメージ自分だけの図鑑作り">III. 書き方のイメージ：自分だけの図鑑作り</a></h2>
+<p>留学生と一緒に、こんなコードのイメージを考えてみてください。</p>
+<pre><code class="language-javascript">// 「学生」という名前のオブジェクトを自分で定義（ていぎ）する
+const student = {
+  // プロパティ（特徴）
+  name: "Ali",
+  country: "Egypt",
+  age: 20,
 
-// 1.「btn」に 2.「click」されたら 3.「中身のプログラム」を実行！
-btn.addEventListener("click", function() {
-  alert("ボタンが押されました！ 🚀");
-});
+  // メソッド（動き）
+  sayHello: function() {
+    console.log("こんにちは！私は " + this.name + " です。");
+  }
+};
+
+// 使い方
+console.log(student.name); // "Ali" が出てくる
+student.sayHello();        // "こんにちは！私は Ali です。" としゃべる！
 
 </code></pre>
+<h2 id="iv-プロパティとメソッドの利用情報の取り出しと実行"><a class="header" href="#iv-プロパティとメソッドの利用情報の取り出しと実行">IV. プロパティとメソッドの利用：情報の取り出しと実行</a></h2>
+<p>作ったオブジェクトの中身を使うには、2つの書き方があります。</p>
+<ol>
+<li>ドット記法（きほう）： person.name のように、ドット . でつなぎます。プロパティ名が分かっているときに使います。</li>
+<li>ブラケット記法： person[“name”] のように、角括弧 [ ] を使います。</li>
+</ol>
+<p>こうした記法は、これまで学んできたものと同じです。</p>
+<p>「So What?（だから何？）」：なぜ2つあるのか</p>
+<p>ドット記法は速く書けて便利ですが、ブラケット記法は「変数」を使って中身を選べるのが強（つよ）みです。</p>
+<pre><code class="language-javascript">const key = "name";
+console.log(person[key]); // "Allen" と表示されます。keyの中身を変えれば、取れるデータも変わります。
+</code></pre>
+<p>また、メソッドを呼び出すときに <code>person.greet()</code> と丸括弧 () を書くのは、「そのアクションを今すぐ動かしてください」という合図（あいず）です。</p>
 <hr>
-<h3 id="3-留学生への例え話ホテルのフロント"><a class="header" href="#3-留学生への例え話ホテルのフロント">3. 留学生への例え話：ホテルのフロント</a></h3>
-<p>これをホテルのサービスに例えると、とても分かりやすくなります。</p>
+<h3 id="v-留学生への例え話お弁当箱べんとうばこ"><a class="header" href="#v-留学生への例え話お弁当箱べんとうばこ">V. 留学生への例え話：お弁当箱（べんとうばこ）</a></h3>
 <blockquote>
-<p>「お客さん（あなた）がフロント（ブラウザ）に頼むんだ。
-<strong>『朝の7時（イベント）』になったら、『私を起こして（仕事）』ね。</strong>
-フロントの人は、その約束をメモに書いて、時間が来るのをじっと待っててくれる。これが <code>addEventListener</code> の仕組みだよ！」</p>
+<p>「変数が『1つのリンゴ』だとしたら、オブジェクトは <strong>『お弁当箱』</strong> だよ。
+お弁当箱の中に、ご飯（名前）、おかず（年齢）、デザート（国籍）をきれいに並べて、**『これはアリさんのお弁当です』**と名前をつけて管理するんだ。
+バラバラに持ち運ぶより、箱に入っていたほうが分かりやすいし、使いやすいよね！」</p>
 </blockquote>
 <hr>
-<h3 id="4-なぜリスナーlistenerと呼ぶの"><a class="header" href="#4-なぜリスナーlistenerと呼ぶの">4. なぜ「リスナー（Listener）」と呼ぶの？</a></h3>
-<p>この命令で登録されたプログラムのことを、専門用語で「イベントリスナー」と呼びます。</p>
-<ul>
-<li><strong>Listen（リッスン）：</strong> 聴（き）く、耳をすます。</li>
-<li><strong>Listener（リスナー）：</strong> 聞き手。</li>
-</ul>
+<h3 id="vi-なぜユーザー定義が必要なの"><a class="header" href="#vi-なぜユーザー定義が必要なの">VI. なぜ「ユーザー定義」が必要なの？</a></h3>
 <blockquote>
-<p>「プログラムがずっと**『耳をすませて』、イベントが起きる音を待っている**から、リスナーって呼ぶんだよ」と教えてあげてください。</p>
+<p>「たくさんの学生のデータを扱うとき、変数だけで書くと <code>name1</code>, <code>name2</code>, <code>age1</code>, <code>age2</code>…と、頭がパニックになってしまうよ。
+<strong>『1人の人間には、たくさんの情報がつまっている』</strong> という現実の世界と同じ考え方をプログラムに持ち込むために、自分でオブジェクトを作るんだよ。」</p>
 </blockquote>
-<hr>
-<h3 id="5-addeventlistener-のすごいところ"><a class="header" href="#5-addeventlistener-のすごいところ">5. <code>addEventListener</code> のすごいところ</a></h3>
-<p>昔の書き方（<code>onclick</code> など）と違って、1つのボタンに <strong>「2つ以上の約束」</strong> をすることができます。</p>
-<ul>
-<li>「クリックされたら、色を変えて」</li>
-<li>「クリックされたら、ログを記録して」</li>
-</ul>
-<p>このように、たくさんの約束を重ねて予約できるのが、この命令の強みです。</p>
 <hr>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>パーツ</th><th>役割</th><th>例え話</th></tr>
+<tr><th>言葉</th><th>意味</th><th>覚え方のヒント</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>要素 (target)</strong></td><td>どこで起きるか</td><td>玄関のドア</td></tr>
-<tr><td><strong>イベント名 (type)</strong></td><td>何が起きるか</td><td>チャイムが鳴る</td></tr>
-<tr><td><strong>リスナー (function)</strong></td><td>何をするか</td><td>「はーい！」と返事をして開ける</td></tr>
+<tr><td><strong>ユーザー定義</strong></td><td>自分で作ること</td><td>「私専用（せんよう）」</td></tr>
+<tr><td><strong>プロパティ</strong></td><td>特徴、データ</td><td>「〜は〜だ」</td></tr>
+<tr><td><strong>メソッド</strong></td><td>仕事、動き</td><td>「〜をする」</td></tr>
+<tr><td><strong>インスタンス</strong></td><td>設計図から作った実物</td><td>「アリさん本人」</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「予約を入れて、耳をすませて待つ」。このイメージができれば、JavaScriptでページを動かす準備はバッチリです！</p>
+<p>いかがでしょうか？「自分たちで新しいモノの形を決められる」というのが、オブジェクト指向プログラミングの第一歩です。
+留学生のみなさんの「自己紹介（じこしょうかい）カード」をオブジェクトにしてみましょう。</p>
+<p><strong>開発（かいはつ）のアドバイス</strong></p>
+<ul>
+<li>名前は英語で： JavaScriptのルールとして、プロパティ名は name のように意味（いみ）のわかる英語で書くのが一般的（いっぱんてき）です。</li>
+<li>なぜ const なのか？： オブジェクトを作るとき、よく const を使います。これは「箱そのもの」を変えないためです。箱の中身（年齢など）が変わっても、箱自体（personという変数）が別物にならなければ、const で問題（もんだい）ありません。</li>
+<li>書き方のコツ： 複数のプロパティを書くときは、カンマ , を忘れないでください。忘れるとエラーになります。</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="03_03_DOMツリー.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="05_00_JavaScriptとオブジェクト指向.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="03_05_Window操作.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="05_02_オブジェクトを改造する.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -261,11 +286,11 @@ btn.addEventListener("click", function() {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="03_03_DOMツリー.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="05_00_JavaScriptとオブジェクト指向.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="03_05_Window操作.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="05_02_オブジェクトを改造する.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
