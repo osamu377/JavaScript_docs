@@ -1,6 +1,25 @@
-# vscodeの使い方
+# Visual Studio Code の準備
+
+## Live Server拡張機能のインストール
+
+1. 拡張機能アイコンをクリックします
+<img src="img/001/201.png">
+
+1. 検索ウィンドウに"Live Server"と入力します
+<img src="img/001/202.png">
+
+1. "インストール"をクリックします
+<img src="img/001/203.png">
+
+1. インストールされたことを確認します
+<img src="img/001/204.png">
+
+---
+
+## 日本語キーボード
 
 ![日本語キーボード](img/109key.jpg)
+
 # キーの働き
 
 |キー|働き|
