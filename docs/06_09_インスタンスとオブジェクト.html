@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>オブジェクトを改造する.md - 留学生のためのJavaScript学習ガイド</title>
+        <title>インスタンスとオブジェクト - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,155 +174,79 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="オブジェクトを改造する"><a class="header" href="#オブジェクトを改造する">オブジェクトを改造する</a></h1>
-<p>既存のオブジェクトを自分好みに作り変えることを、プログラミングの世界では <strong>「拡張（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と呼びます。</p>
-<p>これは <strong>「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」</strong> に例えることができます。</p>
-<h2 id="i-オブジェクトを改造する"><a class="header" href="#i-オブジェクトを改造する">I. オブジェクトを改造する</a></h2>
-<h3 id="1-既存のオブジェクトを改造する2つの方法"><a class="header" href="#1-既存のオブジェクトを改造する2つの方法">1. 既存のオブジェクトを改造する2つの方法</a></h3>
-<p>JavaScriptでは、すでに動いているオブジェクトに後から「新しいパーツ」を追加したり、「古いパーツ」を新しいものに取り替えたりできます。</p>
-<h4 id="a-追加する"><a class="header" href="#a-追加する">a) <strong>追加する</strong></a></h4>
-<p>特定の1人（1つのオブジェクト）だけに、新しいプロパティやメソッドを追加します。</p>
+                        <h1 id="インスタンスとオブジェクト"><a class="header" href="#インスタンスとオブジェクト">インスタンスとオブジェクト</a></h1>
+<p>「オブジェクト」と「インスタンス」は、ベテランのエンジニアでも時々混ぜて使ってしまうほど似ている言葉です。</p>
+<p>留学生の方には、 <strong>「モノの種類（カテゴリー）」</strong> か、 <strong>「目の前にある実物（じつぶつ）」</strong> か、という視点の違いで説明してあげるとスッキリします。</p>
+<hr>
+<h3 id="1-結論二つの違いは見ている角度"><a class="header" href="#1-結論二つの違いは見ている角度">1. 結論：二つの違いは「見ている角度」</a></h3>
 <ul>
-<li><strong>イメージ：</strong> 自分の自転車だけに、特別なステッカーを貼る。</li>
-<li><strong>書き方：</strong> <code>オブジェクト名.新しい名前 = 値;</code></li>
+<li><strong>オブジェクト (Object)：</strong> 広い意味での「データのかたまり」という<strong>仕組み</strong>のこと。</li>
+<li><strong>インスタンス (Instance)：</strong> 設計図（クラス）から生まれた、**「具体的な一つひとつの実物」**のこと。</li>
 </ul>
-<pre><code class="language-javascript">const myCar = { brand: "Toyota" };
-
-// 後からプロパティを追加
-myCar.color = "Red";
-
-// 後からメソッドを追加
-myCar.horn = function() {
-  console.log("プップー！");
-};
-
-myCar.horn(); // 実行できる！
-
-</code></pre>
-<h4 id="b-オーバーライド上書きする"><a class="header" href="#b-オーバーライド上書きする">b) <strong>オーバーライド（上書き）する</strong></a></h4>
-<p>親から受け継いだ機能を、自分流のやり方に書き換えます。</p>
+<hr>
+<h3 id="2-留学生への例え話タイ焼きと料理"><a class="header" href="#2-留学生への例え話タイ焼きと料理">2. 留学生への例え話：タイ焼きと料理</a></h3>
+<p>この2つの例えが最強に分かりやすいです。</p>
+<h4 id="例①タイ焼き"><a class="header" href="#例①タイ焼き"><strong>例①：タイ焼き</strong></a></h4>
 <ul>
-<li><strong>イメージ：</strong> お父さんから譲り受けたカメラだけど、レンズを最新のものに交換して使いやすくする。</li>
-<li><strong>書き方：</strong> 同じ名前で新しく定義し直す。</li>
+<li><strong>クラス：</strong> タイ焼きの「型（かた）」です。</li>
+<li><strong>オブジェクト：</strong> 「タイ焼き」という食べ物そのものの概念（がいねん）です。</li>
+<li><strong>インスタンス：</strong> 今、あなたの手にある**「あんこが入った、温かいこの1つのタイ焼き」**のことです。</li>
 </ul>
-<pre><code class="language-javascript">class Robot {
-  greet() {
-    console.log("ハロー、ロボットデス。");
-  }
-}
-
-class JapaneseRobot extends Robot {
-  // 親の greet を上書き（オーバーライド）
-  greet() {
-    console.log("こんにちは、ロボットです。");
-  }
-}
-
-const robo = new JapaneseRobot();
-robo.greet(); // 「こんにちは...」が出る
-
-</code></pre>
-<h3 id="2-例え話スマホのケースとアプリ"><a class="header" href="#2-例え話スマホのケースとアプリ">2. 例え話：スマホのケースとアプリ</a></h3>
+<h4 id="例②料理のレシピ"><a class="header" href="#例②料理のレシピ"><strong>例②：料理のレシピ</strong></a></h4>
+<ul>
+<li><strong>クラス：</strong> カレーの「レシピ」です。</li>
+<li><strong>オブジェクト：</strong> プログラミングの世界における「料理」というデータの形です。</li>
+<li><strong>インスタンス：</strong> 今日の晩ごはんに作った**「お皿に乗っているカレー」**のことです。</li>
+</ul>
+<hr>
+<h3 id="3-会話での使い分けここが重要"><a class="header" href="#3-会話での使い分けここが重要">3. 会話での使い分け（ここが重要！）</a></h3>
+<p>留学生には、**「いつ、どっちの言葉を使うか」**を教えてあげましょう。</p>
+<ul>
+<li><strong>「オブジェクト」と言うとき：</strong>
+「JavaScriptは<strong>オブジェクト</strong>を使ってデータをまとめます」のように、プログラミングの<strong>ルールや構造</strong>について話すときに使います。</li>
+</ul>
 <blockquote>
-<p>「JavaScriptのオブジェクトは、一度作ったら終わりじゃないんだ。</p>
-<ol>
-<li><strong>直接追加：</strong> スマホに『お気に入りのストラップ』をつけるようなもの。そのスマホだけの特別。</li>
-<li><strong>プロトタイプ追加：</strong> OSをアップデートして『全員のスマホに新しい計算機アプリ』を入れるようなもの。</li>
-<li><strong>オーバーライド：</strong> 決まった『着信音（ちゃくしんおん）』を、自分の好きな音楽に変えるようなものだよ。</li>
-</ol>
-<p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんだ！」</p>
+<p><strong>イメージ：</strong> 「人間」という生き物。</p>
 </blockquote>
-<h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
-<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく難しい山場です。</p>
-<p>留学生の方には、これを <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの受け継ぎ」</strong> に例えて説明してあげると、イメージがしやすくなります。</p>
-<h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
-<p>一言でいうと、<strong>「共通の予備（よび）パーツ」</strong> です。</p>
-<p>JavaScriptでは、すべてのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる仕組みです。</p>
-<h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
-<p>「自分になければ親、親になければそのまた親…」と、<strong>さかのぼって探しに行く「鎖（くさり）」のようなつながり</strong> のことです。</p>
-<h4 id="身近な例え秘伝のカレーレシピ"><a class="header" href="#身近な例え秘伝のカレーレシピ"><strong>身近な例え：秘伝のカレーレシピ</strong></a></h4>
-<ol>
-<li><strong>あなた（インスタンス）：</strong> カレーを作ろうとします。</li>
-<li><strong>自分のキッチン：</strong> レシピがありません。</li>
-<li><strong>お父さんの家（プロトタイプ）：</strong> 「カレーのレシピある？」と聞きます。</li>
-<li><strong>おじいさんの家（親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。</li>
-<li><strong>ルーツ：</strong> 誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
-</ol>
-<h3 id="3-なぜこの仕組みがあるの"><a class="header" href="#3-なぜこの仕組みがあるの">3. なぜこの仕組みがあるの？</a></h3>
-<p>もし100人の学生オブジェクトを作るとき、全員に「自己紹介メソッド」を持たせると、メモリー（コンピューターの脳）をたくさん使ってしまいます。</p>
 <ul>
-<li><strong>プロトタイプを使わない：</strong> 全員が自分の辞書（じしょ）を持っている（重い！）</li>
-<li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを共有する（軽い！）</li>
+<li><strong>「インスタンス」と言うとき：</strong>
+「<code>new Student()</code> で、アリさんの<strong>インスタンス</strong>を作りました」のように、<strong>実際にメモリの中に作られた具体的なデータ</strong>を指すときに使います。</li>
 </ul>
-<h3 id="4-コードで見る探しに行く流れ"><a class="header" href="#4-コードで見る探しに行く流れ">4. コードで見る「探しに行く流れ」</a></h3>
-<pre><code class="language-javascript">const animal = {
-  eats: true
-};
-
-const dog = {
-  barks: true
-};
-
-// dog の親（プロトタイプ）を animal に設定
-Object.setPrototypeOf(dog, animal);
-
-console.log(dog.barks); // true (自分の中にある)
-console.log(dog.eats);  // true (自分にはないが、親にあるので借りてきた！)
-console.log(dog.fly);   // undefined (家系図を最後まで探したけど、どこにもない)
-
-</code></pre>
-<h3 id="5-プロトタイプを使って新しいプロパティやメソッドを追加する"><a class="header" href="#5-プロトタイプを使って新しいプロパティやメソッドを追加する">5. プロトタイプを使って新しいプロパティやメソッドを追加する</a></h3>
-<p>ひとつのオブジェクトだけでなく、そのプロトタイプから生まれた「全員」に、新しい機能を持たせることができます。</p>
-<ul>
-<li><strong>イメージ：</strong> マンションの住人全員が使える「共有のラウンジ」に、新しいテレビを置く。</li>
-<li><strong>書き方：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
-</ul>
-<pre><code class="language-javascript">// 全ての配列（Array）に「2倍にする」という新しい機能を追加してみる
-Array.prototype.double = function() {
-  return this.map(n =&gt; n * 2);
-};
-
-const numbers = [1, 2, 3];
-console.log(numbers.double()); // [2, 4, 6]
-
-</code></pre>
 <blockquote>
-<p><strong>注意：</strong> ここではわかりやすい例として<code>Array</code>にメソッドを追加しましたが、普通、 <code>Array</code> や <code>Object</code> などの標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
+<p><strong>イメージ：</strong> 「アリさん」という特定の個人。</p>
 </blockquote>
-<h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
+<h3 id="4-まとめテーブル"><a class="header" href="#4-まとめテーブル">4. まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>用語</th><th>やさしい日本語</th><th>英語のイメージ</th></tr>
+<tr><th>比較ポイント</th><th>オブジェクト</th><th>インスタンス</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Prototype</strong></td><td>共通の道具箱 / 秘伝のレシピ</td><td>Blueprint / Shared assets</td></tr>
-<tr><td><strong>Prototype Chain</strong></td><td>先祖（せんぞ）をたどる鎖</td><td>Search link / DNA</td></tr>
-<tr><td><strong>Inheritance</strong></td><td>継承（親の機能を使えること）</td><td>Inheritance</td></tr>
+<tr><td><strong>意味</strong></td><td>モノ、対象（たいしょう）</td><td>具体的な実例、実物</td></tr>
+<tr><td><strong>英語のニュアンス</strong></td><td>“A thing” (モノ)</td><td>“An example / One of them” (そのうちの一つ)</td></tr>
+<tr><td><strong>いつ使う？</strong></td><td>データの形を説明するとき</td><td><code>new</code> で何かを作ったとき</td></tr>
+<tr><td><strong>数</strong></td><td>概念なので数えにくい</td><td>「1つのインスタンス」と数えられる</td></tr>
 </tbody>
 </table>
 </div>
-<p>「自分にないものは、先祖から借りればいい」。この考え方がJavaScriptの根本（こんぽん）にあります。</p>
 <hr>
 <h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
 <blockquote>
-<p>「改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあるんだ。
-特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておこうね！」</p>
+<p>「最初は全部 <strong>『オブジェクト』</strong> と呼んでいても間違いじゃないよ。
+でも、<strong>『設計図から生まれた、本物のデータ』</strong> だということを強調（きょうちょう）したいときに <strong>『インスタンス』</strong> という言葉を使うと、『お、この人はプログラミングを深く理解しているな！』と思ってもらえるよ！」</p>
 </blockquote>
 <hr>
-<p>いかがでしょうか？「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
+<p>いかがでしょうか？「実物（インスタンス）はオブジェクトの一種である」という関係性が伝われば完璧です。</p>
+<p><a href="javascript:history.back();">戻る</a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="05_01_自分のオブジェクトを作る.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="06_08_入出力.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="05_03_クラスはオブジェクトの設計図.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -330,13 +254,10 @@ console.log(numbers.double()); // [2, 4, 6]
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="05_01_自分のオブジェクトを作る.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="06_08_入出力.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="05_03_クラスはオブジェクトの設計図.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                    </a>
             </nav>
 
         </div>
