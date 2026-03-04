@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-91ec85ee.js";
+            window.path_to_searchindex_js = "searchindex-20375ee0.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-7748c030.js"></script>
@@ -174,18 +174,13 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h2 id="iii-プロトタイプjavascriptの共通のルール"><a class="header" href="#iii-プロトタイプjavascriptの共通のルール">III. プロトタイプ：JavaScriptの共通のルール</a></h2>
-<p>JavaScriptには、最初から便利な機能がたくさん備（そな）わっています。例えば、文字列を大文字にする toUpperCase() などです。これらが使えるのは、すべてのオブジェクトが <strong>「プロトタイプ（Prototype）」という共通（きょうつう）の設計図（せっけいず）</strong> を持っているからです。</p>
-<p>これは、すべてのオブジェクトが利用（りよう）できる「公共（こうきょう）の図書館（としょかん）」のようなものです。</p>
-<ul>
-<li>戦略的利点（せんりゃくてきりてん）： すべてのオブジェクトが共通の機能を共有（きょうゆう）することで、メモリを節約（せつやく）し、プログラムを効率（こうりつ）よく動かせます。一からすべてを作る必要（ひつよう）はなく、先人が作った便利な仕組みを借りる（Stand on the shoulders of giants）ことができるのです。</li>
-</ul>
-<p>既存のオブジェクトを自分好みに作り変えることを、プログラミングの世界では**「拡張（かくちょう / Extension）」<strong>や</strong>「カスタマイズ」**と呼びます。</p>
-<p>留学生の方には、これを**「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」**に例えて説明してあげましょう。</p>
-<hr>
-<h3 id="1-既存のオブジェクトを改造する3つの方法"><a class="header" href="#1-既存のオブジェクトを改造する3つの方法">1. 既存のオブジェクトを改造する3つの方法</a></h3>
+                        <h1 id="オブジェクトを改造する"><a class="header" href="#オブジェクトを改造する">オブジェクトを改造する</a></h1>
+<p>既存のオブジェクトを自分好みに作り変えることを、プログラミングの世界では <strong>「拡張（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と呼びます。</p>
+<p>これは <strong>「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」</strong> に例えることができます。</p>
+<h2 id="i-オブジェクトを改造する"><a class="header" href="#i-オブジェクトを改造する">I. オブジェクトを改造する</a></h2>
+<h3 id="1-既存のオブジェクトを改造する2つの方法"><a class="header" href="#1-既存のオブジェクトを改造する2つの方法">1. 既存のオブジェクトを改造する2つの方法</a></h3>
 <p>JavaScriptでは、すでに動いているオブジェクトに後から「新しいパーツ」を追加したり、「古いパーツ」を新しいものに取り替えたりできます。</p>
-<h4 id="①-直接ちょくせつ追加する"><a class="header" href="#①-直接ちょくせつ追加する"><strong>① 直接（ちょくせつ）追加する</strong></a></h4>
+<h4 id="a-追加する"><a class="header" href="#a-追加する">a) <strong>追加する</strong></a></h4>
 <p>特定の1人（1つのインスタンス）だけに、新しいプロパティやメソッドを追加します。</p>
 <ul>
 <li><strong>イメージ：</strong> 自分の自転車だけに、特別なステッカーを貼る。</li>
@@ -204,25 +199,7 @@ myCar.horn = function() {
 myCar.horn(); // 実行できる！
 
 </code></pre>
-<h4 id="②-プロトタイプを使って全員に追加する"><a class="header" href="#②-プロトタイプを使って全員に追加する"><strong>② プロトタイプを使って「全員」に追加する</strong></a></h4>
-<p>そのクラスから生まれた「全員」に、新しい機能を持たせます。</p>
-<ul>
-<li><strong>イメージ：</strong> マンションの住人全員が使える「共有のラウンジ」に、新しいテレビを置く。</li>
-<li><strong>書き方：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
-</ul>
-<pre><code class="language-javascript">// 全ての配列（Array）に「2倍にする」という新しい機能を追加してみる
-Array.prototype.double = function() {
-  return this.map(n =&gt; n * 2);
-};
-
-const numbers = [1, 2, 3];
-console.log(numbers.double()); // [2, 4, 6]
-
-</code></pre>
-<blockquote>
-<p><strong>注意：</strong> <code>Array</code> や <code>Object</code> などの標準（ひょうじゅん）の道具を勝手に改造するのは、他のプログラムとぶつかる可能性があるので、プロの世界では慎重（しんちょう）に行います。</p>
-</blockquote>
-<h4 id="③-オーバーライド上書きする"><a class="header" href="#③-オーバーライド上書きする"><strong>③ オーバーライド（上書き）する</strong></a></h4>
+<h4 id="b-オーバーライド上書きする"><a class="header" href="#b-オーバーライド上書きする">b) <strong>オーバーライド（上書き）する</strong></a></h4>
 <p>親から受け継いだ機能を、自分流のやり方に書き換えます。</p>
 <ul>
 <li><strong>イメージ：</strong> お父さんから譲り受けたカメラだけど、レンズを最新のものに交換して使いやすくする。</li>
@@ -245,7 +222,6 @@ const robo = new JapaneseRobot();
 robo.greet(); // 「こんにちは...」が出る
 
 </code></pre>
-<hr>
 <h3 id="2-留学生への例え話スマホのケースとアプリ"><a class="header" href="#2-留学生への例え話スマホのケースとアプリ">2. 留学生への例え話：スマホのケースとアプリ</a></h3>
 <blockquote>
 <p>「JavaScriptのオブジェクトは、一度作ったら終わりじゃないんだ。</p>
@@ -256,7 +232,6 @@ robo.greet(); // 「こんにちは...」が出る
 </ol>
 <p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんだ！」</p>
 </blockquote>
-<hr>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
@@ -270,15 +245,129 @@ robo.greet(); // 「こんにちは...」が出る
 </tbody>
 </table>
 </div>
-<hr>
 <h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
+<blockquote>
+<p>「改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあるんだ。
+特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておこうね！」</p>
+</blockquote>
+<p>いかがでしょうか？「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
+<hr>
+<h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
+<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく難しい山場です。</p>
+<p>留学生の方には、これを**「家系図（かけいず）」<strong>や</strong>「秘伝のレシピの受け継ぎ」**に例えて説明してあげると、イメージがしやすくなります。</p>
+<hr>
+<h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
+<p>一言でいうと、**「共通の予備（よび）パーツ」**です。</p>
+<p>JavaScriptでは、すべてのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる仕組みです。</p>
+<hr>
+<h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
+<p>「自分になければ親、親になければそのまた親…」と、<strong>さかのぼって探しに行く「鎖（くさり）」のようなつながり</strong> のことです。</p>
+<h4 id="身近な例え秘伝のカレーレシピ"><a class="header" href="#身近な例え秘伝のカレーレシピ"><strong>身近な例え：秘伝のカレーレシピ</strong></a></h4>
+<ol>
+<li><strong>あなた（インスタンス）：</strong> カレーを作ろうとします。</li>
+<li><strong>自分のキッチン：</strong> レシピがありません。</li>
+<li><strong>お父さんの家（プロトタイプ）：</strong> 「カレーのレシピある？」と聞きます。</li>
+<li><strong>おじいさんの家（親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。</li>
+<li><strong>ルーツ：</strong> 誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
+</ol>
+<hr>
+<h3 id="3-なぜこの仕組みがあるの"><a class="header" href="#3-なぜこの仕組みがあるの">3. なぜこの仕組みがあるの？</a></h3>
+<p>もし100人の学生オブジェクトを作るとき、全員に「自己紹介メソッド」を持たせると、メモリー（コンピューターの脳）をたくさん使ってしまいます。</p>
+<ul>
+<li><strong>プロトタイプを使わない：</strong> 全員が自分の辞書（じしょ）を持っている（重い！）</li>
+<li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを共有する（軽い！）</li>
+</ul>
+<hr>
+<h3 id="4-コードで見る探しに行く流れ"><a class="header" href="#4-コードで見る探しに行く流れ">4. コードで見る「探しに行く流れ」</a></h3>
+<pre><code class="language-javascript">const animal = {
+  eats: true
+};
+
+const dog = {
+  barks: true
+};
+
+// dog の親（プロトタイプ）を animal に設定
+Object.setPrototypeOf(dog, animal);
+
+console.log(dog.barks); // true (自分の中にある)
+console.log(dog.eats);  // true (自分にはないが、親にあるので借りてきた！)
+console.log(dog.fly);   // undefined (家系図を最後まで探したけど、どこにもない)
+
+</code></pre>
+<h3 id="5-留学生へのアドバイス__proto__-と-prototype"><a class="header" href="#5-留学生へのアドバイス__proto__-と-prototype">5. 留学生へのアドバイス：<code>__proto__</code> と <code>prototype</code></a></h3>
+<p>ここが一番混乱するポイントなので、こう教えてあげてください。</p>
+<blockquote>
+<p>「<strong><code>prototype</code></strong> は、**『子供たちに貸してあげる道具箱』<strong>のこと。
+<code>__proto__</code> は、</strong>『自分の親の道具箱をのぞく窓』<strong>のことだよ。
+名前は似ているけど、</strong>『貸す側』<strong>か</strong>『借りる側』**かの違いなんだ。まずはこれだけ覚えておけば大丈夫！」</p>
+</blockquote>
+<h3 id="まとめテーブル-1"><a class="header" href="#まとめテーブル-1">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>用語</th><th>やさしい日本語</th><th>英語のイメージ</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Prototype</strong></td><td>共通の道具箱 / 秘伝のレシピ</td><td>Blueprint / Shared assets</td></tr>
+<tr><td><strong>Prototype Chain</strong></td><td>先祖（せんぞ）をたどる鎖</td><td>Search link / DNA</td></tr>
+<tr><td><strong>Inheritance</strong></td><td>継承（親の機能を使えること）</td><td>Inheritance</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>「自分にないものは、先祖から借りればいい」。この考え方がJavaScriptの根本（こんぽん）にあります。</p>
+<h4 id="②-プロトタイプを使って全員に追加する"><a class="header" href="#②-プロトタイプを使って全員に追加する"><strong>② プロトタイプを使って「全員」に追加する</strong></a></h4>
+<p>そのプロトタイプから生まれた「全員」に、新しい機能を持たせます。</p>
+<ul>
+<li><strong>イメージ：</strong> マンションの住人全員が使える「共有のラウンジ」に、新しいテレビを置く。</li>
+<li><strong>書き方：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
+</ul>
+<pre><code class="language-javascript">// 全ての配列（Array）に「2倍にする」という新しい機能を追加してみる
+Array.prototype.double = function() {
+  return this.map(n =&gt; n * 2);
+};
+
+const numbers = [1, 2, 3];
+console.log(numbers.double()); // [2, 4, 6]
+
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> <code>Array</code> や <code>Object</code> などの標準（ひょうじゅん）の道具を勝手に改造するのは、他のプログラムとぶつかる可能性があるので、プロの世界では慎重（しんちょう）に行います。</p>
+</blockquote>
+<hr>
+<h3 id="2-留学生への例え話スマホのケースとアプリ-1"><a class="header" href="#2-留学生への例え話スマホのケースとアプリ-1">2. 留学生への例え話：スマホのケースとアプリ</a></h3>
+<blockquote>
+<p>「JavaScriptのオブジェクトは、一度作ったら終わりじゃないんだ。</p>
+<ol>
+<li><strong>直接追加：</strong> スマホに『お気に入りのストラップ』をつけるようなもの。そのスマホだけの特別。</li>
+<li><strong>プロトタイプ追加：</strong> OSをアップデートして『全員のスマホに新しい計算機アプリ』を入れるようなもの。</li>
+<li><strong>オーバーライド：</strong> 決まった『着信音（ちゃくしんおん）』を、自分の好きな音楽に変えるようなものだよ。</li>
+</ol>
+<p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんだ！」</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル-2"><a class="header" href="#まとめテーブル-2">まとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>改造（かいぞう）の名前</th><th>どうなる？</th><th>誰に影響（えいきょう）する？</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>プロパティ追加</strong></td><td>新しいデータを足す</td><td>そのオブジェクトだけ</td></tr>
+<tr><td><strong>メソッド追加</strong></td><td>新しい動きを足す</td><td>そのオブジェクト（または全員）</td></tr>
+<tr><td><strong>オーバーライド</strong></td><td>古い動きを新しい動きに変える</td><td>その子クラスから生まれた人全員</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-留学生へのアドバイス-1"><a class="header" href="#-留学生へのアドバイス-1">📝 留学生へのアドバイス</a></h3>
 <blockquote>
 <p>「改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあるんだ。
 特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておこうね！」</p>
 </blockquote>
 <hr>
 <p>いかがでしょうか？「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
-<p><strong>次は、これまで学んだ知識を使って「自分専用のオリジナル便利ツール（ライブラリの赤ちゃん）」を作ってみますか？</strong></p>
 
                     </main>
 
