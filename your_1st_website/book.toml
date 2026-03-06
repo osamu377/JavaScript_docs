@@ -7,3 +7,4 @@ language = "ja-JP"
 additional-js = ["src/assets/fzf.umd.js", "src/assets/elasticlunr.js"]
 
 [output.epub]
+cover-image = "Designer.png"
