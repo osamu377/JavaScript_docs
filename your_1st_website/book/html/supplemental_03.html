@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>ウェブサイトを動かすJavaScript - 初めてのウェブサイト</title>
+        <title>日本語キーボード上の記号 - 初めてのウェブサイト</title>
 
 
         <!-- Custom HTML head -->
@@ -174,102 +174,63 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="v-ウェブサイトを動うごかすjavascript"><a class="header" href="#v-ウェブサイトを動うごかすjavascript">V. ウェブサイトを<ruby>動<rt>うご</rt></ruby>かすJavaScript</a></h1>
-<p>ウェブサイトを<ruby>見<rt>み</rt></ruby>たときに、ボタンを<ruby>押<rt>お</rt></ruby>して<ruby>画面<rt>がめん</rt></ruby>が<ruby>変<rt>か</rt></ruby>わったり、<ruby>画像<rt>がぞう</rt></ruby>が<ruby>動<rt>うご</rt></ruby>いたりすることはありませんか？<br>それは「JavaScript」という<ruby>言葉<rt>ことば</rt></ruby>が<ruby>働<rt>はたら</rt></ruby>いているからです。</p>
-<p>このガイドでは、プログラミングが<ruby>初<rt>はじ</rt></ruby>めての<ruby>人<rt>ひと</rt></ruby>や、<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>中の<ruby>留学生<rt>りゅうがくせい</rt></ruby>にも<ruby>分<rt>わ</rt></ruby>かりやすく、JavaScriptの<ruby>基本<rt>きほん</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>します。</p>
-<hr>
-<h2 id="1-はじめにjavascriptとは何なにか"><a class="header" href="#1-はじめにjavascriptとは何なにか">1. はじめに：JavaScriptとは<ruby>何<rt>なに</rt></ruby>か</a></h2>
-<p>ウェブサイトを<ruby>作<rt>つく</rt></ruby>るとき、HTMLは「<ruby>骨組<rt>ほねぐ</rt></ruby>み」を、CSSは「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>ります。そこに「<ruby>動<rt>うご</rt></ruby>き」を<ruby>加<rt>くわ</rt></ruby>えるのがJavaScriptの<ruby>役割<rt>やくわり</rt></ruby>です。</p>
-<p>JavaScriptを<ruby>使<rt>つか</rt></ruby>うと、ユーザーの<ruby>操作<rt>そうさ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせてサイトの<ruby>表示<rt>ひょうじ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えることができます。<br>ただ<ruby>情報<rt>じょうほう</rt></ruby>を読むだけのページから、ユーザーといっしょに<ruby>動<rt>うご</rt></ruby>く「<ruby>体験<rt>たいけん</rt></ruby>」へと変えることができる、とても<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>技術<rt>ぎじゅつ</rt></ruby>です。</p>
-<p><strong>JavaScriptでできること</strong></p>
-<p>JavaScriptを<ruby>使<rt>つか</rt></ruby>って、<ruby>以<rt>い</rt></ruby>下のような<ruby>動<rt>うご</rt></ruby>きを<ruby>作<rt>つく</rt></ruby>ることができます：</p>
-<ul>
-<li>チェックする： フォームに<ruby>入力<rt>にゅうりょく</rt></ruby>されたデータが<ruby>正<rt>ただ</rt></ruby>しいか<ruby>確認<rt>かくにん</rt></ruby>します。</li>
-<li><ruby>動<rt>うご</rt></ruby>かす： ボタンをクリックしたときに、<ruby>何<rt>なに</rt></ruby>かを<ruby>実行<rt>じっこう</rt></ruby>します。</li>
-<li><ruby>計算<rt>けいさん</rt></ruby>する： ゲームの<ruby>点数<rt>てんすう</rt></ruby>や、<ruby>数字<rt>すうじ</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby>をおこないます。</li>
-<li>デザインを<ruby>変<rt>か</rt></ruby>える： スタイル（<ruby>色<rt>いろ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きさ）を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えます。</li>
-<li>アニメーション： <ruby>画像<rt>がぞう</rt></ruby>や<ruby>文字<rt>もじ</rt></ruby>をスムーズに<ruby>動<rt>うご</rt></ruby>かします。</li>
-</ul>
-<hr>
-<h2 id="2-プログラミングの基本きほんの道具箱どうぐばこ"><a class="header" href="#2-プログラミングの基本きほんの道具箱どうぐばこ">2. プログラミングの「<ruby>基本<rt>きほん</rt></ruby>の<ruby>道具箱<rt>どうぐばこ</rt></ruby>」</a></h2>
-<p>プログラムを<ruby>作<rt>つく</rt></ruby>るとは、いくつかの<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせて「<ruby>命令<rt>めいれい</rt></ruby>」をつくることです。JavaScriptを<ruby>動<rt>うご</rt></ruby>かす4つの<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>概念<rt>がいねん</rt></ruby>があります。</p>
-<ol>
-<li><ruby>変数<rt>へんすう</rt></ruby> (Variables)： データを<ruby>一時的<rt>いちじてき</rt></ruby>に<ruby>入<rt>い</rt></ruby>れておく「<ruby>入<rt>い</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>」。</li>
-<li><ruby>関数<rt>かんすう</rt></ruby> (Functions)： いくつかの<ruby>命令<rt>めいれい</rt></ruby>をまとめた<ruby>便利<rt>べんり</rt></ruby>なセット。</li>
-<li><ruby>条件分岐<rt>じょうけんぶんき</rt></ruby> (Conditionals)： 「もし〜ならA、そうでなければB」。</li>
-<li>イベント (Events)： 「クリックされた」などの<ruby>動作<rt>どうさ</rt></ruby>のきっかけ。</li>
-</ol>
-<hr>
-<h2 id="3-実践じっせんウェブサイトにjavascriptを入いれる"><a class="header" href="#3-実践じっせんウェブサイトにjavascriptを入いれる">3. <ruby>実践<rt>じっせん</rt></ruby>：ウェブサイトにJavaScriptを<ruby>入<rt>い</rt></ruby>れる</a></h2>
-<p>HTML、CSS、JavaScript の3つが<ruby>連携<rt>れんけい</rt></ruby>してページが<ruby>動<rt>うご</rt></ruby>きます。</p>
-<p><strong><ruby>設定<rt>せってい</rt></ruby>の<ruby>手順<rt>てじゅん</rt></ruby></strong></p>
-<ol>
-<li>scripts フォルダを作り、その中に main.js を作成します。</li>
-<li>HTMLファイルの <code>&lt;head&gt;</code> の終わる直前に次を<ruby>書<rt>か</rt></ruby>きます：</li>
-</ol>
-<pre><code class="language-html">&lt;script src="scripts/main.js"&gt;&lt;/script&gt;
-</code></pre>
-<ul>
-<li>CSSの <code>&lt;link&gt;</code> と同じ仕組みで、JavaScript を<ruby>読<rt>よ</rt></ruby>み込みます。</li>
-</ul>
-<p><strong><ruby>要素<rt>ようそ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んで<ruby>動<rt>うご</rt></ruby>かす</strong></p>
-<pre><code class="language-javascript">let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
-</code></pre>
-<ul>
-<li>1行目： <code>&lt;h1&gt;</code> を<ruby>選<rt>えら</rt></ruby>び、myHeading に<ruby>入<rt>い</rt></ruby>れます。</li>
-<li>2行目： textContent を “Hello world!” に<ruby>変<rt>か</rt></ruby>えます。</li>
-</ul>
-<p>ヒント： <code>//</code> で<ruby>書<rt>か</rt></ruby>いた<ruby>行<rt>ぎょう</rt></ruby>はコメントとして<ruby>無視<rt>むし</rt></ruby>されます。</p>
-<hr>
-<h2 id="4-応用おうよう画像がぞうチェンジャーと条件分岐じょうけんぶんき"><a class="header" href="#4-応用おうよう画像がぞうチェンジャーと条件分岐じょうけんぶんき">4. <ruby>応用<rt>おうよう</rt></ruby>：<ruby>画像<rt>がぞう</rt></ruby>チェンジャーと<ruby>条件分岐<rt>じょうけんぶんき</rt></ruby></a></h2>
-<p>クリックで<ruby>画像<rt>がぞう</rt></ruby>が入れ替わる仕組みです。</p>
-<p><strong><ruby>手順<rt>てじゅん</rt></ruby></strong></p>
-<ol>
-<li><ruby>画像<rt>がぞう</rt></ruby>を JavaScript で<ruby>選<rt>えら</rt></ruby>ぶ</li>
-<li>クリックされるのを待つ</li>
-<li>今の src を<ruby>確認<rt>かくにん</rt></ruby></li>
-<li>if 文で切り替える</li>
-</ol>
-<p><strong><ruby>実践<rt>じっせん</rt></ruby>コード</strong></p>
-<pre><code class="language-javascript">let myImage = document.querySelector('img');
-
-myImage.onclick = function() {
-  let mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/images/photo1.jpg') {
-    myImage.setAttribute('src', 'images/photo2.jpg');
-  } else {
-    myImage.setAttribute('src', 'images/photo1.jpg');
-  }
-}
-</code></pre>
-<ul>
-<li>myImage.onclick： クリック時のイベント</li>
-<li>getAttribute： 現在の src を調べる</li>
-<li>setAttribute： src を書き換える</li>
-<li>if…else： <ruby>条件<rt>じょうけん</rt></ruby>で<ruby>処理<rt>しょり</rt></ruby>を切り替え</li>
-</ul>
-<hr>
-<h2 id="6-まとめまとめと次つぎのステップ"><a class="header" href="#6-まとめまとめと次つぎのステップ">6. <ruby>まとめ<rt>まとめ</rt></ruby>と<ruby>次<rt>つぎ</rt></ruby>のステップ</a></h2>
-<p>お<ruby>疲<rt>つか</rt></ruby>れさまでした！これでJavaScriptの<ruby>基礎<rt>きそ</rt></ruby>を学びました。</p>
-<ul>
-<li>HTML/CSS： ページの<ruby>土台<rt>どだい</rt></ruby>と<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby></li>
-<li>JavaScript： <ruby>動<rt>うご</rt></ruby>きを加える<ruby>技術<rt>ぎじゅつ</rt></ruby></li>
-</ul>
-<p>JavaScript は ゆっくり学べば確実に身につきます。<br>MDNの教材（日本語 / 英語）もとても良い参考になります。</p>
-<p>少しずつ練習して、ぜひあなたのオリジナルの<ruby>動<rt>うご</rt></ruby>くウェブサイトを<ruby>作<rt>つく</rt></ruby>ってください！</p>
+                        <h1 id="記号きごうについて"><a class="header" href="#記号きごうについて"><ruby>記号<rt>きごう</rt></ruby>について</a></h1>
+<h2 id="日本語にほんごキーボード上じょうの記号きごう"><a class="header" href="#日本語にほんごキーボード上じょうの記号きごう"><ruby>日本語<rt>にほんご</rt></ruby>キーボード<ruby>上<rt>じょう</rt></ruby>の<ruby>記号<rt>きごう</rt></ruby></a></h2>
+<p><img src="img/jkbd.JPG" alt="日本語キーボード"></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>図の<ruby>上<rt>うえ</rt></ruby>の<ruby>番号<rt>ばんごう</rt></ruby></th><th><ruby>普通<rt>ふつう</rt></ruby>に<ruby>押<rt>お</rt></ruby>す</th><th>Shiftと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>押<rt>お</rt></ruby>す</th></tr>
+</thead>
+<tbody>
+<tr><td><code>1</code></td><td><code>1</code></td><td><code>!</code> エクスクラメーション マーク / びっくりマーク</td></tr>
+<tr><td><code>2</code></td><td><code>2</code></td><td><code>"</code> ダブル クォート</td></tr>
+<tr><td><code>3</code></td><td><code>3</code></td><td><code>#</code> <ruby>井桁<rt>いげた</rt></ruby> / シャープ</td></tr>
+<tr><td><code>4</code></td><td><code>4</code></td><td><code>$</code> ドル</td></tr>
+<tr><td><code>5</code></td><td><code>5</code></td><td><code>%</code> パーセント</td></tr>
+<tr><td><code>6</code></td><td><code>6</code></td><td><code>&amp;amp;</code> アンド / アンパサンド</td></tr>
+<tr><td><code>7</code></td><td><code>7</code></td><td><code>'</code> シングル クォート</td></tr>
+<tr><td><code>8</code></td><td><code>8</code></td><td><code>(</code> かっこ<ruby>開<rt>ひら</rt></ruby>く</td></tr>
+<tr><td><code>9</code></td><td><code>9</code></td><td><code>)</code> かっこ<ruby>閉<rt>と</rt></ruby>じる</td></tr>
+<tr><td><code>10</code></td><td><code>0</code></td><td>(なし)</td></tr>
+<tr><td><code>11</code></td><td><code>-</code> ハイフン / マイナス</td><td><code>=</code> イコール</td></tr>
+<tr><td><code>12</code></td><td><code>^</code> ハット</td><td><code>~</code> チルダ</td></tr>
+<tr><td><code>13</code></td><td><code>\</code> バックスラッシュ / <code>¥</code> <ruby>円<rt>えん</rt></ruby>マーク</td><td><code>|</code> パイプ</td></tr>
+<tr><td><code>14</code></td><td><code>@</code> アットマーク</td><td><code>`</code> バッククォート</td></tr>
+<tr><td><code>15</code></td><td><code>[</code> <ruby>大<rt>おお</rt></ruby>かっこ<ruby>開<rt>ひら</rt></ruby>く / <ruby>角<rt>かく</rt></ruby>かっこ<ruby>開<rt>ひら</rt></ruby>く</td><td><code>{</code> <ruby>中<rt>なか</rt></ruby>かっこ<ruby>開<rt>ひら</rt></ruby>く / <ruby>波<rt>なみ</rt></ruby>かっこ<ruby>開<rt>ひら</rt></ruby>く</td></tr>
+<tr><td><code>16</code></td><td><code>;</code> セミコロン</td><td><code>+</code> プラス</td></tr>
+<tr><td><code>17</code></td><td><code>:</code> コロン</td><td><code>*</code> アスタリスク</td></tr>
+<tr><td><code>18</code></td><td><code>]</code> <ruby>大<rt>おお</rt></ruby>かっこ<ruby>閉<rt>と</rt></ruby>じる / <ruby>角<rt>かく</rt></ruby>かっこ<ruby>閉<rt>と</rt></ruby>じる</td><td><code>}</code> <ruby>中<rt>なか</rt></ruby>かっこ<ruby>閉<rt>と</rt></ruby>じる / <ruby>波<rt>なみ</rt></ruby>かっこ<ruby>閉<rt>と</rt></ruby>じる</td></tr>
+<tr><td><code>19</code></td><td><code>,</code> カンマ / コンマ</td><td><code>&amp;lt;</code> <ruby>小<rt>しょう</rt></ruby>なり</td></tr>
+<tr><td><code>20</code></td><td><code>.</code> ピリオド / ドット</td><td><code>&amp;gt;</code> <ruby>大<rt>だい</rt></ruby>なり</td></tr>
+<tr><td><code>21</code></td><td><code>/</code> スラッシュ</td><td><code>?</code> クエッション マーク / はてなマーク</td></tr>
+<tr><td><code>22</code></td><td><code>\</code> バックスラッシュ / <code>¥</code> <ruby>円<rt>えん</rt></ruby>マーク</td><td><code>_</code> アンダースコア / アンダーバー</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="日本語にほんごのかっこの種類しゅるいと呼よび方かた"><a class="header" href="#日本語にほんごのかっこの種類しゅるいと呼よび方かた"><ruby>日本語<rt>にほんご</rt></ruby>のかっこの<ruby>種類<rt>しゅるい</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby></a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>かっこの<ruby>種類<rt>しゅるい</rt></ruby></th><th><ruby>日本語<rt>にほんご</rt></ruby>の<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby></th><th><ruby>英語<rt>えいご</rt></ruby>の<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>()</code></td><td><ruby>小<rt>しょう</rt></ruby>かっこ / <ruby>丸<rt>まる</rt></ruby>かっこ / かっこ</td><td>parenthesis パーレンセシス<br>paren パーレン<br>round brackets</td></tr>
+<tr><td><code>[]</code></td><td><ruby>大<rt>おお</rt></ruby>かっこ / <ruby>角<rt>かく</rt></ruby>かっこ</td><td>bracket ブラケット<br>square bracket</td></tr>
+<tr><td><code>{}</code></td><td><ruby>中<rt>なか</rt></ruby>かっこ / <ruby>波<rt>なみ</rt></ruby>かっこ</td><td>brace ブレース<br>curly brace / curly bracket</td></tr>
+<tr><td><code>&lt;&gt;</code></td><td><ruby>山<rt>やま</rt></ruby>かっこ<br><ruby>小<rt>しょう</rt></ruby>なり/<ruby>大<rt>だい</rt></ruby>なり</td><td>angle bracket<br>less-than sign/greater-than sign</td></tr>
+</tbody>
+</table>
+</div>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="chapter_4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="supplemental_02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="supplemental_0.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -277,13 +238,10 @@ myImage.onclick = function() {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="chapter_4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="supplemental_02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="supplemental_0.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                    </a>
             </nav>
 
         </div>

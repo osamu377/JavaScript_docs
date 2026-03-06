@@ -1,112 +1,111 @@
 # I. はじめてのウェブサイト
 
-## 1. はじめに：ウェブ開発の世界へようこそ
+## 1. はじめに：ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へようこそ
 
-みなさん、こんにちは！ ウェブサイトを作ってみたいと思ったことはありますか？ 今の社会では、自分の考えや情報を世界に伝えるために、ウェブサイトを作る技術はとても大きな力になります。
+みなさん、こんにちは！ ウェブサイトを<ruby>作<rt>つく</rt></ruby>ってみたいと<ruby>思<rt>おも</rt></ruby>ったことはありますか？ <ruby>今<rt>いま</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>では、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>えや<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えるために、ウェブサイトを<ruby>作<rt>つく</rt></ruby>る<ruby>技術<rt>ぎじゅつ</rt></ruby>はとても<ruby>大<rt>おお</rt></ruby>きな<ruby>力<rt>ちから</rt></ruby>になります。
 
-特に留学生のみなさんにとって、ウェブサイトは「言葉の壁（かべ）」をこえるための強い味方です。完全な日本語を話すのが難しくても、ウェブサイトなら写真やデザイン、図を使って、あなたの魅力（みりょく）や才能を視覚（しかく）的に伝えることができます。
+<ruby>特<rt>とく</rt></ruby>に<ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさんにとって、ウェブサイトは「<ruby>言葉<rt>ことば</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>」をこえるための<ruby>強<rt>つよ</rt></ruby>い<ruby>味方<rt>みかた</rt></ruby>です。<ruby>完全<rt>かんぜん</rt></ruby>な<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>すのが<ruby>難<rt>むずか</rt></ruby>しくても、ウェブサイトなら<ruby>写真<rt>しゃしん</rt></ruby>やデザイン、<ruby>図<rt>ず</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、あなたの<ruby>魅力<rt>みりょく</rt></ruby>や<ruby>才能<rt>さいのう</rt></ruby>を<ruby>視覚<rt>しかく</rt></ruby><ruby>的<rt>てき</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えることができます。
 
-「ウェブ開発（かいはつ）はむずかしそう……」と感じるかもしれません。確かに、Facebook（フェイスブック）のような複雑なサイトを、いきなり一人で作ることは難しいです。しかし、安心してください。自分だけのシンプルなウェブサイトなら、少しずつ進むことで、誰でも作ることができます。
+「ウェブ<ruby>開発<rt>かいはつ</rt></ruby>はむずかしそう……」と<ruby>感<rt>かん</rt></ruby>じるかもしれません。<ruby>確<rt>たし</rt></ruby>かに、Facebook（フェイスブック）のような<ruby>複雑<rt>ふくざつ</rt></ruby>なサイトを、いきなり<ruby>一人<rt>ひとり</rt></ruby>で<ruby>作<rt>つく</rt></ruby>ることは<ruby>難<rt>むずか</rt></ruby>しいです。しかし、<ruby>安心<rt>あんしん</rt></ruby>してください。<ruby>自分<rt>じぶん</rt></ruby>だけのシンプルなウェブサイトなら、<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>進<rt>すす</rt></ruby>むことで、<ruby>誰<rt>だれ</rt></ruby>でも<ruby>作<rt>つく</rt></ruby>ることができます。
 
-このガイドでは、ウェブサイトがどのように動いているのか、そしてどうすれば自分の作品を世界に広めることができるのかを、やさしく解説します。自分で情報を広める力を身につけることは、将来の仕事や自分を表現するために、必ず素晴らしいプラスになるはずです。
+このガイドでは、ウェブサイトがどのように<ruby>動<rt>うご</rt></ruby>いているのか、そしてどうすれば<ruby>自分<rt>じぶん</rt></ruby>の<ruby>作品<rt>さくひん</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>めることができるのかを、やさしく<ruby>解説<rt>かいせつ</rt></ruby>します。<ruby>自分<rt>じぶん</rt></ruby>で<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>める<ruby>力<rt>ちから</rt></ruby>を<ruby>身<rt>み</rt></ruby>につけることは、<ruby>将来<rt>しょうらい</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>や<ruby>自分<rt>じぶん</rt></ruby>を<ruby>表現<rt>ひょうげん</rt></ruby>するために、<ruby>必<rt>かなら</rt></ruby>ず<ruby>素晴<rt>すば</rt></ruby>らしいプラスになるはずです。
 
-準備はいいですか？ まずは、スタートするために必要なものを確認しましょう。
+<ruby>準備<rt>じゅんび</rt></ruby>はいいですか？ まずは、スタートするために<ruby>必要<rt>ひつよう</rt></ruby>なものを<ruby>確認<rt>かくにん</rt></ruby>しましょう。
 
 > [!note]
-> この資料はMDNの<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website">「Your first website」</a>をやさしい日本語にしたものです。
+> この<ruby>資料<rt>しりょう</rt></ruby>はMDNの<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website">「Your first website」</a>をやさしい<ruby>日本語<rt>にほんご</rt></ruby>にしたものです。
 
 
 --------------------------------------------------------------------------------
 
 
-## 2. 準備するもの：スタートラインに立つ
+## 2. <ruby>準備<rt>じゅんび</rt></ruby>するもの：スタートラインに<ruby>立<rt>た</rt></ruby>つ
 
-実際にコード（コンピュータへの命令）を書き始める前に、自分のコンピュータで作業ができる準備をすることが大切です。これを「環境構築（かんきょうこうちく / パソコンでサイトを作るための準備）」と呼びます。
+<ruby>実際<rt>じっさい</rt></ruby>にコード（コンピュータへの<ruby>命令<rt>めいれい</rt></ruby>）を<ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>める<ruby>前<rt>まえ</rt></ruby>に、<ruby>自分<rt>じぶん</rt></ruby>のコンピュータで<ruby>作業<rt>さぎょう</rt></ruby>ができる<ruby>準備<rt>じゅんび</rt></ruby>をすることが<ruby>大切<rt>たいせつ</rt></ruby>です。これを「<ruby>環境<rt>かんきょう</rt></ruby><ruby>構築<rt>こうちく</rt></ruby> / パソコンでサイトを<ruby>作<rt>つく</rt></ruby>るための<ruby>準備<rt>じゅんび</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>びます。
 
-まず、以下の3つのことがスムーズにできるか確認してください。
+まず、<ruby>以下<rt>いか</rt></ruby>の3つのことがスムーズにできるか<ruby>確認<rt>かくにん</rt></ruby>してください。
 
-1. OS（オペレーティングシステム）の操作： WindowsやmacOSなどの基本的な使い方がわかる。
-2. ファイルシステムの理解： ファイルを保存したり、フォルダを作って整理したりできる。
-3. ブラウザの利用： インターネットで検索（けんさく）をしたり、サイトを見たりできる。
+1. OS（オペレーティングシステム）の<ruby>操作<rt>そうさ</rt></ruby>： WindowsやmacOSなどの<ruby>基本<rt>きほん</rt></ruby>的な<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がわかる。
+2. ファイルシステムの<ruby>理解<rt>りかい</rt></ruby>： ファイルを<ruby>保存<rt>ほぞん</rt></ruby>したり、フォルダを<ruby>作<rt>つく</rt></ruby>って<ruby>整理<rt>せいり</rt></ruby>したりできる。
+3. ブラウザの<ruby>利用<rt>りよう</rt></ruby>： インターネットで<ruby>検索<rt>けんさく</rt></ruby>をしたり、サイトを<ruby>見<rt>み</rt></ruby>たりできる。
 
 > [!note]
-> 「2. ファイルシステムの理解」に自信のない人は、補足（ほそく）資料（しりょう）集の「ファイルとフォルダの基本」を見てください
+> 「2. ファイルシステムの<ruby>理解<rt>りかい</rt></ruby>」に<ruby>自信<rt>じしん</rt></ruby>のない<ruby>人<rt>ひと</rt></ruby>は、<ruby>補足<rt>ほそく</rt></ruby><ruby>資料<rt>しりょう</rt></ruby><ruby>集<rt>しゅう</rt></ruby>の「ファイルとフォルダの<ruby>基本<rt>きほん</rt></ruby>」を<ruby>見<rt>み</rt></ruby>てください
 
-次に、以下の「道具」を用意しましょう。
+<ruby>次<rt>つぎ</rt></ruby>に、<ruby>以下<rt>いか</rt></ruby>の「<ruby>道具<rt>どうぐ</rt></ruby>」を<ruby>用意<rt>ようい</rt></ruby>しましょう。
 
-* コードエディター： プログラムのコードを書くための専用ソフトです。Visual Studio Codeを使います。すでに皆さんのPCにインストールされています。
-* ウェブブラウザ： 主にGoogle Chrome を使います。こちらもんストール済みです。
+* コードエディター： プログラムのコードを<ruby>書<rt>か</rt></ruby>くための<ruby>専用<rt>せんよう</rt></ruby>ソフトです。Visual Studio Codeを<ruby>使<rt>つか</rt></ruby>います。すでに<ruby>皆<rt>みな</rt></ruby>さんのPCにインストールされています。
+* ウェブブラウザ： <ruby>主<rt>おも</rt></ruby>にGoogle Chrome を<ruby>使<rt>つか</rt></ruby>います。こちらもんストール<ruby>済<rt>ず</rt></ruby>みです。
 
-道具がそろったら、次は「どんなサイトを作るか」という計画を立てるステップです。
+<ruby>道具<rt>どうぐ</rt></ruby>がそろったら、<ruby>次<rt>つぎ</rt></ruby>は「どんなサイトを<ruby>作<rt>つく</rt></ruby>るか」という<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるステップです。
 
 
 --------------------------------------------------------------------------------
 
 
-## 3. 計画を立てる：サイトの見た目を決める
+## 3. <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる：サイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を<ruby>決<rt>き</rt></ruby>める
 
-いきなりコードを書き始めるのは、設計図なしで家を建てるようなものです。まずは「計画」から始めましょう。最初にしっかり計画を立てることで、作業の途中で迷わなくなり、結果として「情報の整理された見やすいサイト」を作ることができます。
+いきなりコードを<ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めるのは、<ruby>設計図<rt>せっけいず</rt></ruby>なしで<ruby>家<rt>いえ</rt></ruby>を<ruby>建<rt>た</rt></ruby>てるようなものです。まずは「<ruby>計画<rt>けいかく</rt></ruby>」から<ruby>始<rt>はじ</rt></ruby>めましょう。<ruby>最初<rt>さいしょ</rt></ruby>にしっかり<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てることで、<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>迷<rt>まよ</rt></ruby>わなくなり、<ruby>結果<rt>けっか</rt></ruby>として「<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>整理<rt>せいり</rt></ruby>された<ruby>見<rt>み</rt></ruby>やすいサイト」を<ruby>作<rt>つく</rt></ruby>ることができます。
 
-計画を立てるときは、以下のポイントを整理してみてください。
+<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるときは、<ruby>以下<rt>いか</rt></ruby>のポイントを<ruby>整理<rt>せいり</rt></ruby>してみてください。
 
-* どんな情報を載せるか： 誰に、何を伝えたいですか？（自己紹介、趣味の紹介など）
-* どんなフォントや色を使うか： 明るいイメージですか？ それともクールで落ち着いたイメージですか？
+* どんな<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>載<rt>の</rt></ruby>せるか： <ruby>誰<rt>だれ</rt></ruby>に、<ruby>何<rt>なに</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたいですか？（<ruby>自己紹介<rt>じこしょうかい</rt></ruby>、<ruby>趣味<rt>しゅみ</rt></ruby>の<ruby>紹介<rt>しょうかい</rt></ruby>など）
+* どんなフォントや<ruby>色<rt>いろ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うか： <ruby>明<rt>あか</rt></ruby>るいイメージですか？ それともクールで<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いたイメージですか？
 
-見た目のイメージが固まったら、いよいよサイトの「中身（文章）」と「形」を作っていく段階に入ります。
+<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージが<ruby>固<rt>かた</rt></ruby>まったら、いよいよサイトの「<ruby>中身<rt>なかみ</rt></ruby>（<ruby>文章<rt>ぶんしょう</rt></ruby>）」と「<ruby>形<rt>かたち</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>っていく<ruby>段階<rt>だんかい</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ります。
 
 > [!note]
-> 見た目（みため）: 外から見た物事（ものごと）のありさま 
-> （例 その車は **見た目** は美しいが中身は壊れている）
+> <ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>: <ruby>外<rt>そと</rt></ruby>から<ruby>見<rt>み</rt></ruby>た<ruby>物事<rt>ものごと</rt></ruby>のありさま 
+> （<ruby>例<rt>れい</rt></ruby> その<ruby>車<rt>くるま</rt></ruby>は **<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>** は<ruby>美<rt>うつく</rt></ruby>しいが<ruby>中身<rt>なかみ</rt></ruby>は<ruby>壊<rt>こわ</rt></ruby>れている）
 
 
 --------------------------------------------------------------------------------
 
 
-## 4. サイトの「3つの要素」：HTML、CSS、JavaScript
+## 4. サイトの「3つの<ruby>要素<rt>ようそ</rt></ruby>」：HTML、CSS、JavaScript
 
-ウェブサイトは、主に3つの技術が組み合わさってできています。これを「家づくり」に例えて見てみましょう。
+ウェブサイトは、<ruby>主<rt>おも</rt></ruby>に3つの<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わさってできています。これを「<ruby>家<rt>いえ</rt></ruby>づくり」に<ruby>例<rt>たと</rt></ruby>えて<ruby>見<rt>み</rt></ruby>てみましょう。
 
-|技術名|役割（家の例え）|詳しい説明|
+|<ruby>技術名<rt>ぎじゅつめい</rt></ruby>|<ruby>役割<rt>やくわり</rt></ruby>（<ruby>家<rt>いえ</rt></ruby>の<ruby>例<rt>たと</rt></ruby>え）|<ruby>詳<rt>くわ</rt></ruby>しい<ruby>説明<rt>せつめい</rt></ruby>|
 |---|---|---|
-|HTML|構造|段落、リスト、画像など、コンテンツの「意味」や「土台」を作ります。|
-|CSS|見た目（かざり）|色、サイズ、配置、背景など、サイトを「美しく」整えます。|
-|JavaScript|動き|ボタンの反応、アニメーション、ゲームなど「便利な機能」を加えます。|
+|HTML|<ruby>構造<rt>こうぞう</rt></ruby>|<ruby>段落<rt>だんらく</rt></ruby>、リスト、<ruby>画像<rt>がぞう</rt></ruby>など、コンテンツの「<ruby>意味<rt>いみ</rt></ruby>」や「<ruby>土台<rt>どだい</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>ります。|
+|CSS|<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（かざり）|<ruby>色<rt>いろ</rt></ruby>、サイズ、<ruby>配置<rt>はいち</rt></ruby>、<ruby>背景<rt>はいけい</rt></ruby>など、サイトを「<ruby>美<rt>うつく</rt></ruby>しく」<ruby>整<rt>ととの</rt></ruby>えます。|
+|JavaScript|<ruby>動<rt>うご</rt></ruby>き|ボタンの<ruby>反応<rt>はんのう</rt></ruby>、アニメーション、ゲームなど「<ruby>便利<rt>べんり</rt></ruby>な<ruby>機能<rt>きのう</rt></ruby>」を<ruby>加<rt>くわ</rt></ruby>えます。|
 
-これらの技術は、どれか一つ欠けてもうまくいきません。たとえば、HTMLだけでは文字が並んでいるだけで読みにくく、CSSがないとデザインがバラバラになります。また、JavaScriptがないと動きのない静かなサイトになってしまいます。
+これらの<ruby>技術<rt>ぎじゅつ</rt></ruby>は、どれか<ruby>一<rt>ひと</rt></ruby>つ<ruby>欠<rt>か</rt></ruby>けてもうまくいきません。たとえば、HTMLだけでは<ruby>文字<rt>もじ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいるだけで<ruby>読<rt>よ</rt></ruby>みにくく、CSSがないとデザインがバラバラになります。また、JavaScriptがないと<ruby>動<rt>うご</rt></ruby>きのない<ruby>静<rt>しず</rt></ruby>かなサイトになってしまいます。
 
-これらを正しく組み合わせることで、ユーザーにとって「読みやすく」「使いやすく」「楽しい」ウェブサイトが完成するのです。
-
-> [!note]
-> 段落（だんらく）：長い文章を内容などから分けた、言葉の集まり
+これらを<ruby>正<rt>ただ</rt></ruby>しく<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせることで、ユーザーにとって「<ruby>読<rt>よ</rt></ruby>みやすく」「<ruby>使<rt>つか</rt></ruby>いやすく」「<ruby>楽<rt>たの</rt></ruby>しい」ウェブサイトが<ruby>完成<rt>かんせい</rt></ruby>するのです。
 
 > [!note]
-> リスト：複数の項目や要素を集めたもの
+> <ruby>段落<rt>だんらく</rt></ruby>：<ruby>長<rt>なが</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>内容<rt>ないよう</rt></ruby>などから<ruby>分<rt>わ</rt></ruby>けた、<ruby>言葉<rt>ことば</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まり
 
 > [!note]
-> 画像（がぞう）：写真や絵など
+> リスト：<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>項目<rt>こうもく</rt></ruby>や<ruby>要素<rt>ようそ</rt></ruby>を<ruby>集<rt>あつ</rt></ruby>めたもの
+
+> [!note]
+> <ruby>画像<rt>がぞう</rt></ruby>：<ruby>写真<rt>しゃしん</rt></ruby>や<ruby>絵<rt>え</rt></ruby>など
 
 
 
 --------------------------------------------------------------------------------
 
 
-## 5. 世界へ公開する：パブリッシング
+## 5. <ruby>世界<rt>せかい</rt></ruby>へ<ruby>公開<rt>こうかい</rt></ruby>する：パブリッシング
 
-自分のパソコンで作ったファイルは、そのままでは自分にしか見ることができません。これをインターネット上にアップロードして、世界中の誰でも見られる状態にすることを「公開（パブリッシング）」と言います。
+<ruby>自分<rt>じぶん</rt></ruby>のパソコンで<ruby>作<rt>つく</rt></ruby>ったファイルは、そのままでは<ruby>自分<rt>じぶん</rt></ruby>にしか<ruby>見<rt>み</rt></ruby>ることができません。これをインターネット<ruby>上<rt>じょう</rt></ruby>にアップロードして、<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>誰<rt>だれ</rt></ruby>でも<ruby>見<rt>み</rt></ruby>られる<ruby>状態<rt>じょうたい</rt></ruby>にすることを「<ruby>公開<rt>こうかい</rt></ruby>（パブリッシング）」と<ruby>言<rt>い</rt></ruby>います。
 
-公開の手順をシンプルにまとめると、以下のようになります。
+<ruby>公開<rt>こうかい</rt></ruby>の<ruby>手順<rt>てじゅん</rt></ruby>をシンプルにまとめると、<ruby>以下<rt>いか</rt></ruby>のようになります。
 
-1. コードを書き終える： HTML、CSS、JavaScriptを完成させます。
-2. ファイルを整理する： 画像やコードのファイルを正しいフォルダにまとめます。
-3. オンラインにアップロードする： 「サーバー」と呼ばれる、インターネット上の場所へファイルを送ります。
+1. コードを<ruby>書<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>える： HTML、CSS、JavaScriptを<ruby>完成<rt>かんせい</rt></ruby>させます。
+2. ファイルを<ruby>整理<rt>せいり</rt></ruby>する： <ruby>画像<rt>がぞう</rt></ruby>やコードのファイルを<ruby>正<rt>ただ</rt></ruby>しいフォルダにまとめます。
+3. オンラインにアップロードする： 「サーバー」と<ruby>呼<rt>よ</rt></ruby>ばれる、インターネット<ruby>上<rt>じょう</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>へファイルを<ruby>送<rt>おく</rt></ruby>ります。
 
 > [!note]
-> 授業では、このステップは実施しません。興味のある方は、<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">ここをクリック</a>してMDNの関連サイトを参照してください。
+> <ruby>授業<rt>じゅぎょう</rt></ruby>では、このステップは<ruby>実施<rt>じっし</rt></ruby>しません。<ruby>興味<rt>きょうみ</rt></ruby>のある<ruby>方<rt>かた</rt></ruby>は、<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">ここをクリック</a>してMDNの<ruby>関連<rt>かんれん</rt></ruby>サイトを<ruby>参照<rt>さんしょう</rt></ruby>してください。
 
 --------------------------------------------------------------------------------
 
 
-## 6. まとめと次のステップ
+## 6. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
 
-ここまで、ウェブサイト制作の全体像を見てきました。ウェブ開発の学習は、一度で完璧（かんぺき）にする必要はありません。小さな「できた！」を積み重ね（つみかさね）ていくプロセスそのものが大切です。
-
+ここまで、ウェブサイト<ruby>制作<rt>せいさく</rt></ruby>の<ruby>全体像<rt>ぜんたいぞう</rt></ruby>を<ruby>見<rt>み</rt></ruby>てきました。ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>学習<rt>がくしゅう</rt></ruby>は、<ruby>一度<rt>いちど</rt></ruby>で<ruby>完璧<rt>かんぺき</rt></ruby>にする<ruby>必要<rt>ひつよう</rt></ruby>はありません。<ruby>小<rt>ちい</rt></ruby>さな「できた！」を<ruby>積<rt>つ</rt></ruby>み<ruby>重<rt>かさ</rt></ruby>ねていくプロセスそのものが<ruby>大切<rt>たいせつ</rt></ruby>です。
