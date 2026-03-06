@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b133056f.js";
+            window.path_to_searchindex_js = "searchindex-ee31730e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-768ab124.js"></script>
+        <script src="toc-8186ac84.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -4577,383 +4577,78 @@ console.log(`イベントまであと ${diffDays} 日です！`);
 <p>いかがでしょうか？「自分でカレンダーをめくらなくていい」というメリットが伝われば、日付の計算が楽しくなりますよ。</p>
 <p>So What?（なぜ大切なの？） これらの組み込みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、開発スピードを劇的に速めることができます。</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="正規表現"><a class="header" href="#正規表現">正規表現</a></h1>
-<p>プログラミングを勉強していると必ず出会う、呪文のような記号の羅列（られつ）。それが「正規（せいき）表現（ひょうげん）」です。英語で “Regular Expression” と言います。</p>
-<p>JavaScriptでは、<strong>RegExp（レグエクスプ）</strong> オブジェクトを使います。</p>
-<p>RegExpは <strong>「魔法の虫めがね」</strong> です。たくさんの文字の中から、自分の探したい「パターン」だけをピカッと光らせて見つけることができます。</p>
+<h1 id="数学オブジェクト"><a class="header" href="#数学オブジェクト">数学オブジェクト</a></h1>
+<p>JavaScriptを学習中の皆さん、こんにちは！
+今日は、JavaScriptの中で <strong>「計算の天才（てんさい）」</strong> として活躍する <strong><code>Math</code> オブジェクト</strong> について説明します。</p>
+<p><code>Math</code>オブジェクトは <strong>「数学（すうがく）の道具箱（どうぐばこ）」</strong> です。自分で難しい計算式を書かなくても、この道具箱を開ければすぐに答えが出てきます。</p>
 <hr>
-<h2 id="i-正規表現ってなに"><a class="header" href="#i-正規表現ってなに">I. 「正規表現」ってなに？</a></h2>
-<p>普通の検索（<code>indexOf</code> など）は、「特定の言葉」を探します。
-RegExpは、<strong>「言葉のルール（パターン）」</strong> を探します。</p>
+<h2 id="i-mathオブジェクトの特徴"><a class="header" href="#i-mathオブジェクトの特徴">I. <code>Math</code>オブジェクトの特徴</a></h2>
+<p>他のオブジェクト（<code>Date</code>など）と違って、<code>Math</code>オブジェクトは <strong><code>new</code> を使って作る必要がありません。</strong></p>
+<p>ブラウザの中に最初から「数学の専門家」として座っているので、いきなり <code>Math.〜</code> と呼び出すだけで仕事をしてくれます。</p>
+<hr>
+<h2 id="ii-よく使う4つの道具メソッド"><a class="header" href="#ii-よく使う4つの道具メソッド">II. よく使う「4つの道具（メソッド）」</a></h2>
+<p>これだけ覚えれば、日常のプログラミングで困ることはありません。</p>
+<h3 id="①-mathrandomサイコロを振る"><a class="header" href="#①-mathrandomサイコロを振る"><strong>① <code>Math.random()</code>：サイコロを振る</strong></a></h3>
+<p>0から1の間で、バラバラな数字（乱数）を作ります。</p>
 <ul>
-<li><strong>普通の検索：</strong> 「『田中』さんを探して」</li>
-<li><strong>RegExp：</strong> 「『数字が3つ、ハイフン、数字が4つ』の形（電話番号）を探して」</li>
+<li><strong>使い道：</strong> ゲームのダメージ計算、おみくじ、ラッキーカラーなど。</li>
+<li><strong>イメージ：</strong> ガラガラ抽選器（ちゅうせんき）を回す。</li>
 </ul>
-<p>このように、あやふやなルールで検索できるのがすごいところです。</p>
+<h3 id="②-mathround四捨五入ししゃごにゅう"><a class="header" href="#②-mathround四捨五入ししゃごにゅう"><strong>② <code>Math.round()</code>：四捨五入（ししゃごにゅう）</strong></a></h3>
+<p>小数点以下が <code>.5</code> 以上なら切り上げ、<code>.4</code> 以下なら切り捨てます。</p>
+<ul>
+<li><strong>使い道：</strong> 平均点（へいきんてん）をきれいな数字にするとき。</li>
+</ul>
+<h3 id="③-mathceil-と-mathfloor天井てんじょうと床ゆか"><a class="header" href="#③-mathceil-と-mathfloor天井てんじょうと床ゆか"><strong>③ <code>Math.ceil()</code> と <code>Math.floor()</code>：天井（てんじょう）と床（ゆか）</strong></a></h3>
+<ul>
+<li><strong><code>Math.ceil()</code>（切り上げ）：</strong> 小数点があれば、上の数字へジャンプ！</li>
+<li><strong><code>Math.floor()</code>（切り捨て）：</strong> 小数点を消して、下の数字へダウン！</li>
+<li><strong>覚え方：</strong> <code>Ceiling</code> は天井、<code>Floor</code> は床という意味です。</li>
+</ul>
 <hr>
-<h2 id="ii-regexpオブジェクトの作り方"><a class="header" href="#ii-regexpオブジェクトの作り方">II. RegExpオブジェクトの作り方</a></h2>
-<p>2つの書き方がありますが、よく使われるのは <strong><code>/ /</code>（スラッシュ）</strong> で囲む方法です。</p>
-<pre><code class="language-javascript">// 1. スラッシュで囲む（リテラル） ★おすすめ
-const pattern1 = /abc/;
+<h2 id="iii-コードで見てみよう"><a class="header" href="#iii-コードで見てみよう">III. コードで見てみよう！</a></h2>
+<p>留学生と一緒に、コンソールで試してみてください。</p>
+<pre><code class="language-javascript">console.log(Math.PI);          // 3.14159... (円周率も入っています)
 
-// 2. new を使う
-const pattern2 = new RegExp("abc");
+console.log(Math.round(4.6));   // 5（四捨五入）
+console.log(Math.floor(4.6));   // 4（床：切り捨て）
+console.log(Math.ceil(4.1));    // 5（天井：切り上げ）
+
+// 1から10までのランダムな整数（せいすう）を作る魔法の式
+const luckyNumber = Math.floor(Math.random() * 10) + 1;
+console.log("あなたのラッキーナンバーは：" + luckyNumber);
 
 </code></pre>
 <hr>
-<h2 id="iii-よく使う魔法の記号１"><a class="header" href="#iii-よく使う魔法の記号１">III. よく使う「魔法の記号」（１）</a></h2>
-<p>正規表現（RegExp）のメタ文字は、文字の <strong>「種類」</strong> や <strong>「数」</strong> を指定する特別なルールです。
-<strong>「トランプのジョーカー」</strong> や <strong>「算数のルール」</strong> に例えて説明すると、パズルのように楽しく理解できます。</p>
-<p>よく使われる7つの記号を、やさしく解説しましょう！</p>
-<hr>
-<h3 id="1--ドット"><a class="header" href="#1--ドット">1. <code>.</code> （ドット）</a></h3>
-<p><strong>→「なんでもいい一文字」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> トランプの「ジョーカー」や、クイズの「穴埋（あなう）め」です。</li>
-<li><strong>ルール：</strong> 数字でも、漢字でも、アルファベットでも、**「とにかく1文字」**あればOK。</li>
-</ul>
+<h2 id="iv-留学生への例え話電卓でんたくのボタン"><a class="header" href="#iv-留学生への例え話電卓でんたくのボタン">IV. 留学生への例え話：電卓（でんたく）のボタン</a></h2>
 <blockquote>
-<p><strong>例：</strong> <code>/あ.い/</code></p>
-<ul>
-<li>「あ<strong>い</strong>い」 … OK</li>
-<li>「あ<strong>あ</strong>い」 … OK</li>
-<li>「あ<strong>1</strong>い」 … OK</li>
-<li>「あい」 … NG（文字が足りない）</li>
-</ul>
+<p>「<code>Math</code>オブジェクトは、高機能（こうきのう）な電卓（Scientific Calculator）についている<strong>特別なボタン</strong>だと思ってね。
+√（ルート）の計算や、一番大きい数字を探すとき、自分で計算するのは大変だよね。そんなときは <code>Math.sqrt()</code> や <code>Math.max()</code> というボタンを押すだけで、JavaScriptがすぐに答えを教えてくれるんだよ！」</p>
 </blockquote>
 <hr>
-<h3 id="2--アスタリスク"><a class="header" href="#2--アスタリスク">2. <code>*</code> （アスタリスク）</a></h3>
-<p><strong>→「0回以上のくり返し」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> おかわり自由。<strong>「なくてもいいし、無限（むげん）にあってもいい」</strong>。</li>
-<li><strong>ルール：</strong> 直前（ちょくぜん）の文字が「0個、1個、2個……」と、いくつ続いていてもOK。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/あ*い/</code></p>
-<ul>
-<li>「い」 … OK（「あ」が0個でもいい）</li>
-<li>「あい」 … OK</li>
-<li>「あああい」 … OK</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="3--プラス"><a class="header" href="#3--プラス">3. <code>+</code> （プラス）</a></h3>
-<p><strong>→「1回以上のくり返し」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> 最低（さいてい）でも1つは必要。<strong>「1個以上なら、いくつでもいい」</strong>。</li>
-<li><strong>ルール：</strong> 直前の文字が「1個、2個、3個……」と続いていればOK。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/あ+い/</code></p>
-<ul>
-<li>「い」 … <strong>NG</strong>（「あ」が最低1つは必要！）</li>
-<li>「あい」 … OK</li>
-<li>「あああい」 … OK</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="4--クエスチョン"><a class="header" href="#4--クエスチョン">4. <code>?</code> （クエスチョン）</a></h3>
-<p><strong>→「0回か 1回だけ」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> <strong>「あってもなくてもいい（最大1つまで）」</strong>。</li>
-<li><strong>ルール：</strong> 直前の文字が「ない」か「1個だけある」状態。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/あ?い/</code></p>
-<ul>
-<li>「い」 … OK</li>
-<li>「あい」 … OK</li>
-<li>「ああい」 … <strong>NG</strong>（2個以上はダメ）</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="5-キャレット"><a class="header" href="#5-キャレット">5. <code>^</code>（キャレット）</a></h3>
-<p><strong>→「行がここから始まる」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> マラソンの「スタートライン」です。</li>
-<li><strong>ルール：</strong> その文字で文章が始まっていることをチェックします。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/^おはよう/</code></p>
-<ul>
-<li>「おはようございます」 … OK</li>
-<li>「みんな、おはよう」 … <strong>NG</strong>（「みんな」から始まっているから）</li>
-</ul>
-</blockquote>
-<h3 id="6--ドル"><a class="header" href="#6--ドル">6. <code>$</code> （ドル）</a></h3>
-<p><strong>→「行の最後（さいご）がこれでおわる」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> マラソンの「ゴールテープ」です。</li>
-<li><strong>ルール：</strong> その文字で文章が終わっていることをチェックします。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/です$/</code></p>
-<ul>
-<li>「田中です」 … OK</li>
-<li>「田中ですよ」 … <strong>NG</strong>（「よ」で終わっているから）</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="7--パイプ縦線"><a class="header" href="#7--パイプ縦線">7. <code>|</code> （パイプ・縦線）</a></h3>
-<p><strong>→「または（OR）」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> レストランのメニュー。「A <strong>または</strong> B どちらか選んで」というルール。</li>
-<li><strong>ルール：</strong> 左側か右側、どちらかの文字があればOK。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/りんご|みかん/</code></p>
-<ul>
-<li>「りんご」 … OK</li>
-<li>「みかん」 … OK</li>
-<li>「バナナ」 … NG</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="覚え方のまとめテーブル"><a class="header" href="#覚え方のまとめテーブル">覚え方のまとめテーブル</a></h3>
+<h2 id="まとめテーブル-13"><a class="header" href="#まとめテーブル-13">まとめテーブル</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>記号</th><th>意味</th><th>覚え方のヒント</th></tr>
+<tr><th>命令 (Method)</th><th>意味</th><th>英語のイメージ</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>.</code></strong></td><td>なんでも1文字</td><td>何が入るかワクワクする「穴」</td></tr>
-<tr><td><strong><code>*</code></strong></td><td>0個以上</td><td>おかわり自由（なくてもいい）</td></tr>
-<tr><td><strong><code>+</code></strong></td><td>1個以上</td><td><strong>必ず1つは持ってきて！</strong></td></tr>
-<tr><td><strong><code>?</code></strong></td><td>0か1個</td><td>オプション（あってもなくてもいい）</td></tr>
-<tr><td><strong><code>^</code></strong></td><td>始まり</td><td>文の最初にあるスタートライン</td></tr>
-<tr><td><strong><code>$</code></strong></td><td>終わり</td><td>文の最後にあるゴールテープ</td></tr>
-<tr><td><strong><code>|</code></strong></td><td>または</td><td>AかB、どちらか好きな方！</td></tr>
+<tr><td><strong><code>Math.random()</code></strong></td><td>0〜1のランダムな数字</td><td>Random</td></tr>
+<tr><td><strong><code>Math.floor()</code></strong></td><td>切り捨て</td><td>Floor（床に落とす）</td></tr>
+<tr><td><strong><code>Math.ceil()</code></strong></td><td>切り上げ</td><td>Ceiling（天井に届く）</td></tr>
+<tr><td><strong><code>Math.round()</code></strong></td><td>四捨五入</td><td>Round off</td></tr>
+<tr><td><strong><code>Math.max()</code></strong></td><td>一番大きい数字を選ぶ</td><td>Maximum</td></tr>
 </tbody>
 </table>
 </div>
-<p>いかがでしょうか？ 記号の「パワー」を知ると、短いコードで複雑なチェックができるようになります。</p>
 <hr>
-<h2 id="iv-よく使う魔法の記号２"><a class="header" href="#iv-よく使う魔法の記号２">IV. よく使う「魔法の記号」（２）</a></h2>
-<p>正規表現（RegExp）のメタ文字、さらに便利なものを紹介します！
-今回は、文字を <strong>「グループ化」</strong> したり、<strong>「回数を正確に指定」</strong> したりする、少し高度なルールです。</p>
-<p><strong>「チーム作り」</strong> や <strong>「回数の予約」</strong> に例えて説明ます。</p>
-<h3 id="1--かっこ"><a class="header" href="#1--かっこ">1. <code>()</code> （かっこ）</a></h3>
-<p><strong>→「チーム（グループ）を作る」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> 複数の文字をひとまとめにして「1つのチーム」として扱います。</li>
-<li><strong>ルール：</strong> チームに対して、さっき勉強した <code>*</code> や <code>+</code> を使うことができます。</li>
-</ul>
+<h2 id="-留学生へのワンポイント"><a class="header" href="#-留学生へのワンポイント">📝 留学生へのワンポイント</a></h2>
 <blockquote>
-<p><strong>例：</strong> <code>/(abc)+/</code></p>
-<ul>
-<li>「abc」 … OK</li>
-<li>「abcabcabc」 … OK（「abc」というチームが繰り返されている）</li>
-<li>「abcc」 … NG（チーム全員で繰り返さないとダメ）</li>
-</ul>
+<p>「一番よく使うのは <strong><code>Math.floor(Math.random() * N)</code></strong> という組み合わせだよ。これで『0からN-1までのランダムな整数』が作れるんだ。ゲームを作るときに必ず使うから、このセットだけはメモしておこう！」</p>
 </blockquote>
-<h3 id="2--角かっこ"><a class="header" href="#2--角かっこ">2. <code>[]</code> （角かっこ）</a></h3>
-<p><strong>→「この中のどれか1文字」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> 「この中（リスト）にある文字なら、誰でもいいよ」という <strong>メンバー名簿</strong> です。</li>
-<li><strong>ルール：</strong> カッコの中に入っている文字のどれか1つに合えばOK。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> <code>/[ABC]くん/</code></p>
-<ul>
-<li>「Aくん」 … OK</li>
-<li>「Bくん」 … OK</li>
-<li>「Cくん」 … OK</li>
-<li>「Dくん」 … NG（名簿に名前がない）</li>
-</ul>
-</blockquote>
-<h3 id="3-n-n-n-m-波かっこ"><a class="header" href="#3-n-n-n-m-波かっこ">3. <code>{n}</code> <code>{n,}</code> <code>{n, m}</code> （波かっこ）</a></h3>
-<p><strong>→「回数を数字で指定する」</strong></p>
-<p>これらは <code>+</code> や <code>*</code> よりも、もっと細かく <strong>「何回か」</strong> を予約する記号です。</p>
-<h4 id="n-ぴったり-n回"><a class="header" href="#n-ぴったり-n回"><code>{n}</code> ：ぴったり n回</a></h4>
-<ul>
-<li><strong>例：</strong> <code>/\d{3}/</code> （数字が<strong>ぴったり3つ</strong>）</li>
-<li>「123」はOK、「12」はNG。</li>
-</ul>
-<h4 id="n-n回以上いくらでも"><a class="header" href="#n-n回以上いくらでも"><code>{n,}</code> ：n回以上（いくらでも）</a></h4>
-<ul>
-<li><strong>例：</strong> <code>/\d{3,}/</code> （数字が<strong>3つ以上</strong>）</li>
-<li>「123」も「12345」もOK。</li>
-</ul>
-<h4 id="n-m-n回から-m回のあいだ"><a class="header" href="#n-m-n回から-m回のあいだ"><code>{n, m}</code> ：n回から m回のあいだ</a></h4>
-<ul>
-<li><strong>例：</strong> <code>/\d{3,5}/</code> （数字が<strong>3つ、4つ、または5つ</strong>）</li>
-<li>「1234」はOK、「123456」はNG。</li>
-</ul>
-<h3 id="4--バックスラッシュ--円マーク"><a class="header" href="#4--バックスラッシュ--円マーク">4. <code>\</code> （バックスラッシュ / 円マーク）</a></h3>
-<p><strong>→「魔法を消して、普通の文字に戻す」</strong></p>
-<ul>
-<li><strong>イメージ：</strong> <strong>「エスケープ（逃がす）」</strong> といいます。特別な力を持っているメタ文字から、魔法を取り上げます。</li>
-<li><strong>ルール：</strong> メタ文字の前に書くと、ただの「記号」として探せるようになります。</li>
-</ul>
-<blockquote>
-<p><strong>例：</strong> 普通のドット（.）を探したいとき</p>
-<ul>
-<li><code>.</code> だけだと「なんでも1文字」という魔法が発動します。</li>
-<li><code>/\./</code> と書くと、文章の中にある**「点（ドット）」**そのものを探せます。</li>
-</ul>
-</blockquote>
-<h3 id="まとめテーブル留学生向け-1"><a class="header" href="#まとめテーブル留学生向け-1">まとめテーブル（留学生向け）</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>記号</th><th>意味</th><th>覚え方のヒント</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>( )</code></strong></td><td>グループ化</td><td>「みんなで1つのチームだよ！」</td></tr>
-<tr><td><strong><code>[ ]</code></strong></td><td>どれか1つ</td><td>「このリストの中の誰か1人！」</td></tr>
-<tr><td><strong><code>{n}</code></strong></td><td>ぴったり n回</td><td>「回数を予約（よやく）する」</td></tr>
-<tr><td><strong><code>{n, m}</code></strong></td><td>n回〜m回</td><td>「最小と最大を決める」</td></tr>
-<tr><td><strong><code>\</code></strong></td><td>エスケープ</td><td><strong>「魔法をキャンセル！」</strong></td></tr>
-</tbody>
-</table>
-</div>
-<p>いかがでしょうか？これで正規表現の主要なパーツが揃いました。</p>
-<hr>
-<p><a href="#かっこの種類">参考: かっこの種類と日本語の呼び方</a></p>
-<h3 id="留学生へのアドバイス-3"><a class="header" href="#留学生へのアドバイス-3">留学生へのアドバイス</a></h3>
-<p>RegExpは、最初は難しくて「暗号（あんごう）」に見えます。でも、全部覚える必要はありません！</p>
-<blockquote>
-<p>「RegExpは <strong>『文字の形をチェックするルールブック』</strong> だよ。
-郵便番号、メールアドレス、パスワードの強さ（英数字が入っているか）を調べるときに、世界中のプログラマーが使っているんだ。
-難しいパターンは、インターネットで『RegExp 郵便番号』のように検索してコピーすれば大丈夫だよ！」</p>
-</blockquote>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p><strong>スラッシュ <code>/ /</code> の後ろにつけるオプション（フラグ）</strong></p>
-<ul>
-<li><code>/abc/i</code> ：大文字と小文字を区別（くべつ）しない（<strong>i</strong>gnore）。</li>
-<li><code>/abc/g</code> ：全部（ぜんぶ）探す（<strong>g</strong>lobal）。</li>
-</ul>
-<p>この2つを知ると、さらに便利に使ってもらえます。</p>
-</blockquote>
-<p>いかがでしょうか？「完璧なパターンを自分で書く」ことよりも、「ルールで検索できる便利な道具がある」ことを知ることが第一歩です！</p>
-<hr>
-<h2 id="v-実際に使ってみよう"><a class="header" href="#v-実際に使ってみよう">V. 実際に使ってみよう</a></h2>
-<p>よくある「メールアドレスの入力チェック」のようなイメージです。</p>
-<pre><code class="language-javascript">const myPattern = /apple/; // 「apple」という文字があるか？
-const text = "I have an apple.";
-
-// testメソッド：パターンに合っているかチェック（true / false）
-if (myPattern.test(text)) {
-  console.log("見つかりました！");
-}
-
-</code></pre>
-<h4 id="少し難しいパターン例"><a class="header" href="#少し難しいパターン例">少し難しいパターン例</a></h4>
-<p>「数字が3つ連続（れんぞく）しているところを探す」</p>
-<pre><code class="language-javascript">const numPattern = /\d{3}/;
-console.log(numPattern.test("abc123def")); // true
-
-</code></pre>
-<p>これまで学んだ「魔法の記号（メタ文字）」を組み合わせて、実際に使える <strong>「郵便番号」</strong> と <strong>「電話番号」</strong> のパターンを作ってみましょう！</p>
-<p>パズルを組み立てるような感覚で見ていくと、楽しく覚えられます。</p>
-<h3 id="1-郵便番号のパターン"><a class="header" href="#1-郵便番号のパターン">1. 「郵便番号」のパターン</a></h3>
-<p>日本の郵便番号は、<strong>「数字3つ ＋ ハイフン ＋ 数字4つ」</strong> という形です。</p>
-<h4 id="正規表現-d3-d4"><a class="header" href="#正規表現-d3-d4">正規表現： <code>/^\d{3}-\d{4}$/</code></a></h4>
-<ul>
-<li><strong><code>^</code></strong> ： ここから始まる。</li>
-<li><strong><code>\d{3}</code></strong> ： 数字（<strong>d</strong>igit）が <strong>3つ</strong> ぴったり。</li>
-<li><strong><code>-</code></strong> ： ハイフンがある。</li>
-<li><strong><code>\d{4}</code></strong> ： 数字が <strong>4つ</strong> ぴったり。</li>
-<li><strong><code>$</code></strong> ： ここで終わる。</li>
-</ul>
-<p><strong>これを使うと：</strong>
-「123-4567」は <strong>OK</strong> ですが、「123-456」や「1234-567」は <strong>NG</strong> になります。</p>
-<hr>
-<h3 id="2-電話番号のパターン"><a class="header" href="#2-電話番号のパターン">2. 「電話番号」のパターン</a></h3>
-<p>日本の電話番号は、場所によって桁数（けたすう）が違いますが、一般的には <strong>「数字2〜4個 ＋ ハイフン ＋ 数字2〜4個 ＋ ハイフン ＋ 数字4個」</strong> という形が多いです。</p>
-<h4 id="正規表現-d24-d24-d4"><a class="header" href="#正規表現-d24-d24-d4">正規表現： <code>/^\d{2,4}-\d{2,4}-\d{4}$/</code></a></h4>
-<ul>
-<li><strong><code>^\d{2,4}</code></strong> ： 最初の数字は <strong>2つから4つの間</strong>。</li>
-<li><strong><code>-</code></strong> ： ハイフン。</li>
-<li><strong><code>\d{2,4}</code></strong> ： 真ん中の数字も <strong>2つから4つの間</strong>。</li>
-<li><strong><code>-</code></strong> ： ハイフン。</li>
-<li><strong><code>\d{4}$</code></strong> ： 最後は必ず <strong>4つ</strong> で終わる。</li>
-</ul>
-<p><strong>これを使うと：</strong>
-「03-1234-5678」も「090-1234-5678」も <strong>OK</strong> になります。</p>
-<hr>
-<h3 id="3-もっと自由にハイフンがあってもなくてもいい場合"><a class="header" href="#3-もっと自由にハイフンがあってもなくてもいい場合">3. もっと自由に！「ハイフンがあってもなくてもいい」場合</a></h3>
-<p>留学生が「ハイフンを書かない人」もいるかもしれない、と考えたときは <strong><code>?</code></strong> の出番です。</p>
-<h4 id="正規表現-d3-d4-1"><a class="header" href="#正規表現-d3-d4-1">正規表現： <code>/^\d{3}-?\d{4}$/</code></a></h4>
-<ul>
-<li><strong><code>-?</code></strong> ： ハイフンが <strong>「0回か1回」</strong>。つまり、「あってもなくてもいいよ！」という意味です。</li>
-</ul>
-<hr>
-<h3 id="4-覚え方のコツ"><a class="header" href="#4-覚え方のコツ">4. 覚え方のコツ</a></h3>
-<blockquote>
-<p>「正規表現は、<strong>左から右へ順番に読んでいく</strong>んだよ。
-<code>^</code>（入り口）から入って、<code>\d</code>（数字）の関所（せきしょ）をいくつか通って、最後は <code>$</code>（出口）にたどり着く。
-途中でルールに合わない人が来たら、門前払い（もんぜんばらい）にするガードマンのようなものだよ！」</p>
-</blockquote>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>よく使う練習問題</strong></p>
-<ul>
-<li><code>/[0-9]/</code> は <code>\d</code> と同じ意味です。</li>
-<li><code>[ ]</code> を使うと、<code>[0-9]{3}</code> のように書くこともできます。</li>
-</ul>
-<p>これで、バリエーションが広がります。</p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル今回使ったパーツ"><a class="header" href="#まとめテーブル今回使ったパーツ">まとめテーブル：今回使ったパーツ</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>パーツ</th><th>役割</th><th>郵便番号での仕事</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>^</code></strong></td><td>はじまり</td><td>最初の文字からチェック！</td></tr>
-<tr><td><strong><code>\d</code></strong></td><td>数字</td><td>「1, 2, 3…」を探す</td></tr>
-<tr><td><strong><code>{n}</code></strong></td><td>ぴったりn回</td><td>桁数を固定する</td></tr>
-<tr><td><strong><code>-</code></strong></td><td>そのままの文字</td><td>ハイフンがあるか見る</td></tr>
-<tr><td><strong><code>$</code></strong></td><td>おわり</td><td>余計な文字がないかチェック！</td></tr>
-</tbody>
-</table>
-</div>
-<p>いかがでしょうか？これで「正しいデータだけを受け付ける」という、とても実践的（じっせんてき）なプログラムが作れるようになります。</p>
-<hr>
-<h2 id="vi-実践的な例-その２"><a class="header" href="#vi-実践的な例-その２">VI. 実践的な例 その２</a></h2>
-<p>「正しいパスワードの形」をチェックするコードです。これまでの集大成（しゅうたいせい）として、とても良い練習になります！</p>
-<p><strong>「パスワードの門番（もんばん）」</strong> を作るイメージで説明します。</p>
-<h3 id="1-パスワードのルール仕様"><a class="header" href="#1-パスワードのルール仕様">1. パスワードのルール（仕様）</a></h3>
-<p>今回は、よくあるこのようなルールをチェックします。</p>
-<ol>
-<li><strong>長さ：</strong> 8文字から16文字の間</li>
-<li><strong>文字：</strong> 英小文字（a-z）、数字（0-9）、特定の記号（@#!）が使える</li>
-<li><strong>最初：</strong> 必ず英小文字から始まる</li>
-</ol>
-<h3 id="2-パスワードチェックのコード"><a class="header" href="#2-パスワードチェックのコード">2. パスワードチェックのコード</a></h3>
-<pre><code class="language-javascript">// パスワードの正規表現（せいきひょうげん）
-// 意味：最初は小文字、そのあとは英数字か記号が7〜15回続く（合計8〜16文字）
-const passPattern = /^[a-z][a-z0-9@#!]{7,15}$/;
-
-function checkPassword(pass) {
-  if (passPattern.test(pass)) {
-    console.log("✅ OK! 「" + pass + "」は正しいパスワードです。");
-  } else {
-    console.log("❌ NG! 「" + pass + "」はルールに合っていません。");
-  }
-}
-
-// テストしてみましょう
-checkPassword("mypass123");     // OK (英小文字から始まり、合計9文字)
-checkPassword("a@#123456");     // OK (記号も使えます)
-checkPassword("123password");   // NG (数字から始まっている)
-checkPassword("abc");           // NG (短すぎる)
-checkPassword("thisIsAVeryLongPassword"); // NG (長すぎる)
-
-</code></pre>
-<h3 id="3-この暗号の読みとき方解説"><a class="header" href="#3-この暗号の読みとき方解説">3. この「暗号」の読みとき方（解説）</a></h3>
-<p>左から順番に「門（もん）」を通過するイメージで考えてください。</p>
-<ol>
-<li><strong><code>^</code></strong> ： ここからチェック開始！</li>
-<li><strong><code>[a-z]</code></strong> ： 最初の1文字目は、**絶対に「英小文字」**じゃなきゃダメ。</li>
-<li><strong><code>[a-z0-9@#!]</code></strong> ： 2文字目からは、<strong>小文字・数字・記号</strong>のどれかを使ってね。</li>
-<li><strong><code>{7,15}</code></strong> ： 3番のルールを <strong>7回から15回繰り返して</strong> ね。（最初の1文字を合わせると、全部で8〜16文字になります）</li>
-<li><strong><code>$</code></strong> ： ここで終わり。これより後ろに余計な文字があったらダメ！</li>
-</ol>
-<p>これで、郵便番号、電話番号、そしてパスワードのバリデーション（入力チェック）ができるようになりましたね！</p>
+<p>いかがでしょうか？「数学は苦手…」という学生さんでも、<code>Math</code>オブジェクトが代わりに計算してくれると知れば、きっと安心してくれるはずです。</p>
+<h2 id="数当てゲームへの挑戦"><a class="header" href="#数当てゲームへの挑戦">数当てゲームへの挑戦</a></h2>
+<p>これまでの知識を使って、<a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/A_first_splash">MDNの数当てゲーム</a>に挑戦してみましょう。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="javascriptとオブジェクト指向"><a class="header" href="#javascriptとオブジェクト指向">JavaScriptとオブジェクト指向</a></h1>
 <p>プログラミングについて、いろいろ調べたことのある方なら、 <strong>「オブジェクト指向プログラミング（Object Oriented Programming 略して“OOP“）」</strong> という言葉を見たことがあるかもしれません。</p>
@@ -5061,7 +4756,7 @@ console.log(person[key]); // "Allen" と表示されます。keyの中身を変�
 <p>もし、バラバラの変数がたくさんあると、どこで何を使っているか分からなくなり、ミスが増えます。仕事でプログラムを書く「チーム開発（かいはつ）」では、これは大きな問題です。他の人があなたのコードを読んだとき、すぐに理解できないと、プロジェクトが止まってしまうからです。</p>
 <p>そこで必要になるのが <strong>「オブジェクト」</strong> です。関連（かんれん）するデータと機能を一つの「箱（はこ）」にまとめることで、コードが整理（せいり）され、現実（げんじつ）の世界にあるものをプログラムの中で表現しやすくなります。</p>
 <hr>
-<h3 id="まとめテーブル-13"><a class="header" href="#まとめテーブル-13">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-14"><a class="header" href="#まとめテーブル-14">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -5208,7 +4903,7 @@ console.log(numbers.double()); // [2, 4, 6]
 <blockquote>
 <p><strong>注意：</strong> ここではわかりやすい例として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
 </blockquote>
-<h3 id="まとめテーブル-14"><a class="header" href="#まとめテーブル-14">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-15"><a class="header" href="#まとめテーブル-15">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -5371,7 +5066,7 @@ user.introduce(); // 自分だけの新しい動き
 <li><strong>楽ができる：</strong> 同じことを何度も書かなくていいから、コードが短くなるよ。</li>
 <li><strong>間違いが減る：</strong> 基本のルール（親）を直せば、全員（子）に反映されるから便利だよ。</li>
 </ul>
-<h3 id="まとめテーブル-15"><a class="header" href="#まとめテーブル-15">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-16"><a class="header" href="#まとめテーブル-16">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -6140,76 +5835,383 @@ console.log("ぜんぶの合計は " + total + " です！");
 </div>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="数学オブジェクト"><a class="header" href="#数学オブジェクト">数学オブジェクト</a></h1>
-<p>JavaScriptを学習中の皆さん、こんにちは！
-今日は、JavaScriptの中で**「計算の天才（てんさい）」**として活躍する <strong><code>Math</code>オブジェクト</strong> について説明します。</p>
-<p>留学生の方には、<code>Math</code>オブジェクトのことを**「数学（すうがく）の道具箱（どうぐばこ）」**だと教えてあげてください。自分で難しい計算式を書かなくても、この道具箱を開ければすぐに答えが出てきます。</p>
+<h1 id="正規表現"><a class="header" href="#正規表現">正規表現</a></h1>
+<p>プログラミングを勉強していると必ず出会う、呪文のような記号の羅列（られつ）。それが「正規（せいき）表現（ひょうげん）」です。英語で “Regular Expression” と言います。</p>
+<p>JavaScriptでは、<strong>RegExp（レグエクスプ）</strong> オブジェクトを使います。</p>
+<p>RegExpは <strong>「魔法の虫めがね」</strong> です。たくさんの文字の中から、自分の探したい「パターン」だけをピカッと光らせて見つけることができます。</p>
 <hr>
-<h2 id="i-mathオブジェクトの特徴"><a class="header" href="#i-mathオブジェクトの特徴">I. <code>Math</code>オブジェクトの特徴</a></h2>
-<p>他のオブジェクト（<code>Student</code>クラスなど）と違って、<code>Math</code>オブジェクトは <strong><code>new</code> を使って作る必要がありません。</strong></p>
-<p>ブラウザの中に最初から「数学の専門家」として座っているので、いきなり <code>Math.〜</code> と呼び出すだけで仕事をしてくれます。</p>
+<h2 id="i-正規表現ってなに"><a class="header" href="#i-正規表現ってなに">I. 「正規表現」ってなに？</a></h2>
+<p>普通の検索（<code>indexOf</code> など）は、「特定の言葉」を探します。
+RegExpは、<strong>「言葉のルール（パターン）」</strong> を探します。</p>
+<ul>
+<li><strong>普通の検索：</strong> 「『田中』さんを探して」</li>
+<li><strong>RegExp：</strong> 「『数字が3つ、ハイフン、数字が4つ』の形（電話番号）を探して」</li>
+</ul>
+<p>このように、あやふやなルールで検索できるのがすごいところです。</p>
 <hr>
-<h2 id="ii-よく使う4つの道具メソッド"><a class="header" href="#ii-よく使う4つの道具メソッド">II. よく使う「4つの道具（メソッド）」</a></h2>
-<p>これだけ覚えれば、日常のプログラミングで困ることはありません。</p>
-<h3 id="①-mathrandomサイコロを振る"><a class="header" href="#①-mathrandomサイコロを振る"><strong>① <code>Math.random()</code>：サイコロを振る</strong></a></h3>
-<p>0から1の間で、バラバラな数字（乱数）を作ります。</p>
-<ul>
-<li><strong>使い道：</strong> ゲームのダメージ計算、おみくじ、ラッキーカラーなど。</li>
-<li><strong>イメージ：</strong> ガラガラ抽選器（ちゅうせんき）を回す。</li>
-</ul>
-<h3 id="②-mathround四捨五入ししゃごにゅう"><a class="header" href="#②-mathround四捨五入ししゃごにゅう"><strong>② <code>Math.round()</code>：四捨五入（ししゃごにゅう）</strong></a></h3>
-<p>小数点以下が <code>.5</code> 以上なら切り上げ、<code>.4</code> 以下なら切り捨てます。</p>
-<ul>
-<li><strong>使い道：</strong> 平均点（へいきんてん）をきれいな数字にするとき。</li>
-</ul>
-<h3 id="③-mathceil-と-mathfloor天井てんじょうと床ゆか"><a class="header" href="#③-mathceil-と-mathfloor天井てんじょうと床ゆか"><strong>③ <code>Math.ceil()</code> と <code>Math.floor()</code>：天井（てんじょう）と床（ゆか）</strong></a></h3>
-<ul>
-<li><strong><code>Math.ceil()</code>（切り上げ）：</strong> 小数点があれば、上の数字へジャンプ！</li>
-<li><strong><code>Math.floor()</code>（切り捨て）：</strong> 小数点を消して、下の数字へダウン！</li>
-<li><strong>覚え方：</strong> <code>Ceiling</code> は天井、<code>Floor</code> は床という意味です。</li>
-</ul>
-<hr>
-<h2 id="iii-コードで見てみよう"><a class="header" href="#iii-コードで見てみよう">III. コードで見てみよう！</a></h2>
-<p>留学生と一緒に、コンソールで試してみてください。</p>
-<pre><code class="language-javascript">console.log(Math.PI);          // 3.14159... (円周率も入っています)
+<h2 id="ii-regexpオブジェクトの作り方"><a class="header" href="#ii-regexpオブジェクトの作り方">II. RegExpオブジェクトの作り方</a></h2>
+<p>2つの書き方がありますが、よく使われるのは <strong><code>/ /</code>（スラッシュ）</strong> で囲む方法です。</p>
+<pre><code class="language-javascript">// 1. スラッシュで囲む（リテラル） ★おすすめ
+const pattern1 = /abc/;
 
-console.log(Math.round(4.6));   // 5（四捨五入）
-console.log(Math.floor(4.6));   // 4（床：切り捨て）
-console.log(Math.ceil(4.1));    // 5（天井：切り上げ）
-
-// 1から10までのランダムな整数（せいすう）を作る魔法の式
-const luckyNumber = Math.floor(Math.random() * 10) + 1;
-console.log("あなたのラッキーナンバーは：" + luckyNumber);
+// 2. new を使う
+const pattern2 = new RegExp("abc");
 
 </code></pre>
 <hr>
-<h2 id="iv-留学生への例え話電卓でんたくのボタン"><a class="header" href="#iv-留学生への例え話電卓でんたくのボタン">IV. 留学生への例え話：電卓（でんたく）のボタン</a></h2>
+<h2 id="iii-よく使う魔法の記号１"><a class="header" href="#iii-よく使う魔法の記号１">III. よく使う「魔法の記号」（１）</a></h2>
+<p>正規表現（RegExp）のメタ文字は、文字の <strong>「種類」</strong> や <strong>「数」</strong> を指定する特別なルールです。
+<strong>「トランプのジョーカー」</strong> や <strong>「算数のルール」</strong> に例えて説明すると、パズルのように楽しく理解できます。</p>
+<p>よく使われる7つの記号を、やさしく解説しましょう！</p>
+<hr>
+<h3 id="1--ドット"><a class="header" href="#1--ドット">1. <code>.</code> （ドット）</a></h3>
+<p><strong>→「なんでもいい一文字」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> トランプの「ジョーカー」や、クイズの「穴埋（あなう）め」です。</li>
+<li><strong>ルール：</strong> 数字でも、漢字でも、アルファベットでも、**「とにかく1文字」**あればOK。</li>
+</ul>
 <blockquote>
-<p>「<code>Math</code>オブジェクトは、高機能（こうきのう）な電卓（Scientific Calculator）についている<strong>特別なボタン</strong>だと思ってね。
-√（ルート）の計算や、一番大きい数字を探すとき、自分で計算するのは大変だよね。そんなときは <code>Math.sqrt()</code> や <code>Math.max()</code> というボタンを押すだけで、JavaScriptがすぐに答えを教えてくれるんだよ！」</p>
+<p><strong>例：</strong> <code>/あ.い/</code></p>
+<ul>
+<li>「あ<strong>い</strong>い」 … OK</li>
+<li>「あ<strong>あ</strong>い」 … OK</li>
+<li>「あ<strong>1</strong>い」 … OK</li>
+<li>「あい」 … NG（文字が足りない）</li>
+</ul>
 </blockquote>
 <hr>
-<h2 id="まとめテーブル-16"><a class="header" href="#まとめテーブル-16">まとめテーブル</a></h2>
+<h3 id="2--アスタリスク"><a class="header" href="#2--アスタリスク">2. <code>*</code> （アスタリスク）</a></h3>
+<p><strong>→「0回以上のくり返し」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> おかわり自由。<strong>「なくてもいいし、無限（むげん）にあってもいい」</strong>。</li>
+<li><strong>ルール：</strong> 直前（ちょくぜん）の文字が「0個、1個、2個……」と、いくつ続いていてもOK。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/あ*い/</code></p>
+<ul>
+<li>「い」 … OK（「あ」が0個でもいい）</li>
+<li>「あい」 … OK</li>
+<li>「あああい」 … OK</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="3--プラス"><a class="header" href="#3--プラス">3. <code>+</code> （プラス）</a></h3>
+<p><strong>→「1回以上のくり返し」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> 最低（さいてい）でも1つは必要。<strong>「1個以上なら、いくつでもいい」</strong>。</li>
+<li><strong>ルール：</strong> 直前の文字が「1個、2個、3個……」と続いていればOK。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/あ+い/</code></p>
+<ul>
+<li>「い」 … <strong>NG</strong>（「あ」が最低1つは必要！）</li>
+<li>「あい」 … OK</li>
+<li>「あああい」 … OK</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="4--クエスチョン"><a class="header" href="#4--クエスチョン">4. <code>?</code> （クエスチョン）</a></h3>
+<p><strong>→「0回か 1回だけ」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <strong>「あってもなくてもいい（最大1つまで）」</strong>。</li>
+<li><strong>ルール：</strong> 直前の文字が「ない」か「1個だけある」状態。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/あ?い/</code></p>
+<ul>
+<li>「い」 … OK</li>
+<li>「あい」 … OK</li>
+<li>「ああい」 … <strong>NG</strong>（2個以上はダメ）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="5-キャレット"><a class="header" href="#5-キャレット">5. <code>^</code>（キャレット）</a></h3>
+<p><strong>→「行がここから始まる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「スタートライン」です。</li>
+<li><strong>ルール：</strong> その文字で文章が始まっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/^おはよう/</code></p>
+<ul>
+<li>「おはようございます」 … OK</li>
+<li>「みんな、おはよう」 … <strong>NG</strong>（「みんな」から始まっているから）</li>
+</ul>
+</blockquote>
+<h3 id="6--ドル"><a class="header" href="#6--ドル">6. <code>$</code> （ドル）</a></h3>
+<p><strong>→「行の最後（さいご）がこれでおわる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「ゴールテープ」です。</li>
+<li><strong>ルール：</strong> その文字で文章が終わっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/です$/</code></p>
+<ul>
+<li>「田中です」 … OK</li>
+<li>「田中ですよ」 … <strong>NG</strong>（「よ」で終わっているから）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="7--パイプ縦線"><a class="header" href="#7--パイプ縦線">7. <code>|</code> （パイプ・縦線）</a></h3>
+<p><strong>→「または（OR）」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> レストランのメニュー。「A <strong>または</strong> B どちらか選んで」というルール。</li>
+<li><strong>ルール：</strong> 左側か右側、どちらかの文字があればOK。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/りんご|みかん/</code></p>
+<ul>
+<li>「りんご」 … OK</li>
+<li>「みかん」 … OK</li>
+<li>「バナナ」 … NG</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="覚え方のまとめテーブル"><a class="header" href="#覚え方のまとめテーブル">覚え方のまとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>命令 (Method)</th><th>意味</th><th>英語のイメージ</th></tr>
+<tr><th>記号</th><th>意味</th><th>覚え方のヒント</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>Math.random()</code></strong></td><td>0〜1のランダムな数字</td><td>Random</td></tr>
-<tr><td><strong><code>Math.floor()</code></strong></td><td>切り捨て</td><td>Floor（床に落とす）</td></tr>
-<tr><td><strong><code>Math.ceil()</code></strong></td><td>切り上げ</td><td>Ceiling（天井に届く）</td></tr>
-<tr><td><strong><code>Math.round()</code></strong></td><td>四捨五入</td><td>Round off</td></tr>
-<tr><td><strong><code>Math.max()</code></strong></td><td>一番大きい数字を選ぶ</td><td>Maximum</td></tr>
+<tr><td><strong><code>.</code></strong></td><td>なんでも1文字</td><td>何が入るかワクワクする「穴」</td></tr>
+<tr><td><strong><code>*</code></strong></td><td>0個以上</td><td>おかわり自由（なくてもいい）</td></tr>
+<tr><td><strong><code>+</code></strong></td><td>1個以上</td><td><strong>必ず1つは持ってきて！</strong></td></tr>
+<tr><td><strong><code>?</code></strong></td><td>0か1個</td><td>オプション（あってもなくてもいい）</td></tr>
+<tr><td><strong><code>^</code></strong></td><td>始まり</td><td>文の最初にあるスタートライン</td></tr>
+<tr><td><strong><code>$</code></strong></td><td>終わり</td><td>文の最後にあるゴールテープ</td></tr>
+<tr><td><strong><code>|</code></strong></td><td>または</td><td>AかB、どちらか好きな方！</td></tr>
 </tbody>
 </table>
 </div>
+<p>いかがでしょうか？ 記号の「パワー」を知ると、短いコードで複雑なチェックができるようになります。</p>
 <hr>
-<h2 id="-留学生へのワンポイント"><a class="header" href="#-留学生へのワンポイント">📝 留学生へのワンポイント</a></h2>
+<h2 id="iv-よく使う魔法の記号２"><a class="header" href="#iv-よく使う魔法の記号２">IV. よく使う「魔法の記号」（２）</a></h2>
+<p>正規表現（RegExp）のメタ文字、さらに便利なものを紹介します！
+今回は、文字を <strong>「グループ化」</strong> したり、<strong>「回数を正確に指定」</strong> したりする、少し高度なルールです。</p>
+<p><strong>「チーム作り」</strong> や <strong>「回数の予約」</strong> に例えて説明ます。</p>
+<h3 id="1--かっこ"><a class="header" href="#1--かっこ">1. <code>()</code> （かっこ）</a></h3>
+<p><strong>→「チーム（グループ）を作る」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> 複数の文字をひとまとめにして「1つのチーム」として扱います。</li>
+<li><strong>ルール：</strong> チームに対して、さっき勉強した <code>*</code> や <code>+</code> を使うことができます。</li>
+</ul>
 <blockquote>
-<p>「一番よく使うのは <strong><code>Math.floor(Math.random() * N)</code></strong> という組み合わせだよ。これで『0からN-1までのランダムな整数』が作れるんだ。ゲームを作るときに必ず使うから、このセットだけはメモしておこう！」</p>
+<p><strong>例：</strong> <code>/(abc)+/</code></p>
+<ul>
+<li>「abc」 … OK</li>
+<li>「abcabcabc」 … OK（「abc」というチームが繰り返されている）</li>
+<li>「abcc」 … NG（チーム全員で繰り返さないとダメ）</li>
+</ul>
 </blockquote>
-<p>いかがでしょうか？「数学は苦手…」という学生さんでも、<code>Math</code>オブジェクトが代わりに計算してくれると知れば、きっと安心してくれるはずです。</p>
+<h3 id="2--角かっこ"><a class="header" href="#2--角かっこ">2. <code>[]</code> （角かっこ）</a></h3>
+<p><strong>→「この中のどれか1文字」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> 「この中（リスト）にある文字なら、誰でもいいよ」という <strong>メンバー名簿</strong> です。</li>
+<li><strong>ルール：</strong> カッコの中に入っている文字のどれか1つに合えばOK。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> <code>/[ABC]くん/</code></p>
+<ul>
+<li>「Aくん」 … OK</li>
+<li>「Bくん」 … OK</li>
+<li>「Cくん」 … OK</li>
+<li>「Dくん」 … NG（名簿に名前がない）</li>
+</ul>
+</blockquote>
+<h3 id="3-n-n-n-m-波かっこ"><a class="header" href="#3-n-n-n-m-波かっこ">3. <code>{n}</code> <code>{n,}</code> <code>{n, m}</code> （波かっこ）</a></h3>
+<p><strong>→「回数を数字で指定する」</strong></p>
+<p>これらは <code>+</code> や <code>*</code> よりも、もっと細かく <strong>「何回か」</strong> を予約する記号です。</p>
+<h4 id="n-ぴったり-n回"><a class="header" href="#n-ぴったり-n回"><code>{n}</code> ：ぴったり n回</a></h4>
+<ul>
+<li><strong>例：</strong> <code>/\d{3}/</code> （数字が<strong>ぴったり3つ</strong>）</li>
+<li>「123」はOK、「12」はNG。</li>
+</ul>
+<h4 id="n-n回以上いくらでも"><a class="header" href="#n-n回以上いくらでも"><code>{n,}</code> ：n回以上（いくらでも）</a></h4>
+<ul>
+<li><strong>例：</strong> <code>/\d{3,}/</code> （数字が<strong>3つ以上</strong>）</li>
+<li>「123」も「12345」もOK。</li>
+</ul>
+<h4 id="n-m-n回から-m回のあいだ"><a class="header" href="#n-m-n回から-m回のあいだ"><code>{n, m}</code> ：n回から m回のあいだ</a></h4>
+<ul>
+<li><strong>例：</strong> <code>/\d{3,5}/</code> （数字が<strong>3つ、4つ、または5つ</strong>）</li>
+<li>「1234」はOK、「123456」はNG。</li>
+</ul>
+<h3 id="4--バックスラッシュ--円マーク"><a class="header" href="#4--バックスラッシュ--円マーク">4. <code>\</code> （バックスラッシュ / 円マーク）</a></h3>
+<p><strong>→「魔法を消して、普通の文字に戻す」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <strong>「エスケープ（逃がす）」</strong> といいます。特別な力を持っているメタ文字から、魔法を取り上げます。</li>
+<li><strong>ルール：</strong> メタ文字の前に書くと、ただの「記号」として探せるようになります。</li>
+</ul>
+<blockquote>
+<p><strong>例：</strong> 普通のドット（.）を探したいとき</p>
+<ul>
+<li><code>.</code> だけだと「なんでも1文字」という魔法が発動します。</li>
+<li><code>/\./</code> と書くと、文章の中にある**「点（ドット）」**そのものを探せます。</li>
+</ul>
+</blockquote>
+<h3 id="まとめテーブル留学生向け-1"><a class="header" href="#まとめテーブル留学生向け-1">まとめテーブル（留学生向け）</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>記号</th><th>意味</th><th>覚え方のヒント</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>( )</code></strong></td><td>グループ化</td><td>「みんなで1つのチームだよ！」</td></tr>
+<tr><td><strong><code>[ ]</code></strong></td><td>どれか1つ</td><td>「このリストの中の誰か1人！」</td></tr>
+<tr><td><strong><code>{n}</code></strong></td><td>ぴったり n回</td><td>「回数を予約（よやく）する」</td></tr>
+<tr><td><strong><code>{n, m}</code></strong></td><td>n回〜m回</td><td>「最小と最大を決める」</td></tr>
+<tr><td><strong><code>\</code></strong></td><td>エスケープ</td><td><strong>「魔法をキャンセル！」</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p>いかがでしょうか？これで正規表現の主要なパーツが揃いました。</p>
+<hr>
+<p><a href="#かっこの種類">参考: かっこの種類と日本語の呼び方</a></p>
+<h3 id="留学生へのアドバイス-3"><a class="header" href="#留学生へのアドバイス-3">留学生へのアドバイス</a></h3>
+<p>RegExpは、最初は難しくて「暗号（あんごう）」に見えます。でも、全部覚える必要はありません！</p>
+<blockquote>
+<p>「RegExpは <strong>『文字の形をチェックするルールブック』</strong> だよ。
+郵便番号、メールアドレス、パスワードの強さ（英数字が入っているか）を調べるときに、世界中のプログラマーが使っているんだ。
+難しいパターンは、インターネットで『RegExp 郵便番号』のように検索してコピーすれば大丈夫だよ！」</p>
+</blockquote>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p><strong>スラッシュ <code>/ /</code> の後ろにつけるオプション（フラグ）</strong></p>
+<ul>
+<li><code>/abc/i</code> ：大文字と小文字を区別（くべつ）しない（<strong>i</strong>gnore）。</li>
+<li><code>/abc/g</code> ：全部（ぜんぶ）探す（<strong>g</strong>lobal）。</li>
+</ul>
+<p>この2つを知ると、さらに便利に使ってもらえます。</p>
+</blockquote>
+<p>いかがでしょうか？「完璧なパターンを自分で書く」ことよりも、「ルールで検索できる便利な道具がある」ことを知ることが第一歩です！</p>
+<hr>
+<h2 id="v-実際に使ってみよう"><a class="header" href="#v-実際に使ってみよう">V. 実際に使ってみよう</a></h2>
+<p>よくある「メールアドレスの入力チェック」のようなイメージです。</p>
+<pre><code class="language-javascript">const myPattern = /apple/; // 「apple」という文字があるか？
+const text = "I have an apple.";
+
+// testメソッド：パターンに合っているかチェック（true / false）
+if (myPattern.test(text)) {
+  console.log("見つかりました！");
+}
+
+</code></pre>
+<h4 id="少し難しいパターン例"><a class="header" href="#少し難しいパターン例">少し難しいパターン例</a></h4>
+<p>「数字が3つ連続（れんぞく）しているところを探す」</p>
+<pre><code class="language-javascript">const numPattern = /\d{3}/;
+console.log(numPattern.test("abc123def")); // true
+
+</code></pre>
+<p>これまで学んだ「魔法の記号（メタ文字）」を組み合わせて、実際に使える <strong>「郵便番号」</strong> と <strong>「電話番号」</strong> のパターンを作ってみましょう！</p>
+<p>パズルを組み立てるような感覚で見ていくと、楽しく覚えられます。</p>
+<h3 id="1-郵便番号のパターン"><a class="header" href="#1-郵便番号のパターン">1. 「郵便番号」のパターン</a></h3>
+<p>日本の郵便番号は、<strong>「数字3つ ＋ ハイフン ＋ 数字4つ」</strong> という形です。</p>
+<h4 id="正規表現-d3-d4"><a class="header" href="#正規表現-d3-d4">正規表現： <code>/^\d{3}-\d{4}$/</code></a></h4>
+<ul>
+<li><strong><code>^</code></strong> ： ここから始まる。</li>
+<li><strong><code>\d{3}</code></strong> ： 数字（<strong>d</strong>igit）が <strong>3つ</strong> ぴったり。</li>
+<li><strong><code>-</code></strong> ： ハイフンがある。</li>
+<li><strong><code>\d{4}</code></strong> ： 数字が <strong>4つ</strong> ぴったり。</li>
+<li><strong><code>$</code></strong> ： ここで終わる。</li>
+</ul>
+<p><strong>これを使うと：</strong>
+「123-4567」は <strong>OK</strong> ですが、「123-456」や「1234-567」は <strong>NG</strong> になります。</p>
+<hr>
+<h3 id="2-電話番号のパターン"><a class="header" href="#2-電話番号のパターン">2. 「電話番号」のパターン</a></h3>
+<p>日本の電話番号は、場所によって桁数（けたすう）が違いますが、一般的には <strong>「数字2〜4個 ＋ ハイフン ＋ 数字2〜4個 ＋ ハイフン ＋ 数字4個」</strong> という形が多いです。</p>
+<h4 id="正規表現-d24-d24-d4"><a class="header" href="#正規表現-d24-d24-d4">正規表現： <code>/^\d{2,4}-\d{2,4}-\d{4}$/</code></a></h4>
+<ul>
+<li><strong><code>^\d{2,4}</code></strong> ： 最初の数字は <strong>2つから4つの間</strong>。</li>
+<li><strong><code>-</code></strong> ： ハイフン。</li>
+<li><strong><code>\d{2,4}</code></strong> ： 真ん中の数字も <strong>2つから4つの間</strong>。</li>
+<li><strong><code>-</code></strong> ： ハイフン。</li>
+<li><strong><code>\d{4}$</code></strong> ： 最後は必ず <strong>4つ</strong> で終わる。</li>
+</ul>
+<p><strong>これを使うと：</strong>
+「03-1234-5678」も「090-1234-5678」も <strong>OK</strong> になります。</p>
+<hr>
+<h3 id="3-もっと自由にハイフンがあってもなくてもいい場合"><a class="header" href="#3-もっと自由にハイフンがあってもなくてもいい場合">3. もっと自由に！「ハイフンがあってもなくてもいい」場合</a></h3>
+<p>留学生が「ハイフンを書かない人」もいるかもしれない、と考えたときは <strong><code>?</code></strong> の出番です。</p>
+<h4 id="正規表現-d3-d4-1"><a class="header" href="#正規表現-d3-d4-1">正規表現： <code>/^\d{3}-?\d{4}$/</code></a></h4>
+<ul>
+<li><strong><code>-?</code></strong> ： ハイフンが <strong>「0回か1回」</strong>。つまり、「あってもなくてもいいよ！」という意味です。</li>
+</ul>
+<hr>
+<h3 id="4-覚え方のコツ"><a class="header" href="#4-覚え方のコツ">4. 覚え方のコツ</a></h3>
+<blockquote>
+<p>「正規表現は、<strong>左から右へ順番に読んでいく</strong>んだよ。
+<code>^</code>（入り口）から入って、<code>\d</code>（数字）の関所（せきしょ）をいくつか通って、最後は <code>$</code>（出口）にたどり着く。
+途中でルールに合わない人が来たら、門前払い（もんぜんばらい）にするガードマンのようなものだよ！」</p>
+</blockquote>
+<blockquote class="blockquote-tag blockquote-tag-tip">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>よく使う練習問題</strong></p>
+<ul>
+<li><code>/[0-9]/</code> は <code>\d</code> と同じ意味です。</li>
+<li><code>[ ]</code> を使うと、<code>[0-9]{3}</code> のように書くこともできます。</li>
+</ul>
+<p>これで、バリエーションが広がります。</p>
+</blockquote>
+<hr>
+<h3 id="まとめテーブル今回使ったパーツ"><a class="header" href="#まとめテーブル今回使ったパーツ">まとめテーブル：今回使ったパーツ</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>パーツ</th><th>役割</th><th>郵便番号での仕事</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>^</code></strong></td><td>はじまり</td><td>最初の文字からチェック！</td></tr>
+<tr><td><strong><code>\d</code></strong></td><td>数字</td><td>「1, 2, 3…」を探す</td></tr>
+<tr><td><strong><code>{n}</code></strong></td><td>ぴったりn回</td><td>桁数を固定する</td></tr>
+<tr><td><strong><code>-</code></strong></td><td>そのままの文字</td><td>ハイフンがあるか見る</td></tr>
+<tr><td><strong><code>$</code></strong></td><td>おわり</td><td>余計な文字がないかチェック！</td></tr>
+</tbody>
+</table>
+</div>
+<p>いかがでしょうか？これで「正しいデータだけを受け付ける」という、とても実践的（じっせんてき）なプログラムが作れるようになります。</p>
+<hr>
+<h2 id="vi-実践的な例-その２"><a class="header" href="#vi-実践的な例-その２">VI. 実践的な例 その２</a></h2>
+<p>「正しいパスワードの形」をチェックするコードです。これまでの集大成（しゅうたいせい）として、とても良い練習になります！</p>
+<p><strong>「パスワードの門番（もんばん）」</strong> を作るイメージで説明します。</p>
+<h3 id="1-パスワードのルール仕様"><a class="header" href="#1-パスワードのルール仕様">1. パスワードのルール（仕様）</a></h3>
+<p>今回は、よくあるこのようなルールをチェックします。</p>
+<ol>
+<li><strong>長さ：</strong> 8文字から16文字の間</li>
+<li><strong>文字：</strong> 英小文字（a-z）、数字（0-9）、特定の記号（@#!）が使える</li>
+<li><strong>最初：</strong> 必ず英小文字から始まる</li>
+</ol>
+<h3 id="2-パスワードチェックのコード"><a class="header" href="#2-パスワードチェックのコード">2. パスワードチェックのコード</a></h3>
+<pre><code class="language-javascript">// パスワードの正規表現（せいきひょうげん）
+// 意味：最初は小文字、そのあとは英数字か記号が7〜15回続く（合計8〜16文字）
+const passPattern = /^[a-z][a-z0-9@#!]{7,15}$/;
+
+function checkPassword(pass) {
+  if (passPattern.test(pass)) {
+    console.log("✅ OK! 「" + pass + "」は正しいパスワードです。");
+  } else {
+    console.log("❌ NG! 「" + pass + "」はルールに合っていません。");
+  }
+}
+
+// テストしてみましょう
+checkPassword("mypass123");     // OK (英小文字から始まり、合計9文字)
+checkPassword("a@#123456");     // OK (記号も使えます)
+checkPassword("123password");   // NG (数字から始まっている)
+checkPassword("abc");           // NG (短すぎる)
+checkPassword("thisIsAVeryLongPassword"); // NG (長すぎる)
+
+</code></pre>
+<h3 id="3-この暗号の読みとき方解説"><a class="header" href="#3-この暗号の読みとき方解説">3. この「暗号」の読みとき方（解説）</a></h3>
+<p>左から順番に「門（もん）」を通過するイメージで考えてください。</p>
+<ol>
+<li><strong><code>^</code></strong> ： ここからチェック開始！</li>
+<li><strong><code>[a-z]</code></strong> ： 最初の1文字目は、**絶対に「英小文字」**じゃなきゃダメ。</li>
+<li><strong><code>[a-z0-9@#!]</code></strong> ： 2文字目からは、<strong>小文字・数字・記号</strong>のどれかを使ってね。</li>
+<li><strong><code>{7,15}</code></strong> ： 3番のルールを <strong>7回から15回繰り返して</strong> ね。（最初の1文字を合わせると、全部で8〜16文字になります）</li>
+<li><strong><code>$</code></strong> ： ここで終わり。これより後ろに余計な文字があったらダメ！</li>
+</ol>
+<p>これで、郵便番号、電話番号、そしてパスワードのバリデーション（入力チェック）ができるようになりましたね！</p>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="new演算子"><a class="header" href="#new演算子">new演算子</a></h1>
@@ -6546,22 +6548,6 @@ dora(); // "私はドラロボットです。"
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
