@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>オブジェクトを改造する.md - 留学生のためのJavaScript学習ガイド</title>
+        <title>オブジェクトを改造する - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-634cee1d.js";
+            window.path_to_searchindex_js = "searchindex-b133056f.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-20adbab8.js"></script>
+        <script src="toc-768ab124.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -199,54 +199,63 @@ myCar.horn = function() {
 myCar.horn(); // 実行できる！
 
 </code></pre>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><code>myCar.horn = function() {...</code> の部分は、<code>myCar.horn</code> に関数を代入していいます。
+このように、<strong>JavaScriptでは関数も変数のようにあつかうことができます。</strong> 代入したり、関数の引数にしたり、返り値にしたりできるのです。</p>
+</blockquote>
 <h4 id="b-オーバーライド上書きする"><a class="header" href="#b-オーバーライド上書きする">b) <strong>オーバーライド（上書き）する</strong></a></h4>
 <p>親から受け継いだ機能を、自分流のやり方に書き換えます。</p>
 <ul>
 <li><strong>イメージ：</strong> お父さんから譲り受けたカメラだけど、レンズを最新のものに交換して使いやすくする。</li>
 <li><strong>書き方：</strong> 同じ名前で新しく定義し直す。</li>
 </ul>
-<pre><code class="language-javascript">class Robot {
+<pre><code class="language-javascript">// 1. robotオブジェクトを作成
+const robot {
+  name: "ロビー",
   greet() {
-    console.log("ハロー、ロボットデス。");
+    console.log("ハロー、ロボットです。");
   }
 }
 
-class JapaneseRobot extends Robot {
-  // 親の greet を上書き（オーバーライド）
-  greet() {
-    console.log("こんにちは、ロボットです。");
-  }
-}
+// 2. 実行
+robot.greet(); // "ハロー、ロボットです。"（元のまま）
 
-const robo = new JapaneseRobot();
-robo.greet(); // 「こんにちは...」が出る
+// 3. robot のメソッドを上書き（オーバーライド）する
+robot.greet = function() {
+  console.log("こんにちは！ 私は特別なロボットです。");
+};
 
+// 4. 実行して比較（ひかく）する
+robot.greet(); // "こんにちは！ 私は特別な..."（上書きされた！）
 </code></pre>
-<h3 id="2-例え話スマホのケースとアプリ"><a class="header" href="#2-例え話スマホのケースとアプリ">2. 例え話：スマホのケースとアプリ</a></h3>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><code>robot.greet = function() {...</code> の部分は、<code>robot</code> の　<code>greet</code> というメソッド（関数）に別の関数を再代入しています。</p>
+</blockquote>
+<h3 id="2-例え話スマホ"><a class="header" href="#2-例え話スマホ">2. 例え話：スマホ</a></h3>
 <blockquote>
-<p>「JavaScriptのオブジェクトは、一度作ったら終わりじゃないんだ。</p>
+<p>JavaScriptのオブジェクトは、一度作ったら終わりではありません。</p>
 <ol>
-<li><strong>直接追加：</strong> スマホに『お気に入りのストラップ』をつけるようなもの。そのスマホだけの特別。</li>
-<li><strong>プロトタイプ追加：</strong> OSをアップデートして『全員のスマホに新しい計算機アプリ』を入れるようなもの。</li>
+<li><strong>直接追加：</strong> スマホに『お気に入りのストラップ』をつけるようなもの。</li>
 <li><strong>オーバーライド：</strong> 決まった『着信音（ちゃくしんおん）』を、自分の好きな音楽に変えるようなものだよ。</li>
 </ol>
-<p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんだ！」</p>
+<p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんです。</p>
 </blockquote>
 <h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
 <p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく難しい山場です。</p>
-<p>留学生の方には、これを <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの受け継ぎ」</strong> に例えて説明してあげると、イメージがしやすくなります。</p>
+<p>これを皆さんがイメージしやすいように、 <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの受け継ぎ」</strong> に例えて説明します。</p>
 <h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
-<p>一言でいうと、<strong>「共通の予備（よび）パーツ」</strong> です。</p>
-<p>JavaScriptでは、すべてのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる仕組みです。</p>
+<p>JavaScriptでは、多くのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる仕組みです。</p>
 <h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
 <p>「自分になければ親、親になければそのまた親…」と、<strong>さかのぼって探しに行く「鎖（くさり）」のようなつながり</strong> のことです。</p>
-<h4 id="身近な例え秘伝のカレーレシピ"><a class="header" href="#身近な例え秘伝のカレーレシピ"><strong>身近な例え：秘伝のカレーレシピ</strong></a></h4>
+<h4 id="身近な例え秘伝のカレーレシピを求めて"><a class="header" href="#身近な例え秘伝のカレーレシピを求めて"><strong>身近な例え：秘伝のカレーレシピを求めて</strong></a></h4>
 <ol>
 <li><strong>あなた（インスタンス）：</strong> カレーを作ろうとします。</li>
 <li><strong>自分のキッチン：</strong> レシピがありません。</li>
-<li><strong>お父さんの家（プロトタイプ）：</strong> 「カレーのレシピある？」と聞きます。</li>
-<li><strong>おじいさんの家（親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。</li>
-<li><strong>ルーツ：</strong> 誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
+<li><strong>お父さんの家（自分のプロトタイプ）：</strong> 「カレーのレシピある？」と聞きます。「持っていない」と答えが返ってきました。</li>
+<li><strong>おじいさんの家（自分の親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。「カレーのレシピある？」</li>
+<li><strong>先祖の家：</strong> そんな風に、レシピを持っている人を見つけるまで、先祖をたどって聞きに行きます。誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
 </ol>
 <h3 id="3-なぜこの仕組みがあるの"><a class="header" href="#3-なぜこの仕組みがあるの">3. なぜこの仕組みがあるの？</a></h3>
 <p>もし100人の学生オブジェクトを作るとき、全員に「自己紹介メソッド」を持たせると、メモリー（コンピューターの脳）をたくさん使ってしまいます。</p>
@@ -287,7 +296,7 @@ console.log(numbers.double()); // [2, 4, 6]
 
 </code></pre>
 <blockquote>
-<p><strong>注意：</strong> ここではわかりやすい例として<code>Array</code>にメソッドを追加しましたが、普通、 <code>Array</code> や <code>Object</code> などの標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
+<p><strong>注意：</strong> ここではわかりやすい例として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
 </blockquote>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
@@ -306,11 +315,11 @@ console.log(numbers.double()); // [2, 4, 6]
 <hr>
 <h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
 <blockquote>
-<p>「改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあるんだ。
-特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておこうね！」</p>
+<p>改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあります。
+特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておきましょう！</p>
 </blockquote>
 <hr>
-<p>いかがでしょうか？「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
+<p>いかがでしょうか？ 「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
 
                     </main>
 
