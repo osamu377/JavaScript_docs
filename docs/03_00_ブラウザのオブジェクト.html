@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -177,7 +177,7 @@
                         <h1 id="ブラウザのオブジェクト"><a class="header" href="#ブラウザのオブジェクト">ブラウザのオブジェクト</a></h1>
 <p><strong>初心者のためのJavaScript：ブラウザを動かす「オブジェクト」の<ruby>仕組<rt>しく</rt></ruby>み</strong></p>
 <p>みなさん、こんにちは！IT専門学校（せんもんがっこう）でプログラミングを教えているシニア講師（こうし）です。留学生（りゅうがくせい）のみなさんも、これからJavaScriptを使ってウェブサイトに「<ruby>動<rt>うご</rt></ruby>き」をつける方法を楽しく学んでいきましょう。</p>
-<p>プログラミングは難（むずか）しく見えますが、実は <strong>「ブラウザという家（いえ）」の中にある「道具（どうぐ）」の使い方</strong>を覚（おぼ）えるだけなんです。今日は、その道具である「オブジェクト」について、プロの視点（してん）からやさしく解説（かいせつ）します。</p>
+<p>プログラミングは難（むずか）しく見えますが、実は <strong>「ブラウザという家」の中にある「道具（どうぐ）」の使い方</strong>を覚（おぼ）えるだけなんです。今日は、その道具である「オブジェクト」について、プロの視点（してん）からやさしく解説（かいせつ）します。</p>
 <h2 id="i-javascriptは誰が何をするかを指示するマニュアル"><a class="header" href="#i-javascriptは誰が何をするかを指示するマニュアル">I. JavaScriptは「誰が」「何をするか」を指示するマニュアル</a></h2>
 <p>ここでもう一度、最初に説明したイメージを思い出してください。</p>
 <ul>
@@ -187,7 +187,7 @@
 <p>マニュアルですから、「みんなで協力して、これをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に、細かく書く必要があります。そうしないと、みんなが同じ仕事をしようとしたり、大事な仕事を誰もしなかったり、ということが起こります。</p>
 <p>ここでは、 <strong>「誰が」（つまり、どのオブジェクトが）その作業をするのか</strong> を、間違いなく伝えるために、 <strong>JavaScriptがどのようにそのオブジェクトを見つけるのか</strong> 、その方法を説明します。</p>
 <h3 id="1-bomdomツリーはブラウザが作った地図"><a class="header" href="#1-bomdomツリーはブラウザが作った地図">1. BOM/DOMツリーは「ブラウザが作った地図」</a></h3>
-<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、Webページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『<ruby>段落<rt>だんらく</rt></ruby><code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する『<ruby>入力<rt>にゅうりょく</rt></ruby>ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
+<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、Webページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby><code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する『<ruby>入力<rt>にゅうりょく</rt></ruby>ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
 <p>ブラウザは、HTMLファイルを受け取ると、中身を読み取って、その指示に従って <strong>オブジェクト</strong> たちを作り、それらをコンピュータが扱いやすい <strong>「木（Tree）」</strong> の形に並べ替えます。これを <strong>DOM（Document Object Model）ツリー</strong> と呼びます。</p>
 <p>またブラウザ自身も自分の持っている機能をツリーの形で整理しています。これを <strong>BOM（Browser Object Model）</strong> と呼びます。</p>
 <p><strong>ブラウザ世界の構造</strong></p>
@@ -213,7 +213,7 @@
 <ul>
 <li><strong>Document（ルート）：</strong> 木の「一番下の根っこ」または「一番上の先祖」。すべての始まりです。</li>
 <li><strong>Parent（親）：</strong> ある要素を包んでいる外側のタグ。</li>
-<li><strong>Child（子）：</strong> タグの中に入っている内側のタグ。</li>
+<li><strong>Child（子）：</strong> タグの中に入っている<ruby>内側<rt>うちがわ</rt></ruby>のタグ。</li>
 <li><strong>Sibling（兄弟）：</strong> 同じ親の中に並んでいるタグ同士。</li>
 </ul>
 <h3 id="3-javascriptの仕事地図をたどって操作する"><a class="header" href="#3-javascriptの仕事地図をたどって操作する">3. JavaScriptの仕事：地図をたどって操作する</a></h3>
@@ -258,7 +258,7 @@
 </ul>
 </li>
 </ul>
-<p>次は、王様が持っている大切な「書類」、つまりページの中身を指す「Document」についてお話しします。</p>
+<p>次は、王様が持っている大切な「書類」、つまりページの中身を指す「Document」についてお<ruby>話<rt>はなし</rt></ruby>しします。</p>
 <hr>
 <h2 id="iii-ウェブページを操るdomとdocumentオブジェクト"><a class="header" href="#iii-ウェブページを操るdomとdocumentオブジェクト">III. ウェブページを操る：DOMとDocumentオブジェクト</a></h2>
 <p>ウェブページに<ruby>表示<rt>ひょうじ</rt></ruby>されている文字や<ruby>画像<rt>がぞう</rt></ruby>そのものを操作（そうさ）するのがDocument（ドキュメント）オブジェクトです。</p>
@@ -292,7 +292,7 @@
 </ul>
 <hr>
 <h3 id="2-実際に動かしてみよう"><a class="header" href="#2-実際に動かしてみよう">2. 実際に動かしてみよう！</a></h3>
-<p>留学生に、コードの書き方の違いを見せてあげましょう。</p>
+<p>留学生に、コードの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の違いを見せてあげましょう。</p>
 <pre><code class="language-javascript">// 1. IDで探す（1つだけ見つかる）
 const title = document.getElementById("main-title");
 title.style.color = "red";
@@ -301,7 +301,7 @@ title.style.color = "red";
 const items = document.getElementsByClassName("menu-item");
 items[0].textContent = "最初のメニュー";
 
-// 3. 万能な探し方（CSSと同じ書き方）
+// 3. 万能な探し方（CSSと同じ&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;方&lt;rt&gt;かた&lt;/rt&gt;&lt;/ruby&gt;）
 const firstLink = document.querySelector("nav a"); // navの中の最初のaタグ
 
 </code></pre>

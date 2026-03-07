@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -178,8 +178,8 @@
 <p>関数の中に、さらに関数を書くことができます。これを <strong>「ネスト（入れ子）」</strong> と呼びます。これは、プログラムを整理して情報を守る <strong>「カプセル化（情報の保護）」</strong> に役立ちます。</p>
 <p>親子関係とスコープ</p>
 <ul>
-<li>ルール： 内側の関数（子供）は、外側の関数（親）にある変数を見ることができます。</li>
-<li>例え： 「子供は自分の家の冷蔵庫（親の変数）を開けて中身を見ることができます。でも、外にいる隣の人（外の関数）は、その家の中を見ることはできません。」</li>
+<li>ルール： <ruby>内側<rt>うちがわ</rt></ruby>の関数（子供）は、外側の関数（親）にある変数を見ることができます。</li>
+<li><ruby>例<rt>たと</rt></ruby>え： 「子供は自分の家の冷蔵庫（親の変数）を開けて中身を見ることができます。でも、外にいる隣の人（外の関数）は、その家の中を見ることはできません。」</li>
 </ul>
 <pre><code class="language-JavaScript">function outerFunc() {
   var a;
@@ -192,14 +192,14 @@
 <hr>
 <h2 id="i-関数のネスト入れ子構造"><a class="header" href="#i-関数のネスト入れ子構造">I. 関数のネスト（入れ子構造）</a></h2>
 <p>プログラミングをしていると、関数の中にさらに別の関数を書くことがあります。これを <strong>「ネスト（入れ子：いれこ）」</strong> と言います。</p>
-<p>これに伴う「スコープ（見える範囲）」のルールは、留学生のみなさんには <strong>「家と部屋」</strong> に例えて説明すると、とても分かりやすくなりますよ！</p>
+<p>これに伴う「スコープ（見える範囲）」のルールは、留学生のみなさんには <strong>「家と部屋」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とても分かりやすくなりますよ！</p>
 <hr>
 <h3 id="1-ネスト入れ子ってなに"><a class="header" href="#1-ネスト入れ子ってなに">1. ネスト（入れ子）ってなに？</a></h3>
 <p>マトリョーシカ（ロシアの人形）のように、大きな箱の中に小さな箱が入っている状態のことです。</p>
 <p>JavaScriptでは、このように書きます。</p>
 <pre><code class="language-javascript">function outer() { // 外側の関数（大きな箱）
   
-  function inner() { // 内側の関数（小さな箱）
+  function inner() { // &lt;ruby&gt;内側&lt;rt&gt;うちがわ&lt;/rt&gt;&lt;/ruby&gt;の関数（小さな箱）
     // 何かの処理
   }
 
@@ -209,9 +209,9 @@
 <h3 id="2-スコープの絶対ルール家と部屋のルール"><a class="header" href="#2-スコープの絶対ルール家と部屋のルール">2. スコープの絶対ルール（家と部屋のルール）</a></h3>
 <p>ネストされた関数のスコープには、大切な <strong>2つのルール</strong> があります。</p>
 <h4 id="ルール①中は外が見える"><a class="header" href="#ルール①中は外が見える">ルール①：中は「外」が見える</a></h4>
-<p>自分の部屋（内側の関数）にいても、窓から外（外側の関数）の景色は見えますよね。つまり、<strong>内側の関数から、外側の変数は使えます。</strong></p>
+<p>自分の部屋（<ruby>内側<rt>うちがわ</rt></ruby>の関数）にいても、窓から外（外側の関数）の景色は見えますよね。つまり、<strong><ruby>内側<rt>うちがわ</rt></ruby>の関数から、外側の変数は使えます。</strong></p>
 <h4 id="ルール②外は中が見えない"><a class="header" href="#ルール②外は中が見えない">ルール②：外は「中」が見えない</a></h4>
-<p>家の外（外側の関数）にいる人は、あなたの部屋（内側の関数）の引き出しの中身は見えません。つまり、<strong>外側の関数から、内側の変数は使えません。</strong></p>
+<p>家の外（外側の関数）にいる人は、あなたの部屋（<ruby>内側<rt>うちがわ</rt></ruby>の関数）の引き出しの中身は見えません。つまり、<strong>外側の関数から、<ruby>内側<rt>うちがわ</rt></ruby>の変数は使えません。</strong></p>
 <h3 id="3-具体的なコードで見てみよう"><a class="header" href="#3-具体的なコードで見てみよう">3. 具体的なコードで見てみよう！</a></h3>
 <p>このルールを実際のコードで確認してみましょう。</p>
 <pre><code class="language-javascript">function grandParent() {
@@ -246,8 +246,8 @@ grandParent();
 <tr><th>視点（目線）</th><th>見える？</th><th>理由（たとえ）</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>内側から → 外側へ</strong></td><td><strong>見える！ (OK)</strong></td><td>部屋の窓から外が見えるから。</td></tr>
-<tr><td><strong>外側から → 内側へ</strong></td><td><strong>見えない！ (NG)</strong></td><td>外から他人の部屋の中は見えないから。</td></tr>
+<tr><td><strong><ruby>内側<rt>うちがわ</rt></ruby>から → 外側へ</strong></td><td><strong>見える！ (OK)</strong></td><td>部屋の窓から外が見えるから。</td></tr>
+<tr><td><strong>外側から → <ruby>内側<rt>うちがわ</rt></ruby>へ</strong></td><td><strong>見えない！ (NG)</strong></td><td>外から他人の部屋の中は見えないから。</td></tr>
 </tbody>
 </table>
 </div>
@@ -276,7 +276,7 @@ grandParent();
 </ul>
 <hr>
 <h3 id="2-具体的なコードで見てみよう"><a class="header" href="#2-具体的なコードで見てみよう">2. 具体的なコードで見てみよう</a></h3>
-<p>一番わかりやすい例は、数字を数える「カウンター」です。</p>
+<p>一番わかりやすい<ruby>例<rt>れい</rt></ruby>は、数字を数える「カウンター」です。</p>
 <pre><code class="language-javascript">function createCounter() {
   let count = 0; // これが「リュックの中身（秘密の変数）」
 
@@ -295,7 +295,7 @@ myCounter(); // 「3回目です」
 </code></pre>
 <h4 id="ここが魔法まほうのポイント"><a class="header" href="#ここが魔法まほうのポイント">ここが「<ruby>魔法<rt>まほう</rt></ruby>」のポイント：</a></h4>
 <p>普通、<code>createCounter</code> という関数が動いた後、その中の <code>count = 0</code> という変数は消えてしまうはずです。
-でも、戻ってきた「内側の関数」が <code>count</code> を<strong>リュックに入れて持ち続けている</strong>ので、ずっと数字が増えていくのです。</p>
+でも、戻ってきた「<ruby>内側<rt>うちがわ</rt></ruby>の関数」が <code>count</code> を<strong>リュックに入れて持ち続けている</strong>ので、ずっと数字が増えていくのです。</p>
 <hr>
 <h3 id="3-なぜクロージャを使うの"><a class="header" href="#3-なぜクロージャを使うの">3. なぜクロージャを使うの？</a></h3>
 <p>留学生のみなさんには、この2つのメリットを伝えてあげてください。</p>

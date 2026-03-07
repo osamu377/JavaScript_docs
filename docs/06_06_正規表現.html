@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -180,16 +180,16 @@
 <p>RegExpは <strong>「<ruby>魔法<rt>まほう</rt></ruby>の虫めがね」</strong> です。たくさんの文字の中から、自分の探したい「パターン」だけをピカッと光らせて見つけることができます。</p>
 <hr>
 <h2 id="i-正規表現ってなに"><a class="header" href="#i-正規表現ってなに">I. 「正規表現」ってなに？</a></h2>
-<p>普通の検索（<code>indexOf</code> など）は、「特定の言葉」を探します。
+<p>普通の<ruby>検索<rt>けんさく</rt></ruby>（<code>indexOf</code> など）は、「特定の言葉」を探します。
 RegExpは、<strong>「言葉のルール（パターン）」</strong> を探します。</p>
 <ul>
-<li><strong>普通の検索：</strong> 「『田中』さんを探して」</li>
+<li><strong>普通の<ruby>検索<rt>けんさく</rt></ruby>：</strong> 「『田中』さんを探して」</li>
 <li><strong>RegExp：</strong> 「『数字が3つ、ハイフン、数字が4つ』の形（電話番号）を探して」</li>
 </ul>
-<p>このように、あやふやなルールで検索できるのがすごいところです。</p>
+<p>このように、あやふやなルールで<ruby>検索<rt>けんさく</rt></ruby>できるのがすごいところです。</p>
 <hr>
 <h2 id="ii-regexpオブジェクトの作り方"><a class="header" href="#ii-regexpオブジェクトの作り方">II. RegExpオブジェクトの作り方</a></h2>
-<p>2つの書き方がありますが、よく使われるのは <strong><code>/ /</code>（スラッシュ）</strong> で囲む方法です。</p>
+<p>2つの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>がありますが、よく使われるのは <strong><code>/ /</code>（スラッシュ）</strong> で囲む方法です。</p>
 <pre><code class="language-javascript">// 1. スラッシュで囲む（リテラル） ★おすすめ
 const pattern1 = /abc/;
 
@@ -200,7 +200,7 @@ const pattern2 = new RegExp("abc");
 <hr>
 <h2 id="iii-よく使う魔法まほうの記号１"><a class="header" href="#iii-よく使う魔法まほうの記号１">III. よく使う「<ruby>魔法<rt>まほう</rt></ruby>の記号」（１）</a></h2>
 <p>正規表現（RegExp）のメタ文字は、文字の <strong>「種類」</strong> や <strong>「数」</strong> を指定する特別なルールです。
-<strong>「トランプのジョーカー」</strong> や <strong>「算数のルール」</strong> に例えて説明すると、パズルのように楽しく理解できます。</p>
+<strong>「トランプのジョーカー」</strong> や <strong>「算数のルール」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、パズルのように楽しく理解できます。</p>
 <p>よく使われる7つの記号を、やさしく解説しましょう！</p>
 <hr>
 <h3 id="1--ドット"><a class="header" href="#1--ドット">1. <code>.</code> （ドット）</a></h3>
@@ -210,7 +210,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> 数字でも、漢字でも、アルファベットでも、**「とにかく1文字」**あればOK。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/あ.い/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ.い/</code></p>
 <ul>
 <li>「あ<strong>い</strong>い」 … OK</li>
 <li>「あ<strong>あ</strong>い」 … OK</li>
@@ -226,7 +226,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> 直前（ちょくぜん）の文字が「0個、1個、2個……」と、いくつ続いていてもOK。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/あ*い/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ*い/</code></p>
 <ul>
 <li>「い」 … OK（「あ」が0個でもいい）</li>
 <li>「あい」 … OK</li>
@@ -241,7 +241,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> 直前の文字が「1個、2個、3個……」と続いていればOK。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/あ+い/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ+い/</code></p>
 <ul>
 <li>「い」 … <strong>NG</strong>（「あ」が最低1つは必要！）</li>
 <li>「あい」 … OK</li>
@@ -256,7 +256,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> 直前の文字が「ない」か「1個だけある」状態。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/あ?い/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ?い/</code></p>
 <ul>
 <li>「い」 … OK</li>
 <li>「あい」 … OK</li>
@@ -271,7 +271,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> その文字で文章が始まっていることをチェックします。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/^おはよう/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/^おはよう/</code></p>
 <ul>
 <li>「おはようございます」 … OK</li>
 <li>「みんな、おはよう」 … <strong>NG</strong>（「みんな」から始まっているから）</li>
@@ -284,7 +284,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> その文字で文章が終わっていることをチェックします。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/です$/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/です$/</code></p>
 <ul>
 <li>「田中です」 … OK</li>
 <li>「田中ですよ」 … <strong>NG</strong>（「よ」で終わっているから）</li>
@@ -298,7 +298,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> 左側か右側、どちらかの文字があればOK。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/りんご|みかん/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/りんご|みかん/</code></p>
 <ul>
 <li>「りんご」 … OK</li>
 <li>「みかん」 … OK</li>
@@ -328,7 +328,7 @@ const pattern2 = new RegExp("abc");
 <h2 id="iv-よく使う魔法まほうの記号２"><a class="header" href="#iv-よく使う魔法まほうの記号２">IV. よく使う「<ruby>魔法<rt>まほう</rt></ruby>の記号」（２）</a></h2>
 <p>正規表現（RegExp）のメタ文字、さらに便利なものを紹介します！
 今回は、文字を <strong>「グループ化」</strong> したり、<strong>「回数を正確に指定」</strong> したりする、少し高度なルールです。</p>
-<p><strong>「チーム作り」</strong> や <strong>「回数の予約」</strong> に例えて説明ます。</p>
+<p><strong>「チーム作り」</strong> や <strong>「回数の予約」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明ます。</p>
 <h3 id="1--かっこ"><a class="header" href="#1--かっこ">1. <code>()</code> （かっこ）</a></h3>
 <p><strong>→「チーム（グループ）を作る」</strong></p>
 <ul>
@@ -336,7 +336,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> チームに対して、さっき勉強した <code>*</code> や <code>+</code> を使うことができます。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/(abc)+/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/(abc)+/</code></p>
 <ul>
 <li>「abc」 … OK</li>
 <li>「abcabcabc」 … OK（「abc」というチームが繰り返されている）</li>
@@ -350,7 +350,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> カッコの中に入っている文字のどれか1つに合えばOK。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>/[ABC]くん/</code></p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/[ABC]くん/</code></p>
 <ul>
 <li>「Aくん」 … OK</li>
 <li>「Bくん」 … OK</li>
@@ -363,17 +363,17 @@ const pattern2 = new RegExp("abc");
 <p>これらは <code>+</code> や <code>*</code> よりも、もっと細かく <strong>「何回か」</strong> を予約する記号です。</p>
 <h4 id="n-ぴったり-n回"><a class="header" href="#n-ぴったり-n回"><code>{n}</code> ：ぴったり n回</a></h4>
 <ul>
-<li><strong>例：</strong> <code>/\d{3}/</code> （数字が<strong>ぴったり3つ</strong>）</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3}/</code> （数字が<strong>ぴったり3つ</strong>）</li>
 <li>「123」はOK、「12」はNG。</li>
 </ul>
 <h4 id="n-n回以上いくらでも"><a class="header" href="#n-n回以上いくらでも"><code>{n,}</code> ：n回以上（いくらでも）</a></h4>
 <ul>
-<li><strong>例：</strong> <code>/\d{3,}/</code> （数字が<strong>3つ以上</strong>）</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3,}/</code> （数字が<strong>3つ以上</strong>）</li>
 <li>「123」も「12345」もOK。</li>
 </ul>
 <h4 id="n-m-n回から-m回のあいだ"><a class="header" href="#n-m-n回から-m回のあいだ"><code>{n, m}</code> ：n回から m回のあいだ</a></h4>
 <ul>
-<li><strong>例：</strong> <code>/\d{3,5}/</code> （数字が<strong>3つ、4つ、または5つ</strong>）</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3,5}/</code> （数字が<strong>3つ、4つ、または5つ</strong>）</li>
 <li>「1234」はOK、「123456」はNG。</li>
 </ul>
 <h3 id="4--バックスラッシュ--円マーク"><a class="header" href="#4--バックスラッシュ--円マーク">4. <code>\</code> （バックスラッシュ / 円マーク）</a></h3>
@@ -383,7 +383,7 @@ const pattern2 = new RegExp("abc");
 <li><strong>ルール：</strong> メタ文字の前に書くと、ただの「記号」として探せるようになります。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> 普通のドット（.）を探したいとき</p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> 普通のドット（.）を探したいとき</p>
 <ul>
 <li><code>.</code> だけだと「なんでも1文字」という<ruby>魔法<rt>まほう</rt></ruby>が発動します。</li>
 <li><code>/\./</code> と書くと、文章の中にある**「点（ドット）」**そのものを探せます。</li>
@@ -404,7 +404,7 @@ const pattern2 = new RegExp("abc");
 </tbody>
 </table>
 </div>
-<p>いかがでしょうか？これで正規表現の主要なパーツが揃いました。</p>
+<p>いかがでしょうか？これで正規表現の主要なパーツが<ruby>揃<rt>そろ</rt></ruby>いました。</p>
 <hr>
 <p><a href="./06_05_かっこの種類.html">参考: かっこの種類と日本語の呼び方</a></p>
 <h3 id="留学生へのアドバイス"><a class="header" href="#留学生へのアドバイス">留学生へのアドバイス</a></h3>
@@ -412,7 +412,7 @@ const pattern2 = new RegExp("abc");
 <blockquote>
 <p>「RegExpは <strong>『文字の形をチェックするルールブック』</strong> だよ。
 郵便番号、メールアドレス、パスワードの強さ（英数字が入っているか）を調べるときに、世界中のプログラマーが使っているんだ。
-難しいパターンは、インターネットで『RegExp 郵便番号』のように検索してコピーすれば大丈夫だよ！」</p>
+難しいパターンは、インターネットで『RegExp 郵便番号』のように<ruby>検索<rt>けんさく</rt></ruby>してコピーすれば大丈夫だよ！」</p>
 </blockquote>
 <blockquote class="blockquote-tag blockquote-tag-important">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
@@ -423,7 +423,7 @@ const pattern2 = new RegExp("abc");
 </ul>
 <p>この2つを知ると、さらに便利に使ってもらえます。</p>
 </blockquote>
-<p>いかがでしょうか？「完璧なパターンを自分で書く」ことよりも、「ルールで検索できる便利な道具がある」ことを知ることが第一歩です！</p>
+<p>いかがでしょうか？「完璧なパターンを自分で書く」ことよりも、「ルールで<ruby>検索<rt>けんさく</rt></ruby>できる便利な道具がある」ことを知ることが第一歩です！</p>
 <hr>
 <h2 id="v-実際に使ってみよう"><a class="header" href="#v-実際に使ってみよう">V. 実際に使ってみよう</a></h2>
 <p>よくある「メールアドレスの<ruby>入力<rt>にゅうりょく</rt></ruby>チェック」のようなイメージです。</p>
@@ -436,7 +436,7 @@ if (myPattern.test(text)) {
 }
 
 </code></pre>
-<h4 id="少し難しいパターン例"><a class="header" href="#少し難しいパターン例">少し難しいパターン例</a></h4>
+<h4 id="少し難しいパターン例れい"><a class="header" href="#少し難しいパターン例れい">少し難しいパターン<ruby>例<rt>れい</rt></ruby></a></h4>
 <p>「数字が3つ連続（れんぞく）しているところを探す」</p>
 <pre><code class="language-javascript">const numPattern = /\d{3}/;
 console.log(numPattern.test("abc123def")); // true
@@ -510,7 +510,7 @@ console.log(numPattern.test("abc123def")); // true
 </div>
 <p>いかがでしょうか？これで「正しいデータだけを受け付ける」という、とても実践的（じっせんてき）なプログラムが作れるようになります。</p>
 <hr>
-<h2 id="vi-実践的な例-その２"><a class="header" href="#vi-実践的な例-その２">VI. 実践的な例 その２</a></h2>
+<h2 id="vi-実践的な例れい-その２"><a class="header" href="#vi-実践的な例れい-その２">VI. 実践的な<ruby>例<rt>れい</rt></ruby> その２</a></h2>
 <p>「正しいパスワードの形」をチェックするコードです。これまでの集大成（しゅうたいせい）として、とても良い練習になります！</p>
 <p><strong>「パスワードの門番（もんばん）」</strong> を作るイメージで説明します。</p>
 <h3 id="1-パスワードのルール仕様"><a class="header" href="#1-パスワードのルール仕様">1. パスワードのルール（仕様）</a></h3>

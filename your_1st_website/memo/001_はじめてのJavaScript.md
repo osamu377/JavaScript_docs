@@ -44,7 +44,7 @@ Create a JSLearn folder in the source folder and pin it
 1. 拡張機能アイコンをクリック *Click on the extension icon*
 <img src="img/001/201.png">
 
-1. 検索ウィンドウに"Live Server"と<ruby>入力<rt>にゅうりょく</rt></ruby> *Type 'Live Server' in the search window.*
+1. <ruby>検索<rt>けんさく</rt></ruby>ウィンドウに"Live Server"と<ruby>入力<rt>にゅうりょく</rt></ruby> *Type 'Live Server' in the search window.*
 <img src="img/001/202.png">
 
 1. "インストール"をクリック *Click on "インストール".
@@ -138,9 +138,9 @@ Create a JSLearn folder in the source folder and pin it
 ---
 
 ### 🔹 `<head>` ～ `</head>`
-- **意味**：ページの「頭」の部分で、<ruby>表示<rt>ひょうじ</rt></ruby>されない情報（設定など）をまとめます。
+- **意味**：ページの「頭」の部分で、<ruby>表示<rt>ひょうじ</rt></ruby>されない情報（<ruby>設定<rt>せってい</rt></ruby>など）をまとめます。
 - **中に含まれるタグ**：
-  - `<meta charset="UTF-8">`：文字コードをUTF-8に設定。日本語なども正しく<ruby>表示<rt>ひょうじ</rt></ruby>されます。
+  - `<meta charset="UTF-8">`：文字コードをUTF-8に<ruby>設定<rt>せってい</rt></ruby>。日本語なども正しく<ruby>表示<rt>ひょうじ</rt></ruby>されます。
   - `<title>`：ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>されるページのタイトル。
 
 - **Meaning**: This is the "head" section of the page, where you include information that is not directly displayed (such as settings).
@@ -159,16 +159,16 @@ Create a JSLearn folder in the source folder and pin it
 
 ### 🔹 `<h1>Hello, World!</h1>`
 - **意味**：大きな見出し（タイトル）を<ruby>表示<rt>ひょうじ</rt></ruby>します。
-- **ポイント**：`<h1>`は一番大きな見出し。数字が大きくなるほど小さな見出しになります（例：`<h2>`、`<h3>`）。
+- **ポイント**：`<h1>`は一番大きな見出し。数字が大きくなるほど小さな見出しになります（<ruby>例<rt>れい</rt></ruby>：`<h2>`、`<h3>`）。
 
 - **Meaning**: Displays a large heading (title).
 - **Point**: `<h1>` is the largest heading. The higher the number, the smaller the heading (e.g., `<h2>`, `<h3>`).
 
 ---
 
-### 🔹 `<p>This is a paragraph.</p>`：<ruby>段落<rt>だんらく</rt></ruby>（パラグラフ）を表すタグ
-- **意味**： `<p>`タグは、**文章のまとまり（<ruby>段落<rt>だんらく</rt></ruby>）**を表すために使います。
-- **ポイント**：「<ruby>段落<rt>だんらく</rt></ruby>」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
+### 🔹 `<p>This is a paragraph.</p>`：<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>（パラグラフ）を表すタグ
+- **意味**： `<p>`タグは、**文章のまとまり（<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>）**を表すために使います。
+- **ポイント**：「<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
 
 - **Meaning**: The `<p>` tag is used to represent a **block of text (a paragraph)**.
 - **Point**: A paragraph is a group of sentences that express a single idea or topic.

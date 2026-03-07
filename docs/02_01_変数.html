@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -182,12 +182,12 @@
 <hr>
 <h2 id="i-変数とは何かデータを保存する名前付きの箱"><a class="header" href="#i-変数とは何かデータを保存する名前付きの箱">I. 変数とは何か：データを保存する「名前付きの箱」</a></h2>
 <p>プログラミングにおける「変数」とは、プログラムの中で扱う数値や文字列などのデータを保存しておくための「<strong>名前のついた箱</strong>」のようなものです。</p>
-<p>空港で荷物を預けるシーンを想像してみてください。たくさんのスーツケースがあるとき、『どれが誰のものか？』『中身が何か？』を見分けるために「名前のラベル」を貼りますよね。これが変数です。ラベル（変数名）があるからこそ、後で必要なときに迷わずそのデータを取り出すことができます。</p>
+<p>空港で荷物を預けるシーンを想像してみてください。たくさんのスーツケースがあるとき、『どれが誰のものか？』『中身が何か？』を見分けるために「名前のラベル」を貼りますよね。これが変数です。ラベル（変数名）があるからこそ、<ruby>後<rt>あと</rt></ruby>で必要なときに迷わずそのデータを取り出すことができます。</p>
 <h3 id="1代入"><a class="header" href="#1代入">1.「代入」</a></h3>
 <p>「名前のついた箱」である <strong>「変数」の中にデータを入れる</strong> ことを、プログラミングでは <strong>「代入」</strong> と言います。</p>
 <ul>
-<li><strong>名前（ラベル）</strong>: 変数名（例: <code>score</code>, <code>myName</code>）</li>
-<li><strong>箱の中身</strong>: データ（例: 数字の <code>100</code>, 文字の <code>"山田"</code>）</li>
+<li><strong>名前（ラベル）</strong>: 変数名（<ruby>例<rt>れい</rt></ruby>: <code>score</code>, <code>myName</code>）</li>
+<li><strong>箱の中身</strong>: データ（<ruby>例<rt>れい</rt></ruby>: 数字の <code>100</code>, 文字の <code>"山田"</code>）</li>
 </ul>
 <p>代入するときは、<strong><code>=</code>（イコール）</strong> という記号を使います。ここで一番大切なルールがあります。</p>
 <p><strong>「右側（みぎがわ）にあるデータを、左側（ひだりがわ）の変数に入れる」</strong>,</p>
@@ -212,11 +212,11 @@ score = 80; // 一度、100を入れた変数scoreに、80を再代入します
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>種類</th><th>特徴</th><th>使いどき</th><th>例</th></tr>
+<tr><th>種類</th><th>特徴</th><th>使いどき</th><th><ruby>例<rt>れい</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td>let</td><td>中身を入れ替えられる箱</td><td>ゲームのスコアやクリックされた回数など、後で値が変わるもの</td><td><code>const MAX_LEVEL = 99;</code></td></tr>
-<tr><td>const</td><td>一度入れたら変えられない箱</td><td>名前、誕生日、設定値など、ずっと同じもの</td><td><code>let score = 0;</code> （あとで <code>score = 10;</code> と変えられる）</td></tr>
+<tr><td>let</td><td>中身を入れ替えられる箱</td><td>ゲームのスコアやクリックされた回数など、<ruby>後<rt>あと</rt></ruby>で値が変わるもの</td><td><code>const MAX_LEVEL = 99;</code></td></tr>
+<tr><td>const</td><td>一度入れたら変えられない箱</td><td>名前、誕生日、<ruby>設定<rt>せってい</rt></ruby>値など、ずっと同じもの</td><td><code>let score = 0;</code> （あとで <code>score = 10;</code> と変えられる）</td></tr>
 </tbody>
 </table>
 </div>
@@ -227,7 +227,7 @@ score = 80; // 一度、100を入れた変数scoreに、80を再代入します
 <h3 id="3-変数の初期化"><a class="header" href="#3-変数の初期化">3. 変数の初期化</a></h3>
 <p>変数を宣言する際、同時に値を代入することを「<strong>初期化（しょきか）</strong>」と呼びます。</p>
 <ul>
-<li><strong>宣言と初期化を同時に行う例</strong>:
+<li><strong>宣言と初期化を同時に行う<ruby>例<rt>れい</rt></ruby></strong>:
 <pre><code class="language-javascript">let myDog = "Rover"; // 宣言と同時に "Rover" という文字列を入れる
 const pi = 3.14;     // constは宣言時に必ず初期化が必要
 </code></pre>
@@ -243,9 +243,9 @@ myName = "Chris"; // 後から値を代入する
 <ul>
 <li><strong>大文字と小文字は区別される</strong>: <code>Name</code> と <code>name</code> は別の変数として扱われます。</li>
 <li><strong>使用できる文字</strong>: 半角英数字、アンダースコア（<code>_</code>）、ドル記号（<code>$</code>）が使えますが、<strong>数字から始めることはできません</strong>。</li>
-<li><strong>キャメルケース (camelCase)</strong>: 複数の単語を繋げる場合、2つ目以降の単語の先頭を大文字にする書き方が一般的です。
+<li><strong>キャメルケース (camelCase)</strong>: 複数の単語を繋げる場合、2つ目以降の単語の先頭を大文字にする<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が一般的です。
 <ul>
-<li><strong>例</strong>: <code>finalOutputValue</code>、<code>userName</code></li>
+<li><strong><ruby>例<rt>れい</rt></ruby></strong>: <code>finalOutputValue</code>、<code>userName</code></li>
 </ul>
 </li>
 <li><strong>意味のある名前</strong>: <code>a</code> や <code>b</code> といった一文字ではなく、<code>count</code> や <code>isRaining</code> など、<strong>中身が何であるか伝わる英語の名前</strong>を付けることが推奨されます。</li>
@@ -272,8 +272,8 @@ myName = "Chris"; // 後から値を代入する
 <li>ダブルクォーテーション： <strong>“こんにちは”</strong></li>
 </ul>
 <p>どちらを使っても構いませんが、一つのプログラムの中で統一するのが良い習慣です。</p>
-<h3 id="2-テンプレートリテラル最新のスマートな書き方"><a class="header" href="#2-テンプレートリテラル最新のスマートな書き方">2. テンプレートリテラル：最新のスマートな書き方</a></h3>
-<p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、変数の埋め込みや改行が非常に簡単になります。</p>
+<h3 id="2-テンプレートリテラル最新のスマートな書かき方かた"><a class="header" href="#2-テンプレートリテラル最新のスマートな書かき方かた">2. テンプレートリテラル：最新のスマートな<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></a></h3>
+<p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、変数の埋め込みや<ruby>改行<rt>かいぎょう</rt></ruby>が非常に簡単になります。</p>
 <pre><code class="language-javascript">const name = "佐藤";
 // 変数を文章の中に埋め込む
 const greeting = `こんにちは、${name}さん！`; 
@@ -281,7 +281,7 @@ console.log(greeting);
 </code></pre>
 <p>実際、どんなふうになるか見てみましょう。F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、下の <strong>「実行」</strong> ボタンを押してみてください。</p>
 <p><button onclick="const name = &#39;佐藤&#39;; const greeting = `こんにちは、${name}さん！`; console.log(greeting);">実行</button></p>
-<pre><code class="language-javascript">// テンプレートリテラルなら、そのまま改行もできます
+<pre><code class="language-javascript">// テンプレートリテラルなら、そのまま&lt;ruby&gt;改行&lt;rt&gt;かいぎょう&lt;/rt&gt;&lt;/ruby&gt;もできます
 const multiLine = `一行目です
 二行目です
 三行目です`;
@@ -292,7 +292,7 @@ console.log(multiLine);
 二行目です
 三行目です`;
 console.log(multiLine);">実行</button></p>
-<!--a href="./html/03_01_templit.html">ここをクリックして例をみてみましょう。</a-->
+<!--a href="./html/03_01_templit.html">ここをクリックして<ruby>例<rt>れい</rt></ruby>をみてみましょう。</a-->
 <p>文字の次は、計算に欠かせない「数値」の扱いに進みます。</p>
 <hr>
 <h2 id="iii-数値型-number-と特別な値-nan--infinity"><a class="header" href="#iii-数値型-number-と特別な値-nan--infinity">III. 数値型 (Number) と特別な値 (NaN / Infinity)</a></h2>
@@ -306,13 +306,13 @@ console.log(multiLine);">実行</button></p>
 <h3 id="2-特別な数値nanとinfinity"><a class="header" href="#2-特別な数値nanとinfinity">2. 特別な数値：NaNとInfinity</a></h3>
 <p>数値型には、注意が必要な特殊な値があります。</p>
 <ul>
-<li><strong>NaN (Not a Number)</strong> ：「数値ではない」状態です。例えば、文字列を無理やり計算しようとした時に発生します。</li>
+<li><strong>NaN (Not a Number)</strong> ：「数値ではない」状態です。<ruby>例<rt>たと</rt></ruby>えば、文字列を無理やり計算しようとした時に発生します。</li>
 <li><strong>Infinity</strong> ：無限に大きな数値です。</li>
 </ul>
 <p>計算の次は、プログラムが「正しいか間違いか」を判断するためのデータを見てみましょう。</p>
 <hr>
 <h2 id="iv-論理型-booleanyesかnoかの判断基準"><a class="header" href="#iv-論理型-booleanyesかnoかの判断基準">IV. 論理型 (Boolean)：YesかNoかの判断基準</a></h2>
-<p>プログラムが「もし〜なら、これをする」という制御（せいぎょ）を行う際、その土台となるのが「論理（ろんり）」型です。</p>
+<p>プログラムが「もし〜なら、これをする」という制御（せいぎょ）を行う際、その<ruby>土台<rt>どだい</rt></ruby>となるのが「論理（ろんり）」型です。</p>
 <h3 id="1-2つの値だけ"><a class="header" href="#1-2つの値だけ">1. 2つの値だけ</a></h3>
 <p>論理型には、true（真／正しい） と false（偽／間違い） の2つの値しか存在しません。</p>
 <h3 id="2-比較と組み合わせ"><a class="header" href="#2-比較と組み合わせ">2. 比較と組み合わせ</a></h3>
@@ -373,7 +373,7 @@ console.log(typeof numValue); // "number" と&lt;ruby&gt;表示&lt;rt&gt;ひょ�
 <p>自分の書いたコードが思ったとおりに動いているか、コンソールで typeof を使って確認するクセをつけましょう。</p>
 <hr>
 <h2 id="vii-まとめプログラミングの基礎を固める"><a class="header" href="#vii-まとめプログラミングの基礎を固める">VII. まとめ：プログラミングの基礎を固める</a></h2>
-<p>変数と型の知識(ちしき)は、これからの学習の土台(どだい)になります。</p>
+<p>変数と型の知識(ちしき)は、これからの学習の<ruby>土台<rt>どだい</rt></ruby>(どだい)になります。</p>
 <p>💡 <strong>最重要ポイント</strong></p>
 <ul>
 <li>変数は「名前のついた箱」： データを記憶(きおく)し、何度でも使うために必要です。</li>

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -186,7 +186,7 @@
 <p>以前、関数は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
 <p>forEach を使うときは、この関数をさらに便利に使います。</p>
 <ul>
-<li>例え話: forEach は「店員さん」、渡す関数は「店員さんに渡すチェックメモ（コールバック関数）」です。 店員さんは、配列の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す関数は「店員さんに渡すチェックメモ（コールバック関数）」です。 店員さんは、配列の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
 </ul>
 <h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: 合計（ごうけい）を計算する</a></h3>
 <p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
@@ -196,7 +196,7 @@ const numbers = [10, 20, 30, 40];
 // 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
 let total = 0;
 
-// 3. forEach （上の例えでは「店員さん」）は、配列の中身を一つずつ取って、メモ通りに処理します。
+// 3. forEach （上の&lt;ruby&gt;例&lt;rt&gt;たと&lt;/rt&gt;&lt;/ruby&gt;えでは「店員さん」）は、配列の中身を一つずつ取って、メモ通りに処理します。
 numbers.forEach((num) =&gt; {
   // ここがコールバック関数です！ 店員さんに「この仕事をしてください」と渡すメモです！
   total = total + num; 
@@ -226,12 +226,12 @@ console.log("ぜんぶの合計は " + total + " です！");
 <tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left">配列が自動的に回数を決めてくれる</td></tr>
+<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left">配列が自<ruby>動的<rt>どうてき</rt></ruby>に回数を決めてくれる</td></tr>
 <tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
 </tbody>
 </table>
 </div>
-<p>コードが読みやすくなると、開発のスピードが上がり、ミスも減ります。</p>
+<p>コードが読みやすくなると、<ruby>開発<rt>かいはつ</rt></ruby>のスピードが上がり、ミスも減ります。</p>
 <hr>
 <h2 id="iii-繰り返し処理の応用for-in文"><a class="header" href="#iii-繰り返し処理の応用for-in文">III. 繰り返し処理の応用：for-in文</a></h2>
 <p>※ オブジェクトの性質を利用した応用的な繰り返し処理です。</p>

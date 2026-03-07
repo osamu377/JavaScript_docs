@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -192,7 +192,7 @@ JavaScriptを実行するとき、<strong>最初からそこにいる「グロ�
 <h4 id="windowlocation"><a class="header" href="#windowlocation"><strong><code>window.location</code></strong></a></h4>
 <p>今の「URL（Web上の住所）」の情報です。</p>
 <ul>
-<li><strong>例：</strong> <code>location.href = "https://google.com";</code> と書くと、別のサイトに移動できます。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>location.href = "https://google.com";</code> と書くと、別のサイトに移動できます。</li>
 </ul>
 <h4 id="windowinnerwidth--innerheight"><a class="header" href="#windowinnerwidth--innerheight"><strong><code>window.innerWidth</code> / <code>innerHeight</code></strong></a></h4>
 <p>ブラウザの「中身の横幅（よこはば）と高さ」です。</p>
@@ -270,7 +270,7 @@ JavaScriptを使って、文字の色を変えたり、ボタンが押された�
 <li><strong><code>document.title</code></strong>
 ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>されている「ページのタイトル」です。JavaScriptで書き換えることもできます。</li>
 <li><strong><code>document.body</code></strong>
-HTMLの <code>&lt;body&gt;</code> タグの中身全体です。ページ全体の背景色を変えたいときなどに使います。</li>
+HTMLの <code>&lt;body&gt;</code> タグの中身全体です。ページ全体の<ruby>背景<rt>はいけい</rt></ruby>色を変えたいときなどに使います。</li>
 <li><strong><code>document.URL</code></strong>
 現在開いているページの住所（URL）を教えてくれます。</li>
 </ul>
@@ -282,7 +282,7 @@ HTMLの <code>&lt;body&gt;</code> タグの中身全体です。ページ全体�
 <li><strong><code>getElementById("ID名")</code></strong>
 特定のIDがついたパーツを1つだけ探します。一番速くて正確です。</li>
 <li><strong><code>querySelector("セレクタ")</code></strong>
-CSSと同じ書き方（<code>.class</code> や <code>#id</code>）でパーツを探せます。とても便利です！</li>
+CSSと同じ<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<code>.class</code> や <code>#id</code>）でパーツを探せます。とても便利です！</li>
 </ul>
 <p>これらは、以前にも出てきましたね。実はdocumentオブジェクトのメソッドだったのです！</p>
 <blockquote class="blockquote-tag blockquote-tag-note">
@@ -322,8 +322,8 @@ message.style.color = "red";
 <li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
 </ul>
 <p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
-<p>例えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
-<p>先ほどの例では、<code>const</code>を使って宣言した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に入れ替えました。これはエラーにはなりません。</p>
+<p><ruby>例<rt>たと</rt></ruby>えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
+<p>先ほどの<ruby>例<rt>れい</rt></ruby>では、<code>const</code>を使って宣言した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に入れ替えました。これはエラーにはなりません。</p>
 <p>しかし、</p>
 <pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
 const message = document.getElementById("greeting");
@@ -346,7 +346,7 @@ message = document.querySelector("p")
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>命令・情報の名前</th><th>役割</th><th>例え話</th></tr>
+<tr><th>命令・情報の名前</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>title</code></strong></td><td>ページのタイトル</td><td>本の表紙の名前</td></tr>
@@ -369,7 +369,7 @@ message = document.querySelector("p")
 <hr>
 <h3 id="2-よく使うプロパティ住所の情報"><a class="header" href="#2-よく使うプロパティ住所の情報">2. よく使うプロパティ（住所の情報）</a></h3>
 <p>現在のURLの「どの部分を知りたいか」によって使い分けます。
-例：<code>https://example.com:8080/search?q=js#result</code> というURLの場合</p>
+<ruby>例<rt>れい</rt></ruby>：<code>https://example.com:8080/search?q=js#result</code> というURLの場合</p>
 <ul>
 <li>
 <p><strong><code>href</code></strong>
@@ -392,7 +392,7 @@ URLの全部（ぜんぶ）です。</p>
 </li>
 <li>
 <p><strong><code>search</code></strong>
-<code>?</code> から始まる「クエリパラメータ」です。検索キーワードなどが入ります。（<code>?q=js</code>）</p>
+<code>?</code> から始まる「クエリパラメータ」です。<ruby>検索<rt>けんさく</rt></ruby>キーワードなどが入ります。（<code>?q=js</code>）</p>
 </li>
 <li>
 <p><strong><code>hash</code></strong>
@@ -441,12 +441,12 @@ function refreshPage() {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>href</code></strong></td><td>URLのすべて</td><td>正式な住所</td></tr>
 <tr><td><strong><code>pathname</code></strong></td><td>ファイルの場所</td><td>建物の「何階の何号室」か</td></tr>
-<tr><td><strong><code>search</code></strong></td><td>検索データ</td><td>住所に添えられた「おまけ情報」</td></tr>
+<tr><td><strong><code>search</code></strong></td><td><ruby>検索<rt>けんさく</rt></ruby>データ</td><td>住所に添えられた「おまけ情報」</td></tr>
 <tr><td><strong><code>assign()</code></strong></td><td>ページを移動する</td><td>次の目的地へ歩いていく（戻れる）</td></tr>
 <tr><td><strong><code>replace()</code></strong></td><td>履歴を残さず移動</td><td>瞬間移動して前の場所を忘れる（戻れない）</td></tr>
 <tr><td><strong><code>reload()</code></strong></td><td>ページを更新する</td><td>同じ場所でもう一度やり直す</td></tr>
@@ -462,7 +462,7 @@ function refreshPage() {
 <hr>
 <h3 id="1-styleオブジェクトとは"><a class="header" href="#1-styleオブジェクトとは">1. Styleオブジェクトとは？</a></h3>
 <p>HTMLの各要素（Element）が持っているオブジェクトです。これを使うと、ボタンの色を赤くしたり、文字を大きくしたり、アニメーションのように動かしたりできます。</p>
-<p>基本の書き方はこうです：
+<p>基本の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>はこうです：
 <code>要素.style.プロパティ = "値";</code></p>
 <hr>
 <h3 id="2-よく使うプロパティ見みた目めの変更"><a class="header" href="#2-よく使うプロパティ見みた目めの変更">2. よく使うプロパティ（<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更）</a></h3>
@@ -481,7 +481,7 @@ function refreshPage() {
 </thead>
 <tbody>
 <tr><td><strong><code>color</code></strong></td><td>文字の色を変える</td></tr>
-<tr><td><strong><code>backgroundColor</code></strong></td><td>背景（はいけい）の色を変える</td></tr>
+<tr><td><strong><code>backgroundColor</code></strong></td><td><ruby>背景<rt>はいけい</rt></ruby>（はいけい）の色を変える</td></tr>
 <tr><td><strong><code>display</code></strong></td><td>パーツを<ruby>表示<rt>ひょうじ</rt></ruby>するか消す（<code>none</code>）か決める</td></tr>
 <tr><td>**<code>width</code> / <code>height**</code></td><td>幅と高さを変える（<strong>“100px”</strong> のように単位が必要！）</td></tr>
 <tr><td><strong><code>borderRadius</code></strong></td><td>角を丸くする</td></tr>
@@ -497,15 +497,15 @@ function refreshPage() {
 <li><code>element.style.setProperty("background-color", "blue");</code></li>
 </ul>
 <h4 id="removepropertyプロパティ名"><a class="header" href="#removepropertyプロパティ名"><strong><code>removeProperty("プロパティ名")</code></strong></a></h4>
-<p>JavaScriptで設定したスタイルを消して、元のCSSの状態に戻します。</p>
+<p>JavaScriptで<ruby>設定<rt>せってい</rt></ruby>したスタイルを消して、元のCSSの状態に戻します。</p>
 <h4 id="getpropertyvalueプロパティ名"><a class="header" href="#getpropertyvalueプロパティ名"><strong><code>getPropertyValue("プロパティ名")</code></strong></a></h4>
-<p>設定されているスタイルの値を取得します。</p>
+<p><ruby>設定<rt>せってい</rt></ruby>されているスタイルの値を取得します。</p>
 <hr>
 <h3 id="4-実際に動かしてみよう-2"><a class="header" href="#4-実際に動かしてみよう-2">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード例です。</p>
+<p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">const box = document.querySelector(".box");
 
-// 1. 背景をオレンジ色にする
+// 1. &lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;をオレンジ色にする
 box.style.backgroundColor = "orange";
 
 // 2. 文字を白くして、大きくする
@@ -532,7 +532,7 @@ box.style.border = "5px solid black";
 </thead>
 <tbody>
 <tr><td><strong>役割</strong></td><td>JavaScriptからCSSを操作する</td></tr>
-<tr><td><strong>書き方のルール</strong></td><td>ハイフンなしの「キャメルケース」</td></tr>
+<tr><td><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のルール</strong></td><td>ハイフンなしの「キャメルケース」</td></tr>
 <tr><td><strong>値のルール</strong></td><td>必ず <strong>“ “</strong>（ダブルクォーテーション）で囲む文字列にする</td></tr>
 <tr><td><strong>単位</strong></td><td>数値だけでなく <strong>“px”</strong> や <strong>“%”</strong> を必ずつける</td></tr>
 </tbody>
@@ -556,7 +556,7 @@ box.style.border = "5px solid black";
 </ul>
 <hr>
 <h3 id="3-よく使うメソッドタイムマシンを動かす"><a class="header" href="#3-よく使うメソッドタイムマシンを動かす">3. よく使うメソッド（タイムマシンを動かす）</a></h3>
-<p>直感的に使えるメソッドが揃っています。</p>
+<p>直感的に使えるメソッドが<ruby>揃<rt>そろ</rt></ruby>っています。</p>
 <h4 id="back"><a class="header" href="#back"><strong><code>back()</code></strong></a></h4>
 <p>ブラウザの「戻る（←）」ボタンを押すのと同じです。1つ前のページに戻ります。</p>
 <ul>
@@ -580,7 +580,7 @@ box.style.border = "5px solid black";
 <h4 id="pushstateデータ-タイトル-url"><a class="header" href="#pushstateデータ-タイトル-url"><strong><code>pushState(データ, タイトル, URL)</code></strong></a></h4>
 <p><strong>ページを読み直さずに、URLだけを新しく書き換えて履歴に追加します。</strong></p>
 <ul>
-<li><strong>例：</strong> 検索結果をフィルタリングしたときに、ページはそのままでURLだけを変えたいときに使います。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <ruby>検索<rt>けんさく</rt></ruby>結果をフィルタリングしたときに、ページはそのままでURLだけを変えたいときに使います。</li>
 </ul>
 <h4 id="replacestateデータ-タイトル-url"><a class="header" href="#replacestateデータ-タイトル-url"><strong><code>replaceState(データ, タイトル, URL)</code></strong></a></h4>
 <p>今の履歴を、新しいURLで <strong>上書き（書き換え）</strong> します。</p>
@@ -609,7 +609,7 @@ function goBack() {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>length</code></strong></td><td>履歴の数</td><td>今まで何箇所（なんかしょ）の駅を通ったか</td></tr>
@@ -657,7 +657,7 @@ function goBack() {
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう-3"><a class="header" href="#4-実際に動かしてみよう-3">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「JavaScriptで新しく<ruby>画像<rt>がぞう</rt></ruby>を作って<ruby>表示<rt>ひょうじ</rt></ruby>する」流れを説明するコード例です。</p>
+<p>留学生に「JavaScriptで新しく<ruby>画像<rt>がぞう</rt></ruby>を作って<ruby>表示<rt>ひょうじ</rt></ruby>する」流れを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">// 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
@@ -688,7 +688,7 @@ myPic.src = "https://example.com/japan.jpg";
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・イベント</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・イベント</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>src</code></strong></td><td><ruby>画像<rt>がぞう</rt></ruby>の住所</td><td>どの写真を入れるか決める</td></tr>
@@ -712,7 +712,7 @@ myPic.src = "https://example.com/japan.jpg";
 <li><strong><code>document.getElementById("myLink")</code></strong>（IDで指定）</li>
 </ol>
 <hr>
-<h3 id="2-よく使うプロパティ門の設定情報"><a class="header" href="#2-よく使うプロパティ門の設定情報">2. よく使うプロパティ（門の設定情報）</a></h3>
+<h3 id="2-よく使うプロパティ門の設定せってい情報"><a class="header" href="#2-よく使うプロパティ門の設定せってい情報">2. よく使うプロパティ（門の<ruby>設定<rt>せってい</rt></ruby>情報）</a></h3>
 <p>Anchorオブジェクトは、移動先のURLをバラバラに分解して持っています。これは <strong>Locationオブジェクトとほぼ同じ</strong> です！</p>
 <ul>
 <li>
@@ -728,7 +728,7 @@ URLの「http:」の部分や、「ドメイン名」の部分だけを個別に
 </li>
 <li>
 <p><strong><code>target</code></strong>
-リンクをどこで開くか（今のタブか、新しいタブか）の設定です。</p>
+リンクをどこで開くか（今のタブか、新しいタブか）の<ruby>設定<rt>せってい</rt></ruby>です。</p>
 </li>
 <li>
 <p><code>"_blank"</code> にすると、新しいタブで開くようになります。</p>
@@ -744,7 +744,7 @@ URLの「http:」の部分や、「ドメイン名」の部分だけを個別に
 <ul>
 <li><strong><code>click()</code></strong>
 人間がマウスでクリックしたのと同じことを、JavaScriptで実行します。</li>
-<li><strong>例：</strong> 「3秒後に自動的にボタンをクリックしてワープさせる」といったことができます。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> 「3秒後に自<ruby>動的<rt>どうてき</rt></ruby>にボタンをクリックしてワープさせる」といったことができます。</li>
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう-4"><a class="header" href="#4-実際に動かしてみよう-4">4. 実際に動かしてみよう！</a></h3>
@@ -777,11 +777,11 @@ link.target = "_blank";
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>href</code></strong></td><td>リンク先の住所</td><td>どこにワープするか</td></tr>
-<tr><td><strong><code>target</code></strong></td><td>開き方の設定</td><td>今の場所を離れるか、新しい窓を作るか</td></tr>
+<tr><td><strong><code>target</code></strong></td><td>開き方の<ruby>設定<rt>せってい</rt></ruby></td><td>今の場所を離れるか、新しい窓を作るか</td></tr>
 <tr><td><strong><code>text</code></strong></td><td><ruby>表示<rt>ひょうじ</rt></ruby>される文字</td><td>門に書いてある看板（かんばん）</td></tr>
 <tr><td><strong><code>click()</code></strong></td><td>クリックを実行</td><td>誰かの代わりにボタンを押してあげる</td></tr>
 </tbody>
@@ -797,21 +797,21 @@ link.target = "_blank";
 <p><code>window.navigator</code> を通じてアクセスします。このオブジェクトを見れば、ユーザーがどんな環境（かんきょう）でサイトを見ているかが分かります。</p>
 <hr>
 <h3 id="2-よく使うプロパティブラウザの情報"><a class="header" href="#2-よく使うプロパティブラウザの情報">2. よく使うプロパティ（ブラウザの情報）</a></h3>
-<p>「この人は誰？」「どんな設定？」を知るためのプロパティです。</p>
+<p>「この人は誰？」「どんな<ruby>設定<rt>せってい</rt></ruby>？」を知るためのプロパティです。</p>
 <ul>
 <li>
 <p><strong><code>userAgent</code></strong>（ユーザーエージェント）
 ブラウザの名前やバージョン、OS（WindowsかMacか）などの詳細な情報です。</p>
 </li>
 <li>
-<p><strong>例：</strong> これを見て「iPhoneの人にはiPhone用の<ruby>画面<rt>がめん</rt></ruby>を見せる」といった判断ができます。</p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> これを見て「iPhoneの人にはiPhone用の<ruby>画面<rt>がめん</rt></ruby>を見せる」といった判断ができます。</p>
 </li>
 <li>
 <p><strong><code>language</code></strong>
-ブラウザで設定されている「言語（げんご）」です。</p>
+ブラウザで<ruby>設定<rt>せってい</rt></ruby>されている「言語（げんご）」です。</p>
 </li>
 <li>
-<p><strong>例：</strong> 日本語なら <code>ja</code>、英語なら <code>en-US</code> が返ってきます。これを使えば、自動でメッセージを英語に変えられます。</p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> 日本語なら <code>ja</code>、英語なら <code>en-US</code> が返ってきます。これを使えば、自動でメッセージを英語に変えられます。</p>
 </li>
 <li>
 <p><strong><code>onLine</code></strong>
@@ -819,7 +819,7 @@ link.target = "_blank";
 </li>
 <li>
 <p><strong><code>cookieEnabled</code></strong>
-クッキー（ブラウザにデータを保存する機能）が使える設定になっているかを確認できます。</p>
+クッキー（ブラウザにデータを保存する機能）が使える<ruby>設定<rt>せってい</rt></ruby>になっているかを確認できます。</p>
 </li>
 </ul>
 <hr>
@@ -867,11 +867,11 @@ if (navigator.onLine) {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>userAgent</code></strong></td><td>ブラウザ・OS情報</td><td>自己紹介（名前や出身地）</td></tr>
-<tr><td><strong><code>language</code></strong></td><td>言語設定</td><td>何語で話してほしいか</td></tr>
+<tr><td><strong><code>language</code></strong></td><td>言語<ruby>設定<rt>せってい</rt></ruby></td><td>何語で話してほしいか</td></tr>
 <tr><td><strong><code>onLine</code></strong></td><td>通信状態</td><td>今、電話がつながっているか</td></tr>
 <tr><td><strong><code>clipboard</code></strong></td><td>コピー機能</td><td>メモをクリップで留める</td></tr>
 <tr><td><strong><code>geolocation</code></strong></td><td>位置情報</td><td>今どこにいるか教える</td></tr>
@@ -882,11 +882,11 @@ if (navigator.onLine) {
 <p>いかがでしょうか？「身分証明書」であるNavigatorオブジェクトを使えば、世界中のユーザー一人ひとりに合わせた親切なサイトが作れるようになります。</p>
 <h2 id="viii-cookieオブジェクト"><a class="header" href="#viii-cookieオブジェクト">VIII. Cookieオブジェクト</a></h2>
 <h3 id="1-クッキーcookieってなに"><a class="header" href="#1-クッキーcookieってなに">1. クッキー（Cookie）ってなに？</a></h3>
-<p>通常、ブラウザはページを閉じると「さっきまで何をしていたか」を忘れてしまいます。そこで、**「ユーザーの情報をブラウザに保存しておいて、次にサイトに来たときに思い出せるようにする」**のがクッキーの仕事です。</p>
+<p><ruby>通常<rt>つうじょう</rt></ruby>、ブラウザはページを閉じると「さっきまで何をしていたか」を忘れてしまいます。そこで、**「ユーザーの情報をブラウザに保存しておいて、次にサイトに来たときに思い出せるようにする」**のがクッキーの仕事です。</p>
 <ul>
 <li><strong>ログイン維持：</strong> 「お帰りなさい！」と名前が出る。</li>
 <li><strong>買い物カゴ：</strong> ページを移動しても選んだ商品が消えない。</li>
-<li><strong>設定保存：</strong> ダークモードなどの設定を覚えておく。</li>
+<li><strong><ruby>設定<rt>せってい</rt></ruby>保存：</strong> ダークモードなどの<ruby>設定<rt>せってい</rt></ruby>を覚えておく。</li>
 </ul>
 <hr>
 <h3 id="2-javascriptでのクッキー操作"><a class="header" href="#2-javascriptでのクッキー操作">2. JavaScriptでのクッキー操作</a></h3>
@@ -953,7 +953,7 @@ function greet() {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>特徴</th><th>内容</th><th>例え話</th></tr>
+<tr><th>特徴</th><th>内容</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>役割</strong></td><td>ユーザーの情報を一時保存</td><td>お店の「ポイントカード」</td></tr>
@@ -979,7 +979,7 @@ function greet() {
 <hr>
 <h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
 <p>マウスをクリックした、キーボードを叩いた、<ruby>画面<rt>がめん</rt></ruby>をスクロールした…。これらはすべて「イベント」です。
-イベントが発生したとき、JavaScriptは自動的に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
+イベントが発生したとき、JavaScriptは自<ruby>動的<rt>どうてき</rt></ruby>に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
 <pre><code class="language-javascript">// ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
   // この「event」という引数が、Eventオブジェクト（報告書）です
@@ -993,17 +993,17 @@ button.addEventListener("click", function(event) {
 <h4 id="eventtargetターゲット"><a class="header" href="#eventtargetターゲット"><strong><code>event.target</code>（ターゲット）</strong></a></h4>
 <p>「誰が」事件を起こしたか、つまり <strong>イベントが発生したパーツ（要素）</strong> を指します。</p>
 <ul>
-<li><strong>例：</strong> クリックされた「ボタンそのもの」を指します。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> クリックされた「ボタンそのもの」を指します。</li>
 </ul>
 <h4 id="eventtypeタイプ"><a class="header" href="#eventtypeタイプ"><strong><code>event.type</code>（タイプ）</strong></a></h4>
 <p>イベントの <strong>種類（なまえ）</strong> です。</p>
 <ul>
-<li><strong>例：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
 </ul>
 <h4 id="eventkeyキー"><a class="header" href="#eventkeyキー"><strong><code>event.key</code>（キー）</strong></a></h4>
 <p>キーボードのイベント（keydownなど）のとき、<strong>どのキーを押したか</strong> を教えてくれます。</p>
 <ul>
-<li><strong>例：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
 </ul>
 <h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
 <p>マウスがクリックされたときの <strong><ruby>画面<rt>がめん</rt></ruby>上の座標（ざひょう）</strong>、つまり「場所」です。</p>
@@ -1049,7 +1049,7 @@ input.addEventListener("keydown", function(event) {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>

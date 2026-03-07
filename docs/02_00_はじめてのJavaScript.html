@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -208,8 +208,8 @@
 &lt;/html&gt;
 </code></pre>
 <p>これをブラウザで見ると、このようになります。<a href="./html/02_02_alert.html">ここをクリックしてみましょう。</a></p>
-<p><strong>console.log()：開発者のための確認（デバッグ）</strong></p>
-<p>「デバッグ（プログラムのミスを見つけて直すこと）」のために使います。ユーザーには見えない、開発者のための「確認用メッセージ」をコンソールに<ruby>出力<rt>しゅつりょく</rt></ruby>します。</p>
+<p><strong>console.log()：<ruby>開発<rt>かいはつ</rt></ruby>者のための確認（デバッグ）</strong></p>
+<p>「デバッグ（プログラムのミスを見つけて直すこと）」のために使います。ユーザーには見えない、<ruby>開発<rt>かいはつ</rt></ruby>者のための「確認用メッセージ」をコンソールに<ruby>出力<rt>しゅつりょく</rt></ruby>します。</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="ja"&gt;
 &lt;head&gt;
@@ -256,7 +256,7 @@
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>カテゴリ</th><th>イベント名</th><th>きっかけ（タイミング）</th><th>使用例</th></tr>
+<tr><th>カテゴリ</th><th>イベント名</th><th>きっかけ（タイミング）</th><th>使用<ruby>例<rt>れい</rt></ruby></th></tr>
 </thead>
 <tbody>
 <tr><td>マウス</td><td>onclick</td><td>クリックされたとき</td><td>ボタンを押して計算を始める</td></tr>
@@ -267,7 +267,7 @@
 </tbody>
 </table>
 </div>
-<p>記述例： HTMLのボタンに「クリックされたらアラートを出す」<ruby>魔法<rt>まほう</rt></ruby>をかけるときは、こう書きます。</p>
+<p>記述<ruby>例<rt>れい</rt></ruby>： HTMLのボタンに「クリックされたらアラートを出す」<ruby>魔法<rt>まほう</rt></ruby>をかけるときは、こう書きます。</p>
 <pre><code>&lt;button onclick="alert('ボタンが押されました！')"&gt;クリックしてね&lt;/button&gt;
 </code></pre>
 <p>これをブラウザで読み込むと、以下のようになります。</p>
@@ -279,11 +279,11 @@
 <li>内部JavaScript： HTMLの中に <code>&lt;script&gt;</code> タグで直接書く方法です。</li>
 <li>外部JavaScript： .js という別のファイルに分ける方法です。</li>
 </ol>
-<p><strong>外部ファイル化のメリット（戦略的意義）</strong></p>
-<p>プロの開発では、必ず「外部ファイル」を使います。理由は、<strong>「再利用性（一つのファイルを多くのページで使い回せること）」</strong> が高まり、修正も一箇所で済むためです。</p>
+<p><strong>外部ファイル化のメリット（<ruby>戦略<rt>せんりゃく</rt></ruby>的意義）</strong></p>
+<p>プロの<ruby>開発<rt>かいはつ</rt></ruby>では、必ず「外部ファイル」を使います。理由は、<strong>「再利用性（一つのファイルを多くのページで使い回せること）」</strong> が高まり、修正も一箇所で済むためです。</p>
 <p><strong>読み込みの手順</strong></p>
 <ul>
-<li>.js ファイル（例：script.js）を作成し、JavaScriptだけを書きます。</li>
+<li>.js ファイル（<ruby>例<rt>れい</rt></ruby>：script.js）を作成し、JavaScriptだけを書きます。</li>
 <li>HTMLの <code>&lt;body&gt;</code> タグの最後（閉じタグ <code>&lt;/body&gt;</code> の直前） に読み込みコードを書きます。</li>
 </ul>
 <p>なぜ <code>&lt;body&gt;</code> の最後に書くの？ ブラウザは上から順番に読み込みます。プログラムを最後に読み込ませることで、ページの文字や<ruby>画像<rt>がぞう</rt></ruby>を先に出し、ユーザーを待たせない「スムーズな<ruby>表示<rt>ひょうじ</rt></ruby>」が可能になります。</p>
@@ -335,12 +335,12 @@
 <p>最初は少し面倒に感じるかもしれませんが、「日本の文字（漢字）は大きいから、専用の広い席が必要なんだな」と思えばOKです！</p>
 <hr>
 <h2 id="v-まとめjavascript学習のルールと習慣"><a class="header" href="#v-まとめjavascript学習のルールと習慣">V. まとめ：JavaScript学習のルールと習慣</a></h2>
-<p><strong>JavaScriptの書き方：これだけは守りたい8つのルール</strong></p>
+<p><strong>JavaScriptの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：これだけは守りたい8つのルール</strong></p>
 <p>最後に、ミスを防ぐための大切なルールをまとめました。</p>
 <p>プログラミングは世界共通のルールです。なぜ英語（えいご）で名前を付けるのか？ それは世界中のプログラマーが共通して使う「公式（こうしき）の言葉」だからです。</p>
 <p>以下のルールを「チェックリスト」として使いましょう。</p>
 <ol>
-<li>文の終わりにはセミコロン（;）： 命令の区切りをはっきりさせます。</li>
+<li>文の終わりにはセミコロン（;）： 命令の<ruby>区切<rt>くぎ</rt></ruby>りをはっきりさせます。</li>
 <li>変数の宣言（せんげん）は let と const： 値を入れる「箱（はこ）」を作ります。</li>
 </ol>
 <ul>
@@ -349,10 +349,10 @@
 </ul>
 <ol start="3">
 <li>文字列は “ “ または ’ ’ で囲む： 「こんにちは」などの言葉は引用符（いんようふ）で囲みます。</li>
-<li>インデント（字下げ）： コードの行の最初をスペースで揃えて、見やすくします。</li>
+<li>インデント（字下げ）： コードの行の最初をスペースで<ruby>揃<rt>そろ</rt></ruby>えて、見やすくします。</li>
 <li>コメント（//）： 自分のためのメモです。コンピュータは無視します。</li>
 <li>名前は英語（えいご）で付ける： let namae ではなく let userName と書くのがプロのルールです。</li>
-<li>命名にキャメルケース (camelCase)： 2つ目の単語を大文字にします（例：userName）。</li>
+<li>命名にキャメルケース (camelCase)： 2つ目の単語を大文字にします（<ruby>例<rt>れい</rt></ruby>：userName）。</li>
 <li>大文字と小文字を分ける： MyName と myname は、コンピュータには違う箱に見えます。</li>
 <li>コメントを書きましょう： <code>//</code> のあとにメモを書きます。自分の母国語でメモを残すと学習がはかどります。</li>
 <li>コードはすべて「半角（half-width）」で書きます： これが一番大切です。文字列の中とコメント以外で 「全角（ぜんかく）」を使うと、コードは絶対に<ruby>動<rt>うご</rt></ruby>きません。</li>

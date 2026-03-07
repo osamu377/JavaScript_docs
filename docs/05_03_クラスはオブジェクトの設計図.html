@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -178,7 +178,7 @@
 <h2 id="i-クラスとコンストラクタ"><a class="header" href="#i-クラスとコンストラクタ">I. クラスとコンストラクタ</a></h2>
 <p>「ユーザー定義オブジェクト」が作れるようになると、次にぶつかる壁が <strong>「同じ形のオブジェクトを100人分作りたいときはどうするの？」</strong> という問題です。</p>
 <p>一人ずつ手書きでオブジェクトを作るのは大変ですよね。そこで登場するのが <strong>「クラス（Class）」</strong> と <strong>「コンストラクタ（Constructor）」</strong> です。</p>
-<p>これを <strong>「たい焼きの型」</strong> に例えて説明します。</p>
+<p>これを <strong>「たい焼きの型」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明します。</p>
 <h3 id="1-クラスclassとは"><a class="header" href="#1-クラスclassとは">1. クラス（Class）とは？</a></h3>
 <p>クラスは、オブジェクトを作るための <strong>「設計図（せっけいず）」</strong> または <strong>「型（かた）」</strong> のことです。</p>
 <ul>
@@ -192,7 +192,7 @@
 <p>クラスを一度作っておけば、同じ特徴を持ったオブジェクトを何度でも、一瞬で作ることができます。</p>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>「インスタンス」という言葉は、「オブジェクト」とほぼ同じ意味ですが、より具体的なイメージです。例えで言えば、「オブジェクト」が「たい焼き」全般を指すとすると、「インスタンス」は、今、あなた食べようとしている目の前の「たい焼き」という具体的な存在を指すイメージです。</p>
+<p>「インスタンス」という言葉は、「オブジェクト」とほぼ同じ意味ですが、より具体的なイメージです。<ruby>例<rt>たと</rt></ruby>えで言えば、「オブジェクト」が「たい焼き」全般を指すとすると、「インスタンス」は、今、あなた食べようとしている目の前の「たい焼き」という具体的な存在を指すイメージです。</p>
 </blockquote>
 <p><a href="./06_09_インスタンスとオブジェクト.html">詳しくはこちら</a></p>
 <h3 id="2-コンストラクタconstructorとは"><a class="header" href="#2-コンストラクタconstructorとは">2. コンストラクタ（Constructor）とは？</a></h3>
@@ -227,7 +227,7 @@ studentB.sayHello(); // "こんにちは、リンです！"
 <p><code>this.name = name;</code>の右の<code>name</code>は引数として渡された<code>name</code>で、左の<code>this.name</code>は、<code>student</code>というクラスのインスタンスが内部に持つデータ、つまりオブジェクトのプロパティです。</p>
 <p><code>studentA.name</code> や <code>studentA[name]</code>で“アリ“を取り出すことができます。</p>
 </blockquote>
-<h3 id="4-例え話ハンコとスタンプ"><a class="header" href="#4-例え話ハンコとスタンプ">4. 例え話：ハンコとスタンプ</a></h3>
+<h3 id="4-例たとえ話ハンコとスタンプ"><a class="header" href="#4-例たとえ話ハンコとスタンプ">4. <ruby>例<rt>たと</rt></ruby>え話：ハンコとスタンプ</a></h3>
 <blockquote>
 <p>クラスは <strong>『ハンコ』</strong> です。
 ハンコの形（名前や年齢の枠）は決まっているよね。
@@ -239,7 +239,7 @@ studentB.sayHello(); // "こんにちは、リンです！"
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>言葉</th><th>意味</th><th>例え話</th></tr>
+<tr><th>言葉</th><th>意味</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Class（クラス）</strong></td><td>オブジェクトの設計図</td><td>たい焼きの型 / ハンコ</td></tr>
@@ -251,14 +251,14 @@ studentB.sayHello(); // "こんにちは、リンです！"
 </div>
 <h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
 <blockquote>
-<p>最初は <code>this.name = name</code> のような書き方にびっくりするかもしれないけど、これは <strong>『新しく生まれる自分（this）のなまえを、もらった名前にセットしてね』</strong> という意味なんです。
+<p>最初は <code>this.name = name</code> のような<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>にびっくりするかもしれないけど、これは <strong>『新しく生まれる自分（this）のなまえを、もらった名前にセットしてね』</strong> という意味なんです。
 慣れてくると、100人でも1000人でも同じキャラクターを簡単に作れるようになるから、すごく便利ですよ！</p>
 </blockquote>
 <p>いかがでしょうか？「型（クラス）」を作って、「注文（new）」して、「実物（インスタンス）」を作る。この流れが分かれば、大規模なプログラムも怖くありません！</p>
 <hr>
 <h2 id="ii-継承効率的に新しいものを作る"><a class="header" href="#ii-継承効率的に新しいものを作る">II. 継承：効率的に新しいものを作る</a></h2>
 <p>「クラス」という設計図の作り方がわかったら、次はもっと便利な <strong>「継承（けいしょう / Inheritance）」</strong> という<ruby>仕組<rt>しく</rt></ruby>みを覚えましょう！</p>
-<p>継承とは、例えて言えば、 <strong>「親のいいところを受け継いで、新しい個性をプラスすること」</strong> です。</p>
+<p>継承とは、<ruby>例<rt>たと</rt></ruby>えて言えば、 <strong>「親のいいところを受け継いで、新しい個性をプラスすること」</strong> です。</p>
 <h3 id="1-継承inheritanceとは"><a class="header" href="#1-継承inheritanceとは">1. 継承（Inheritance）とは？</a></h3>
 <p>「継承」とは、すでに作ってあるクラス（設計図）をベースにして、<strong>新しいクラスを作ること</strong> です。</p>
 <p>たとえば、「動物（Animal）」というクラスがあれば、それを継承して「イヌ（Dog）」や「ネコ（Cat）」を作ることができます。</p>
@@ -267,7 +267,7 @@ studentB.sayHello(); // "こんにちは、リンです！"
 <li>「イヌ」だけの特徴（吠える<ruby>動<rt>うご</rt></ruby>き）は、<strong>新しく書き足す</strong>。</li>
 </ul>
 <p>これが継承のすごいところです！</p>
-<h3 id="2-書き方のキーワードextends-と-super"><a class="header" href="#2-書き方のキーワードextends-と-super">2. 書き方のキーワード：<code>extends</code> と <code>super</code></a></h3>
+<h3 id="2-書かき方かたのキーワードextends-と-super"><a class="header" href="#2-書かき方かたのキーワードextends-と-super">2. <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のキーワード：<code>extends</code> と <code>super</code></a></h3>
 <p>JavaScriptで継承を使うときには、2つの大事な言葉を使います。</p>
 <ol>
 <li><strong><code>extends</code>（イクステンズ）：</strong> 「〜を広げる（継承する）」という意味。</li>
@@ -302,7 +302,7 @@ user.sayHello();  // 親からもらった&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt
 user.introduce(); // 自分だけの新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き
 
 </code></pre>
-<h3 id="3-留学生への例え話スマホの進化"><a class="header" href="#3-留学生への例え話スマホの進化">3. 留学生への例え話：スマホの進化</a></h3>
+<h3 id="3-留学生への例たとえ話スマホの進化"><a class="header" href="#3-留学生への例たとえ話スマホの進化">3. 留学生への<ruby>例<rt>たと</rt></ruby>え話：スマホの進化</a></h3>
 <blockquote>
 <p>最初の携帯電話（親クラス）は、『電話をする』『メールを送る』機能を持っていました。
 次に登場したスマートフォン（子クラス）は、携帯電話の機能を <strong>継承</strong> しているから、もちろん電話もメールもできます。
@@ -335,7 +335,7 @@ user.introduce(); // 自分だけの新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;
 </blockquote>
 <p>いかがでしょうか？「基本の形をもらって、自分流にアレンジする」。これが継承のパワーです！</p>
 <h2 id="iv-まとめプログラマーのように考えよう"><a class="header" href="#iv-まとめプログラマーのように考えよう">IV. まとめ：プログラマーのように考えよう</a></h2>
-<p>オブジェクト指向（しこう）は、単なる書き方ではなく、**「複雑（ふくざつ）な現実（げんじつ）を整理（せいり）する方法」**です。</p>
+<p>オブジェクト指向（しこう）は、単なる<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>ではなく、**「複雑（ふくざつ）な現実（げんじつ）を整理（せいり）する方法」**です。</p>
 <p><strong>アクションプラン</strong></p>
 <p><a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/A_first_splash">MDNの数当てゲーム</a></p>
 <p>上の「数当てゲーム」を、オブジェクトを使って次のように改良（かいりょう）を考えてみてください。</p>
@@ -344,7 +344,7 @@ user.introduce(); // 自分だけの新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;
 <li>プレイヤーの「これまでの予想履歴（よそうりれき）」をプロパティに保存する。</li>
 <li>「当たり・ハズレの判定」をメソッドにする。</li>
 </ul>
-<p>難しい用語も、RPGや自己紹介カードのように身近なものに例えれば、きっと理解（りかい）できるはずです。オブジェクトを使って、よりスマートでプロフェッショナルなプログラムを作っていきましょう。自信（じしん）を持って挑戦（ちょうせん）してください！</p>
+<p>難しい用語も、RPGや自己紹介カードのように身近なものに<ruby>例<rt>たと</rt></ruby>えれば、きっと理解（りかい）できるはずです。オブジェクトを使って、よりスマートでプロフェッショナルなプログラムを作っていきましょう。自信（じしん）を持って挑戦（ちょうせん）してください！</p>
 
                     </main>
 

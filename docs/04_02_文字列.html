@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -177,7 +177,7 @@
                         <h1 id="文字列"><a class="header" href="#文字列">文字列</a></h1>
 <h2 id="i-string型-プリミティブ-とstringオブジェクト"><a class="header" href="#i-string型-プリミティブ-とstringオブジェクト">I. String型 (プリミティブ) とStringオブジェクト</a></h2>
 <p>プログラミングを学んでいると、同じ「文字列」を扱うのに、<strong>String型（プリミティブ）とStringオブジェクト</strong> という2つの言葉が出てきて混乱することがあります。</p>
-<p>留学生の方には、<strong>「中身だけのリンゴ」</strong> と <strong>「箱に入ったリンゴ」</strong> の違いに例えて説明すると、スッキリ理解してもらえます！</p>
+<p>留学生の方には、<strong>「中身だけのリンゴ」</strong> と <strong>「箱に入ったリンゴ」</strong> の違いに<ruby>例<rt>たと</rt></ruby>えて説明すると、スッキリ理解してもらえます！</p>
 <h3 id="1-二つの違いのイメージ"><a class="header" href="#1-二つの違いのイメージ">1. 二つの違いのイメージ</a></h3>
 <ul>
 <li>
@@ -187,7 +187,7 @@
 <p>ただの「値」そのものです。</p>
 </li>
 <li>
-<p><strong>例え：</strong> お店で売っている「リンゴ」そのもの。軽くて、すぐ食べられます。</p>
+<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> お店で売っている「リンゴ」そのもの。軽くて、すぐ食べられます。</p>
 </li>
 <li>
 <p><strong>Stringオブジェクト：</strong></p>
@@ -196,7 +196,7 @@
 <p><code>new String()</code> を使って作られる「特別な箱」です。</p>
 </li>
 <li>
-<p><strong>例え：</strong> 「豪華な箱に入ったリンゴ」です。箱の中にはリンゴだけでなく、説明書や道具も一緒に入っています。</p>
+<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> 「豪華な箱に入ったリンゴ」です。箱の中にはリンゴだけでなく、説明書や道具も一緒に入っています。</p>
 </li>
 </ul>
 <h3 id="2-コードで見てみよう"><a class="header" href="#2-コードで見てみよう">2. コードで見てみよう</a></h3>
@@ -235,7 +235,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 <p>留学生へのアドバイスは、とてもシンプルです。</p>
 <ul>
 <li><strong>常に「String型（プリミティブ）」を使いましょう！</strong></li>
-<li>書き方が簡単（<code>""</code> で囲むだけ）。</li>
+<li><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が簡単（<code>""</code> で囲むだけ）。</li>
 <li>メモリを節約できて、<ruby>動<rt>うご</rt></ruby>きも速い。</li>
 <li><code>new String()</code> は、特別な理由がない限り、<strong>使わなくて大丈夫</strong>です。</li>
 </ul>
@@ -318,13 +318,13 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 
 </code></pre>
 <ul>
-<li><strong>例え：</strong> 髪の毛を「トリミング（整える）」するのと同じです。</li>
+<li><strong><ruby>例<rt>たと</rt></ruby>え：</strong> 髪の毛を「トリミング（整える）」するのと同じです。</li>
 </ul>
 <h3 id="まとめテーブル留学生向け"><a class="header" href="#まとめテーブル留学生向け">まとめテーブル（留学生向け）</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>メソッド名</th><th>やっていること</th><th>例え話</th></tr>
+<tr><th>メソッド名</th><th>やっていること</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>slice</code></strong></td><td>一部を取り出す</td><td>ハサミで切り取る</td></tr>
@@ -342,7 +342,7 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 </blockquote>
 <p>いかがでしょうか？ 「文字列の加工」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに整理できるようになります。</p>
 <hr>
-<h2 id="iii-文字の検索"><a class="header" href="#iii-文字の検索">III. 文字の検索</a></h2>
+<h2 id="iii-文字の検索けんさく"><a class="header" href="#iii-文字の検索けんさく">III. 文字の<ruby>検索<rt>けんさく</rt></ruby></a></h2>
 <p>文字列（String）の中から「特定の文字」を見つけたり、場所を調べたりするときに欠かせない <strong><code>charAt</code></strong> と <strong><code>indexOf</code></strong> について説明します。</p>
 <p>どちらも「何番目にあるか」という <strong>インデックス（番号）</strong> をキーワードにして<ruby>動<rt>うご</rt></ruby>きます。</p>
 <hr>
@@ -388,7 +388,7 @@ console.log(msg.indexOf("さようなら")); // -1
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>メソッド名</th><th>知りたいこと（答え）</th><th><ruby>入力<rt>にゅうりょく</rt></ruby>するもの</th><th>例え話</th></tr>
+<tr><th>メソッド名</th><th>知りたいこと（答え）</th><th><ruby>入力<rt>にゅうりょく</rt></ruby>するもの</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>charAt</code></strong></td><td><strong>文字</strong>はなに？</td><td>番号 (Index)</td><td>「0番の席に座っているのは誰？」</td></tr>
@@ -421,7 +421,7 @@ if (email.indexOf("@") !== -1) {
 <p>最新のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を使うのがとても便利です。</p>
 <ul>
 <li>変数の埋め込み: `こんにちは、${name}さん！` のように、${} で変数を入れられます。</li>
-<li>改行（かいぎょう）: テンプレートリテラルは、コードの中で改行した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
+<li><ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）: テンプレートリテラルは、コードの中で<ruby>改行<rt>かいぎょう</rt></ruby>した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
 </ul>
 <h3 id="数値への変換"><a class="header" href="#数値への変換">数値への変換</a></h3>
 <p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには変換が必要です。</p>
@@ -429,7 +429,7 @@ if (email.indexOf("@") !== -1) {
 <li>parseInt(): 整数（1, 2, 3…）に変換します。</li>
 <li>parseFloat(): 小数点を含む数値に変換します。</li>
 </ul>
-<p>So What?（なぜ大切なの？） 数字ではない文字を無理に数値に変えようとすると NaN（Not a Number：数値ではないというエラー値）になります。Web開発ではユーザーが何を打つか分かりません。isNaN() 関数を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
+<p>So What?（なぜ大切なの？） 数字ではない文字を無理に数値に変えようとすると NaN（Not a Number：数値ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() 関数を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
 
                     </main>
 

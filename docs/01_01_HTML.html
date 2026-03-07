@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
+            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -176,27 +176,27 @@
                     <main>
                         <h1 id="html"><a class="header" href="#html">HTML</a></h1>
 <p><strong>留学生（りゅうがくせい）のためのHTML基礎（きそ）ガイド：JavaScriptを学ぶ前に</strong></p>
-<p>Web開発（かいはつ）を勉強（べんきょう）するみなさん、こんにちは。このガイドでは、プログラミングのJavaScriptを勉強する前に、とても大切（たいせつ）な「HTML」と「CSS」をわかりやすく説明（せつめい）します。</p>
+<p>Web<ruby>開発<rt>かいはつ</rt></ruby>を勉強（べんきょう）するみなさん、こんにちは。このガイドでは、プログラミングのJavaScriptを勉強する前に、とても大切（たいせつ）な「HTML」と「CSS」をわかりやすく説明（せつめい）します。</p>
 <h2 id="i-はじめにwebページを構成する3つの力"><a class="header" href="#i-はじめにwebページを構成する3つの力">I. はじめに：Webページを構成する「3つの力」</a></h2>
-<p>Webサイトを作（つく）るときには、3つの技術（ぎじゅつ）を使（つか）います。それはHTML、CSS、そしてJavaScriptです。これらを「家（いえ）」に例（たと）えて考（かんが）えてみましょう。</p>
+<p>Webサイトを作（つく）るときには、3つの技術（ぎじゅつ）を使（つか）います。それはHTML、CSS、そしてJavaScriptです。これらを「家」に<ruby>例<rt>たと</rt></ruby>えて考（かんが）えてみましょう。</p>
 <ul>
-<li>HTML： 家（いえ）の「柱（はしら）」や「壁（かべ）」です。建物（たてもの）の骨組（ほねぐ）みを作（つく）る役割（やくわり）があります。</li>
+<li>HTML： 家の「柱」や「壁」です。建物（たてもの）の<ruby>骨組<rt>ほねぐ</rt></ruby>みを作（つく）る役割（やくわり）があります。</li>
 <li>CSS： 家の「ペンキ」や「インテリア」です。色（いろ）を塗（ぬ）ったりして、見（み）た目（め）をきれいに整（ととの）えます。</li>
 <li>JavaScript： 家の「電気（でんき）」や「機械（きかい）装置（そうち）」です。ボタンを押（お）すとライトがつくような、動（うご）きや機能（きのう）を作ります。</li>
 </ul>
-<p>HTMLはWebページの土台（どだい）です。HTMLの<ruby>骨組<rt>ほねぐ</rt></ruby>みが正（ただ）しくないと、あとからJavaScriptを使っても、うまく動（うご）きません。まずは、ページの見（み）えない部分（ぶぶん）である「設定（せってい）」から理解（りかい）しましょう。</p>
-<h2 id="ii-htmlのメタ情報じょうほうwebページの設定を理解する"><a class="header" href="#ii-htmlのメタ情報じょうほうwebページの設定を理解する">II. HTMLのメタ情報（じょうほう）：Webページの「設定」を理解する</a></h2>
-<p>Webページには、ユーザーには見えませんが、ブラウザや検索（けんさく）エンジンにとって大切（たいせつ）な情報があります。これを「メタ情報（じょうほう）」と呼（よ）び、<code>&lt;head&gt;</code>タグの中（なか）に書（か）きます。</p>
+<p>HTMLはWebページの<ruby>土台<rt>どだい</rt></ruby>です。HTMLの<ruby>骨組<rt>ほねぐ</rt></ruby>みが正（ただ）しくないと、あとからJavaScriptを使っても、うまく動（うご）きません。まずは、ページの見（み）えない部分（ぶぶん）である「<ruby>設定<rt>せってい</rt></ruby>」から理解（りかい）しましょう。</p>
+<h2 id="ii-htmlのメタ情報じょうほうwebページの設定せっていを理解する"><a class="header" href="#ii-htmlのメタ情報じょうほうwebページの設定せっていを理解する">II. HTMLのメタ情報（じょうほう）：Webページの「<ruby>設定<rt>せってい</rt></ruby>」を理解する</a></h2>
+<p>Webページには、ユーザーには見えませんが、ブラウザや<ruby>検索<rt>けんさく</rt></ruby>（けんさく）エンジンにとって大切（たいせつ）な情報があります。これを「メタ情報（じょうほう）」と呼（よ）び、<code>&lt;head&gt;</code>タグの中（なか）に書（か）きます。</p>
 <ul>
 <li><code>&lt;title&gt;</code>タグ： ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>される名前（なまえ）です。そのページの内容（ないよう）を伝（つた）えます。</li>
-<li>文字（もじ）コードの設定（せってい）： 日本語（にほんご）などが正しく<ruby>表示<rt>ひょうじ</rt></ruby>されるようにするための設定（せってい）です。</li>
+<li>文字（もじ）コードの<ruby>設定<rt>せってい</rt></ruby>： 日本語（にほんご）などが正しく<ruby>表示<rt>ひょうじ</rt></ruby>されるようにするための<ruby>設定<rt>せってい</rt></ruby>です。</li>
 </ul>
-<p>もし、文字コードの設定が正しくないと、文字が「読（よ）めない記号（きごう）」になってしまいます。これを「文字化（もじば）け」と言（い）います。設定が終わったら、次は実際（じっさい）に<ruby>画面<rt>がめん</rt></ruby>で見（み）えるコンテンツを作（つく）りましょう。</p>
+<p>もし、文字コードの<ruby>設定<rt>せってい</rt></ruby>が正しくないと、文字が「読（よ）めない記号（きごう）」になってしまいます。これを「文字化（もじば）け」と言（い）います。<ruby>設定<rt>せってい</rt></ruby>が終わったら、次は実際（じっさい）に<ruby>画面<rt>がめん</rt></ruby>で見（み）えるコンテンツを作（つく）りましょう。</p>
 <h2 id="iii-いろいろなhtmlタグ情報じょうほうの意味いみを決める"><a class="header" href="#iii-いろいろなhtmlタグ情報じょうほうの意味いみを決める">III. いろいろなHTMLタグ：情報（じょうほう）の意味（いみ）を決める</a></h2>
 <p>Webページをつくるための「HTMLタグ」と「特殊（とくしゅ）記号」について、やさしい日本語で説明します。</p>
 <h3 id="htmlタグとは"><a class="header" href="#htmlタグとは">HTMLタグとは？</a></h3>
 <p>HTMLは、Webページの <strong>「<ruby>骨組<rt>ほねぐ</rt></ruby>み」</strong> をつくるための言葉です。
-タグは、<code>&lt;</code> と <code>&gt;</code> で名前を囲（かこ）んで書きます。たいていの場合、始まりのタグ（例：<code>&lt;p&gt;</code>）と終わりのタグ（例：<code>&lt;/p&gt;</code>）で文字をはさみます。タグはタグで囲まれた部分が、HTMLの中でどのような仕事をしているかを示します。</p>
+タグは、<code>&lt;</code> と <code>&gt;</code> で名前を囲（かこ）んで書きます。たいていの場合、始まりのタグ（<ruby>例<rt>れい</rt></ruby>：<code>&lt;p&gt;</code>）と終わりのタグ（<ruby>例<rt>れい</rt></ruby>：<code>&lt;/p&gt;</code>）で文字をはさみます。タグはタグで囲まれた部分が、HTMLの中でどのような仕事をしているかを示します。</p>
 <h4 id="1-見出しheading-h1--h6"><a class="header" href="#1-見出しheading-h1--h6">1. 見出し（Heading）: <code>&lt;h1&gt;</code> 〜 <code>&lt;h6&gt;</code></a></h4>
 <p>ページのタイトルや、中身の「見出し」に使います。</p>
 <ul>
@@ -233,8 +233,8 @@
 <h4 id="2-リンクlink-a"><a class="header" href="#2-リンクlink-a">2. リンク（Link）: <code>&lt;a&gt;</code></a></h4>
 <p>他のページへ行くためのボタンや文字をつくります。</p>
 <ul>
-<li><code>href</code> という「属性（ぞくせい）」を使って、行きたい場所の住所（URL）を書きます。</li>
-<li>（例） <code>&lt;a href="https://www.mozilla.org/"&gt;Mozilla&lt;/a&gt;</code></li>
+<li><code>href</code> という「<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>」を使って、行きたい場所の住所（URL）を書きます。</li>
+<li>（<ruby>例<rt>れい</rt></ruby>） <code>&lt;a href="https://www.mozilla.org/"&gt;Mozilla&lt;/a&gt;</code></li>
 </ul>
 <p>この<a href="https://www.saitama-cmcc.ac.jp/">埼玉コンピュータ医療事務専門学校</a>という文字をクリックすると、学校のホームページが<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <h4 id="3-強調emphasis-strong"><a class="header" href="#3-強調emphasis-strong">3. 強調（Emphasis）: <code>&lt;strong&gt;</code></a></h4>
@@ -243,26 +243,26 @@
 <p>話題（わだい）が変わるときなどに、横に長い線を引きます。</p>
 <hr>
 <p>上の線が水平線です。</p>
-<h4 id="5-段落だんらくparagraph-p"><a class="header" href="#5-段落だんらくparagraph-p">5. <ruby>段落<rt>だんらく</rt></ruby>（Paragraph）: <code>&lt;p&gt;</code></a></h4>
-<p>ふつうの文章のまとまり（<ruby>段落<rt>だんらく</rt></ruby>）をつくるときに使います。文章を書くときに一番よく使います。</p>
-<pre><code>&lt;p&gt;長い文章をずっと読み続けるのは大変（たいへん）ですよね。そこで、&lt;strong&gt;「同じ内容（ないよう）のお話」&lt;/strong&gt; をひとまとめにして、区切りをつけたものが「&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;/P&gt;
+<h4 id="5-段落だんらくだんらくparagraph-p"><a class="header" href="#5-段落だんらくだんらくparagraph-p">5. <ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>（Paragraph）: <code>&lt;p&gt;</code></a></h4>
+<p>ふつうの文章のまとまり（<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>）をつくるときに使います。文章を書くときに一番よく使います。</p>
+<pre><code>&lt;p&gt;長い文章をずっと読み続けるのは大変（たいへん）ですよね。そこで、&lt;strong&gt;「同じ内容（ないよう）のお&lt;ruby&gt;話&lt;rt&gt;はなし&lt;/rt&gt;&lt;/ruby&gt;」&lt;/strong&gt; をひとまとめにして、&lt;ruby&gt;区切&lt;rt&gt;くぎ&lt;/rt&gt;&lt;/ruby&gt;りをつけたものが「&lt;ruby&gt;&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;/P&gt;
 
-&lt;p&gt;&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;より大きなグループに、「節」や「章」があります。&lt;/p&gt;
+&lt;p&gt;&lt;ruby&gt;&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;より大きなグループに、「節」や「章」があります。&lt;/p&gt;
 </code></pre>
 <p>これは下のように<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <hr>
-<p>長い文章をずっと読み続けるのは大変（たいへん）ですよね。そこで、<strong>「同じ内容（ないよう）のお話」</strong> をひとまとめにして、区切りをつけたものが「<ruby>段落<rt>だんらく</rt></ruby>」です。</p>
+<p>長い文章をずっと読み続けるのは大変（たいへん）ですよね。そこで、<strong>「同じ内容（ないよう）のお<ruby>話<rt>はなし</rt></ruby>」</strong> をひとまとめにして、<ruby>区切<rt>くぎ</rt></ruby>りをつけたものが「<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>」です。</p>
 
-<p><ruby>段落<rt>だんらく</rt></ruby>より大きなグループに、「節」や「章」があります。</p>
+<p><ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>より大きなグループに、「節」や「章」があります。</p>
 
 <hr>
-<h4 id="6-改行line-break-br"><a class="header" href="#6-改行line-break-br">6. 改行（Line break）: <code>&lt;br&gt;</code></a></h4>
-<p>新しい<ruby>段落<rt>だんらく</rt></ruby>をつくらずに、次の行（ぎょう）へ行きたいときに使います。これには終わりのタグ（<code>&lt;/br&gt;</code>）はありません。</p>
-<pre><code>&lt;p&gt;長い文章をずっと読み続けるのは大変（たいへん）ですよね。&lt;br&gt;そこで、&lt;strong&gt;「同じ内容（ないよう）のお話」&lt;/strong&gt; をひとまとめにして、区切りをつけたものが「&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;/P&gt;
+<h4 id="6-改行かいぎょうline-break-br"><a class="header" href="#6-改行かいぎょうline-break-br">6. <ruby>改行<rt>かいぎょう</rt></ruby>（Line break）: <code>&lt;br&gt;</code></a></h4>
+<p>新しい<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>をつくらずに、次の行（ぎょう）へ行きたいときに使います。これには終わりのタグ（<code>&lt;/br&gt;</code>）はありません。</p>
+<pre><code>&lt;p&gt;長い文章をずっと読み続けるのは大変（たいへん）ですよね。&lt;br&gt;そこで、&lt;strong&gt;「同じ内容（ないよう）のお&lt;ruby&gt;話&lt;rt&gt;はなし&lt;/rt&gt;&lt;/ruby&gt;」&lt;/strong&gt; をひとまとめにして、&lt;ruby&gt;区切&lt;rt&gt;くぎ&lt;/rt&gt;&lt;/ruby&gt;りをつけたものが「&lt;ruby&gt;&lt;ruby&gt;段落&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;&lt;rt&gt;だんらく&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;/P&gt;
 </code></pre>
 <p>これは下のように<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <hr>
-<p>長い文章をずっと読み続けるのは大変（たいへん）ですよね。<br>そこで、<strong>「同じ内容（ないよう）のお話」</strong> をひとまとめにして、区切りをつけたものが「<ruby>段落<rt>だんらく</rt></ruby>」です。</p>
+<p>長い文章をずっと読み続けるのは大変（たいへん）ですよね。<br>そこで、<strong>「同じ内容（ないよう）のお<ruby>話<rt>はなし</rt></ruby>」</strong> をひとまとめにして、<ruby>区切<rt>くぎ</rt></ruby>りをつけたものが「<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>」です。</p>
 
 <hr>
 <h4 id="7-イメージimage-img"><a class="header" href="#7-イメージimage-img">7. イメージ（Image）: <code>&lt;img&gt;</code></a></h4>
@@ -274,20 +274,20 @@
 <pre><code>&lt;img src="img/駅.jpg" alt="駅の写真"&gt;
 </code></pre>
 <img src="img/駅.jpg" alt="駅の写真">
-<h4 id="8-整形済みテキスト-pre"><a class="header" href="#8-整形済みテキスト-pre">8. 整形済みテキスト: <code>&lt;pre&gt;</code></a></h4>
+<h4 id="8-整形せいけい済みテキスト-pre"><a class="header" href="#8-整形せいけい済みテキスト-pre">8. <ruby>整形<rt>せいけい</rt></ruby>済みテキスト: <code>&lt;pre&gt;</code></a></h4>
 <p>プログラムのコードなどを、書いた通りの形で<ruby>表示<rt>ひょうじ</rt></ruby>します。</p>
 <ul>
-<li>スペースや改行（かいぎょう）がそのまま<ruby>画面<rt>がめん</rt></ruby>に出ます。</li>
+<li>スペースや<ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）がそのまま<ruby>画面<rt>がめん</rt></ruby>に出ます。</li>
 </ul>
 <p><code>&lt;h1&gt;1番大きな見出し&lt;/h&gt;</code>のように、書いたまま、<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <h4 id="9-リストlist-ul-ol-li"><a class="header" href="#9-リストlist-ul-ol-li">9. リスト（List）: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></a></h4>
-<p>箇条書き（かじょうがき）をつくります。</p>
+<p><ruby>箇条<rt>かじょう</rt></ruby><ruby>書<rt>が</rt></ruby>き（かじょうがき）をつくります。</p>
 <ul>
 <li><code>&lt;ul&gt;</code>: 点（・）がつくリストです。</li>
 <li><code>&lt;ol&gt;</code>: 1, 2, 3… と数字がつくリストです。</li>
 <li><code>&lt;li&gt;</code>: リストの中の、一つ一つのアイテムに使います。</li>
 </ul>
-<p><code>ul</code>の例</p>
+<p><code>ul</code>の<ruby>例<rt>れい</rt></ruby></p>
 <ul>
   
 <li>赤</li>
@@ -300,7 +300,7 @@
 
 </ul>
 
-<p><code>ol</code>の例</p>
+<p><code>ol</code>の<ruby>例<rt>れい</rt></ruby></p>
 <ol>
   
 <li>赤</li>
@@ -315,17 +315,17 @@
 
 <hr>
 <h3 id="特殊記号とくしゅきごう"><a class="header" href="#特殊記号とくしゅきごう">特殊記号（とくしゅきごう）</a></h3>
-<p>HTMLでは、<code>&lt;</code> や <code>&gt;</code> は「タグ」として使われます。そのため、これらを「文字」として<ruby>画面<rt>がめん</rt></ruby>に出したいときは、特別な書き方をする必要があります。</p>
+<p>HTMLでは、<code>&lt;</code> や <code>&gt;</code> は「タグ」として使われます。そのため、これらを「文字」として<ruby>画面<rt>がめん</rt></ruby>に出したいときは、特別な<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>をする必要があります。</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th style="text-align: left">記号</th><th style="text-align: left">名前</th><th style="text-align: left">HTMLでの書き方</th><th style="text-align: left">なぜ大事か</th></tr>
+<tr><th style="text-align: left">記号</th><th style="text-align: left">名前</th><th style="text-align: left">HTMLでの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></th><th style="text-align: left">なぜ大事か</th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align: left"><strong>&amp;</strong></td><td style="text-align: left">アンパサンド</td><td style="text-align: left"><code>&amp;amp;</code></td><td style="text-align: left">特殊記号の始まりを教える記号だからです。</td></tr>
 <tr><td style="text-align: left"><strong>&lt;</strong></td><td style="text-align: left">小なり</td><td style="text-align: left"><code>&amp;lt;</code></td><td style="text-align: left">タグの始まり（<code>&lt;</code>）とまちがわれるからです。</td></tr>
 <tr><td style="text-align: left"><strong>&gt;</strong></td><td style="text-align: left">大なり</td><td style="text-align: left"><code>&amp;gt;</code></td><td style="text-align: left">タグの終わり（<code>&gt;</code>）とまちがわれるからです。</td></tr>
-<tr><td style="text-align: left"><strong>“</strong></td><td style="text-align: left">ダブルクォーテーション</td><td style="text-align: left"><code>&amp;quot;</code></td><td style="text-align: left">属性（例：<code>class="name"</code>）を書くときに使うからです。</td></tr>
+<tr><td style="text-align: left"><strong>“</strong></td><td style="text-align: left">ダブルクォーテーション</td><td style="text-align: left"><code>&amp;quot;</code></td><td style="text-align: left"><ruby>属性<rt>ぞくせい</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>class="name"</code>）を書くときに使うからです。</td></tr>
 </tbody>
 </table>
 </div>
@@ -335,8 +335,8 @@
 HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（色やサイズ）」を整（ととの）え、JavaScriptで「<ruby>動<rt>うご</rt></ruby>き」をつけます。まずはこのHTMLタグをしっかり覚（おぼ）えましょう！</p>
 <p>JavaScriptのための「目印（めじるし）」： タグには、JavaScriptが場所（ばしょ）を見（み）つけるための名前を付（つ）けることができます。</p>
 <ul>
-<li>id属性（ぞくせい）： そのページで「たった1つ」の要素（ようそ）に付（つ）ける固有（こゆう）の名前です。</li>
-<li>class属性（ぞくせい）： 複数（ふくすう）の要素を「グループ化（か）」するための名前です。</li>
+<li>id<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>： そのページで「たった1つ」の要素（ようそ）に付（つ）ける固有（こゆう）の名前です。</li>
+<li>class<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>： 複数（ふくすう）の要素を「グループ化（か）」するための名前です。</li>
 </ul>
 <p>次は、データを見やすく整理（せいり）する「テーブル」について学（まな）びましょう。</p>
 <h2 id="iv-テーブルデータをおさめて表示ひょうじする"><a class="header" href="#iv-テーブルデータをおさめて表示ひょうじする">IV. テーブル：データをおさめて<ruby>表示<rt>ひょうじ</rt></ruby>する</a></h2>
@@ -415,7 +415,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 
         &lt;div class="form-group"&gt;
             &lt;label&gt;お名前（おなまえ）：&lt;/label&gt;
-            &lt;input type="text" name="username" placeholder="例：Yamada Taro"&gt;
+            &lt;input type="text" name="username" placeholder="&lt;ruby&gt;例&lt;rt&gt;れい&lt;/rt&gt;&lt;/ruby&gt;：Yamada Taro"&gt;
         &lt;/div&gt;
 
         &lt;div class="form-group"&gt;
@@ -449,7 +449,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 <p><strong>データの受け取り：GETとPOSTの違い（ちがい）</strong></p>
 <p>フォームで<ruby>入力<rt>にゅうりょく</rt></ruby>されたデータがサーバーに送（おく）られるとき、2つのルール（メソッド）があります。</p>
 <ul>
-<li>GET（ゲット）： データがURLの中に含（ふく）まれます。検索（けんさく）キーワードなど、人（ひと）に見（み）られても困（こま）らないデータに使（つか）います。</li>
+<li>GET（ゲット）： データがURLの中に含（ふく）まれます。<ruby>検索<rt>けんさく</rt></ruby>（けんさく）キーワードなど、人（ひと）に見（み）られても困（こま）らないデータに使（つか）います。</li>
 <li>POST（ポスト）： データがURLには見（み）えない形（かたち）で送られます。パスワードや個人（こじん）情報（じょうほう）など、秘密（ひみつ）にしたいデータに向（む）いています。</li>
 </ul>
 <p>JavaScriptを学習（がくしゅう）すると、このデータの送信（そうしん）をコントロールしたり、<ruby>入力<rt>にゅうりょく</rt></ruby>ミスがないかチェックしたりできるようになります。</p>
@@ -459,7 +459,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 <p><strong>HTML基礎のまとめ</strong></p>
 <ul>
 <li>HTMLはWebページの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」です。</li>
-<li><code>&lt;head&gt;</code>タグの中にある設定（せってい）が正しくないと、文字化（もじば）けが起（お）きます。</li>
+<li><code>&lt;head&gt;</code>タグの中にある<ruby>設定<rt>せってい</rt></ruby>が正しくないと、文字化（もじば）けが起（お）きます。</li>
 <li>idは「1つだけ」、classは「グループ」のための目印（めじるし）です。</li>
 <li>テーブルは、<code>&lt;table&gt;</code>の中に<code>&lt;tr&gt;</code>、その中に<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>を書く構造（こうぞう）です。</li>
 <li>データの送信（そうしん）には、GETとPOSTの2つの方法（ほうほう）があります。</li>
