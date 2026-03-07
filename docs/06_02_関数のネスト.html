@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -176,9 +176,9 @@
                     <main>
                         <h1 id="関数かんすうのネスト"><a class="header" href="#関数かんすうのネスト"><ruby>関数<rt>かんすう</rt></ruby>のネスト</a></h1>
 <p><ruby>関数<rt>かんすう</rt></ruby>の中に、さらに<ruby>関数<rt>かんすう</rt></ruby>を書くことができます。これを <strong>「ネスト（入れ子）」</strong> と呼びます。これは、プログラムを整理して情報を守る <strong>「カプセル化（情報の保護）」</strong> に役立ちます。</p>
-<p>親子関係とスコープ</p>
+<p><ruby>親子<rt>おやこ</rt></ruby>関係とスコープ</p>
 <ul>
-<li>ルール： <ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>（子供）は、外側の<ruby>関数<rt>かんすう</rt></ruby>（親）にある<ruby>変数<rt>へんすう</rt></ruby>を見ることができます。</li>
+<li>ルール： <ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>（子供）は、<ruby>外側<rt>そとがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>（親）にある<ruby>変数<rt>へんすう</rt></ruby>を見ることができます。</li>
 <li><ruby>例<rt>たと</rt></ruby>え： 「子供は自分の家の冷蔵庫（親の<ruby>変数<rt>へんすう</rt></ruby>）を開けて中身を見ることができます。でも、外にいる隣の人（外の<ruby>関数<rt>かんすう</rt></ruby>）は、その家の中を見ることはできません。」</li>
 </ul>
 <pre><code class="language-JavaScript">function outerFunc() {
@@ -197,7 +197,7 @@
 <h3 id="1-ネスト入れ子ってなに"><a class="header" href="#1-ネスト入れ子ってなに">1. ネスト（入れ子）ってなに？</a></h3>
 <p>マトリョーシカ（ロシアの人形）のように、大きな箱の中に小さな箱が入っている状態のことです。</p>
 <p>JavaScriptでは、このように書きます。</p>
-<pre><code class="language-javascript">function outer() { // 外側の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（大きな箱）
+<pre><code class="language-javascript">function outer() { // &lt;ruby&gt;外側&lt;rt&gt;そとがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（大きな箱）
   
   function inner() { // &lt;ruby&gt;内側&lt;rt&gt;うちがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（小さな箱）
     // 何かの処理
@@ -209,9 +209,9 @@
 <h3 id="2-スコープの絶対ルール家と部屋のルール"><a class="header" href="#2-スコープの絶対ルール家と部屋のルール">2. スコープの絶対ルール（家と部屋のルール）</a></h3>
 <p>ネストされた<ruby>関数<rt>かんすう</rt></ruby>のスコープには、大切な <strong>2つのルール</strong> があります。</p>
 <h4 id="ルール①中は外が見える"><a class="header" href="#ルール①中は外が見える">ルール①：中は「外」が見える</a></h4>
-<p>自分の部屋（<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）にいても、窓から外（外側の<ruby>関数<rt>かんすう</rt></ruby>）の景色は見えますよね。つまり、<strong><ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>から、外側の<ruby>変数<rt>へんすう</rt></ruby>は使えます。</strong></p>
+<p>自分の部屋（<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）にいても、窓から外（<ruby>外側<rt>そとがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）の景色は見えますよね。つまり、<strong><ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>から、<ruby>外側<rt>そとがわ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>は使えます。</strong></p>
 <h4 id="ルール②外は中が見えない"><a class="header" href="#ルール②外は中が見えない">ルール②：外は「中」が見えない</a></h4>
-<p>家の外（外側の<ruby>関数<rt>かんすう</rt></ruby>）にいる人は、あなたの部屋（<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）の引き出しの中身は見えません。つまり、<strong>外側の<ruby>関数<rt>かんすう</rt></ruby>から、<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>は使えません。</strong></p>
+<p>家の外（<ruby>外側<rt>そとがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）にいる人は、あなたの部屋（<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>）の引き出しの中身は見えません。つまり、<strong><ruby>外側<rt>そとがわ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>から、<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>は使えません。</strong></p>
 <h3 id="3-具体的なコードで見てみよう"><a class="header" href="#3-具体的なコードで見てみよう">3. 具体的なコードで見てみよう！</a></h3>
 <p>このルールを実際のコードで確認してみましょう。</p>
 <pre><code class="language-javascript">function grandParent() {
@@ -236,7 +236,7 @@ grandParent();
 <h3 id="4-なぜネストを使うの"><a class="header" href="#4-なぜネストを使うの">4. なぜ「ネスト」を使うの？</a></h3>
 <p>「わざわざ<ruby>関数<rt>かんすう</rt></ruby>の中に<ruby>関数<rt>かんすう</rt></ruby>を書かなくてもいいのでは？」と思うかもしれません。でも、これには大きなメリットがあります。</p>
 <ul>
-<li><strong>秘密（ひみつ）を守る：</strong> <code>inner</code><ruby>関数<rt>かんすう</rt></ruby>は、<code>outer</code><ruby>関数<rt>かんすう</rt></ruby>の中だけで使う「専用の道具」になります。他の場所から勝手に使われないように隠すことができるのです。</li>
+<li><strong>秘密（ひみつ）を守る：</strong> <code>inner</code><ruby>関数<rt>かんすう</rt></ruby>は、<code>outer</code><ruby>関数<rt>かんすう</rt></ruby>の中だけで使う「<ruby>専用<rt>せんよう</rt></ruby>の道具」になります。他の場所から勝手に使われないように隠すことができるのです。</li>
 <li><strong>整理<ruby>整頓<rt>せいとん</rt></ruby>（せいりせいとん）：</strong> 関連する機能をまとめておくことで、コードが読みやすくなります。</li>
 </ul>
 <h3 id="留学生へのまとめ"><a class="header" href="#留学生へのまとめ">留学生へのまとめ</a></h3>
@@ -246,8 +246,8 @@ grandParent();
 <tr><th>視点（目線）</th><th>見える？</th><th>理由（たとえ）</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><ruby>内側<rt>うちがわ</rt></ruby>から → 外側へ</strong></td><td><strong>見える！ (OK)</strong></td><td>部屋の窓から外が見えるから。</td></tr>
-<tr><td><strong>外側から → <ruby>内側<rt>うちがわ</rt></ruby>へ</strong></td><td><strong>見えない！ (NG)</strong></td><td>外から他人の部屋の中は見えないから。</td></tr>
+<tr><td><strong><ruby>内側<rt>うちがわ</rt></ruby>から → <ruby>外側<rt>そとがわ</rt></ruby>へ</strong></td><td><strong>見える！ (OK)</strong></td><td>部屋の窓から外が見えるから。</td></tr>
+<tr><td><strong><ruby>外側<rt>そとがわ</rt></ruby>から → <ruby>内側<rt>うちがわ</rt></ruby>へ</strong></td><td><strong>見えない！ (NG)</strong></td><td>外から他人の部屋の中は見えないから。</td></tr>
 </tbody>
 </table>
 </div>
@@ -266,13 +266,13 @@ grandParent();
 <hr>
 <h2 id="ii-クロージャ"><a class="header" href="#ii-クロージャ">II. クロージャ</a></h2>
 <p><strong>クロージャ (Closure)</strong> は、日本語でいうと <strong>「記憶（きおく）を持っている<ruby>関数<rt>かんすう</rt></ruby>」</strong> のことです。</p>
-<p>少し難しい概念（がいねん）ですが、<strong>「<ruby>魔法<rt>まほう</rt></ruby>のリュックサック」</strong> をイメージすると、とても分かりやすくなります。</p>
+<p>少し<ruby>難<rt>むずか</rt></ruby>しい概念（がいねん）ですが、<strong>「<ruby>魔法<rt>まほう</rt></ruby>のリュックサック」</strong> をイメージすると、とても分かりやすくなります。</p>
 <h3 id="1-クロージャをイメージで理解しよう"><a class="header" href="#1-クロージャをイメージで理解しよう">1. クロージャをイメージで理解しよう！</a></h3>
 <p>普通の<ruby>関数<rt>かんすう</rt></ruby>は、仕事が終わると、その中で使っていた<ruby>変数<rt>へんすう</rt></ruby>のことをすべて忘れてしまいます。
 しかし、クロージャは違います。</p>
 <ul>
 <li><strong>普通の<ruby>関数<rt>かんすう</rt></ruby>：</strong> 仕事が終わったら、机の上をきれいに片付ける（<ruby>変数<rt>へんすう</rt></ruby>が消える）。</li>
-<li><strong>クロージャ：</strong> 仕事が終わっても、大切な<ruby>変数<rt>へんすう</rt></ruby>を**「リュックサック（スコープ）」**に入れて持ち歩く。次に呼ばれたとき、そのリュックの中から前回の続きを取り出せる。</li>
+<li><strong>クロージャ：</strong> 仕事が終わっても、大切な<ruby>変数<rt>へんすう</rt></ruby>を**「リュックサック（スコープ）」**に入れて持ち歩く。次に呼ばれたとき、そのリュックの中から<ruby>前回<rt>ぜんかい</rt></ruby>の続きを取り出せる。</li>
 </ul>
 <hr>
 <h3 id="2-具体的なコードで見てみよう"><a class="header" href="#2-具体的なコードで見てみよう">2. 具体的なコードで見てみよう</a></h3>
@@ -281,7 +281,7 @@ grandParent();
   let count = 0; // これが「リュックの中身（秘密の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;）」
 
   return function() { 
-    count++; // 外側の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;を覚えている！
+    count++; // &lt;ruby&gt;外側&lt;rt&gt;そとがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;を覚えている！
     console.log(count + "回目です");
   };
 }
@@ -302,7 +302,7 @@ myCounter(); // 「3回目です」
 <ol>
 <li><strong>データを隠せる（プライバシー）：</strong>
 <code>count</code> という<ruby>変数<rt>へんすう</rt></ruby>は<ruby>関数<rt>かんすう</rt></ruby>の外からは絶対に見えません。外から勝手に数字を変えられたくない「大切なデータ」を守るのに便利です。</li>
-<li><strong>専用のマシンが作れる：</strong>
+<li><strong><ruby>専用<rt>せんよう</rt></ruby>のマシンが作れる：</strong>
 <code>const counterA = createCounter();</code>
 <code>const counterB = createCounter();</code>
 と書けば、それぞれが <strong>別々のリュック（記憶）</strong> を持つことができます。AとBの数字は混ざりません。</li>
@@ -312,7 +312,7 @@ myCounter(); // 「3回目です」
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>難しい言葉</th><th>やさしい言いかえ</th><th>英語</th></tr>
+<tr><th><ruby>難<rt>むずか</rt></ruby>しい言葉</th><th>やさしい言いかえ</th><th>英語</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>保持（ほじ）する</strong></td><td><strong>ずっと持っている</strong></td><td>Hold / Keep</td></tr>

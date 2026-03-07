@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -223,7 +223,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 <blockquote>
 <p>「プリミティブは『ただの値』なのに、なぜ <code>.length</code> や <code>.toUpperCase()</code> などの <strong>『道具（メソッド）』</strong> が使えるんですか？」</p>
 </blockquote>
-<p>実は、JavaScriptが裏側で <strong>一時的な<ruby>魔法<rt>まほう</rt></ruby></strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と呼びます。</p>
+<p>実は、JavaScriptが<ruby>裏側<rt>うらがわ</rt></ruby>で <strong>一時的な<ruby>魔法<rt>まほう</rt></ruby></strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と呼びます。</p>
 <ol>
 <li>あなたが <code>str1.toUpperCase()</code> と書く。</li>
 <li>JavaScriptが「あ、道具を使いたいんだな？」と判断する。</li>
@@ -262,7 +262,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 <p>いかがでしょうか？「ふだんは身軽なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で変身」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
 <hr>
 <h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の<ruby>加工<rt>かこう</rt></ruby></a></h2>
-<p>Stringオブジェクト（文字列）には、文字を自由に操るための便利な「道具（メソッド）」がたくさんあります。</p>
+<p>Stringオブジェクト（文字列）には、文字を自由に<ruby>操<rt>あやつ</rt></ruby>るための便利な「道具（メソッド）」がたくさんあります。</p>
 <p>留学生の方には、<strong>「長い文章という『テープ』を、ハサミで切ったり、シールを貼ったりして<ruby>加工<rt>かこう</rt></ruby>する」</strong> イメージで説明すると伝わりやすいですよ。</p>
 <p>よく使われる5つのメソッドを紹介します。</p>
 <h3 id="1-sliceスライス好きなところを切り取る"><a class="header" href="#1-sliceスライス好きなところを切り取る">1. slice（スライス）：好きなところを切り取る</a></h3>
@@ -423,13 +423,13 @@ if (email.indexOf("@") !== -1) {
 <li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>み: `こんにちは、${name}さん！` のように、${} で<ruby>変数<rt>へんすう</rt></ruby>を入れられます。</li>
 <li><ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）: テンプレートリテラルは、コードの中で<ruby>改行<rt>かいぎょう</rt></ruby>した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
 </ul>
-<h3 id="数値すうちへの変換"><a class="header" href="#数値すうちへの変換"><ruby>数値<rt>すうち</rt></ruby>への変換</a></h3>
-<p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには変換が必要です。</p>
+<h3 id="数値すうちへの変換へんかん"><a class="header" href="#数値すうちへの変換へんかん"><ruby>数値<rt>すうち</rt></ruby>への<ruby>変換<rt>へんかん</rt></ruby></a></h3>
+<p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには<ruby>変換<rt>へんかん</rt></ruby>が必要です。</p>
 <ul>
-<li>parseInt(): 整数（1, 2, 3…）に変換します。</li>
-<li>parseFloat(): 小数点を含む<ruby>数値<rt>すうち</rt></ruby>に変換します。</li>
+<li>parseInt(): 整数（1, 2, 3…）に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
+<li>parseFloat(): 小数点を含む<ruby>数値<rt>すうち</rt></ruby>に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
 </ul>
-<p>So What?（なぜ大切なの？） 数字ではない文字を無理に<ruby>数値<rt>すうち</rt></ruby>に変えようとすると NaN（Not a Number：<ruby>数値<rt>すうち</rt></ruby>ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() <ruby>関数<rt>かんすう</rt></ruby>を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
+<p>So What?（なぜ大切なの？） 数字ではない文字を無理に<ruby>数値<rt>すうち</rt></ruby>に変えようとすると NaN（Not a Number：<ruby>数値<rt>すうち</rt></ruby>ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() <ruby>関数<rt>かんすう</rt></ruby>を使って「これは<ruby>本当<rt>ほんとう</rt></ruby>に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
 
                     </main>
 

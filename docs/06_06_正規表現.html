@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -408,11 +408,11 @@ const pattern2 = new RegExp("abc");
 <hr>
 <p><a href="./06_05_かっこの種類.html">参考: かっこの種類と日本語の呼び方</a></p>
 <h3 id="留学生へのアドバイス"><a class="header" href="#留学生へのアドバイス">留学生へのアドバイス</a></h3>
-<p>RegExpは、最初は難しくて「暗号（あんごう）」に見えます。でも、全部覚える必要はありません！</p>
+<p>RegExpは、最初は<ruby>難<rt>むずか</rt></ruby>しくて「暗号（あんごう）」に見えます。でも、全部覚える必要はありません！</p>
 <blockquote>
 <p>「RegExpは <strong>『文字の形をチェックするルールブック』</strong> だよ。
 郵便番号、メールアドレス、パスワードの強さ（<ruby>英数字<rt>えいすうじ</rt></ruby>が入っているか）を調べるときに、世界中のプログラマーが使っているんだ。
-難しいパターンは、インターネットで『RegExp 郵便番号』のように<ruby>検索<rt>けんさく</rt></ruby>してコピーすれば大丈夫だよ！」</p>
+<ruby>難<rt>むずか</rt></ruby>しいパターンは、インターネットで『RegExp 郵便番号』のように<ruby>検索<rt>けんさく</rt></ruby>してコピーすれば大丈夫だよ！」</p>
 </blockquote>
 <blockquote class="blockquote-tag blockquote-tag-important">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
@@ -436,7 +436,7 @@ if (myPattern.test(text)) {
 }
 
 </code></pre>
-<h4 id="少し難しいパターン例れい"><a class="header" href="#少し難しいパターン例れい">少し難しいパターン<ruby>例<rt>れい</rt></ruby></a></h4>
+<h4 id="少し難むずかしいパターン例れい"><a class="header" href="#少し難むずかしいパターン例れい">少し<ruby>難<rt>むずか</rt></ruby>しいパターン<ruby>例<rt>れい</rt></ruby></a></h4>
 <p>「数字が3つ連続（れんぞく）しているところを探す」</p>
 <pre><code class="language-javascript">const numPattern = /\d{3}/;
 console.log(numPattern.test("abc123def")); // true
@@ -547,7 +547,7 @@ checkPassword("thisIsAVeryLongPassword"); // NG (長すぎる)
 <li><strong><code>^</code></strong> ： ここからチェック開始！</li>
 <li><strong><code>[a-z]</code></strong> ： 最初の1文字目は、**絶対に「英小文字」**じゃなきゃダメ。</li>
 <li><strong><code>[a-z0-9@#!]</code></strong> ： 2文字目からは、<strong>小文字・数字・記号</strong>のどれかを使ってね。</li>
-<li><strong><code>{7,15}</code></strong> ： 3番のルールを <strong>7回から15回繰り返して</strong> ね。（最初の1文字を合わせると、全部で8〜16文字になります）</li>
+<li><strong><code>{7,15}</code></strong> ： 3番のルールを <strong>7回から15回<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>して</strong> ね。（最初の1文字を合わせると、全部で8〜16文字になります）</li>
 <li><strong><code>$</code></strong> ： ここで終わり。これより後ろに余計な文字があったらダメ！</li>
 </ol>
 <p>これで、郵便番号、電話番号、そしてパスワードのバリデーション（<ruby>入力<rt>にゅうりょく</rt></ruby>チェック）ができるようになりましたね！</p>

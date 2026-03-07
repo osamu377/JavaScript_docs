@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -281,9 +281,9 @@ tr:nth-child(even) {
 <p>最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。</p>
 <ul>
 <li>CSSの :hover： マウスが乗ったときに、色をサッと変えることができます。</li>
-<li>JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と離れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の切り替え）をさせるときに使います。</li>
+<li>JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と離れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。</li>
 </ul>
-<p>使い分けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。</p>
+<p><ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。</p>
 <pre><code>a:link,
 a:visited {
   color: rebeccapurple;
@@ -296,9 +296,9 @@ a:hover {
 <p><a href="./html/01_02_CSS_05.html">ここをクリック</a>してみましょう。</p>
 <hr>
 <h2 id="v-javascriptからcssを操作する重要ルール"><a class="header" href="#v-javascriptからcssを操作する重要ルール">V. JavaScriptからCSSを操作する重要ルール</a></h2>
-<p>JavaScriptを使ってデザインを書き換えるとき、CSSのプロパティ名の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が少し変わるという「重要なルール」があります。</p>
-<p><strong>キャメルケースへの変換（へんかん）</strong></p>
-<p>CSSでハイフン（-）を使っていた名前は、JavaScriptではハイフンを消して、次の文字を大文字にする 「キャメルケース」 に書き換えます。</p>
+<p>JavaScriptを使ってデザインを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えるとき、CSSのプロパティ名の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が少し変わるという「重要なルール」があります。</p>
+<p><strong>キャメルケースへの<ruby>変換<rt>へんかん</rt></ruby>（へんかん）</strong></p>
+<p>CSSでハイフン（-）を使っていた名前は、JavaScriptではハイフンを消して、次の文字を大文字にする 「キャメルケース」 に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えます。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -311,7 +311,7 @@ a:hover {
 </tbody>
 </table>
 </div>
-<p><strong>JavaScriptでの書き換え構造：「道のり」で考える</strong></p>
+<p><strong>JavaScriptでの<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え構造：「道のり」で考える</strong></p>
 <p>JavaScriptからCSSを操作するときは、次のような構造で命令を出します。</p>
 <pre><code>// ID名が "title" の要素の色を赤に変える
 document.getElementById("title").style.color = "red";
@@ -333,7 +333,7 @@ document.getElementById("title").style.color = "red";
 <li>クラス： 名前をつけてグループ化し、JavaScriptからも操作しやすくする。</li>
 <li><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス： :hover でユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>させる。</li>
 </ul>
-<p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための近道（ちかみち）です。また、CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは <strong>「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」</strong> を大切にしてください。</p>
+<p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための<ruby>近道<rt>ちかみち</rt></ruby>（ちかみち）です。また、CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは <strong>「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」</strong> を大切にしてください。</p>
 
                     </main>
 

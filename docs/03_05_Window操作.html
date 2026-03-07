@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -178,7 +178,7 @@
 <h2 id="i-windowの操作"><a class="header" href="#i-windowの操作">I. Windowの操作</a></h2>
 <p>「ダイアログボックスを<ruby>表示<rt>ひょうじ</rt></ruby>する」「新しいウィンドウやタブを開く」</p>
 <p>ブラウザの「社長さん」である <strong>Windowオブジェクト</strong> は、<ruby>画面<rt>がめん</rt></ruby>全体をコントロールする力を持っています。</p>
-<p>留学生の方には、Windowの操作は**「ユーザーに話しかけたり、新しい部屋（タブ）を作ったりするコミュニケーション」**だと教えてあげてください。</p>
+<p>留学生の方には、Windowの操作は <strong>「ユーザーに話しかけたり、新しい部屋（タブ）を作ったりするコミュニケーション」</strong> だと教えてあげてください。</p>
 <hr>
 <h3 id="1-ダイアログボックスを表示ひょうじする話しかける"><a class="header" href="#1-ダイアログボックスを表示ひょうじする話しかける">1. ダイアログボックスを<ruby>表示<rt>ひょうじ</rt></ruby>する（話しかける）</a></h3>
 <p>ユーザーに短いメッセージを伝えたり、質問をしたりする「小さな窓」を<ruby>表示<rt>ひょうじ</rt></ruby>します。これらはすべて、一時的に他の操作を止めて注目させる効果があります。</p>
@@ -192,17 +192,17 @@
 「確認」です。「OK」か「キャンセル」を選んでもらいます。</p>
 </li>
 <li>
-<p>戻り値：<code>true</code>（OK）または <code>false</code>（キャンセル）</p>
+<p><ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>：<code>true</code>（OK）または <code>false</code>（キャンセル）</p>
 </li>
 <li>
-<p><strong><code>prompt("質問", "&lt;ruby&gt;初期&lt;rt&gt;しょき&lt;/rt&gt;&lt;/ruby&gt;値")</code></strong>
+<p><strong><code>prompt("質問", "初期値")</code></strong>
 「<ruby>入力<rt>にゅうりょく</rt></ruby>」です。ユーザーに文字を書いてもらいます。</p>
 </li>
 <li>
-<p>戻り値：<ruby>入力<rt>にゅうりょく</rt></ruby>された文字、または <code>null</code>（キャンセル時）</p>
+<p><ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>：<ruby>入力<rt>にゅうりょく</rt></ruby>された文字、または <code>null</code>（キャンセル時）</p>
 </li>
 </ul>
-<pre><code class="language-javascript">if (confirm("本当に消去しますか？")) {
+<pre><code class="language-javascript">if (confirm("&lt;ruby&gt;本当&lt;rt&gt;ほんとう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;消去&lt;rt&gt;しょうきょ&lt;/rt&gt;&lt;/ruby&gt;しますか？")) {
     const name = prompt("確認のため、お名前を&lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;してください");
     alert(name + "さん、削除を受け付けました");
 }
@@ -214,8 +214,8 @@
 <h4 id="windowopenurl-名前-オプション"><a class="header" href="#windowopenurl-名前-オプション"><strong><code>window.open("URL", "名前", "オプション")</code></strong></a></h4>
 <p>新しいタブやウィンドウを開きます。</p>
 <ul>
-<li><strong>第1<ruby><rt>引数</rt>ひきすう</ruby>：</strong> 開きたいページの住所（URL）。</li>
-<li><strong>第3<ruby><rt>引数</rt>ひきすう</ruby>：</strong> ウィンドウのサイズなどを指定できます。</li>
+<li><strong>第1<ruby>引数<rt>ひきすう</rt></ruby>：</strong> 開きたいページの住所（URL）。</li>
+<li><strong>第3<ruby>引数<rt>ひきすう</rt></ruby>：</strong> ウィンドウのサイズなどを指定できます。</li>
 <li><ruby>例<rt>れい</rt></ruby>：<code>"width=400,height=400"</code></li>
 </ul>
 <h4 id="windowclose"><a class="header" href="#windowclose"><strong><code>window.close()</code></strong></a></h4>
@@ -224,7 +224,7 @@
 <p><strong>注意：</strong> セキュリティ上、JavaScriptで開いた窓（<code>window.open</code> で作ったもの）以外は、勝手に閉じられないようになっています。</p>
 </blockquote>
 <hr>
-<h3 id="3-ウィンドウのサイズと位置を操る"><a class="header" href="#3-ウィンドウのサイズと位置を操る">3. ウィンドウのサイズと位置を操る</a></h3>
+<h3 id="3-ウィンドウのサイズと位置を操あやつる"><a class="header" href="#3-ウィンドウのサイズと位置を操あやつる">3. ウィンドウのサイズと位置を<ruby>操<rt>あやつ</rt></ruby>る</a></h3>
 <p>今のウィンドウを動かしたり、大きさを変えたりする<ruby>魔法<rt>まほう</rt></ruby>です（最近のブラウザでは制限されることもあります）。</p>
 <ul>
 <li><strong><code>window.moveTo(x, y)</code></strong>：指定した場所へウィンドウを移動させる。</li>
@@ -234,7 +234,7 @@
 <h3 id="4-スクロールをコントロールする"><a class="header" href="#4-スクロールをコントロールする">4. スクロールをコントロールする</a></h3>
 <p>長いページを自動で動かしたいときに使います。</p>
 <ul>
-<li><strong><code>window.scrollTo(x, y)</code></strong>：指定した場所まで一気に飛ばす。</li>
+<li><strong><code>window.scrollTo(x, y)</code></strong>：指定した場所まで<ruby>一気<rt>いっき</rt></ruby>に飛ばす。</li>
 <li><strong><code>window.scrollBy(x, y)</code></strong>：今の場所から「あと○○px」だけ動かす。</li>
 </ul>
 <pre><code class="language-javascript">// ボタンを押したら一番上（0, 0）に戻る
@@ -250,7 +250,7 @@ function goToTop() {
 <h3 id="5-留学生へのアドバイス使いすぎに注意"><a class="header" href="#5-留学生へのアドバイス使いすぎに注意">5. 留学生へのアドバイス：使いすぎに注意！</a></h3>
 <blockquote>
 <p>「<code>alert</code> や <code>window.open</code> はとても目立つから、使いすぎるとユーザーがびっくりして『このサイト、うるさいな！』と思ってしまうよ。
-<strong>本当に大切なときだけ使うのが、良いエンジニアのルールだよ！</strong>」</p>
+<strong><ruby>本当<rt>ほんとう</rt></ruby>に大切なときだけ使うのが、良いエンジニアのルールだよ！</strong>」</p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
@@ -269,7 +269,7 @@ function goToTop() {
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？これで「ブラウザの外側」も自由に操れるようになりましたね。</p>
+<p>いかがでしょうか？これで「ブラウザの<ruby>外側<rt>そとがわ</rt></ruby>」も自由に<ruby>操<rt>あやつ</rt></ruby>れるようになりましたね。</p>
 <h2 id="ii-タイマー"><a class="header" href="#ii-タイマー">II. タイマー</a></h2>
 <p>JavaScriptには、時間をコントロールする**「タイマー（Timer）」**という便利な<ruby>魔法<rt>まほう</rt></ruby>が2つあります。</p>
 <p>留学生の方には、**「一度きりのアラーム時計」<strong>と</strong>「ずっと繰り返すリズム時計」**の違いとして説明すると、とてもスムーズに理解してもらえます。</p>
@@ -278,7 +278,7 @@ function goToTop() {
 <p>指定した時間がたった後に、<strong>1回だけ</strong>プログラムを動かします。</p>
 <ul>
 <li><strong>イメージ：</strong> カップラーメンのタイマー（3分たったら1回鳴る）。</li>
-<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>setTimeout(動かしたいプログラム, 待ち時間ms)</code></li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>setTimeout(動かしたいプログラム, &lt;ruby&gt;待&lt;rt&gt;ま&lt;/rt&gt;&lt;/ruby&gt;ち&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;ms)</code></li>
 <li>※時間は「ミリ秒（ms）」で書きます。<strong>1000ms = 1秒</strong> です。</li>
 </ul>
 <pre><code class="language-javascript">console.log("タイマースタート！");
@@ -290,11 +290,11 @@ setTimeout(function() {
 
 </code></pre>
 <hr>
-<h3 id="2-setinterval繰り返し実行"><a class="header" href="#2-setinterval繰り返し実行">2. <code>setInterval</code>（繰り返し実行）</a></h3>
-<p>指定した時間ごとに、<strong>何度も繰り返し</strong>プログラムを動かします。</p>
+<h3 id="2-setinterval繰くり返かえし実行"><a class="header" href="#2-setinterval繰くり返かえし実行">2. <code>setInterval</code>（<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し実行）</a></h3>
+<p>指定した時間ごとに、<strong>何度も<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し</strong>プログラムを動かします。</p>
 <ul>
 <li><strong>イメージ：</strong> 目覚まし時計の「スヌーズ機能」や、心臓のドクドクというリズム。</li>
-<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>setInterval(繰り返したいプログラム, 間隔ms)</code></li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>setInterval(&lt;ruby&gt;繰&lt;rt&gt;く&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;返&lt;rt&gt;かえ&lt;/rt&gt;&lt;/ruby&gt;したいプログラム, 間隔ms)</code></li>
 </ul>
 <pre><code class="language-javascript">// 1秒（1000ms）ごとに「ピッ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
 setInterval(function() {
@@ -358,12 +358,12 @@ const countdown = setInterval(function() {
 <tbody>
 <tr><td><strong><code>setTimeout</code></strong></td><td>○秒後に実行</td><td>しない（1回だけ）</td><td>カップラーメンのタイマー</td></tr>
 <tr><td><strong><code>setInterval</code></strong></td><td>○秒おきに実行</td><td>する（ずっと）</td><td>メトロノーム</td></tr>
-<tr><td><strong><code>clear...</code></strong></td><td>タイマーを消去</td><td>-</td><td>キャンセルボタン</td></tr>
+<tr><td><strong><code>clear...</code></strong></td><td>タイマーを<ruby>消去<rt>しょうきょ</rt></ruby></td><td>-</td><td>キャンセルボタン</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「時間を操る力」を手に入れると、スライドショーやゲーム、リアルタイムの時計など、<ruby>動<rt>うご</rt></ruby>きのあるサイトが作れるようになります。</p>
+<p>いかがでしょうか？「時間を<ruby>操<rt>あやつ</rt></ruby>る力」を手に入れると、スライドショーやゲーム、リアルタイムの時計など、<ruby>動<rt>うご</rt></ruby>きのあるサイトが作れるようになります。</p>
 
                     </main>
 

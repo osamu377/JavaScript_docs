@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-96234591.js";
+            window.path_to_searchindex_js = "searchindex-ecca0abe.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -202,10 +202,10 @@ myCar.horn(); // 実行できる！
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
 <p><code>myCar.horn = function() {...</code> の部分は、<code>myCar.horn</code> に<ruby>関数<rt>かんすう</rt></ruby>を<ruby>代入<rt>だいにゅう</rt></ruby>していいます。
-このように、<strong>JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も<ruby>変数<rt>へんすう</rt></ruby>のようにあつかうことができます。</strong> <ruby>代入<rt>だいにゅう</rt></ruby>したり、<ruby>関数<rt>かんすう</rt></ruby>の<ruby><rt>引数</rt>ひきすう</ruby>にしたり、返り値にしたりできるのです。</p>
+このように、<strong>JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も<ruby>変数<rt>へんすう</rt></ruby>のようにあつかうことができます。</strong> <ruby>代入<rt>だいにゅう</rt></ruby>したり、<ruby>関数<rt>かんすう</rt></ruby>の<ruby>引数<rt>ひきすう</rt></ruby>にしたり、返り値にしたりできるのです。</p>
 </blockquote>
 <h4 id="b-オーバーライド上書きする"><a class="header" href="#b-オーバーライド上書きする">b) <strong>オーバーライド（上書き）する</strong></a></h4>
-<p>親から受け継いだ機能を、自分流のやり方に書き換えます。</p>
+<p>親から<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>いだ機能を、自分流のやり方に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えます。</p>
 <ul>
 <li><strong>イメージ：</strong> お父さんから譲り受けたカメラだけど、レンズを<ruby>最新<rt>さいしん</rt></ruby>のものに交換して使いやすくする。</li>
 <li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> 同じ名前で新しく<ruby>定義<rt>ていぎ</rt></ruby>し直す。</li>
@@ -243,8 +243,8 @@ robot.greet(); // "こんにちは！ 私は特別な..."（上書きされた�
 <p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんです。</p>
 </blockquote>
 <h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
-<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく難しい山場です。</p>
-<p>これを皆さんがイメージしやすいように、 <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの受け継ぎ」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明します。</p>
+<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく<ruby>難<rt>むずか</rt></ruby>しい山場です。</p>
+<p>これを皆さんがイメージしやすいように、 <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>ぎ」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明します。</p>
 <h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
 <p>JavaScriptでは、多くのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる<ruby>仕組<rt>しく</rt></ruby>みです。</p>
 <h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
@@ -258,7 +258,7 @@ robot.greet(); // "こんにちは！ 私は特別な..."（上書きされた�
 <li><strong>先祖の家：</strong> そんな風に、レシピを持っている人を見つけるまで、先祖をたどって聞きに行きます。誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
 </ol>
 <h3 id="3-なぜこの仕組しくみがあるの"><a class="header" href="#3-なぜこの仕組しくみがあるの">3. なぜこの<ruby>仕組<rt>しく</rt></ruby>みがあるの？</a></h3>
-<p>もし100人の学生オブジェクトを作るとき、全員に「自己紹介メソッド」を持たせると、メモリー（コンピューターの<ruby><rt>脳</rt>のう</ruby>）をたくさん使ってしまいます。</p>
+<p>もし100人の学生オブジェクトを作るとき、全員に「<ruby>自己<rt>じこ</rt></ruby>紹介メソッド」を持たせると、メモリー（コンピューターの<ruby><rt>脳</rt>のう</ruby>）をたくさん使ってしまいます。</p>
 <ul>
 <li><strong>プロトタイプを使わない：</strong> 全員が自分の辞書（じしょ）を持っている（重い！）</li>
 <li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを<ruby>共有<rt>きょうゆう</rt></ruby>する（軽い！）</li>
