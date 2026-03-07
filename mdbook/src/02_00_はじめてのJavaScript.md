@@ -63,7 +63,7 @@ JavaScriptは「誰が」「何をするか」を指示するマニュアルで�
 <body>
     <p>Let's JavaScript --<br>
         <script type="text/javascript">
-          console.log("プログラムがここまで<ruby>動<rt>うご</rt></ruby>きました");
+          console.log("プログラムがここまで動（うご）きました");
         </script>
     </p>
 </body>
@@ -116,7 +116,7 @@ JavaScriptは、ユーザーの「クリック」などの操作に<ruby>反応<
 ```
 <button onclick="alert('ボタンが押されました！')">クリックしてね</button>
 ```
-これをブラウザで<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>むと、以下のようになります。
+これをブラウザで読（よ）み込（こ）むと、以下のようになります。
 
 <button onclick="alert('ボタンが押されました！')">クリックしてみましょう</button>
 

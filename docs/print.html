@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ab132495.js";
+            window.path_to_searchindex_js = "searchindex-1ac585b5.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -583,7 +583,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 
         &lt;div class="form-group"&gt;
             &lt;label&gt;好きな日本料理（にほんりょうり）：&lt;/label&gt;
-            &lt;input type="checkbox" name="food" value="sushi"&gt; 寿司 🍣
+            &lt;input type="checkbox" name="food" value="sushi"&gt; 寿司（すし） 🍣
             &lt;input type="checkbox" name="food" value="ramen"&gt; ラーメン 🍜
             &lt;input type="checkbox" name="food" value="curry"&gt; カレー 🍛
         &lt;/div&gt;
@@ -646,7 +646,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 h1 {
   font-size: 24px;      /* 大きさを24ピクセルにする */
   color: blue;          /* 色を青にする */
-  text-align: center;   /* &lt;ruby&gt;真&lt;rt&gt;しん&lt;/rt&gt;&lt;/ruby&gt;ん中に並べる */
+  text-align: center;   /* 真ん中（まんなか）に並べる */
 }
 </code></pre>
 <p><a href="html/01_02_CSS_02.html">ここをクリック</a>してみましょう。</p>
@@ -825,7 +825,7 @@ document.getElementById("title").style.color = "red";
 &lt;body&gt;
     &lt;p&gt;Let's JavaScript --&lt;br&gt;
         &lt;script type="text/javascript"&gt;
-          console.log("プログラムがここまで&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きました");
+          console.log("プログラムがここまで動（うご）きました");
         &lt;/script&gt;
     &lt;/p&gt;
 &lt;/body&gt;
@@ -875,7 +875,7 @@ document.getElementById("title").style.color = "red";
 <p><ruby>記述<rt>きじゅつ</rt></ruby><ruby>例<rt>れい</rt></ruby>： HTMLのボタンに「クリックされたらアラートを出す」<ruby>魔法<rt>まほう</rt></ruby>をかけるときは、こう書きます。</p>
 <pre><code>&lt;button onclick="alert('ボタンが押されました！')"&gt;クリックしてね&lt;/button&gt;
 </code></pre>
-<p>これをブラウザで<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>むと、以下のようになります。</p>
+<p>これをブラウザで読（よ）み込（こ）むと、以下のようになります。</p>
 <p><button onclick="alert(&#39;ボタンが押されました！&#39;)">クリックしてみましょう</button></p>
 <hr>
 <h2 id="iii-javascriptの呼び出し方と外部がいぶファイル化"><a class="header" href="#iii-javascriptの呼び出し方と外部がいぶファイル化">III. JavaScriptの呼び出し方と<ruby>外部<rt>がいぶ</rt></ruby>ファイル化</a></h2>
@@ -992,9 +992,9 @@ document.getElementById("title").style.color = "red";
 </ul>
 <p>また、<strong>「再<ruby>代入<rt>だいにゅう</rt></ruby>（さいだいにゅう）」</strong> とは、「一度、<ruby>変数<rt>へんすう</rt></ruby>に値を<ruby>代入<rt>だいにゅう</rt></ruby>したあとで、別の値を入れなおす」ことです。</p>
 <p>一度、100という点数を入れた<code>score</code>を、あとで80点に変更する場合、下のように書きます。</p>
-<pre><code class="language-javascript">score = 100; // 最初に100を&lt;ruby&gt;代入&lt;rt&gt;だいにゅう&lt;/rt&gt;&lt;/ruby&gt;します
+<pre><code class="language-javascript">score = 100; // 最初に100を代入（だいにゅう）します
 // プログラムの途中は省略します
-score = 80; // 一度、100を入れた&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;scoreに、80を再&lt;ruby&gt;代入&lt;rt&gt;だいにゅう&lt;/rt&gt;&lt;/ruby&gt;します
+score = 80; // 一度、100を入れた変数（へんすう）scoreに、80を再代入（さいだいにゅう）します
 </code></pre>
 <h3 id="2-変数へんすう宣言せんげんとキーワードの種類"><a class="header" href="#2-変数へんすう宣言せんげんとキーワードの種類">2. <ruby>変数<rt>へんすう</rt></ruby><ruby>宣言<rt>せんげん</rt></ruby>とキーワードの種類</a></h3>
 <p><ruby>変数<rt>へんすう</rt></ruby>を利用するには、まずシステムにその<ruby>変数<rt>へんすう</rt></ruby>名を使うことを知らせる「<strong><ruby>変数<rt>へんすう</rt></ruby><ruby>宣言<rt>せんげん</rt></ruby></strong>」が必要です。現代のJavaScriptでは、主に <strong><code>const</code></strong> と <strong><code>let</code></strong> という2つのキーワードを使用して<ruby>宣言<rt>せんげん</rt></ruby>を行います。</p>
@@ -1020,13 +1020,13 @@ score = 80; // 一度、100を入れた&lt;ruby&gt;変数&lt;rt&gt;へんすう&
 <p><ruby>変数<rt>へんすう</rt></ruby>を<ruby>宣言<rt>せんげん</rt></ruby>する際、同時に値を<ruby>代入<rt>だいにゅう</rt></ruby>することを「<strong><ruby>初期化<rt>しょきか</rt></ruby>（しょきか）</strong>」と呼びます。</p>
 <ul>
 <li><strong><ruby>宣言<rt>せんげん</rt></ruby>と<ruby>初期化<rt>しょきか</rt></ruby>を同時に行う<ruby>例<rt>れい</rt></ruby></strong>:
-<pre><code class="language-javascript">let myDog = "Rover"; // &lt;ruby&gt;宣言&lt;rt&gt;せんげん&lt;/rt&gt;&lt;/ruby&gt;と同時に "Rover" という文字列を入れる
-const pi = 3.14;     // constは&lt;ruby&gt;宣言&lt;rt&gt;せんげん&lt;/rt&gt;&lt;/ruby&gt;時に必ず&lt;ruby&gt;初期化&lt;rt&gt;しょきか&lt;/rt&gt;&lt;/ruby&gt;が必要
+<pre><code class="language-javascript">let myDog = "Rover"; // 宣言（せんげん）と同時に "Rover" という文字列を入れる
+const pi = 3.14;     // constは宣言（せんげん）時に必ず初期化（しょきか）が必要
 </code></pre>
 </li>
 <li><strong><ruby>宣言<rt>せんげん</rt></ruby>だけ先に行う例（<code>let</code>のみ可能）</strong>:
-<pre><code class="language-javascript">let myName; // 箱だけ用意する。この時の中身は undefined（&lt;ruby&gt;未&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;&lt;rt&gt;みていぎ&lt;/rt&gt;&lt;/ruby&gt;）となる
-myName = "Chris"; // 後から値を&lt;ruby&gt;代入&lt;rt&gt;だいにゅう&lt;/rt&gt;&lt;/ruby&gt;する
+<pre><code class="language-javascript">let myName; // 箱だけ用意する。この時の中身は undefined（未定義（みていぎ））となる
+myName = "Chris"; // 後から値を代入（だいにゅう）する
 </code></pre>
 </li>
 </ul>
@@ -1067,13 +1067,13 @@ myName = "Chris"; // 後から値を&lt;ruby&gt;代入&lt;rt&gt;だいにゅう&
 <h3 id="2-テンプレートリテラル最新さいしんのスマートな書かき方かた"><a class="header" href="#2-テンプレートリテラル最新さいしんのスマートな書かき方かた">2. テンプレートリテラル：<ruby>最新<rt>さいしん</rt></ruby>のスマートな<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></a></h3>
 <p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、<ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>みや<ruby>改行<rt>かいぎょう</rt></ruby>が非常に簡単になります。</p>
 <pre><code class="language-javascript">const name = "佐藤";
-// &lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;を文章の中に&lt;ruby&gt;埋&lt;rt&gt;う&lt;/rt&gt;&lt;/ruby&gt;め&lt;ruby&gt;込&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;む
+// 変数(へんすう）を文章の中に埋（う）め込（こ）む
 const greeting = `こんにちは、${name}さん！`; 
 console.log(greeting);
 </code></pre>
 <p>実際、どんなふうになるか見てみましょう。F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、下の <strong>「実行」</strong> ボタンを押してみてください。</p>
 <p><button onclick="const name = &#39;佐藤&#39;; const greeting = `こんにちは、${name}さん！`; console.log(greeting);">実行</button></p>
-<pre><code class="language-javascript">// テンプレートリテラルなら、そのまま&lt;ruby&gt;改行&lt;rt&gt;かいぎょう&lt;/rt&gt;&lt;/ruby&gt;もできます
+<pre><code class="language-javascript">// テンプレートリテラルなら、そのまま改行（かいぎょう）もできます
 const multiLine = `一行目です
 二行目です
 三行目です`;
@@ -1157,10 +1157,10 @@ console.log(parseInt("A123"));    // NaN （先頭が文字だと失敗する）
 <h3 id="3--学習者の味方typeof-演算えんざん子"><a class="header" href="#3--学習者の味方typeof-演算えんざん子">3. 🔍 学習者の味方：typeof <ruby>演算<rt>えんざん</rt></ruby>子</a></h3>
 <p>「今のこの<ruby>変数<rt>へんすう</rt></ruby>は、何型なんだろう？」と迷ったときは、typeof を使いましょう。</p>
 <pre><code>const value = "123";
-console.log(typeof value); // "string" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;される
+console.log(typeof value); // "string" と表示（ひょうじ）される
 
 const numValue = Number(value);
-console.log(typeof numValue); // "number" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;される
+console.log(typeof numValue); // "number" と表示（ひょうじ）される
 </code></pre>
 <p>自分の書いたコードが思ったとおりに動いているか、コンソールで typeof を使って確認するクセをつけましょう。</p>
 <hr>
@@ -1341,7 +1341,7 @@ console.log(typeof numValue); // "number" と&lt;ruby&gt;表示&lt;rt&gt;ひょ�
 <pre><code>let score = 95; // テストの点数
 
 if (score &gt;= 90) {
-  // 条件が true（正しい）のときだけ&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きます
+  // 条件が true（正しい）のときだけ動（うご）きます
   console.log("成績は「優」です。素晴らしい！");
 } else if (score &gt;= 70) {
   // 90点未満で、かつ70点以上のとき
@@ -1451,22 +1451,23 @@ while (count &lt;= 3) {
 </ul>
 <pre><code>for (let i = 1; i &lt;= 5; i++) {
   if (i === 3) {
-    // iが3のときだけ特別な&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きをします
-    // continueなら「3」を&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;せずに、すぐ「4」に進みます
+    // iが3のときだけ特別な動（うご）きをします
+    // continueなら「3」を表示（ひょうじ）せずに、すぐ「4」に進みます
     continue;
   }
   console.log(i);
 }
 </code></pre>
 <p>下のボタンを押すと、コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。<code>1</code> <code>2</code> <code>4</code> <code>5</code> が<ruby>表示<rt>ひょうじ</rt></ruby>されて、<code>3</code>だけ<ruby>表示<rt>ひょうじ</rt></ruby>されません。</p>
-<p><button onclick="for (let i = 1; i &lt;= 5; i++) {
+<pre><code>&lt;button onclick="for (let i = 1; i &lt;= 5; i++) {
   if (i === 3) {
-    // iが3のときだけ特別な&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きをします
-    // continueなら「3」を&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;せずに、すぐ「4」に進みます
+    // iが3のときだけ特別な動（うご）きをします
+    // continueなら「3」を表示（ひょうじ）せずに、すぐ「4」に進みます
     continue;
   }
   console.log(i);
-}">実行</button></p>
+}"&gt;実行&lt;/button&gt;
+</code></pre>
 <p>これらを使いこなすことで、無駄な計算を減らし、プログラムをより<ruby>効率<rt>こうりつ</rt></ruby>的に動かせるようになります。</p>
 <hr>
 <h2 id="viii-まとめと学習のアドバイス"><a class="header" href="#viii-まとめと学習のアドバイス">VIII. まとめと学習のアドバイス</a></h2>
@@ -1578,7 +1579,7 @@ while (count &lt;= 3) {
 </ol>
 <p><strong>コードの<ruby>例<rt>れい</rt></ruby></strong></p>
 <p>「挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
-<pre><code>// &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;する（準備）
+<pre><code>// 準備: 関数（かんすう）を定義（ていぎ）する
 function sayHello() {
   console.log("こんにちは！JavaScriptの世界へようこそ。");
 }
@@ -1614,7 +1615,7 @@ function sayHello() {
 <h2 id="v-引数ひきすうひきすうの活用と注意点"><a class="header" href="#v-引数ひきすうひきすうの活用と注意点">V. <ruby>引数<rt>ひきすう</rt></ruby>（ひきすう）の活用と注意点</a></h2>
 <p>今度は<ruby>引数<rt>ひきすう</rt></ruby>をとる<ruby>関数<rt>かんすう</rt></ruby>を作ってみましょう。</p>
 <p>「名前を呼んで、挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
-<pre><code class="language-javascript">// 1. マシンを作る（&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;：ていぎ）
+<pre><code class="language-javascript">// 1. 定義（ていぎ）：マシンを作る
 function sayHello(name) {
   return "こんにちは、" + name + "さん！";
 }
@@ -1626,7 +1627,7 @@ function sayHello(name) {
 </ul>
 <p><ruby>関数<rt>かんすう</rt></ruby>に<code>name</code>という<ruby>変数<rt>へんすう</rt></ruby>に入ったデータを渡すことで、処理を<ruby>柔軟<rt>じゅうなん</rt></ruby>（じゅうなん）に変えることができます。</p>
 <p>では、<ruby>引数<rt>ひきすう</rt></ruby>をとる<ruby>関数<rt>かんすう</rt></ruby>を呼び出すときは、どのようにすればよいでしょうか？</p>
-<pre><code>// 2. ボタンを押して動かす（実行：じっこう）
+<pre><code>// 2. 実行：ボタンを押して動かす
 let message = sayHello("田中");
 console.log(message); // 「こんにちは、田中さん！」と出る
 </code></pre>
@@ -1653,14 +1654,14 @@ function sayHelloName(name) {
 <h3 id="グローバルスコープ-global-scope"><a class="header" href="#グローバルスコープ-global-scope">グローバルスコープ (Global Scope)</a></h3>
 <p><strong>→「外の世界（公園やインターネット）」のようなもの</strong></p>
 <p>プログラムのどこからでも見える、一番広いスコープです。</p>
-<pre><code class="language-javascript">let world = "こんにちは世界！"; // グローバル&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">let world = "こんにちは世界！"; // グローバル変数（へんすう）
 
 function sayWorld() {
-  console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中でも使える
+  console.log(world); // 関数（かんすう）の中でも使える
 }
 
 sayWorld();
-console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の外でも使える
+console.log(world); // 関数（かんすう）の外でも使える
 
 </code></pre>
 <ul>
@@ -1670,8 +1671,8 @@ console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/r
 <p><strong>→「家の中」のようなもの</strong></p>
 <p><code>function</code>（<ruby>関数<rt>かんすう</rt></ruby>）の中で作った<ruby>変数<rt>へんすう</rt></ruby>は、その<ruby>関数<rt>かんすう</rt></ruby>の<strong>外からは見えません。</strong></p>
 <pre><code class="language-javascript">function myHouse() {
-  let secret = "これは秘密（ひみつ）です"; // ローカル&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
-  console.log(secret); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中ならOK
+  let secret = "これは秘密（ひみつ）です"; // ローカル変数（へんすう）
+  console.log(secret); // 関数（かんすう）の中ならOK
 }
 
 myHouse();
@@ -1686,7 +1687,7 @@ console.log(secret); // ❌ エラー！外からは見えません。
 <p><strong>→「小さな箱（はこ）」のようなもの</strong></p>
 <p><code>if</code> 文や <code>for</code> 文などの <code>{ }</code> （波（なみ）かっこ）の中で <code>let</code> や <code>const</code> を使って作った<ruby>変数<rt>へんすう</rt></ruby>は、その <strong><code>{ }</code> の中だけでしか使えません。</strong></p>
 <pre><code class="language-javascript">if (true) {
-  let fruit = "りんご"; // ブロック&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
+  let fruit = "りんご"; // ブロック変数（へんすう）
   console.log(fruit); // ブロックの中ならOK
 }
 
@@ -1741,7 +1742,7 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 <pre><code class="language-javascript">if (true) {
   var leak = "外に出ちゃうよ！";
 }
-console.log(leak); // ⭕ &lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;できてしまう（これがバグの原因になる）
+console.log(leak); // ⭕ 表示（ひょうじ）できてしまう（これがバグの原因になる）
 
 if (true) {
   let safe = "外には出ないよ";
@@ -1801,13 +1802,13 @@ let age = 25; // ❌ エラー！「もうありますよ！」と教えてく�
 名前のある<ruby>関数<rt>かんすう</rt></ruby>が「名前を<ruby>登録<rt>とうろく</rt></ruby>（とうろく）した専属のシェフ」なら、無名<ruby>関数<rt>かんすう</rt></ruby>は「その時だけ手伝ってくれる助っ人（すけっと）」のようなイメージです。</p>
 </li>
 </ul>
-<pre><code class="language-javascript">// 普通の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（名前がある）
+<pre><code class="language-javascript">// 普通の関数（かんすう）（名前がある）
 function sayHi() {
   console.log("こんにちは！");
 }
 
-// 無名&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（名前がない）
-// &lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;に入れて使うことが多いです
+// 無名関数（かんすう）（名前がない）
+// 変数（へんすう）に入れて使うことが多いです
 const sayHi2 = function() {
   console.log("こんにちは！");
 };
@@ -1837,7 +1838,7 @@ const sayHi2 = function() {
 <hr>
 <h3 id="どんな時に使うの具体的な例れい"><a class="header" href="#どんな時に使うの具体的な例れい">どんな時に使うの？（具体的な<ruby>例<rt>れい</rt></ruby>）</a></h3>
 <p>一番よく使うのは、<strong>「他の<ruby>関数<rt>かんすう</rt></ruby>の中で、ちょっと手伝ってほしい時」</strong> です。</p>
-<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
+<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と表示（ひょうじ）する
 setTimeout(() =&gt; {
   console.log("時間ですよ！");
 }, 3000);
@@ -6557,22 +6558,6 @@ dora(); // "私はドラロボットです。"
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>

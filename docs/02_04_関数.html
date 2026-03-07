@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ab132495.js";
+            window.path_to_searchindex_js = "searchindex-1ac585b5.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -272,7 +272,7 @@
 </ol>
 <p><strong>コードの<ruby>例<rt>れい</rt></ruby></strong></p>
 <p>「挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
-<pre><code>// &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;する（準備）
+<pre><code>// 準備: 関数（かんすう）を定義（ていぎ）する
 function sayHello() {
   console.log("こんにちは！JavaScriptの世界へようこそ。");
 }
@@ -308,7 +308,7 @@ function sayHello() {
 <h2 id="v-引数ひきすうひきすうの活用と注意点"><a class="header" href="#v-引数ひきすうひきすうの活用と注意点">V. <ruby>引数<rt>ひきすう</rt></ruby>（ひきすう）の活用と注意点</a></h2>
 <p>今度は<ruby>引数<rt>ひきすう</rt></ruby>をとる<ruby>関数<rt>かんすう</rt></ruby>を作ってみましょう。</p>
 <p>「名前を呼んで、挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
-<pre><code class="language-javascript">// 1. マシンを作る（&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;：ていぎ）
+<pre><code class="language-javascript">// 1. 定義（ていぎ）：マシンを作る
 function sayHello(name) {
   return "こんにちは、" + name + "さん！";
 }
@@ -320,7 +320,7 @@ function sayHello(name) {
 </ul>
 <p><ruby>関数<rt>かんすう</rt></ruby>に<code>name</code>という<ruby>変数<rt>へんすう</rt></ruby>に入ったデータを渡すことで、処理を<ruby>柔軟<rt>じゅうなん</rt></ruby>（じゅうなん）に変えることができます。</p>
 <p>では、<ruby>引数<rt>ひきすう</rt></ruby>をとる<ruby>関数<rt>かんすう</rt></ruby>を呼び出すときは、どのようにすればよいでしょうか？</p>
-<pre><code>// 2. ボタンを押して動かす（実行：じっこう）
+<pre><code>// 2. 実行：ボタンを押して動かす
 let message = sayHello("田中");
 console.log(message); // 「こんにちは、田中さん！」と出る
 </code></pre>
@@ -347,14 +347,14 @@ function sayHelloName(name) {
 <h3 id="グローバルスコープ-global-scope"><a class="header" href="#グローバルスコープ-global-scope">グローバルスコープ (Global Scope)</a></h3>
 <p><strong>→「外の世界（公園やインターネット）」のようなもの</strong></p>
 <p>プログラムのどこからでも見える、一番広いスコープです。</p>
-<pre><code class="language-javascript">let world = "こんにちは世界！"; // グローバル&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">let world = "こんにちは世界！"; // グローバル変数（へんすう）
 
 function sayWorld() {
-  console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中でも使える
+  console.log(world); // 関数（かんすう）の中でも使える
 }
 
 sayWorld();
-console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の外でも使える
+console.log(world); // 関数（かんすう）の外でも使える
 
 </code></pre>
 <ul>
@@ -364,8 +364,8 @@ console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/r
 <p><strong>→「家の中」のようなもの</strong></p>
 <p><code>function</code>（<ruby>関数<rt>かんすう</rt></ruby>）の中で作った<ruby>変数<rt>へんすう</rt></ruby>は、その<ruby>関数<rt>かんすう</rt></ruby>の<strong>外からは見えません。</strong></p>
 <pre><code class="language-javascript">function myHouse() {
-  let secret = "これは秘密（ひみつ）です"; // ローカル&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
-  console.log(secret); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中ならOK
+  let secret = "これは秘密（ひみつ）です"; // ローカル変数（へんすう）
+  console.log(secret); // 関数（かんすう）の中ならOK
 }
 
 myHouse();
@@ -380,7 +380,7 @@ console.log(secret); // ❌ エラー！外からは見えません。
 <p><strong>→「小さな箱（はこ）」のようなもの</strong></p>
 <p><code>if</code> 文や <code>for</code> 文などの <code>{ }</code> （波（なみ）かっこ）の中で <code>let</code> や <code>const</code> を使って作った<ruby>変数<rt>へんすう</rt></ruby>は、その <strong><code>{ }</code> の中だけでしか使えません。</strong></p>
 <pre><code class="language-javascript">if (true) {
-  let fruit = "りんご"; // ブロック&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
+  let fruit = "りんご"; // ブロック変数（へんすう）
   console.log(fruit); // ブロックの中ならOK
 }
 
@@ -435,7 +435,7 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 <pre><code class="language-javascript">if (true) {
   var leak = "外に出ちゃうよ！";
 }
-console.log(leak); // ⭕ &lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;できてしまう（これがバグの原因になる）
+console.log(leak); // ⭕ 表示（ひょうじ）できてしまう（これがバグの原因になる）
 
 if (true) {
   let safe = "外には出ないよ";
@@ -495,13 +495,13 @@ let age = 25; // ❌ エラー！「もうありますよ！」と教えてく�
 名前のある<ruby>関数<rt>かんすう</rt></ruby>が「名前を<ruby>登録<rt>とうろく</rt></ruby>（とうろく）した専属のシェフ」なら、無名<ruby>関数<rt>かんすう</rt></ruby>は「その時だけ手伝ってくれる助っ人（すけっと）」のようなイメージです。</p>
 </li>
 </ul>
-<pre><code class="language-javascript">// 普通の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（名前がある）
+<pre><code class="language-javascript">// 普通の関数（かんすう）（名前がある）
 function sayHi() {
   console.log("こんにちは！");
 }
 
-// 無名&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（名前がない）
-// &lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;に入れて使うことが多いです
+// 無名関数（かんすう）（名前がない）
+// 変数（へんすう）に入れて使うことが多いです
 const sayHi2 = function() {
   console.log("こんにちは！");
 };
@@ -531,7 +531,7 @@ const sayHi2 = function() {
 <hr>
 <h3 id="どんな時に使うの具体的な例れい"><a class="header" href="#どんな時に使うの具体的な例れい">どんな時に使うの？（具体的な<ruby>例<rt>れい</rt></ruby>）</a></h3>
 <p>一番よく使うのは、<strong>「他の<ruby>関数<rt>かんすう</rt></ruby>の中で、ちょっと手伝ってほしい時」</strong> です。</p>
-<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
+<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と表示（ひょうじ）する
 setTimeout(() =&gt; {
   console.log("時間ですよ！");
 }, 3000);
@@ -623,22 +623,6 @@ setTimeout(() =&gt; {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
