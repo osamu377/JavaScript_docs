@@ -566,7 +566,7 @@ function goBack() {
 
 JavaScriptで<ruby>画像<rt>がぞう</rt></ruby>を扱う **Imageオブジェクト** は、<ruby>画面<rt>がめん</rt></ruby>に写真やイラストを<ruby>表示<rt>ひょうじ</rt></ruby>するための特別な道具です。
 
-留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を読み込んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。
+留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。
 
 ---
 
@@ -590,7 +590,7 @@ HTMLの `<img>` タグと同じ役割をしますが、JavaScriptの中で **「
 * **`width` / `height**`
 <ruby>画像<rt>がぞう</rt></ruby>の「横幅（よこはば）」と「高さ」です。
 * **`complete`**
-<ruby>画像<rt>がぞう</rt></ruby>の読み込みが終わったかどうかを `true` / `false` で教えてくれます。
+<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが終わったかどうかを `true` / `false` で教えてくれます。
 * **`alt`**（オルト）
 <ruby>画像<rt>がぞう</rt></ruby>が<ruby>表示<rt>ひょうじ</rt></ruby>できなかったときに出る「説明文」です。
 
@@ -601,9 +601,9 @@ HTMLの `<img>` タグと同じ役割をしますが、JavaScriptの中で **「
 Imageオブジェクトでは、メソッドよりも **「状態が変わったときのイベント」** をよく使います。
 
 * **`onload`**
-<ruby>画像<rt>がぞう</rt></ruby>の読み込みが **「成功（せいこう）」** して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。
+<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが **「成功（せいこう）」** して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。
 * **`onerror`**
-<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、読み込みに **「失敗（しっぱい）」** したときに<ruby>動<rt>うご</rt></ruby>きます。
+<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みに **「失敗（しっぱい）」** したときに<ruby>動<rt>うご</rt></ruby>きます。
 
 ---
 
@@ -615,7 +615,7 @@ Imageオブジェクトでは、メソッドよりも **「状態が変わった
 // 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
-// 2. 読み込みが終わったあとの「お祝い」を決める
+// 2. <ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが終わったあとの「お祝い」を決める
 myPic.onload = function() {
   console.log("<ruby>画像<rt>がぞう</rt></ruby>の準備ができました！サイズは " + myPic.width + "px です。");
   // <ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する（bodyに追加）
@@ -627,7 +627,7 @@ myPic.onerror = function() {
   console.log("<ruby>画像<rt>がぞう</rt></ruby>が見つかりませんでした...");
 };
 
-// 4. 最後に「写真（データ）」を入れる（読み込みスタート！）
+// 4. 最後に「写真（データ）」を入れる（<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みスタート！）
 myPic.src = "https://example.com/japan.jpg";
 
 ```
@@ -638,7 +638,7 @@ myPic.src = "https://example.com/japan.jpg";
 
 「どうしてHTMLに書かずにJavaScriptで作るの？」と聞かれたら、こう答えてあげてください。
 
-> **「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に読み込んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」**
+> **「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」**
 
 ---
 
@@ -648,8 +648,8 @@ myPic.src = "https://example.com/japan.jpg";
 | --- | --- | --- |
 | **`src`** | <ruby>画像<rt>がぞう</rt></ruby>の住所 | どの写真を入れるか決める |
 | **`width` / `height**` | <ruby>画像<rt>がぞう</rt></ruby>のサイズ | 写真の大きさ |
-| **`onload`** | 読み込み完了 | 「写真の現像（げんぞう）が終わったよ！」 |
-| **`onerror`** | 読み込みエラー | 「写真をなくしちゃった！」 |
+| **`onload`** | <ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>み完了 | 「写真の現像（げんぞう）が終わったよ！」 |
+| **`onerror`** | <ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みエラー | 「写真をなくしちゃった！」 |
 
 ---
 
@@ -964,7 +964,7 @@ function greet() {
 
 ---
 
-いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は完璧です。
+いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。
 
 
 ## I. Eventオブジェクト

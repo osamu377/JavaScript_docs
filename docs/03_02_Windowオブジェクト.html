@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-49ed13ca.js";
+            window.path_to_searchindex_js = "searchindex-2d88497e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -624,7 +624,7 @@ function goBack() {
 <p>いかがでしょうか？「タイムマシンのボタン」をJavaScriptで操作できると、よりアプリらしい便利なサイトが作れるようになります。</p>
 <h2 id="vi-imageオブジェクト"><a class="header" href="#vi-imageオブジェクト">VI. Imageオブジェクト</a></h2>
 <p>JavaScriptで<ruby>画像<rt>がぞう</rt></ruby>を扱う <strong>Imageオブジェクト</strong> は、<ruby>画面<rt>がめん</rt></ruby>に写真やイラストを<ruby>表示<rt>ひょうじ</rt></ruby>するための特別な道具です。</p>
-<p>留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を読み込んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。</p>
+<p>留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。</p>
 <hr>
 <h3 id="1-imageオブジェクトとは"><a class="header" href="#1-imageオブジェクトとは">1. Imageオブジェクトとは？</a></h3>
 <p>HTMLの <code>&lt;img&gt;</code> タグと同じ役割をしますが、JavaScriptの中で <strong>「まだ<ruby>画面<rt>がめん</rt></ruby>にない<ruby>画像<rt>がぞう</rt></ruby>」をあらかじめ準備する</strong> のにとても便利です。</p>
@@ -642,7 +642,7 @@ function goBack() {
 <li>**<code>width</code> / <code>height**</code>
 <ruby>画像<rt>がぞう</rt></ruby>の「横幅（よこはば）」と「高さ」です。</li>
 <li><strong><code>complete</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>の読み込みが終わったかどうかを <code>true</code> / <code>false</code> で教えてくれます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが終わったかどうかを <code>true</code> / <code>false</code> で教えてくれます。</li>
 <li><strong><code>alt</code></strong>（オルト）
 <ruby>画像<rt>がぞう</rt></ruby>が<ruby>表示<rt>ひょうじ</rt></ruby>できなかったときに出る「説明文」です。</li>
 </ul>
@@ -651,9 +651,9 @@ function goBack() {
 <p>Imageオブジェクトでは、メソッドよりも <strong>「状態が変わったときのイベント」</strong> をよく使います。</p>
 <ul>
 <li><strong><code>onload</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>の読み込みが <strong>「成功（せいこう）」</strong> して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが <strong>「成功（せいこう）」</strong> して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。</li>
 <li><strong><code>onerror</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、読み込みに <strong>「失敗（しっぱい）」</strong> したときに<ruby>動<rt>うご</rt></ruby>きます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みに <strong>「失敗（しっぱい）」</strong> したときに<ruby>動<rt>うご</rt></ruby>きます。</li>
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう-3"><a class="header" href="#4-実際に動かしてみよう-3">4. 実際に動かしてみよう！</a></h3>
@@ -661,7 +661,7 @@ function goBack() {
 <pre><code class="language-javascript">// 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
-// 2. 読み込みが終わったあとの「お祝い」を決める
+// 2. &lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;み&lt;ruby&gt;込&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;みが終わったあとの「お祝い」を決める
 myPic.onload = function() {
   console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;の準備ができました！サイズは " + myPic.width + "px です。");
   // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する（bodyに追加）
@@ -673,7 +673,7 @@ myPic.onerror = function() {
   console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;が見つかりませんでした...");
 };
 
-// 4. 最後に「写真（データ）」を入れる（読み込みスタート！）
+// 4. 最後に「写真（データ）」を入れる（&lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;み&lt;ruby&gt;込&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;みスタート！）
 myPic.src = "https://example.com/japan.jpg";
 
 </code></pre>
@@ -681,7 +681,7 @@ myPic.src = "https://example.com/japan.jpg";
 <h3 id="5-留学生へのアドバイスプリロード先読み"><a class="header" href="#5-留学生へのアドバイスプリロード先読み">5. 留学生へのアドバイス：プリロード（先読み）</a></h3>
 <p>「どうしてHTMLに書かずにJavaScriptで作るの？」と聞かれたら、こう答えてあげてください。</p>
 <blockquote>
-<p><strong>「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に読み込んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」</strong></p>
+<p><strong>「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」</strong></p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-5"><a class="header" href="#まとめテーブル-5">まとめテーブル</a></h3>
@@ -693,8 +693,8 @@ myPic.src = "https://example.com/japan.jpg";
 <tbody>
 <tr><td><strong><code>src</code></strong></td><td><ruby>画像<rt>がぞう</rt></ruby>の住所</td><td>どの写真を入れるか決める</td></tr>
 <tr><td>**<code>width</code> / <code>height**</code></td><td><ruby>画像<rt>がぞう</rt></ruby>のサイズ</td><td>写真の大きさ</td></tr>
-<tr><td><strong><code>onload</code></strong></td><td>読み込み完了</td><td>「写真の現像（げんぞう）が終わったよ！」</td></tr>
-<tr><td><strong><code>onerror</code></strong></td><td>読み込みエラー</td><td>「写真をなくしちゃった！」</td></tr>
+<tr><td><strong><code>onload</code></strong></td><td><ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>み完了</td><td>「写真の現像（げんぞう）が終わったよ！」</td></tr>
+<tr><td><strong><code>onerror</code></strong></td><td><ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みエラー</td><td>「写真をなくしちゃった！」</td></tr>
 </tbody>
 </table>
 </div>
@@ -965,7 +965,7 @@ function greet() {
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は完璧です。</p>
+<p>いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。</p>
 <h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
 <p>JavaScriptはWebページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。</p>
 <ul>
