@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-2d88497e.js";
+            window.path_to_searchindex_js = "searchindex-96234591.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -199,8 +199,8 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 <p><strong>「プリミティブ型」と「オブジェクト型」の違い</strong></p>
 <p>ここで「プリミティブ型」と「オブジェクト型」の違いを理解しましょう。</p>
 <ul>
-<li>プリミティブ型（数値や文字列）: データそのものが変数に入っています。</li>
-<li>オブジェクト型（Dateなど）: データそのものではなく、データが保存されているメモリ上の「場所（参照：さんしょう）」が変数に入っています。</li>
+<li>プリミティブ型（<ruby>数値<rt>すうち</rt></ruby>や文字列）: データそのものが<ruby>変数<rt>へんすう</rt></ruby>に入っています。</li>
+<li>オブジェクト型（Dateなど）: データそのものではなく、データが保存されているメモリ上の「場所（参照：さんしょう）」が<ruby>変数<rt>へんすう</rt></ruby>に入っています。</li>
 </ul>
 <p>So What?（なぜ大切なの？） これらの組み込みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、<ruby>開発<rt>かいはつ</rt></ruby>スピードを劇的に速めることができます。</p>
 <h3 id="2-よく使うメソッド情報の取り出し方"><a class="header" href="#2-よく使うメソッド情報の取り出し方">2. よく使うメソッド（情報の取り出し方）</a></h3>
@@ -220,10 +220,10 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 </table>
 </div>
 <hr>
-<h3 id="3-初心者が絶対ぜったいに間違えるポイント"><a class="header" href="#3-初心者が絶対ぜったいに間違えるポイント">3. 初心者が絶対（ぜったい）に間違えるポイント</a></h3>
-<p>Dateオブジェクトには、初心者泣かせの「ひっかけ問題」が2つあります。ここを優しく教えてあげましょう。</p>
+<h3 id="3-初心者しょしんしゃが絶対ぜったいに間違えるポイント"><a class="header" href="#3-初心者しょしんしゃが絶対ぜったいに間違えるポイント">3. <ruby>初心者<rt>しょしんしゃ</rt></ruby>が絶対（ぜったい）に間違えるポイント</a></h3>
+<p>Dateオブジェクトには、<ruby>初心者<rt>しょしんしゃ</rt></ruby>泣かせの「ひっかけ問題」が2つあります。ここを優しく教えてあげましょう。</p>
 <h4 id="①-月monthは-0-から数える"><a class="header" href="#①-月monthは-0-から数える">① 月（Month）は 0 から数える</a></h4>
-<p>配列と同じで、**1月は <code>0**</code> です。</p>
+<p><ruby>配列<rt>はいれつ</rt></ruby>と同じで、**1月は <code>0**</code> です。</p>
 <ul>
 <li>1月 → <code>0</code></li>
 <li>12月 → <code>11</code></li>
@@ -256,7 +256,7 @@ console.log(`${year}年${month}月${date}日`);
 <ol>
 <li><strong><code>new Date()</code></strong> は「今の時計」を作る合言葉！</li>
 <li><strong>月（Month）</strong> を使うときは、いつも心に <strong>「＋1」</strong> を！</li>
-<li><strong>曜日（Day）</strong> は数字で返ってくるから、日本語（月火水…）に直すときは配列を使うと便利だよ！</li>
+<li><strong>曜日（Day）</strong> は数字で返ってくるから、日本語（月火水…）に直すときは<ruby>配列<rt>はいれつ</rt></ruby>を使うと便利だよ！</li>
 </ol>
 <p>いかがでしょうか？「月が0から始まる」というルールさえクリアすれば、Dateオブジェクトはとても頼りになる道具になります。</p>
 <hr>
@@ -297,11 +297,11 @@ console.log(endOfMonth.toLocaleDateString()); // 自動で「2026/2/1」にな�
 <hr>
 <h3 id="3-あと何日の計算ミリ秒のひき算"><a class="header" href="#3-あと何日の計算ミリ秒のひき算">3. 「あと何日？」の計算（ミリ秒のひき算）</a></h3>
 <p>「今日からイベントまであと何日？」を計算するときは、少し特殊な方法を使います。
-日付を <strong>「ミリ秒（とても小さな数字）」</strong> に直して引き算をします。</p>
+日付を <strong>「ミリ秒（とても小さな数字）」</strong> に直して<ruby>引<rt>ひ</rt></ruby>き<ruby>算<rt>ざん</rt></ruby>をします。</p>
 <pre><code class="language-javascript">const today = new Date();
 const eventDay = new Date("2026-03-01");
 
-// ① 引き算をして「ミリ秒」の差（さ）をだす
+// ① &lt;ruby&gt;引&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;算&lt;rt&gt;ざん&lt;/rt&gt;&lt;/ruby&gt;をして「ミリ秒」の差（さ）をだす
 const diffMs = eventDay - today;
 
 // ② ミリ秒を「日」に変換（へんかん）する

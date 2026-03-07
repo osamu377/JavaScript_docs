@@ -1,6 +1,6 @@
 # 初めてのJavaScript
 
-JavaScriptの最初のプロジェクトを作るのはとても楽しいステップです！ここでは、**Visual Studio Code（VS Code）を使って「Hello, World!」を<ruby>表示<rt>ひょうじ</rt></ruby>する基本的なWebページを作る方法**を、初心者向けにわかりやすく説明します。
+JavaScriptの最初のプロジェクトを作るのはとても楽しいステップです！ここでは、**Visual Studio Code（VS Code）を使って「Hello, World!」を<ruby>表示<rt>ひょうじ</rt></ruby>する基本的なWebページを作る方法**を、<ruby>初心者<rt>しょしんしゃ</rt></ruby>向けにわかりやすく説明します。
 
 Creating your first JavaScript project is a very fun step! Here's an easy-to-follow beginner's guide on **How to create a basic web page that displays "Hello, World!" using Visual Studio Code (VS Code)**.
 
@@ -120,7 +120,7 @@ Create a JSLearn folder in the source folder and pin it
 ---
 
 ### 🔹 `<!DOCTYPE html>`
-- **意味**：この文書がHTML5で書かれていることをブラウザに伝える宣言です。
+- **意味**：この文書がHTML5で書かれていることをブラウザに伝える<ruby>宣言<rt>せんげん</rt></ruby>です。
 - **ポイント**：ページの<ruby>表示<rt>ひょうじ</rt></ruby>を正しくするために、最初に必ず書きます。
 
 - **Meaning**: This declaration tells the browser that the document is written in HTML5.
@@ -166,9 +166,9 @@ Create a JSLearn folder in the source folder and pin it
 
 ---
 
-### 🔹 `<p>This is a paragraph.</p>`：<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>（パラグラフ）を表すタグ
-- **意味**： `<p>`タグは、**文章のまとまり（<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>）**を表すために使います。
-- **ポイント**：「<ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
+### 🔹 `<p>This is a paragraph.</p>`：<ruby>段落<rt>だんらく</rt></ruby>（パラグラフ）を表すタグ
+- **意味**： `<p>`タグは、**文章のまとまり（<ruby>段落<rt>だんらく</rt></ruby>）**を表すために使います。
+- **ポイント**：「<ruby>段落<rt>だんらく</rt></ruby>」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
 
 - **Meaning**: The `<p>` tag is used to represent a **block of text (a paragraph)**.
 - **Point**: A paragraph is a group of sentences that express a single idea or topic.
@@ -177,7 +177,7 @@ Create a JSLearn folder in the source folder and pin it
 
 ### 🔹 `<button onclick="sayHello()">Click Me</button>`
 - **意味**：クリックできるボタンを<ruby>表示<rt>ひょうじ</rt></ruby>します。
-- **`onclick="sayHello()"`**：ボタンがクリックされたときに、JavaScriptの `sayHello()` 関数を実行します。
+- **`onclick="sayHello()"`**：ボタンがクリックされたときに、JavaScriptの `sayHello()` <ruby>関数<rt>かんすう</rt></ruby>を実行します。
 
 - **Meaning**: Displays a clickable button.
 - **`onclick="sayHello()"`**: When the button is clicked, it runs the JavaScript function `sayHello()`.
@@ -192,7 +192,7 @@ Create a JSLearn folder in the source folder and pin it
     alert("Hello! Welcome to the world of JavaScript!");
   }
   ```
-  - `sayHello()` という関数を定義しています。
+  - `sayHello()` という<ruby>関数<rt>かんすう</rt></ruby>を<ruby>定義<rt>ていぎ</rt></ruby>しています。
   - ボタンをクリックすると、ポップアップで「Hello! Welcome to the world of JavaScript!」と<ruby>表示<rt>ひょうじ</rt></ruby>されます。
 
 - **Meaning**: This tag is used to write JavaScript, a programming language.

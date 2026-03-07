@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-2d88497e.js";
+            window.path_to_searchindex_js = "searchindex-96234591.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -180,25 +180,25 @@
   console.log(i + "番目：こんにちは！");
 }
 </code></pre>
-<h2 id="ii-配列の応用とforeach"><a class="header" href="#ii-配列の応用とforeach">II. 配列の応用とforEach</a></h2>
-<p>大量のデータを効率よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
-<h3 id="1-foreachとコールバック関数"><a class="header" href="#1-foreachとコールバック関数">1. forEachとコールバック関数</a></h3>
-<p>以前、関数は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
-<p>forEach を使うときは、この関数をさらに便利に使います。</p>
+<h2 id="ii-配列はいれつの応用とforeach"><a class="header" href="#ii-配列はいれつの応用とforeach">II. <ruby>配列<rt>はいれつ</rt></ruby>の応用とforEach</a></h2>
+<p>大量のデータを<ruby>効率<rt>こうりつ</rt></ruby>よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
+<h3 id="1-foreachとコールバック関数かんすう"><a class="header" href="#1-foreachとコールバック関数かんすう">1. forEachとコールバック<ruby>関数<rt>かんすう</rt></ruby></a></h3>
+<p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
+<p>forEach を使うときは、この<ruby>関数<rt>かんすう</rt></ruby>をさらに便利に使います。</p>
 <ul>
-<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す関数は「店員さんに渡すチェックメモ（コールバック関数）」です。 店員さんは、配列の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
 </ul>
 <h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: 合計（ごうけい）を計算する</a></h3>
 <p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
-<pre><code class="language-javascript">// 1. 数字の「配列」を作ります。
+<pre><code class="language-javascript">// 1. 数字の「&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;」を作ります。
 const numbers = [10, 20, 30, 40];
 
 // 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
 let total = 0;
 
-// 3. forEach （上の&lt;ruby&gt;例&lt;rt&gt;たと&lt;/rt&gt;&lt;/ruby&gt;えでは「店員さん」）は、配列の中身を一つずつ取って、メモ通りに処理します。
+// 3. forEach （上の&lt;ruby&gt;例&lt;rt&gt;たと&lt;/rt&gt;&lt;/ruby&gt;えでは「店員さん」）は、&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;の中身を一つずつ取って、メモ通りに処理します。
 numbers.forEach((num) =&gt; {
-  // ここがコールバック関数です！ 店員さんに「この仕事をしてください」と渡すメモです！
+  // ここがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;です！ 店員さんに「この仕事をしてください」と渡すメモです！
   total = total + num; 
   console.log(num + " を足しました。今は " + total + " です。");
 });
@@ -210,12 +210,12 @@ console.log("ぜんぶの合計は " + total + " です！");
 <h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの動（うご）きを解説（かいせつ）</a></h3>
 <h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
 <p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h4 id="②-コールバック関数の仕事しごと"><a class="header" href="#②-コールバック関数の仕事しごと">② コールバック関数の仕事（しごと）</a></h4>
-<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック関数）です。</p>
+<h4 id="②-コールバック関数かんすうの仕事しごと"><a class="header" href="#②-コールバック関数かんすうの仕事しごと">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事（しごと）</a></h4>
+<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
 <ul>
 <li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
-<li>コールバック関数に <code>10</code> を渡（わた）す。</li>
-<li>関数が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
+<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を渡（わた）す。</li>
+<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
 <li>次の <code>20</code> でも同じことをする。</li>
 </ul>
 <p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
@@ -226,7 +226,7 @@ console.log("ぜんぶの合計は " + total + " です！");
 <tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left">配列が自<ruby>動的<rt>どうてき</rt></ruby>に回数を決めてくれる</td></tr>
+<tr><td style="text-align: left">繰り返しの回数を自分で管理する</td><td style="text-align: left"><ruby>配列<rt>はいれつ</rt></ruby>が自<ruby>動的<rt>どうてき</rt></ruby>に回数を決めてくれる</td></tr>
 <tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
 </tbody>
 </table>
@@ -235,14 +235,14 @@ console.log("ぜんぶの合計は " + total + " です！");
 <hr>
 <h2 id="iii-繰り返し処理の応用for-in文"><a class="header" href="#iii-繰り返し処理の応用for-in文">III. 繰り返し処理の応用：for-in文</a></h2>
 <p>※ オブジェクトの性質を利用した応用的な繰り返し処理です。</p>
-<p>配列ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
+<p><ruby>配列<rt>はいれつ</rt></ruby>ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>ループの種類</th><th>対象</th><th>使いどころ</th></tr>
 </thead>
 <tbody>
-<tr><td>for文</td><td>数値の回数、配列</td><td>決まった回数繰り返したいとき</td></tr>
+<tr><td>for文</td><td><ruby>数値<rt>すうち</rt></ruby>の回数、<ruby>配列<rt>はいれつ</rt></ruby></td><td>決まった回数繰り返したいとき</td></tr>
 <tr><td>while文</td><td>条件</td><td>条件が満たされるまで続けたいとき</td></tr>
 <tr><td>for-in文</td><td>オブジェクトのプロパティ</td><td>オブジェクトの「キー」を全部調べたいとき</td></tr>
 </tbody>

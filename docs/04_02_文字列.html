@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-2d88497e.js";
+            window.path_to_searchindex_js = "searchindex-96234591.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -261,12 +261,12 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 </blockquote>
 <p>いかがでしょうか？「ふだんは身軽なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で変身」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
 <hr>
-<h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の加工（かこう）</a></h2>
+<h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の<ruby>加工<rt>かこう</rt></ruby></a></h2>
 <p>Stringオブジェクト（文字列）には、文字を自由に操るための便利な「道具（メソッド）」がたくさんあります。</p>
-<p>留学生の方には、<strong>「長い文章という『テープ』を、ハサミで切ったり、シールを貼ったりして加工する」</strong> イメージで説明すると伝わりやすいですよ。</p>
+<p>留学生の方には、<strong>「長い文章という『テープ』を、ハサミで切ったり、シールを貼ったりして<ruby>加工<rt>かこう</rt></ruby>する」</strong> イメージで説明すると伝わりやすいですよ。</p>
 <p>よく使われる5つのメソッドを紹介します。</p>
 <h3 id="1-sliceスライス好きなところを切り取る"><a class="header" href="#1-sliceスライス好きなところを切り取る">1. slice（スライス）：好きなところを切り取る</a></h3>
-<p>配列のときと同じ名前ですね！文字列でも「○番目から○番目までを取り出す」ことができます。</p>
+<p><ruby>配列<rt>はいれつ</rt></ruby>のときと同じ名前ですね！文字列でも「○番目から○番目までを取り出す」ことができます。</p>
 <pre><code class="language-javascript">let text = "JavaScript";
 let sub = text.slice(0, 4); // 0番目から4番目の「手前」まで
 
@@ -285,10 +285,10 @@ console.log(newGreeting); // "こんにちは、マリアさん"
 
 </code></pre>
 <ul>
-<li><strong>覚え方：</strong> 「リプレイス」は「入れ替える」という意味です。</li>
+<li><strong>覚え方：</strong> 「リプレイス」は「<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>る」という意味です。</li>
 </ul>
 <h3 id="3-splitスプリットバラバラにわける"><a class="header" href="#3-splitスプリットバラバラにわける">3. split（スプリット）：バラバラにわける</a></h3>
-<p>長い文字列を、カンマやスペースで区切って「配列（リスト）」に変えます。</p>
+<p>長い文字列を、カンマやスペースで区切って「<ruby>配列<rt>はいれつ</rt></ruby>（リスト）」に変えます。</p>
 <pre><code class="language-javascript">let tags = "日本,韓国,中国";
 let array = tags.split(","); // 「,」のところで切る
 
@@ -328,8 +328,8 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 </thead>
 <tbody>
 <tr><td><strong><code>slice</code></strong></td><td>一部を取り出す</td><td>ハサミで切り取る</td></tr>
-<tr><td><strong><code>replace</code></strong></td><td>文字を入れ替える</td><td>修正テープで書き直す</td></tr>
-<tr><td><strong><code>split</code></strong></td><td>配列に分ける</td><td>チョコをパキパキ割る</td></tr>
+<tr><td><strong><code>replace</code></strong></td><td>文字を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>る</td><td>修正テープで書き直す</td></tr>
+<tr><td><strong><code>split</code></strong></td><td><ruby>配列<rt>はいれつ</rt></ruby>に分ける</td><td>チョコをパキパキ割る</td></tr>
 <tr><td><strong><code>toLowerCase</code></strong></td><td>小文字にする</td><td>全部小さく書く</td></tr>
 <tr><td><strong><code>trim</code></strong></td><td>前後のスキマを消す</td><td>ムダ毛をカットする</td></tr>
 </tbody>
@@ -338,9 +338,9 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
 <p><strong>「元の文字は変わらない」というルール</strong>
-文字列（String）のメソッドは、すべて**「加工したあとの新しい文字」**を返します。元の変数を変えたいときは、<code>text = text.trim();</code> のように、もう一度代入する必要があるよ、と教えてあげてください。</p>
+文字列（String）のメソッドは、すべて**「<ruby>加工<rt>かこう</rt></ruby>したあとの新しい文字」**を返します。元の<ruby>変数<rt>へんすう</rt></ruby>を変えたいときは、<code>text = text.trim();</code> のように、もう一度<ruby>代入<rt>だいにゅう</rt></ruby>する必要があるよ、と教えてあげてください。</p>
 </blockquote>
-<p>いかがでしょうか？ 「文字列の加工」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに整理できるようになります。</p>
+<p>いかがでしょうか？ 「文字列の<ruby>加工<rt>かこう</rt></ruby>」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに整理できるようになります。</p>
 <hr>
 <h2 id="iii-文字の検索けんさく"><a class="header" href="#iii-文字の検索けんさく">III. 文字の<ruby>検索<rt>けんさく</rt></ruby></a></h2>
 <p>文字列（String）の中から「特定の文字」を見つけたり、場所を調べたりするときに欠かせない <strong><code>charAt</code></strong> と <strong><code>indexOf</code></strong> について説明します。</p>
@@ -360,7 +360,7 @@ console.log(word.charAt(4)); // "S"（5番目）
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p>最近のJavaScriptでは、配列と同じように <code>word[0]</code> と書いても同じ結果が得られますが、<code>charAt</code> は古いコードでもよく使われる大切な基本です。</p>
+<p>最近のJavaScriptでは、<ruby>配列<rt>はいれつ</rt></ruby>と同じように <code>word[0]</code> と書いても同じ結果が得られますが、<code>charAt</code> は古いコードでもよく使われる大切な基本です。</p>
 </blockquote>
 <hr>
 <h3 id="2-indexofインデックスオブ文字から番号を知る"><a class="header" href="#2-indexofインデックスオブ文字から番号を知る">2. indexOf（インデックスオブ）：文字から「番号」を知る</a></h3>
@@ -417,19 +417,19 @@ if (email.indexOf("@") !== -1) {
 <p>いかがでしょうか？「番号から文字」か「文字から番号」か、このペアで覚えるととても使いやすくなります。</p>
 <h2 id="iv-文字列の応用"><a class="header" href="#iv-文字列の応用">IV. 文字列の応用</a></h2>
 <p>Webサイトで扱う情報の多くは「テキスト（文字列）」です。これをどう操作するかが、プログラミングの腕の見せ所です。</p>
-<h3 id="文字列の作成と結合"><a class="header" href="#文字列の作成と結合">文字列の作成と結合</a></h3>
-<p>最新のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を使うのがとても便利です。</p>
+<h3 id="文字列の作成と結合けつごう"><a class="header" href="#文字列の作成と結合けつごう">文字列の作成と<ruby>結合<rt>けつごう</rt></ruby></a></h3>
+<p><ruby>最新<rt>さいしん</rt></ruby>のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を使うのがとても便利です。</p>
 <ul>
-<li>変数の埋め込み: `こんにちは、${name}さん！` のように、${} で変数を入れられます。</li>
+<li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>み: `こんにちは、${name}さん！` のように、${} で<ruby>変数<rt>へんすう</rt></ruby>を入れられます。</li>
 <li><ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）: テンプレートリテラルは、コードの中で<ruby>改行<rt>かいぎょう</rt></ruby>した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
 </ul>
-<h3 id="数値への変換"><a class="header" href="#数値への変換">数値への変換</a></h3>
+<h3 id="数値すうちへの変換"><a class="header" href="#数値すうちへの変換"><ruby>数値<rt>すうち</rt></ruby>への変換</a></h3>
 <p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには変換が必要です。</p>
 <ul>
 <li>parseInt(): 整数（1, 2, 3…）に変換します。</li>
-<li>parseFloat(): 小数点を含む数値に変換します。</li>
+<li>parseFloat(): 小数点を含む<ruby>数値<rt>すうち</rt></ruby>に変換します。</li>
 </ul>
-<p>So What?（なぜ大切なの？） 数字ではない文字を無理に数値に変えようとすると NaN（Not a Number：数値ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() 関数を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
+<p>So What?（なぜ大切なの？） 数字ではない文字を無理に<ruby>数値<rt>すうち</rt></ruby>に変えようとすると NaN（Not a Number：<ruby>数値<rt>すうち</rt></ruby>ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() <ruby>関数<rt>かんすう</rt></ruby>を使って「これは本当に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
 
                     </main>
 

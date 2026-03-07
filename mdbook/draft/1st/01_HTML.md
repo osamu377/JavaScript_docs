@@ -21,12 +21,12 @@ Webページには、ユーザーには見えませんが、ブラウザや<ruby
 
 もし、文字コードの<ruby>設定<rt>せってい</rt></ruby>が正しくないと、文字が「読（よ）めない記号（きごう）」になってしまいます。これを「文字化（もじば）け」と言（い）います。<ruby>設定<rt>せってい</rt></ruby>が終わったら、次は実際（じっさい）に<ruby>画面<rt>がめん</rt></ruby>で見（み）えるコンテンツを作（つく）りましょう。
 
-3. いろいろなHTMLタグ：情報（じょうほう）の意味（いみ）を定義（ていぎ）する
+3. いろいろなHTMLタグ：情報（じょうほう）の意味（いみ）を<ruby>定義<rt>ていぎ</rt></ruby>（ていぎ）する
 
 HTMLでは「タグ」を使って、その情報に意味（いみ）をつけます。これを正しく行（おこな）うと、JavaScriptで操作（そうさ）しやすくなります。
 
 * 見出（みだ）し（<h1>〜<h6>）： タイトルや見出しを作ります。
-* <ruby><ruby>段落<rt>だんらく</rt></ruby><rt>だんらく</rt></ruby>（<p>）： 普通（ふつう）の文章（ぶんしょう）を書（か）くときに使います。
+* <ruby>段落<rt>だんらく</rt></ruby>（<p>）： 普通（ふつう）の文章（ぶんしょう）を書（か）くときに使います。
 * リンク（<a>）： 他（ほか）のページへ移動（いどう）します。href<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>に移動先の住所（URL）を書きます。
 * <ruby>画像<rt>がぞう</rt></ruby>（<img>）： 写真（しゃしん）を<ruby>表示<rt>ひょうじ</rt></ruby>します。src<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>に<ruby>画像<rt>がぞう</rt></ruby>ファイルの名前を書きます。
 
@@ -116,7 +116,7 @@ Web制作（せいさく）の世界には、協力して1つのページを作�
 
 なぜJavaScriptの前にCSSを学ぶ必要があるのか？
 
-JavaScriptはCSSを操作（そうさ）して、デザインを<ruby>動的<rt>どうてき</rt></ruby>に変える役割を持っています。CSSを知っておくことには、次のような<ruby><ruby>戦略<rt>せんりゃく</rt></ruby><rt>せんりゃく</rt></ruby>的（せんりゃくてき）なメリットがあります。
+JavaScriptはCSSを操作（そうさ）して、デザインを<ruby>動的<rt>どうてき</rt></ruby>に変える役割を持っています。CSSを知っておくことには、次のような<ruby>戦略<rt>せんりゃく</rt></ruby>的（せんりゃくてき）なメリットがあります。
 
 1. CSSを知らないとJavaScriptが書けない： JavaScriptで「<ruby>背景<rt>はいけい</rt></ruby>色を変える」という命令（めいれい）を出すとき、CSSのプロパティ名（backgroundColorなど）を知らないと、プログラムが書けません。
 2. 無駄（むだ）なコードが減る： 簡単なデザインの変化（マウスを乗せたときに色を変えるなど）は、CSSだけで作れます。CSSでできることを知っていれば、JavaScriptのコードを短く、シンプルに<ruby>保<rt>たも</rt></ruby>つことができます。
@@ -138,7 +138,7 @@ Webサイトにおいて、文字は情報を伝えるための最も大切な�
 
 1. font-size： 文字の大きさ。
 2. color： 文字の色。
-3. text-align： 文字の並べ方。左（left）、真ん中（center）、右（right）のどこに<ruby>揃<rt>そろ</rt></ruby>（そろ）えるかを決めます。
+3. text-align： 文字の並べ方。左（left）、<ruby>真<rt>しん</rt></ruby>ん中（center）、右（right）のどこに<ruby>揃<rt>そろ</rt></ruby>（そろ）えるかを決めます。
 
 CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の基本
 
@@ -148,7 +148,7 @@ CSSは、「どの場所に（セレクタ）」「何の項目を（プロパ�
 h1 {
   font-size: 24px;      /* 大きさを24ピクセルにする */
   color: blue;          /* 色を青にする */
-  text-align: center;   /* 真ん中に並べる */
+  text-align: center;   /* <ruby>真<rt>しん</rt></ruby>ん中に並べる */
 }
 
 
@@ -257,7 +257,7 @@ document.getElementById("title").style.color = "red";
 
 7. まとめ：CSSをマスターしてJavaScriptへ
 
-Web制作（せいさく）では、HTMLで「骨組み」を作り、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>」を整え、JavaScriptで「<ruby>動<rt>うご</rt></ruby>き」を加えます。これらが組み合わさって、素晴らしいWebサイトが完成します。
+Web制作（せいさく）では、HTMLで「骨組み」を作り、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>」を整え、JavaScriptで「<ruby>動<rt>うご</rt></ruby>き」を加えます。これらが<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わさって、素晴らしいWebサイトが完成します。
 
 最後に、今回学んだポイントを確認しましょう。
 

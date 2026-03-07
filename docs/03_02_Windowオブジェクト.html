@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-2d88497e.js";
+            window.path_to_searchindex_js = "searchindex-96234591.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -242,8 +242,8 @@ let name = prompt("お名前は？"); // 名前を&lt;ruby&gt;入力&lt;rt&gt;�
 <hr>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>グローバル変数に注意！</strong>
-自分で作った変数も、実は <code>window</code> の持ち物になることがあります。
+<p><strong>グローバル<ruby>変数<rt>へんすう</rt></ruby>に注意！</strong>
+自分で作った<ruby>変数<rt>へんすう</rt></ruby>も、実は <code>window</code> の持ち物になることがあります。
 「何でもかんでも <code>window</code> に入れると、社長さんの部屋が散らかって大変だよ（バグの原因になるよ）」と伝えてあげると、良いプログラミングの習慣（しゅうかん）が身につきます。</p>
 </blockquote>
 <p>いかがでしょうか？「ブラウザのボス」というイメージが伝われば、Windowオブジェクトの理解はバッチリです！</p>
@@ -313,17 +313,17 @@ message.style.color = "red";
 
 </code></pre>
 <p><strong>オブジェクトと const の意外な関係</strong></p>
-<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で宣言された変数は、後から値を変更できないはずでは？」そう思った人は、変数の説明をとてもよく覚えている人です。</p>
+<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>された<ruby>変数<rt>へんすう</rt></ruby>は、後から値を変更できないはずでは？」そう思った人は、<ruby>変数<rt>へんすう</rt></ruby>の説明をとてもよく覚えている人です。</p>
 <p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
-<p>JavaScriptの初心者が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
-<p>「 <code>const</code> で宣言した変数は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
+<p>JavaScriptの<ruby>初心者<rt>しょしんしゃ</rt></ruby>が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
+<p>「 <code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>した<ruby>変数<rt>へんすう</rt></ruby>は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
 <ul>
-<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに入れ替えることはできません（別の箱に名札を付け替えるのは禁止）。</li>
+<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ることはできません（別の箱に名札を付け替えるのは禁止）。</li>
 <li>中身の変更はOK：箱の中に入っている個別のデータ（プロパティ）を書き換えることは可能です。</li>
 </ul>
-<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を入れ替えたり、ジャムを塗ったりすることは自由なのです。</p>
+<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>たり、ジャムを塗ったりすることは自由なのです。</p>
 <p><ruby>例<rt>たと</rt></ruby>えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に書き換えられるようなイメージです。</p>
-<p>先ほどの<ruby>例<rt>れい</rt></ruby>では、<code>const</code>を使って宣言した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に入れ替えました。これはエラーにはなりません。</p>
+<p>先ほどの<ruby>例<rt>れい</rt></ruby>では、<code>const</code>を使って<ruby>宣言<rt>せんげん</rt></ruby>した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ました。これはエラーにはなりません。</p>
 <p>しかし、</p>
 <pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
 const message = document.getElementById("greeting");
@@ -432,9 +432,9 @@ function refreshPage() {
 </code></pre>
 <hr>
 <h3 id="5-留学生へのアドバイスhref-の書き換えが一番人気"><a class="header" href="#5-留学生へのアドバイスhref-の書き換えが一番人気">5. 留学生へのアドバイス：<code>href</code> の書き換えが一番人気</a></h3>
-<p>URLを操作する方法はたくさんありますが、現場で一番よく使われるのは <strong><code>location.href</code></strong> への代入です。</p>
+<p>URLを操作する方法はたくさんありますが、現場で一番よく使われるのは <strong><code>location.href</code></strong> への<ruby>代入<rt>だいにゅう</rt></ruby>です。</p>
 <blockquote>
-<p><strong>「一番簡単な移動（いどう）のやり方は、<code>location.href</code> に新しい住所を代入（だいにゅう）することだよ。一番覚えやすくて便利だよ！」</strong></p>
+<p><strong>「一番簡単な移動（いどう）のやり方は、<code>location.href</code> に新しい住所を<ruby>代入<rt>だいにゅう</rt></ruby>することだよ。一番覚えやすくて便利だよ！」</strong></p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-2"><a class="header" href="#まとめテーブル-2">まとめテーブル</a></h3>
@@ -534,7 +534,7 @@ box.style.border = "5px solid black";
 <tr><td><strong>役割</strong></td><td>JavaScriptからCSSを操作する</td></tr>
 <tr><td><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のルール</strong></td><td>ハイフンなしの「キャメルケース」</td></tr>
 <tr><td><strong>値のルール</strong></td><td>必ず <strong>“ “</strong>（ダブルクォーテーション）で囲む文字列にする</td></tr>
-<tr><td><strong>単位</strong></td><td>数値だけでなく <strong>“px”</strong> や <strong>“%”</strong> を必ずつける</td></tr>
+<tr><td><strong>単位</strong></td><td><ruby>数値<rt>すうち</rt></ruby>だけでなく <strong>“px”</strong> や <strong>“%”</strong> を必ずつける</td></tr>
 </tbody>
 </table>
 </div>
@@ -616,7 +616,7 @@ function goBack() {
 <tr><td><strong><code>back()</code></strong></td><td>戻る</td><td>電車を1駅戻す</td></tr>
 <tr><td><strong><code>forward()</code></strong></td><td>進む</td><td>電車を1駅進める</td></tr>
 <tr><td><strong><code>go(-2)</code></strong></td><td>指定した数戻る</td><td>特急で2駅分戻る</td></tr>
-<tr><td><strong><code>pushState()</code></strong></td><td>履歴を偽装（？）する</td><td>実際に移動せずに、切符のスタンプだけ増やす</td></tr>
+<tr><td><strong><code>pushState()</code></strong></td><td>履歴を<ruby>偽造<rt>ぎそう</rt></ruby>（？）する</td><td>実際に移動せずに、切符のスタンプだけ増やす</td></tr>
 </tbody>
 </table>
 </div>
@@ -919,7 +919,7 @@ document.cookie = "username=Taro; max-age=604800";
 <hr>
 <h3 id="4-実際に動かしてみよう-6"><a class="header" href="#4-実際に動かしてみよう-6">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「名前を覚えるプログラム」のイメージを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. クッキーをセットする関数
+<pre><code class="language-javascript">// 1. クッキーをセットする&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
 function saveName() {
   const name = prompt("あなたのお名前は？");
   // 1日後まで保存
@@ -927,7 +927,7 @@ function saveName() {
   alert("保存しました！");
 }
 
-// 2. クッキーから名前を探す関数
+// 2. クッキーから名前を探す&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
 function greet() {
   const cookies = document.cookie;
   if (cookies.includes("userName")) {
@@ -982,7 +982,7 @@ function greet() {
 イベントが発生したとき、JavaScriptは自<ruby>動的<rt>どうてき</rt></ruby>に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
 <pre><code class="language-javascript">// ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
-  // この「event」という引数が、Eventオブジェクト（報告書）です
+  // この「event」という&lt;ruby&gt;&lt;rt&gt;引数&lt;/rt&gt;ひきすう&lt;/ruby&gt;が、Eventオブジェクト（報告書）です
   console.log(event); 
 });
 
@@ -1039,7 +1039,7 @@ input.addEventListener("keydown", function(event) {
 </code></pre>
 <hr>
 <h3 id="5-留学生へのアドバイス名前は何でもいい"><a class="header" href="#5-留学生へのアドバイス名前は何でもいい">5. 留学生へのアドバイス：名前は何でもいい？</a></h3>
-<p>関数（かんすう）のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
+<p><ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
 <blockquote>
 <p>「カッコの中の名前は <code>e</code> や <code>evt</code> と短く書くプログラマーも多いよ。
 でも、中身は同じ <strong>『イベントの報告書』</strong> だから安心してね！」</p>

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-2d88497e.js";
+            window.path_to_searchindex_js = "searchindex-96234591.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -174,29 +174,29 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="コールバック関数"><a class="header" href="#コールバック関数">コールバック関数</a></h1>
-<p>留学生（りゅうがくせい）のみなさんにもわかりやすいように、**「コールバック関数（かんすう）」**をやさしい日本語で説明（せつめい）します。</p>
+                        <h1 id="コールバック関数かんすう"><a class="header" href="#コールバック関数かんすう">コールバック<ruby>関数<rt>かんすう</rt></ruby></a></h1>
+<p>留学生（りゅうがくせい）のみなさんにもわかりやすいように、**「コールバック<ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>」**をやさしい日本語で説明（せつめい）します。</p>
 <hr>
-<h2 id="i-コールバック関数を一言ひとことでいうと"><a class="header" href="#i-コールバック関数を一言ひとことでいうと">I. コールバック関数を一言（ひとこと）でいうと？</a></h2>
+<h2 id="i-コールバック関数かんすうを一言ひとことでいうと"><a class="header" href="#i-コールバック関数かんすうを一言ひとことでいうと">I. コールバック<ruby>関数<rt>かんすう</rt></ruby>を一言（ひとこと）でいうと？</a></h2>
 <p><strong>「あとで やってね！という お願（ねが）いのメモ」</strong> です。</p>
 <p>ふつうのプログラムは、上から下へ順番（じゅんばん）に進（すす）みます。
-でも、コールバック関数は「今すぐ」ではなく、<strong>「ある時（とき）が来たら」</strong> 動くように予約（よ予約）する命令（めいれい）です。</p>
+でも、コールバック<ruby>関数<rt>かんすう</rt></ruby>は「今すぐ」ではなく、<strong>「ある時（とき）が来たら」</strong> 動くように予約（よ予約）する命令（めいれい）です。</p>
 <hr>
 <h2 id="ii-お店でのちゅうもんで-たとえてみましょう"><a class="header" href="#ii-お店でのちゅうもんで-たとえてみましょう">II. 「お店でのちゅうもん」で たとえてみましょう</a></h2>
 <p>あなたがレストランへ行きました。</p>
 <ol>
 <li><strong>あなた（メインプログラム）：</strong> 店員さんに「オムライスをください。<strong>できあがったら、ベルを鳴（な）らしてください</strong>」と言いました。</li>
 <li><strong>店員さん（forEachメソッド）：</strong> 料理（りょうり）を作ります。</li>
-<li><strong>ベルを鳴らす（コールバック関数）：</strong> 料理ができたタイミングで、店員さんがベルを鳴らします。</li>
+<li><strong>ベルを鳴らす（コールバック<ruby>関数<rt>かんすう</rt></ruby>）：</strong> 料理ができたタイミングで、店員さんがベルを鳴らします。</li>
 </ol>
-<p>この「できあがったら、〇〇してね」という**「〇〇」の部分**がコールバック関数です。</p>
+<p>この「できあがったら、〇〇してね」という**「〇〇」の部分**がコールバック<ruby>関数<rt>かんすう</rt></ruby>です。</p>
 <hr>
 <h2 id="iii-foreach-の中での動うごき"><a class="header" href="#iii-foreach-の中での動うごき">III. <code>forEach</code> の中での<ruby>動<rt>うご</rt></ruby>き</a></h2>
-<p><code>forEach</code> は、配列（はいれつ／データのリスト）の中身を一つずつ見（み）ていく命令です。</p>
+<p><code>forEach</code> は、<ruby>配列<rt>はいれつ</rt></ruby>（はいれつ／データのリスト）の中身を一つずつ見（み）ていく命令です。</p>
 <pre><code class="language-javascript">// 果物（くだもの）の名前のリスト
 const fruits = ["りんご", "バナナ", "みかん"];
 
-// fruits.forEach( ここに書くのがコールバック関数 );
+// fruits.forEach( ここに書くのがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt; );
 fruits.forEach((item) =&gt; {
   console.log(item + "を食べます");
 });
@@ -205,24 +205,24 @@ fruits.forEach((item) =&gt; {
 <h3 id="プログラムの中の会話かいわ"><a class="header" href="#プログラムの中の会話かいわ">プログラムの中の会話（かいわ）</a></h3>
 <ul>
 <li><strong>forEach:</strong> 「リストの中身を一つずつ取り出すよ！ 取り出すたびに、何をすればいい？」</li>
-<li><strong>コールバック関数:</strong> 「取り出したものに『を食べます』をつけて<ruby>表示<rt>ひょうじ</rt></ruby>してね！」</li>
-<li><strong>forEach:</strong> 「わかった！ じゃあ、『りんご』を取り出したから、君（コールバック関数）に渡（わた）すね。実行（じっこう）して！」</li>
-<li><strong>コールバック関数:</strong> 「はい！『りんごを食べます』と出します！」</li>
+<li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby>:</strong> 「取り出したものに『を食べます』をつけて<ruby>表示<rt>ひょうじ</rt></ruby>してね！」</li>
+<li><strong>forEach:</strong> 「わかった！ じゃあ、『りんご』を取り出したから、君（コールバック<ruby>関数<rt>かんすう</rt></ruby>）に渡（わた）すね。実行（じっこう）して！」</li>
+<li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby>:</strong> 「はい！『りんごを食べます』と出します！」</li>
 </ul>
 <p>これを、リストが終わるまで繰り返（くりかえ）します。</p>
 <hr>
 <h2 id="iv-なぜコールバックという名前なの"><a class="header" href="#iv-なぜコールバックという名前なの">IV. なぜ「コールバック」という名前なの？</a></h2>
 <p>英語（えいご）の <strong>“Call back”（電話をかけなおす）</strong> と同じ意味です。</p>
 <ul>
-<li><strong>ふつうの関数：</strong> あなたが関数を「呼ぶ（Call）」。</li>
-<li><strong>コールバック関数：</strong> 相手（forEachなど）が、あとであなたを「呼び出す（Call back）」。</li>
+<li><strong>ふつうの<ruby>関数<rt>かんすう</rt></ruby>：</strong> あなたが<ruby>関数<rt>かんすう</rt></ruby>を「呼ぶ（Call）」。</li>
+<li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby>：</strong> 相手（forEachなど）が、あとであなたを「呼び出す（Call back）」。</li>
 </ul>
 <p>このように、<strong>「主役（しゅやく）が入れ替（いれかえ）わる」</strong> のがポイントです。</p>
 <hr>
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
 <ul>
-<li><strong>コールバック関数</strong> ＝ 他のプログラムに「これ、あとで使ってね」と渡す関数のこと。</li>
-<li><strong>forEach</strong> ＝ リストのデータ一つずつに、コールバック関数を動かしてあげる役（やく）割。</li>
+<li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby></strong> ＝ 他のプログラムに「これ、あとで使ってね」と渡す<ruby>関数<rt>かんすう</rt></ruby>のこと。</li>
+<li><strong>forEach</strong> ＝ リストのデータ一つずつに、コールバック<ruby>関数<rt>かんすう</rt></ruby>を動かしてあげる役（やく）割。</li>
 </ul>
 <hr>
 <h2 id="v-プログラム例れい"><a class="header" href="#v-プログラム例れい">V. プログラム<ruby>例<rt>れい</rt></ruby></a></h2>
@@ -237,7 +237,7 @@ let total = 0;
 
 // 3. forEach を使って、一つずつ足していきます
 numbers.forEach((num) =&gt; {
-  // ここがコールバック関数です！
+  // ここがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;です！
   total = total + num; 
   console.log(num + " を足しました。今は " + total + " です。");
 });
@@ -250,12 +250,12 @@ console.log("ぜんぶの合計は " + total + " です！");
 <h3 id="2-プログラムの動うごきを解説かいせつ"><a class="header" href="#2-プログラムの動うごきを解説かいせつ">2. プログラムの動（うご）きを解説（かいせつ）</a></h3>
 <h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
 <p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h4 id="②-コールバック関数の仕事しごと"><a class="header" href="#②-コールバック関数の仕事しごと">② コールバック関数の仕事（しごと）</a></h4>
-<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック関数）です。</p>
+<h4 id="②-コールバック関数かんすうの仕事しごと"><a class="header" href="#②-コールバック関数かんすうの仕事しごと">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事（しごと）</a></h4>
+<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
 <ul>
 <li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
-<li>コールバック関数に <code>10</code> を渡（わた）す。</li>
-<li>関数が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
+<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を渡（わた）す。</li>
+<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
 <li>次の <code>20</code> でも同じことをする。</li>
 </ul>
 <p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
