@@ -172,7 +172,7 @@ CSSと同じ<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（`.c
 // 1. IDが "greeting" というパーツを探す
 const message = document.getElementById("greeting");
 
-// 2. その中身を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>える
+// 2. その中身を書（か）き換（かえ）える
 message.textContent = "こんにちは、日本へようこそ！";
 
 // 3. スタイル（色）も変えちゃう
@@ -415,7 +415,7 @@ JavaScriptで<ruby>設定<rt>せってい</rt></ruby>したスタイルを消し
 ```javascript
 const box = document.querySelector(".box");
 
-// 1. <ruby>背景<rt>はいけい</rt></ruby>をオレンジ色にする
+// 1. 背景（はいけい）をオレンジ色にする
 box.style.backgroundColor = "orange";
 
 // 2. 文字を白くして、大きくする
@@ -712,10 +712,10 @@ Anchorオブジェクト<ruby>専用<rt>せんよう</rt></ruby>の特別なメ�
 留学生に「危ないリンクをチェックする」というイメージでコードを見せてあげましょう。
 
 ```javascript
-// 1. ページ内の最初のリンクを<ruby>取得<rt>しゅとく</rt></ruby>
+// 1. ページ内の最初のリンクを取得（しゅとく）
 const link = document.links[0];
 
-// 2. リンク先が「https」で始まっているかチェック（<ruby>正規<rt>せいき</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>の ^ を活用！）
+// 2. リンク先が「https」で始まっているかチェック（正規（せいき）表現（ひょうげん）の ^ を活用！）
 if (/^https:/.test(link.protocol)) {
   console.log("このリンクは安全です。");
 } else {
@@ -728,6 +728,9 @@ if (/^https:/.test(link.protocol)) {
 link.target = "_blank";
 
 ```
+
+> [!note]
+> 正規表現は付録参照
 
 ---
 
@@ -918,7 +921,7 @@ console.log(document.cookie); // "username=Taro; theme=dark"
 留学生に「名前を覚えるプログラム」のイメージを見せてあげましょう。
 
 ```javascript
-// 1. クッキーをセットする<ruby>関数<rt>かんすう</rt></ruby>
+// 1. クッキーをセットする関数（かんすう）
 function saveName() {
   const name = prompt("あなたのお名前は？");
   // 1日後まで保存
@@ -991,7 +994,7 @@ JavaScriptにおける **Event（イベント）オブジェクト** は、ウ�
 ```javascript
 // ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
-  // この「event」という<ruby>引数<rt>ひきすう</rt></ruby>が、Eventオブジェクト（報告書）です
+  // この「event」という引数（ひきすう）が、Eventオブジェクト（報告書）です
   console.log(event); 
 });
 

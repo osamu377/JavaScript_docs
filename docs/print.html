@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1ac585b5.js";
+            window.path_to_searchindex_js = "searchindex-7160240e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -2022,7 +2022,7 @@ title.style.color = "red";
 const items = document.getElementsByClassName("menu-item");
 items[0].textContent = "最初のメニュー";
 
-// 3. &lt;ruby&gt;万能&lt;rt&gt;ばんのう&lt;/rt&gt;&lt;/ruby&gt;な探し方（CSSと同じ&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;方&lt;rt&gt;かた&lt;/rt&gt;&lt;/ruby&gt;）
+// 3. 万能（ばんのう）な探し方（CSSと同じ書（か）き方（かた））
 const firstLink = document.querySelector("nav a"); // navの中の最初のaタグ
 
 </code></pre>
@@ -2125,7 +2125,7 @@ const firstLink = document.querySelector("nav a"); // navの中の最初のaタ�
   level: 5,          // 特徴（プロパティ）
   
   attack: function() { 
-    alert("エイッ！と攻撃しました"); // &lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き（メソッド）
+    alert("エイッ！と攻撃しました"); // 動（うご）き（メソッド）
   }
 };
 
@@ -2276,7 +2276,7 @@ CSSと同じ<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<co
 <pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
 const message = document.getElementById("greeting");
 
-// 2. その中身を&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;換&lt;rt&gt;かえ&lt;/rt&gt;&lt;/ruby&gt;える
+// 2. その中身を書（か）き換（かえ）える
 message.textContent = "こんにちは、日本へようこそ！";
 
 // 3. スタイル（色）も変えちゃう
@@ -2476,7 +2476,7 @@ function refreshPage() {
 <p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">const box = document.querySelector(".box");
 
-// 1. &lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;をオレンジ色にする
+// 1. 背景（はいけい）をオレンジ色にする
 box.style.backgroundColor = "orange";
 
 // 2. 文字を白くして、大きくする
@@ -2720,10 +2720,10 @@ URLの「http:」の部分や、「ドメイン名」の部分だけを<ruby>個
 <hr>
 <h3 id="4-実際に動かしてみよう-4"><a class="header" href="#4-実際に動かしてみよう-4">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「危ないリンクをチェックする」というイメージでコードを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. ページ内の最初のリンクを&lt;ruby&gt;取得&lt;rt&gt;しゅとく&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. ページ内の最初のリンクを取得（しゅとく）
 const link = document.links[0];
 
-// 2. リンク先が「https」で始まっているかチェック（&lt;ruby&gt;正規&lt;rt&gt;せいき&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;表現&lt;rt&gt;ひょうげん&lt;/rt&gt;&lt;/ruby&gt;の ^ を活用！）
+// 2. リンク先が「https」で始まっているかチェック（正規（せいき）表現（ひょうげん）の ^ を活用！）
 if (/^https:/.test(link.protocol)) {
   console.log("このリンクは安全です。");
 } else {
@@ -2736,6 +2736,10 @@ if (/^https:/.test(link.protocol)) {
 link.target = "_blank";
 
 </code></pre>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>正規表現は付録参照</p>
+</blockquote>
 <hr>
 <h3 id="5-留学生へのアドバイスlocationとの違い"><a class="header" href="#5-留学生へのアドバイスlocationとの違い">5. 留学生へのアドバイス：Locationとの違い</a></h3>
 <p>「<code>window.location</code> と何が違うの？」と聞かれたら、こう答えてあげてください。</p>
@@ -2890,7 +2894,7 @@ document.cookie = "username=Taro; max-age=604800";
 <hr>
 <h3 id="4-実際に動かしてみよう-6"><a class="header" href="#4-実際に動かしてみよう-6">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「名前を覚えるプログラム」のイメージを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. クッキーをセットする&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. クッキーをセットする関数（かんすう）
 function saveName() {
   const name = prompt("あなたのお名前は？");
   // 1日後まで保存
@@ -2953,7 +2957,7 @@ function greet() {
 イベントが発生したとき、JavaScriptは自<ruby>動的<rt>どうてき</rt></ruby>に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
 <pre><code class="language-javascript">// ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
-  // この「event」という&lt;ruby&gt;引数&lt;rt&gt;ひきすう&lt;/rt&gt;&lt;/ruby&gt;が、Eventオブジェクト（報告書）です
+  // この「event」という引数（ひきすう）が、Eventオブジェクト（報告書）です
   console.log(event); 
 });
 
@@ -3127,17 +3131,17 @@ JavaScriptはこの木を自由に育てるための道具だよ。木の関係�
 <hr>
 <h3 id="4-フォームの中の入力にゅうりょくパーツの操作"><a class="header" href="#4-フォームの中の入力にゅうりょくパーツの操作">4. フォームの中の「<ruby>入力<rt>にゅうりょく</rt></ruby>パーツ」の操作</a></h3>
 <p>留学生が一番やりたいのは、**「ユーザーが書いた文字を読み取ること」**です。これは、各パーツの <strong><code>value</code>（バリュー）</strong> プロパティを<ruby>使<rt>つか</rt></ruby>います。</p>
-<pre><code class="language-javascript">// 1. フォーム全体を&lt;ruby&gt;取得&lt;rt&gt;しゅとく&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. フォーム全体を取得（しゅとく）
 const myForm = document.forms["loginForm"];
 
 // 2. ユーザーが書いた「ユーザー名」を取り出す
 const userName = myForm.elements["uName"].value;
 
-// 3. &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する前にチェックする
+// 3. 送信（そうしん）する前にチェックする
 if (userName === "") {
   alert("名前を書いてください！");
 } else {
-  myForm.submit(); // 問題なければ&lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;！
+  myForm.submit(); // 問題なければ送信（そうしん）！
 }
 
 </code></pre>
@@ -3150,9 +3154,9 @@ if (userName === "") {
 <pre><code class="language-javascript">myForm.onsubmit = function() {
   if (this.elements["email"].value === "") {
     alert("メールアドレスが必要です！");
-    return false; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;を中止（キャンセル）する
+    return false; // 送信（そうしん）を中止（キャンセル）する
   }
-  return true; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する
+  return true; // 送信（そうしん）する
 };
 
 </code></pre>
@@ -3232,10 +3236,10 @@ if (userName === "") {
 <pre><code class="language-javascript">// 1. &lt;img&gt;タグ（Elementオブジェクト）を見つける
 const myImage = document.querySelector("#profile-pic");
 
-// 2. setAttribute で&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;のURLを変える
+// 2. setAttribute で画像（がぞう）のURLを変える
 myImage.setAttribute("src", "new-image.jpg");
 
-// 3. classList でデザインを&lt;ruby&gt;切&lt;rt&gt;きり&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;替&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;える
+// 3. classList でデザインを切（きり）り替（か）える
 myImage.classList.add("rounded-frame");
 
 </code></pre>
@@ -3283,10 +3287,10 @@ myImage.classList.add("rounded-frame");
 <hr>
 <h3 id="2-実際にたどって操作するコード"><a class="header" href="#2-実際にたどって操作するコード">2. 実際にたどって操作するコード</a></h3>
 <p><ruby>例<rt>たと</rt></ruby>えば、リスト（<code>&lt;ul&gt;</code>）の中の「2番目の項目」からスタートして、周りを操作してみましょう。</p>
-<pre><code class="language-javascript">// 1. まず、&lt;ruby&gt;真&lt;rt&gt;しん&lt;/rt&gt;&lt;/ruby&gt;ん中の「2番目」を捕まえる
+<pre><code class="language-javascript">// 1. まず、真ん中（まんなか）の「2番目」を捕まえる
 const centerItem = document.getElementById("item2");
 
-// 2. 「親」の&lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;色を変える（リスト全体がオレンジに！）
+// 2. 「親」の背景（はいけい）色を変える（リスト全体がオレンジに！）
 centerItem.parentNode.style.backgroundColor = "orange";
 
 // 3. 「前の兄弟（1番目）」の文字を大きくする
@@ -3353,11 +3357,11 @@ list.appendChild(newLi);
 <blockquote>
 <p><strong>注意：</strong> この時点では、まだ「メモリの中」にあるだけで、<strong><ruby>画面<rt>がめん</rt></ruby>には見えません。</strong></p>
 </blockquote>
-<pre><code class="language-javascript">// 「たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き（li）」というパーツを1つ作る
+<pre><code class="language-javascript">// 「たこ焼き（li）」というパーツを1つ作る
 const takoyaki = document.createElement("li");
 
 // 中身の文字を入れる
-takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き 🐙";
+takoyaki.textContent = "たこ焼き 🐙";
 
 </code></pre>
 <hr>
@@ -3366,7 +3370,7 @@ takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&g
 <h4 id="appendchild新しい要素"><a class="header" href="#appendchild新しい要素"><strong><code>appendChild(新しい要素)</code></strong></a></h4>
 <p>親要素の**「一番最後の子」**として追加します。一番よく<ruby>使<rt>つか</rt></ruby>います。</p>
 <pre><code class="language-javascript">const list = document.getElementById("food-list");
-list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;きが登場！
+list.appendChild(takoyaki); // リストの最後にたこ焼きが登場！
 
 </code></pre>
 <h4 id="insertbefore新しい要素-目印にする要素"><a class="header" href="#insertbefore新しい要素-目印にする要素"><strong><code>insertBefore(新しい要素, 目印にする要素)</code></strong></a></h4>
@@ -3377,7 +3381,7 @@ list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&
 <h4 id="要素remove"><a class="header" href="#要素remove"><strong><code>要素.remove()</code></strong></a></h4>
 <p>その要素を自分自身で<ruby>消去<rt>しょうきょ</rt></ruby>します。とても簡単です！</p>
 <pre><code class="language-javascript">const badApple = document.getElementById("rotten");
-badApple.remove(); // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;から消える
+badApple.remove(); // 画面（がめん）から消える
 
 </code></pre>
 <h4 id="親要素removechild子要素"><a class="header" href="#親要素removechild子要素"><strong><code>親要素.removeChild(子要素)</code></strong></a></h4>
@@ -3521,8 +3525,8 @@ btn.addEventListener("click", function() {
 <p><ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>：<ruby>入力<rt>にゅうりょく</rt></ruby>された文字、または <code>null</code>（キャンセル時）</p>
 </li>
 </ul>
-<pre><code class="language-javascript">if (confirm("&lt;ruby&gt;本当&lt;rt&gt;ほんとう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;消去&lt;rt&gt;しょうきょ&lt;/rt&gt;&lt;/ruby&gt;しますか？")) {
-    const name = prompt("確認のため、お名前を&lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;してください");
+<pre><code class="language-javascript">if (confirm("本当（ほんとう）に消去（しょうきょ）しますか？")) {
+    const name = prompt("確認のため、お名前を入力（にゅうりょく）してください");
     alert(name + "さん、削除を受け付けました");
 }
 
@@ -3615,7 +3619,7 @@ setTimeout(function() {
 <li><strong>イメージ：</strong> 目覚まし時計の「スヌーズ機能」や、心臓のドクドクというリズム。</li>
 <li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>setInterval(&lt;ruby&gt;繰&lt;rt&gt;く&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;返&lt;rt&gt;かえ&lt;/rt&gt;&lt;/ruby&gt;したいプログラム, 間隔ms)</code></li>
 </ul>
-<pre><code class="language-javascript">// 1秒（1000ms）ごとに「ピッ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
+<pre><code class="language-javascript">// 1秒（1000ms）ごとに「ピッ！」と表示（ひょうじ）する
 setInterval(function() {
   console.log("ピッ！ ⏰");
 }, 1000);

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1ac585b5.js";
+            window.path_to_searchindex_js = "searchindex-7160240e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -305,7 +305,7 @@ CSSと同じ<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<co
 <pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
 const message = document.getElementById("greeting");
 
-// 2. その中身を&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;換&lt;rt&gt;かえ&lt;/rt&gt;&lt;/ruby&gt;える
+// 2. その中身を書（か）き換（かえ）える
 message.textContent = "こんにちは、日本へようこそ！";
 
 // 3. スタイル（色）も変えちゃう
@@ -505,7 +505,7 @@ function refreshPage() {
 <p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">const box = document.querySelector(".box");
 
-// 1. &lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;をオレンジ色にする
+// 1. 背景（はいけい）をオレンジ色にする
 box.style.backgroundColor = "orange";
 
 // 2. 文字を白くして、大きくする
@@ -749,10 +749,10 @@ URLの「http:」の部分や、「ドメイン名」の部分だけを<ruby>個
 <hr>
 <h3 id="4-実際に動かしてみよう-4"><a class="header" href="#4-実際に動かしてみよう-4">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「危ないリンクをチェックする」というイメージでコードを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. ページ内の最初のリンクを&lt;ruby&gt;取得&lt;rt&gt;しゅとく&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. ページ内の最初のリンクを取得（しゅとく）
 const link = document.links[0];
 
-// 2. リンク先が「https」で始まっているかチェック（&lt;ruby&gt;正規&lt;rt&gt;せいき&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;表現&lt;rt&gt;ひょうげん&lt;/rt&gt;&lt;/ruby&gt;の ^ を活用！）
+// 2. リンク先が「https」で始まっているかチェック（正規（せいき）表現（ひょうげん）の ^ を活用！）
 if (/^https:/.test(link.protocol)) {
   console.log("このリンクは安全です。");
 } else {
@@ -765,6 +765,10 @@ if (/^https:/.test(link.protocol)) {
 link.target = "_blank";
 
 </code></pre>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>正規表現は付録参照</p>
+</blockquote>
 <hr>
 <h3 id="5-留学生へのアドバイスlocationとの違い"><a class="header" href="#5-留学生へのアドバイスlocationとの違い">5. 留学生へのアドバイス：Locationとの違い</a></h3>
 <p>「<code>window.location</code> と何が違うの？」と聞かれたら、こう答えてあげてください。</p>
@@ -919,7 +923,7 @@ document.cookie = "username=Taro; max-age=604800";
 <hr>
 <h3 id="4-実際に動かしてみよう-6"><a class="header" href="#4-実際に動かしてみよう-6">4. 実際に動かしてみよう！</a></h3>
 <p>留学生に「名前を覚えるプログラム」のイメージを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. クッキーをセットする&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. クッキーをセットする関数（かんすう）
 function saveName() {
   const name = prompt("あなたのお名前は？");
   // 1日後まで保存
@@ -982,7 +986,7 @@ function greet() {
 イベントが発生したとき、JavaScriptは自<ruby>動的<rt>どうてき</rt></ruby>に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
 <pre><code class="language-javascript">// ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
-  // この「event」という&lt;ruby&gt;引数&lt;rt&gt;ひきすう&lt;/rt&gt;&lt;/ruby&gt;が、Eventオブジェクト（報告書）です
+  // この「event」という引数（ひきすう）が、Eventオブジェクト（報告書）です
   console.log(event); 
 });
 

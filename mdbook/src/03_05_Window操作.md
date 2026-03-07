@@ -28,8 +28,8 @@
 
 
 ```javascript
-if (confirm("<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>消去<rt>しょうきょ</rt></ruby>しますか？")) {
-    const name = prompt("確認のため、お名前を<ruby>入力<rt>にゅうりょく</rt></ruby>してください");
+if (confirm("本当（ほんとう）に消去（しょうきょ）しますか？")) {
+    const name = prompt("確認のため、お名前を入力（にゅうりょく）してください");
     alert(name + "さん、削除を受け付けました");
 }
 
@@ -147,7 +147,7 @@ setTimeout(function() {
 * **<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：** `setInterval(<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>したいプログラム, 間隔ms)`
 
 ```javascript
-// 1秒（1000ms）ごとに「ピッ！」と<ruby>表示<rt>ひょうじ</rt></ruby>する
+// 1秒（1000ms）ごとに「ピッ！」と表示（ひょうじ）する
 setInterval(function() {
   console.log("ピッ！ ⏰");
 }, 1000);

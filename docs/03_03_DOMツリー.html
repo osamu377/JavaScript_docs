@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1ac585b5.js";
+            window.path_to_searchindex_js = "searchindex-7160240e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -268,17 +268,17 @@ JavaScriptはこの木を自由に育てるための道具だよ。木の関係�
 <hr>
 <h3 id="4-フォームの中の入力にゅうりょくパーツの操作"><a class="header" href="#4-フォームの中の入力にゅうりょくパーツの操作">4. フォームの中の「<ruby>入力<rt>にゅうりょく</rt></ruby>パーツ」の操作</a></h3>
 <p>留学生が一番やりたいのは、**「ユーザーが書いた文字を読み取ること」**です。これは、各パーツの <strong><code>value</code>（バリュー）</strong> プロパティを<ruby>使<rt>つか</rt></ruby>います。</p>
-<pre><code class="language-javascript">// 1. フォーム全体を&lt;ruby&gt;取得&lt;rt&gt;しゅとく&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 1. フォーム全体を取得（しゅとく）
 const myForm = document.forms["loginForm"];
 
 // 2. ユーザーが書いた「ユーザー名」を取り出す
 const userName = myForm.elements["uName"].value;
 
-// 3. &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する前にチェックする
+// 3. 送信（そうしん）する前にチェックする
 if (userName === "") {
   alert("名前を書いてください！");
 } else {
-  myForm.submit(); // 問題なければ&lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;！
+  myForm.submit(); // 問題なければ送信（そうしん）！
 }
 
 </code></pre>
@@ -291,9 +291,9 @@ if (userName === "") {
 <pre><code class="language-javascript">myForm.onsubmit = function() {
   if (this.elements["email"].value === "") {
     alert("メールアドレスが必要です！");
-    return false; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;を中止（キャンセル）する
+    return false; // 送信（そうしん）を中止（キャンセル）する
   }
-  return true; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する
+  return true; // 送信（そうしん）する
 };
 
 </code></pre>
@@ -373,10 +373,10 @@ if (userName === "") {
 <pre><code class="language-javascript">// 1. &lt;img&gt;タグ（Elementオブジェクト）を見つける
 const myImage = document.querySelector("#profile-pic");
 
-// 2. setAttribute で&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;のURLを変える
+// 2. setAttribute で画像（がぞう）のURLを変える
 myImage.setAttribute("src", "new-image.jpg");
 
-// 3. classList でデザインを&lt;ruby&gt;切&lt;rt&gt;きり&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;替&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;える
+// 3. classList でデザインを切（きり）り替（か）える
 myImage.classList.add("rounded-frame");
 
 </code></pre>
@@ -424,10 +424,10 @@ myImage.classList.add("rounded-frame");
 <hr>
 <h3 id="2-実際にたどって操作するコード"><a class="header" href="#2-実際にたどって操作するコード">2. 実際にたどって操作するコード</a></h3>
 <p><ruby>例<rt>たと</rt></ruby>えば、リスト（<code>&lt;ul&gt;</code>）の中の「2番目の項目」からスタートして、周りを操作してみましょう。</p>
-<pre><code class="language-javascript">// 1. まず、&lt;ruby&gt;真&lt;rt&gt;しん&lt;/rt&gt;&lt;/ruby&gt;ん中の「2番目」を捕まえる
+<pre><code class="language-javascript">// 1. まず、真ん中（まんなか）の「2番目」を捕まえる
 const centerItem = document.getElementById("item2");
 
-// 2. 「親」の&lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;色を変える（リスト全体がオレンジに！）
+// 2. 「親」の背景（はいけい）色を変える（リスト全体がオレンジに！）
 centerItem.parentNode.style.backgroundColor = "orange";
 
 // 3. 「前の兄弟（1番目）」の文字を大きくする
@@ -494,11 +494,11 @@ list.appendChild(newLi);
 <blockquote>
 <p><strong>注意：</strong> この時点では、まだ「メモリの中」にあるだけで、<strong><ruby>画面<rt>がめん</rt></ruby>には見えません。</strong></p>
 </blockquote>
-<pre><code class="language-javascript">// 「たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き（li）」というパーツを1つ作る
+<pre><code class="language-javascript">// 「たこ焼き（li）」というパーツを1つ作る
 const takoyaki = document.createElement("li");
 
 // 中身の文字を入れる
-takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き 🐙";
+takoyaki.textContent = "たこ焼き 🐙";
 
 </code></pre>
 <hr>
@@ -507,7 +507,7 @@ takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&g
 <h4 id="appendchild新しい要素"><a class="header" href="#appendchild新しい要素"><strong><code>appendChild(新しい要素)</code></strong></a></h4>
 <p>親要素の**「一番最後の子」**として追加します。一番よく<ruby>使<rt>つか</rt></ruby>います。</p>
 <pre><code class="language-javascript">const list = document.getElementById("food-list");
-list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;きが登場！
+list.appendChild(takoyaki); // リストの最後にたこ焼きが登場！
 
 </code></pre>
 <h4 id="insertbefore新しい要素-目印にする要素"><a class="header" href="#insertbefore新しい要素-目印にする要素"><strong><code>insertBefore(新しい要素, 目印にする要素)</code></strong></a></h4>
@@ -518,7 +518,7 @@ list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&
 <h4 id="要素remove"><a class="header" href="#要素remove"><strong><code>要素.remove()</code></strong></a></h4>
 <p>その要素を自分自身で<ruby>消去<rt>しょうきょ</rt></ruby>します。とても簡単です！</p>
 <pre><code class="language-javascript">const badApple = document.getElementById("rotten");
-badApple.remove(); // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;から消える
+badApple.remove(); // 画面（がめん）から消える
 
 </code></pre>
 <h4 id="親要素removechild子要素"><a class="header" href="#親要素removechild子要素"><strong><code>親要素.removeChild(子要素)</code></strong></a></h4>
