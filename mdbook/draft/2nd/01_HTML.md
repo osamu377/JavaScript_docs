@@ -289,7 +289,7 @@ Webページには「ふだんの状態」だけでなく、「マウスが乗�
 最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。
 
 * CSSの :hover： マウスが乗ったときに、色をサッと変えることができます。
-* JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と離れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。
+* JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と<ruby>離<rt>はな</rt></ruby>れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。
 
 <ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。
 
@@ -337,7 +337,7 @@ document.getElementById("title").style.color = "red";
 
 Web制作（せいさく）では、HTMLで「骨組み」を作り、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>」を整え、JavaScriptで「<ruby>動<rt>うご</rt></ruby>き」を加えます。これらが<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わさって、素晴らしいWebサイトが完成します。
 
-プログラミングの学習は、一歩ずつ進めば大丈夫です。
+プログラミングの学習は、<ruby>一歩<rt>いっぽ</rt></ruby>ずつ進めば大丈夫です。
 
 **HTML基礎のまとめ**
 

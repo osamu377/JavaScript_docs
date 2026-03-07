@@ -94,7 +94,7 @@ JavaScriptを学習（がくしゅう）すると、このデータの<ruby>送�
 * テーブルは、<table>の中に<tr>、その中に<th>や<td>を書く構造（こうぞう）です。
 * データの<ruby>送信<rt>そうしん</rt></ruby>（そうしん）には、GETとPOSTの2つの方法（ほうほう）があります。
 
-HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための<ruby>近道<rt>ちかみち</rt></ruby>（ちかみち）です。一歩（いっぽ）ずつ頑張（がんば）りましょう！
+HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための<ruby>近道<rt>ちかみち</rt></ruby>（ちかみち）です。<ruby>一歩<rt>いっぽ</rt></ruby>（いっぽ）ずつ頑張（がんば）りましょう！
 
 JavaScript学習者のためのCSS基本ガイド：Webページのデザインを学ぼう
 
@@ -213,7 +213,7 @@ Webページには「ふだんの状態」だけでなく、「マウスが乗�
 最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。
 
 * CSSの :hover： マウスが乗ったときに、色をサッと変えることができます。
-* JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と離れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。
+* JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と<ruby>離<rt>はな</rt></ruby>れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。
 
 <ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。
 
@@ -266,6 +266,6 @@ Web制作（せいさく）では、HTMLで「骨組み」を作り、CSSで「<
 * [ ] クラス： 名前をつけてグループ化し、JavaScriptからも操作しやすくする。
 * [ ] <ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス： :hover でユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>させる。
 
-プログラミングの学習は、一歩ずつ進めば大丈夫です。CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」を大切にしてください。
+プログラミングの学習は、<ruby>一歩<rt>いっぽ</rt></ruby>ずつ進めば大丈夫です。CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」を大切にしてください。
 
 皆さんの学習を心から応援（おうえん）しています。JavaScriptの世界へ、自信を持って進みましょう！
