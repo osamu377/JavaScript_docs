@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -183,13 +183,13 @@
 <h2 id="ii-配列はいれつの応用とforeach"><a class="header" href="#ii-配列はいれつの応用とforeach">II. <ruby>配列<rt>はいれつ</rt></ruby>の応用とforEach</a></h2>
 <p>大量のデータを<ruby>効率<rt>こうりつ</rt></ruby>よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
 <h3 id="1-foreachとコールバック関数かんすう"><a class="header" href="#1-foreachとコールバック関数かんすう">1. forEachとコールバック<ruby>関数<rt>かんすう</rt></ruby></a></h3>
-<p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「自動販売機（じどうはんばいき）」のようなものだと学びましたね。ボタン（呼び出し）を押すと、中に入れた処理が実行されて結果が出てきます。</p>
+<p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」のようなものだと学びましたね。ボタンを押すと、中に入れた処理が実行されて結果が出てきます。</p>
 <p>forEach を使うときは、この<ruby>関数<rt>かんすう</rt></ruby>をさらに便利に使います。</p>
 <ul>
 <li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
 </ul>
-<h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: 合計（ごうけい）を計算する</a></h3>
-<p>このプログラムは、リストの中にある数字を全部（ぜんぶ）足（た）して、最後（さいご）に答えを出します。</p>
+<h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: <ruby>合計<rt>ごうけい</rt></ruby>を計算する</a></h3>
+<p>このプログラムは、リストの中にある数字を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>足<rt>た</rt></ruby>して、<ruby>最後<rt>さいご</rt></ruby>に答えを出します。</p>
 <pre><code class="language-javascript">// 1. 数字の「&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;」を作ります。
 const numbers = [10, 20, 30, 40];
 
@@ -207,18 +207,18 @@ numbers.forEach((num) =&gt; {
 console.log("ぜんぶの合計は " + total + " です！");
 
 </code></pre>
-<h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの動（うご）きを解説（かいせつ）</a></h3>
+<h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの<ruby>動<rt>うご</rt></ruby>きを<ruby>解説<rt>かいせつ</rt></ruby></a></h3>
 <h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
-<p>これは、計算（けいさん）の結果（けっか）を入れておくための**「貯金箱（ちょきんばこ）」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h4 id="②-コールバック関数かんすうの仕事しごと"><a class="header" href="#②-コールバック関数かんすうの仕事しごと">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事（しごと）</a></h4>
-<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お願（ねが）いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
+<p>これは、<ruby>計算<rt>けいさん</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を入れておくための**「<ruby>貯金箱<rt>ちょきんばこ</rt></ruby>」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
+<h4 id="②-コールバック関数かんすうの仕事"><a class="header" href="#②-コールバック関数かんすうの仕事">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事</a></h4>
+<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お<ruby>願<rt>ねが</rt></ruby>いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
 <ul>
 <li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
-<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を渡（わた）す。</li>
-<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と実行（じっこう）する。</li>
+<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を<ruby>渡<rt>わた</rt></ruby>す。</li>
+<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と<ruby>実行<rt>じっこう</rt></ruby>する。</li>
 <li>次の <code>20</code> でも同じことをする。</li>
 </ul>
-<p>これを繰り返（くりかえ）すことで、貯金箱の中身がどんどん増（ふ）えていきます。</p>
+<p>これを<ruby>繰り返<rt>くりかえ</rt></ruby>すことで、貯金箱の中身がどんどん増えていきます。</p>
 <p>So What?（なぜ大切なの？）</p>
 <div class="table-wrapper">
 <table>
@@ -286,6 +286,22 @@ console.log("ぜんぶの合計は " + total + " です！");
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

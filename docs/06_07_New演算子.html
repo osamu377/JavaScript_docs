@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -177,12 +177,12 @@
                         <h1 id="new演算えんざん子"><a class="header" href="#new演算えんざん子">new<ruby>演算<rt>えんざん</rt></ruby>子</a></h1>
 <p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
 これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す<ruby>魔法<rt>まほう</rt></ruby>の<ruby>呪文<rt>じゅもん</rt></ruby>**です。</p>
-<p>留学生の方には、**「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」**に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ納得（なっとく）してもらえます！</p>
+<p>留学生の方には、<strong>「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ<ruby>納得<rt>なっとく</rt></ruby>してもらえます！</p>
 <hr>
-<h2 id="i-new-は実体じったいじったいじったいを作るもの"><a class="header" href="#i-new-は実体じったいじったいじったいを作るもの">I. <code>new</code> は「<ruby><ruby>実体<rt>じったい</rt></ruby><rt>じったい</rt></ruby>（じったい）を作る」もの</a></h2>
-<p>プログラミングの世界には、**「設計図（せきずいず）」<strong>と、その設計図から作られた</strong>「本物」**の2つがあります。</p>
+<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「<ruby>実体<rt>じったい</rt></ruby>を作る」もの</a></h2>
+<p>プログラミングの世界には、<strong>「<ruby>設計図<rt>せっけいず</rt></ruby>」</strong> と、その設計図から作られた <strong>「本物」</strong> の2つがあります。</p>
 <ul>
-<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「鉄板（てっぱん）」です。これだけでは食べられません。</li>
+<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「<ruby>鉄板<rt>てっぱん</rt></ruby>」です。これだけでは食べられません。</li>
 <li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい<ruby>焼<rt>や</rt></ruby>き」です。</li>
 </ul>
 <pre><code class="language-javascript">// Date という「時計の設計図」を使って、
@@ -212,15 +212,15 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
 </code></pre>
 <ul>
 <li><code>User</code> はただの設計図です。</li>
-<li><code>new User("マリア")</code> と書いた瞬間に、**メモリの中に「マリア」という<ruby><ruby>実体<rt>じったい</rt></ruby><rt>じったい</rt></ruby>**が誕生します。</li>
+<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という<ruby>実体<rt>じったい</rt></ruby></strong> が誕生します。</li>
 </ul>
 <hr>
 <h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
 <p>留学生に教えるとき、<code>new</code> が<ruby>裏側<rt>うらがわ</rt></ruby>でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
 <ol>
-<li><strong>新しい空（から）の箱</strong>を作る。</li>
-<li>その箱に、名前や中身を<strong>コピー</strong>して入れる。</li>
-<li>完成した箱を**「はい、どうぞ！」と渡す（return）**。</li>
+<li><strong>新しい空（から）の箱</strong> を作る。</li>
+<li>その箱に、名前や中身を <strong>コピー</strong> して入れる。</li>
+<li>完成した箱を <strong>「はい、どうぞ！」と渡す（return）</strong>。</li>
 </ol>
 <hr>
 <h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
@@ -251,7 +251,7 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
 <blockquote class="blockquote-tag blockquote-tag-important">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
 <p><strong>留学生へのアドバイス：</strong>
-「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong>んだよ！」と教えてあげてください。</p>
+「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong> んだよ！」と教えてあげてください。</p>
 </blockquote>
 <hr>
 <h2 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h2>
@@ -311,6 +311,22 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

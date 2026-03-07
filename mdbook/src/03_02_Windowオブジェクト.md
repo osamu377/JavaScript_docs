@@ -264,7 +264,7 @@ message = document.querySelector("p")
 <ruby>例<rt>れい</rt></ruby>：`https://example.com:8080/search?q=js#result` というURLの場合
 
 * **`href`**
-URLの全部（ぜんぶ）です。
+URLの<ruby>全部<rt>ぜんぶ</rt></ruby>です。
 * `console.log(location.href);`
 
 
@@ -715,7 +715,7 @@ Anchorオブジェクト<ruby>専用<rt>せんよう</rt></ruby>の特別なメ�
 // 1. ページ内の最初のリンクを<ruby>取得<rt>しゅとく</rt></ruby>
 const link = document.links[0];
 
-// 2. リンク先が「https」で始まっているかチェック（正規表現の ^ を活用！）
+// 2. リンク先が「https」で始まっているかチェック（<ruby>正規<rt>せいき</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>の ^ を活用！）
 if (/^https:/.test(link.protocol)) {
   console.log("このリンクは安全です。");
 } else {
