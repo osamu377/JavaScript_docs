@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -175,9 +175,9 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="ブラウザのオブジェクト"><a class="header" href="#ブラウザのオブジェクト">ブラウザのオブジェクト</a></h1>
-<p><strong>初心者のためのJavaScript：ブラウザを動かす「オブジェクト」の仕組み</strong></p>
-<p>みなさん、こんにちは！IT専門学校（せんもんがっこう）でプログラミングを教えているシニア講師（こうし）です。留学生（りゅうがくせい）のみなさんも、これからJavaScriptを使ってウェブサイトに「動き」をつける方法を楽しく学んでいきましょう。</p>
-<p>プログラミングは難（むずか）しく見えますが、実は <strong>「ブラウザという家（いえ）」の中にある「道具（どうぐ）」の使い方</strong>を覚（おぼ）えるだけなんです。今日は、その道具である「オブジェクト」について、プロの視点（してん）からやさしく解説（かいせつ）します。</p>
+<p><strong><ruby>初心者<rt>しょしんしゃ</rt></ruby>のためのJavaScript：ブラウザを動かす「オブジェクト」の<ruby>仕組<rt>しく</rt></ruby>み</strong></p>
+<p>みなさん、こんにちは！IT専門学校（せんもんがっこう）でプログラミングを教えているシニア講師（こうし）です。<ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさんも、これからJavaScriptを使ってウェブサイトに「<ruby>動<rt>うご</rt></ruby>き」をつける方法を楽しく学んでいきましょう。</p>
+<p>プログラミングは難（むずか）しく見えますが、実は <strong>「ブラウザという家」の中にある「道具（どうぐ）」の使い方</strong>を覚（おぼ）えるだけなんです。今日は、その道具である「オブジェクト」について、プロの<ruby>視点<rt>してん</rt></ruby>（してん）からやさしく<ruby>解説<rt>かいせつ</rt></ruby>します。</p>
 <h2 id="i-javascriptは誰が何をするかを指示するマニュアル"><a class="header" href="#i-javascriptは誰が何をするかを指示するマニュアル">I. JavaScriptは「誰が」「何をするか」を指示するマニュアル</a></h2>
 <p>ここでもう一度、最初に説明したイメージを思い出してください。</p>
 <ul>
@@ -187,7 +187,7 @@
 <p>マニュアルですから、「みんなで協力して、これをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に、細かく書く必要があります。そうしないと、みんなが同じ仕事をしようとしたり、大事な仕事を誰もしなかったり、ということが起こります。</p>
 <p>ここでは、 <strong>「誰が」（つまり、どのオブジェクトが）その作業をするのか</strong> を、間違いなく伝えるために、 <strong>JavaScriptがどのようにそのオブジェクトを見つけるのか</strong> 、その方法を説明します。</p>
 <h3 id="1-bomdomツリーはブラウザが作った地図"><a class="header" href="#1-bomdomツリーはブラウザが作った地図">1. BOM/DOMツリーは「ブラウザが作った地図」</a></h3>
-<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、Webページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『段落<code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を入力する『入力ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
+<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、Webページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『<ruby>段落<rt>だんらく</rt></ruby><code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する『<ruby>入力<rt>にゅうりょく</rt></ruby>ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
 <p>ブラウザは、HTMLファイルを受け取ると、中身を読み取って、その指示に従って <strong>オブジェクト</strong> たちを作り、それらをコンピュータが扱いやすい <strong>「木（Tree）」</strong> の形に並べ替えます。これを <strong>DOM（Document Object Model）ツリー</strong> と呼びます。</p>
 <p>またブラウザ自身も自分の持っている機能をツリーの形で整理しています。これを <strong>BOM（Browser Object Model）</strong> と呼びます。</p>
 <p><strong>ブラウザ世界の構造</strong></p>
@@ -200,7 +200,7 @@
 <ul>
 <li>html
 <ul>
-<li>body (ページの本文)</li>
+<li>body (ページの<ruby>本文<rt>ほんぶん</rt></ruby>)</li>
 </ul>
 </li>
 </ul>
@@ -211,13 +211,13 @@
 <h3 id="2-ツリーの家族かぞく関係"><a class="header" href="#2-ツリーの家族かぞく関係">2. ツリーの「家族（かぞく）」関係</a></h3>
 <p>DOMツリーの中では、それぞれの要素（Element）を <strong>「ノード（Node）」</strong> と呼び、家族のような名前で関係を表します。</p>
 <ul>
-<li><strong>Document（ルート）：</strong> 木の「一番下の根っこ」または「一番上の先祖」。すべての始まりです。</li>
-<li><strong>Parent（親）：</strong> ある要素を包んでいる外側のタグ。</li>
-<li><strong>Child（子）：</strong> タグの中に入っている内側のタグ。</li>
-<li><strong>Sibling（兄弟）：</strong> 同じ親の中に並んでいるタグ同士。</li>
+<li><strong>Document（ルート）：</strong> 木の「一番下の<ruby>根<rt>ね</rt></ruby>っこ」または「一番上の先祖」。すべての始まりです。</li>
+<li><strong>Parent（親）：</strong> ある要素を包んでいる<ruby>外側<rt>そとがわ</rt></ruby>のタグ。</li>
+<li><strong>Child（子）：</strong> タグの中に入っている<ruby>内側<rt>うちがわ</rt></ruby>のタグ。</li>
+<li><strong>Sibling（兄弟）：</strong> 同じ親の中に並んでいるタグ<ruby>同士<rt>どうし</rt></ruby>。</li>
 </ul>
 <h3 id="3-javascriptの仕事地図をたどって操作する"><a class="header" href="#3-javascriptの仕事地図をたどって操作する">3. JavaScriptの仕事：地図をたどって操作する</a></h3>
-<p>JavaScriptはこの「地図」を使って、オブジェクトの場所を探し出し、命令（めいれい）を出します。</p>
+<p>JavaScriptはこの「地図」を使って、オブジェクトの場所を探し出し、<ruby>命令<rt>めいれい</rt></ruby>を出します。</p>
 <ol>
 <li><strong>見つける（Select）</strong>
 「IDが ‘btn’ のボタン（子）を探して！」</li>
@@ -228,8 +228,8 @@
 </ol>
 <h3 id="4-留学生へのアドバイスなぜツリーと呼ぶの"><a class="header" href="#4-留学生へのアドバイスなぜツリーと呼ぶの">4. 留学生へのアドバイス：なぜ「ツリー」と呼ぶの？</a></h3>
 <blockquote>
-<p>「HTMLのコードはただのテキストだけど、ブラウザの中では <strong>『生きている木』</strong> のように枝分かれしているんだ。
-枝（えだ）の先にある葉っぱ（文字や画像）を動かしたいときは、幹（みき）から順番にたどっていくイメージを持つと、プログラミングがすごく分かりやすくなるよ！」</p>
+<p>「HTMLのコードはただのテキストだけど、ブラウザの中では <strong>『生きている木』</strong> のように<ruby>枝分<rt>えだわ</rt></ruby>かれしているんだ。
+枝（えだ）の先にある<ruby>葉<rt>は</rt></ruby>っぱ（文字や<ruby>画像<rt>がぞう</rt></ruby>）を動かしたいときは、<ruby>幹<rt>かみき</rt></ruby>から順番にたどっていくイメージを持つと、プログラミングがすごく分かりやすくなるよ！」</p>
 </blockquote>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
@@ -246,25 +246,25 @@
 </div>
 <p>まずは、この家の「家主（やぬし）」であり、すべてを管理（かんり）している「Windowオブジェクト」から見ていきましょう。</p>
 <hr>
-<h2 id="ii-すべての基点windowオブジェクト"><a class="header" href="#ii-すべての基点windowオブジェクト">II. すべての基点：Windowオブジェクト</a></h2>
-<p>ブラウザのタブを開（ひら）いたとき、その画面全体（がめんぜんたい）を管理しているのがWindow（ウィンドウ）オブジェクトです。これはJavaScriptの世界（せかい）の「王様（おうさま）」です。</p>
+<h2 id="ii-すべての基点きてんwindowオブジェクト"><a class="header" href="#ii-すべての基点きてんwindowオブジェクト">II. すべての<ruby>基点<rt>きてん</rt></ruby>：Windowオブジェクト</a></h2>
+<p>ブラウザのタブを開（ひら）いたとき、その<ruby>画面<rt>がめん</rt></ruby>全体（がめんぜんたい）を管理しているのがWindow（ウィンドウ）オブジェクトです。これはJavaScriptの世界（せかい）の「王様（おうさま）」です。</p>
 <ul>
-<li>階層（かいそう：重なりの順番）のイメージ： Windowオブジェクトはすべての「ルート（根っこ）」です。Windowという大きな箱（はこ）の中に、この後説明するDocument（書類）やLocation（場所）など、すべての道具が入っています。</li>
+<li><ruby>階層<rt>かいそう</rt></ruby>（かいそう：重なりの順番）のイメージ： Windowオブジェクトはすべての「ルート（<ruby>根<rt>ね</rt></ruby>っこ）」です。Windowという大きな箱（はこ）の中に、この後説明するDocument（書類）やLocation（場所）など、すべての道具が入っています。</li>
 <li>王様のインパクト： もし王様（Window）がいなくなると、その国（タブ）にあるすべてのデータや書類（Document）も消えてしまいます。タブを閉じるとページの情報が消えるのはそのためです。</li>
 <li>Windowの便利な機能（きのう）： alert() や prompt() などがあります。
 <ul>
-<li>alert(“こんにちは！”)：画面にメッセージを出す「拡声器（かくせいき：大きな声を出す機械）」のようなものです。</li>
-<li>prompt(“お名前は？”)：ユーザーに文字を入力してもらう「アンケート用紙」のような役割（やくわり）です。</li>
+<li>alert(“こんにちは！”)：<ruby>画面<rt>がめん</rt></ruby>にメッセージを出す「<ruby>拡声器<rt>かくせいき</rt></ruby>（かくせいき：大きな声を出す機械）」のようなものです。</li>
+<li>prompt(“お名前は？”)：ユーザーに文字を<ruby>入力<rt>にゅうりょく</rt></ruby>してもらう「アンケート用紙」のような役割（やくわり）です。</li>
 </ul>
 </li>
 </ul>
-<p>次は、王様が持っている大切な「書類」、つまりページの中身を指す「Document」についてお話しします。</p>
+<p>次は、王様が持っている大切な「書類」、つまりページの中身を指す「Document」についてお<ruby>話<rt>はなし</rt></ruby>しします。</p>
 <hr>
-<h2 id="iii-ウェブページを操るdomとdocumentオブジェクト"><a class="header" href="#iii-ウェブページを操るdomとdocumentオブジェクト">III. ウェブページを操る：DOMとDocumentオブジェクト</a></h2>
-<p>ウェブページに表示（ひょうじ）されている文字や画像（がぞう）そのものを操作（そうさ）するのがDocument（ドキュメント）オブジェクトです。</p>
-<p>ここで大切なのが <strong>DOM（Document Object Model）です。HTMLの構造（こうぞう）は、枝分かれした「木（ツリー）」</strong> のような親子関係（おやこかんけい）になっています。これを「DOMツリー」と呼びます。</p>
-<p>DOMツリーの中から、操作したい「特定のパーツ」を見つけることを、プログラミングでは <strong>「要素の取得（しゅとく）」</strong> や <strong>「セレクタ」</strong> と呼びます。</p>
-<p>留学生の方には、<strong>「たくさんの家が並んでいる街の中から、特定の家を探し出す方法」</strong> だと教えてあげてください。住所（ID）で探す方法もあれば、家の色（クラス）で探す方法もあります。</p>
+<h2 id="iii-ウェブページを操あやつるdomとdocumentオブジェクト"><a class="header" href="#iii-ウェブページを操あやつるdomとdocumentオブジェクト">III. ウェブページを<ruby>操<rt>あやつ</rt></ruby>る：DOMとDocumentオブジェクト</a></h2>
+<p>ウェブページに<ruby>表示<rt>ひょうじ</rt></ruby>されている文字や<ruby>画像<rt>がぞう</rt></ruby>そのものを操作（そうさ）するのがDocument（ドキュメント）オブジェクトです。</p>
+<p>ここで大切なのが <strong>DOM（Document Object Model）です。HTMLの<ruby>構造<rt>こうぞう</rt></ruby>は、<ruby>枝分<rt>えだわ</rt></ruby>かれした「木（ツリー）」</strong> のような<ruby>親子<rt>おやこ</rt></ruby>関係（おやこかんけい）になっています。これを「DOMツリー」と呼びます。</p>
+<p>DOMツリーの中から、操作したい「特定のパーツ」を見つけることを、プログラミングでは <strong>「要素の<ruby>取得<rt>しゅとく</rt></ruby>（しゅとく）」</strong> や <strong>「セレクタ」</strong> と呼びます。</p>
+<p>留学生の方には、<strong>「たくさんの家が並んでいる街の中から、特定の家を<ruby>探<rt>さが</rt></ruby>し<ruby>出<rt>だ</rt></ruby>す方法」</strong> だと教えてあげてください。住所（ID）で探す方法もあれば、家の色（クラス）で探す方法もあります。</p>
 <hr>
 <h3 id="1-よく使う4つの探し方"><a class="header" href="#1-よく使う4つの探し方">1. よく使う4つの「探し方」</a></h3>
 <p>JavaScriptには、目的のオブジェクトを見つけるための代表的な命令が4つあります。</p>
@@ -278,21 +278,21 @@
 <p>同じ「クラス名」がついているものを、<strong>まとめて全部</strong>探します。</p>
 <ul>
 <li><strong>イメージ：</strong> 「赤い屋根の家を全部集めて！」とお願いする。</li>
-<li><strong>特徴：</strong> 複数の要素が「リスト（配列のような形）」で返ってきます。</li>
+<li><strong>特徴：</strong> 複数の要素が「リスト（<ruby>配列<rt>はいれつ</rt></ruby>のような形）」で返ってきます。</li>
 </ul>
 <h4 id="③-getelementsbytagname種類で探す"><a class="header" href="#③-getelementsbytagname種類で探す"><strong>③ <code>getElementsByTagName</code>（「種類」で探す）</strong></a></h4>
 <p><code>&lt;div&gt;</code> や <code>&lt;li&gt;</code> など、タグの種類で探します。</p>
 <ul>
 <li><strong>イメージ：</strong> 「この街にある『コンビニ』を全部探して！」</li>
 </ul>
-<h4 id="④-queryselector--queryselectorall最強の万能メガネ"><a class="header" href="#④-queryselector--queryselectorall最強の万能メガネ"><strong>④ <code>querySelector</code> / <code>querySelectorAll</code>（最強の「万能メガネ」）</strong></a></h4>
+<h4 id="④-queryselector--queryselectorall最強さいきょうの万能ばんのうメガネ"><a class="header" href="#④-queryselector--queryselectorall最強さいきょうの万能ばんのうメガネ"><strong>④ <code>querySelector</code> / <code>querySelectorAll</code>（<ruby>最強<rt>さいきょう</rt></ruby>の「<ruby>万能<rt>ばんのう</rt></ruby>メガネ」）</strong></a></h4>
 <p>CSSのセレクタ（<code>.class</code> や <code>#id</code>）を使って探します。最近のプログラミングで最もよく使われます。</p>
 <ul>
 <li><strong>イメージ：</strong> 「2番目の角にある、青いドアの家を探して」という複雑な指定ができます。</li>
 </ul>
 <hr>
 <h3 id="2-実際に動かしてみよう"><a class="header" href="#2-実際に動かしてみよう">2. 実際に動かしてみよう！</a></h3>
-<p>留学生に、コードの書き方の違いを見せてあげましょう。</p>
+<p>留学生に、コードの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の違いを見せてあげましょう。</p>
 <pre><code class="language-javascript">// 1. IDで探す（1つだけ見つかる）
 const title = document.getElementById("main-title");
 title.style.color = "red";
@@ -301,13 +301,13 @@ title.style.color = "red";
 const items = document.getElementsByClassName("menu-item");
 items[0].textContent = "最初のメニュー";
 
-// 3. 万能な探し方（CSSと同じ書き方）
+// 3. &lt;ruby&gt;万能&lt;rt&gt;ばんのう&lt;/rt&gt;&lt;/ruby&gt;な探し方（CSSと同じ&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;方&lt;rt&gt;かた&lt;/rt&gt;&lt;/ruby&gt;）
 const firstLink = document.querySelector("nav a"); // navの中の最初のaタグ
 
 </code></pre>
 <hr>
 <h3 id="3-留学生へのアドバイスhtmlcollection-に注意"><a class="header" href="#3-留学生へのアドバイスhtmlcollection-に注意">3. 留学生へのアドバイス：HTMLCollection に注意！</a></h3>
-<p>初心者がよくハマるポイントを、優しく教えてあげてください。</p>
+<p><ruby>初心者<rt>しょしんしゃ</rt></ruby>がよくハマるポイントを、優しく教えてあげてください。</p>
 <blockquote>
 <p>「<code>getElementsByClassName</code> や <code>querySelectorAll</code> を使ったときは、**『1人』ではなく『グループ（リスト）』**が返ってくるんだ。
 だから、1人だけに命令したいときは、<code>items[0]</code> のように <strong>『0番目の人！』</strong> と番号で呼んであげてね。これを忘れると、命令が届かないから気をつけて！」</p>
@@ -328,15 +328,15 @@ const firstLink = document.querySelector("nav a"); // navの中の最初のaタ�
 </table>
 </div>
 <hr>
-<h2 id="iv-まとめオブジェクトを自由に操るために"><a class="header" href="#iv-まとめオブジェクトを自由に操るために">IV. まとめ：オブジェクトを自由に操るために</a></h2>
+<h2 id="iv-まとめオブジェクトを自由に操あやつるために"><a class="header" href="#iv-まとめオブジェクトを自由に操あやつるために">IV. まとめ：オブジェクトを自由に<ruby>操<rt>あやつ</rt></ruby>るために</a></h2>
 <p>お疲れ様（おつかれさま）でした！今回学んだオブジェクトたちは、バラバラではなく、みんなで協力（きょうりょく）して一つのページを動かしています。</p>
 <p>いかがでしょうか？「どうやって特定のパーツを指名するか」が分かれば、DOM操作の半分はマスターしたも同然です！</p>
 <p>ターゲットが見つかったら、次は具体的にその「部品」をどう動かすかを見ていきましょう。</p>
 <p><strong>学習（がくしゅう）のアドバイス：</strong></p>
 <ol>
 <li>まずは「Window」の alert で遊ぶ。</li>
-<li>次に「Document」で文字を書き換える。</li>
-<li>そして「Event」でユーザーの動きに反応（はんのう）させる。</li>
+<li>次に「Document」で文字を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>える。</li>
+<li>そして「Event」でユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>させる。</li>
 </ol>
 <p>このステップで進めば、きっと上達（じょうたつ）します。エラーが出ても大丈夫、それは成長（せいちょう）のチャンスです。</p>
 <p>みなさんのプログラミング学習を、心（こころ）から応援（おうえん）しています！</p>
@@ -376,6 +376,22 @@ const firstLink = document.querySelector("nav a"); // navの中の最初のaタ�
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -175,9 +175,9 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="javascriptを始める前に"><a class="header" href="#javascriptを始める前に">JavaScriptを始める前に</a></h1>
-<p><strong>留学生のためのJavaScript学習ガイド：Webを動かす魔法（まほう）を学ぼう</strong></p>
-<p>留学生（りゅうがくせい）のみなさん、こんにちは！プログラミングの世界へようこそ。</p>
-<p>みなさんが毎日使っているスマートフォンやパソコンの画面。ボタンを押すとメニューが出てきたり、地図が動いたりしますね。これはすべて「JavaScript（ジャバスクリプト）」という言葉が命令（めいれい）を出して動かしています。</p>
+<p><strong>留学生のためのJavaScript学習ガイド：Webを動かす<ruby>魔法<rt>まほう</rt></ruby>を学ぼう</strong></p>
+<p><ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさん、こんにちは！プログラミングの世界へようこそ。</p>
+<p>みなさんが毎日使っているスマートフォンやパソコンの<ruby>画面<rt>がめん</rt></ruby>。ボタンを押すとメニューが出てきたり、地図が動いたりしますね。これはすべて「JavaScript（ジャバスクリプト）」という言葉が<ruby>命令<rt>めいれい</rt></ruby>を出して動かしています。</p>
 <p>このガイドでは、自分でWebページを動かせるようになるための基礎（きそ）をやさしく解説します。それがJavaScriptの基本だからです。</p>
 <blockquote>
 <p>(参考)
@@ -186,10 +186,10 @@
 <hr>
 <h2 id="i-私たちの舞台wwwワールドワイドウェブ"><a class="header" href="#i-私たちの舞台wwwワールドワイドウェブ">I. 私たちの舞台：WWW（ワールド・ワイド・ウェブ）</a></h2>
 <p>まず、javaScriptの活躍の舞台、WWW（ワールド・ワイド・ウェブ）とは何かについて、説明しましょう。</p>
-<p><strong>WWW（ワールド・ワイド・ウェブ）</strong> は、世界中のコンピュータが「クモの巣（Web）」のようにつながって、情報を共有（きょうゆう）する仕組みのことです。</p>
-<p>これを、<strong>「図書館（としょかん）」</strong> に例えて、やさしく説明しますね。</p>
+<p><strong>WWW（ワールド・ワイド・ウェブ）</strong> は、世界中のコンピュータが「クモの巣（Web）」のようにつながって、情報を<ruby>共有<rt>きょうゆう</rt></ruby>する<ruby>仕組<rt>しく</rt></ruby>みのことです。</p>
+<p>これを、<strong>「図書館（としょかん）」</strong> に<ruby>例<rt>たと</rt></ruby>えて、やさしく説明しますね。</p>
 <h3 id="1-3つの大切な道具"><a class="header" href="#1-3つの大切な道具">1. 3つの大切な「道具」</a></h3>
-<p>WWWを動かすために、3つの主役（しゅやく）がいます。</p>
+<p>WWWを動かすために、3つの<ruby>主役<rt>しゅやく</rt></ruby>がいます。</p>
 <ul>
 <li><strong>Webブラウザ（お客さん）</strong>
 ChromeやSafariなど、私たちがサイトを見るためのソフトです。「本を読みたい人」です。</li>
@@ -198,19 +198,19 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <li><strong>HTML（本の内容）</strong>
 ウェブサイトに書いてある文章や写真のデータです。これが「本」そのものです。</li>
 </ul>
-<h3 id="2-ウェブサイトが表示されるまでの4つのステップ"><a class="header" href="#2-ウェブサイトが表示されるまでの4つのステップ">2. ウェブサイトが表示されるまでの「4つのステップ」</a></h3>
-<p>あなたがブラウザでURLを入力してから、画面が出るまでの流れを見てみましょう。</p>
+<h3 id="2-ウェブサイトが表示ひょうじされるまでの4つのステップ"><a class="header" href="#2-ウェブサイトが表示ひょうじされるまでの4つのステップ">2. ウェブサイトが<ruby>表示<rt>ひょうじ</rt></ruby>されるまでの「4つのステップ」</a></h3>
+<p>あなたがブラウザでURLを<ruby>入力<rt>にゅうりょく</rt></ruby>してから、<ruby>画面<rt>がめん</rt></ruby>が出るまでの流れを見てみましょう。</p>
 <ol>
 <li><strong>リクエスト（注文）：</strong>
 あなたが「このページを見たい！」とURLをクリックします。これは図書館のスタッフに「あの本を貸してください」と頼むのと同じです。</li>
 <li><strong>住所の確認（DNS）：</strong>
-インターネットの世界では、<code>google.com</code>のような名前ではなく、数字の住所（IPアドレス 例えば、“142.251.223.46” みたいな）で場所を探します。</li>
+インターネットの世界では、<code>google.com</code>のような名前ではなく、数字の住所（IPアドレス <ruby>例<rt>たと</rt></ruby>えば、“142.251.223.46” みたいな）で場所を探します。</li>
 <li><strong>レスポンス（返事）：</strong>
 サーバがあなたのリクエストを受けて、HTMLなどのデータをあなたのブラウザに送り返します。「はい、どうぞ！」と本を渡してくれるイメージです。</li>
-<li><strong>レンダリング（組み立て）：</strong>
-ブラウザが、届いたHTMLデータを読み取って、きれいなデザインに組み立てて表示します。</li>
+<li><strong>レンダリング（<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て）：</strong>
+ブラウザが、届いたHTMLデータを読み取って、きれいなデザインに<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てて<ruby>表示<rt>ひょうじ</rt></ruby>します。</li>
 </ol>
-<h3 id="3-wwwで使われる魔法まほうの言葉"><a class="header" href="#3-wwwで使われる魔法まほうの言葉">3. WWWで使われる「魔法（まほう）の言葉」</a></h3>
+<h3 id="3-wwwで使われる魔法まほうの言葉"><a class="header" href="#3-wwwで使われる魔法まほうの言葉">3. WWWで使われる「<ruby>魔法<rt>まほう</rt></ruby>の言葉」</a></h3>
 <p>ウェブの世界には、共通のルール（プロトコル）があります。</p>
 <ul>
 <li><strong>HTTP / HTTPS：</strong>
@@ -222,45 +222,45 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>ITの言葉</th><th>図書館での例え</th><th>役割</th></tr>
+<tr><th>ITの言葉</th><th>図書館での<ruby>例<rt>たと</rt></ruby>え</th><th>役割</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>クライアント</strong></td><td>本を読みたい人</td><td>ブラウザでリクエストを送る</td></tr>
-<tr><td><strong>サーバ</strong></td><td>図書館のスタッフ</td><td>データを保管して、送り返す</td></tr>
+<tr><td><strong>サーバ</strong></td><td>図書館のスタッフ</td><td>データを<ruby>保管<rt>ほかん</rt></ruby>して、<ruby>送<rt>おく</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す</td></tr>
 <tr><td><strong>HTML</strong></td><td>本のページ</td><td>文字や写真のデータ</td></tr>
 <tr><td><strong>URL</strong></td><td>本の整理番号</td><td>サイトがどこにあるか教える</td></tr>
 </tbody>
 </table>
 </div>
-<p>いかがでしょうか？「注文して、送ってもらって、組み立てる」。このシンプルな流れがWWWの正体です。</p>
+<p>いかがでしょうか？「注文して、送ってもらって、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てる」。このシンプルな流れがWWWの<ruby>正体<rt>しょうたい</rt></ruby>です。</p>
 <p>「WWWは、世界中の情報をだれでも、どこでも見られるようにしたすごい発明なんです。</p>
 <hr>
 <h2 id="ii-webページを作る3つの力htmlcssjavascriptの役割"><a class="header" href="#ii-webページを作る3つの力htmlcssjavascriptの役割">II. Webページを作る「3つの力」：HTML・CSS・JavaScriptの役割</a></h2>
-<p>Webページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に例えてみましょう。</p>
+<p>Webページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に<ruby>例<rt>たと</rt></ruby>えてみましょう。</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>技術名</th><th>役割（やくわり）</th><th>家づくりに例えると？</th></tr>
+<tr><th>技術名</th><th>役割（やくわり）</th><th>家づくりに<ruby>例<rt>たと</rt></ruby>えると？</th></tr>
 </thead>
 <tbody>
-<tr><td>HTML</td><td>骨組み（ほねぐみ）・構造</td><td>柱（はしら）、壁（かべ）、床（ゆか）</td></tr>
-<tr><td>CSS</td><td>見た目・デザイン</td><td>ペンキの色、インテリア、壁紙</td></tr>
-<tr><td>JavaScript</td><td>動き・機能（きのう）</td><td>電気（でんき）、機械装置（きかいそうち）</td></tr>
+<tr><td>HTML</td><td><ruby>骨組<rt>ほねぐ</rt></ruby>み・構造</td><td>柱、壁、床（ゆか）</td></tr>
+<tr><td>CSS</td><td><ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>・デザイン</td><td>ペンキの色、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby></td></tr>
+<tr><td>JavaScript</td><td><ruby>動<rt>うご</rt></ruby>き・機能（きのう）</td><td>電気（でんき）、機械装置（きかいそうち）</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>JavaScriptの役割：電気を通すこと</strong></p>
-<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのWebページは、ただ情報を表示するだけの、動きのない「紙のポスター」のようなものです。</p>
-<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、自動ドアが開き、エレベーターが動くようになります。Webページはユーザーと「対話（たいわ）」ができる便利な道具に変わるのです。</p>
+<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのWebページは、ただ情報を<ruby>表示<rt>ひょうじ</rt></ruby>するだけの、<ruby>動<rt>うご</rt></ruby>きのない「紙のポスター」のようなものです。</p>
+<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、自動ドアが開き、エレベーターが動くようになります。Webページはユーザーと「<ruby>対話<rt>たいわ</rt></ruby>（たいわ）」ができる便利な道具に変わるのです。</p>
 <hr>
 <h2 id="iii-イベントとは"><a class="header" href="#iii-イベントとは">III. イベントとは</a></h2>
 <h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
 <p>ふだん、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
-<p>例えば、あなたがこんな動きをしたとき、それがすべて「イベント」になります。</p>
+<p><ruby>例<rt>たと</rt></ruby>えば、あなたがこんな<ruby>動<rt>うご</rt></ruby>きをしたとき、それがすべて「イベント」になります。</p>
 <ul>
 <li>ボタンを <strong>カチッ（クリック）</strong> としたとき。</li>
-<li>キーボードで <strong>文字を入力</strong> したとき。</li>
-<li>画面を <strong>上下に動かした（スクロール）</strong> とき。</li>
+<li>キーボードで <strong>文字を<ruby>入力<rt>にゅうりょく</rt></ruby></strong> したとき。</li>
+<li><ruby>画面<rt>がめん</rt></ruby>を <strong>上下に動かした（スクロール）</strong> とき。</li>
 </ul>
 <p>このように、<strong>「ユーザーが何かをした！」</strong> という出来事のことを、JavaScriptでは「イベント」と呼びます。</p>
 <hr>
@@ -273,11 +273,11 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 </ul>
 <p>JavaScriptを学ぶと、この <strong>「もし〜が起きたら、この仕事をやってね！」</strong> というマニュアルを書けるようになります。</p>
 <hr>
-<h3 id="3-留学生への導入メッセージ"><a class="header" href="#3-留学生への導入メッセージ">3. 留学生への導入メッセージ</a></h3>
+<h3 id="3-留学生への導入どうにゅうメッセージ"><a class="header" href="#3-留学生への導入どうにゅうメッセージ">3. 留学生への<ruby>導入<rt>どうにゅう</rt></ruby>メッセージ</a></h3>
 <blockquote>
-<p>「今はまだ、難しい呪文（じゅもん）を覚える必要はありません。
-画面の中で起きる <strong>『クリック』や『入力』などの変化の一つひとつに、名前（イベント）がついているんだな</strong> 、ということだけ覚えておいてください。
-皆さんが『何か』をしたときに、サイトが『反応（はんのう）』するのは、このイベントのおかげなんですよ！」</p>
+<p>「今はまだ、<ruby>難<rt>むずか</rt></ruby>しい<ruby>呪文<rt>じゅもん</rt></ruby>を覚える必要はありません。
+<ruby>画面<rt>がめん</rt></ruby>の中で起きる <strong>『クリック』や『<ruby>入力<rt>にゅうりょく</rt></ruby>』などの変化の一つひとつに、名前（イベント）がついているんだな</strong> 、ということだけ覚えておいてください。
+皆さんが『何か』をしたときに、サイトが『<ruby>反応<rt>はんのう</rt></ruby>』するのは、このイベントのおかげなんですよ！」</p>
 </blockquote>
 <hr>
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
@@ -289,15 +289,15 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <tbody>
 <tr><td><strong>イベント</strong></td><td>「何かが起きた！」という合図</td></tr>
 <tr><td><strong>きっかけ</strong></td><td>ユーザーがマウスやキーボードを動かすこと</td></tr>
-<tr><td><strong>反応（はんのう）</strong></td><td>画面の色が変わったり、窓が開いたりすること</td></tr>
+<tr><td><strong><ruby>反応<rt>はんのう</rt></ruby></strong></td><td><ruby>画面<rt>がめん</rt></ruby>の色が変わったり、窓が開いたりすること</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
 <p>「ウェブページを生きているように動かすための『スイッチ』」。それがイベントです。</p>
 <h2 id="iv-オブジェクトとは"><a class="header" href="#iv-オブジェクトとは">IV. オブジェクトとは</a></h2>
-<p>皆さんがこれから学ぶのは、<strong>自分でWebページを動かす方法</strong> です。Webページを動かすためには、<strong>Webページを表示しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
-<p>たとえば飲食店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
+<p>皆さんがこれから学ぶのは、<strong>自分でWebページを動かす方法</strong> です。Webページを動かすためには、<strong>Webページを<ruby>表示<rt>ひょうじ</rt></ruby>しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
+<p>たとえば<ruby>飲食<rt>いんしょく</rt></ruby>店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
 <h3 id="1-オブジェクトとはどんなもの"><a class="header" href="#1-オブジェクトとはどんなもの">1. オブジェクトとはどんなもの？</a></h3>
 <p>HTMLやCSSという設計図に従って、ブラウザはそれをWebページとして作り上げてくれます。JavaScriptは出来上がったWebページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
 <p>さまざまな人が集まって会社ができているのと同じように、Webページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「Webページを動かす」というのは「Webページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
@@ -311,9 +311,9 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <p><img src="./img/obj_vba_03.jpg" alt="働くオブジェクト"></p>
 <h3 id="3-htmlとcss"><a class="header" href="#3-htmlとcss">3. HTMLとCSS</a></h3>
 <p>では、JavaScriptで扱うオブジェクトとは具体的には、どんなものでしょうか？</p>
-<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱（はしら）、壁（かべ）、床（ゆか）、あるいはペンキ、インテリア、壁紙、といった部品になるのは、前に説明した通りです。</p>
+<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
 <p>実は、この「Webページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
-<p>したがって、JavaScriptでWebページを操るためには、まずWebページの部品そのものについて、理解しなければなりません。</p>
+<p>したがって、JavaScriptでWebページを<ruby>操<rt>あやつ</rt></ruby>るためには、まずWebページの部品そのものについて、理解しなければなりません。</p>
 <p>次のステップでは、Webページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
 <hr>
 <h2 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h2>
@@ -354,6 +354,22 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

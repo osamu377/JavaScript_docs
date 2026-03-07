@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -175,16 +175,16 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="オブジェクトを改造する"><a class="header" href="#オブジェクトを改造する">オブジェクトを改造する</a></h1>
-<p>既存のオブジェクトを自分好みに作り変えることを、プログラミングの世界では <strong>「拡張（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と呼びます。</p>
-<p>これは <strong>「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」</strong> に例えることができます。</p>
+<p>既にあるオブジェクトを自分好みに作り変えることを、プログラミングの世界では <strong>「拡張（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と呼びます。</p>
+<p>これは <strong>「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」</strong> に<ruby>例<rt>たと</rt></ruby>えることができます。</p>
 <h2 id="i-オブジェクトを改造する"><a class="header" href="#i-オブジェクトを改造する">I. オブジェクトを改造する</a></h2>
-<h3 id="1-既存のオブジェクトを改造する2つの方法"><a class="header" href="#1-既存のオブジェクトを改造する2つの方法">1. 既存のオブジェクトを改造する2つの方法</a></h3>
+<h3 id="1-既にあるオブジェクトを改造する2つの方法"><a class="header" href="#1-既にあるオブジェクトを改造する2つの方法">1. 既にあるオブジェクトを改造する2つの方法</a></h3>
 <p>JavaScriptでは、すでに動いているオブジェクトに後から「新しいパーツ」を追加したり、「古いパーツ」を新しいものに取り替えたりできます。</p>
 <h4 id="a-追加する"><a class="header" href="#a-追加する">a) <strong>追加する</strong></a></h4>
 <p>特定の1人（1つのオブジェクト）だけに、新しいプロパティやメソッドを追加します。</p>
 <ul>
 <li><strong>イメージ：</strong> 自分の自転車だけに、特別なステッカーを貼る。</li>
-<li><strong>書き方：</strong> <code>オブジェクト名.新しい名前 = 値;</code></li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>オブジェクト名.新しい名前 = 値;</code></li>
 </ul>
 <pre><code class="language-javascript">const myCar = { brand: "Toyota" };
 
@@ -201,14 +201,14 @@ myCar.horn(); // 実行できる！
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><code>myCar.horn = function() {...</code> の部分は、<code>myCar.horn</code> に関数を代入していいます。
-このように、<strong>JavaScriptでは関数も変数のようにあつかうことができます。</strong> 代入したり、関数の引数にしたり、返り値にしたりできるのです。</p>
+<p><code>myCar.horn = function() {...</code> の部分は、<code>myCar.horn</code> に<ruby>関数<rt>かんすう</rt></ruby>を<ruby>代入<rt>だいにゅう</rt></ruby>していいます。
+このように、<strong>JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も<ruby>変数<rt>へんすう</rt></ruby>のようにあつかうことができます。</strong> <ruby>代入<rt>だいにゅう</rt></ruby>したり、<ruby>関数<rt>かんすう</rt></ruby>の<ruby>引数<rt>ひきすう</rt></ruby>にしたり、返り値にしたりできるのです。</p>
 </blockquote>
-<h4 id="b-オーバーライド上書きする"><a class="header" href="#b-オーバーライド上書きする">b) <strong>オーバーライド（上書き）する</strong></a></h4>
-<p>親から受け継いだ機能を、自分流のやり方に書き換えます。</p>
+<h4 id="b-オーバーライド上書うわがきする"><a class="header" href="#b-オーバーライド上書うわがきする">b) <strong>オーバーライド（<ruby>上書<rt>うわが</rt></ruby>き）する</strong></a></h4>
+<p>親から<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>いだ機能を、自分流のやり<ruby>方<rt>かた</rt></ruby>に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えます。</p>
 <ul>
-<li><strong>イメージ：</strong> お父さんから譲り受けたカメラだけど、レンズを最新のものに交換して使いやすくする。</li>
-<li><strong>書き方：</strong> 同じ名前で新しく定義し直す。</li>
+<li><strong>イメージ：</strong> お父さんからもらったカメラだけど、レンズを<ruby>最新<rt>さいしん</rt></ruby>のものに交換して使いやすくする。</li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> 同じ名前で新しく<ruby>定義<rt>ていぎ</rt></ruby>し直す。</li>
 </ul>
 <pre><code class="language-javascript">// 1. robotオブジェクトを作成
 const robot {
@@ -221,35 +221,35 @@ const robot {
 // 2. 実行
 robot.greet(); // "ハロー、ロボットです。"（元のまま）
 
-// 3. robot のメソッドを上書き（オーバーライド）する
+// 3. robot のメソッドを&lt;ruby&gt;上書&lt;rt&gt;うわが&lt;/rt&gt;&lt;/ruby&gt;き（オーバーライド）する
 robot.greet = function() {
   console.log("こんにちは！ 私は特別なロボットです。");
 };
 
 // 4. 実行して比較（ひかく）する
-robot.greet(); // "こんにちは！ 私は特別な..."（上書きされた！）
+robot.greet(); // "こんにちは！ 私は特別な..."（&lt;ruby&gt;上書&lt;rt&gt;うわが&lt;/rt&gt;&lt;/ruby&gt;きされた！）
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><code>robot.greet = function() {...</code> の部分は、<code>robot</code> の　<code>greet</code> というメソッド（関数）に別の関数を再代入しています。</p>
+<p><code>robot.greet = function() {...</code> の部分は、<code>robot</code> の　<code>greet</code> というメソッド（<ruby>関数<rt>かんすう</rt></ruby>）に別の<ruby>関数<rt>かんすう</rt></ruby>を再<ruby>代入<rt>だいにゅう</rt></ruby>しています。</p>
 </blockquote>
-<h3 id="2-例え話スマホ"><a class="header" href="#2-例え話スマホ">2. 例え話：スマホ</a></h3>
+<h3 id="2-例たとえ話スマホ"><a class="header" href="#2-例たとえ話スマホ">2. <ruby>例<rt>たと</rt></ruby>え話：スマホ</a></h3>
 <blockquote>
 <p>JavaScriptのオブジェクトは、一度作ったら終わりではありません。</p>
 <ol>
-<li><strong>直接追加：</strong> スマホに『お気に入りのストラップ』をつけるようなもの。</li>
+<li><strong>直接追加：</strong> スマホに『お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りのストラップ』をつけるようなもの。</li>
 <li><strong>オーバーライド：</strong> 決まった『着信音（ちゃくしんおん）』を、自分の好きな音楽に変えるようなものだよ。</li>
 </ol>
 <p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんです。</p>
 </blockquote>
 <h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
-<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく難しい山場です。</p>
-<p>これを皆さんがイメージしやすいように、 <strong>「家系図（かけいず）」</strong> や <strong>「秘伝のレシピの受け継ぎ」</strong> に例えて説明します。</p>
+<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく<ruby>難<rt>むずか</rt></ruby>しいところです。</p>
+<p>これを皆さんがイメージしやすいように、 <strong>「<ruby>家系図<rt>かけいず</rt></ruby>」</strong> や <strong>「秘密のレシピの<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>ぎ」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明します。</p>
 <h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
-<p>JavaScriptでは、多くのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる仕組みです。</p>
+<p>JavaScriptでは、多くのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる<ruby>仕組<rt>しく</rt></ruby>みです。</p>
 <h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
 <p>「自分になければ親、親になければそのまた親…」と、<strong>さかのぼって探しに行く「鎖（くさり）」のようなつながり</strong> のことです。</p>
-<h4 id="身近な例え秘伝のカレーレシピを求めて"><a class="header" href="#身近な例え秘伝のカレーレシピを求めて"><strong>身近な例え：秘伝のカレーレシピを求めて</strong></a></h4>
+<h4 id="身近みじかな例たとえ秘密のカレーレシピを求めて"><a class="header" href="#身近みじかな例たとえ秘密のカレーレシピを求めて"><strong><ruby>身近<rt>みじか</rt></ruby>な<ruby>例<rt>たと</rt></ruby>え：秘密のカレーレシピを求めて</strong></a></h4>
 <ol>
 <li><strong>あなた（インスタンス）：</strong> カレーを作ろうとします。</li>
 <li><strong>自分のキッチン：</strong> レシピがありません。</li>
@@ -257,11 +257,11 @@ robot.greet(); // "こんにちは！ 私は特別な..."（上書きされた�
 <li><strong>おじいさんの家（自分の親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。「カレーのレシピある？」</li>
 <li><strong>先祖の家：</strong> そんな風に、レシピを持っている人を見つけるまで、先祖をたどって聞きに行きます。誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
 </ol>
-<h3 id="3-なぜこの仕組みがあるの"><a class="header" href="#3-なぜこの仕組みがあるの">3. なぜこの仕組みがあるの？</a></h3>
-<p>もし100人の学生オブジェクトを作るとき、全員に「自己紹介メソッド」を持たせると、メモリー（コンピューターの脳）をたくさん使ってしまいます。</p>
+<h3 id="3-なぜこの仕組しくみがあるの"><a class="header" href="#3-なぜこの仕組しくみがあるの">3. なぜこの<ruby>仕組<rt>しく</rt></ruby>みがあるの？</a></h3>
+<p>もし100人の学生オブジェクトを作るとき、全員に「<ruby>自己<rt>じこ</rt></ruby>紹介メソッド」を持たせると、メモリー（コンピューターの<ruby><rt>脳</rt>のう</ruby>）をたくさん使ってしまいます。</p>
 <ul>
 <li><strong>プロトタイプを使わない：</strong> 全員が自分の辞書（じしょ）を持っている（重い！）</li>
-<li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを共有する（軽い！）</li>
+<li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを<ruby>共有<rt>きょうゆう</rt></ruby>する（軽い！）</li>
 </ul>
 <h3 id="4-コードで見る探しに行く流れ"><a class="header" href="#4-コードで見る探しに行く流れ">4. コードで見る「探しに行く流れ」</a></h3>
 <pre><code class="language-javascript">const animal = {
@@ -272,21 +272,21 @@ const dog = {
   barks: true
 };
 
-// dog の親（プロトタイプ）を animal に設定
+// dog の親（プロトタイプ）を animal に&lt;ruby&gt;設定&lt;rt&gt;せってい&lt;/rt&gt;&lt;/ruby&gt;
 Object.setPrototypeOf(dog, animal);
 
 console.log(dog.barks); // true (自分の中にある)
 console.log(dog.eats);  // true (自分にはないが、親にあるので借りてきた！)
-console.log(dog.fly);   // undefined (家系図を最後まで探したけど、どこにもない)
+console.log(dog.fly);   // undefined (&lt;ruby&gt;家系図&lt;rt&gt;かけいず&lt;/rt&gt;&lt;/ruby&gt;を最後まで探したけど、どこにもない)
 
 </code></pre>
 <h3 id="5-プロトタイプを使って新しいプロパティやメソッドを追加する"><a class="header" href="#5-プロトタイプを使って新しいプロパティやメソッドを追加する">5. プロトタイプを使って新しいプロパティやメソッドを追加する</a></h3>
 <p>ひとつのオブジェクトだけでなく、そのプロトタイプから生まれた「全員」に、新しい機能を持たせることができます。</p>
 <ul>
-<li><strong>イメージ：</strong> マンションの住人全員が使える「共有のラウンジ」に、新しいテレビを置く。</li>
-<li><strong>書き方：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
+<li><strong>イメージ：</strong> マンションの住人全員が使える「<ruby>共有<rt>きょうゆう</rt></ruby>のラウンジ」に、新しいテレビを置く。</li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
 </ul>
-<pre><code class="language-javascript">// 全ての配列（Array）に「2倍にする」という新しい機能を追加してみる
+<pre><code class="language-javascript">// 全ての&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;（Array）に「2倍にする」という新しい機能を追加してみる
 Array.prototype.double = function() {
   return this.map(n =&gt; n * 2);
 };
@@ -296,7 +296,7 @@ console.log(numbers.double()); // [2, 4, 6]
 
 </code></pre>
 <blockquote>
-<p><strong>注意：</strong> ここではわかりやすい例として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
+<p><strong>注意：</strong> ここではわかりやすい<ruby>例<rt>れい</rt></ruby>として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
 </blockquote>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
@@ -305,9 +305,9 @@ console.log(numbers.double()); // [2, 4, 6]
 <tr><th>用語</th><th>やさしい日本語</th><th>英語のイメージ</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Prototype</strong></td><td>共通の道具箱 / 秘伝のレシピ</td><td>Blueprint / Shared assets</td></tr>
+<tr><td><strong>Prototype</strong></td><td>共通の道具箱 / 秘密のレシピ</td><td>Blueprint / Shared assets</td></tr>
 <tr><td><strong>Prototype Chain</strong></td><td>先祖（せんぞ）をたどる鎖</td><td>Search link / DNA</td></tr>
-<tr><td><strong>Inheritance</strong></td><td>継承（親の機能を使えること）</td><td>Inheritance</td></tr>
+<tr><td><strong>Inheritance</strong></td><td><ruby>継承<rt>けいしょう</rt></ruby>（親の機能を使えること）</td><td>Inheritance</td></tr>
 </tbody>
 </table>
 </div>
@@ -316,10 +316,10 @@ console.log(numbers.double()); // [2, 4, 6]
 <h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
 <blockquote>
 <p>改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあります。
-特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの共有スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておきましょう！</p>
+特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの<ruby>共有<rt>きょうゆう</rt></ruby>スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておきましょう！</p>
 </blockquote>
 <hr>
-<p>いかがでしょうか？ 「後から自由に変えられる」というJavaScriptの柔軟（じゅうなん）な性格が伝わればバッチリです。</p>
+<p>いかがでしょうか？ 「後から自由に変えられる」というJavaScriptの<ruby>柔軟<rt>じゅうなん</rt></ruby>（じゅうなん）な性格が伝わればバッチリです。</p>
 
                     </main>
 
@@ -356,6 +356,22 @@ console.log(numbers.double()); // [2, 4, 6]
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

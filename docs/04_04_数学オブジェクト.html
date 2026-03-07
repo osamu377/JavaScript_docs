@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -176,8 +176,8 @@
                     <main>
                         <h1 id="数学オブジェクト"><a class="header" href="#数学オブジェクト">数学オブジェクト</a></h1>
 <p>JavaScriptを学習中の皆さん、こんにちは！
-今日は、JavaScriptの中で <strong>「計算の天才（てんさい）」</strong> として活躍する <strong><code>Math</code> オブジェクト</strong> について説明します。</p>
-<p><code>Math</code>オブジェクトは <strong>「数学（すうがく）の道具箱（どうぐばこ）」</strong> です。自分で難しい計算式を書かなくても、この道具箱を開ければすぐに答えが出てきます。</p>
+今日は、JavaScriptの中で <strong>「計算の<ruby>天才<rt>てんさい</rt></ruby>（てんさい）」</strong> として活躍する <strong><code>Math</code> オブジェクト</strong> について説明します。</p>
+<p><code>Math</code>オブジェクトは <strong>「数学（すうがく）の道具箱（どうぐばこ）」</strong> です。自分で<ruby>難<rt>むずか</rt></ruby>しい計算式を書かなくても、この道具箱を開ければすぐに答えが出てきます。</p>
 <hr>
 <h2 id="i-mathオブジェクトの特徴"><a class="header" href="#i-mathオブジェクトの特徴">I. <code>Math</code>オブジェクトの特徴</a></h2>
 <p>他のオブジェクト（<code>Date</code>など）と違って、<code>Math</code>オブジェクトは <strong><code>new</code> を使って作る必要がありません。</strong></p>
@@ -186,20 +186,24 @@
 <h2 id="ii-よく使う4つの道具メソッド"><a class="header" href="#ii-よく使う4つの道具メソッド">II. よく使う「4つの道具（メソッド）」</a></h2>
 <p>これだけ覚えれば、日常のプログラミングで困ることはありません。</p>
 <h3 id="①-mathrandomサイコロを振る"><a class="header" href="#①-mathrandomサイコロを振る"><strong>① <code>Math.random()</code>：サイコロを振る</strong></a></h3>
-<p>0から1の間で、バラバラな数字（乱数）を作ります。</p>
+<p>0から1の間で、バラバラな数字（<ruby>乱数<rt>らんすう</rt></ruby>）を作ります。</p>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><ruby>乱数<rt>らんすう</rt></ruby>とは、サイコロの出目のように、次にどの数字が出るか予測できない数のことです。</p>
+</blockquote>
 <ul>
-<li><strong>使い道：</strong> ゲームのダメージ計算、おみくじ、ラッキーカラーなど。</li>
-<li><strong>イメージ：</strong> ガラガラ抽選器（ちゅうせんき）を回す。</li>
+<li><strong><ruby>使<rt>つか</rt></ruby><ruby>い<rt>みち</rt></ruby>：</strong> ゲームのダメージ計算、おみくじ、ラッキーカラーなど。</li>
+<li><strong>イメージ：</strong> ガラガラ<ruby>抽選器<rt>ちゅうせんき</rt></ruby>を回す。</li>
 </ul>
 <h3 id="②-mathround四捨五入ししゃごにゅう"><a class="header" href="#②-mathround四捨五入ししゃごにゅう"><strong>② <code>Math.round()</code>：四捨五入（ししゃごにゅう）</strong></a></h3>
-<p>小数点以下が <code>.5</code> 以上なら切り上げ、<code>.4</code> 以下なら切り捨てます。</p>
+<p>小数点以下が <code>.5</code> 以上なら<ruby>切<rt>き</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ、<code>.4</code> 以下なら<ruby>切<rt>き</rt></ruby>り<ruby>捨<rt>す</rt></ruby>てます。</p>
 <ul>
-<li><strong>使い道：</strong> 平均点（へいきんてん）をきれいな数字にするとき。</li>
+<li><strong><ruby>使<rt>つか</rt></ruby><ruby>い<rt>みち</rt></ruby>：</strong> 平均点（へいきんてん）をきれいな数字にするとき。</li>
 </ul>
 <h3 id="③-mathceil-と-mathfloor天井てんじょうと床ゆか"><a class="header" href="#③-mathceil-と-mathfloor天井てんじょうと床ゆか"><strong>③ <code>Math.ceil()</code> と <code>Math.floor()</code>：天井（てんじょう）と床（ゆか）</strong></a></h3>
 <ul>
-<li><strong><code>Math.ceil()</code>（切り上げ）：</strong> 小数点があれば、上の数字へジャンプ！</li>
-<li><strong><code>Math.floor()</code>（切り捨て）：</strong> 小数点を消して、下の数字へダウン！</li>
+<li><strong><code>Math.ceil()</code>（<ruby>切<rt>き</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ）：</strong> 小数点があれば、上の数字へジャンプ！</li>
+<li><strong><code>Math.floor()</code>（<ruby>切<rt>き</rt></ruby>り<ruby>捨<rt>す</rt></ruby>て）：</strong> 小数点を消して、下の数字へダウン！</li>
 <li><strong>覚え方：</strong> <code>Ceiling</code> は天井、<code>Floor</code> は床という意味です。</li>
 </ul>
 <hr>
@@ -208,16 +212,16 @@
 <pre><code class="language-javascript">console.log(Math.PI);          // 3.14159... (円周率も入っています)
 
 console.log(Math.round(4.6));   // 5（四捨五入）
-console.log(Math.floor(4.6));   // 4（床：切り捨て）
-console.log(Math.ceil(4.1));    // 5（天井：切り上げ）
+console.log(Math.floor(4.6));   // 4（床：&lt;ruby&gt;切&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;捨&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;て）
+console.log(Math.ceil(4.1));    // 5（天井：&lt;ruby&gt;切&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;上&lt;rt&gt;あ&lt;/rt&gt;&lt;/ruby&gt;げ）
 
-// 1から10までのランダムな整数（せいすう）を作る魔法の式
+// 1から10までのランダムな整数（せいすう）を作る&lt;ruby&gt;魔法&lt;rt&gt;まほう&lt;/rt&gt;&lt;/ruby&gt;の式
 const luckyNumber = Math.floor(Math.random() * 10) + 1;
 console.log("あなたのラッキーナンバーは：" + luckyNumber);
 
 </code></pre>
 <hr>
-<h2 id="iv-留学生への例え話電卓でんたくのボタン"><a class="header" href="#iv-留学生への例え話電卓でんたくのボタン">IV. 留学生への例え話：電卓（でんたく）のボタン</a></h2>
+<h2 id="iv-留学生への例たとえ話電卓でんたくのボタン"><a class="header" href="#iv-留学生への例たとえ話電卓でんたくのボタン">IV. 留学生への<ruby>例<rt>たと</rt></ruby>え話：電卓（でんたく）のボタン</a></h2>
 <blockquote>
 <p>「<code>Math</code>オブジェクトは、高機能（こうきのう）な電卓（Scientific Calculator）についている<strong>特別なボタン</strong>だと思ってね。
 √（ルート）の計算や、一番大きい数字を探すとき、自分で計算するのは大変だよね。そんなときは <code>Math.sqrt()</code> や <code>Math.max()</code> というボタンを押すだけで、JavaScriptがすぐに答えを教えてくれるんだよ！」</p>
@@ -231,8 +235,8 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
 </thead>
 <tbody>
 <tr><td><strong><code>Math.random()</code></strong></td><td>0〜1のランダムな数字</td><td>Random</td></tr>
-<tr><td><strong><code>Math.floor()</code></strong></td><td>切り捨て</td><td>Floor（床に落とす）</td></tr>
-<tr><td><strong><code>Math.ceil()</code></strong></td><td>切り上げ</td><td>Ceiling（天井に届く）</td></tr>
+<tr><td><strong><code>Math.floor()</code></strong></td><td><ruby>切<rt>き</rt></ruby>り<ruby>捨<rt>す</rt></ruby>て</td><td>Floor（床に落とす）</td></tr>
+<tr><td><strong><code>Math.ceil()</code></strong></td><td><ruby>切<rt>き</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ</td><td>Ceiling（天井に届く）</td></tr>
 <tr><td><strong><code>Math.round()</code></strong></td><td>四捨五入</td><td>Round off</td></tr>
 <tr><td><strong><code>Math.max()</code></strong></td><td>一番大きい数字を選ぶ</td><td>Maximum</td></tr>
 </tbody>
@@ -241,11 +245,11 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
 <hr>
 <h2 id="-留学生へのワンポイント"><a class="header" href="#-留学生へのワンポイント">📝 留学生へのワンポイント</a></h2>
 <blockquote>
-<p>「一番よく使うのは <strong><code>Math.floor(Math.random() * N)</code></strong> という組み合わせだよ。これで『0からN-1までのランダムな整数』が作れるんだ。ゲームを作るときに必ず使うから、このセットだけはメモしておこう！」</p>
+<p>「一番よく使うのは <strong><code>Math.floor(Math.random() * N)</code></strong> という<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせだよ。これで『0からN-1までのランダムな整数』が作れるんだ。ゲームを作るときに必ず使うから、このセットだけはメモしておこう！」</p>
 </blockquote>
 <p>いかがでしょうか？「数学は苦手…」という学生さんでも、<code>Math</code>オブジェクトが代わりに計算してくれると知れば、きっと安心してくれるはずです。</p>
-<h2 id="数当てゲームへの挑戦"><a class="header" href="#数当てゲームへの挑戦">数当てゲームへの挑戦</a></h2>
-<p>これまでの知識を使って、<a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/A_first_splash">MDNの数当てゲーム</a>に挑戦してみましょう。</p>
+<h2 id="数当あてゲームへの挑戦ちょうせん"><a class="header" href="#数当あてゲームへの挑戦ちょうせん">数<ruby>当<rt>あ</rt></ruby>てゲームへの<ruby>挑戦<rt>ちょうせん</rt></ruby></a></h2>
+<p>これまでの知識を使って、<a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/A_first_splash">MDNの数<ruby>当<rt>あ</rt></ruby>てゲーム</a>に<ruby>挑戦<rt>ちょうせん</rt></ruby>してみましょう。</p>
 
                     </main>
 
@@ -282,6 +286,22 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

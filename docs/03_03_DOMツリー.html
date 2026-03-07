@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -175,30 +175,30 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="domツリー"><a class="header" href="#domツリー">DOMツリー</a></h1>
-<p>前のセクションで <strong>DOM（ドム）ツリー</strong> について、少しだけ触れました。しかし、その中には、「ブラウザに表示されている<strong>HTML（ウェブページの中身）</strong> すべて」が含まれています。とてもたくさんの種類のオブジェクトが含まれます。</p>
+<p>前のセクションで <strong>DOM（ドム）ツリー</strong> について、少しだけ触れました。しかし、その中には、「ブラウザに<ruby>表示<rt>ひょうじ</rt></ruby>されている<strong>HTML（ウェブページの中身）</strong> すべて」が含まれています。とてもたくさんの種類のオブジェクトが含まれます。</p>
 <p>そのため、ここで新たなセクションを作って、もっと詳しく解説します。</p>
 <hr>
 <h2 id="i-domとは"><a class="header" href="#i-domとは">I. DOMとは？</a></h2>
 <h3 id="1-domツリーってなに"><a class="header" href="#1-domツリーってなに">1. DOMツリーってなに？</a></h3>
-<p>DOMは <strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel の略です。
-ブラウザはHTMLファイルを読み込むと、それをそのまま表示するのではなく、まず扱いやすいように <strong>「枝分かれした木（Tree）」</strong> の形に並べかえます。これがDOMツリーです。</p>
+<p>DOMは <strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel の<ruby>略<rt>りゃく</rt></ruby>です。
+ブラウザはHTMLファイルを<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>むと、それをそのまま<ruby>表示<rt>ひょうじ</rt></ruby>するのではなく、まず扱いやすいように <strong>「<ruby>枝分<rt>えだわ</rt></ruby>かれした木（Tree）」</strong> の形に並べかえます。これがDOMツリーです。</p>
 <p><img src="./img/Nodetree.jpg" alt="DOMノードツリー"></p>
 <p>DOM node tree“ by Yuho.K is licensed under CC BY-SA 4.0.
 This file is licensed under the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International license</a>.</p>
-<h3 id="2-ツリーの呼び名と関係"><a class="header" href="#2-ツリーの呼び名と関係">2. ツリーの「呼び名」と「関係」</a></h3>
-<p>DOMツリーを理解するコツは、**「家族（かぞく）」**の名前に例えて覚えることです。</p>
+<h3 id="2-ツリーの呼よび名なと関係"><a class="header" href="#2-ツリーの呼よび名なと関係">2. ツリーの「<ruby>呼<rt>よ</rt></ruby>び<ruby>名<rt>な</rt></ruby>」と「関係」</a></h3>
+<p>DOMツリーを理解するコツは、**「家族（かぞく）」**の名前に<ruby>例<rt>たと</rt></ruby>えて覚えることです。</p>
 <ul>
-<li><strong>Document（ルート）：</strong> 木の「根っこ」です。一番上にあります。</li>
+<li><strong>Document（ルート）：</strong> 木の「<ruby>根<rt>ね</rt></ruby>っこ」です。一番上にあります。</li>
 <li><strong>Parent（親）：</strong> ある要素の、すぐ上にある要素。</li>
 <li><strong>Child（子）：</strong> ある要素の、すぐ中（下）にある要素。</li>
 <li><strong>Sibling（兄弟）：</strong> 同じ親から生まれた、横に並んでいる要素。</li>
 </ul>
 <blockquote>
-<p><strong>例：</strong> <code>&lt;ul&gt;</code>（親）の中に、3つの <code>&lt;li&gt;</code>（子）があるとき、3つの <code>&lt;li&gt;</code> 同士は「兄弟」になります。</p>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>&lt;ul&gt;</code>（親）の中に、3つの <code>&lt;li&gt;</code>（子）があるとき、3つの <code>&lt;li&gt;</code> <ruby>同士<rt>どうし</rt></ruby>は「兄弟」になります。</p>
 </blockquote>
 <h3 id="3-なぜツリーにするの"><a class="header" href="#3-なぜツリーにするの">3. なぜ「ツリー」にするの？</a></h3>
 <p>なぜわざわざ「木」の形にするのでしょうか？
-それは、JavaScriptという「魔法使い」が、<strong>特定のパーツをすぐに見つけやすくするため</strong>です。</p>
+それは、JavaScriptという「<ruby>魔法<rt>まほう</rt></ruby><ruby>使<rt>つか</rt></ruby>い」が、<strong>特定のパーツをすぐに見つけやすくするため</strong>です。</p>
 <ul>
 <li>「一番上の親を赤くして！」</li>
 <li>「2番目の兄弟を消して！」</li>
@@ -221,24 +221,24 @@ JavaScriptはこの木を自由に育てるための道具だよ。木の関係�
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>専門用語</th><th>意味</th><th>家族で例えると？</th></tr>
+<tr><th>専門用語</th><th>意味</th><th>家族で<ruby>例<rt>たと</rt></ruby>えると？</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Document</strong></td><td>ツリー全体の入り口</td><td>ご先祖（せんぞ）様</td></tr>
 <tr><td><strong>Element</strong></td><td><code>&lt;div&gt;</code> や <code>&lt;p&gt;</code> などの要素</td><td>家族の一人ひとり</td></tr>
 <tr><td><strong>Parent Node</strong></td><td>すぐ上の要素</td><td>お父さん・お母さん</td></tr>
 <tr><td><strong>Child Node</strong></td><td>すぐ下の要素</td><td>息子・娘</td></tr>
-<tr><td><strong>Sibling</strong></td><td>同じ階層にある要素</td><td>お兄ちゃん・妹</td></tr>
+<tr><td><strong>Sibling</strong></td><td>同じ<ruby>階層<rt>かいそう</rt></ruby>にある要素</td><td>兄・妹</td></tr>
 </tbody>
 </table>
 </div>
 <p>いかがでしょうか？「木の関係図」というイメージが持てれば、DOM操作はぐっと簡単になります。</p>
 <h2 id="ii-formオブジェクト"><a class="header" href="#ii-formオブジェクト">II. Formオブジェクト</a></h2>
-<p>ウェブサイトで自分の名前を入力したり、アンケートに答えたりするときに使うのが「フォーム（お問い合わせ、ログイン画面など）」です。</p>
+<p>ウェブサイトで自分の名前を<ruby>入力<rt>にゅうりょく</rt></ruby>したり、アンケートに答えたりするときに使うのが「フォーム（お問い合わせ、ログイン<ruby>画面<rt>がめん</rt></ruby>など）」です。</p>
 <p>JavaScriptでは、これらを <strong>Formオブジェクト</strong> として扱います。留学生の方には、Formオブジェクトは**「役所の窓口（まどぐち）」**だと教えてあげてください。</p>
 <hr>
 <h3 id="1-formオブジェクトとは"><a class="header" href="#1-formオブジェクトとは">1. Formオブジェクトとは？</a></h3>
-<p>HTMLの <code>&lt;form&gt;</code> タグで囲まれた部分のことです。ユーザーが入力したデータをまとめて管理し、サーバー（裏側のコンピュータ）へ送る準備をする役割（やくわり）を持っています。</p>
+<p>HTMLの <code>&lt;form&gt;</code> タグで囲まれた部分のことです。ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをまとめて管理し、サーバー（<ruby>裏側<rt>うらがわ</rt></ruby>のコンピュータ）へ送る準備をする役割（やくわり）を持っています。</p>
 <p>JavaScriptでは、主に以下の2つの方法でフォームを捕まえ（アクセスし）ます。</p>
 <ol>
 <li><strong><code>document.forms[0]</code></strong> （ページにある1番目のフォーム）</li>
@@ -246,54 +246,54 @@ JavaScriptはこの木を自由に育てるための道具だよ。木の関係�
 </ol>
 <hr>
 <h3 id="2-よく使うプロパティフォームの情報"><a class="header" href="#2-よく使うプロパティフォームの情報">2. よく使うプロパティ（フォームの情報）</a></h3>
-<p>窓口（フォーム）が持っている設定情報です。</p>
+<p>窓口（フォーム）が持っている<ruby>設定<rt>せってい</rt></ruby>情報です。</p>
 <ul>
 <li><strong><code>name</code></strong>
-フォームの名前です。複数のフォームがあるときに区別するために使います。</li>
+フォームの名前です。複数のフォームがあるときに区別するために<ruby>使<rt>つか</rt></ruby>います。</li>
 <li><strong><code>action</code></strong>
-データをどこ（どのURL）に送るかという「宛先（あてさき）」です。</li>
+データをどこ（どのURL）に送るかという「<ruby>宛先<rt>あてさき</rt></ruby>（あてさき）」です。</li>
 <li><strong><code>method</code></strong>
 データの送り方です。主に <code>GET</code>（URLにのせる）か <code>POST</code>（封筒に入れる）のどちらかです。</li>
 <li><strong><code>elements</code></strong>
-フォームの中にあるボタンや入力欄（入力パーツ）を、配列のような形でまとめて持っています。</li>
+フォームの中にあるボタンや<ruby>入力<rt>にゅうりょく</rt></ruby>欄（<ruby>入力<rt>にゅうりょく</rt></ruby>パーツ）を、<ruby>配列<rt>はいれつ</rt></ruby>のような形でまとめて持っています。</li>
 </ul>
 <hr>
 <h3 id="3-よく使うメソッドフォームを動かす"><a class="header" href="#3-よく使うメソッドフォームを動かす">3. よく使うメソッド（フォームを動かす）</a></h3>
 <ul>
 <li><strong><code>submit()</code></strong>
-「送信（そうしん）ボタン」を押さなくても、JavaScriptから強制的にデータを送ります。</li>
+「<ruby>送信<rt>そうしん</rt></ruby>（そうしん）ボタン」を押さなくても、JavaScriptから<ruby>強制<rt>きょうせい</rt></ruby>的にデータを送ります。</li>
 <li><strong><code>reset()</code></strong>
-入力した内容をすべて消して、最初の状態（空っぽ）に戻します。</li>
+<ruby>入力<rt>にゅうりょく</rt></ruby>した内容をすべて消して、最初の状態（空っぽ）に戻します。</li>
 </ul>
 <hr>
-<h3 id="4-フォームの中の入力パーツの触り方"><a class="header" href="#4-フォームの中の入力パーツの触り方">4. フォームの中の「入力パーツ」の触り方</a></h3>
-<p>留学生が一番やりたいのは、**「ユーザーが書いた文字を読み取ること」**です。これは、各パーツの <strong><code>value</code>（バリュー）</strong> プロパティを使います。</p>
-<pre><code class="language-javascript">// 1. フォーム全体を取得
+<h3 id="4-フォームの中の入力にゅうりょくパーツの操作"><a class="header" href="#4-フォームの中の入力にゅうりょくパーツの操作">4. フォームの中の「<ruby>入力<rt>にゅうりょく</rt></ruby>パーツ」の操作</a></h3>
+<p>留学生が一番やりたいのは、**「ユーザーが書いた文字を読み取ること」**です。これは、各パーツの <strong><code>value</code>（バリュー）</strong> プロパティを<ruby>使<rt>つか</rt></ruby>います。</p>
+<pre><code class="language-javascript">// 1. フォーム全体を&lt;ruby&gt;取得&lt;rt&gt;しゅとく&lt;/rt&gt;&lt;/ruby&gt;
 const myForm = document.forms["loginForm"];
 
 // 2. ユーザーが書いた「ユーザー名」を取り出す
 const userName = myForm.elements["uName"].value;
 
-// 3. 送信する前にチェックする
+// 3. &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する前にチェックする
 if (userName === "") {
   alert("名前を書いてください！");
 } else {
-  myForm.submit(); // 問題なければ送信！
+  myForm.submit(); // 問題なければ&lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;！
 }
 
 </code></pre>
 <hr>
 <h3 id="5-留学生への説明ポイントonsubmit-イベント"><a class="header" href="#5-留学生への説明ポイントonsubmit-イベント">5. 留学生への説明ポイント：<code>onsubmit</code> イベント</a></h3>
-<p>データを送る瞬間に「ちょっと待って！今の入力、間違っていない？」とチェックする機能がよく使われます。</p>
+<p>データを送る瞬間に「ちょっと待って！今の<ruby>入力<rt>にゅうりょく</rt></ruby>、間違っていない？」とチェックする機能がよく使われます。</p>
 <blockquote>
-<p><strong>「<code>onsubmit</code> は、窓口で書類（しょるい）を渡す前の『最終チェック』だよ。もし書き忘れがあったら <code>return false</code> と言って、送信をストップさせるんだよ」</strong></p>
+<p><strong>「<code>onsubmit</code> は、窓口で書類（しょるい）を渡す前の『最終チェック』だよ。もし書き忘れがあったら <code>return false</code> と言って、<ruby>送信<rt>そうしん</rt></ruby>をストップさせるんだよ」</strong></p>
 </blockquote>
 <pre><code class="language-javascript">myForm.onsubmit = function() {
   if (this.elements["email"].value === "") {
     alert("メールアドレスが必要です！");
-    return false; // 送信を中止（キャンセル）する
+    return false; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;を中止（キャンセル）する
   }
-  return true; // 送信する
+  return true; // &lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;する
 };
 
 </code></pre>
@@ -302,12 +302,12 @@ if (userName === "") {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>elements</code></strong></td><td>全パーツのリスト</td><td>窓口にある書類の束（たば）</td></tr>
-<tr><td><strong><code>value</code></strong></td><td>入力された文字</td><td>書類に書かれた内容</td></tr>
-<tr><td><strong><code>submit()</code></strong></td><td>送信する</td><td>書類を受理して送る</td></tr>
+<tr><td><strong><code>value</code></strong></td><td><ruby>入力<rt>にゅうりょく</rt></ruby>された文字</td><td>書類に書かれた内容</td></tr>
+<tr><td><strong><code>submit()</code></strong></td><td><ruby>送信<rt>そうしん</rt></ruby>する</td><td>書類を受け付けて送る</td></tr>
 <tr><td><strong><code>reset()</code></strong></td><td>リセットする</td><td>書類をゴミ箱に捨てて新しくする</td></tr>
 </tbody>
 </table>
@@ -315,18 +315,18 @@ if (userName === "") {
 <hr>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「id」と「name」の使い分け</strong>
+<p><strong>「id」と「name」の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け</strong>
 留学生には、<strong>「JavaScriptでデザインを変えるときは <code>id</code>、サーバーにデータを送るときは <code>name</code> を使うのが一般的だよ」</strong> と教えてあげると、混乱が少なくなります。</p>
 </blockquote>
 <p>いかがでしょうか？「窓口」と「書類」のイメージで、フォームの操作もバッチリですね。</p>
-<p><strong>次は、チェックボックスやラジオボタンなど、文字入力以外のパーツを操作する方法についても練習してみますか？</strong></p>
+<p><strong>次は、チェックボックスやラジオボタンなど、文字<ruby>入力<rt>にゅうりょく</rt></ruby>以外のパーツを操作する方法についても練習してみますか？</strong></p>
 <h2 id="iii-elementオブジェクト"><a class="header" href="#iii-elementオブジェクト">III. Elementオブジェクト</a></h2>
-<p>前回の <strong><code>document</code></strong> が「現場監督（げんばかんとく）」なら、今回の <strong><code>Element</code> オブジェクト</strong>は、現場にある**「レンガや窓、ドアといった一つひとつの『部品（パーツ）』」**のことです。</p>
+<p><ruby>前回<rt>ぜんかい</rt></ruby>の <strong><code>document</code></strong> が「現場監督（げんばかんとく）」なら、今回の <strong><code>Element</code> オブジェクト</strong>は、現場にある**「レンガや窓、ドアといった一つひとつの『部品（パーツ）』」**のことです。</p>
 <p>HTMLタグ（<code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;a&gt;</code> など）が、JavaScriptの世界で「Elementオブジェクト」と呼ばれます。</p>
 <hr>
 <h3 id="1-elementオブジェクトとは"><a class="header" href="#1-elementオブジェクトとは">1. Elementオブジェクトとは？</a></h3>
 <p>ウェブページを構成する「一つひとつの要素」です。
-<code>document.getElementById()</code> などで見つけてきたものは、すべてこのElementオブジェクトになります。これを使うことで、特定のパーツだけの色を変えたり、文字を書き換えたりできます。</p>
+<code>document.getElementById()</code> などで見つけてきたものは、すべてこのElementオブジェクトになります。これを使うことで、特定のパーツだけの色を変えたり、文字を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えたりできます。</p>
 <hr>
 <h3 id="2-よく使うプロパティパーツの状態"><a class="header" href="#2-よく使うプロパティパーツの状態">2. よく使うプロパティ（パーツの状態）</a></h3>
 <p>そのパーツがどんな状態（じょうたい）かを知るためのプロパティです。</p>
@@ -342,20 +342,20 @@ if (userName === "") {
 <li><strong><code>innerHTML</code></strong>：中の「HTMLタグ」も含めて扱います。</li>
 </ul>
 <h4 id="style"><a class="header" href="#style"><strong><code>style</code></strong></a></h4>
-<p>見た目（CSS）を直接いじります。</p>
+<p><ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（CSS）を直接いじります。</p>
 <ul>
-<li><strong>例：</strong> <code>element.style.color = "blue";</code></li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>element.style.color = "blue";</code></li>
 </ul>
 <h4 id="attributes"><a class="header" href="#attributes"><strong><code>attributes</code></strong></a></h4>
-<p>そのタグについている「属性（ぞくせい）」のリストです。</p>
+<p>そのタグについている「<ruby>属性<rt>ぞくせい</rt></ruby>お<ruby>話<rt>はなし</rt></ruby>」のリストです。</p>
 <hr>
 <h3 id="3-よく使うメソッドパーツへの操作"><a class="header" href="#3-よく使うメソッドパーツへの操作">3. よく使うメソッド（パーツへの操作）</a></h3>
 <p>パーツに対して「何かをする」ための命令です。</p>
-<h4 id="属性じょうほうを操作する"><a class="header" href="#属性じょうほうを操作する"><strong>属性（じょうほう）を操作する</strong></a></h4>
+<h4 id="属性ぞくせいじょうほうを操作する"><a class="header" href="#属性ぞくせいじょうほうを操作する"><strong><ruby>属性<rt>ぞくせい</rt></ruby>（じょうほう）を操作する</strong></a></h4>
 <ul>
-<li><strong><code>getAttribute("属性名")</code></strong>：設定されている値（<code>src</code> や <code>href</code> など）を読み取ります。</li>
-<li><strong><code>setAttribute("属性名", "値")</code></strong>：新しく値をセットします。</li>
-<li><strong><code>removeAttribute("属性名")</code></strong>：設定を消します。</li>
+<li><strong><code>getAttribute("&lt;ruby&gt;属性&lt;rt&gt;ぞくせい&lt;/rt&gt;&lt;/ruby&gt;名")</code></strong>：<ruby>設定<rt>せってい</rt></ruby>されている値（<code>src</code> や <code>href</code> など）を読み取ります。</li>
+<li><strong><code>setAttribute("&lt;ruby&gt;属性&lt;rt&gt;ぞくせい&lt;/rt&gt;&lt;/ruby&gt;名", "値")</code></strong>：新しく値をセットします。</li>
+<li><strong><code>removeAttribute("&lt;ruby&gt;属性&lt;rt&gt;ぞくせい&lt;/rt&gt;&lt;/ruby&gt;名")</code></strong>：<ruby>設定<rt>せってい</rt></ruby>を消します。</li>
 </ul>
 <h4 id="クラスを操作するとても便利"><a class="header" href="#クラスを操作するとても便利"><strong>クラスを操作する（とても便利！）</strong></a></h4>
 <ul>
@@ -365,49 +365,49 @@ if (userName === "") {
 </ul>
 <h4 id="パーツを動かす"><a class="header" href="#パーツを動かす"><strong>パーツを動かす</strong></a></h4>
 <ul>
-<li><strong><code>remove()</code></strong>：そのパーツを画面から消します。</li>
+<li><strong><code>remove()</code></strong>：そのパーツを<ruby>画面<rt>がめん</rt></ruby>から消します。</li>
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう"><a class="header" href="#4-実際に動かしてみよう">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「画像を切り替えるボタン」の仕組みを説明するコード例です。</p>
+<p>留学生に「<ruby>画像<rt>がぞう</rt></ruby>を<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>えるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">// 1. &lt;img&gt;タグ（Elementオブジェクト）を見つける
 const myImage = document.querySelector("#profile-pic");
 
-// 2. setAttribute で画像のURLを変える
+// 2. setAttribute で&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;のURLを変える
 myImage.setAttribute("src", "new-image.jpg");
 
-// 3. classList でデザインを切り替える
+// 3. classList でデザインを&lt;ruby&gt;切&lt;rt&gt;きり&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;替&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;える
 myImage.classList.add("rounded-frame");
 
 </code></pre>
 <hr>
 <h3 id="5-留学生へのアドバイスinnerhtml-の注意点"><a class="header" href="#5-留学生へのアドバイスinnerhtml-の注意点">5. 留学生へのアドバイス：<code>innerHTML</code> の注意点</a></h3>
-<p>留学生がよくやってしまう「危ない書き方」について、一言教えてあげてください。</p>
+<p>留学生がよくやってしまう「危ない<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>」について、一言教えてあげてください。</p>
 <blockquote>
-<p>「<code>innerHTML</code> は便利だけど、ユーザーが入力した文字をそのまま入れると、悪いプログラム（ウイルスなど）が動かされる危険があるんだ。
-<strong>ただの文字を表示したいときは、必ず <code>textContent</code> を使おうね！</strong>」</p>
+<p>「<code>innerHTML</code> は便利だけど、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した文字をそのまま入れると、悪いプログラム（ウイルスなど）が動かされる危険があるんだ。
+<strong>ただの文字を<ruby>表示<rt>ひょうじ</rt></ruby>したいときは、必ず <code>textContent</code> を使おうね！</strong>」</p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-2"><a class="header" href="#まとめテーブル-2">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th>例え話</th></tr>
+<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>id</code></strong></td><td>ID名</td><td>パーツの「名前ラベル」</td></tr>
 <tr><td><strong><code>style</code></strong></td><td>CSSデザイン</td><td>パーツの「服の色やサイズ」</td></tr>
 <tr><td><strong><code>textContent</code></strong></td><td>中のテキスト</td><td>パーツに書いてある「看板の文字」</td></tr>
-<tr><td><strong><code>setAttribute()</code></strong></td><td>設定を変える</td><td>窓を「開ける」か「閉める」か設定する</td></tr>
+<tr><td><strong><code>setAttribute()</code></strong></td><td><ruby>設定<rt>せってい</rt></ruby>を変える</td><td>窓を「開ける」か「閉める」か<ruby>設定<rt>せってい</rt></ruby>する</td></tr>
 <tr><td><strong><code>classList</code></strong></td><td>クラスの管理</td><td>パーツに「タグ（目印）」を貼ったり剥がしたりする</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？Elementオブジェクトを使いこなせれば、ユーザーの動きに合わせて画面を動的に変える「動くサイト」が作れるようになります！</p>
-<h2 id="iv-domツリーを使ったエレメントの取得"><a class="header" href="#iv-domツリーを使ったエレメントの取得">IV. DOMツリーを使ったエレメントの取得</a></h2>
-<p>DOMツリーの「家族（親子・兄弟）」の関係がわかったら、次は実際に**「その枝（え要素）をたどって、操作する方法」**を学びましょう！</p>
-<p>留学生の方には、**「住所を知らなくても、家系図（かけいず）をたどれば目的の人に会える」**というイメージで説明するとわかりやすくなります。</p>
+<p>いかがでしょうか？Elementオブジェクトを<ruby>使<rt>つか</rt></ruby>いこなせれば、ユーザーの<ruby>動<rt>うご</rt></ruby>きに合わせて<ruby>画面<rt>がめん</rt></ruby>を<ruby>動的<rt>どうてき</rt></ruby>に変える「動くサイト」が作れるようになります！</p>
+<h2 id="iv-domツリーを使ったエレメントの取得しゅとく"><a class="header" href="#iv-domツリーを使ったエレメントの取得しゅとく">IV. DOMツリーを使ったエレメントの<ruby>取得<rt>しゅとく</rt></ruby></a></h2>
+<p>DOMツリーの「家族（<ruby>親子<rt>おやこ</rt></ruby>・兄弟）」の関係がわかったら、次は実際に**「その枝（え要素）をたどって、操作する方法」**を学びましょう！</p>
+<p>留学生の方には、**「住所を知らなくても、<ruby>家系図<rt>かけいず</rt></ruby>をたどれば目的の人に会える」**というイメージで説明するとわかりやすくなります。</p>
 <hr>
 <h3 id="1-要素の関係プロパティを使ってたどる"><a class="header" href="#1-要素の関係プロパティを使ってたどる">1. 要素の関係（プロパティ）を使ってたどる</a></h3>
 <p>IDやクラス名を使わなくても、今いる場所から「隣の人」や「親」を指名できます。</p>
@@ -423,11 +423,11 @@ myImage.classList.add("rounded-frame");
 </ul>
 <hr>
 <h3 id="2-実際にたどって操作するコード"><a class="header" href="#2-実際にたどって操作するコード">2. 実際にたどって操作するコード</a></h3>
-<p>例えば、リスト（<code>&lt;ul&gt;</code>）の中の「2番目の項目」からスタートして、周りを操作してみましょう。</p>
-<pre><code class="language-javascript">// 1. まず、真ん中の「2番目」を捕まえる
+<p><ruby>例<rt>たと</rt></ruby>えば、リスト（<code>&lt;ul&gt;</code>）の中の「2番目の項目」からスタートして、周りを操作してみましょう。</p>
+<pre><code class="language-javascript">// 1. まず、&lt;ruby&gt;真&lt;rt&gt;しん&lt;/rt&gt;&lt;/ruby&gt;ん中の「2番目」を捕まえる
 const centerItem = document.getElementById("item2");
 
-// 2. 「親」の背景色を変える（リスト全体がオレンジに！）
+// 2. 「親」の&lt;ruby&gt;背景&lt;rt&gt;はいけい&lt;/rt&gt;&lt;/ruby&gt;色を変える（リスト全体がオレンジに！）
 centerItem.parentNode.style.backgroundColor = "orange";
 
 // 3. 「前の兄弟（1番目）」の文字を大きくする
@@ -442,7 +442,7 @@ centerItem.nextElementSibling.remove();
 <p>DOMツリーに新しい要素を加えるときは、**「部品を作って、親に渡す」**という2ステップが必要です。</p>
 <ol>
 <li><strong><code>document.createElement("タグ名")</code></strong>：
-新しい要素をメモリの中に作ります（まだ画面には出ません）。</li>
+新しい要素をメモリの中に作ります（まだ<ruby>画面<rt>がめん</rt></ruby>には出ません）。</li>
 <li><strong><code>親要素.appendChild(新しい要素)</code></strong>：
 親の「最後の子」としてツリーに追加します。</li>
 </ol>
@@ -460,15 +460,15 @@ list.appendChild(newLi);
 <p>ここでよくある間違いを教えてあげてください。</p>
 <blockquote>
 <p>「<code>nextSibling</code>（兄弟）」と「<code>nextElementSibling</code>（<strong>要素の</strong>兄弟）」は似ているけど違うんだ。
-<code>nextSibling</code> は、目に見えない『改行（かいぎょう）』や『スペース』も1つの枝として数えてしまうことがある。
+<code>nextSibling</code> は、目に見えない『<ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）』や『スペース』も1つの枝として数えてしまうことがある。
 <strong>「HTMLタグだけをたどりたいときは、名前に『Element』が入っている方を使おうね！」</strong></p>
 </blockquote>
 <hr>
-<h3 id="まとめテーブルたどるための魔法"><a class="header" href="#まとめテーブルたどるための魔法">まとめテーブル：たどるための魔法</a></h3>
+<h3 id="まとめテーブルたどるための魔法まほう"><a class="header" href="#まとめテーブルたどるための魔法まほう">まとめテーブル：たどるための<ruby>魔法<rt>まほう</rt></ruby></a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>魔法の言葉</th><th>行き先</th></tr>
+<tr><th><ruby>魔法<rt>まほう</rt></ruby>の言葉</th><th>行き先</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>parentElement</code></strong></td><td>お父さん・お母さんのところへ</td></tr>
@@ -483,49 +483,49 @@ list.appendChild(newLi);
 <p>いかがでしょうか？「今いる場所」を基準にツリーを移動できるようになると、まるで迷路を攻略するように自由にHTMLを操作できるようになります。</p>
 <h2 id="v-要素の生成追加削除"><a class="header" href="#v-要素の生成追加削除">V. 要素の生成・追加・削除</a></h2>
 <p>DOMツリーの操作の中でも、**「新しく作る（生成）」「仲間に入れる（追加）」「さよならする（削除）」**の3つは、もっともワクワクする部分です。</p>
-<p>留学生の方には、**「レゴブロックで新しいパーツを作って、組み立てたり外したりする遊び」**と同じだと教えてあげてください。</p>
+<p>留学生の方には、**「レゴブロックで新しいパーツを作って、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てたり外したりする遊び」**と同じだと教えてあげてください。</p>
 <hr>
 <h3 id="1-要素を作る生成"><a class="header" href="#1-要素を作る生成">1. 要素を「作る（生成）」</a></h3>
-<p>まずは、魔法を使って何もないところにパーツを誕生させます。</p>
+<p>まずは、<ruby>魔法<rt>まほう</rt></ruby>を使って何もないところにパーツを誕生させます。</p>
 <ul>
 <li><strong><code>document.createElement("タグ名")</code></strong>
 指定したタグ（<code>div</code>, <code>li</code>, <code>p</code> など）を新しく作ります。</li>
 </ul>
 <blockquote>
-<p><strong>注意：</strong> この時点では、まだ「メモリの中」にあるだけで、<strong>画面には見えません。</strong></p>
+<p><strong>注意：</strong> この時点では、まだ「メモリの中」にあるだけで、<strong><ruby>画面<rt>がめん</rt></ruby>には見えません。</strong></p>
 </blockquote>
-<pre><code class="language-javascript">// 「たこ焼き（li）」というパーツを1つ作る
+<pre><code class="language-javascript">// 「たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き（li）」というパーツを1つ作る
 const takoyaki = document.createElement("li");
 
 // 中身の文字を入れる
-takoyaki.textContent = "たこ焼き 🐙";
+takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き 🐙";
 
 </code></pre>
 <hr>
 <h3 id="2-要素を入れる追加"><a class="header" href="#2-要素を入れる追加">2. 要素を「入れる（追加）」</a></h3>
 <p>作ったパーツを、DOMツリーのどこに置くかを決めます。</p>
 <h4 id="appendchild新しい要素"><a class="header" href="#appendchild新しい要素"><strong><code>appendChild(新しい要素)</code></strong></a></h4>
-<p>親要素の**「一番最後の子」**として追加します。一番よく使います。</p>
+<p>親要素の**「一番最後の子」**として追加します。一番よく<ruby>使<rt>つか</rt></ruby>います。</p>
 <pre><code class="language-javascript">const list = document.getElementById("food-list");
-list.appendChild(takoyaki); // リストの最後にたこ焼きが登場！
+list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;きが登場！
 
 </code></pre>
 <h4 id="insertbefore新しい要素-目印にする要素"><a class="header" href="#insertbefore新しい要素-目印にする要素"><strong><code>insertBefore(新しい要素, 目印にする要素)</code></strong></a></h4>
-<p>「一番最後じゃなくて、この要素の<strong>前</strong>に入れたい！」というときに使います。</p>
+<p>「一番最後じゃなくて、この要素の<strong>前</strong>に入れたい！」というときに<ruby>使<rt>つか</rt></ruby>います。</p>
 <hr>
 <h3 id="3-要素を消す削除"><a class="header" href="#3-要素を消す削除">3. 要素を「消す（削除）」</a></h3>
-<p>いらなくなったパーツをツリーから取り除きます。</p>
+<p>いらなくなったパーツをツリーから<ruby>取<rt>と</rt></ruby>り<ruby>除<rt>のぞ</rt></ruby>きます。</p>
 <h4 id="要素remove"><a class="header" href="#要素remove"><strong><code>要素.remove()</code></strong></a></h4>
-<p>その要素を自分自身で消去します。とても簡単です！</p>
+<p>その要素を自分自身で<ruby>消去<rt>しょうきょ</rt></ruby>します。とても簡単です！</p>
 <pre><code class="language-javascript">const badApple = document.getElementById("rotten");
-badApple.remove(); // 画面から消える
+badApple.remove(); // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;から消える
 
 </code></pre>
 <h4 id="親要素removechild子要素"><a class="header" href="#親要素removechild子要素"><strong><code>親要素.removeChild(子要素)</code></strong></a></h4>
-<p>昔からある方法で、「親が子を取り除く」という書き方です。</p>
+<p>昔からある方法で、「親が子を<ruby>取<rt>と</rt></ruby>り<ruby>除<rt>のぞ</rt></ruby>く」という<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>です。</p>
 <hr>
 <h3 id="4-実際に動かしてみよう-1"><a class="header" href="#4-実際に動かしてみよう-1">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「ToDoリストに項目を追加して、クリックしたら消える」という魔法のような体験をさせてあげましょう。</p>
+<p>留学生に「ToDoリストに項目を追加して、クリックしたら消える」という<ruby>魔法<rt>まほう</rt></ruby>のような<ruby>体験<rt>たいけん</rt></ruby>をさせてあげましょう。</p>
 <pre><code class="language-javascript">function addNote() {
   // 1. 生成：新しい &lt;li&gt; を作る
   const item = document.createElement("li");
@@ -552,7 +552,7 @@ badApple.remove(); // 画面から消える
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>操作</th><th>使う魔法（メソッド）</th><th>イメージ</th></tr>
+<tr><th>操作</th><th>使う<ruby>魔法<rt>まほう</rt></ruby>（メソッド）</th><th>イメージ</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>生成（作る）</strong></td><td><code>createElement()</code></td><td>レゴの新しいピースを用意する</td></tr>
@@ -563,7 +563,7 @@ badApple.remove(); // 画面から消える
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「生成・追加・削除」ができるようになると、ユーザーがボタンを押すたびに画面がどんどん変わる、本格的なアプリが作れるようになります。</p>
+<p>いかがでしょうか？「生成・追加・削除」ができるようになると、ユーザーがボタンを押すたびに<ruby>画面<rt>がめん</rt></ruby>がどんどん変わる、本格的なアプリが作れるようになります。</p>
 
                     </main>
 
@@ -600,6 +600,22 @@ badApple.remove(); // 画面から消える
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

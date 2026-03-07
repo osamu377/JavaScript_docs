@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-ab132495.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -174,25 +174,25 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="制御文"><a class="header" href="#制御文">制御文</a></h1>
-<p><strong>プログラムの「流れ」をコントロールしよう：制御文（せいぎょぶん）の基本</strong></p>
-<p>みなさん、こんにちは！ プログラミングの学習は進んでいますか？ 今日は、JavaScript（ジャバスクリプト）を学ぶ上でとても大切な「制御文（せいぎょぶん）」について解説します。</p>
+                        <h1 id="制御せいぎょ文"><a class="header" href="#制御せいぎょ文"><ruby>制御<rt>せいぎょ</rt></ruby>文</a></h1>
+<p><strong>プログラムの「流れ」をコントロールしよう：<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）の基本</strong></p>
+<p>みなさん、こんにちは！ プログラミングの学習は進んでいますか？ 今日は、JavaScript（ジャバスクリプト）を学ぶ上でとても大切な「<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）」について解説します。</p>
 <hr>
-<h2 id="i-はじめに制御文せいぎょぶんとは"><a class="header" href="#i-はじめに制御文せいぎょぶんとは">I. はじめに：制御文（せいぎょぶん）とは？</a></h2>
-<p>Webページを作るとき、HTMLは「家の柱（はしら：骨組み）」、CSSは「壁のペンキ」のような見た目を整える役割です。そして、JavaScriptは家に「電気」を通したり、「機械装置（きかいそうち）」を動かしたりする役割を持っています。</p>
-<p>そして、<strong>制御文</strong> （Control Statement）は、その機械を動かすための「脳（のう）」にあたります。「もしボタンが押されたら、電気をつける」「もしパスワードが違ったら、エラーを表示する」といった判断（はんだん）をプログラムに教えるのが、制御文の役割です。</p>
-<p>これを使えるようになると、Webサイトがまるで生きているように、ユーザーの動きに合わせて賢く反応（はんのう）するようになります。まずは、最も基本的な判断のルールである「if文」から見ていきましょう。</p>
+<h2 id="i-はじめに制御せいぎょ文せいぎょぶんとは"><a class="header" href="#i-はじめに制御せいぎょ文せいぎょぶんとは">I. はじめに：<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）とは？</a></h2>
+<p>Webページを作るとき、HTMLは「家の柱（はしら：骨組み）」、CSSは「壁のペンキ」のような<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を整える役割です。そして、JavaScriptは家に「電気」を通したり、「機械装置（きかいそうち）」を動かしたりする役割を持っています。</p>
+<p>そして、<strong><ruby>制御<rt>せいぎょ</rt></ruby>文</strong> （Control Statement）は、その機械を動かすための「<ruby><rt>脳</rt>のう</ruby>（のう）」にあたります。「もしボタンが押されたら、電気をつける」「もしパスワードが違ったら、エラーを<ruby>表示<rt>ひょうじ</rt></ruby>する」といった判断（はんだん）をプログラムに教えるのが、<ruby>制御<rt>せいぎょ</rt></ruby>文の役割です。</p>
+<p>これを使えるようになると、Webサイトがまるで生きているように、ユーザーの<ruby>動<rt>うご</rt></ruby>きに合わせて<ruby><rt>賢</rt>かしこ</ruby>く<ruby>反応<rt>はんのう</rt></ruby>するようになります。まずは、最も基本的な判断のルールである「if文」から見ていきましょう。</p>
 <hr>
 <h2 id="ii-もしならを決めるif文イフぶん"><a class="header" href="#ii-もしならを決めるif文イフぶん">II. 「もし〜なら」を決める：if文（イフぶん）</a></h2>
 <p>プログラミングで一番よく使うのが「<strong>if文</strong> （if statement）」です。これは「もし〜なら、これをする」という条件（じょうけん）を作るための命令です。</p>
 <p><code>if</code> <code>if else</code> <code>else</code> というキーワードを使って書きます。</p>
 <p>if ( <strong>条件１</strong> ) {<br>     <strong>処理１</strong><br>} else if ( <strong>条件２</strong> ) {<br>     <strong>処理２</strong><br>} else {<br>     <strong>処理３</strong><br>}</p>
 <ul>
-<li>条件１が正しいとき、処理１が実行（じっこう）されます</li>
-<li>条件１が間違っていて、条件２が正しいとき、処理２が実行（じっこう）されます</li>
+<li>条件１が正しいとき、処理１が<ruby>実行<rt>じっこう</rt></ruby>されます</li>
+<li>条件１が間違っていて、条件２が正しいとき、処理２が<ruby>実行<rt>じっこう</rt></ruby>されます</li>
 <li>条件１も条件２が間違っているとき、処理３が実行されます。</li>
 </ul>
-<p>もう少し具体的に、留学生のみなさんにも馴染みのある「雨と傘（かさ）」の例で考えてみましょう。</p>
+<p>もう少し具体的に、留学生のみなさんにも<ruby><rt>馴染</rt>なじ</ruby>みのある「雨と傘（かさ）」の<ruby>例<rt>れい</rt></ruby>で考えてみましょう。</p>
 <ul>
 <li>「もし、雨が降っているなら、傘を持っていきます」</li>
 <li>「そうでなくて、くもりなら、折りたたみ傘を持っていきます」</li>
@@ -207,11 +207,11 @@
   傘は持っていきません
 }
 </code></pre>
-<p>今度は実際のJavaScriptです。テストの評価を例にして書いてみます。</p>
+<p>今度は実際のJavaScriptです。テストの評価を<ruby>例<rt>れい</rt></ruby>にして書いてみます。</p>
 <pre><code>let score = 95; // テストの点数
 
 if (score &gt;= 90) {
-  // 条件が true（正しい）のときだけ動きます
+  // 条件が true（正しい）のときだけ&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きます
   console.log("成績は「優」です。素晴らしい！");
 } else if (score &gt;= 70) {
   // 90点未満で、かつ70点以上のとき
@@ -221,25 +221,25 @@ if (score &gt;= 90) {
   console.log("次はもっと頑張りましょう！");
 }
 </code></pre>
-<p><strong>書き方のポイント</strong></p>
+<p><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のポイント</strong></p>
 <ul>
 <li>{ }（波括弧）の使い方： 条件が正しいときに動かしたい処理は、必ず { } の中に書きます。</li>
-<li>どれか一つ（ひとつ）が選ばれる： 上から順番にチェックして、最初に条件が合ったブロックだけが動きます。</li>
+<li>どれか一つ（ひとつ）が選ばれる： 上から順番にチェックして、最初に条件が合ったブロックだけが<ruby>動<rt>うご</rt></ruby>きます。</li>
 <li>const と let： 値を変えない要素などは <code>const</code>、点数や回数のように変わる数字は <code>let</code> を使うのが現代のプログラミングの良い習慣です。</li>
 </ul>
-<p>if文を使うことで、Webページはユーザーの入力に対して「かしこく反応する」ことができるようになります。</p>
+<p>if文を使うことで、Webページはユーザーの<ruby>入力<rt>にゅうりょく</rt></ruby>に対して「かしこく<ruby>反応<rt>はんのう</rt></ruby>する」ことができるようになります。</p>
 <hr>
-<h2 id="iii-正しく比べるための道具比較演算子と論理演算子"><a class="header" href="#iii-正しく比べるための道具比較演算子と論理演算子">III. 正しく比べるための道具：比較演算子と論理演算子</a></h2>
-<p>条件を作るときには、「比べるための記号」を使います。これを「比較演算子（ひかくえんざんし / Comparison operators）」と呼びます。</p>
-<p>特に大切なのが ===（厳密に等しい） です。== という記号もありますが、これはデータ型（数字か文字か）をあいまいに判定するため、間違い（バグ）の原因になりやすいです。プロの現場では、必ず === を使う のがルールです。</p>
-<p>主要な演算子をまとめました。</p>
+<h2 id="iii-正しく比べるための道具比較演算えんざん子と論理ろんり演算えんざん子"><a class="header" href="#iii-正しく比べるための道具比較演算えんざん子と論理ろんり演算えんざん子">III. 正しく比べるための道具：比較<ruby>演算<rt>えんざん</rt></ruby>子と<ruby>論理<rt>ろんり</rt></ruby><ruby>演算<rt>えんざん</rt></ruby>子</a></h2>
+<p>条件を作るときには、「比べるための記号」を使います。これを「比較<ruby>演算<rt>えんざん</rt></ruby>子（ひかくえんざんし / Comparison operators）」と呼びます。</p>
+<p>特に大切なのが ===（<ruby>厳密<rt>げんみつ</rt></ruby>に等しい） です。== という記号もありますが、これはデータ型（数字か文字か）をあいまいに<ruby><rt>判定</rt>はんてい</ruby>するため、間違い（バグ）の原因になりやすいです。プロの現場では、必ず === を使う のがルールです。</p>
+<p>主要な<ruby>演算<rt>えんざん</rt></ruby>子をまとめました。</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>記号</th><th>意味</th><th>やさしい日本語での例</th></tr>
+<tr><th>記号</th><th>意味</th><th>やさしい日本語での<ruby>例<rt>れい</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td>===</td><td>厳密に等しい</td><td>score === 100 （点数が100点のとき）</td></tr>
+<tr><td>===</td><td><ruby>厳密<rt>げんみつ</rt></ruby>に等しい</td><td>score === 100 （点数が100点のとき）</td></tr>
 <tr><td>&gt;</td><td>より大きい</td><td>score &gt; 80 （点数が80点より高いとき）</td></tr>
 <tr><td>&amp;&amp;</td><td>かつ (AND)</td><td>age &gt;= 18 &amp;&amp; hasTicket === true （18歳以上で、かつチケットもある）</td></tr>
 <tr><td>||</td><td>または (OR)</td><td>age &lt; 18 || age &gt; 70（18歳未満、または、70歳以上）</td></tr>
@@ -248,8 +248,8 @@ if (score &gt;= 90) {
 </table>
 </div>
 <hr>
-<h2 id="iv-たくさんの選択肢から選ぶswitch文スウィッチぶん"><a class="header" href="#iv-たくさんの選択肢から選ぶswitch文スウィッチぶん">IV. たくさんの選択肢から選ぶ：switch文（スウィッチぶん）</a></h2>
-<p>多くの条件をif文だけで書くと、コードが長くなって大変です。そんな時に便利なのが「switch文」です。「一つの変数の値」によって、たくさんの選択肢から処理を分けたいときは、switch文を使いましょう。</p>
+<h2 id="iv-たくさんの選択肢せんたくしから選ぶswitch文スウィッチぶん"><a class="header" href="#iv-たくさんの選択肢せんたくしから選ぶswitch文スウィッチぶん">IV. たくさんの<ruby>選択肢<rt>せんたくし</rt></ruby>から選ぶ：switch文（スウィッチぶん）</a></h2>
+<p>多くの条件をif文だけで書くと、コードが長くなって大変です。そんな時に便利なのが「switch文」です。「一つの<ruby>変数<rt>へんすう</rt></ruby>の値」によって、たくさんの<ruby>選択肢<rt>せんたくし</rt></ruby>から処理を分けたいときは、switch文を使いましょう。</p>
 <pre><code>const dayNum = 1; // 1は月曜日、2は火曜日...
 
 switch (dayNum) {
@@ -269,25 +269,25 @@ switch (dayNum) {
 <li>break： 処理が終わったら外に出る命令です。これを忘れると、次のcaseの処理も勝手に動いてしまう（フォールスルー） ので注意してください。</li>
 <li>default： どのcaseにも合わなかったときに動く「その他」の枠です。</li>
 </ul>
-<p>if文を何度も重ねるよりも、switch文を使うことで「パッと見てすぐに意味がわかる」ようになります。つまり、「コードの読みやすさ」がグンと上がります。これを「コードの可読性（かどくせい）が上がる」と言うことがあります。</p>
+<p>if文を何度も重ねるよりも、switch文を使うことで「パッと見てすぐに意味がわかる」ようになります。つまり、「コードの読みやすさ」がグンと上がります。これを「コードの<ruby>可読性<rt>かどくせい</rt></ruby>（かどくせい）が上がる」と言うことがあります。</p>
 <hr>
 <h2 id="v-決まった回数を繰り返すfor文フォーぶん"><a class="header" href="#v-決まった回数を繰り返すfor文フォーぶん">V. 決まった回数を繰り返す：for文（フォーぶん）</a></h2>
 <p>プログラミングのすごいところは、同じ仕事を自動で何度も繰り返せることです。決まった回数を繰り返すには「for文」を使います。</p>
 <p>for文には、動かすために必要な「3つの要素」があります。</p>
 <ol>
-<li>初期設定 (しょき せってい)： let i = 0 （カウンターを0から始める）</li>
+<li><ruby>初期<rt>しょき</rt></ruby><ruby>設定<rt>せってい</rt></ruby> (しょき せってい)： let i = 0 （カウンターを0から始める）</li>
 <li>継続条件 (けいぞく じょうけん)： i &lt; 3 （iが3より小さい間は続ける）</li>
 <li>増減処理 (ぞうげん しょり)： i++ （1回終わるごとに、iを1増やす）</li>
 </ol>
-<p><strong>動きの流れ（i &lt; 3 の場合）</strong></p>
+<p><strong><ruby>動<rt>うご</rt></ruby>きの流れ（i &lt; 3 の場合）</strong></p>
 <ul>
 <li>1回目： i は 0。条件（0 &lt; 3）は正しい。処理を実行。 → i が 1 になる。</li>
 <li>2回目： i は 1。条件（1 &lt; 3）は正しい。処理を実行。 → i が 2 になる。</li>
 <li>3回目： i は 2。条件（2 &lt; 3）は正しい。処理を実行。 → i が 3 になる。</li>
 <li>終了： i は 3。条件（3 &lt; 3）は正しくない。ここで止まる。</li>
 </ul>
-<p>手作業で100回書く代わりに、for文なら3行で済みます。この効率性（こうりつせい）があるからこそ、プログラマーは1,000人以上のユーザーデータを一瞬で処理したり、複雑なアニメーションを作ったりすることができるのです。</p>
-<p>5回「こんにちは！」と表示するプログラムです。</p>
+<p><ruby>手作業<rt>てさぎょう</rt></ruby>で100回書く代わりに、for文なら3行で済みます。この<ruby>効率<rt>こうりつ</rt></ruby>性（こうりつせい）があるからこそ、プログラマーは1,000人以上のユーザーデータを一瞬で処理したり、複雑なアニメーションを作ったりすることができるのです。</p>
+<p>5回「こんにちは！」と<ruby>表示<rt>ひょうじ</rt></ruby>するプログラムです。</p>
 <pre><code class="language-JavaScript">for (let i = 0; i &lt; 3; i++) {
   console.log(i + "番目：こんにちは！");
 }
@@ -305,7 +305,7 @@ while (count &lt;= 3) {
   count++;
 }
 </code></pre>
-<p>下のボタンを押すと、コンソールに実行した結果が表示されます。</p>
+<p>下のボタンを押すと、コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <p><button onclick="let count = 1;
 while (count &lt;= 3) {
   console.log(count + &#39;回目の処理です&#39;);
@@ -314,40 +314,40 @@ while (count &lt;= 3) {
 <p>⚠️ 警告：無限ループ（むげんループ）に注意！ while文で一番怖いのは、プログラムが止まらなくなる「無限ループ」です。条件がいつまでも true（正しい）のままだと、ブラウザが固まってしまいます。 特に continue（後述）を使うときは注意 です。数字を増やす処理（count++ など）の前に continue を書いてしまうと、数字が増えないまま次の回に進んでしまい、永遠にループが終わらなくなります。</p>
 <hr>
 <h2 id="vii-ループを自由にコントロールするbreak-と-continue"><a class="header" href="#vii-ループを自由にコントロールするbreak-と-continue">VII. ループを自由にコントロールする：break と continue</a></h2>
-<p>繰り返しの途中で、「ここで止めたい」「今回は飛ばしたい」と思うことがあります。</p>
+<p><ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しの途中で、「ここで止めたい」「今回は飛ばしたい」と思うことがあります。</p>
 <ul>
-<li>break： 繰り返しをその場で「強制終了（きょうせいしゅうりょう）」します。</li>
+<li>break： <ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しをその場で「<ruby>強制<rt>きょうせい</rt></ruby>終了（きょうせいしゅうりょう）」します。</li>
 <li>continue： 今回の回だけ「スキップ（飛ばす）」して、次の回へ進みます。</li>
 </ul>
 <pre><code>for (let i = 1; i &lt;= 5; i++) {
   if (i === 3) {
-    // iが3のときだけ特別な動きをします
-    // continueなら「3」を表示せずに、すぐ「4」に進みます
+    // iが3のときだけ特別な&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きをします
+    // continueなら「3」を&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;せずに、すぐ「4」に進みます
     continue;
   }
   console.log(i);
 }
 </code></pre>
-<p>下のボタンを押すと、コンソールに実行した結果が表示されます。<code>1</code> <code>2</code> <code>4</code> <code>5</code> が表示されて、<code>3</code>だけ表示されません。</p>
+<p>下のボタンを押すと、コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。<code>1</code> <code>2</code> <code>4</code> <code>5</code> が<ruby>表示<rt>ひょうじ</rt></ruby>されて、<code>3</code>だけ<ruby>表示<rt>ひょうじ</rt></ruby>されません。</p>
 <p><button onclick="for (let i = 1; i &lt;= 5; i++) {
   if (i === 3) {
-    // iが3のときだけ特別な動きをします
-    // continueなら「3」を表示せずに、すぐ「4」に進みます
+    // iが3のときだけ特別な&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きをします
+    // continueなら「3」を&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;せずに、すぐ「4」に進みます
     continue;
   }
   console.log(i);
 }">実行</button></p>
-<p>これらを使いこなすことで、無駄な計算を減らし、プログラムをより効率的に動かせるようになります。</p>
+<p>これらを使いこなすことで、無駄な計算を減らし、プログラムをより<ruby>効率<rt>こうりつ</rt></ruby>的に動かせるようになります。</p>
 <hr>
 <h2 id="viii-まとめと学習のアドバイス"><a class="header" href="#viii-まとめと学習のアドバイス">VIII. まとめと学習のアドバイス</a></h2>
-<p>今日学んだ「制御文」は、Webサイトに「知能（ちのう）」を与えるための基礎です。if文で判断し、ループで大量の仕事をこなす。これがプログラミングの核（かく）となる部分です。</p>
+<p>今日学んだ「<ruby>制御<rt>せいぎょ</rt></ruby>文」は、Webサイトに「知能（ちのう）」を与えるための基礎です。if文で判断し、ループで大量の仕事をこなす。これがプログラミングの核（かく）となる部分です。</p>
 <p>上達するためのアドバイスです：</p>
 <ol>
 <li>ブラウザの「コンソール」を使おう： F12キーを押して、コンソールに直接コードを打ち込んでみてください。すぐに結果が見えるので、最高の練習になります。</li>
 <li>エラーは「ヒント」だと考えよう： 赤い文字でエラーが出ても、それは「間違いの場所」を教えてくれるメッセージです。恐れずに読みましょう。</li>
-<li>小さなゲームを作ってみよう： ソースコンテキストにある「数当てゲーム」のように、小さな目標を作ってコードを書くのが一番の近道です。</li>
+<li>小さなゲームを作ってみよう： ソースコンテキストにある「数<ruby>当<rt>あ</rt></ruby>てゲーム」のように、小さな目標を作ってコードを書くのが一番の<ruby>近道<rt>ちかみち</rt></ruby>です。</li>
 </ol>
-<p>制御文をマスターすれば、あなたのJavaScriptはもっと自由に、楽しく動かせるようになります。一歩ずつ進んでいきましょう。</p>
+<p><ruby>制御<rt>せいぎょ</rt></ruby>文をマスターすれば、あなたのJavaScriptはもっと自由に、楽しく動かせるようになります。<ruby>一歩<rt>いっぽ</rt></ruby>ずつ進んでいきましょう。</p>
 <p>頑張りましょう！</p>
 
                     </main>
@@ -385,6 +385,22 @@ while (count &lt;= 3) {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>
