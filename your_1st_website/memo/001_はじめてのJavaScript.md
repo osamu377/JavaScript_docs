@@ -1,6 +1,6 @@
 # 初めてのJavaScript
 
-JavaScriptの最初のプロジェクトを作るのはとても楽しいステップです！ここでは、**Visual Studio Code（VS Code）を使って「Hello, World!」を表示する基本的なWebページを作る方法**を、初心者向けにわかりやすく説明します。
+JavaScriptの最初のプロジェクトを作るのはとても楽しいステップです！ここでは、**Visual Studio Code（VS Code）を使って「Hello, World!」を<ruby>表示<rt>ひょうじ</rt></ruby>する基本的なWebページを作る方法**を、初心者向けにわかりやすく説明します。
 
 Creating your first JavaScript project is a very fun step! Here's an easy-to-follow beginner's guide on **How to create a basic web page that displays "Hello, World!" using Visual Studio Code (VS Code)**.
 
@@ -44,7 +44,7 @@ Create a JSLearn folder in the source folder and pin it
 1. 拡張機能アイコンをクリック *Click on the extension icon*
 <img src="img/001/201.png">
 
-1. 検索ウィンドウに"Live Server"と入力 *Type 'Live Server' in the search window.*
+1. 検索ウィンドウに"Live Server"と<ruby>入力<rt>にゅうりょく</rt></ruby> *Type 'Live Server' in the search window.*
 <img src="img/001/202.png">
 
 1. "インストール"をクリック *Click on "インストール".
@@ -102,7 +102,7 @@ Create a JSLearn folder in the source folder and pin it
 ### ④ Live Serverで実行 *Run on Live Server*
 
 1. `index.html`を開いて、右下の「Go Live」ボタンをクリック
-2. ブラウザが開いて、ページが表示される
+2. ブラウザが開いて、ページが<ruby>表示<rt>ひょうじ</rt></ruby>される
 
 1. open `index.html` and click the 'Go Live' button in the bottom right-hand corner.
 2. your browser will open and the page will be displayed
@@ -111,7 +111,7 @@ Create a JSLearn folder in the source folder and pin it
 
 ### 🎉 実行結果 *Execution Result*
 
-- ページに「Hello, World!」と表示される
+- ページに「Hello, World!」と<ruby>表示<rt>ひょうじ</rt></ruby>される
 - ボタンをクリックすると、JavaScriptが動いて「Hello!」とアラートが出る
 
 - The page displays 'Hello, World!
@@ -121,7 +121,7 @@ Create a JSLearn folder in the source folder and pin it
 
 ### 🔹 `<!DOCTYPE html>`
 - **意味**：この文書がHTML5で書かれていることをブラウザに伝える宣言です。
-- **ポイント**：ページの表示を正しくするために、最初に必ず書きます。
+- **ポイント**：ページの<ruby>表示<rt>ひょうじ</rt></ruby>を正しくするために、最初に必ず書きます。
 
 - **Meaning**: This declaration tells the browser that the document is written in HTML5.
 - **Point**: Always place this at the very beginning to ensure the page displays correctly.
@@ -138,10 +138,10 @@ Create a JSLearn folder in the source folder and pin it
 ---
 
 ### 🔹 `<head>` ～ `</head>`
-- **意味**：ページの「頭」の部分で、表示されない情報（設定など）をまとめます。
+- **意味**：ページの「頭」の部分で、<ruby>表示<rt>ひょうじ</rt></ruby>されない情報（設定など）をまとめます。
 - **中に含まれるタグ**：
-  - `<meta charset="UTF-8">`：文字コードをUTF-8に設定。日本語なども正しく表示されます。
-  - `<title>`：ブラウザのタブに表示されるページのタイトル。
+  - `<meta charset="UTF-8">`：文字コードをUTF-8に設定。日本語なども正しく<ruby>表示<rt>ひょうじ</rt></ruby>されます。
+  - `<title>`：ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>されるページのタイトル。
 
 - **Meaning**: This is the "head" section of the page, where you include information that is not directly displayed (such as settings).
 - **Tags included**:
@@ -151,14 +151,14 @@ Create a JSLearn folder in the source folder and pin it
 ---
 
 ### 🔹 `<body>` ～ `</body>`
-- **意味**：実際に画面に表示される内容を書く部分です。
+- **意味**：実際に<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>される内容を書く部分です。
 
 - **Meaning**: This section contains the content that is actually displayed on the screen.
 
 ---
 
 ### 🔹 `<h1>Hello, World!</h1>`
-- **意味**：大きな見出し（タイトル）を表示します。
+- **意味**：大きな見出し（タイトル）を<ruby>表示<rt>ひょうじ</rt></ruby>します。
 - **ポイント**：`<h1>`は一番大きな見出し。数字が大きくなるほど小さな見出しになります（例：`<h2>`、`<h3>`）。
 
 - **Meaning**: Displays a large heading (title).
@@ -166,9 +166,9 @@ Create a JSLearn folder in the source folder and pin it
 
 ---
 
-### 🔹 `<p>This is a paragraph.</p>`：段落（パラグラフ）を表すタグ
-- **意味**： `<p>`タグは、**文章のまとまり（段落）**を表すために使います。
-- **ポイント**：「段落」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
+### 🔹 `<p>This is a paragraph.</p>`：<ruby>段落<rt>だんらく</rt></ruby>（パラグラフ）を表すタグ
+- **意味**： `<p>`タグは、**文章のまとまり（<ruby>段落<rt>だんらく</rt></ruby>）**を表すために使います。
+- **ポイント**：「<ruby>段落<rt>だんらく</rt></ruby>」とは、ひとつの考えや話題をまとめた文章のかたまりのことです。
 
 - **Meaning**: The `<p>` tag is used to represent a **block of text (a paragraph)**.
 - **Point**: A paragraph is a group of sentences that express a single idea or topic.
@@ -176,7 +176,7 @@ Create a JSLearn folder in the source folder and pin it
 ---
 
 ### 🔹 `<button onclick="sayHello()">Click Me</button>`
-- **意味**：クリックできるボタンを表示します。
+- **意味**：クリックできるボタンを<ruby>表示<rt>ひょうじ</rt></ruby>します。
 - **`onclick="sayHello()"`**：ボタンがクリックされたときに、JavaScriptの `sayHello()` 関数を実行します。
 
 - **Meaning**: Displays a clickable button.
@@ -193,7 +193,7 @@ Create a JSLearn folder in the source folder and pin it
   }
   ```
   - `sayHello()` という関数を定義しています。
-  - ボタンをクリックすると、ポップアップで「Hello! Welcome to the world of JavaScript!」と表示されます。
+  - ボタンをクリックすると、ポップアップで「Hello! Welcome to the world of JavaScript!」と<ruby>表示<rt>ひょうじ</rt></ruby>されます。
 
 - **Meaning**: This tag is used to write JavaScript, a programming language.
 - **Code inside**:

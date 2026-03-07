@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -210,7 +210,7 @@ let str2 = new String("こんにちは");
 console.log(typeof str2); // "object"
 
 </code></pre>
-<h4 id="ここが注意見た目は同じでも中身が違う"><a class="header" href="#ここが注意見た目は同じでも中身が違う">ここが注意！「見た目は同じでも中身が違う」</a></h4>
+<h4 id="ここが注意見みた目めは同じでも中身が違う"><a class="header" href="#ここが注意見みた目めは同じでも中身が違う">ここが注意！「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>は同じでも中身が違う」</a></h4>
 <pre><code class="language-javascript">let s1 = "hello";
 let s2 = new String("hello");
 
@@ -223,20 +223,20 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 <blockquote>
 <p>「プリミティブは『ただの値』なのに、なぜ <code>.length</code> や <code>.toUpperCase()</code> などの <strong>『道具（メソッド）』</strong> が使えるんですか？」</p>
 </blockquote>
-<p>実は、JavaScriptが裏側で <strong>一時的な魔法</strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と呼びます。</p>
+<p>実は、JavaScriptが裏側で <strong>一時的な<ruby>魔法<rt>まほう</rt></ruby></strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と呼びます。</p>
 <ol>
 <li>あなたが <code>str1.toUpperCase()</code> と書く。</li>
 <li>JavaScriptが「あ、道具を使いたいんだな？」と判断する。</li>
 <li><strong>一瞬だけ</strong>、プリミティブを「オブジェクトの箱」に入れる。</li>
 <li>道具（メソッド）を使い終わったら、すぐに箱を捨てて「プリミティブ」に戻す。</li>
 </ol>
-<p>この魔法のおかげで、私たちは重い「オブジェクト」をずっと持っていなくても、必要なときだけ便利な道具を使えるのです。</p>
+<p>この<ruby>魔法<rt>まほう</rt></ruby>のおかげで、私たちは重い「オブジェクト」をずっと持っていなくても、必要なときだけ便利な道具を使えるのです。</p>
 <h3 id="4-どっちを使えばいい"><a class="header" href="#4-どっちを使えばいい">4. どっちを使えばいい？</a></h3>
 <p>留学生へのアドバイスは、とてもシンプルです。</p>
 <ul>
 <li><strong>常に「String型（プリミティブ）」を使いましょう！</strong></li>
 <li>書き方が簡単（<code>""</code> で囲むだけ）。</li>
-<li>メモリを節約できて、動きも速い。</li>
+<li>メモリを節約できて、<ruby>動<rt>うご</rt></ruby>きも速い。</li>
 <li><code>new String()</code> は、特別な理由がない限り、<strong>使わなくて大丈夫</strong>です。</li>
 </ul>
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
@@ -259,7 +259,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 お菓子やプレゼントを包む「ラッピング（wrapping）」と同じ言葉です。
 「値を一時的に包んで守る箱」だと教えると、イメージが定着（ていちゃく）しやすいですよ！</p>
 </blockquote>
-<p>いかがでしょうか？「ふだんは身軽なプリミティブ、道具を使うときだけ魔法で変身」という仕組みは伝わりそうでしょうか。</p>
+<p>いかがでしょうか？「ふだんは身軽なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で変身」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
 <hr>
 <h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の加工（かこう）</a></h2>
 <p>Stringオブジェクト（文字列）には、文字を自由に操るための便利な「道具（メソッド）」がたくさんあります。</p>
@@ -307,7 +307,7 @@ console.log(email.toUpperCase()); // "MARIA@EXAMPLE.COM"（すべて大文字）
 
 </code></pre>
 <ul>
-<li><strong>ポイント：</strong> ユーザーが入力したメールアドレスをきれいに整理するときによく使います。</li>
+<li><strong>ポイント：</strong> ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したメールアドレスをきれいに整理するときによく使います。</li>
 </ul>
 <h3 id="5-trimトリムまわりの空白を消す"><a class="header" href="#5-trimトリムまわりの空白を消す">5. trim（トリム）：まわりの空白を消す</a></h3>
 <p>文字の前後に入ってしまった、いらない「スペース」を自動で消してくれます。</p>
@@ -340,11 +340,11 @@ console.log(cleanInput); // "マリア"（きれいに消えた！）
 <p><strong>「元の文字は変わらない」というルール</strong>
 文字列（String）のメソッドは、すべて**「加工したあとの新しい文字」**を返します。元の変数を変えたいときは、<code>text = text.trim();</code> のように、もう一度代入する必要があるよ、と教えてあげてください。</p>
 </blockquote>
-<p>いかがでしょうか？ 「文字列の加工」ができるようになると、ユーザーが入力したデータをきれいに整理できるようになります。</p>
+<p>いかがでしょうか？ 「文字列の加工」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに整理できるようになります。</p>
 <hr>
 <h2 id="iii-文字の検索"><a class="header" href="#iii-文字の検索">III. 文字の検索</a></h2>
 <p>文字列（String）の中から「特定の文字」を見つけたり、場所を調べたりするときに欠かせない <strong><code>charAt</code></strong> と <strong><code>indexOf</code></strong> について説明します。</p>
-<p>どちらも「何番目にあるか」という <strong>インデックス（番号）</strong> をキーワードにして動きます。</p>
+<p>どちらも「何番目にあるか」という <strong>インデックス（番号）</strong> をキーワードにして<ruby>動<rt>うご</rt></ruby>きます。</p>
 <hr>
 <h3 id="1-charatキャラット番号から文字を知る"><a class="header" href="#1-charatキャラット番号から文字を知る">1. charAt（キャラット）：番号から「文字」を知る</a></h3>
 <p>指定した番号の場所に、どんな文字があるかを教えてくれます。</p>
@@ -388,7 +388,7 @@ console.log(msg.indexOf("さようなら")); // -1
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>メソッド名</th><th>知りたいこと（答え）</th><th>入力するもの</th><th>例え話</th></tr>
+<tr><th>メソッド名</th><th>知りたいこと（答え）</th><th><ruby>入力<rt>にゅうりょく</rt></ruby>するもの</th><th>例え話</th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>charAt</code></strong></td><td><strong>文字</strong>はなに？</td><td>番号 (Index)</td><td>「0番の席に座っているのは誰？」</td></tr>
@@ -424,7 +424,7 @@ if (email.indexOf("@") !== -1) {
 <li>改行（かいぎょう）: テンプレートリテラルは、コードの中で改行した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
 </ul>
 <h3 id="数値への変換"><a class="header" href="#数値への変換">数値への変換</a></h3>
-<p>prompt()（プロンプト：入力画面）でユーザーが入力した数字は、見た目が数字でも、プログラム上は「文字列」です。計算するには変換が必要です。</p>
+<p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには変換が必要です。</p>
 <ul>
 <li>parseInt(): 整数（1, 2, 3…）に変換します。</li>
 <li>parseFloat(): 小数点を含む数値に変換します。</li>
@@ -466,6 +466,22 @@ if (email.indexOf("@") !== -1) {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

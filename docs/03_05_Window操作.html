@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -176,12 +176,12 @@
                     <main>
                         <h1 id="window操作"><a class="header" href="#window操作">Window操作</a></h1>
 <h2 id="i-windowの操作"><a class="header" href="#i-windowの操作">I. Windowの操作</a></h2>
-<p>「ダイアログボックスを表示する」「新しいウィンドウやタブを開く」</p>
-<p>ブラウザの「社長さん」である <strong>Windowオブジェクト</strong> は、画面全体をコントロールする力を持っています。</p>
+<p>「ダイアログボックスを<ruby>表示<rt>ひょうじ</rt></ruby>する」「新しいウィンドウやタブを開く」</p>
+<p>ブラウザの「社長さん」である <strong>Windowオブジェクト</strong> は、<ruby>画面<rt>がめん</rt></ruby>全体をコントロールする力を持っています。</p>
 <p>留学生の方には、Windowの操作は**「ユーザーに話しかけたり、新しい部屋（タブ）を作ったりするコミュニケーション」**だと教えてあげてください。</p>
 <hr>
-<h3 id="1-ダイアログボックスを表示する話しかける"><a class="header" href="#1-ダイアログボックスを表示する話しかける">1. ダイアログボックスを表示する（話しかける）</a></h3>
-<p>ユーザーに短いメッセージを伝えたり、質問をしたりする「小さな窓」を表示します。これらはすべて、一時的に他の操作を止めて注目させる効果があります。</p>
+<h3 id="1-ダイアログボックスを表示ひょうじする話しかける"><a class="header" href="#1-ダイアログボックスを表示ひょうじする話しかける">1. ダイアログボックスを<ruby>表示<rt>ひょうじ</rt></ruby>する（話しかける）</a></h3>
+<p>ユーザーに短いメッセージを伝えたり、質問をしたりする「小さな窓」を<ruby>表示<rt>ひょうじ</rt></ruby>します。これらはすべて、一時的に他の操作を止めて注目させる効果があります。</p>
 <ul>
 <li>
 <p><strong><code>alert("メッセージ")</code></strong>
@@ -196,14 +196,14 @@
 </li>
 <li>
 <p><strong><code>prompt("質問", "初期値")</code></strong>
-「入力」です。ユーザーに文字を書いてもらいます。</p>
+「<ruby>入力<rt>にゅうりょく</rt></ruby>」です。ユーザーに文字を書いてもらいます。</p>
 </li>
 <li>
-<p>戻り値：入力された文字、または <code>null</code>（キャンセル時）</p>
+<p>戻り値：<ruby>入力<rt>にゅうりょく</rt></ruby>された文字、または <code>null</code>（キャンセル時）</p>
 </li>
 </ul>
 <pre><code class="language-javascript">if (confirm("本当に消去しますか？")) {
-    const name = prompt("確認のため、お名前を入力してください");
+    const name = prompt("確認のため、お名前を&lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;してください");
     alert(name + "さん、削除を受け付けました");
 }
 
@@ -225,7 +225,7 @@
 </blockquote>
 <hr>
 <h3 id="3-ウィンドウのサイズと位置を操る"><a class="header" href="#3-ウィンドウのサイズと位置を操る">3. ウィンドウのサイズと位置を操る</a></h3>
-<p>今のウィンドウを動かしたり、大きさを変えたりする魔法です（最近のブラウザでは制限されることもあります）。</p>
+<p>今のウィンドウを動かしたり、大きさを変えたりする<ruby>魔法<rt>まほう</rt></ruby>です（最近のブラウザでは制限されることもあります）。</p>
 <ul>
 <li><strong><code>window.moveTo(x, y)</code></strong>：指定した場所へウィンドウを移動させる。</li>
 <li><strong><code>window.resizeTo(width, height)</code></strong>：指定したサイズにウィンドウを変える。</li>
@@ -257,21 +257,21 @@ function goToTop() {
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>命令</th><th>役割</th><th>ユーザーの反応</th></tr>
+<tr><th>命令</th><th>役割</th><th>ユーザーの<ruby>反応<rt>はんのう</rt></ruby></th></tr>
 </thead>
 <tbody>
 <tr><td><strong><code>alert()</code></strong></td><td>お知らせ</td><td>「わかった！」とOKを押す</td></tr>
 <tr><td><strong><code>confirm()</code></strong></td><td>はい／いいえ</td><td>「やる」か「やめる」か選ぶ</td></tr>
-<tr><td><strong><code>prompt()</code></strong></td><td>文字入力</td><td>キーボードで何か書く</td></tr>
+<tr><td><strong><code>prompt()</code></strong></td><td>文字<ruby>入力<rt>にゅうりょく</rt></ruby></td><td>キーボードで何か書く</td></tr>
 <tr><td><strong><code>open()</code></strong></td><td>新しい窓</td><td>新しいタブが開く</td></tr>
-<tr><td><strong><code>scrollTo()</code></strong></td><td>スクロール</td><td>画面が上下に動く</td></tr>
+<tr><td><strong><code>scrollTo()</code></strong></td><td>スクロール</td><td><ruby>画面<rt>がめん</rt></ruby>が上下に動く</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
 <p>いかがでしょうか？これで「ブラウザの外側」も自由に操れるようになりましたね。</p>
 <h2 id="ii-タイマー"><a class="header" href="#ii-タイマー">II. タイマー</a></h2>
-<p>JavaScriptには、時間をコントロールする**「タイマー（Timer）」**という便利な魔法が2つあります。</p>
+<p>JavaScriptには、時間をコントロールする**「タイマー（Timer）」**という便利な<ruby>魔法<rt>まほう</rt></ruby>が2つあります。</p>
 <p>留学生の方には、**「一度きりのアラーム時計」<strong>と</strong>「ずっと繰り返すリズム時計」**の違いとして説明すると、とてもスムーズに理解してもらえます。</p>
 <hr>
 <h3 id="1-settimeout一度だけ実行"><a class="header" href="#1-settimeout一度だけ実行">1. <code>setTimeout</code>（一度だけ実行）</a></h3>
@@ -296,7 +296,7 @@ setTimeout(function() {
 <li><strong>イメージ：</strong> 目覚まし時計の「スヌーズ機能」や、心臓のドクドクというリズム。</li>
 <li><strong>書き方：</strong> <code>setInterval(繰り返したいプログラム, 間隔ms)</code></li>
 </ul>
-<pre><code class="language-javascript">// 1秒（1000ms）ごとに「ピッ！」と表示する
+<pre><code class="language-javascript">// 1秒（1000ms）ごとに「ピッ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
 setInterval(function() {
   console.log("ピッ！ ⏰");
 }, 1000);
@@ -363,7 +363,7 @@ const countdown = setInterval(function() {
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「時間を操る力」を手に入れると、スライドショーやゲーム、リアルタイムの時計など、動きのあるサイトが作れるようになります。</p>
+<p>いかがでしょうか？「時間を操る力」を手に入れると、スライドショーやゲーム、リアルタイムの時計など、<ruby>動<rt>うご</rt></ruby>きのあるサイトが作れるようになります。</p>
 
                     </main>
 
@@ -400,6 +400,22 @@ const countdown = setInterval(function() {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -182,7 +182,7 @@
 <hr>
 <h2 id="i-用語の整理"><a class="header" href="#i-用語の整理">I. 用語の整理</a></h2>
 <p>関数について説明する前に、整理しておきたい言葉があります。前に出てきた言葉ですが、ここで復習しておきましょう。</p>
-<p>プログラミングを勉強していると、漢字が並んでいて難しく感じますよね。<strong>「演算子」</strong> と <strong>「式」</strong> と <strong>「文」</strong> です。これらは、プログラミングの <strong>「文法（ぶんぽう）」</strong> の名前です。そして、どれもプログラムの動きを書くためのものです。</p>
+<p>プログラミングを勉強していると、漢字が並んでいて難しく感じますよね。<strong>「演算子」</strong> と <strong>「式」</strong> と <strong>「文」</strong> です。これらは、プログラミングの <strong>「文法（ぶんぽう）」</strong> の名前です。そして、どれもプログラムの<ruby>動<rt>うご</rt></ruby>きを書くためのものです。</p>
 <p>日本語の「単語（たんご）」「句（く）」「文（ぶん）」の違いに似ています。</p>
 <p>わかりやすく「料理（りょうり）」に例えて説明しますね。</p>
 <h3 id="演算子えんざんし-operator"><a class="header" href="#演算子えんざんし-operator">演算子（えんざんし）／ Operator</a></h3>
@@ -229,7 +229,7 @@
 最後に <code>;</code>（セミコロン）がついているものは、ほとんどの場合 <strong>「文」</strong> です。日本語の「。」（まる）と同じです。</p>
 </blockquote>
 <h2 id="ii-関数かんすうとは何か"><a class="header" href="#ii-関数かんすうとは何か">II. 関数（かんすう）とは何か？</a></h2>
-<p>「関数（かんすう）」は、プログラミングの中でとても便利な <strong>「魔法の箱（まほうのはこ）」</strong> や <strong>「自動販売機（じどうはんばいき）」</strong> のようなものです。</p>
+<p>「関数（かんすう）」は、プログラミングの中でとても便利な <strong>「<ruby>魔法<rt>まほう</rt></ruby>の箱（まほうのはこ）」</strong> や <strong>「自動販売機（じどうはんばいき）」</strong> のようなものです。</p>
 <p>漢字で見ると難しそうですが、その中身は、いくつかの <strong>「文」</strong> を一つ（ひとつ）にまとめた <strong>「セット」</strong> です。とてもシンプルですよ！</p>
 <p><strong>関数は「料理マシン」と同じ！</strong></p>
 <p>関数をイメージするときは、キッチンにある「ジューサー（ミキサー）」を思い出してください。</p>
@@ -280,9 +280,9 @@ function sayHello() {
 <p>これで「準備」ができました。次は、これを目的に合わせて「動かす」方法を説明します。</p>
 <hr>
 <h2 id="iv-関数の呼び出し実行じっこう"><a class="header" href="#iv-関数の呼び出し実行じっこう">IV. 関数の呼び出し（実行：じっこう）</a></h2>
-<p>関数を作っただけでは、プログラムは動きません。作った関数を動かすことを <strong>「呼び出し」</strong> と言います。初心者の方は「定義（準備）」と「呼び出し（実行）」を分けて考えることがとても大切です。</p>
-<p><strong>呼び出しの仕組み</strong></p>
-<p>関数名のあとに () をつけると、中身が動き出します。 sayHello(); と書くと、先ほど {} の中に書いたメッセージが表示されます。</p>
+<p>関数を作っただけでは、プログラムは<ruby>動<rt>うご</rt></ruby>きません。作った関数を動かすことを <strong>「呼び出し」</strong> と言います。初心者の方は「定義（準備）」と「呼び出し（実行）」を分けて考えることがとても大切です。</p>
+<p><strong>呼び出しの<ruby>仕組<rt>しく</rt></ruby>み</strong></p>
+<p>関数名のあとに () をつけると、中身が<ruby>動<rt>うご</rt></ruby>き出します。 sayHello(); と書くと、先ほど {} の中に書いたメッセージが<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <p><strong>イベントとの連携（れんけい）</strong></p>
 <p>ウェブページでは、ボタンをクリックした時に関数を呼び出すことが多いです。これを <strong>「イベントハンドラ」</strong> と言います。</p>
 <p><strong>HTMLとJavaScriptのつながり</strong></p>
@@ -435,7 +435,7 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 <pre><code class="language-javascript">if (true) {
   var leak = "外に出ちゃうよ！";
 }
-console.log(leak); // ⭕ 表示できてしまう（これがバグの原因になる）
+console.log(leak); // ⭕ &lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;できてしまう（これがバグの原因になる）
 
 if (true) {
   let safe = "外には出ないよ";
@@ -511,7 +511,7 @@ const sayHi2 = function() {
 <p><strong>→「もっと短く書ける、最新のショートカット」のこと</strong></p>
 <p>「無名関数」をさらに短く、かっこよく書く方法です。 <strong><code>=&gt;</code>（矢印：アロー）</strong> を使うので「アロー関数」と呼びます。</p>
 <h4 id="書き方の変化を見てみよう"><a class="header" href="#書き方の変化を見てみよう">書き方の変化を見てみよう</a></h4>
-<p>どれも同じ動きをしますが、下に行くほど短くなります。</p>
+<p>どれも同じ<ruby>動<rt>うご</rt></ruby>きをしますが、下に行くほど短くなります。</p>
 <ol>
 <li><strong>普通の関数：</strong>
 <code>function(a, b) { return a + b; }</code></li>
@@ -525,13 +525,13 @@ const sayHi2 = function() {
 <p>留学生のみなさんには、この3つのメリットを覚えてほしいです。</p>
 <ul>
 <li><strong>タイピングが楽：</strong> <code>function</code> と書かなくていいので、指が疲れません。</li>
-<li><strong>見た目がスッキリ：</strong> コードが短くなって、読みやすくなります。</li>
+<li><strong><ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>がスッキリ：</strong> コードが短くなって、読みやすくなります。</li>
 <li><strong>「this」のルールがやさしい：</strong> （少し難しい話ですが）アロー関数を使うと、プログラムが「自分（this）」を見失いにくくなり、エラーが減ります。</li>
 </ul>
 <hr>
 <h3 id="どんな時に使うの具体的な例"><a class="header" href="#どんな時に使うの具体的な例">どんな時に使うの？（具体的な例）</a></h3>
 <p>一番よく使うのは、<strong>「他の関数の中で、ちょっと手伝ってほしい時」</strong> です。</p>
-<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と表示する
+<pre><code class="language-javascript">// 3秒後に「時間ですよ！」と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する
 setTimeout(() =&gt; {
   console.log("時間ですよ！");
 }, 3000);
@@ -623,6 +623,22 @@ setTimeout(() =&gt; {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

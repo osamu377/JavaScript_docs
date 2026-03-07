@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -177,7 +177,7 @@
                         <h1 id="windowオブジェクト"><a class="header" href="#windowオブジェクト">Windowオブジェクト</a></h1>
 <p>さて、オブジェクトがどんなものか、を理解したら、次はブラウザのオブジェクトをもっとくわしく見てみましょう。こうしたオブジェクトはあらかじめ、JavaScriptに組み込まれているので、そのプロパティもメソッドも、いきなり呼び出して使うことができます。</p>
 <p>ブラウザで動くJavaScriptを学習するとき、一番大きな存在が <strong>Windowオブジェクト</strong> です。</p>
-<p>留学生の方には、Windowオブジェクトは <strong>「ブラウザの画面全体を管理している『社長さん』」</strong> だと教えてあげてください。JavaScriptでできることのほとんどは、この社長さんにお願いして動かしています。</p>
+<p>留学生の方には、Windowオブジェクトは <strong>「ブラウザの<ruby>画面<rt>がめん</rt></ruby>全体を管理している『社長さん』」</strong> だと教えてあげてください。JavaScriptでできることのほとんどは、この社長さんにお願いして動かしています。</p>
 <hr>
 <h2 id="i-windowオブジェクト"><a class="header" href="#i-windowオブジェクト">I. Windowオブジェクト</a></h2>
 <h3 id="1-windowオブジェクトとは"><a class="header" href="#1-windowオブジェクトとは">1. Windowオブジェクトとは？</a></h3>
@@ -185,7 +185,7 @@
 JavaScriptを実行するとき、<strong>最初からそこにいる「グローバルオブジェクト」</strong>（一番偉いオブジェクト）です。</p>
 <p>実は、私たちが普段使っている <code>console.log()</code> や <code>alert()</code> も、本当は <code>window.console.log()</code> や <code>window.alert()</code> という名前です。でも、社長さんは有名すぎるので、<strong><code>window.</code> を省略（しょうりゃく）して書くことができます。</strong></p>
 <hr>
-<h3 id="2-よく使うプロパティ画面の情報"><a class="header" href="#2-よく使うプロパティ画面の情報">2. よく使うプロパティ（画面の情報）</a></h3>
+<h3 id="2-よく使うプロパティ画面がめんの情報"><a class="header" href="#2-よく使うプロパティ画面がめんの情報">2. よく使うプロパティ（<ruby>画面<rt>がめん</rt></ruby>の情報）</a></h3>
 <p>社長さんが持っている「今のブラウザの状態（じょうたい）」についての情報です。</p>
 <h4 id="windowdocument"><a class="header" href="#windowdocument"><strong><code>window.document</code></strong></a></h4>
 <p>今見ている「ウェブサイトの中身（ページ）」そのものです。文字の色を変えたり、ボタンを作ったりするときに使います。</p>
@@ -197,14 +197,14 @@ JavaScriptを実行するとき、<strong>最初からそこにいる「グロ�
 <h4 id="windowinnerwidth--innerheight"><a class="header" href="#windowinnerwidth--innerheight"><strong><code>window.innerWidth</code> / <code>innerHeight</code></strong></a></h4>
 <p>ブラウザの「中身の横幅（よこはば）と高さ」です。</p>
 <ul>
-<li><strong>イメージ：</strong> 画面の大きさに合わせてデザインを変えたいときにチェックします。たとえば「パソコンでは、画面の横幅がスマートフォンより広いので、それに合わせ横にメニューなどを表示する」というようなことをしたいときに、使います。</li>
+<li><strong>イメージ：</strong> <ruby>画面<rt>がめん</rt></ruby>の大きさに合わせてデザインを変えたいときにチェックします。たとえば「パソコンでは、<ruby>画面<rt>がめん</rt></ruby>の横幅がスマートフォンより広いので、それに合わせ横にメニューなどを<ruby>表示<rt>ひょうじ</rt></ruby>する」というようなことをしたいときに、使います。</li>
 </ul>
 <hr>
 <h3 id="3-よく使うメソッド社長さんができること"><a class="header" href="#3-よく使うメソッド社長さんができること">3. よく使うメソッド（社長さんができること）</a></h3>
 <h4 id="alert--prompt--confirm"><a class="header" href="#alert--prompt--confirm"><strong><code>alert()</code> / <code>prompt()</code> / <code>confirm()</code></strong></a></h4>
 <p>ユーザーにメッセージを出したり、質問をしたりする「小さな窓（ダイアログ）」を出します。</p>
 <pre><code class="language-javascript">alert("こんにちは！"); // メッセージを出す
-let name = prompt("お名前は？"); // 名前を入力してもらう
+let name = prompt("お名前は？"); // 名前を&lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;してもらう
 
 </code></pre>
 <h4 id="settimeout--setinterval"><a class="header" href="#settimeout--setinterval"><strong><code>setTimeout()</code> / <code>setInterval()</code></strong></a></h4>
@@ -233,9 +233,9 @@ let name = prompt("お名前は？"); // 名前を入力してもらう
 <tbody>
 <tr><td><strong>プロパティ</strong></td><td><strong><code>document</code></strong></td><td>ページの内容をいじる</td></tr>
 <tr><td><strong>プロパティ</strong></td><td><strong><code>location</code></strong></td><td>住所（URL）を確認・移動する</td></tr>
-<tr><td><strong>メソッド</strong></td><td><strong><code>alert()</code></strong></td><td>お知らせを表示する</td></tr>
+<tr><td><strong>メソッド</strong></td><td><strong><code>alert()</code></strong></td><td>お知らせを<ruby>表示<rt>ひょうじ</rt></ruby>する</td></tr>
 <tr><td><strong>メソッド</strong></td><td><strong><code>setTimeout()</code></strong></td><td>タイマーをセットする</td></tr>
-<tr><td><strong>メソッド</strong></td><td><strong><code>scrollTo()</code></strong></td><td>画面を上や下に動かす（スクロール）</td></tr>
+<tr><td><strong>メソッド</strong></td><td><strong><code>scrollTo()</code></strong></td><td><ruby>画面<rt>がめん</rt></ruby>を上や下に動かす（スクロール）</td></tr>
 </tbody>
 </table>
 </div>
@@ -255,20 +255,20 @@ let name = prompt("お名前は？"); // 名前を入力してもらう
 <p>オブジェクトは別のオブジェクトのプロパティになることがあります。</p>
 </blockquote>
 <p>留学生の方には、**「ウェブページという建物を管理し、中身を書き換えたり、新しくパーツを作ったりする責任者」**だと伝えるとイメージが湧きやすくなります！</p>
-<p>documentオブジェクトとは、ブラウザに表示されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
-JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに動きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
+<p>documentオブジェクトとは、ブラウザに<ruby>表示<rt>ひょうじ</rt></ruby>されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
+JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに<ruby>動<rt>うご</rt></ruby>きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
 <p>これを専門用語で <strong>DOM（ドム / Document Object Model）</strong> と呼びます。HTMLを「木の枝（えだ）」のような構造として管理しているのが特徴です。</p>
 <p>DOMツリーについては、次のセクションで、くわしく説明します。ここでは、Windowとdocumentの違いをしっかり頭に入れてください。</p>
 <h3 id="1-documentオブジェクトとは"><a class="header" href="#1-documentオブジェクトとは">1. documentオブジェクトとは？</a></h3>
-<p>ブラウザに表示されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
-JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに動きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
+<p>ブラウザに<ruby>表示<rt>ひょうじ</rt></ruby>されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
+JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに<ruby>動<rt>うご</rt></ruby>きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
 <p>これを専門用語で <strong>DOM（ドム / Document Object Model）</strong> と呼びます。HTMLを「木の枝（えだ）」のような構造として管理しているのが特徴です。</p>
 <hr>
 <h3 id="2-よく使うプロパティページの情報"><a class="header" href="#2-よく使うプロパティページの情報">2. よく使うプロパティ（ページの情報）</a></h3>
 <p>現場監督が知っている、今のページの情報です。</p>
 <ul>
 <li><strong><code>document.title</code></strong>
-ブラウザのタブに表示されている「ページのタイトル」です。JavaScriptで書き換えることもできます。</li>
+ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>されている「ページのタイトル」です。JavaScriptで書き換えることもできます。</li>
 <li><strong><code>document.body</code></strong>
 HTMLの <code>&lt;body&gt;</code> タグの中身全体です。ページ全体の背景色を変えたいときなどに使います。</li>
 <li><strong><code>document.URL</code></strong>
@@ -298,7 +298,7 @@ CSSと同じ書き方（<code>.class</code> や <code>#id</code>）でパーツ�
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう"><a class="header" href="#4-実際に動かしてみよう">4. 実際に動かしてみよう！</a></h3>
-<p>コンソールを開いて、<a href="./html/03_02_doc_method_01.html">ここをクリック</a>し、下のJavaScriptを入力してみましょう。</p>
+<p>コンソールを開いて、<a href="./html/03_02_doc_method_01.html">ここをクリック</a>し、下のJavaScriptを<ruby>入力<rt>にゅうりょく</rt></ruby>してみましょう。</p>
 <blockquote>
 <p>コンソールを開くには、F12 キー（ノートPCは Fn + F12） または Ctrl + Shift + I を使います。</p>
 </blockquote>
@@ -339,7 +339,7 @@ message = document.querySelector("p")
 <p>「どっちを使えばいいの？」と聞かれたら、こう答えてあげてください。</p>
 <blockquote>
 <p><strong>「ブラウザの機能（タイマー、アラート、URL移動）を使いたいときは <code>window</code>」</strong></p>
-<p><strong>「ページの中身（文字、画像、ボタン）をいじりたいときは <code>document</code>」</strong></p>
+<p><strong>「ページの中身（文字、<ruby>画像<rt>がぞう</rt></ruby>、ボタン）をいじりたいときは <code>document</code>」</strong></p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-1"><a class="header" href="#まとめテーブル-1">まとめテーブル</a></h3>
@@ -411,7 +411,7 @@ URLの全部（ぜんぶ）です。</p>
 <h4 id="replaceurl"><a class="header" href="#replaceurl"><strong><code>replace("URL")</code></strong></a></h4>
 <p>新しいURLに移動しますが、<strong>今のページの履歴（ひれき）を消します。</strong></p>
 <ul>
-<li><strong>特徴：</strong> 「戻る」ボタンを押しても、今のページには戻れません。ログイン後の画面などでよく使います。</li>
+<li><strong>特徴：</strong> 「戻る」ボタンを押しても、今のページには戻れません。ログイン後の<ruby>画面<rt>がめん</rt></ruby>などでよく使います。</li>
 </ul>
 <h4 id="reload"><a class="header" href="#reload"><strong><code>reload()</code></strong></a></h4>
 <p>今のページを「再読（さいよ）み込み」します。ブラウザの更新ボタンを押すのと同じです。</p>
@@ -457,7 +457,7 @@ function refreshPage() {
 <p>いかがでしょうか？URLをパーツごとに理解できると、特定のページだけで動くプログラムを作ったり、ユーザーを別のページに誘導（ゆうどう）したりできるようになります。</p>
 <p><strong>次は、今のページから「一つ前に戻る」など、ブラウザの履歴をさらに詳しく操る <code>History</code> オブジェクトについても見てみますか？</strong></p>
 <h2 id="iv-styleオブジェクト"><a class="header" href="#iv-styleオブジェクト">IV. Styleオブジェクト</a></h2>
-<p><strong>Styleオブジェクト</strong>は、JavaScriptを使ってウェブサイトの見た目（CSS）を自由に変えるための道具です。</p>
+<p><strong>Styleオブジェクト</strong>は、JavaScriptを使ってウェブサイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（CSS）を自由に変えるための道具です。</p>
 <p>留学生の方には、Styleオブジェクトは**「パーツに新しい服を着せたり、メイクをしたりする『スタイリストさん』」**だと教えてあげてください。</p>
 <hr>
 <h3 id="1-styleオブジェクトとは"><a class="header" href="#1-styleオブジェクトとは">1. Styleオブジェクトとは？</a></h3>
@@ -465,7 +465,7 @@ function refreshPage() {
 <p>基本の書き方はこうです：
 <code>要素.style.プロパティ = "値";</code></p>
 <hr>
-<h3 id="2-よく使うプロパティ見た目の変更"><a class="header" href="#2-よく使うプロパティ見た目の変更">2. よく使うプロパティ（見た目の変更）</a></h3>
+<h3 id="2-よく使うプロパティ見みた目めの変更"><a class="header" href="#2-よく使うプロパティ見みた目めの変更">2. よく使うプロパティ（<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更）</a></h3>
 <p>CSSのプロパティ名とほぼ同じですが、<strong>1つだけ大きなルール</strong>があります。</p>
 <h4 id="キャメルケースで書く"><a class="header" href="#キャメルケースで書く"><strong>「キャメルケース」で書く！</strong></a></h4>
 <p>CSSでハイフン（<code>-</code>）を使う名前は、JavaScriptではハイフンを消して、次の文字を<strong>大文字</strong>にします。</p>
@@ -482,7 +482,7 @@ function refreshPage() {
 <tbody>
 <tr><td><strong><code>color</code></strong></td><td>文字の色を変える</td></tr>
 <tr><td><strong><code>backgroundColor</code></strong></td><td>背景（はいけい）の色を変える</td></tr>
-<tr><td><strong><code>display</code></strong></td><td>パーツを表示するか消す（<code>none</code>）か決める</td></tr>
+<tr><td><strong><code>display</code></strong></td><td>パーツを<ruby>表示<rt>ひょうじ</rt></ruby>するか消す（<code>none</code>）か決める</td></tr>
 <tr><td>**<code>width</code> / <code>height**</code></td><td>幅と高さを変える（<strong>“100px”</strong> のように単位が必要！）</td></tr>
 <tr><td><strong><code>borderRadius</code></strong></td><td>角を丸くする</td></tr>
 </tbody>
@@ -502,7 +502,7 @@ function refreshPage() {
 <p>設定されているスタイルの値を取得します。</p>
 <hr>
 <h3 id="4-実際に動かしてみよう-2"><a class="header" href="#4-実際に動かしてみよう-2">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「マウスが乗ったら色が変わるボタン」の仕組みを説明するコード例です。</p>
+<p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード例です。</p>
 <pre><code class="language-javascript">const box = document.querySelector(".box");
 
 // 1. 背景をオレンジ色にする
@@ -521,7 +521,7 @@ box.style.border = "5px solid black";
 <p>ここが中級者へのステップアップとして大切なポイントです。</p>
 <blockquote>
 <p>「<code>element.style</code> で調べられるのは、<strong>JavaScriptで直接つけたスタイルだけ</strong>なんだ。
-もともとCSSファイル（<code>.css</code>）に書いてあるスタイルを知りたいときは、<strong><code>getComputedStyle(element)</code></strong> という別の魔法を使う必要があるよ！」</p>
+もともとCSSファイル（<code>.css</code>）に書いてあるスタイルを知りたいときは、<strong><code>getComputedStyle(element)</code></strong> という別の<ruby>魔法<rt>まほう</rt></ruby>を使う必要があるよ！」</p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-3"><a class="header" href="#まとめテーブル-3">まとめテーブル</a></h3>
@@ -539,7 +539,7 @@ box.style.border = "5px solid black";
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「スタイリストのStyleくん」を使えば、クリックしたときに画面を暗くしたり、メニューを横から出したりするような、リッチなサイトが作れるようになります。</p>
+<p>いかがでしょうか？「スタイリストのStyleくん」を使えば、クリックしたときに<ruby>画面<rt>がめん</rt></ruby>を暗くしたり、メニューを横から出したりするような、リッチなサイトが作れるようになります。</p>
 <h2 id="v-historyオブジェクト"><a class="header" href="#v-historyオブジェクト">V. Historyオブジェクト</a></h2>
 <p><strong>Historyオブジェクト</strong>は、ブラウザの「戻る」ボタンや「進む」ボタンと同じ役割をするオブジェクトです。</p>
 <p>留学生の方には、Historyオブジェクトは**「ブラウザの中にある『タイムマシン』」**だと教えてあげてください。ユーザーが今までに見てきたページの履歴（ひれき）を管理しています。</p>
@@ -576,7 +576,7 @@ box.style.border = "5px solid black";
 </ul>
 <hr>
 <h3 id="4-高度なメソッドurlを書き換える履歴を作る"><a class="header" href="#4-高度なメソッドurlを書き換える履歴を作る">4. 高度なメソッド：URLを書き換える（履歴を作る）</a></h3>
-<p>最近のモダンなウェブサイト（SPAなど）でよく使われる、少し魔法のようなメソッドです。</p>
+<p>最近のモダンなウェブサイト（SPAなど）でよく使われる、少し<ruby>魔法<rt>まほう</rt></ruby>のようなメソッドです。</p>
 <h4 id="pushstateデータ-タイトル-url"><a class="header" href="#pushstateデータ-タイトル-url"><strong><code>pushState(データ, タイトル, URL)</code></strong></a></h4>
 <p><strong>ページを読み直さずに、URLだけを新しく書き換えて履歴に追加します。</strong></p>
 <ul>
@@ -623,11 +623,11 @@ function goBack() {
 <hr>
 <p>いかがでしょうか？「タイムマシンのボタン」をJavaScriptで操作できると、よりアプリらしい便利なサイトが作れるようになります。</p>
 <h2 id="vi-imageオブジェクト"><a class="header" href="#vi-imageオブジェクト">VI. Imageオブジェクト</a></h2>
-<p>JavaScriptで画像を扱う <strong>Imageオブジェクト</strong> は、画面に写真やイラストを表示するための特別な道具です。</p>
+<p>JavaScriptで<ruby>画像<rt>がぞう</rt></ruby>を扱う <strong>Imageオブジェクト</strong> は、<ruby>画面<rt>がめん</rt></ruby>に写真やイラストを<ruby>表示<rt>ひょうじ</rt></ruby>するための特別な道具です。</p>
 <p>留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を読み込んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。</p>
 <hr>
 <h3 id="1-imageオブジェクトとは"><a class="header" href="#1-imageオブジェクトとは">1. Imageオブジェクトとは？</a></h3>
-<p>HTMLの <code>&lt;img&gt;</code> タグと同じ役割をしますが、JavaScriptの中で <strong>「まだ画面にない画像」をあらかじめ準備する</strong> のにとても便利です。</p>
+<p>HTMLの <code>&lt;img&gt;</code> タグと同じ役割をしますが、JavaScriptの中で <strong>「まだ<ruby>画面<rt>がめん</rt></ruby>にない<ruby>画像<rt>がぞう</rt></ruby>」をあらかじめ準備する</strong> のにとても便利です。</p>
 <p>作り方は2通りあります：</p>
 <ol>
 <li><strong>HTMLから持ってくる：</strong> <code>document.getElementById("myImg")</code></li>
@@ -638,39 +638,39 @@ function goBack() {
 <p>写真がどんな大きさか、どこにあるかを知るための情報です。</p>
 <ul>
 <li><strong><code>src</code></strong>（ソース）
-画像の「ファイルの場所（URL）」です。ここを書き換えると、別の画像に切り替わります。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の「ファイルの場所（URL）」です。ここを書き換えると、別の<ruby>画像<rt>がぞう</rt></ruby>に切り替わります。</li>
 <li>**<code>width</code> / <code>height**</code>
-画像の「横幅（よこはば）」と「高さ」です。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の「横幅（よこはば）」と「高さ」です。</li>
 <li><strong><code>complete</code></strong>
-画像の読み込みが終わったかどうかを <code>true</code> / <code>false</code> で教えてくれます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の読み込みが終わったかどうかを <code>true</code> / <code>false</code> で教えてくれます。</li>
 <li><strong><code>alt</code></strong>（オルト）
-画像が表示できなかったときに出る「説明文」です。</li>
+<ruby>画像<rt>がぞう</rt></ruby>が<ruby>表示<rt>ひょうじ</rt></ruby>できなかったときに出る「説明文」です。</li>
 </ul>
 <hr>
 <h3 id="3-よく使うイベントメソッド的な役割"><a class="header" href="#3-よく使うイベントメソッド的な役割">3. よく使うイベント（メソッド的な役割）</a></h3>
 <p>Imageオブジェクトでは、メソッドよりも <strong>「状態が変わったときのイベント」</strong> をよく使います。</p>
 <ul>
 <li><strong><code>onload</code></strong>
-画像の読み込みが <strong>「成功（せいこう）」</strong> して、表示できるようになったときに動きます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>の読み込みが <strong>「成功（せいこう）」</strong> して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。</li>
 <li><strong><code>onerror</code></strong>
-画像のファイルが見つからないなど、読み込みに <strong>「失敗（しっぱい）」</strong> したときに動きます。</li>
+<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、読み込みに <strong>「失敗（しっぱい）」</strong> したときに<ruby>動<rt>うご</rt></ruby>きます。</li>
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう-3"><a class="header" href="#4-実際に動かしてみよう-3">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「JavaScriptで新しく画像を作って表示する」流れを説明するコード例です。</p>
+<p>留学生に「JavaScriptで新しく<ruby>画像<rt>がぞう</rt></ruby>を作って<ruby>表示<rt>ひょうじ</rt></ruby>する」流れを説明するコード例です。</p>
 <pre><code class="language-javascript">// 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
 // 2. 読み込みが終わったあとの「お祝い」を決める
 myPic.onload = function() {
-  console.log("画像の準備ができました！サイズは " + myPic.width + "px です。");
-  // 画面に表示する（bodyに追加）
+  console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;の準備ができました！サイズは " + myPic.width + "px です。");
+  // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する（bodyに追加）
   document.body.appendChild(myPic);
 };
 
 // 3. 失敗したとき（エラー）の準備
 myPic.onerror = function() {
-  console.log("画像が見つかりませんでした...");
+  console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;が見つかりませんでした...");
 };
 
 // 4. 最後に「写真（データ）」を入れる（読み込みスタート！）
@@ -681,7 +681,7 @@ myPic.src = "https://example.com/japan.jpg";
 <h3 id="5-留学生へのアドバイスプリロード先読み"><a class="header" href="#5-留学生へのアドバイスプリロード先読み">5. 留学生へのアドバイス：プリロード（先読み）</a></h3>
 <p>「どうしてHTMLに書かずにJavaScriptで作るの？」と聞かれたら、こう答えてあげてください。</p>
 <blockquote>
-<p><strong>「ゲームや重いサイトでは、画像が出るまで時間がかかるよね。JavaScriptで先に読み込んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと画像を出せるから、親切なんだよ！」</strong></p>
+<p><strong>「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に読み込んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」</strong></p>
 </blockquote>
 <hr>
 <h3 id="まとめテーブル-5"><a class="header" href="#まとめテーブル-5">まとめテーブル</a></h3>
@@ -691,8 +691,8 @@ myPic.src = "https://example.com/japan.jpg";
 <tr><th>プロパティ・イベント</th><th>役割</th><th>例え話</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>src</code></strong></td><td>画像の住所</td><td>どの写真を入れるか決める</td></tr>
-<tr><td>**<code>width</code> / <code>height**</code></td><td>画像のサイズ</td><td>写真の大きさ</td></tr>
+<tr><td><strong><code>src</code></strong></td><td><ruby>画像<rt>がぞう</rt></ruby>の住所</td><td>どの写真を入れるか決める</td></tr>
+<tr><td>**<code>width</code> / <code>height**</code></td><td><ruby>画像<rt>がぞう</rt></ruby>のサイズ</td><td>写真の大きさ</td></tr>
 <tr><td><strong><code>onload</code></strong></td><td>読み込み完了</td><td>「写真の現像（げんぞう）が終わったよ！」</td></tr>
 <tr><td><strong><code>onerror</code></strong></td><td>読み込みエラー</td><td>「写真をなくしちゃった！」</td></tr>
 </tbody>
@@ -735,7 +735,7 @@ URLの「http:」の部分や、「ドメイン名」の部分だけを個別に
 </li>
 <li>
 <p><strong><code>text</code>（または <code>textContent</code>）</strong>
-画面に表示されている「リンクの文字」です。</p>
+<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>されている「リンクの文字」です。</p>
 </li>
 </ul>
 <hr>
@@ -782,7 +782,7 @@ link.target = "_blank";
 <tbody>
 <tr><td><strong><code>href</code></strong></td><td>リンク先の住所</td><td>どこにワープするか</td></tr>
 <tr><td><strong><code>target</code></strong></td><td>開き方の設定</td><td>今の場所を離れるか、新しい窓を作るか</td></tr>
-<tr><td><strong><code>text</code></strong></td><td>表示される文字</td><td>門に書いてある看板（かんばん）</td></tr>
+<tr><td><strong><code>text</code></strong></td><td><ruby>表示<rt>ひょうじ</rt></ruby>される文字</td><td>門に書いてある看板（かんばん）</td></tr>
 <tr><td><strong><code>click()</code></strong></td><td>クリックを実行</td><td>誰かの代わりにボタンを押してあげる</td></tr>
 </tbody>
 </table>
@@ -804,7 +804,7 @@ link.target = "_blank";
 ブラウザの名前やバージョン、OS（WindowsかMacか）などの詳細な情報です。</p>
 </li>
 <li>
-<p><strong>例：</strong> これを見て「iPhoneの人にはiPhone用の画面を見せる」といった判断ができます。</p>
+<p><strong>例：</strong> これを見て「iPhoneの人にはiPhone用の<ruby>画面<rt>がめん</rt></ruby>を見せる」といった判断ができます。</p>
 </li>
 <li>
 <p><strong><code>language</code></strong>
@@ -913,7 +913,7 @@ document.cookie = "username=Taro; max-age=604800";
 <p>クッキーを扱うときには、留学生に以下の3つのルールを教えてあげてください。</p>
 <ol>
 <li><strong>サイズが小さい：</strong> 4KB（約2000文字）くらいしか保存できません。あくまで「短いメモ」用です。</li>
-<li><strong>有効期限（ゆうこうきげん）：</strong> 期限が切れると、魔法が解けるように消えてしまいます。</li>
+<li><strong>有効期限（ゆうこうきげん）：</strong> 期限が切れると、<ruby>魔法<rt>まほう</rt></ruby>が解けるように消えてしまいます。</li>
 <li><strong>セキュリティ：</strong> クッキーにはパスワードなどの大事な情報は直接書かないのがルールです（盗まれる危険があるため）。</li>
 </ol>
 <hr>
@@ -958,7 +958,7 @@ function greet() {
 <tbody>
 <tr><td><strong>役割</strong></td><td>ユーザーの情報を一時保存</td><td>お店の「ポイントカード」</td></tr>
 <tr><td><strong>保存場所</strong></td><td>ブラウザの中</td><td>自分の財布（さいふ）の中</td></tr>
-<tr><td><strong>プロパティ名</strong></td><td><code>document.cookie</code></td><td>共有のメモ帳</td></tr>
+<tr><td><strong>プロパティ名</strong></td><td><code>document.cookie</code></td><td><ruby>共有<rt>きょうゆう</rt></ruby>のメモ帳</td></tr>
 <tr><td><strong>最大サイズ</strong></td><td>約 4KB</td><td>付箋（ふせん）1枚分</td></tr>
 <tr><td><strong>主な用途</strong></td><td>ログイン状態の管理</td><td>「この人は会員です」という印</td></tr>
 </tbody>
@@ -967,18 +967,18 @@ function greet() {
 <hr>
 <p>いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は完璧です。</p>
 <h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
-<p>JavaScriptはWebページの上で起こるさまざまな「事件」に反応して、動きます。</p>
+<p>JavaScriptはWebページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。</p>
 <ul>
 <li>マウスでWebページのボタンをクリックする</li>
-<li>ボックスに文字を入力する</li>
-<li>画面をスクロールする</li>
+<li>ボックスに文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する</li>
+<li><ruby>画面<rt>がめん</rt></ruby>をスクロールする</li>
 </ul>
 <p>そうした「事件」をJavaScriptでは <strong>「イベント」</strong> と呼びます。</p>
 <p>JavaScriptにおける <strong>Event（イベント）オブジェクト</strong> は、ウェブサイトで「何かが起きたとき」に作られる、たくさんの情報が詰まった <strong>「報告書（ほうこくしょ）」</strong> のようなものです。</p>
-<p><strong>「クリックやキー入力という『事件』が起きたときに、警察官が書くメモ」</strong> なのです。</p>
+<p><strong>「クリックやキー<ruby>入力<rt>にゅうりょく</rt></ruby>という『事件』が起きたときに、警察官が書くメモ」</strong> なのです。</p>
 <hr>
 <h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
-<p>マウスをクリックした、キーボードを叩いた、画面をスクロールした…。これらはすべて「イベント」です。
+<p>マウスをクリックした、キーボードを叩いた、<ruby>画面<rt>がめん</rt></ruby>をスクロールした…。これらはすべて「イベント」です。
 イベントが発生したとき、JavaScriptは自動的に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
 <pre><code class="language-javascript">// ボタンがクリックされたとき
 button.addEventListener("click", function(event) {
@@ -1006,15 +1006,15 @@ button.addEventListener("click", function(event) {
 <li><strong>例：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
 </ul>
 <h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
-<p>マウスがクリックされたときの <strong>画面上の座標（ざひょう）</strong>、つまり「場所」です。</p>
+<p>マウスがクリックされたときの <strong><ruby>画面<rt>がめん</rt></ruby>上の座標（ざひょう）</strong>、つまり「場所」です。</p>
 <hr>
 <h3 id="3-よく使うメソッドイベントへの命令"><a class="header" href="#3-よく使うメソッドイベントへの命令">3. よく使うメソッド（イベントへの命令）</a></h3>
-<p>報告書を受け取ったあと、その後の動きをコントロールする命令です。</p>
+<p>報告書を受け取ったあと、その後の<ruby>動<rt>うご</rt></ruby>きをコントロールする命令です。</p>
 <h4 id="eventpreventdefaultプリベントデフォルト"><a class="header" href="#eventpreventdefaultプリベントデフォルト"><strong><code>event.preventDefault()</code>（プリベント・デフォルト）</strong></a></h4>
-<p>ブラウザがもともと持っている <strong>「決まった動き」をキャンセル</strong> します。</p>
+<p>ブラウザがもともと持っている <strong>「決まった<ruby>動<rt>うご</rt></ruby>き」をキャンセル</strong> します。</p>
 <ul>
 <li><strong>イメージ：</strong> 「リンク（<code>&lt;a&gt;</code>）を押したけど、ページを移動させないで！」というときに使います。</li>
-<li><strong>よく使う場所：</strong> フォームの入力が間違っているとき、送信を止めるために使います。</li>
+<li><strong>よく使う場所：</strong> フォームの<ruby>入力<rt>にゅうりょく</rt></ruby>が間違っているとき、送信を止めるために使います。</li>
 </ul>
 <h4 id="eventstoppropagationストッププロパゲーション"><a class="header" href="#eventstoppropagationストッププロパゲーション"><strong><code>event.stopPropagation()</code>（ストップ・プロパゲーション）</strong></a></h4>
 <p>イベントが <strong>「親の要素」に伝わるのを止めます。</strong>（イベントのバブリング停止）</p>
@@ -1023,7 +1023,7 @@ button.addEventListener("click", function(event) {
 </ul>
 <hr>
 <h3 id="4-実際に動かしてみよう-7"><a class="header" href="#4-実際に動かしてみよう-7">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「入力されたキーをチェックする」コードを見せてあげましょう。</p>
+<p>留学生に「<ruby>入力<rt>にゅうりょく</rt></ruby>されたキーをチェックする」コードを見せてあげましょう。</p>
 <pre><code class="language-javascript">const input = document.querySelector("input");
 
 input.addEventListener("keydown", function(event) {
@@ -1053,8 +1053,8 @@ input.addEventListener("keydown", function(event) {
 </thead>
 <tbody>
 <tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>
-<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー入力事件」か</td></tr>
-<tr><td><strong><code>preventDefault()</code></strong></td><td>元の動きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
+<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー<ruby>入力<rt>にゅうりょく</rt></ruby>事件」か</td></tr>
+<tr><td><strong><code>preventDefault()</code></strong></td><td>元の<ruby>動<rt>うご</rt></ruby>きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
 <tr><td><strong><code>stopPropagation()</code></strong></td><td>伝言を止める</td><td>「周りの人には内緒（ないしょ）にして！」</td></tr>
 </tbody>
 </table>
@@ -1097,6 +1097,22 @@ input.addEventListener("keydown", function(event) {
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

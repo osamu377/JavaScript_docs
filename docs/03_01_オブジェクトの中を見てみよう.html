@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -217,11 +217,11 @@
 <pre><code>document.body.style.backgroundColor = "red";
 </code></pre>
 <p>このコードは、documentオブジェクトの中のbodyオブジェクトの、backgroundColor（プロパティ）を“red“に変えるという命令です。</p>
-<h2 id="v-メソッド-特徴と動きをセットにできる"><a class="header" href="#v-メソッド-特徴と動きをセットにできる">V. メソッド: 「特徴」と「動き」をセットにできる</a></h2>
-<p>オブジェクトのすごいところは、<strong>データ（特徴）</strong> だけでなく、<strong>関数（動き）</strong> も一緒にまとめられることです。オブジェクトに含まれる関数を <strong>メソッド</strong> と言います。</p>
+<h2 id="v-メソッド-特徴と動うごきをセットにできる"><a class="header" href="#v-メソッド-特徴と動うごきをセットにできる">V. メソッド: 「特徴」と「<ruby>動<rt>うご</rt></ruby>き」をセットにできる</a></h2>
+<p>オブジェクトのすごいところは、<strong>データ（特徴）</strong> だけでなく、<strong>関数（<ruby>動<rt>うご</rt></ruby>き）</strong> も一緒にまとめられることです。オブジェクトに含まれる関数を <strong>メソッド</strong> と言います。</p>
 <ul>
 <li><strong>プロパティ（特徴）：</strong> 名前、身長、色、値段など</li>
-<li><strong>メソッド（動き）：</strong> 走る、話す、計算するなど</li>
+<li><strong>メソッド（<ruby>動<rt>うご</rt></ruby>き）：</strong> 走る、話す、計算するなど</li>
 </ul>
 <h2 id="vi-ゲームのキャラクターで例えると"><a class="header" href="#vi-ゲームのキャラクターで例えると">VI. ゲームのキャラクターで例えると：</a></h2>
 <p>「オブジェクト」の考え方は、ゲームのキャラクターに例えると非常に分かりやすくなります。</p>
@@ -237,16 +237,16 @@
   level: 5,          // 特徴（プロパティ）
   
   attack: function() { 
-    alert("エイッ！と攻撃しました"); // 動き（メソッド）
+    alert("エイッ！と攻撃しました"); // &lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き（メソッド）
   }
 };
 
 </code></pre>
 <h2 id="vii-なぜオブジェクトを使うの"><a class="header" href="#vii-なぜオブジェクトを使うの">VII. なぜ「オブジェクト」を使うの？</a></h2>
-<p>世界にあるものは、すべて「名前」や「状態（じょうたい）」や「動き」を持っていますよね。</p>
+<p>世界にあるものは、すべて「名前」や「状態（じょうたい）」や「<ruby>動<rt>うご</rt></ruby>き」を持っていますよね。</p>
 <ul>
-<li><strong>車：</strong> 名前、色、スピード、ブレーキをかける動き</li>
-<li><strong>スマホ：</strong> モデル名、電池の残り、アプリを開く動き</li>
+<li><strong>車：</strong> 名前、色、スピード、ブレーキをかける<ruby>動<rt>うご</rt></ruby>き</li>
+<li><strong>スマホ：</strong> モデル名、電池の残り、アプリを開く<ruby>動<rt>うご</rt></ruby>き</li>
 </ul>
 <p>オブジェクトを使うと、<strong>現実（げんじつ）の世界と同じようにプログラムが書ける</strong> ので、複雑（ふくざつ）なアプリも作りやすくなるんです。</p>
 <blockquote class="blockquote-tag blockquote-tag-tip">
@@ -292,6 +292,22 @@
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

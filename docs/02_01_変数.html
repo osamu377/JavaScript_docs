@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4726fa95.js";
+            window.path_to_searchindex_js = "searchindex-b4cbcdc2.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -177,7 +177,7 @@
                         <h1 id="変数"><a class="header" href="#変数">変数</a></h1>
 <p><strong>JavaScriptの基礎：データの入れ物「変数」をマスターしよう</strong></p>
 <p>JavaScriptを学ぶ上で、最初の重要なステップが「変数（へんすう）」の理解です。</p>
-<p>留学生の皆さんが日本語を学ぶとき、単語を覚えて整理するように、プログラミングでもデータを整理して名前をつける作業が必要です。変数を使いこなせるようになると、プログラムの中でデータを自由に再利用（さいりよう）し、複雑な処理を組み立てることができるようになります。</p>
+<p>留学生の皆さんが日本語を学ぶとき、単語を覚えて整理するように、プログラミングでもデータを整理して名前をつける作業が必要です。変数を使いこなせるようになると、プログラムの中でデータを自由に再利用（さいりよう）し、複雑な処理を<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てることができるようになります。</p>
 <p>では、まず、「変数とは何か」から、はじめましょう。</p>
 <hr>
 <h2 id="i-変数とは何かデータを保存する名前付きの箱"><a class="header" href="#i-変数とは何かデータを保存する名前付きの箱">I. 変数とは何か：データを保存する「名前付きの箱」</a></h2>
@@ -191,7 +191,7 @@
 </ul>
 <p>代入するときは、<strong><code>=</code>（イコール）</strong> という記号を使います。ここで一番大切なルールがあります。</p>
 <p><strong>「右側（みぎがわ）にあるデータを、左側（ひだりがわ）の変数に入れる」</strong>,</p>
-<p>数学（すうがく）の <strong>「<code>=</code>」</strong> は「左と右が同じ」という意味ですが、プログラミングの <strong>「<code>=</code>」</strong> は <strong>「入れる」</strong> という動きを表します。</p>
+<p>数学（すうがく）の <strong>「<code>=</code>」</strong> は「左と右が同じ」という意味ですが、プログラミングの <strong>「<code>=</code>」</strong> は <strong>「入れる」</strong> という<ruby>動<rt>うご</rt></ruby>きを表します。</p>
 <p>たとえば、テストの点数を<code>score</code>という変数に保存したいときは次のように書きます。</p>
 <pre><code class="language-javascript">score = 100;
 </code></pre>
@@ -264,7 +264,7 @@ myName = "Chris"; // 後から値を代入する
 <p>ここでは「文字列型」「数値型」「論理型」について説明します。「配列」と「オブジェクト」については、あとの章で説明します。</p>
 <hr>
 <h2 id="ii-文字列型-stringテキストデータを扱う"><a class="header" href="#ii-文字列型-stringテキストデータを扱う">II. 文字列型 (String)：テキストデータを扱う</a></h2>
-<p>Webページで「こんにちは」というメッセージを表示したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
+<p>Webページで「こんにちは」というメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
 <h3 id="1-文字列を作る"><a class="header" href="#1-文字列を作る">1. 文字列を作る</a></h3>
 <p>文字列を作るには、テキストを <strong>引用符（クォーテーション）</strong> で囲みます。</p>
 <ul>
@@ -287,7 +287,7 @@ const multiLine = `一行目です
 三行目です`;
 console.log(multiLine);
 </code></pre>
-<p>下の <strong>「実行」</strong> ボタンを押すと、上のコードの実行結果がコンソールに表示されます。</p>
+<p>下の <strong>「実行」</strong> ボタンを押すと、上のコードの実行結果がコンソールに<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
 <p><button onclick="const multiLine = `一行目です
 二行目です
 三行目です`;
@@ -335,7 +335,7 @@ console.log(multiLine);">実行</button></p>
 </table>
 </div>
 <p>※ 比較演算子と論理演算子については、次の章で、もっと詳（くわ）しく説明します</p>
-<p>論理型を正しく理解すると、複雑なシステムの判断ロジックを整理して、ユーザーの入力に対して「正しく反応する」プログラムを書くことができるようになります。</p>
+<p>論理型を正しく理解すると、複雑なシステムの判断ロジックを整理して、ユーザーの<ruby>入力<rt>にゅうりょく</rt></ruby>に対して「正しく<ruby>反応<rt>はんのう</rt></ruby>する」プログラムを書くことができるようになります。</p>
 <hr>
 <h2 id="v-未定義型-undefined値が決まっていない状態"><a class="header" href="#v-未定義型-undefined値が決まっていない状態">V. 未定義型 (Undefined)：値が決まっていない状態</a></h2>
 <p>変数を作ったけれど、中身をまだ何も入れていないとき、JavaScriptはその状態を undefined と表現します。これは「未定義（みていぎ）」型という特殊な型になります。「未定義」とは「まだ定義されていない」「まだ、どういうものか決まっていない、わからない」という意味です。</p>
@@ -345,30 +345,30 @@ console.log(multiLine);">実行</button></p>
 <li>undefined：箱（変数）はあるけれど、中身がまだ入っていない状態。</li>
 <li>ReferenceError：そもそも箱（変数）自体が存在していない、または名前を間違えている状態。</li>
 </ul>
-<p>💡 デバッグのヒント 実行結果に undefined と表示されたら、「データの代入を忘れていないか？」「スペルミスをしていないか？」を疑ってみましょう。これはミスを特定するための重要な手がかりになります。</p>
+<p>💡 デバッグのヒント 実行結果に undefined と<ruby>表示<rt>ひょうじ</rt></ruby>されたら、「データの代入を忘れていないか？」「スペルミスをしていないか？」を疑ってみましょう。これはミスを特定するための重要な手がかりになります。</p>
 <hr>
 <h2 id="vi-型の変換-type-conversion"><a class="header" href="#vi-型の変換-type-conversion">VI. 型の変換 (Type Conversion)</a></h2>
-<p>Webサイトの入力フォームから受け取るデータは、数字に見えても実際には「文字列」です。これを使って計算するには「型の変換」が必要です。</p>
+<p>Webサイトの<ruby>入力<rt>にゅうりょく</rt></ruby>フォームから受け取るデータは、数字に見えても実際には「文字列」です。これを使って計算するには「型の変換」が必要です。</p>
 <h3 id="1-データの抽出parseint"><a class="header" href="#1-データの抽出parseint">1. データの抽出：parseInt()</a></h3>
 <p>文字列の中から数字だけを取り出す便利な機能があります。</p>
 <pre><code>console.log(parseInt("55kg"));    // 55 （数字の部分だけ取り出す）
 console.log(parseInt("12.99ドル")); // 12 （整数部分だけ取り出す）
 console.log(parseInt("A123"));    // NaN （先頭が文字だと失敗する）
 </code></pre>
-<h3 id="2-安全な数値入力の受け取りフロー"><a class="header" href="#2-安全な数値入力の受け取りフロー">2. 安全な数値入力の受け取りフロー</a></h3>
+<h3 id="2-安全な数値入力にゅうりょくの受け取りフロー"><a class="header" href="#2-安全な数値入力にゅうりょくの受け取りフロー">2. 安全な数値<ruby>入力<rt>にゅうりょく</rt></ruby>の受け取りフロー</a></h3>
 <p>プロの現場では、以下のように段階を踏んでデータを処理します。</p>
 <ol>
-<li>受け取る：prompt() などで文字列として入力を受け取る。</li>
+<li>受け取る：prompt() などで文字列として<ruby>入力<rt>にゅうりょく</rt></ruby>を受け取る。</li>
 <li>変換する：Number() や parseInt() で数値に変える。</li>
 <li>チェックする：isNaN() で、正しく数字になったか確認する。</li>
 </ol>
 <h3 id="3--学習者の味方typeof-演算子"><a class="header" href="#3--学習者の味方typeof-演算子">3. 🔍 学習者の味方：typeof 演算子</a></h3>
 <p>「今のこの変数は、何型なんだろう？」と迷ったときは、typeof を使いましょう。</p>
 <pre><code>const value = "123";
-console.log(typeof value); // "string" と表示される
+console.log(typeof value); // "string" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;される
 
 const numValue = Number(value);
-console.log(typeof numValue); // "number" と表示される
+console.log(typeof numValue); // "number" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;される
 </code></pre>
 <p>自分の書いたコードが思ったとおりに動いているか、コンソールで typeof を使って確認するクセをつけましょう。</p>
 <hr>
@@ -422,6 +422,22 @@ console.log(typeof numValue); // "number" と表示される
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>
