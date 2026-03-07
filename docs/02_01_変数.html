@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-38dc6cea.js";
+            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -220,7 +220,7 @@ score = 80; // 一度、100を入れた&lt;ruby&gt;変数&lt;rt&gt;へんすう&
 </tbody>
 </table>
 </div>
-<p>💡 プロの視点：なぜ <code>const</code> を<ruby>優先<rt>ゆうせん</rt></ruby>するのか？</p>
+<p>💡 プロの<ruby>視点<rt>してん</rt></ruby>：なぜ <code>const</code> を<ruby>優先<rt>ゆうせん</rt></ruby>するのか？</p>
 <p><code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>された<ruby>変数<rt>へんすう</rt></ruby>は、後から値を変更できません。一度決めた値が「変わらない」ことが約束されいてると、後からコードを<ruby>読<rt>よ</rt></ruby>み<ruby>返<rt>かえ</rt></ruby>したときに迷わず、バグ（ミス）を減らすことができるからです。</p>
 <p>ですから、みなさんは、<strong>できるだけ <code>const</code> を使いましょう</strong>。そして、<strong>後から値を変更しなければならないときだけ <code>let</code> を使いましょう</strong>。</p>
 <p>※ むかしは <code>let</code>の代わりに <code>var</code> が使われていましたが、知らないうちに<ruby>変数<rt>へんすう</rt></ruby>の中身が書きかえられてしまうかもしれないので、現在は、「使わないのがよい」とされています。</p>
@@ -343,7 +343,7 @@ console.log(multiLine);">実行</button></p>
 <p><ruby>初心者<rt>しょしんしゃ</rt></ruby>の方が間違いやすいのが、以下の違いです。</p>
 <ul>
 <li>undefined：箱（<ruby>変数<rt>へんすう</rt></ruby>）はあるけれど、中身がまだ入っていない状態。</li>
-<li>ReferenceError：そもそも箱（<ruby>変数<rt>へんすう</rt></ruby>）自体が存在していない、または名前を間違えている状態。</li>
+<li>ReferenceError：そもそも箱（<ruby>変数<rt>へんすう</rt></ruby>）<ruby>自体<rt>じたい</rt></ruby>が存在していない、または名前を間違えている状態。</li>
 </ul>
 <p>💡 デバッグのヒント 実行結果に undefined と<ruby>表示<rt>ひょうじ</rt></ruby>されたら、「データの<ruby>代入<rt>だいにゅう</rt></ruby>を忘れていないか？」「スペルミスをしていないか？」を疑ってみましょう。これはミスを特定するための重要な手がかりになります。</p>
 <hr>
@@ -376,7 +376,7 @@ console.log(typeof numValue); // "number" と&lt;ruby&gt;表示&lt;rt&gt;ひょ�
 <p><ruby>変数<rt>へんすう</rt></ruby>と型の知識(ちしき)は、これからの学習の<ruby>土台<rt>どだい</rt></ruby>(どだい)になります。</p>
 <p>💡 <strong>最重要ポイント</strong></p>
 <ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>は「名前のついた箱」： データを記憶(きおく)し、何度でも使うために必要です。</li>
+<li><ruby>変数<rt>へんすう</rt></ruby>は「名前のついた箱」： データを<ruby>記憶<rt>きおく</rt></ruby>(きおく)し、何度でも使うために必要です。</li>
 <li>基本は const を使う： 安全のために const を使い、値を変えるときだけ let を使いましょう。</li>
 <li><ruby>数値<rt>すうち</rt></ruby><ruby>変換<rt>へんかん</rt></ruby>(すうちへんかん)を忘れずに： prompt() などで受け取ったデータは Number() や parseInt() で数字に変えてから計算しましょう。</li>
 </ul>

@@ -328,7 +328,7 @@ function refreshPage() {
 
 URLを操作する方法はたくさんありますが、現場で一番よく使われるのは **`location.href`** への<ruby>代入<rt>だいにゅう</rt></ruby>です。
 
-> **「一番簡単な移動（いどう）のやり方は、`location.href` に新しい住所を<ruby>代入<rt>だいにゅう</rt></ruby>することだよ。一番覚えやすくて便利だよ！」**
+> **「一番簡単な移動（いどう）のやり<ruby>方<rt>かた</rt></ruby>は、`location.href` に新しい住所を<ruby>代入<rt>だいにゅう</rt></ruby>することだよ。一番覚えやすくて便利だよ！」**
 
 ---
 
@@ -516,7 +516,7 @@ box.style.border = "5px solid black";
 
 #### **`replaceState(データ, タイトル, URL)`**
 
-今の履歴を、新しいURLで **上書き（<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え）** します。
+今の履歴を、新しいURLで **<ruby>上書<rt>うわが</rt></ruby>き（<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え）** します。
 
 ---
 
@@ -964,7 +964,7 @@ function greet() {
 
 ---
 
-いかがでしょうか？「ブラウザが持っている記憶の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。
+いかがでしょうか？「ブラウザが持っている<ruby>記憶<rt>きおく</rt></ruby>の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。
 
 
 ## I. Eventオブジェクト
@@ -1069,7 +1069,7 @@ input.addEventListener("keydown", function(event) {
 
 ### 5. 留学生へのアドバイス：名前は何でもいい？
 
-<ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>のカッコの中にある `(event)` という名前について、よく質問されます。
+<ruby>関数<rt>かんすう</rt></ruby>のカッコの中にある `(event)` という名前について、よく質問されます。
 
 > 「カッコの中の名前は `e` や `evt` と短く書くプログラマーも多いよ。
 > でも、中身は同じ **『イベントの報告書』** だから安心してね！」

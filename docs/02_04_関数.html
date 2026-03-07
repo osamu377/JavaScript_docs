@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-38dc6cea.js";
+            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -175,8 +175,8 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="関数かんすう"><a class="header" href="#関数かんすう"><ruby>関数<rt>かんすう</rt></ruby></a></h1>
-<p><strong>やさしい日本語で学ぶ JavaScript の「<ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>」ガイド</strong></p>
-<p>皆さん、こんにちは。JavaScriptを勉強中の留学生の皆さんにとって、一番大切な道具（どうぐ）の一つが <strong>「<ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>」</strong> です。 <ruby>関数<rt>かんすう</rt></ruby>を使いこなせると、プログラムを整理（せいり）して、賢（かしこ）く書くことができます。</p>
+<p><strong>やさしい日本語で学ぶ JavaScript の「<ruby>関数<rt>かんすう</rt></ruby>」ガイド</strong></p>
+<p>皆さん、こんにちは。JavaScriptを勉強中の留学生の皆さんにとって、一番大切な道具（どうぐ）の一つが <strong>「<ruby>関数<rt>かんすう</rt></ruby>」</strong> です。 <ruby>関数<rt>かんすう</rt></ruby>を使いこなせると、プログラムを整理（せいり）して、賢（かしこ）く書くことができます。</p>
 <p>実は、今までにも、<ruby>関数<rt>かんすう</rt></ruby>は使っていました。<code>alert()</code>, <code>Number()</code>などは、あらかじめJavaScriptが用意している<ruby>関数<rt>かんすう</rt></ruby>です。</p>
 <p>一緒に学んでいきましょう。</p>
 <hr>
@@ -228,8 +228,8 @@
 <p><strong><ruby>見分<rt>みわ</rt></ruby>けかたのコツ：</strong>
 最後に <code>;</code>（セミコロン）がついているものは、ほとんどの場合 <strong>「文」</strong> です。日本語の「。」（まる）と同じです。</p>
 </blockquote>
-<h2 id="ii-関数かんすう関数かんすうとは何か"><a class="header" href="#ii-関数かんすう関数かんすうとは何か">II. <ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>とは何か？</a></h2>
-<p>「<ruby>関数<rt>かんすう</rt></ruby><ruby>関数<rt>かんすう</rt></ruby>」は、プログラミングの中でとても便利な <strong>「<ruby>魔法<rt>まほう</rt></ruby>の箱（まほうのはこ）」</strong> や <strong>「自動販売機（じどうはんばいき）」</strong> のようなものです。</p>
+<h2 id="ii-関数かんすうとは何か"><a class="header" href="#ii-関数かんすうとは何か">II. <ruby>関数<rt>かんすう</rt></ruby>とは何か？</a></h2>
+<p>「<ruby>関数<rt>かんすう</rt></ruby>」は、プログラミングの中でとても便利な <strong>「<ruby>魔法<rt>まほう</rt></ruby>の箱（まほうのはこ）」</strong> や <strong>「自動販売機（じどうはんばいき）」</strong> のようなものです。</p>
 <p>漢字で見ると<ruby>難<rt>むずか</rt></ruby>しそうですが、その中身は、いくつかの <strong>「文」</strong> を一つ（ひとつ）にまとめた <strong>「セット」</strong> です。とてもシンプルですよ！</p>
 <p><strong><ruby>関数<rt>かんすう</rt></ruby>は「料理マシン」と同じ！</strong></p>
 <p><ruby>関数<rt>かんすう</rt></ruby>をイメージするときは、キッチンにある「ジューサー（ミキサー）」を思い出してください。</p>
@@ -350,7 +350,7 @@ function sayHelloName(name) {
 <pre><code class="language-javascript">let world = "こんにちは世界！"; // グローバル&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;
 
 function sayWorld() {
-  console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中でも使える
+  console.log(world); // &lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;の中でも使える
 }
 
 sayWorld();
@@ -404,7 +404,7 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 </table>
 </div>
 <h3 id="なぜこれが大事なの"><a class="header" href="#なぜこれが大事なの">なぜこれが大事なの？</a></h3>
-<p>もし、すべての<ruby>変数<rt>へんすう</rt></ruby>を「グローバル（どこでも使える）」にすると、知らないうちに別の場所で**データが上書き（書きかえ）**されてしまい、バグの原因になります。</p>
+<p>もし、すべての<ruby>変数<rt>へんすう</rt></ruby>を「グローバル（どこでも使える）」にすると、知らないうちに別の場所で**データが<ruby>上書<rt>うわが</rt></ruby>き（書きかえ）**されてしまい、バグの原因になります。</p>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
 <p><strong>「できるだけ狭（せま）く」が基本！</strong>
@@ -559,7 +559,7 @@ setTimeout(() =&gt; {
 <p>いかがでしょうか？「矢印（<code>=&gt;</code>）が出てきたら、短い<ruby>関数<rt>かんすう</rt></ruby>の合図だ！」と覚えると簡単ですよ。</p>
 <hr>
 <h2 id="viii-まとめ"><a class="header" href="#viii-まとめ">VIII. まとめ</a></h2>
-<p>JavaScriptの「<ruby>関数<rt>かんすう</rt></ruby>」をマスターするために、5つのポイントを振り返りましょう。</p>
+<p>JavaScriptの「<ruby>関数<rt>かんすう</rt></ruby>」をマスターするために、5つのポイントを<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>りましょう。</p>
 <ul>
 <li><ruby>定義<rt>ていぎ</rt></ruby>： function を使い、動詞から始まる名前をつけてセットにしましょう。</li>
 <li>呼び出し： <ruby>関数<rt>かんすう</rt></ruby>名のあとの () を忘れずにつけて実行しましょう。</li>

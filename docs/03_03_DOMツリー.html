@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-38dc6cea.js";
+            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -407,7 +407,7 @@ myImage.classList.add("rounded-frame");
 <p>いかがでしょうか？Elementオブジェクトを<ruby>使<rt>つか</rt></ruby>いこなせれば、ユーザーの<ruby>動<rt>うご</rt></ruby>きに合わせて<ruby>画面<rt>がめん</rt></ruby>を<ruby>動的<rt>どうてき</rt></ruby>に変える「動くサイト」が作れるようになります！</p>
 <h2 id="iv-domツリーを使ったエレメントの取得しゅとく"><a class="header" href="#iv-domツリーを使ったエレメントの取得しゅとく">IV. DOMツリーを使ったエレメントの<ruby>取得<rt>しゅとく</rt></ruby></a></h2>
 <p>DOMツリーの「家族（<ruby>親子<rt>おやこ</rt></ruby>・兄弟）」の関係がわかったら、次は実際に**「その枝（え要素）をたどって、操作する方法」**を学びましょう！</p>
-<p>留学生の方には、**「住所を知らなくても、家系図（かけいず）をたどれば目的の人に会える」**というイメージで説明するとわかりやすくなります。</p>
+<p>留学生の方には、**「住所を知らなくても、<ruby>家系図<rt>かけいず</rt></ruby>をたどれば目的の人に会える」**というイメージで説明するとわかりやすくなります。</p>
 <hr>
 <h3 id="1-要素の関係プロパティを使ってたどる"><a class="header" href="#1-要素の関係プロパティを使ってたどる">1. 要素の関係（プロパティ）を使ってたどる</a></h3>
 <p>IDやクラス名を使わなくても、今いる場所から「隣の人」や「親」を指名できます。</p>
@@ -494,11 +494,11 @@ list.appendChild(newLi);
 <blockquote>
 <p><strong>注意：</strong> この時点では、まだ「メモリの中」にあるだけで、<strong><ruby>画面<rt>がめん</rt></ruby>には見えません。</strong></p>
 </blockquote>
-<pre><code class="language-javascript">// 「たこ焼き（li）」というパーツを1つ作る
+<pre><code class="language-javascript">// 「たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き（li）」というパーツを1つ作る
 const takoyaki = document.createElement("li");
 
 // 中身の文字を入れる
-takoyaki.textContent = "たこ焼き 🐙";
+takoyaki.textContent = "たこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;き 🐙";
 
 </code></pre>
 <hr>
@@ -507,7 +507,7 @@ takoyaki.textContent = "たこ焼き 🐙";
 <h4 id="appendchild新しい要素"><a class="header" href="#appendchild新しい要素"><strong><code>appendChild(新しい要素)</code></strong></a></h4>
 <p>親要素の**「一番最後の子」**として追加します。一番よく<ruby>使<rt>つか</rt></ruby>います。</p>
 <pre><code class="language-javascript">const list = document.getElementById("food-list");
-list.appendChild(takoyaki); // リストの最後にたこ焼きが登場！
+list.appendChild(takoyaki); // リストの最後にたこ&lt;ruby&gt;焼&lt;rt&gt;や&lt;/rt&gt;&lt;/ruby&gt;きが登場！
 
 </code></pre>
 <h4 id="insertbefore新しい要素-目印にする要素"><a class="header" href="#insertbefore新しい要素-目印にする要素"><strong><code>insertBefore(新しい要素, 目印にする要素)</code></strong></a></h4>

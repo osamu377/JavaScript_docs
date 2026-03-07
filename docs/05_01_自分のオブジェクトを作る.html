@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-38dc6cea.js";
+            window.path_to_searchindex_js = "searchindex-24a79eb3.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -181,7 +181,7 @@
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
 <p>思い出してください。「連想<ruby>配列<rt>はいれつ</rt></ruby>」はオブジェクトの一種でしたね。</p>
 </blockquote>
-<p>このセクションでは、これまでに説明したオブジェクトの特徴を振り返りながら、自分のオブジェクトを作る方法をまとめます。</p>
+<p>このセクションでは、これまでに説明したオブジェクトの特徴を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>りながら、自分のオブジェクトを作る方法をまとめます。</p>
 <hr>
 <h2 id="i-ユーザー定義ていぎオブジェクトとは"><a class="header" href="#i-ユーザー定義ていぎオブジェクトとは">I. 「ユーザー<ruby>定義<rt>ていぎ</rt></ruby>オブジェクト」とは？</a></h2>
 <p>前の章までは、ブラウザのオブジェクトやJavaScriptの<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みオブジェクトなど、あらかじめ作られていたり、あるいは<code>new</code><ruby>演算<rt>えんざん</rt></ruby>子ですぐに作ることのできるものを扱ってきました。</p>
@@ -254,12 +254,12 @@ student.sayHello();        // "こんにちは！私は Ali です。" としゃ
 <h2 id="iv-プロパティとメソッドの利用情報の取り出しと実行"><a class="header" href="#iv-プロパティとメソッドの利用情報の取り出しと実行">IV. プロパティとメソッドの利用：情報の取り出しと実行</a></h2>
 <p>作ったオブジェクトの中身を使うには、2つの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>があります。</p>
 <ol>
-<li>ドット記法（きほう）： person.name のように、ドット . でつなぎます。プロパティ名が分かっているときに使います。</li>
-<li>ブラケット記法： person[“name”] のように、角括弧 [ ] を使います。</li>
+<li>ドット<ruby>記法<rt>きほう</rt></ruby>（きほう）： person.name のように、ドット . でつなぎます。プロパティ名が分かっているときに使います。</li>
+<li>ブラケット<ruby>記法<rt>きほう</rt></ruby>： person[“name”] のように、角括弧 [ ] を使います。</li>
 </ol>
-<p>こうした記法は、これまで学んできたものと同じです。</p>
+<p>こうした<ruby>記法<rt>きほう</rt></ruby>は、これまで学んできたものと同じです。</p>
 <p>「So What?（だから何？）」：なぜ2つあるのか</p>
-<p>ドット記法は速く書けて便利ですが、ブラケット記法は「<ruby>変数<rt>へんすう</rt></ruby>」を使って中身を選べるのが強（つよ）みです。</p>
+<p>ドット<ruby>記法<rt>きほう</rt></ruby>は速く書けて便利ですが、ブラケット<ruby>記法<rt>きほう</rt></ruby>は「<ruby>変数<rt>へんすう</rt></ruby>」を使って中身を選べるのが強（つよ）みです。</p>
 <pre><code class="language-javascript">const key = "name";
 console.log(person[key]); // "Allen" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;されます。keyの中身を変えれば、取れるデータも変わります。
 </code></pre>
@@ -286,11 +286,11 @@ console.log(person[key]); // "Allen" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「自分たちで新しいモノの形を決められる」というのが、オブジェクト指向プログラミングの第<ruby>一歩<rt>いっぽ</rt></ruby>です。</p>
+<p>いかがでしょうか？「自分たちで新しいモノの形を決められる」というのが、オブジェクト<ruby>指向<rt>しこう</rt></ruby>プログラミングの第<ruby>一歩<rt>いっぽ</rt></ruby>です。</p>
 <p><strong><ruby>開発<rt>かいはつ</rt></ruby>のアドバイス</strong></p>
 <ul>
 <li>名前は英語で： JavaScriptのルールとして、プロパティ名は “name” のように意味（いみ）のわかる英語で書くのが一般的（いっぱんてき）です。</li>
-<li>なぜ <code>const</code> なのか？： オブジェクトを作るとき、ふつうは <code>const</code> を使います。これは「箱そのもの」を変えないためです。箱の中身（年齢など）が変わっても、箱自体（personという<ruby>変数<rt>へんすう</rt></ruby>）が別物にならなければ、<code>const</code> で問題（もんだい）ありません。</li>
+<li>なぜ <code>const</code> なのか？： オブジェクトを作るとき、ふつうは <code>const</code> を使います。これは「箱そのもの」を変えないためです。箱の中身（年齢など）が変わっても、箱<ruby>自体<rt>じたい</rt></ruby>（personという<ruby>変数<rt>へんすう</rt></ruby>）が別物にならなければ、<code>const</code> で問題（もんだい）ありません。</li>
 <li><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のコツ： 複数のプロパティを書くときは、カンマ , を忘れないでください。忘れるとエラーになります。</li>
 </ul>
 
