@@ -49,7 +49,7 @@ JavaScriptを実行するとき、**最初からそこにいる「グローバ�
 
 ```javascript
 alert("こんにちは！"); // メッセージを出す
-let name = prompt("お名前は？"); // 名前を<ruby>入力<rt>にゅうりょく</rt></ruby>してもらう
+let name = prompt("お名前は？"); // 名前を入力（にゅうりょく）してもらう
 
 ```
 
@@ -615,19 +615,19 @@ Imageオブジェクトでは、メソッドよりも **「状態が変わった
 // 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
-// 2. <ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが終わったあとの「お祝い」を決める
+// 2. 読（よ）み込（こ）みが終わったあとの「お祝い」を決める
 myPic.onload = function() {
-  console.log("<ruby>画像<rt>がぞう</rt></ruby>の準備ができました！サイズは " + myPic.width + "px です。");
-  // <ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する（bodyに追加）
+  console.log("画像（がぞう）の準備ができました！サイズは " + myPic.width + "px です。");
+  // 画面（がめん）に表示（ひょうじ）する（bodyに追加）
   document.body.appendChild(myPic);
 };
 
 // 3. 失敗したとき（エラー）の準備
 myPic.onerror = function() {
-  console.log("<ruby>画像<rt>がぞう</rt></ruby>が見つかりませんでした...");
+  console.log("画像（がぞう）が見つかりませんでした...");
 };
 
-// 4. 最後に「写真（データ）」を入れる（<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みスタート！）
+// 4. 最後に「写真（データ）」を入れる（読（よ）み込（こ）みスタート！）
 myPic.src = "https://example.com/japan.jpg";
 
 ```
@@ -929,7 +929,7 @@ function saveName() {
   alert("保存しました！");
 }
 
-// 2. クッキーから名前を探す<ruby>関数<rt>かんすう</rt></ruby>
+// 2. クッキーから名前を探す関数（かんすう）
 function greet() {
   const cookies = document.cookie;
   if (cookies.includes("userName")) {
@@ -1062,7 +1062,7 @@ input.addEventListener("keydown", function(event) {
   
   // もし Enterキー だったら
   if (event.key === "Enter") {
-    alert("Enterが押されました！<ruby>送信<rt>そうしん</rt></ruby>します。");
+    alert("Enterが押されました！送信（そうしん）します。");
   }
 });
 
@@ -1091,4 +1091,3 @@ input.addEventListener("keydown", function(event) {
 ---
 
 いかがでしょうか？ Eventオブジェクトが使えるようになると、「ユーザーが何をしたか」に合わせた細かいリアクションができるようになります。
-

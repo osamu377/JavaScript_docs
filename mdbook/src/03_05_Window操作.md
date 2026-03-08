@@ -225,4 +225,3 @@ const countdown = setInterval(function() {
 
 いかがでしょうか？「時間を<ruby>操<rt>あやつ</rt></ruby>る力」を手に入れると、スライドショーやゲーム、リアルタイムの時計など、<ruby>動<rt>うご</rt></ruby>きのあるサイトが作れるようになります。
 
-

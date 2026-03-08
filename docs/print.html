@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-7160240e.js";
+            window.path_to_searchindex_js = "searchindex-4a935368.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -256,7 +256,7 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <hr>
 <h2 id="iii-イベントとは"><a class="header" href="#iii-イベントとは">III. イベントとは</a></h2>
 <h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
-<p>ふだん、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
+<p><ruby>普段<rt>ふだん</rt></ruby>、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
 <p><ruby>例<rt>たと</rt></ruby>えば、あなたがこんな<ruby>動<rt>うご</rt></ruby>きをしたとき、それがすべて「イベント」になります。</p>
 <ul>
 <li>ボタンを <strong>カチッ（クリック）</strong> としたとき。</li>
@@ -567,7 +567,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 
         &lt;div class="form-group"&gt;
             &lt;label&gt;お名前（おなまえ）：&lt;/label&gt;
-            &lt;input type="text" name="username" placeholder="&lt;ruby&gt;例&lt;rt&gt;れい&lt;/rt&gt;&lt;/ruby&gt;：Yamada Taro"&gt;
+            &lt;input type="text" name="username" placeholder="例（れい）：Yamada Taro"&gt;
         &lt;/div&gt;
 
         &lt;div class="form-group"&gt;
@@ -720,7 +720,7 @@ tr:nth-child(even) {
 <p><a href="html/01_02_CSS_04.html">ここをクリック</a>してみましょう。</p>
 <hr>
 <h2 id="iv-特定の状態のスタイル"><a class="header" href="#iv-特定の状態のスタイル">IV. 特定の状態のスタイル</a></h2>
-<p>Webページには「ふだんの状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス</strong> と呼びます。</p>
+<p>Webページには「<ruby>普段<rt>ふだん</rt></ruby>の状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス</strong> と呼びます。</p>
 <p><strong>代表的な<ruby>疑似<rt>ぎじ</rt></ruby>クラス：:hover</strong></p>
 <p>最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。</p>
 <ul>
@@ -1597,7 +1597,7 @@ function sayHello() {
 <pre><code>&lt;button onclick="sayHello()"&gt;ボタンを押してね&lt;/button&gt;
 </code></pre>
 <p>↓</p>
-<pre><code>(クリックされると、&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を呼び出す)
+<pre><code>(クリックされると、関数（かんすう）を呼び出す)
 </code></pre>
 <p>↓<br>[ JavaScript側 ]</p>
 <pre><code>function sayHello() {
@@ -2175,7 +2175,7 @@ JavaScriptを実行するとき、<strong>最初からそこにいる「グロ�
 <h4 id="alert--prompt--confirm"><a class="header" href="#alert--prompt--confirm"><strong><code>alert()</code> / <code>prompt()</code> / <code>confirm()</code></strong></a></h4>
 <p>ユーザーにメッセージを出したり、質問をしたりする「小さな窓（ダイアログ）」を出します。</p>
 <pre><code class="language-javascript">alert("こんにちは！"); // メッセージを出す
-let name = prompt("お名前は？"); // 名前を&lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;してもらう
+let name = prompt("お名前は？"); // 名前を入力（にゅうりょく）してもらう
 
 </code></pre>
 <h4 id="settimeout--setinterval"><a class="header" href="#settimeout--setinterval"><strong><code>setTimeout()</code> / <code>setInterval()</code></strong></a></h4>
@@ -2632,19 +2632,19 @@ function goBack() {
 <pre><code class="language-javascript">// 1. 新しい「写真立て（Imageオブジェクト）」を作る
 const myPic = new Image();
 
-// 2. &lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;み&lt;ruby&gt;込&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;みが終わったあとの「お祝い」を決める
+// 2. 読（よ）み込（こ）みが終わったあとの「お祝い」を決める
 myPic.onload = function() {
-  console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;の準備ができました！サイズは " + myPic.width + "px です。");
-  // &lt;ruby&gt;画面&lt;rt&gt;がめん&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;する（bodyに追加）
+  console.log("画像（がぞう）の準備ができました！サイズは " + myPic.width + "px です。");
+  // 画面（がめん）に表示（ひょうじ）する（bodyに追加）
   document.body.appendChild(myPic);
 };
 
 // 3. 失敗したとき（エラー）の準備
 myPic.onerror = function() {
-  console.log("&lt;ruby&gt;画像&lt;rt&gt;がぞう&lt;/rt&gt;&lt;/ruby&gt;が見つかりませんでした...");
+  console.log("画像（がぞう）が見つかりませんでした...");
 };
 
-// 4. 最後に「写真（データ）」を入れる（&lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;み&lt;ruby&gt;込&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;みスタート！）
+// 4. 最後に「写真（データ）」を入れる（読（よ）み込（こ）みスタート！）
 myPic.src = "https://example.com/japan.jpg";
 
 </code></pre>
@@ -2902,7 +2902,7 @@ function saveName() {
   alert("保存しました！");
 }
 
-// 2. クッキーから名前を探す&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
+// 2. クッキーから名前を探す関数（かんすう）
 function greet() {
   const cookies = document.cookie;
   if (cookies.includes("userName")) {
@@ -3007,7 +3007,7 @@ input.addEventListener("keydown", function(event) {
   
   // もし Enterキー だったら
   if (event.key === "Enter") {
-    alert("Enterが押されました！&lt;ruby&gt;送信&lt;rt&gt;そうしん&lt;/rt&gt;&lt;/ruby&gt;します。");
+    alert("Enterが押されました！送信（そうしん）します。");
   }
 });
 
@@ -3725,7 +3725,7 @@ const countdown = setInterval(function() {
 <h4 id="配列はいれつを作るときの--"><a class="header" href="#配列はいれつを作るときの--"><ruby>配列<rt>はいれつ</rt></ruby>を「作る」ときの <code>[ ]</code></a></h4>
 <p><strong>→「新しいマンションを建てる」イメージ</strong></p>
 <p>一番はじめに、中身（なかみ）をまとめて入れるときに使います。</p>
-<pre><code class="language-javascript">const colors = ["赤", "青", "&lt;ruby&gt;黄&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;"];
+<pre><code class="language-javascript">const colors = ["赤", "青", "黄（き）"];
 
 </code></pre>
 <ul>
@@ -3785,7 +3785,7 @@ console.log(snacks); // ["チョコ", "アイス"]
 <ul>
 <li><code>fruits.length</code> → 今、箱がいくつあるか（3つ）教えてくれます。</li>
 </ul>
-<pre><code>console.log(fruits.length); // 3 と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;されます。
+<pre><code>console.log(fruits.length); // 3 と表示（ひょうじ）されます。
 </code></pre>
 <h3 id="留学生へのアドバイス"><a class="header" href="#留学生へのアドバイス">留学生へのアドバイス</a></h3>
 <p>いかがでしょうか？「0から始まるリスト」のイメージはつかめましたか？</p>
@@ -3817,11 +3817,11 @@ console.log(students.length); // 3 が出る
 <li><strong>イメージ：</strong> 電車の最後に、新しい<ruby>車両<rt>しゃりょう</rt></ruby>をつなげる。</li>
 <li><strong>元の<ruby>配列<rt>はいれつ</rt></ruby>：</strong> <strong>変わります。</strong></li>
 </ul>
-<pre><code class="language-javascript">const train = ["&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;A", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;B"];
+<pre><code class="language-javascript">const train = ["車両（しゃりょう）A", "車両（しゃりょう）B"];
 
-train.push("&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;C"); 
+train.push("車両（しゃりょう）C"); 
 
-console.log(train); // ["&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;A", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;B", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;C"]
+console.log(train); // ["車両（しゃりょう）A", "車両（しゃりょう）B", "車両（しゃりょう）C"]
 
 </code></pre>
 <h4 id="popポップおしりを一つ消す"><a class="header" href="#popポップおしりを一つ消す"><code>pop</code>（ポップ）：おしりを一つ消す</a></h4>
@@ -3830,12 +3830,12 @@ console.log(train); // ["&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&
 <li><strong>イメージ：</strong> 電車の最後の<ruby>車両<rt>しゃりょう</rt></ruby>を切り<ruby>離<rt>はな</rt></ruby>（はな）す。</li>
 <li><strong>元の<ruby>配列<rt>はいれつ</rt></ruby>：</strong> <strong>変わります。</strong></li>
 </ul>
-<pre><code class="language-javascript">const train = ["&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;A", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;B", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;C"];
+<pre><code class="language-javascript">const train = ["車両（しゃりょう）A", "車両（しゃりょう）B", "車両（しゃりょう）C"];
 
 const last = train.pop(); 
 
-console.log(last);  // "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;C" （消えたもの）
-console.log(train); // ["&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;A", "&lt;ruby&gt;車両&lt;rt&gt;しゃりょう&lt;/rt&gt;&lt;/ruby&gt;B"]
+console.log(last);  // "車両（しゃりょう）C" （消えたもの）
+console.log(train); // ["車両（しゃりょう）A", "車両（しゃりょう）B"]
 
 </code></pre>
 <h4 id="shiftシフト先頭を一つ消す"><a class="header" href="#shiftシフト先頭を一つ消す"><code>shift</code>（シフト）：先頭を一つ消す</a></h4>
@@ -3862,7 +3862,7 @@ console.log(queue); // ["2番の人", "3番の人"] （みんな前にずれた�
 const sub = members.slice(1, 3); 
 
 console.log(sub);     // ["B", "C"]
-console.log(members); // ["A", "B", "C", "D"] （元の&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;はそのまま！）
+console.log(members); // ["A", "B", "C", "D"] （元の配列（はいれつ）はそのまま！）
 
 </code></pre>
 <h4 id="unshiftアンシフト先頭に一つ追加する"><a class="header" href="#unshiftアンシフト先頭に一つ追加する"><code>unshift</code>（アンシフト）:先頭に一つ追加する**</a></h4>
@@ -3894,9 +3894,9 @@ console.log(queue);   // 結果：["1番の人", "2番の人", "3番の人"]
 </ul>
 <h5 id="入いれ替かえる例れい"><a class="header" href="#入いれ替かえる例れい"><ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>る<ruby>例<rt>れい</rt></ruby></a></h5>
 <pre><code class="language-javascript">const colors = ["赤", "青", "緑"];
-// 1番目（青）を消して、代わりに「&lt;ruby&gt;黄&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;」を入れる
-colors.splice(1, 1, "&lt;ruby&gt;黄&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;"); 
-console.log(colors); // ["赤", "&lt;ruby&gt;黄&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;", "緑"]
+// 1番目（青）を消して、代わりに「黄（き）」を入れる
+colors.splice(1, 1, "黄（き）"); 
+console.log(colors); // ["赤", "黄（き）", "緑"]
 
 </code></pre>
 <h5 id="削除する例れい"><a class="header" href="#削除する例れい">削除する<ruby>例<rt>れい</rt></ruby></a></h5>
@@ -3952,7 +3952,7 @@ console.log(snacks.length); // 3 のまま！（穴があいた状態）
 <pre><code class="language-javascript">const groupA = ["A", "B"];
 const groupB = ["C", "D"];
 
-// 2つの&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;を合体させて、新しい&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;を作る
+// 2つの配列（はいれつ）を合体させて、新しい配列（はいれつ）を作る
 const all = [...groupA, ...groupB];
 console.log(all); // ["A", "B", "C", "D"]
 
@@ -4015,7 +4015,7 @@ console.log(all); // ["A", "B", "C", "D"]
 </ul>
 <h3 id="2-書かき方かたと呼び方"><a class="header" href="#2-書かき方かたと呼び方">2. <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>と呼び方</a></h3>
 <p>「名前（Key：キー）」と「中身（Value：値（あたい））」をセットにして作ります。</p>
-<pre><code class="language-javascript">// 連想&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;（オブジェクト）を作る
+<pre><code class="language-javascript">// 連想配列（はいれつ）（オブジェクト）を作る
 const user = {
   name: "田中",
   age: 20,
@@ -4245,7 +4245,7 @@ console.log(s1 === s2); // false （型が違うのでダメ！）
 お菓子やプレゼントを包む「ラッピング（wrapping）」と同じ言葉です。
 「値を一時的に包んで守る箱」だと教えると、イメージが<ruby>定着<rt>ていちゃく</rt></ruby>（ていちゃく）しやすいですよ！</p>
 </blockquote>
-<p>いかがでしょうか？「ふだんは<ruby>身軽<rt>みがる</rt></ruby>なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で<ruby>変身<rt>へんしん</rt></ruby>」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
+<p>いかがでしょうか？「<ruby>普段<rt>ふだん</rt></ruby>は<ruby>身軽<rt>みがる</rt></ruby>なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で<ruby>変身<rt>へんしん</rt></ruby>」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
 <hr>
 <h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の<ruby>加工<rt>かこう</rt></ruby></a></h2>
 <p>Stringオブジェクト（文字列）には、文字を自由に<ruby>操<rt>あやつ</rt></ruby>るための便利な「道具（メソッド）」がたくさんあります。</p>
@@ -4428,7 +4428,7 @@ if (email.indexOf("@") !== -1) {
 <pre><code class="language-javascript">// 今（現在）の日付と時間を手に入れる
 const now = new Date();
 console.log(now); 
-// 結果&lt;ruby&gt;例&lt;rt&gt;れい&lt;/rt&gt;&lt;/ruby&gt;：Fri Feb 20 2026 16:40:00 ...（実行した時の時間が出ます）
+// 結果例（れい）：Fri Feb 20 2026 16:40:00 ...（実行した時の時間が出ます）
 
 </code></pre>
 <p>また、**「特定の日（過去や未来）」**の時計を作ることもできます。</p>
@@ -4544,10 +4544,10 @@ console.log(endOfMonth.toLocaleDateString()); // 自動で「2026/2/1」にな�
 <pre><code class="language-javascript">const today = new Date();
 const eventDay = new Date("2026-03-01");
 
-// ① &lt;ruby&gt;引&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;き&lt;ruby&gt;算&lt;rt&gt;ざん&lt;/rt&gt;&lt;/ruby&gt;をして「ミリ秒」の差（さ）をだす
+// ① 引（ひ）き算（ざん）をして「ミリ秒」の差（さ）をだす
 const diffMs = eventDay - today;
 
-// ② ミリ秒を「日」に&lt;ruby&gt;変換&lt;rt&gt;へんかん&lt;/rt&gt;&lt;/ruby&gt;（へんかん）する
+// ② ミリ秒を「日」に変換（へんかん）（へんかん）する
 // 1日 = 24時間 × 60分 × 60秒 × 1000ミリ秒
 const diffDays = Math.ceil(diffMs / (24 * 60 * 60 * 1000));
 
@@ -4620,10 +4620,10 @@ console.log(`イベントまであと ${diffDays} 日です！`);
 <pre><code class="language-javascript">console.log(Math.PI);          // 3.14159... (円周率も入っています)
 
 console.log(Math.round(4.6));   // 5（四捨五入）
-console.log(Math.floor(4.6));   // 4（床：&lt;ruby&gt;切&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;捨&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;て）
-console.log(Math.ceil(4.1));    // 5（天井：&lt;ruby&gt;切&lt;rt&gt;き&lt;/rt&gt;&lt;/ruby&gt;り&lt;ruby&gt;上&lt;rt&gt;あ&lt;/rt&gt;&lt;/ruby&gt;げ）
+console.log(Math.floor(4.6));   // 4（床：切（き）り捨（す）て）
+console.log(Math.ceil(4.1));    // 5（天井：切（き）り上（あ）げ）
 
-// 1から10までのランダムな整数（せいすう）を作る&lt;ruby&gt;魔法&lt;rt&gt;まほう&lt;/rt&gt;&lt;/ruby&gt;の式
+// 1から10までのランダムな整数（せいすう）を作る魔法（まほう）の式
 const luckyNumber = Math.floor(Math.random() * 10) + 1;
 console.log("あなたのラッキーナンバーは：" + luckyNumber);
 
@@ -4704,7 +4704,7 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
   level: 5,          // 特徴（プロパティ）
   
   attack: function() { 
-    alert("エイッ！と攻撃しました"); // &lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き（メソッド）
+    alert("エイッ！と攻撃しました"); // 動（うご）き（メソッド）
   }
 };
 
@@ -4727,14 +4727,14 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
 <hr>
 <h2 id="iii-書かき方かたのイメージ"><a class="header" href="#iii-書かき方かたのイメージ">III. <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のイメージ</a></h2>
 <p>こんなコードのイメージを考えてみてください。</p>
-<pre><code class="language-javascript">// 「学生」という名前のオブジェクトを自分で&lt;ruby&gt;定義&lt;rt&gt;ていぎ&lt;/rt&gt;&lt;/ruby&gt;（ていぎ）する
+<pre><code class="language-javascript">// 「学生」という名前のオブジェクトを自分で定義（ていぎ）（ていぎ）する
 const student = {
   // プロパティ（特徴）
   name: "Ali",
   country: "Egypt",
   age: 20,
 
-  // メソッド（&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き）
+  // メソッド（動（うご）き）
   sayHello: function() {
     console.log("こんにちは！私は " + this.name + " です。");
   }
@@ -4755,7 +4755,7 @@ student.sayHello();        // "こんにちは！私は Ali です。" としゃ
 <p>「So What?（だから何？）」：なぜ2つあるのか</p>
 <p>ドット<ruby>記法<rt>きほう</rt></ruby>は速く書けて便利ですが、ブラケット<ruby>記法<rt>きほう</rt></ruby>は「<ruby>変数<rt>へんすう</rt></ruby>」を使って中身を選べるのが強（つよ）みです。</p>
 <pre><code class="language-javascript">const key = "name";
-console.log(person[key]); // "Allen" と&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;されます。keyの中身を変えれば、取れるデータも変わります。
+console.log(person[key]); // "Allen" と表示（ひょうじ）されます。keyの中身を変えれば、取れるデータも変わります。
 </code></pre>
 <p>また、メソッドを呼び出すときに <code>person.greet()</code> と丸括弧 () を書くのは、「そのアクションを今すぐ動かしてください」という合図（あいず）です。</p>
 <hr>
@@ -4835,13 +4835,13 @@ const robot {
 // 2. 実行
 robot.greet(); // "ハロー、ロボットです。"（元のまま）
 
-// 3. robot のメソッドを&lt;ruby&gt;上書&lt;rt&gt;うわが&lt;/rt&gt;&lt;/ruby&gt;き（オーバーライド）する
+// 3. robot のメソッドを上書（うわが）き（オーバーライド）する
 robot.greet = function() {
   console.log("こんにちは！ 私は特別なロボットです。");
 };
 
 // 4. 実行して比較（ひかく）する
-robot.greet(); // "こんにちは！ 私は特別な..."（&lt;ruby&gt;上書&lt;rt&gt;うわが&lt;/rt&gt;&lt;/ruby&gt;きされた！）
+robot.greet(); // "こんにちは！ 私は特別な..."（上書（うわが）きされた！）
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
@@ -4886,12 +4886,12 @@ const dog = {
   barks: true
 };
 
-// dog の親（プロトタイプ）を animal に&lt;ruby&gt;設定&lt;rt&gt;せってい&lt;/rt&gt;&lt;/ruby&gt;
+// dog の親（プロトタイプ）を animal に設定（せってい）
 Object.setPrototypeOf(dog, animal);
 
 console.log(dog.barks); // true (自分の中にある)
 console.log(dog.eats);  // true (自分にはないが、親にあるので借りてきた！)
-console.log(dog.fly);   // undefined (&lt;ruby&gt;家系図&lt;rt&gt;かけいず&lt;/rt&gt;&lt;/ruby&gt;を最後まで探したけど、どこにもない)
+console.log(dog.fly);   // undefined (家系図（かけいず）を最後まで探したけど、どこにもない)
 
 </code></pre>
 <h3 id="5-プロトタイプを使って新しいプロパティやメソッドを追加する"><a class="header" href="#5-プロトタイプを使って新しいプロパティやメソッドを追加する">5. プロトタイプを使って新しいプロパティやメソッドを追加する</a></h3>
@@ -4900,7 +4900,7 @@ console.log(dog.fly);   // undefined (&lt;ruby&gt;家系図&lt;rt&gt;かけい�
 <li><strong>イメージ：</strong> マンションの住人全員が使える「<ruby>共有<rt>きょうゆう</rt></ruby>のラウンジ」に、新しいテレビを置く。</li>
 <li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
 </ul>
-<pre><code class="language-javascript">// 全ての&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;（Array）に「2倍にする」という新しい機能を追加してみる
+<pre><code class="language-javascript">// 全ての配列（はいれつ）（Array）に「2倍にする」という新しい機能を追加してみる
 Array.prototype.double = function() {
   return this.map(n =&gt; n * 2);
 };
@@ -4969,7 +4969,7 @@ class Student {
     this.age = age;   // この人の年齢は〜
   }
 
-  // 3. メソッド（この型で作られた人ができる&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き）
+  // 3. メソッド（この型で作られた人ができる動（うご）き）
   sayHello() {
     console.log(`こんにちは、${this.name}です！`);
   }
@@ -5044,7 +5044,7 @@ class Person {
   }
 }
 
-// 2. 子クラス（&lt;ruby&gt;継承&lt;rt&gt;けいしょう&lt;/rt&gt;&lt;/ruby&gt;）：留学生
+// 2. 子クラス（継承（けいしょう））：留学生
 // 「Person（人間）」をベースに「InternationalStudent」を作る
 class InternationalStudent extends Person {
   constructor(name, country) {
@@ -5052,15 +5052,15 @@ class InternationalStudent extends Person {
     this.country = country; // 新しい特徴（国籍）をプラス
   }
 
-  // 3. 新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;きをプラス
+  // 3. 新しい動（うご）きをプラス
   introduce() {
     console.log(`${this.country}から来ました。よろしくお願いします！`);
   }
 }
 
 const user = new InternationalStudent("アハメド", "エジプト");
-user.sayHello();  // 親からもらった&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き
-user.introduce(); // 自分だけの新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;/rt&gt;&lt;/ruby&gt;き
+user.sayHello();  // 親からもらった動（うご）き
+user.introduce(); // 自分だけの新しい動（うご）き
 
 </code></pre>
 <h3 id="3-留学生への例たとえ話スマホの進化"><a class="header" href="#3-留学生への例たとえ話スマホの進化">3. 留学生への<ruby>例<rt>たと</rt></ruby>え話：スマホの進化</a></h3>
@@ -5521,9 +5521,9 @@ user.introduce(); // 自分だけの新しい&lt;ruby&gt;動&lt;rt&gt;うご&lt;
 <h3 id="1-ネスト入れ子ってなに"><a class="header" href="#1-ネスト入れ子ってなに">1. ネスト（入れ子）ってなに？</a></h3>
 <p>マトリョーシカ（ロシアの人形）のように、大きな箱の中に小さな箱が入っている状態のことです。</p>
 <p>JavaScriptでは、このように書きます。</p>
-<pre><code class="language-javascript">function outer() { // &lt;ruby&gt;外側&lt;rt&gt;そとがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（大きな箱）
+<pre><code class="language-javascript">function outer() { // 外側（そとがわ）の関数（かんすう）（大きな箱）
   
-  function inner() { // &lt;ruby&gt;内側&lt;rt&gt;うちがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（小さな箱）
+  function inner() { // 内側（うちがわ）の関数（かんすう）（小さな箱）
     // 何かの処理
   }
 
@@ -5602,15 +5602,15 @@ grandParent();
 <h3 id="2-具体的なコードで見てみよう"><a class="header" href="#2-具体的なコードで見てみよう">2. 具体的なコードで見てみよう</a></h3>
 <p>一番わかりやすい<ruby>例<rt>れい</rt></ruby>は、数字を数える「カウンター」です。</p>
 <pre><code class="language-javascript">function createCounter() {
-  let count = 0; // これが「リュックの中身（秘密の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;）」
+  let count = 0; // これが「リュックの中身（秘密の変数（へんすう））」
 
   return function() { 
-    count++; // &lt;ruby&gt;外側&lt;rt&gt;そとがわ&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;を覚えている！
+    count++; // 外側（そとがわ）の変数（へんすう）を覚えている！
     console.log(count + "回目です");
   };
 }
 
-const myCounter = createCounter(); // ここで&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;（マシン）を受け取る
+const myCounter = createCounter(); // ここで関数（かんすう）（マシン）を受け取る
 
 myCounter(); // 「1回目です」
 myCounter(); // 「2回目です」
@@ -5677,7 +5677,7 @@ myCounter(); // 「3回目です」
 <pre><code class="language-javascript">// 果物（くだもの）の名前のリスト
 const fruits = ["りんご", "バナナ", "みかん"];
 
-// fruits.forEach( ここに書くのがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt; );
+// fruits.forEach( ここに書くのがコールバック関数（かんすう） );
 fruits.forEach((item) =&gt; {
   console.log(item + "を食べます");
 });
@@ -5718,12 +5718,12 @@ let total = 0;
 
 // 3. forEach を使って、一つずつ足していきます
 numbers.forEach((num) =&gt; {
-  // ここがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;です！
+  // ここがコールバック関数（かんすう）です！
   total = total + num; 
   console.log(num + " を足しました。今は " + total + " です。");
 });
 
-// 4. 最後に答えを&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;します
+// 4. 最後に答えを表示（ひょうじ）します
 console.log("ぜんぶの合計は " + total + " です！");
 
 </code></pre>
@@ -5766,20 +5766,20 @@ console.log("ぜんぶの合計は " + total + " です！");
 </ul>
 <h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: <ruby>合計<rt>ごうけい</rt></ruby>を計算する</a></h3>
 <p>このプログラムは、リストの中にある数字を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>足<rt>た</rt></ruby>して、<ruby>最後<rt>さいご</rt></ruby>に答えを出します。</p>
-<pre><code class="language-javascript">// 1. 数字の「&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;」を作ります。
+<pre><code class="language-javascript">// 1. 数字の「配列（はいれつ）」を作ります。
 const numbers = [10, 20, 30, 40];
 
 // 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
 let total = 0;
 
-// 3. forEach （上の&lt;ruby&gt;例&lt;rt&gt;たと&lt;/rt&gt;&lt;/ruby&gt;えでは「店員さん」）は、&lt;ruby&gt;配列&lt;rt&gt;はいれつ&lt;/rt&gt;&lt;/ruby&gt;の中身を一つずつ取って、メモ通りに処理します。
+// 3. forEach （上の例（たと）えでは「店員さん」）は、配列（はいれつ）の中身を一つずつ取って、メモ通りに処理します。
 numbers.forEach((num) =&gt; {
-  // ここがコールバック&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;です！ 店員さんに「この仕事をしてください」と渡すメモです！
+  // ここがコールバック関数（かんすう）です！ 店員さんに「この仕事をしてください」と渡すメモです！
   total = total + num; 
   console.log(num + " を足しました。今は " + total + " です。");
 });
 
-// 4. 最後に答えを&lt;ruby&gt;表示&lt;rt&gt;ひょうじ&lt;/rt&gt;&lt;/ruby&gt;します
+// 4. 最後に答えを表示（ひょうじ）します
 console.log("ぜんぶの合計は " + total + " です！");
 
 </code></pre>
@@ -6190,8 +6190,8 @@ console.log(numPattern.test("abc123def")); // true
 <li><strong>最初：</strong> 必ず英小文字から始まる</li>
 </ol>
 <h3 id="2-パスワードチェックのコード"><a class="header" href="#2-パスワードチェックのコード">2. パスワードチェックのコード</a></h3>
-<pre><code class="language-javascript">// パスワードの&lt;ruby&gt;正規&lt;rt&gt;せいき&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;表現&lt;rt&gt;ひょうげん&lt;/rt&gt;&lt;/ruby&gt;（せいきひょうげん）
-// 意味：最初は小文字、そのあとは&lt;ruby&gt;英数字&lt;rt&gt;えいすうじ&lt;/rt&gt;&lt;/ruby&gt;か記号が7〜15回続く（合計8〜16文字）
+<pre><code class="language-javascript">// パスワードの正規（せいき）表現（ひょうげん）（せいきひょうげん）
+// 意味：最初は小文字、そのあとは英数字（えいすうじ）か記号が7〜15回続く（合計8〜16文字）
 const passPattern = /^[a-z][a-z0-9@#!]{7,15}$/;
 
 function checkPassword(pass) {
@@ -6363,10 +6363,10 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
 <li><strong><ruby>出力<rt>しゅつりょく</rt></ruby>の代表：<code>console.log()</code></strong>
 プログラムの結果をコンソール<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>します。</li>
 </ul>
-<pre><code class="language-javascript">// &lt;ruby&gt;入力&lt;rt&gt;にゅうりょく&lt;/rt&gt;&lt;/ruby&gt;（Input）
+<pre><code class="language-javascript">// 入力（にゅうりょく）（Input）
 const name = prompt("あなたのお名前は？");
 
-// &lt;ruby&gt;出力&lt;rt&gt;しゅつりょく&lt;/rt&gt;&lt;/ruby&gt;（Output）
+// 出力（しゅつりょく）（Output）
 console.log("こんにちは、" + name + "さん！");
 
 </code></pre>
@@ -6473,12 +6473,12 @@ ITの世界では、InputとOutputを合わせて <strong>「I/O」</strong> と
 <hr>
 <h3 id="1-変数へんすうに代入だいにゅうできる箱に名前をつける"><a class="header" href="#1-変数へんすうに代入だいにゅうできる箱に名前をつける">1. <ruby>変数<rt>へんすう</rt></ruby>に<ruby>代入<rt>だいにゅう</rt></ruby>できる（箱に名前をつける）</a></h3>
 <p><ruby>関数<rt>かんすう</rt></ruby>という箱に、新しい名前をつけて別の場所に置くことができます。</p>
-<pre><code class="language-javascript">// 1. 「挨拶をする」という&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を作る
+<pre><code class="language-javascript">// 1. 「挨拶をする」という関数（かんすう）を作る
 const hello = function() {
   console.log("こんにちは！");
 };
 
-// 2. helloという箱を、別の&lt;ruby&gt;変数&lt;rt&gt;へんすう&lt;/rt&gt;&lt;/ruby&gt;にコピーする
+// 2. helloという箱を、別の変数（へんすう）にコピーする
 const sayHello = hello;
 
 // 3. 新しい名前で実行できる
@@ -6492,17 +6492,17 @@ sayHello(); // "こんにちは！"
 <p><strong>留学生への<ruby>例<rt>れい</rt></ruby>え：</strong>
 「料理ロボット」に、「切る」という仕事をプレゼントするようなものです。</p>
 </blockquote>
-<pre><code class="language-javascript">// 「実行ボタン」という&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;
+<pre><code class="language-javascript">// 「実行ボタン」という関数（かんすう）
 function pushButton(task) {
   console.log("ボタンを押しました。");
-  task(); // 渡された&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を実行する
+  task(); // 渡された関数（かんすう）を実行する
 }
 
 const clean = function() {
   console.log("掃除をします！");
 };
 
-// 掃除という箱を&lt;ruby&gt;引数&lt;rt&gt;ひきすう&lt;/rt&gt;&lt;/ruby&gt;として渡す
+// 掃除という箱を引数（ひきすう）として渡す
 pushButton(clean); 
 
 </code></pre>
@@ -6514,7 +6514,7 @@ pushButton(clean);
 「おもちゃの工場」に頼んで、自分だけの「特別なおもちゃ（<ruby>関数<rt>かんすう</rt></ruby>）」を作ってもらうイメージです。</p>
 </blockquote>
 <pre><code class="language-javascript">function makeRobot(name) {
-  // 新しい&lt;ruby&gt;関数&lt;rt&gt;かんすう&lt;/rt&gt;&lt;/ruby&gt;を作って、外に返す
+  // 新しい関数（かんすう）を作って、外に返す
   return function() {
     console.log("私は" + name + "ロボットです。");
   };
@@ -6562,6 +6562,22 @@ dora(); // "私はドラロボットです。"
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>
