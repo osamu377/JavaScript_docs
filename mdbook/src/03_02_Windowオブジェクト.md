@@ -972,9 +972,9 @@ function greet() {
 
 ## I. Eventオブジェクト
 
-JavaScriptはWebページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。
+JavaScriptはウェブページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。
 
-* マウスでWebページのボタンをクリックする
+* マウスでウェブページのボタンをクリックする
 * ボックスに文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する
 * <ruby>画面<rt>がめん</rt></ruby>をスクロールする
 

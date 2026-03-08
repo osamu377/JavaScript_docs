@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4a935368.js";
+            window.path_to_searchindex_js = "searchindex-97c29d7e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -178,10 +178,10 @@
 <p><strong>留学生のためのJavaScript学習ガイド：Webを動かす<ruby>魔法<rt>まほう</rt></ruby>を学ぼう</strong></p>
 <p><ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさん、こんにちは！プログラミングの世界へようこそ。</p>
 <p>みなさんが毎日使っているスマートフォンやパソコンの<ruby>画面<rt>がめん</rt></ruby>。ボタンを押すとメニューが出てきたり、地図が動いたりしますね。これはすべて「JavaScript（ジャバスクリプト）」という言葉が<ruby>命令<rt>めいれい</rt></ruby>を出して動かしています。</p>
-<p>このガイドでは、自分でWebページを動かせるようになるための基礎（きそ）をやさしく解説します。それがJavaScriptの基本だからです。</p>
+<p>このガイドでは、自分でウェブページを動かせるようになるための基礎（きそ）をやさしく解説します。それがJavaScriptの基本だからです。</p>
 <blockquote>
 <p>(参考)
-現在のJavaScriptは、Webページの操作だけでなく、いろいろな用途に使えるプログラム言語になっています。しかし、今でも、ブラウザ上で活躍しています。</p>
+現在のJavaScriptは、ウェブページの操作だけでなく、いろいろな用途に使えるプログラム言語になっています。しかし、今でも、ブラウザ上で活躍しています。</p>
 </blockquote>
 <hr>
 <h2 id="i-私たちの舞台wwwワールドワイドウェブ"><a class="header" href="#i-私たちの舞台wwwワールドワイドウェブ">I. 私たちの舞台：WWW（ワールド・ワイド・ウェブ）</a></h2>
@@ -235,8 +235,8 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <p>いかがでしょうか？「注文して、送ってもらって、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てる」。このシンプルな流れがWWWの<ruby>正体<rt>しょうたい</rt></ruby>です。</p>
 <p>「WWWは、世界中の情報をだれでも、どこでも見られるようにしたすごい発明なんです。</p>
 <hr>
-<h2 id="ii-webページを作る3つの力htmlcssjavascriptの役割"><a class="header" href="#ii-webページを作る3つの力htmlcssjavascriptの役割">II. Webページを作る「3つの力」：HTML・CSS・JavaScriptの役割</a></h2>
-<p>Webページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に<ruby>例<rt>たと</rt></ruby>えてみましょう。</p>
+<h2 id="ii-ウェブページを作る3つの力htmlcssjavascriptの役割"><a class="header" href="#ii-ウェブページを作る3つの力htmlcssjavascriptの役割">II. ウェブページを作る「3つの力」：HTML・CSS・JavaScriptの役割</a></h2>
+<p>ウェブページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に<ruby>例<rt>たと</rt></ruby>えてみましょう。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -250,12 +250,12 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 </table>
 </div>
 <p><strong>JavaScriptの役割：電気を通すこと</strong></p>
-<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのWebページは、ただ情報を<ruby>表示<rt>ひょうじ</rt></ruby>するだけの、<ruby>動<rt>うご</rt></ruby>きのない「紙のポスター」のようなものです。</p>
-<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、自動ドアが開き、エレベーターが動くようになります。Webページはユーザーと「<ruby>対話<rt>たいわ</rt></ruby>（たいわ）」ができる便利な道具に変わるのです。</p>
+<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのウェブページは、ただ情報を<ruby>表示<rt>ひょうじ</rt></ruby>するだけの、<ruby>動<rt>うご</rt></ruby>きのない「紙のポスター」のようなものです。</p>
+<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、ドアの前に立てば自動ドアが開き、ボタンを押せばエレベーターが動くようになります。ウェブページはユーザーと「<ruby>対話<rt>たいわ</rt></ruby>（たいわ）」ができる便利な道具に変わるのです。</p>
 <hr>
 <h2 id="iii-イベントとは"><a class="header" href="#iii-イベントとは">III. イベントとは</a></h2>
 <h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
-<p><ruby>普段<rt>ふだん</rt></ruby>、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
+<p><ruby>普段<rt>ふだん</rt></ruby>、ウェブページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
 <p><ruby>例<rt>たと</rt></ruby>えば、あなたがこんな<ruby>動<rt>うご</rt></ruby>きをしたとき、それがすべて「イベント」になります。</p>
 <ul>
 <li>ボタンを <strong>カチッ（クリック）</strong> としたとき。</li>
@@ -296,34 +296,38 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <hr>
 <p>「ウェブページを生きているように動かすための『スイッチ』」。それがイベントです。</p>
 <h2 id="iv-オブジェクトとは"><a class="header" href="#iv-オブジェクトとは">IV. オブジェクトとは</a></h2>
-<p>皆さんがこれから学ぶのは、<strong>自分でWebページを動かす方法</strong> です。Webページを動かすためには、<strong>Webページを<ruby>表示<rt>ひょうじ</rt></ruby>しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
-<p>たとえば<ruby>飲食<rt>いんしょく</rt></ruby>店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
+<p>皆さんがこれから学ぶのは、<strong>ウェブページを動かす方法</strong> です。ウェブページを動かすためには、<strong>ウェブページを<ruby>表示<rt>ひょうじ</rt></ruby>しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
 <h3 id="1-オブジェクトとはどんなもの"><a class="header" href="#1-オブジェクトとはどんなもの">1. オブジェクトとはどんなもの？</a></h3>
-<p>HTMLやCSSという設計図に従って、ブラウザはそれをWebページとして作り上げてくれます。JavaScriptは出来上がったWebページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
-<p>さまざまな人が集まって会社ができているのと同じように、Webページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「Webページを動かす」というのは「Webページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
+<p>HTMLやCSSという設計図に従って、ブラウザはそれをウェブページとして作り上げてくれます。JavaScriptは出来上がったウェブページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
+<p>さまざまな人が集まって会社ができているのと同じように、ウェブページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「ウェブページを動かす」というのは「ウェブページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
 <h3 id="2-あいまいさのない命令誰が何をする"><a class="header" href="#2-あいまいさのない命令誰が何をする">2. あいまいさのない命令：「誰が」「何をする」</a></h3>
 <p>JavaScripはマニュアルですから、「みんなで協力して、こういうことをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に伝えなければなりません。 <strong>「誰が」「何をする」のかを、だれが読んでもわかるように書く</strong> ことが大事です。</p>
-<p>この「Aさん」「Bさん」がJavaScriptでは <strong>「オブジェクト」</strong> にあたります。この言葉は、皆さんには聞きなれないものかもしれません。まず、次のようなイメージを頭に思い描いてください。</p>
+<p>この「Aさん」「Bさん」がJavaScriptでは <strong>「オブジェクト」</strong> にあたります。</p>
+<p>「オブジェクト」という言葉は、皆さんには聞きなれないものかもしれませんが、とりあえず、次のようなイメージを頭に思い描いてください。</p>
 <ul>
-<li><strong>Webページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
 </ul>
 <p>今は、それだけで十分です。「オブジェクトの中身がどうなっているのか？」や「それに仕事をしてもらうためのマニュアルをどう書けばよいのか？」については、これから少しずつ、何度かに分けて説明します。</p>
 <p><img src="./img/obj_vba_03.jpg" alt="働くオブジェクト"></p>
 <h3 id="3-htmlとcss"><a class="header" href="#3-htmlとcss">3. HTMLとCSS</a></h3>
 <p>では、JavaScriptで扱うオブジェクトとは具体的には、どんなものでしょうか？</p>
-<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
-<p>実は、この「Webページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
-<p>したがって、JavaScriptでWebページを<ruby>操<rt>あやつ</rt></ruby>るためには、まずWebページの部品そのものについて、理解しなければなりません。</p>
-<p>次のステップでは、Webページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
+<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がウェブページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
+<p>実は、この「ウェブページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
+<p>したがって、JavaScriptでウェブページを<ruby>操<rt>あやつ</rt></ruby>るためには、まずウェブページの部品そのものについて、理解しなければなりません。</p>
+<p>次のステップでは、ウェブページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
 <hr>
 <h2 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h2>
-<p>JavaScriptを書くときは、</p>
+<p>JavaScriptが動く順番をイラストで描くとこんな風になります。</p>
+<p><img src="img/how_js_work.jpg" alt="JavaScriptが動く順番"></p>
+<p>つまり、JavaScriptでウェブページを動かすために</p>
 <ul>
-<li>「何が起きたら」（イベント）</li>
-<li>「誰が」（オブジェクト）</li>
-<li>「何をする」（プログラムの内容）</li>
+<li>「何が起きたら」（どのイベントに反応させるか？）</li>
+<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
+<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
 </ul>
-<p>を考えておく必要があります。</p>
+<p>を考えておく必要があります。「プログラムの内容」そのものだけではなく、その <strong>プログラムをを動かすきっかけ（イベント）</strong> と、<strong>実際に動くもの（オブジェクト）</strong> の関係が大事なのです。</p>
+<hr>
+<p>それでは、まずウェブページの<ruby>骨組<rt>ほねぐ</rt></ruby>みである、「HTML」について、詳しく見てみましょう！</p>
 
                     </main>
 
@@ -354,22 +358,6 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
