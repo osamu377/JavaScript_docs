@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4a935368.js";
+            window.path_to_searchindex_js = "searchindex-97c29d7e.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-8186ac84.js"></script>
@@ -179,10 +179,10 @@
 <p><strong>留学生のためのJavaScript学習ガイド：Webを動かす<ruby>魔法<rt>まほう</rt></ruby>を学ぼう</strong></p>
 <p><ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさん、こんにちは！プログラミングの世界へようこそ。</p>
 <p>みなさんが毎日使っているスマートフォンやパソコンの<ruby>画面<rt>がめん</rt></ruby>。ボタンを押すとメニューが出てきたり、地図が動いたりしますね。これはすべて「JavaScript（ジャバスクリプト）」という言葉が<ruby>命令<rt>めいれい</rt></ruby>を出して動かしています。</p>
-<p>このガイドでは、自分でWebページを動かせるようになるための基礎（きそ）をやさしく解説します。それがJavaScriptの基本だからです。</p>
+<p>このガイドでは、自分でウェブページを動かせるようになるための基礎（きそ）をやさしく解説します。それがJavaScriptの基本だからです。</p>
 <blockquote>
 <p>(参考)
-現在のJavaScriptは、Webページの操作だけでなく、いろいろな用途に使えるプログラム言語になっています。しかし、今でも、ブラウザ上で活躍しています。</p>
+現在のJavaScriptは、ウェブページの操作だけでなく、いろいろな用途に使えるプログラム言語になっています。しかし、今でも、ブラウザ上で活躍しています。</p>
 </blockquote>
 <hr>
 <h2 id="i-私たちの舞台wwwワールドワイドウェブ"><a class="header" href="#i-私たちの舞台wwwワールドワイドウェブ">I. 私たちの舞台：WWW（ワールド・ワイド・ウェブ）</a></h2>
@@ -236,8 +236,8 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <p>いかがでしょうか？「注文して、送ってもらって、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てる」。このシンプルな流れがWWWの<ruby>正体<rt>しょうたい</rt></ruby>です。</p>
 <p>「WWWは、世界中の情報をだれでも、どこでも見られるようにしたすごい発明なんです。</p>
 <hr>
-<h2 id="ii-webページを作る3つの力htmlcssjavascriptの役割"><a class="header" href="#ii-webページを作る3つの力htmlcssjavascriptの役割">II. Webページを作る「3つの力」：HTML・CSS・JavaScriptの役割</a></h2>
-<p>Webページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に<ruby>例<rt>たと</rt></ruby>えてみましょう。</p>
+<h2 id="ii-ウェブページを作る3つの力htmlcssjavascriptの役割"><a class="header" href="#ii-ウェブページを作る3つの力htmlcssjavascriptの役割">II. ウェブページを作る「3つの力」：HTML・CSS・JavaScriptの役割</a></h2>
+<p>ウェブページは、3つの技術がチームワークを発揮してできています。これを「家づくり」に<ruby>例<rt>たと</rt></ruby>えてみましょう。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -251,12 +251,12 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 </table>
 </div>
 <p><strong>JavaScriptの役割：電気を通すこと</strong></p>
-<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのWebページは、ただ情報を<ruby>表示<rt>ひょうじ</rt></ruby>するだけの、<ruby>動<rt>うご</rt></ruby>きのない「紙のポスター」のようなものです。</p>
-<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、自動ドアが開き、エレベーターが動くようになります。Webページはユーザーと「<ruby>対話<rt>たいわ</rt></ruby>（たいわ）」ができる便利な道具に変わるのです。</p>
+<p>HTMLとCSSだけでは、家は完成しても「電気が通っていない」状態です。HTMLとCSSだけのウェブページは、ただ情報を<ruby>表示<rt>ひょうじ</rt></ruby>するだけの、<ruby>動<rt>うご</rt></ruby>きのない「紙のポスター」のようなものです。</p>
+<p>JavaScriptという電気が通ることで、スイッチを押せばライトがつき、ドアの前に立てば自動ドアが開き、ボタンを押せばエレベーターが動くようになります。ウェブページはユーザーと「<ruby>対話<rt>たいわ</rt></ruby>（たいわ）」ができる便利な道具に変わるのです。</p>
 <hr>
 <h2 id="iii-イベントとは"><a class="header" href="#iii-イベントとは">III. イベントとは</a></h2>
 <h3 id="1-きっかけを待っているコンピューター"><a class="header" href="#1-きっかけを待っているコンピューター">1. 「きっかけ」を待っているコンピューター</a></h3>
-<p><ruby>普段<rt>ふだん</rt></ruby>、Webページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
+<p><ruby>普段<rt>ふだん</rt></ruby>、ウェブページはただじっとしているだけに見えますが、実はあなたの操作を <strong>「今か今かと待っている」</strong> 状態です。</p>
 <p><ruby>例<rt>たと</rt></ruby>えば、あなたがこんな<ruby>動<rt>うご</rt></ruby>きをしたとき、それがすべて「イベント」になります。</p>
 <ul>
 <li>ボタンを <strong>カチッ（クリック）</strong> としたとき。</li>
@@ -297,57 +297,61 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <hr>
 <p>「ウェブページを生きているように動かすための『スイッチ』」。それがイベントです。</p>
 <h2 id="iv-オブジェクトとは"><a class="header" href="#iv-オブジェクトとは">IV. オブジェクトとは</a></h2>
-<p>皆さんがこれから学ぶのは、<strong>自分でWebページを動かす方法</strong> です。Webページを動かすためには、<strong>Webページを<ruby>表示<rt>ひょうじ</rt></ruby>しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
-<p>たとえば<ruby>飲食<rt>いんしょく</rt></ruby>店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
+<p>皆さんがこれから学ぶのは、<strong>ウェブページを動かす方法</strong> です。ウェブページを動かすためには、<strong>ウェブページを<ruby>表示<rt>ひょうじ</rt></ruby>しているブラウザに「これこれこういうことをしなさい」と命令する</strong> ことが必要です。</p>
 <h3 id="1-オブジェクトとはどんなもの"><a class="header" href="#1-オブジェクトとはどんなもの">1. オブジェクトとはどんなもの？</a></h3>
-<p>HTMLやCSSという設計図に従って、ブラウザはそれをWebページとして作り上げてくれます。JavaScriptは出来上がったWebページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
-<p>さまざまな人が集まって会社ができているのと同じように、Webページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「Webページを動かす」というのは「Webページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
+<p>HTMLやCSSという設計図に従って、ブラウザはそれをウェブページとして作り上げてくれます。JavaScriptは出来上がったウェブページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
+<p>さまざまな人が集まって会社ができているのと同じように、ウェブページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「ウェブページを動かす」というのは「ウェブページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
 <h3 id="2-あいまいさのない命令誰が何をする"><a class="header" href="#2-あいまいさのない命令誰が何をする">2. あいまいさのない命令：「誰が」「何をする」</a></h3>
 <p>JavaScripはマニュアルですから、「みんなで協力して、こういうことをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に伝えなければなりません。 <strong>「誰が」「何をする」のかを、だれが読んでもわかるように書く</strong> ことが大事です。</p>
-<p>この「Aさん」「Bさん」がJavaScriptでは <strong>「オブジェクト」</strong> にあたります。この言葉は、皆さんには聞きなれないものかもしれません。まず、次のようなイメージを頭に思い描いてください。</p>
+<p>この「Aさん」「Bさん」がJavaScriptでは <strong>「オブジェクト」</strong> にあたります。</p>
+<p>「オブジェクト」という言葉は、皆さんには聞きなれないものかもしれませんが、とりあえず、次のようなイメージを頭に思い描いてください。</p>
 <ul>
-<li><strong>Webページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
 </ul>
 <p>今は、それだけで十分です。「オブジェクトの中身がどうなっているのか？」や「それに仕事をしてもらうためのマニュアルをどう書けばよいのか？」については、これから少しずつ、何度かに分けて説明します。</p>
 <p><img src="img/obj_vba_03.jpg" alt="働くオブジェクト"></p>
 <h3 id="3-htmlとcss"><a class="header" href="#3-htmlとcss">3. HTMLとCSS</a></h3>
 <p>では、JavaScriptで扱うオブジェクトとは具体的には、どんなものでしょうか？</p>
-<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がWebページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
-<p>実は、この「Webページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
-<p>したがって、JavaScriptでWebページを<ruby>操<rt>あやつ</rt></ruby>るためには、まずWebページの部品そのものについて、理解しなければなりません。</p>
-<p>次のステップでは、Webページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
+<p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がウェブページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
+<p>実は、この「ウェブページの部品」こそが、JavaScriptの <strong>オブジェクト</strong> です。</p>
+<p>したがって、JavaScriptでウェブページを<ruby>操<rt>あやつ</rt></ruby>るためには、まずウェブページの部品そのものについて、理解しなければなりません。</p>
+<p>次のステップでは、ウェブページの設計図である <strong>HTML</strong> と <strong>CSS</strong> について説明します。</p>
 <hr>
 <h2 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h2>
-<p>JavaScriptを書くときは、</p>
+<p>JavaScriptが動く順番をイラストで描くとこんな風になります。</p>
+<p><img src="img/how_js_work.jpg" alt="JavaScriptが動く順番"></p>
+<p>つまり、JavaScriptでウェブページを動かすために</p>
 <ul>
-<li>「何が起きたら」（イベント）</li>
-<li>「誰が」（オブジェクト）</li>
-<li>「何をする」（プログラムの内容）</li>
+<li>「何が起きたら」（どのイベントに反応させるか？）</li>
+<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
+<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
 </ul>
-<p>を考えておく必要があります。</p>
+<p>を考えておく必要があります。「プログラムの内容」そのものだけではなく、その <strong>プログラムをを動かすきっかけ（イベント）</strong> と、<strong>実際に動くもの（オブジェクト）</strong> の関係が大事なのです。</p>
+<hr>
+<p>それでは、まずウェブページの<ruby>骨組<rt>ほねぐ</rt></ruby>みである、「HTML」について、詳しく見てみましょう！</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="html"><a class="header" href="#html">HTML</a></h1>
 <p><strong><ruby>留学生<rt>りゅうがくせい</rt></ruby>のためのHTML基礎（きそ）ガイド：JavaScriptを学ぶ前に</strong></p>
 <p>Web<ruby>開発<rt>かいはつ</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>するみなさん、こんにちは。このガイドでは、プログラミングのJavaScriptを勉強する前に、とても<ruby>大切<rt>たいせつ</rt></ruby>な「HTML」と「CSS」をわかりやすく<ruby>説明<rt>せつめい</rt></ruby>します。</p>
-<h2 id="i-はじめにwebページを構成する3つの力"><a class="header" href="#i-はじめにwebページを構成する3つの力">I. はじめに：Webページを構成する「3つの力」</a></h2>
+<h2 id="i-はじめにウェブページを構成する3つの力"><a class="header" href="#i-はじめにウェブページを構成する3つの力">I. はじめに：ウェブページを構成する「3つの力」</a></h2>
 <p>Webサイトを作（つく）るときには、3つの技術（ぎじゅつ）を使（つか）います。それはHTML、CSS、そしてJavaScriptです。これらを「家」に<ruby>例<rt>たと</rt></ruby>えて考（かんが）えてみましょう。</p>
 <ul>
 <li>HTML： 家の「柱」や「壁」です。建物（たてもの）の<ruby>骨組<rt>ほねぐ</rt></ruby>みを作（つく）る役割（やくわり）があります。</li>
 <li>CSS： 家の「ペンキ」や「インテリア」です。色（いろ）を塗（ぬ）ったりして、<ruby>見<rt>み</rt></ruby>た目（め）をきれいに整（ととの）えます。</li>
 <li>JavaScript： 家の「電気（でんき）」や「機械（きかい）装置（そうち）」です。ボタンを押（お）すとライトがつくような、<ruby>動<rt>うご</rt></ruby>きや機能（きのう）を作ります。</li>
 </ul>
-<p>HTMLはWebページの<ruby>土台<rt>どだい</rt></ruby>です。HTMLの<ruby>骨組<rt>ほねぐ</rt></ruby>みが正（ただ）しくないと、あとからJavaScriptを使っても、うまく<ruby>動<rt>うご</rt></ruby>きません。まずは、ページの<ruby>見<rt>み</rt></ruby>えない部分（ぶぶん）である「<ruby>設定<rt>せってい</rt></ruby>」から理解（りかい）しましょう。</p>
-<h2 id="ii-htmlのメタ情報じょうほうwebページの設定せっていを理解する"><a class="header" href="#ii-htmlのメタ情報じょうほうwebページの設定せっていを理解する">II. HTMLのメタ情報（じょうほう）：Webページの「<ruby>設定<rt>せってい</rt></ruby>」を理解する</a></h2>
-<p>Webページには、ユーザーには見えませんが、ブラウザや<ruby>検索<rt>けんさく</rt></ruby>（けんさく）エンジンにとって<ruby>大切<rt>たいせつ</rt></ruby>な情報があります。これを「メタ情報（じょうほう）」と呼（よ）び、<code>&lt;head&gt;</code>タグの中（なか）に書きます。</p>
+<p>HTMLはウェブページの<ruby>土台<rt>どだい</rt></ruby>です。HTMLの<ruby>骨組<rt>ほねぐ</rt></ruby>みが正（ただ）しくないと、あとからJavaScriptを使っても、うまく<ruby>動<rt>うご</rt></ruby>きません。まずは、ページの<ruby>見<rt>み</rt></ruby>えない部分（ぶぶん）である「<ruby>設定<rt>せってい</rt></ruby>」から理解（りかい）しましょう。</p>
+<h2 id="ii-htmlのメタ情報じょうほうウェブページの設定せっていを理解する"><a class="header" href="#ii-htmlのメタ情報じょうほうウェブページの設定せっていを理解する">II. HTMLのメタ情報（じょうほう）：ウェブページの「<ruby>設定<rt>せってい</rt></ruby>」を理解する</a></h2>
+<p>ウェブページには、ユーザーには見えませんが、ブラウザや<ruby>検索<rt>けんさく</rt></ruby>（けんさく）エンジンにとって<ruby>大切<rt>たいせつ</rt></ruby>な情報があります。これを「メタ情報（じょうほう）」と呼（よ）び、<code>&lt;head&gt;</code>タグの中（なか）に書きます。</p>
 <ul>
 <li><code>&lt;title&gt;</code>タグ： ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>される名前（なまえ）です。そのページの内容（ないよう）を伝（つた）えます。</li>
 <li>文字（もじ）コードの<ruby>設定<rt>せってい</rt></ruby>： 日本語などが正しく<ruby>表示<rt>ひょうじ</rt></ruby>されるようにするための<ruby>設定<rt>せってい</rt></ruby>です。</li>
 </ul>
 <p>もし、文字コードの<ruby>設定<rt>せってい</rt></ruby>が正しくないと、文字が「読（よ）めない記号（きごう）」になってしまいます。これを「文字化（もじば）け」と言（い）います。<ruby>設定<rt>せってい</rt></ruby>が終わったら、次は実際（じっさい）に<ruby>画面<rt>がめん</rt></ruby>で<ruby>見<rt>み</rt></ruby>えるコンテンツを作（つく）りましょう。</p>
 <h2 id="iii-いろいろなhtmlタグ情報じょうほうの意味いみを決める"><a class="header" href="#iii-いろいろなhtmlタグ情報じょうほうの意味いみを決める">III. いろいろなHTMLタグ：情報（じょうほう）の意味（いみ）を決める</a></h2>
-<p>Webページをつくるための「HTMLタグ」と「特殊（とくしゅ）記号」について、やさしい日本語で説明します。</p>
+<p>ウェブページをつくるための「HTMLタグ」と「特殊（とくしゅ）記号」について、やさしい日本語で説明します。</p>
 <h3 id="htmlタグとは"><a class="header" href="#htmlタグとは">HTMLタグとは？</a></h3>
-<p>HTMLは、Webページの <strong>「<ruby>骨組<rt>ほねぐ</rt></ruby>み」</strong> をつくるための言葉です。
+<p>HTMLは、ウェブページの <strong>「<ruby>骨組<rt>ほねぐ</rt></ruby>み」</strong> をつくるための言葉です。
 タグは、<code>&lt;</code> と <code>&gt;</code> で名前を囲（かこ）んで書きます。たいていの場合、始まりのタグ（<ruby>例<rt>れい</rt></ruby>：<code>&lt;p&gt;</code>）と終わりのタグ（<ruby>例<rt>れい</rt></ruby>：<code>&lt;/p&gt;</code>）で文字をはさみます。タグはタグで囲まれた部分が、HTMLの中でどのような仕事をしているかを示します。</p>
 <h4 id="1-見出しheading-h1--h6"><a class="header" href="#1-見出しheading-h1--h6">1. 見出し（Heading）: <code>&lt;h1&gt;</code> 〜 <code>&lt;h6&gt;</code></a></h4>
 <p>ページのタイトルや、中身の「見出し」に使います。</p>
@@ -481,7 +485,7 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 </tbody>
 </table>
 </div>
-<p>これらを使わないと、ブラウザが「これはタグかな？それとも文字かな？」と迷（まよ）ってしまい、Webページが正しく<ruby>表示<rt>ひょうじ</rt></ruby>されないことがあります。</p>
+<p>これらを使わないと、ブラウザが「これはタグかな？それとも文字かな？」と迷（まよ）ってしまい、ウェブページが正しく<ruby>表示<rt>ひょうじ</rt></ruby>されないことがあります。</p>
 <hr>
 <p><strong>アドバイス:</strong>
 HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（色やサイズ）」を整（ととの）え、JavaScriptで「<ruby>動<rt>うご</rt></ruby>き」をつけます。まずはこのHTMLタグをしっかり覚（おぼ）えましょう！</p>
@@ -610,7 +614,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 <p>プログラミングの学習は、<ruby>一歩<rt>いっぽ</rt></ruby>ずつ進めば大丈夫です。</p>
 <p><strong>HTML基礎のまとめ</strong></p>
 <ul>
-<li>HTMLはWebページの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」です。</li>
+<li>HTMLはウェブページの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」です。</li>
 <li><code>&lt;head&gt;</code>タグの中にある<ruby>設定<rt>せってい</rt></ruby>が正しくないと、文字化（もじば）けが起（お）きます。</li>
 <li>idは「1つだけ」、classは「グループ」のための目印（めじるし）です。</li>
 <li>テーブルは、<code>&lt;table&gt;</code>の中に<code>&lt;tr&gt;</code>、その中に<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>を書く<ruby>構造<rt>こうぞう</rt></ruby>です。</li>
@@ -618,7 +622,7 @@ HTMLで構造をつくり、CSSで「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt
 </ul>
 <p>皆さんの学習を心から応援（おうえん）しています。では、次は <strong>CSS</strong> について学びましょう。</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="javascript学習者のためのcss基本ガイドwebページのデザインを学ぼう"><a class="header" href="#javascript学習者のためのcss基本ガイドwebページのデザインを学ぼう">JavaScript学習者のためのCSS基本ガイド：Webページのデザインを学ぼう</a></h1>
+<h1 id="javascript学習者のためのcss基本ガイドウェブページのデザインを学ぼう"><a class="header" href="#javascript学習者のためのcss基本ガイドウェブページのデザインを学ぼう">JavaScript学習者のためのCSS基本ガイド：ウェブページのデザインを学ぼう</a></h1>
 <p><strong>なぜJavaScriptの前にCSSを学ぶ必要があるのか？</strong></p>
 <p>JavaScriptでデザインを変えるためには、CSSの知識がどうしても必要です。留学生の皆さんにもわかりやすい「やさしい日本語」で、大切なポイントを<ruby>解説<rt>かいせつ</rt></ruby>します。</p>
 <p>JavaScriptはCSSを操作（そうさ）して、デザインを<ruby>動的<rt>どうてき</rt></ruby>に変える役割を持っています。CSSを知っておくことには、次のような<ruby>戦略<rt>せんりゃく</rt></ruby>的（せんりゃくてき）なメリットがあります。</p>
@@ -651,7 +655,7 @@ h1 {
 </code></pre>
 <p><a href="html/01_02_CSS_02.html">ここをクリック</a>してみましょう。</p>
 <p><strong>セレクタ</strong></p>
-<p><strong>セレクタ</strong> はWebページを分解して、その一部を取り出すときに、必要な部分を探すヒントとして使う、名前や特徴です。「タグ セレクタ」「クラス セレクタ」などがあります。</p>
+<p><strong>セレクタ</strong> はウェブページを分解して、その一部を取り出すときに、必要な部分を探すヒントとして使う、名前や特徴です。「タグ セレクタ」「クラス セレクタ」などがあります。</p>
 <blockquote class="blockquote-tag blockquote-tag-important">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
 <p><strong>セレクタ</strong> はJavaScriptでも、とても大事です。JavaScriptを書くときは、仕事をしてもらうオブジェクトを指定しなければなりません。そのとき、この <strong>セレクタ</strong> を利用するのです。</p>
@@ -720,7 +724,7 @@ tr:nth-child(even) {
 <p><a href="html/01_02_CSS_04.html">ここをクリック</a>してみましょう。</p>
 <hr>
 <h2 id="iv-特定の状態のスタイル"><a class="header" href="#iv-特定の状態のスタイル">IV. 特定の状態のスタイル</a></h2>
-<p>Webページには「<ruby>普段<rt>ふだん</rt></ruby>の状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス</strong> と呼びます。</p>
+<p>ウェブページには「<ruby>普段<rt>ふだん</rt></ruby>の状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス</strong> と呼びます。</p>
 <p><strong>代表的な<ruby>疑似<rt>ぎじ</rt></ruby>クラス：:hover</strong></p>
 <p>最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。</p>
 <ul>
@@ -762,7 +766,7 @@ document.getElementById("title").style.color = "red";
 </code></pre>
 <p>これを、目的地（もくてきち）までの 「道のり（みちのり）」 として分解（ぶんかい）してみましょう。</p>
 <ol>
-<li>document：このWebページという「大きな書類」の中から、</li>
+<li>document：このウェブページという「大きな書類」の中から、</li>
 <li>.getElementById(“title”)：IDが “title” の「場所」を見つけて、</li>
 <li>.style：「デザイン（スタイル）」の担当者に、</li>
 <li>.color = “red”：「文字の色」を「赤」に変えるように命令する。</li>
@@ -782,15 +786,15 @@ document.getElementById("title").style.color = "red";
 <h1 id="はじめてのjavascript"><a class="header" href="#はじめてのjavascript">はじめてのJavaScript</a></h1>
 <p><strong>留学生のためのJavaScript<ruby>入門<rt>にゅうもん</rt></ruby>：最初の<ruby>一歩<rt>いっぽ</rt></ruby>を始めよう</strong></p>
 <p>日本でITを学ぶ留学生のみなさん、こんにちは。</p>
-<p>前の章ではWebページの骨組みやデザインを決めるHTMLやCSSについて説明しました。</p>
+<p>前の章ではウェブページの骨組みやデザインを決めるHTMLやCSSについて説明しました。</p>
 <p>この章ではいよいよ「初めてのJavaScript（ジャバスクリプト）」を書いていきます。</p>
 <p>皆さんは、前の章の最初に説明したイメージを覚えているでしょうか？</p>
 <ul>
-<li><strong>Webページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
 </ul>
 <p>JavaScriptは「誰が」「何をするか」を指示するマニュアルです。</p>
 <p>ここでは、「誰が」についての詳しい説明は省略して、まず　<strong>「何をするか」を命令する方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
-<p>プログラミングは、最初は<ruby>難<rt>むずか</rt></ruby>しく感じるかもしれません。でも、ルールを知れば、自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りにWebページを動かせる「<ruby>魔法<rt>まほう</rt></ruby>」のような技術です。</p>
+<p>プログラミングは、最初は<ruby>難<rt>むずか</rt></ruby>しく感じるかもしれません。でも、ルールを知れば、自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りにウェブページを動かせる「<ruby>魔法<rt>まほう</rt></ruby>」のような技術です。</p>
 <hr>
 <h2 id="i-初めてのプログラムhello-world-とポップアップ"><a class="header" href="#i-初めてのプログラムhello-world-とポップアップ">I. 初めてのプログラム：Hello World! とポップアップ</a></h2>
 <p>プログラミングの第<ruby>一歩<rt>いっぽ</rt></ruby>は、自分の指示がブラウザに伝わったことを確認することです。<ruby>画面<rt>がめん</rt></ruby>にメッセージを出す2つの方法を学びましょう。</p>
@@ -942,7 +946,8 @@ document.getElementById("title").style.color = "red";
 <h2 id="v-まとめjavascript学習のルールと習慣"><a class="header" href="#v-まとめjavascript学習のルールと習慣">V. まとめ：JavaScript学習のルールと習慣</a></h2>
 <p><strong>JavaScriptの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：これだけは守りたい8つのルール</strong></p>
 <p>最後に、ミスを防ぐための大切なルールをまとめました。</p>
-<p>プログラミングは世界共通のルールです。なぜ英語（えいご）で名前を付けるのか？ それは世界中のプログラマーが共通して使う「公式（こうしき）の言葉」だからです。</p>
+<p>たとえば<ruby>飲食<rt>いんしょく</rt></ruby>店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
+<p>プログラミングは世界共通のルールです。なぜ英語（えいご）で名前を付けるのか？ それは世界中のプログラマーが共通して使う「<ruby>公用<rt>こうよう</rt>&gt;</ruby>の言葉」だからです。</p>
 <p>以下のルールを「チェックリスト」として使いましょう。</p>
 <ol>
 <li>文の終わりにはセミコロン（;）： 命令の<ruby>区切<rt>くぎ</rt></ruby>りをはっきりさせます。</li>
@@ -1056,7 +1061,7 @@ myName = "Chris"; // 後から値を代入（だいにゅう）する
 <p>ここでは「文字列型」「<ruby>数値<rt>すうち</rt></ruby>型」「<ruby>論理<rt>ろんり</rt></ruby>型」について説明します。「<ruby>配列<rt>はいれつ</rt></ruby>」と「オブジェクト」については、あとの章で説明します。</p>
 <hr>
 <h2 id="ii-文字列型-stringテキストデータを扱う"><a class="header" href="#ii-文字列型-stringテキストデータを扱う">II. 文字列型 (String)：テキストデータを扱う</a></h2>
-<p>Webページで「こんにちは」というメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
+<p>ウェブページで「こんにちは」というメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>したり、ユーザーの名前を扱ったりする際に使われるのが「文字列（もじれつ）」です。</p>
 <h3 id="1-文字列を作る"><a class="header" href="#1-文字列を作る">1. 文字列を作る</a></h3>
 <p>文字列を作るには、テキストを <strong><ruby>引用符<rt>いんようふ</rt></ruby>（クォーテーション）</strong> で囲みます。</p>
 <ul>
@@ -1309,7 +1314,7 @@ console.log(typeof numValue); // "number" と表示（ひょうじ）される
 <p>みなさん、こんにちは！ プログラミングの学習は進んでいますか？ 今日は、JavaScript（ジャバスクリプト）を学ぶ上でとても大切な「<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）」について解説します。</p>
 <hr>
 <h2 id="i-はじめに制御せいぎょ文せいぎょぶんとは"><a class="header" href="#i-はじめに制御せいぎょ文せいぎょぶんとは">I. はじめに：<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）とは？</a></h2>
-<p>Webページを作るとき、HTMLは「家の柱（はしら：骨組み）」、CSSは「壁のペンキ」のような<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を整える役割です。そして、JavaScriptは家に「電気」を通したり、「機械装置（きかいそうち）」を動かしたりする役割を持っています。</p>
+<p>ウェブページを作るとき、HTMLは「家の柱（はしら：骨組み）」、CSSは「壁のペンキ」のような<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を整える役割です。そして、JavaScriptは家に「電気」を通したり、「機械装置（きかいそうち）」を動かしたりする役割を持っています。</p>
 <p>そして、<strong><ruby>制御<rt>せいぎょ</rt></ruby>文</strong> （Control Statement）は、その機械を動かすための「<ruby><rt>脳</rt>のう</ruby>（のう）」にあたります。「もしボタンが押されたら、電気をつける」「もしパスワードが違ったら、エラーを<ruby>表示<rt>ひょうじ</rt></ruby>する」といった判断（はんだん）をプログラムに教えるのが、<ruby>制御<rt>せいぎょ</rt></ruby>文の役割です。</p>
 <p>これを使えるようになると、Webサイトがまるで生きているように、ユーザーの<ruby>動<rt>うご</rt></ruby>きに合わせて<ruby><rt>賢</rt>かしこ</ruby>く<ruby>反応<rt>はんのう</rt></ruby>するようになります。まずは、最も基本的な判断のルールである「if文」から見ていきましょう。</p>
 <hr>
@@ -1357,7 +1362,7 @@ if (score &gt;= 90) {
 <li>どれか一つ（ひとつ）が選ばれる： 上から順番にチェックして、最初に条件が合ったブロックだけが<ruby>動<rt>うご</rt></ruby>きます。</li>
 <li>const と let： 値を変えない要素などは <code>const</code>、点数や回数のように変わる数字は <code>let</code> を使うのが現代のプログラミングの良い習慣です。</li>
 </ul>
-<p>if文を使うことで、Webページはユーザーの<ruby>入力<rt>にゅうりょく</rt></ruby>に対して「かしこく<ruby>反応<rt>はんのう</rt></ruby>する」ことができるようになります。</p>
+<p>if文を使うことで、ウェブページはユーザーの<ruby>入力<rt>にゅうりょく</rt></ruby>に対して「かしこく<ruby>反応<rt>はんのう</rt></ruby>する」ことができるようになります。</p>
 <hr>
 <h2 id="iii-正しく比べるための道具比較演算えんざん子と論理ろんり演算えんざん子"><a class="header" href="#iii-正しく比べるための道具比較演算えんざん子と論理ろんり演算えんざん子">III. 正しく比べるための道具：比較<ruby>演算<rt>えんざん</rt></ruby>子と<ruby>論理<rt>ろんり</rt></ruby><ruby>演算<rt>えんざん</rt></ruby>子</a></h2>
 <p>条件を作るときには、「比べるための記号」を使います。これを「比較<ruby>演算<rt>えんざん</rt></ruby>子（ひかくえんざんし / Comparison operators）」と呼びます。</p>
@@ -1902,13 +1907,13 @@ setTimeout(() =&gt; {
 <h2 id="i-javascriptは誰が何をするかを指示するマニュアル"><a class="header" href="#i-javascriptは誰が何をするかを指示するマニュアル">I. JavaScriptは「誰が」「何をするか」を指示するマニュアル</a></h2>
 <p>ここでもう一度、最初に説明したイメージを思い出してください。</p>
 <ul>
-<li><strong>Webページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
 </ul>
 <p>JavaScriptは「誰が」「何をするか」を指示するマニュアルです。</p>
 <p>マニュアルですから、「みんなで協力して、これをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に、細かく書く必要があります。そうしないと、みんなが同じ仕事をしようとしたり、大事な仕事を誰もしなかったり、ということが起こります。</p>
 <p>ここでは、 <strong>「誰が」（つまり、どのオブジェクトが）その作業をするのか</strong> を、間違いなく伝えるために、 <strong>JavaScriptがどのようにそのオブジェクトを見つけるのか</strong> 、その方法を説明します。</p>
 <h3 id="1-bomdomツリーはブラウザが作った地図"><a class="header" href="#1-bomdomツリーはブラウザが作った地図">1. BOM/DOMツリーは「ブラウザが作った地図」</a></h3>
-<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、Webページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『<ruby>段落<rt>だんらく</rt></ruby><code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する『<ruby>入力<rt>にゅうりょく</rt></ruby>ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
+<p>われわれが「これをしなさい」と命令する相手は、オブジェクトと呼ばれる、ウェブページのいろいろな部品です。その部品とは、たとえば、ひとまとまりの文である『<ruby>段落<rt>だんらく</rt></ruby><code>&lt;p&gt;</code>』であり、『見出し<code>&lt;h1&gt;</code>』であり、あなたが文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する『<ruby>入力<rt>にゅうりょく</rt></ruby>ボックス<code>&lt;input&gt;</code>』であり、あなたがクリックする『ボタン』です。これらは <strong>「ツリー構造（木の枝のような形）」</strong> で整理されています。</p>
 <p>ブラウザは、HTMLファイルを受け取ると、中身を読み取って、その指示に従って <strong>オブジェクト</strong> たちを作り、それらをコンピュータが扱いやすい <strong>「木（Tree）」</strong> の形に並べ替えます。これを <strong>DOM（Document Object Model）ツリー</strong> と呼びます。</p>
 <p>またブラウザ自身も自分の持っている機能をツリーの形で整理しています。これを <strong>BOM（Browser Object Model）</strong> と呼びます。</p>
 <p><strong>ブラウザ世界の構造</strong></p>
@@ -1917,7 +1922,7 @@ setTimeout(() =&gt; {
 <li>window (ブラウザ全体)
 <ul>
 <li>location (URLの情報)</li>
-<li>document (Webページの内容)
+<li>document (ウェブページの内容)
 <ul>
 <li>html
 <ul>
@@ -2942,9 +2947,9 @@ function greet() {
 <hr>
 <p>いかがでしょうか？「ブラウザが持っている<ruby>記憶<rt>きおく</rt></ruby>の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。</p>
 <h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
-<p>JavaScriptはWebページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。</p>
+<p>JavaScriptはウェブページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。</p>
 <ul>
-<li>マウスでWebページのボタンをクリックする</li>
+<li>マウスでウェブページのボタンをクリックする</li>
 <li>ボックスに文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する</li>
 <li><ruby>画面<rt>がめん</rt></ruby>をスクロールする</li>
 </ul>
@@ -5117,22 +5122,22 @@ user.introduce(); // 自分だけの新しい動（うご）き
 <p>はじめに</p>
 <p>こんにちは！このドキュメントは、JavaScriptを<ruby>勉強<rt>べんきょう</rt></ruby>しているけれど、まだ<ruby>日本語<rt>にほんご</rt></ruby>に<ruby>慣<rt>な</rt></ruby>れていない<ruby>皆<rt>みな</rt></ruby>さんのための<ruby>用語集<rt>ようごしゅう</rt></ruby>です。プログラミングの<ruby>言葉<rt>ことば</rt></ruby>はむずかしいものも<ruby>多<rt>おお</rt></ruby>いですが、ここでは、やさしい<ruby>日本語<rt>にほんご</rt></ruby>と<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>例<rt>れい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、<ruby>一<rt>ひと</rt></ruby>つずつていねいに<ruby>説明<rt>せつめい</rt></ruby>します。あなたの<ruby>学習<rt>がくしゅう</rt></ruby>の<ruby>助<rt>たす</rt></ruby>けになればうれしいです。</p>
 <hr>
-<h2 id="i-webページの基本きほん"><a class="header" href="#i-webページの基本きほん">I. Webページの<ruby>基本<rt>きほん</rt></ruby></a></h2>
-<p>Webページを<ruby>作<rt>つく</rt></ruby>るためには、3つの<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>技術<rt>ぎじゅつ</rt></ruby>があります。それはHTML、CSS、JavaScriptです。これを「<ruby>家<rt>いえ</rt></ruby>」に<ruby>例<rt>たと</rt></ruby>えてみましょう。HTMLは<ruby>家<rt>いえ</rt></ruby>の「<ruby>柱<rt>はしら</rt></ruby>や<ruby>壁<rt>かべ</rt></ruby>」、CSSは<ruby>家<rt>いえ</rt></ruby>の「ペンキやインテリア」のような<ruby>飾<rt>かざ</rt></ruby>りつけ、そしてJavaScriptは<ruby>電気<rt>でんき</rt></ruby>をつけたり<ruby>機械<rt>きかい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしたりする「<ruby>機能<rt>きのう</rt></ruby>」のようなものです。この3つが<ruby>協力<rt>きょうりょく</rt></ruby>して、<ruby>私<rt>わたし</rt></ruby>たちがいつも<ruby>見<rt>み</rt></ruby>ているWebページができています。</p>
+<h2 id="i-ウェブページの基本きほん"><a class="header" href="#i-ウェブページの基本きほん">I. ウェブページの<ruby>基本<rt>きほん</rt></ruby></a></h2>
+<p>ウェブページを<ruby>作<rt>つく</rt></ruby>るためには、3つの<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>技術<rt>ぎじゅつ</rt></ruby>があります。それはHTML、CSS、JavaScriptです。これを「<ruby>家<rt>いえ</rt></ruby>」に<ruby>例<rt>たと</rt></ruby>えてみましょう。HTMLは<ruby>家<rt>いえ</rt></ruby>の「<ruby>柱<rt>はしら</rt></ruby>や<ruby>壁<rt>かべ</rt></ruby>」、CSSは<ruby>家<rt>いえ</rt></ruby>の「ペンキやインテリア」のような<ruby>飾<rt>かざ</rt></ruby>りつけ、そしてJavaScriptは<ruby>電気<rt>でんき</rt></ruby>をつけたり<ruby>機械<rt>きかい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしたりする「<ruby>機能<rt>きのう</rt></ruby>」のようなものです。この3つが<ruby>協力<rt>きょうりょく</rt></ruby>して、<ruby>私<rt>わたし</rt></ruby>たちがいつも<ruby>見<rt>み</rt></ruby>ているウェブページができています。</p>
 <ul>
 <li>HTML
 <ul>
-<li>Webページの<ruby>骨組<rt>ほねぐ</rt></ruby>みや<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
+<li>ウェブページの<ruby>骨組<rt>ほねぐ</rt></ruby>みや<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
 </ul>
 </li>
 <li>CSS
 <ul>
-<li>Webページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>をきれいにするための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
+<li>ウェブページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>をきれいにするための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
 </ul>
 </li>
 <li>JavaScript
 <ul>
-<li>Webページに<ruby>動<rt>うご</rt></ruby>きをつけたり、<ruby>機能<rt>きのう</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>するための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
+<li>ウェブページに<ruby>動<rt>うご</rt></ruby>きをつけたり、<ruby>機能<rt>きのう</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>するための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
 </ul>
 </li>
 </ul>
@@ -5305,10 +5310,10 @@ user.introduce(); // 自分だけの新しい動（うご）き
 </ul>
 </li>
 </ul>
-<p>これまでプログラムのロジックについて<ruby>学<rt>まな</rt></ruby>んできましたが、<ruby>次<rt>つぎ</rt></ruby>はJavaScriptが<ruby>実際<rt>じっさい</rt></ruby>にWebページをどうやって<ruby>動<rt>うご</rt></ruby>かすのかを<ruby>見<rt>み</rt></ruby>ていきましょう。</p>
+<p>これまでプログラムのロジックについて<ruby>学<rt>まな</rt></ruby>んできましたが、<ruby>次<rt>つぎ</rt></ruby>はJavaScriptが<ruby>実際<rt>じっさい</rt></ruby>にウェブページをどうやって<ruby>動<rt>うご</rt></ruby>かすのかを<ruby>見<rt>み</rt></ruby>ていきましょう。</p>
 <hr>
-<h2 id="vi-webページを操作そうさする----dom"><a class="header" href="#vi-webページを操作そうさする----dom">VI Webページを<ruby>操作<rt>そうさ</rt></ruby>する  - DOM</a></h2>
-<p>JavaScriptは、Webページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>や<ruby>内容<rt>ないよう</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えることができます。そのために<ruby>使<rt>つか</rt></ruby>うのが「DOM（ドム）」です。DOMは、HTMLページを<ruby>木<rt>き</rt></ruby>のような<ruby>構造<rt>こうぞう</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>した「<ruby>地図<rt>ちず</rt></ruby>」のようなものです。JavaScriptはこの<ruby>地図<rt>ちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>特定<rt>とくてい</rt></ruby>のHTML<ruby>要素<rt>ようそ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>したり、<ruby>文字<rt>もじ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたり、<ruby>新<rt>あたら</rt></ruby>しい<ruby>要素<rt>ようそ</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>したりします。</p>
+<h2 id="vi-ウェブページを操作そうさする----dom"><a class="header" href="#vi-ウェブページを操作そうさする----dom">VI ウェブページを<ruby>操作<rt>そうさ</rt></ruby>する  - DOM</a></h2>
+<p>JavaScriptは、ウェブページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>や<ruby>内容<rt>ないよう</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えることができます。そのために<ruby>使<rt>つか</rt></ruby>うのが「DOM（ドム）」です。DOMは、HTMLページを<ruby>木<rt>き</rt></ruby>のような<ruby>構造<rt>こうぞう</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>した「<ruby>地図<rt>ちず</rt></ruby>」のようなものです。JavaScriptはこの<ruby>地図<rt>ちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>特定<rt>とくてい</rt></ruby>のHTML<ruby>要素<rt>ようそ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>したり、<ruby>文字<rt>もじ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたり、<ruby>新<rt>あたら</rt></ruby>しい<ruby>要素<rt>ようそ</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>したりします。</p>
 <ul>
 <li>DOM (Document Object Model)
 <ul>
@@ -5369,11 +5374,11 @@ user.introduce(); // 自分だけの新しい動（うご）き
 <p>ページの<ruby>内容<rt>ないよう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えるのは、<ruby>多<rt>おお</rt></ruby>くの<ruby>場合<rt>ばあい</rt></ruby>、ユーザーが<ruby>何<rt>なに</rt></ruby>かをしたときです。<ruby>次<rt>つぎ</rt></ruby>に、そのユーザーの<ruby>操作<rt>そうさ</rt></ruby>にどう<ruby>対応<rt>たいおう</rt></ruby>するかを<ruby>学<rt>まな</rt></ruby>びましょう。</p>
 <hr>
 <h2 id="vii-ユーザーの操作そうさに対応たいおうする---イベント"><a class="header" href="#vii-ユーザーの操作そうさに対応たいおうする---イベント">VII. ユーザーの<ruby>操作<rt>そうさ</rt></ruby>に<ruby>対応<rt>たいおう</rt></ruby>する - イベント</a></h2>
-<p>Webページをインタラクティブにするためには、ユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があります。JavaScriptでは、ユーザーがボタンをクリックしたり、マウスを<ruby>動<rt>うご</rt></ruby>かしたりすることを「イベント」と<ruby>呼<rt>よ</rt></ruby>びます。JavaScriptはこれらのイベントを「<ruby>聞<rt>き</rt></ruby>いて」（<ruby>監視<rt>かんし</rt></ruby>して）、イベントが<ruby>起<rt>お</rt></ruby>きたときに<ruby>決<rt>き</rt></ruby>められた<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>することができます。</p>
+<p>ウェブページをインタラクティブにするためには、ユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があります。JavaScriptでは、ユーザーがボタンをクリックしたり、マウスを<ruby>動<rt>うご</rt></ruby>かしたりすることを「イベント」と<ruby>呼<rt>よ</rt></ruby>びます。JavaScriptはこれらのイベントを「<ruby>聞<rt>き</rt></ruby>いて」（<ruby>監視<rt>かんし</rt></ruby>して）、イベントが<ruby>起<rt>お</rt></ruby>きたときに<ruby>決<rt>き</rt></ruby>められた<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>することができます。</p>
 <ul>
 <li>イベント (event)
 <ul>
-<li>ユーザーがボタンをクリックするなど、Webページ<ruby>上<rt>じょう</rt></ruby>で<ruby>起<rt>お</rt></ruby>こる<ruby>出来事<rt>できごと</rt></ruby>のことです。</li>
+<li>ユーザーがボタンをクリックするなど、ウェブページ<ruby>上<rt>じょう</rt></ruby>で<ruby>起<rt>お</rt></ruby>こる<ruby>出来事<rt>できごと</rt></ruby>のことです。</li>
 </ul>
 </li>
 <li>イベントハンドラ (event handler)
@@ -6562,22 +6567,6 @@ dora(); // "私はドラロボットです。"
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
