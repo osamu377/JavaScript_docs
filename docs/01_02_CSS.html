@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-bda876df.js";
+            window.path_to_searchindex_js = "searchindex-05e449b7.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-136672e9.js"></script>
@@ -189,16 +189,16 @@
 <hr>
 <h2 id="i-文字のスタイル文字のデザインを変える"><a class="header" href="#i-文字のスタイル文字のデザインを変える">I. 文字のスタイル（文字のデザインを変える）</a></h2>
 <p>Webサイトにおいて、文字は情報を伝えるための最も大切な要素です。文字の「読みやすさ」は、ユーザーの<ruby>体験<rt>たいけん</rt></ruby>（UX “User eXperience“のこと）に大きな影響を与えます。</p>
-<p><strong>基本の3つのプロパティ</strong></p>
+<h3 id="基本の3つのプロパティ"><a class="header" href="#基本の3つのプロパティ">基本の3つのプロパティ</a></h3>
 <p>まずは、よく使われる以下の3つの命令（プロパティ）を覚えましょう。</p>
 <ol>
 <li>font-size： 文字の大きさ。</li>
 <li>color： 文字の色。</li>
 <li>text-align： 文字の並べ方。左（left）、<ruby>真<rt>しん</rt></ruby>ん中（center）、右（right）のどこに<ruby>揃<rt>そろ</rt></ruby>（そろ）えるかを決めます。</li>
 </ol>
-<p><strong>CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の基本</strong></p>
+<h3 id="cssの書かき方かたの基本"><a class="header" href="#cssの書かき方かたの基本">CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の基本</a></h3>
 <p>CSSは、「どの場所に（セレクタ）」「何の項目を（プロパティ）」「どう変えるか（値）」というルールで書きます。</p>
-<pre><code>/* h1タグ（見出し）のデザインを変える例（れい） */
+<pre><code class="language-css">/* h1タグ（見出し）のデザインを変える例（れい） */
 h1 {
   font-size: 24px;      /* 大きさを24ピクセルにする */
   color: blue;          /* 色を青にする */
@@ -206,7 +206,7 @@ h1 {
 }
 </code></pre>
 <p><a href="./html/01_02_CSS_02.html">ここをクリック</a>してみましょう。</p>
-<p><strong>セレクタ</strong></p>
+<h3 id="セレクタ"><a class="header" href="#セレクタ">セレクタ</a></h3>
 <p><strong>セレクタ</strong> はウェブページを分解して、その一部を取り出すときに、必要な部分を探すヒントとして使う、名前や特徴です。「タグ セレクタ」「クラス セレクタ」などがあります。</p>
 <blockquote class="blockquote-tag blockquote-tag-important">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
@@ -215,7 +215,7 @@ h1 {
 <hr>
 <h2 id="ii-タグのスタイルhtml要素に直接命令する"><a class="header" href="#ii-タグのスタイルhtml要素に直接命令する">II. タグのスタイル（HTML要素に直接命令する）</a></h2>
 <p>「タグ セレクタ」とは、<code>&lt;h1&gt;</code>や<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code>といったHTMLのタグ名に対して、スタイルを適用する方法です。ページ全体のデザインを一度に整えるのにとても便利です。</p>
-<p><strong>テーブル（表）のスタイル<ruby>例<rt>れい</rt></ruby></strong></p>
+<h3 id="テーブル表のスタイル例れい"><a class="header" href="#テーブル表のスタイル例れい">テーブル（表）のスタイル<ruby>例<rt>れい</rt></ruby></a></h3>
 <p>「テーブル（表）」をきれいに見せるためのプロパティを比較（ひかく）してみましょう。</p>
 <div class="table-wrapper">
 <table>
@@ -229,7 +229,7 @@ h1 {
 </tbody>
 </table>
 </div>
-<p><strong>border-collapse: collapse; は「<ruby>魔法<rt>まほう</rt></ruby>の言葉」</strong></p>
+<h3 id="border-collapse-collapse-は魔法まほうの言葉"><a class="header" href="#border-collapse-collapse-は魔法まほうの言葉">border-collapse: collapse; は「<ruby>魔法<rt>まほう</rt></ruby>の言葉」</a></h3>
 <p>テーブルのデザインで最も重要なのが border-collapse: collapse; です。 <ruby>通常<rt>つうじょう</rt></ruby>、テーブルの枠線はセルごとに分かれていて、そのままでは「二重線」のように見えてしまいます。このプロパティを <code>&lt;table&gt;</code>タグ に適用すると、隣（となり）り合う2本の線を1本にまとめることができます。まさに 「2本の線を1本にする<ruby>魔法<rt>まほう</rt></ruby>の言葉」 です。これを使うだけで、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>がスッキリとプロらしくなります。</p>
 <pre><code class="language-css">/* テーブルのデザインを変える例（れい） */
 table {
@@ -251,26 +251,29 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 </code></pre>
-<p>※ 注意：border（枠線）は各セル（<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>）に<ruby>設定<rt>せってい</rt></ruby>し、border-collapseは全体の親である<code>&lt;table&gt;</code>に<ruby>設定<rt>せってい</rt></ruby>するのが正しいルールです。</p>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>注意：border（枠線）は各セル（<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>）に<ruby>設定<rt>せってい</rt></ruby>し、border-collapseは全体の親である<code>&lt;table&gt;</code>に<ruby>設定<rt>せってい</rt></ruby>するのが正しいルールです。</p>
+</blockquote>
 <p><a href="./html/01_02_CSS_03.html">ここをクリック</a>してみましょう。</p>
 <hr>
 <h2 id="iii-特定の要素クラスのスタイル"><a class="header" href="#iii-特定の要素クラスのスタイル">III. 特定の要素（クラス）のスタイル</a></h2>
 <p>「クラス（Class）」を使うと、特定のグループに名前をつけて、その名前を呼ぶことでスタイルを適用できます。同じデザインを何度も書かなくて済むため、コードの管理がとても楽になります。</p>
 <p>タグの名前はあらかじめHTMLのルールで決まっていますが、<strong>クラスの名前はプログラマが自分で付けるもの</strong> です。</p>
-<p><strong>クラスを使うステップ</strong></p>
+<h3 id="クラスを使うステップ"><a class="header" href="#クラスを使うステップ">クラスを使うステップ</a></h3>
 <ol>
 <li>HTMLで名前をつける： <code>&lt;p class="highlight"&gt;</code> のように書きます。</li>
 <li>CSSでデザインを決める： <code>.highlight { color: red; }</code> のように、先頭にドットをつけて書きます。</li>
 </ol>
-<p><strong>クラス名のルール</strong></p>
+<h3 id="クラス名のルール"><a class="header" href="#クラス名のルール">クラス名のルール</a></h3>
 <ul>
 <li>名前の始まりには必ず .（ドット） をつけます（<ruby>例<rt>れい</rt></ruby>：.main-title）。</li>
 <li>名前は、そのグループが何であるかわかる 意味のある英語 を使います。</li>
 <li>複数の単語を繋げる場合は、JavaScriptと同じ camelCase（キャメルケース） （<ruby>例<rt>れい</rt></ruby>：.submitButton）を使うのがおすすめです。JSとCSSで名前の付け方を統一（とういつ）すると、ケアレスミス（不注意な間違い）を減らすことができます。</li>
 </ul>
-<p><strong>JavaScriptへの繋がり</strong></p>
+<h3 id="javascriptへの繋がり"><a class="header" href="#javascriptへの繋がり">JavaScriptへの繋がり</a></h3>
 <p>JavaScriptには、<code>getElementsByClassName()</code> という「クラス名を使って要素を見つける」命令があります。CSSでクラスを使ってグループ化しておけば、<ruby>後<rt>あと</rt></ruby>でJavaScriptからそのグループだけを一度に動かすことが非常に簡単になります。</p>
-<pre><code>/* highlightクラスのデザインを変える例（れい） */
+<pre><code class="language-css">/* highlightクラスのデザインを変える例（れい） */
 .highlight { color: red; }
 </code></pre>
 <p><a href="./html/01_02_CSS_04.html">ここをクリック</a>してみましょう。</p>
@@ -284,7 +287,7 @@ tr:nth-child(even) {
 <li>JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と<ruby>離<rt>はな</rt></ruby>れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。</li>
 </ul>
 <p><ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。</p>
-<pre><code>a:link,
+<pre><code class="language-css">a:link,
 a:visited {
   color: rebeccapurple;
   font-weight: bold;
@@ -313,7 +316,7 @@ a:hover {
 </div>
 <p><strong>JavaScriptでの<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え構造：「道のり」で考える</strong></p>
 <p>JavaScriptからCSSを操作するときは、次のような構造で命令を出します。</p>
-<pre><code>// ID名が "title" の要素の色を赤に変える
+<pre><code class="language-javascript">// ID名が "title" の要素の色を赤に変える
 document.getElementById("title").style.color = "red";
 </code></pre>
 <p>これを、目的地（もくてきち）までの 「道のり（みちのり）」 として分解（ぶんかい）してみましょう。</p>

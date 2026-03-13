@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-bda876df.js";
+            window.path_to_searchindex_js = "searchindex-05e449b7.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-136672e9.js"></script>
@@ -192,9 +192,9 @@
 <hr>
 <h2 id="i-初めてのプログラムhello-world-とポップアップ"><a class="header" href="#i-初めてのプログラムhello-world-とポップアップ">I. 初めてのプログラム：Hello World! とポップアップ</a></h2>
 <p>プログラミングの第<ruby>一歩<rt>いっぽ</rt></ruby>は、自分の指示がブラウザに伝わったことを確認することです。<ruby>画面<rt>がめん</rt></ruby>にメッセージを出す2つの方法を学びましょう。</p>
-<p><strong>alert()：ユーザーへの通知</strong></p>
+<h3 id="alertユーザーへの通知"><a class="header" href="#alertユーザーへの通知">alert()：ユーザーへの通知</a></h3>
 <p>ブラウザに小さなウィンドウを出して、ユーザーに大切なメッセージを伝えます。</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="ja"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -211,9 +211,9 @@
 &lt;/html&gt;
 </code></pre>
 <p>これをブラウザで見ると、このようになります。<a href="./html/02_02_alert.html">ここをクリックしてみましょう。</a></p>
-<p><strong>console.log()：<ruby>開発<rt>かいはつ</rt></ruby>者のための確認（デバッグ）</strong></p>
+<h3 id="consolelog開発かいはつ者のための確認デバッグ"><a class="header" href="#consolelog開発かいはつ者のための確認デバッグ">console.log()：<ruby>開発<rt>かいはつ</rt></ruby>者のための確認（デバッグ）</a></h3>
 <p>「デバッグ（プログラムのミスを見つけて直すこと）」のために使います。ユーザーには見えない、<ruby>開発<rt>かいはつ</rt></ruby>者のための「確認用メッセージ」をコンソールに<ruby>出力<rt>しゅつりょく</rt></ruby>します。</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="ja"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -229,7 +229,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p><strong>「コンソール」の開き方</strong></p>
+<h4 id="コンソールの開き方"><a class="header" href="#コンソールの開き方">「コンソール」の開き方</a></h4>
 <p>自分の書いた「<ruby>意図<rt>いと</rt></ruby>（やりたいこと）」がブラウザに正しく伝わったかどうかは、ここで確認します。</p>
 <div class="table-wrapper">
 <table>
@@ -244,13 +244,13 @@
 </div>
 <p>コンソールを開いて、<a href="./html/02_03_console_log.html">ここをクリックしてみましょう。</a></p>
 <p>自分の書いた1行のコードでブラウザが<ruby>反応<rt>はんのう</rt></ruby>したとき、その「喜び」がこれからの学習の力になります！</p>
-<p><strong>文（ぶん）／ Statement</strong></p>
+<h3 id="文ぶん-statement"><a class="header" href="#文ぶん-statement">文（ぶん）／ Statement</a></h3>
 <p><code>alert("こんにちは！");</code> のような <strong>「コンピューターへの <ruby>命令<rt>めいれい</rt></ruby>」</strong> を <strong>「文」</strong> と呼びます。「〜をしてください」という、<strong>ひとつの<ruby>完璧<rt>かんぺき</rt></ruby>な指示</strong>です。</p>
 <p>JavaScriptでは、最後にセミコロン <code>;</code> をつけます。</p>
 <hr>
 <h2 id="ii-イベントとイベントハンドラ動うごきを作るきっかけ"><a class="header" href="#ii-イベントとイベントハンドラ動うごきを作るきっかけ">II. イベントとイベントハンドラ：<ruby>動<rt>うご</rt></ruby>きを作るきっかけ</a></h2>
 <p>JavaScriptは、ユーザーの「クリック」などの操作に<ruby>反応<rt>はんのう</rt></ruby>して<ruby>動<rt>うご</rt></ruby>き出します。この「きっかけ」を理解すると、Webサイトに命を<ruby>吹<rt>ふ</rt></ruby>き<ruby>込<rt>こ</rt></ruby>むことができます。</p>
-<p><strong>スイッチと電球の関係</strong></p>
+<h3 id="スイッチと電球の関係"><a class="header" href="#スイッチと電球の関係">スイッチと電球の関係</a></h3>
 <ul>
 <li>イベント（操作）： ユーザーがボタンを押す「スイッチ」です。</li>
 <li>ハンドラ（処理）： スイッチが入ったときに実行される「電球がつく」という<ruby>動<rt>うご</rt></ruby>きです。</li>
@@ -271,7 +271,7 @@
 </table>
 </div>
 <p><ruby>記述<rt>きじゅつ</rt></ruby><ruby>例<rt>れい</rt></ruby>： HTMLのボタンに「クリックされたらアラートを出す」<ruby>魔法<rt>まほう</rt></ruby>をかけるときは、こう書きます。</p>
-<pre><code>&lt;button onclick="alert('ボタンが押されました！')"&gt;クリックしてね&lt;/button&gt;
+<pre><code class="language-html">&lt;button onclick="alert('ボタンが押されました！')"&gt;クリックしてね&lt;/button&gt;
 </code></pre>
 <p>これをブラウザで読（よ）み込（こ）むと、以下のようになります。</p>
 <p><button onclick="alert(&#39;ボタンが押されました！&#39;)">クリックしてみましょう</button></p>
@@ -345,13 +345,12 @@
 <p>以下のルールを「チェックリスト」として使いましょう。</p>
 <ol>
 <li>文の終わりにはセミコロン（;）： 命令の<ruby>区切<rt>くぎ</rt></ruby>りをはっきりさせます。</li>
-<li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>宣言<rt>せんげん</rt></ruby>（せんげん）は let と const： 値を入れる「箱（はこ）」を作ります。</li>
-</ol>
+<li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>宣言<rt>せんげん</rt></ruby>（せんげん）は let と const： 値を入れる「箱（はこ）」を作ります。
 <ul>
 <li>const：一度決めたら変えられない 「箱に貼った固定ラベル」 です。基本はこちらを使います。</li>
 <li>let：あとで中身を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>られる箱です。</li>
 </ul>
-<ol start="3">
+</li>
 <li>文字列は “ “ または ’ ’ で囲む： 「こんにちは」などの言葉は<ruby>引用符<rt>いんようふ</rt></ruby>（いんようふ）で囲みます。</li>
 <li>インデント（字下げ）： コードの行の最初をスペースで<ruby>揃<rt>そろ</rt></ruby>えて、見やすくします。</li>
 <li>コメント（//）： 自分のためのメモです。コンピュータは無視します。</li>
@@ -362,7 +361,7 @@
 <li>コードはすべて「<ruby>半角<rt>はんかく</rt></ruby>（half-width）」で書きます： これが一番大切です。文字列の中とコメント以外で 「<ruby>全角<rt>ぜんかく</rt></ruby>」を使うと、コードは絶対に<ruby>動<rt>うご</rt></ruby>きません。</li>
 </ol>
 <hr>
-<p><strong>留学生へのメッセージ</strong></p>
+<h3 id="留学生へのメッセージ"><a class="header" href="#留学生へのメッセージ">留学生へのメッセージ</a></h3>
 <p>最初はエラーが出るのが当たり前です。エラーメッセージはブラウザからの「ヒント」だと思って、楽しみながら<ruby>挑戦<rt>ちょうせん</rt></ruby>してください。あなたが自由自在にコードを書けるようになるまで、応援しています！</p>
 
                     </main>
