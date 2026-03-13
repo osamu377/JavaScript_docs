@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-97c29d7e.js";
+            window.path_to_searchindex_js = "searchindex-bda876df.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-8186ac84.js"></script>
+        <script src="toc-136672e9.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -301,7 +301,7 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <h3 id="1-オブジェクトとはどんなもの"><a class="header" href="#1-オブジェクトとはどんなもの">1. オブジェクトとはどんなもの？</a></h3>
 <p>HTMLやCSSという設計図に従って、ブラウザはそれをウェブページとして作り上げてくれます。JavaScriptは出来上がったウェブページの部品を <strong>「オブジェクト」</strong> としてとらえ、それに対して『これこれこういうことをしなさい』と命令します。</p>
 <p>さまざまな人が集まって会社ができているのと同じように、ウェブページももさまざまなオブジェクトから構成されています。そして、「会社に何かをしてもらう」というのは、実際には「その会社の人に何かをしてもらう」ことです。同じように、<strong>「ウェブページを動かす」というのは「ウェブページのオブジェクトに何かをしてもらう」</strong> ということです。</p>
-<p><img src="img/object_work.JPG" alt="働くオブジェクト"></p>
+<p><img src="img/object_waiting2.JPG" alt="働くオブジェクト"></p>
 <h3 id="2-あいまいさのない命令誰が何をする"><a class="header" href="#2-あいまいさのない命令誰が何をする">2. あいまいさのない命令：「誰が」「何をする」</a></h3>
 <p>JavaScripはマニュアルですから、「みんなで協力して、こういうことをやりなさい」とぼんやりした命令をするのではなく、「Aさんはこれをして」「Bさんはあれをして」と一人ひとりの作業を正確に伝えなければなりません。 <strong>「誰が」「何をする」のかを、だれが読んでもわかるように書く</strong> ことが大事です。</p>
 <p>この「Aさん」「Bさん」がJavaScriptでは <strong>「オブジェクト」</strong> にあたります。</p>
@@ -309,8 +309,8 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <ul>
 <li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
 </ul>
+<p><img src="img/objects_waiting2.JPG" alt="命令を待つオブジェクトたち"></p>
 <p>今は、それだけで十分です。「オブジェクトの中身がどうなっているのか？」や「それに仕事をしてもらうためのマニュアルをどう書けばよいのか？」については、これから少しずつ、何度かに分けて説明します。</p>
-<p><img src="img/objects_waiting.JPG" alt="命令を待つオブジェクトたち"></p>
 <h3 id="3-htmlとcss"><a class="header" href="#3-htmlとcss">3. HTMLとCSS</a></h3>
 <p>では、JavaScriptで扱うオブジェクトとは具体的には、どんなものでしょうか？</p>
 <p>ブラウザはサーバーからのレスポンスを受け取ります。そのレスポンスのうち「HTML」と「CSS」がウェブページという「家」の柱、壁、床（ゆか）、あるいはペンキ、インテリア、<ruby>壁紙<rt>かべがみ</rt></ruby>、といった部品になるのは、前に説明した通りです。</p>
@@ -320,7 +320,7 @@ ChromeやSafariなど、私たちがサイトを見るためのソフトです�
 <hr>
 <h2 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h2>
 <p>JavaScriptが動く順番をイラストで描くとこんな風になります。</p>
-<p><img src="img/how_js_work.jpg" alt="JavaScriptが動く順番"></p>
+<p><img src="img/obj_working2.jpg" alt="JavaScriptが動く順番"></p>
 <p>つまり、JavaScriptでウェブページを動かすために</p>
 <ul>
 <li>「何が起きたら」（どのイベントに反応させるか？）</li>
@@ -785,16 +785,19 @@ document.getElementById("title").style.color = "red";
 <p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための<ruby>近道<rt>ちかみち</rt></ruby>（ちかみち）です。また、CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは <strong>「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」</strong> を大切にしてください。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="はじめてのjavascript"><a class="header" href="#はじめてのjavascript">はじめてのJavaScript</a></h1>
-<p><strong>留学生のためのJavaScript<ruby>入門<rt>にゅうもん</rt></ruby>：最初の<ruby>一歩<rt>いっぽ</rt></ruby>を始めよう</strong></p>
+<h2 id="留学生のためのjavascript入門にゅうもん最初の一歩いっぽを始めよう"><a class="header" href="#留学生のためのjavascript入門にゅうもん最初の一歩いっぽを始めよう">留学生のためのJavaScript<ruby>入門<rt>にゅうもん</rt></ruby>：最初の<ruby>一歩<rt>いっぽ</rt></ruby>を始めよう</a></h2>
 <p>日本でITを学ぶ留学生のみなさん、こんにちは。</p>
 <p>前の章ではウェブページの骨組みやデザインを決めるHTMLやCSSについて説明しました。</p>
 <p>この章ではいよいよ「初めてのJavaScript（ジャバスクリプト）」を書いていきます。</p>
-<p>皆さんは、前の章の最初に説明したイメージを覚えているでしょうか？</p>
+<p>JavaScriptは</p>
 <ul>
-<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li>「何が起きたら」（どのイベントに反応させるか？）</li>
+<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
+<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
 </ul>
-<p>JavaScriptは「誰が」「何をするか」を指示するマニュアルです。</p>
-<p>ここでは、「誰が」についての詳しい説明は省略して、まず　<strong>「何をするか」を命令する方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
+<p>を書くものです。</p>
+<p>が、すべてを一度に学ぶことはできません。</p>
+<p>ここでは、「何が起きたら」「誰に」についての詳しい説明は省略して、まず　<strong>「どういう仕事をさせるか？」を書く方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
 <p>プログラミングは、最初は<ruby>難<rt>むずか</rt></ruby>しく感じるかもしれません。でも、ルールを知れば、自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りにウェブページを動かせる「<ruby>魔法<rt>まほう</rt></ruby>」のような技術です。</p>
 <hr>
 <h2 id="i-初めてのプログラムhello-world-とポップアップ"><a class="header" href="#i-初めてのプログラムhello-world-とポップアップ">I. 初めてのプログラム：Hello World! とポップアップ</a></h2>
@@ -4164,7 +4167,7 @@ console.log(user.name);    // これでも「田中」が出る（こっちが�
 ];
 </code></pre>
 <p>「<code>[]</code>角（かく）かっこ」と「<code>{}</code>波（なみ）かっこ」を使ったこの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を、覚えておいてください。</p>
-<p><a href="#かっこの種類">参考: かっこの種類と日本語の呼び方</a></p>
+<p><a href="06_05_かっこの種類.html">参考: かっこの種類と日本語の呼び方</a></p>
 <hr><div style="break-before: page; page-break-before: always;"></div>
 <h1 id="文字列"><a class="header" href="#文字列">文字列</a></h1>
 <h2 id="i-string型-プリミティブ-とstringオブジェクト"><a class="header" href="#i-string型-プリミティブ-とstringオブジェクト">I. String型 (プリミティブ) とStringオブジェクト</a></h2>
@@ -5119,390 +5122,149 @@ user.introduce(); // 自分だけの新しい動（うご）き
 <p>これまでと違って、順番に見てゆく必要はありません。</p>
 <p>必要なところや興味を持ったところを、好きな順番で読んでください。</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="やさしい日本語にほんごで学まなぶjavascript用語集ようごしゅう"><a class="header" href="#やさしい日本語にほんごで学まなぶjavascript用語集ようごしゅう">やさしい<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶJavaScript<ruby>用語集<rt>ようごしゅう</rt></ruby></a></h1>
-<p>はじめに</p>
-<p>こんにちは！このドキュメントは、JavaScriptを<ruby>勉強<rt>べんきょう</rt></ruby>しているけれど、まだ<ruby>日本語<rt>にほんご</rt></ruby>に<ruby>慣<rt>な</rt></ruby>れていない<ruby>皆<rt>みな</rt></ruby>さんのための<ruby>用語集<rt>ようごしゅう</rt></ruby>です。プログラミングの<ruby>言葉<rt>ことば</rt></ruby>はむずかしいものも<ruby>多<rt>おお</rt></ruby>いですが、ここでは、やさしい<ruby>日本語<rt>にほんご</rt></ruby>と<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>例<rt>れい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、<ruby>一<rt>ひと</rt></ruby>つずつていねいに<ruby>説明<rt>せつめい</rt></ruby>します。あなたの<ruby>学習<rt>がくしゅう</rt></ruby>の<ruby>助<rt>たす</rt></ruby>けになればうれしいです。</p>
+<h1 id="三つのfor"><a class="header" href="#三つのfor">三つのfor</a></h1>
+<h2 id="i-古典的なfor"><a class="header" href="#i-古典的なfor">I. 古典的なfor</a></h2>
+<pre><code class="language-JavaScript">for (let i = 0; i &lt; 3; i++) {
+  console.log(i + "番目：こんにちは！");
+}
+</code></pre>
+<h2 id="ii-配列はいれつの応用とforeach"><a class="header" href="#ii-配列はいれつの応用とforeach">II. <ruby>配列<rt>はいれつ</rt></ruby>の応用とforEach</a></h2>
+<p>大量のデータを<ruby>効率<rt>こうりつ</rt></ruby>よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
+<h3 id="1-foreachとコールバック関数かんすう"><a class="header" href="#1-foreachとコールバック関数かんすう">1. forEachとコールバック<ruby>関数<rt>かんすう</rt></ruby></a></h3>
+<p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」のようなものだと学びましたね。ボタンを押すと、中に入れた処理が実行されて結果が出てきます。</p>
+<p>forEach を使うときは、この<ruby>関数<rt>かんすう</rt></ruby>をさらに便利に使います。</p>
+<ul>
+<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+</ul>
+<h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: <ruby>合計<rt>ごうけい</rt></ruby>を計算する</a></h3>
+<p>このプログラムは、リストの中にある数字を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>足<rt>た</rt></ruby>して、<ruby>最後<rt>さいご</rt></ruby>に答えを出します。</p>
+<pre><code class="language-javascript">// 1. 数字の「配列（はいれつ）」を作ります。
+const numbers = [10, 20, 30, 40];
+
+// 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
+let total = 0;
+
+// 3. forEach （上の例（たと）えでは「店員さん」）は、配列（はいれつ）の中身を一つずつ取って、メモ通りに処理します。
+numbers.forEach((num) =&gt; {
+  // ここがコールバック関数（かんすう）です！ 店員さんに「この仕事をしてください」と渡すメモです！
+  total = total + num; 
+  console.log(num + " を足しました。今は " + total + " です。");
+});
+
+// 4. 最後に答えを表示（ひょうじ）します
+console.log("ぜんぶの合計は " + total + " です！");
+
+</code></pre>
+<h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの<ruby>動<rt>うご</rt></ruby>きを<ruby>解説<rt>かいせつ</rt></ruby></a></h3>
+<h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
+<p>これは、<ruby>計算<rt>けいさん</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を入れておくための**「<ruby>貯金箱<rt>ちょきんばこ</rt></ruby>」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
+<h4 id="②-コールバック関数かんすうの仕事"><a class="header" href="#②-コールバック関数かんすうの仕事">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事</a></h4>
+<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お<ruby>願<rt>ねが</rt></ruby>いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
+<ul>
+<li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
+<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を<ruby>渡<rt>わた</rt></ruby>す。</li>
+<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と<ruby>実行<rt>じっこう</rt></ruby>する。</li>
+<li>次の <code>20</code> でも同じことをする。</li>
+</ul>
+<p>これを<ruby>繰り返<rt>くりかえ</rt></ruby>すことで、貯金箱の中身がどんどん増えていきます。</p>
+<p>So What?（なぜ大切なの？）</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left"><ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しの回数を自分で管理する</td><td style="text-align: left"><ruby>配列<rt>はいれつ</rt></ruby>が自<ruby>動的<rt>どうてき</rt></ruby>に回数を決めてくれる</td></tr>
+<tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
+</tbody>
+</table>
+</div>
+<p>コードが読みやすくなると、<ruby>開発<rt>かいはつ</rt></ruby>のスピードが上がり、ミスも減ります。</p>
 <hr>
-<h2 id="i-ウェブページの基本きほん"><a class="header" href="#i-ウェブページの基本きほん">I. ウェブページの<ruby>基本<rt>きほん</rt></ruby></a></h2>
-<p>ウェブページを<ruby>作<rt>つく</rt></ruby>るためには、3つの<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>技術<rt>ぎじゅつ</rt></ruby>があります。それはHTML、CSS、JavaScriptです。これを「<ruby>家<rt>いえ</rt></ruby>」に<ruby>例<rt>たと</rt></ruby>えてみましょう。HTMLは<ruby>家<rt>いえ</rt></ruby>の「<ruby>柱<rt>はしら</rt></ruby>や<ruby>壁<rt>かべ</rt></ruby>」、CSSは<ruby>家<rt>いえ</rt></ruby>の「ペンキやインテリア」のような<ruby>飾<rt>かざ</rt></ruby>りつけ、そしてJavaScriptは<ruby>電気<rt>でんき</rt></ruby>をつけたり<ruby>機械<rt>きかい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしたりする「<ruby>機能<rt>きのう</rt></ruby>」のようなものです。この3つが<ruby>協力<rt>きょうりょく</rt></ruby>して、<ruby>私<rt>わたし</rt></ruby>たちがいつも<ruby>見<rt>み</rt></ruby>ているウェブページができています。</p>
-<ul>
-<li>HTML
-<ul>
-<li>ウェブページの<ruby>骨組<rt>ほねぐ</rt></ruby>みや<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
-</ul>
-</li>
-<li>CSS
-<ul>
-<li>ウェブページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>をきれいにするための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
-</ul>
-</li>
-<li>JavaScript
-<ul>
-<li>ウェブページに<ruby>動<rt>うご</rt></ruby>きをつけたり、<ruby>機能<rt>きのう</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>するための<ruby>言葉<rt>ことば</rt></ruby>です。</li>
-</ul>
-</li>
-</ul>
-<p>それでは、JavaScriptを<ruby>書<rt>か</rt></ruby>くときの、<ruby>基本的<rt>きほんてき</rt></ruby>なルールについて<ruby>見<rt>み</rt></ruby>ていきましょう。</p>
+<h2 id="iii-繰くり返かえし処理の応用for-in文"><a class="header" href="#iii-繰くり返かえし処理の応用for-in文">III. <ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し処理の応用：for-in文</a></h2>
+<p>※ オブジェクトの性質を利用した応用的な<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し処理です。</p>
+<p><ruby>配列<rt>はいれつ</rt></ruby>ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>ループの種類</th><th>対象</th><th>使いどころ</th></tr>
+</thead>
+<tbody>
+<tr><td>for文</td><td><ruby>数値<rt>すうち</rt></ruby>の回数、<ruby>配列<rt>はいれつ</rt></ruby></td><td>決まった回数<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>したいとき</td></tr>
+<tr><td>while文</td><td>条件</td><td>条件が満たされるまで続けたいとき</td></tr>
+<tr><td>for-in文</td><td>オブジェクトのプロパティ</td><td>オブジェクトの「キー」を全部調べたいとき</td></tr>
+</tbody>
+</table>
+</div>
+<p>So What?（なぜ大切なの？） オブジェクトの中にどんなデータがいくつ入っているか、事前にはわからない場合があります。for-in を使えば、どんなに項目が多くても漏れなくすべて処理できるため、<ruby>柔軟<rt>じゅうなん</rt></ruby>なプログラムが作れます。</p>
+<p><a href="javascript:history.back();">戻る</a></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="入出力にゅうしゅつりょく"><a class="header" href="#入出力にゅうしゅつりょく"><ruby>入出力<rt>にゅうしゅつりょく</rt></ruby></a></h1>
+<p>コンピューターの世界で最も大切な基本、<strong>「<ruby>入力<rt>にゅうりょく</rt></ruby>（Input）」</strong> と <strong>「<ruby>出力<rt>しゅつりょく</rt></ruby>（Output）」</strong> について説明します。</p>
+<p>留学生の方には、コンピューターを <strong>「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」</strong> や <strong>「<ruby>料理<rt>りょうり</rt></ruby>」</strong> に<ruby>例<rt>たと</rt></ruby>えて教えてあげると、とても分かりやすくなります。</p>
 <hr>
-<h2 id="ii-javascriptの基本きほんルール"><a class="header" href="#ii-javascriptの基本きほんルール">II. JavaScriptの<ruby>基本<rt>きほん</rt></ruby>ルール</a></h2>
-<p><ruby>日本語<rt>にほんご</rt></ruby>に<ruby>文法<rt>ぶんぽう</rt></ruby>があるように、JavaScriptにもコードを<ruby>正<rt>ただ</rt></ruby>しく<ruby>書<rt>か</rt></ruby>くためのルールがあります。このルールを<ruby>守<rt>まも</rt></ruby>ることで、コンピューターがあなたの<ruby>命令<rt>めいれい</rt></ruby>をきちんと<ruby>理解<rt>りかい</rt></ruby>できるようになり、エラーを<ruby>防<rt>ふせ</rt></ruby>ぐことができます。</p>
+<h2 id="i-入力にゅうりょくinputとは"><a class="header" href="#i-入力にゅうりょくinputとは">I. <ruby>入力<rt>にゅうりょく</rt></ruby>（Input）とは？</a></h2>
+<p><ruby>入力<rt>にゅうりょく</rt></ruby>は、<strong>「人間がコンピューターに情報（じょうほう）を与えること」</strong> です。
+コンピューターに「これをやって！」とお願いするステップです。</p>
 <ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>
-<ul>
-<li><ruby>数字<rt>すうじ</rt></ruby>や<ruby>文字<rt>もじ</rt></ruby>などのデータを<ruby>入<rt>い</rt></ruby>れておくための、<ruby>名前<rt>なまえ</rt></ruby>がついた「<ruby>箱<rt>はこ</rt></ruby>」のようなものです。</li>
+<li><strong>キーボード：</strong> 文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する。</li>
+<li><strong>マウス：</strong> クリックして指示（しじ）を出す。</li>
+<li><strong>マイク：</strong> 声を音のデータとして入れる。</li>
+<li><strong>カメラ：</strong> 顔や景色を<ruby>画像<rt>がぞう</rt></ruby>として入れる。</li>
 </ul>
-</li>
-<li>let
-<ul>
-<li><ruby>中身<rt>なかみ</rt></ruby>を<ruby>後<rt>あと</rt></ruby>から<ruby>変<rt>か</rt></ruby>えることができる<ruby>変数<rt>へんすう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-<li>const
-<ul>
-<li><ruby>一度<rt>いちど</rt></ruby>データを<ruby>入<rt>い</rt></ruby>れたら、<ruby>後<rt>あと</rt></ruby>から<ruby>変<rt>か</rt></ruby>えることができない<ruby>変数<rt>へんすう</rt></ruby>（「<ruby>定数<rt>ていすう</rt></ruby>」といいます）を<ruby>作<rt>つく</rt></ruby>るときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-<li><ruby>命名規則<rt>めいめいきそく</rt></ruby>
-<ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>や<ruby>関数<rt>かんすう</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>のルールです。<ruby>意味<rt>いみ</rt></ruby>のわかる<ruby>英語<rt>えいご</rt></ruby>で、2つ<ruby>目<rt>め</rt></ruby>の<ruby>単語<rt>たんご</rt></ruby>から<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>を<ruby>大文字<rt>おおもじ</rt></ruby>にする「キャメルケース」（例: myScore）で<ruby>書<rt>か</rt></ruby>くのが<ruby>一般的<rt>いっぱんてき</rt></ruby>です。</li>
-</ul>
-</li>
-<li><ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>の<ruby>区別<rt>くべつ</rt></ruby>
-<ul>
-<li>JavaScriptでは、<ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>は<ruby>別<rt>べつ</rt></ruby>のものとして<ruby>扱<rt>あつか</rt></ruby>われます。たとえば、Nameとnameは、<ruby>違<rt>ちが</rt></ruby>う<ruby>変数<rt>へんすう</rt></ruby>になります。</li>
-</ul>
-</li>
-<li><ruby>半角文字<rt>はんかくもじ</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>
-<ul>
-<li><ruby>文字列<rt>もじれつ</rt></ruby>やコメントの<ruby>中<rt>なか</rt></ruby>以外のコードは、すべて<ruby>半角<rt>はんかく</rt></ruby>の<ruby>英数字<rt>えいすうじ</rt></ruby>や<ruby>記号<rt>きごう</rt></ruby>で<ruby>書<rt>か</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>があります。<ruby>全角<rt>ぜんかく</rt></ruby>スペースなどを<ruby>使<rt>つか</rt></ruby>うとエラーになります。</li>
-</ul>
-</li>
-<li>データ<ruby>型<rt>がた</rt></ruby>
-<ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>が<ruby>扱<rt>あつか</rt></ruby>うデータの<ruby>種類<rt>しゅるい</rt></ruby>のことです。<ruby>主<rt>おも</rt></ruby>に<ruby>次<rt>つぎ</rt></ruby>のようなものがあります。</li>
-</ul>
-</li>
-<li><ruby>文字列<rt>もじれつ</rt></ruby>
-<ul>
-<li>「こんにちは」のような、テキストのデータのことです。“か’で<ruby>囲<rt>かこ</rt></ruby>みます。</li>
-</ul>
-</li>
-<li><ruby>数値<rt>すうち</rt></ruby>
-<ul>
-<li>100や3.14のような、<ruby>数字<rt>すうじ</rt></ruby>のデータのことです。</li>
-</ul>
-</li>
-<li><ruby>論理型<rt>ろんりがた</rt></ruby>
-<ul>
-<li>true（はい）かfalse（いいえ）のどちらかを<ruby>表<rt>あらわ</rt></ruby>すデータのことです。</li>
-</ul>
-</li>
-<li>セミコロン (;)
-<ul>
-<li><ruby>文<rt>ぶん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりにつける<ruby>記号<rt>きごう</rt></ruby>です。<ruby>命令<rt>めいれい</rt></ruby>の<ruby>区切<rt>くぎ</rt></ruby>りをわかりやすくします。</li>
-</ul>
-</li>
-<li>コメント (//)
-<ul>
-<li>コードの<ruby>中<rt>なか</rt></ruby>に<ruby>書<rt>か</rt></ruby>くことができるメモです。//の<ruby>後<rt>あと</rt></ruby>に<ruby>書<rt>か</rt></ruby>いた<ruby>文字<rt>もじ</rt></ruby>は、プログラムとしては<ruby>無視<rt>むし</rt></ruby>されます。</li>
-</ul>
-</li>
-</ul>
-<p>ルールがわかったら、<ruby>次<rt>つぎ</rt></ruby>はJavaScriptがどうやって<ruby>計算<rt>けいさん</rt></ruby>や<ruby>比較<rt>ひかく</rt></ruby>をするのかを<ruby>見<rt>み</rt></ruby>てみましょう。</p>
 <hr>
-<h2 id="iii-計算けいさんと比較ひかく"><a class="header" href="#iii-計算けいさんと比較ひかく">III. <ruby>計算<rt>けいさん</rt></ruby>と<ruby>比較<rt>ひかく</rt></ruby></a></h2>
-<p>プログラムの<ruby>中<rt>なか</rt></ruby>では、<ruby>足<rt>た</rt></ruby>し<ruby>算<rt>ざん</rt></ruby>をしたり、2つの<ruby>値<rt>あたい</rt></ruby>を<ruby>比<rt>くら</rt></ruby>べたりすることがよくあります。そのために<ruby>使<rt>つか</rt></ruby>うのが「<ruby>演算子<rt>えんざんし</rt></ruby>」という<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>記号<rt>きごう</rt></ruby>です。<ruby>演算子<rt>えんざんし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことで、プログラムにいろいろな<ruby>判断<rt>はんだん</rt></ruby>をさせることができます。</p>
+<h2 id="ii-出力しゅつりょくoutputとは"><a class="header" href="#ii-出力しゅつりょくoutputとは">II. <ruby>出力<rt>しゅつりょく</rt></ruby>（Output）とは？</a></h2>
+<p><ruby>出力<rt>しゅつりょく</rt></ruby>は、**「コンピューターが人間に<ruby>結果<rt>けっか</rt></ruby>を返すこと」**です。
+コンピューターが頑張って計算したあとの「答え」を見せるステップです。</p>
 <ul>
-<li><ruby>演算子<rt>えんざんし</rt></ruby>
-<ul>
-<li><ruby>計算<rt>けいさん</rt></ruby>や<ruby>比較<rt>ひかく</rt></ruby>など、データに<ruby>対<rt>たい</rt></ruby>して<ruby>何<rt>なに</rt></ruby>かをするための<ruby>記号<rt>きごう</rt></ruby>のことです。</li>
-<li><ruby>例<rt>れい</rt></ruby>: +, =, &gt;</li>
+<li><strong>モニター（<ruby>画面<rt>がめん</rt></ruby>）：</strong> 文字や絵を<ruby>表示<rt>ひょうじ</rt></ruby>する。</li>
+<li><strong>スピーカー：</strong> 音を出す。</li>
+<li><strong>プリンター：</strong> 紙に印刷（いんさつ）する。</li>
 </ul>
-</li>
-<li><ruby>算術演算子<rt>さんじゅつえんざんし</rt></ruby>
-<ul>
-<li><ruby>足<rt>た</rt></ruby>し<ruby>算<rt>ざん</rt></ruby>や<ruby>引<rt>ひ</rt></ruby>き<ruby>算<rt>ざん</rt></ruby>など、<ruby>数学<rt>すうがく</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby>をするときに<ruby>使<rt>つか</rt></ruby>います。++（1<ruby>増<rt>ふ</rt></ruby>やす）や–（1<ruby>減<rt>へ</rt></ruby>らす）もよく<ruby>使<rt>つか</rt></ruby>われます。</li>
-<li><ruby>例<rt>れい</rt></ruby>: 5 + 3 や count++</li>
-</ul>
-</li>
-<li><ruby>代入演算子<rt>だいにゅうえんざんし</rt></ruby>
-<ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>にデータを<ruby>入<rt>い</rt></ruby>れる（<ruby>代入<rt>だいにゅう</rt></ruby>する）ときに<ruby>使<rt>つか</rt></ruby>います。</li>
-<li><ruby>例<rt>れい</rt></ruby>: let score = 100;</li>
-</ul>
-</li>
-<li><ruby>比較演算子<rt>ひかくえんざんし</rt></ruby>
-<ul>
-<li>2つの<ruby>値<rt>あたい</rt></ruby>を<ruby>比<rt>くら</rt></ruby>べて、trueかfalseかを<ruby>判断<rt>はんだん</rt></ruby>するときに<ruby>使<rt>つか</rt></ruby>います。</li>
-<li><ruby>例<rt>れい</rt></ruby>: score &gt; 80 （scoreは80より<ruby>大<rt>おお</rt></ruby>きいですか？）</li>
-</ul>
-</li>
-<li><ruby>論理演算子<rt>ろんりえんざんし</rt></ruby>
-<ul>
-<li>「AかつB」や「AまたはB」のように、<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせるときに<ruby>使<rt>つか</rt></ruby>います。</li>
-<li>例: age &gt;= 20 &amp;&amp; hasTicket （20<ruby>才<rt>さい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>で、チケットも<ruby>持<rt>も</rt></ruby>っていますか？）</li>
-</ul>
-</li>
-</ul>
-<p>これらの<ruby>演算子<rt>えんざんし</rt></ruby>は、プログラムの<ruby>流<rt>なが</rt></ruby>れをコントロールするためによく<ruby>使<rt>つか</rt></ruby>われます。</p>
 <hr>
-<h2 id="iv-プログラムの流ながれをコントロールする"><a class="header" href="#iv-プログラムの流ながれをコントロールする">IV. プログラムの<ruby>流<rt>なが</rt></ruby>れをコントロールする</a></h2>
-<p>プログラムは、いつも<ruby>上<rt>うえ</rt></ruby>から<ruby>下<rt>した</rt></ruby>へ<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>進<rt>すす</rt></ruby>むだけではありません。まるで<ruby>私<rt>わたし</rt></ruby>たちが<ruby>毎日<rt>まいにち</rt></ruby>、「もし<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったら、<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていこう」と<ruby>考<rt>かんが</rt></ruby>えるように、<ruby>条件<rt>じょうけん</rt></ruby>によってやることが<ruby>変<rt>か</rt></ruby>わったり、<ruby>同<rt>おな</rt></ruby>じことを<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>したりします。これを「<ruby>制御<rt>せいぎょ</rt></ruby>フロー」と<ruby>呼<rt>よ</rt></ruby>びます。</p>
-<ul>
-<li>if<ruby>文<rt>ぶん</rt></ruby>
-<ul>
-<li>「もし〜だったら、この<ruby>処理<rt>しょり</rt></ruby>をする」というように、<ruby>条件<rt>じょうけん</rt></ruby>がtrueのときだけコードを<ruby>実行<rt>じっこう</rt></ruby>します。</li>
-</ul>
-</li>
-<li>else
-<ul>
-<li>if<ruby>文<rt>ぶん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>がfalseだった<ruby>場合<rt>ばあい</rt></ruby>に、「そうでなければ、こちらを<ruby>実行<rt>じっこう</rt></ruby>する」という<ruby>処理<rt>しょり</rt></ruby>を<ruby>書<rt>か</rt></ruby>くときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-<li>switch<ruby>文<rt>ぶん</rt></ruby>
-<ul>
-<li>if…else if…がたくさん<ruby>続<rt>つづ</rt></ruby>く<ruby>代<rt>か</rt></ruby>わりに<ruby>使<rt>つか</rt></ruby>える<ruby>文<rt>ぶん</rt></ruby>です。ひとつの<ruby>変数<rt>へんすう</rt></ruby>の<ruby>値<rt>あたい</rt></ruby>によって、たくさんの<ruby>選択肢<rt>せんたくし</rt></ruby>から<ruby>処理<rt>しょり</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びたいときに<ruby>便利<rt>べんり</rt></ruby>です。</li>
-</ul>
-</li>
-<li>for<ruby>文<rt>ぶん</rt></ruby>
-<ul>
-<li>「10<ruby>回<rt>かい</rt></ruby><ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す」のように、<ruby>決<rt>き</rt></ruby>まった<ruby>回数<rt>かいすう</rt></ruby>だけ<ruby>同<rt>おな</rt></ruby>じ<ruby>処理<rt>しょり</rt></ruby>をしたいときに<ruby>使<rt>つか</rt></ruby>います。for (<ruby>初期<rt>しょき</rt></ruby><ruby>設定<rt>せってい</rt></ruby>; <ruby>継続<rt>けいぞく</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>; <ruby>増減<rt>ぞうげん</rt></ruby><ruby>処理<rt>しょり</rt></ruby>)という<ruby>形<rt>かたち</rt></ruby>で<ruby>書<rt>か</rt></ruby>きます。</li>
-</ul>
-</li>
-<li>while<ruby>文<rt>ぶん</rt></ruby>
-<ul>
-<li>「<ruby>条件<rt>じょうけん</rt></ruby>がtrueの<ruby>間<rt>あいだ</rt></ruby>はずっと<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す」というように、<ruby>回数<rt>かいすう</rt></ruby>が<ruby>決<rt>き</rt></ruby>まっていないときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-<li>break
-<ul>
-<li>for<ruby>文<rt>ぶん</rt></ruby>やwhile<ruby>文<rt>ぶん</rt></ruby>の<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しを、<ruby>途中<rt>とちゅう</rt></ruby>でやめたいときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-<li>continue
-<ul>
-<li><ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しの<ruby>中<rt>なか</rt></ruby>で、<ruby>今回<rt>こんかい</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>だけをスキップして、<ruby>次<rt>つぎ</rt></ruby>の<ruby>回<rt>かい</rt></ruby>に<ruby>進<rt>すす</rt></ruby>みたいときに<ruby>使<rt>つか</rt></ruby>います。</li>
-</ul>
-</li>
-</ul>
-<p>こうしていくつかの<ruby>処理<rt>しょり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>っていくと、<ruby>同<rt>おな</rt></ruby>じようなコードをまとめたくなります。そんな<ruby>時<rt>とき</rt></ruby>に<ruby>便利<rt>べんり</rt></ruby>なのが<ruby>次<rt>つぎ</rt></ruby>の<ruby>機能<rt>きのう</rt></ruby>です。</p>
+<h2 id="iii-分かりやすい例たとえ自動販売機vending-machine"><a class="header" href="#iii-分かりやすい例たとえ自動販売機vending-machine">III. 分かりやすい<ruby>例<rt>たと</rt></ruby>え：自動販売機（Vending Machine）</a></h2>
+<p>コンピューターの<ruby>動<rt>うご</rt></ruby>きを、自動販売機で考えてみましょう。</p>
+<ol>
+<li><strong><ruby>入力<rt>にゅうりょく</rt></ruby> (Input):</strong> あなたがお金を入れて、ボタンを押します。（指示を与える）</li>
+<li><strong>処理 (Process):</strong> 機械が「お金は足りるかな？」と計算します。（中での仕事）</li>
+<li><strong><ruby>出力<rt>しゅつりょく</rt></ruby> (Output):</strong> ジュースが出てきます！（結果が返ってくる）</li>
+</ol>
 <hr>
-<h2 id="v-処理しょりをまとめる"><a class="header" href="#v-処理しょりをまとめる">V. <ruby>処理<rt>しょり</rt></ruby>をまとめる</a></h2>
-<p>プログラムを<ruby>書<rt>か</rt></ruby>いていると、<ruby>同<rt>おな</rt></ruby>じことを<ruby>何回<rt>なんかい</rt></ruby>もすることがあります。そんなとき、<ruby>処理<rt>しょり</rt></ruby>をひとつのグループにまとめて、いつでも<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>せるようにすると<ruby>便利<rt>べんり</rt></ruby>です。これを「<ruby>関数<rt>かんすう</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>びます。<ruby>関数<rt>かんすう</rt></ruby>は、<ruby>自動<rt>じどう</rt></ruby><ruby>販売機<rt>はんばいき</rt></ruby>のようなものです。お<ruby>金<rt>かね</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてボタンを<ruby>押<rt>お</rt></ruby>す（<ruby>関数<rt>かんすう</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す）と、いつでも<ruby>決<rt>き</rt></ruby>まった<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくる（<ruby>処理<rt>しょり</rt></ruby>が<ruby>実行<rt>じっこう</rt></ruby>される）ように、コードを<ruby>整理<rt>せいり</rt></ruby>して<ruby>再利用<rt>さいりよう</rt></ruby>しやすくします。</p>
+<h2 id="iv-留学生へのアドバイスプログラムでの書かき方かた"><a class="header" href="#iv-留学生へのアドバイスプログラムでの書かき方かた">IV. 留学生へのアドバイス：プログラムでの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></a></h2>
+<p>JavaScriptなどのプログラミングを学ぶとき、最初に出会う「<ruby>入力<rt>にゅうりょく</rt></ruby>と<ruby>出力<rt>しゅつりょく</rt></ruby>」も教えてあげましょう。</p>
 <ul>
-<li><ruby>関数<rt>かんすう</rt></ruby>
-<ul>
-<li><ruby>特定<rt>とくてい</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>をひとつのグループにまとめたものです。<ruby>名前<rt>なまえ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>ぶだけで、いつでもその<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>できます。</li>
+<li><strong><ruby>入力<rt>にゅうりょく</rt></ruby>の代表：<code>prompt()</code></strong>
+ユーザーに文字を書いてもらうための<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>窓<rt>まど</rt></ruby>を出します。</li>
+<li><strong><ruby>出力<rt>しゅつりょく</rt></ruby>の代表：<code>console.log()</code></strong>
+プログラムの結果をコンソール<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>します。</li>
 </ul>
-</li>
-<li><ruby>引数<rt>ひきすう</rt></ruby>
-<ul>
-<li><ruby>関数<rt>かんすう</rt></ruby>に<ruby>処理<rt>しょり</rt></ruby>をしてもらうために、<ruby>外<rt>そと</rt></ruby>から<ruby>渡<rt>わた</rt></ruby>すデータのことです。<ruby>自動<rt>じどう</rt></ruby><ruby>販売機<rt>はんばいき</rt></ruby>で<ruby>言<rt>い</rt></ruby>うと、お<ruby>金<rt>かね</rt></ruby>や、どの<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>かを<ruby>選<rt>えら</rt></ruby>ぶボタンのようなものです。</li>
-</ul>
-</li>
-<li><ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby> / return
-<ul>
-<li><ruby>関数<rt>かんすう</rt></ruby>が<ruby>処理<rt>しょり</rt></ruby>を<ruby>終<rt>お</rt></ruby>わった<ruby>後<rt>あと</rt></ruby>、その<ruby>結果<rt>けっか</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>した<ruby>場所<rt>ばしょ</rt></ruby>に<ruby>返<rt>かえ</rt></ruby>すことです。<ruby>自動<rt>じどう</rt></ruby><ruby>販売機<rt>はんばいき</rt></ruby>から<ruby>出<rt>で</rt></ruby>てくるジュースのようなものです。</li>
-</ul>
-</li>
-<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>
-<ul>
-<li><ruby>他<rt>ほか</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>に<ruby>引数<rt>ひきすう</rt></ruby>として<ruby>渡<rt>わた</rt></ruby>される、「<ruby>後<rt>あと</rt></ruby>でこの<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>してください」と<ruby>お願い<rt>おねが</rt></ruby>するための<ruby>関数<rt>かんすう</rt></ruby>です。<ruby>誰<rt>だれ</rt></ruby>かに<ruby>お願い<rt>おねが</rt></ruby>いする<ruby>仕事<rt>しごと</rt></ruby>の「<ruby>指示<rt>しじ</rt></ruby>メモ」のようなものです。</li>
-</ul>
-</li>
-</ul>
-<p>これまでプログラムのロジックについて<ruby>学<rt>まな</rt></ruby>んできましたが、<ruby>次<rt>つぎ</rt></ruby>はJavaScriptが<ruby>実際<rt>じっさい</rt></ruby>にウェブページをどうやって<ruby>動<rt>うご</rt></ruby>かすのかを<ruby>見<rt>み</rt></ruby>ていきましょう。</p>
+<pre><code class="language-javascript">// 入力（にゅうりょく）（Input）
+const name = prompt("あなたのお名前は？");
+
+// 出力（しゅつりょく）（Output）
+console.log("こんにちは、" + name + "さん！");
+
+</code></pre>
 <hr>
-<h2 id="vi-ウェブページを操作そうさする----dom"><a class="header" href="#vi-ウェブページを操作そうさする----dom">VI ウェブページを<ruby>操作<rt>そうさ</rt></ruby>する  - DOM</a></h2>
-<p>JavaScriptは、ウェブページの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>や<ruby>内容<rt>ないよう</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えることができます。そのために<ruby>使<rt>つか</rt></ruby>うのが「DOM（ドム）」です。DOMは、HTMLページを<ruby>木<rt>き</rt></ruby>のような<ruby>構造<rt>こうぞう</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>した「<ruby>地図<rt>ちず</rt></ruby>」のようなものです。JavaScriptはこの<ruby>地図<rt>ちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>特定<rt>とくてい</rt></ruby>のHTML<ruby>要素<rt>ようそ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>したり、<ruby>文字<rt>もじ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたり、<ruby>新<rt>あたら</rt></ruby>しい<ruby>要素<rt>ようそ</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>したりします。</p>
-<ul>
-<li>DOM (Document Object Model)
-<ul>
-<li>HTML<ruby>文書<rt>ぶんしょ</rt></ruby>の<ruby>構造<rt>こうぞう</rt></ruby>を、JavaScriptが<ruby>操作<rt>そうさ</rt></ruby>できるようにしたものです。</li>
-</ul>
-</li>
-<li>window
-<ul>
-<li>ブラウザのウィンドウやタブそのものを<ruby>表<rt>あらわ</rt></ruby>す、すべてのオブジェクトの<ruby>親<rt>おや</rt></ruby>となる<ruby>一番<rt>いちばん</rt></ruby><ruby>上<rt>うえ</rt></ruby>にあるオブジェクトです。</li>
-</ul>
-</li>
-<li>document
-<ul>
-<li><ruby>表示<rt>ひょうじ</rt></ruby>されているHTMLページ<ruby>全体<rt>ぜんたい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>すオブジェクトで、windowオブジェクトの<ruby>一部<rt>いちぶ</rt></ruby>です。DOM<ruby>操作<rt>そうさ</rt></ruby>はここから<ruby>始<rt>はじ</rt></ruby>まります。</li>
-</ul>
-</li>
-<li><ruby>セレクタ<rt>せれくた</rt></ruby> (selector)
-<ul>
-<li><ruby>操作<rt>そうさ</rt></ruby>したいHTML<ruby>要素<rt>ようそ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけるための「<ruby>目印<rt>めじるし</rt></ruby>」のことです。CSSを<ruby>書<rt>か</rt></ruby>くときと<ruby>同<rt>おな</rt></ruby>じように、IDは’#id-name’、クラスは’.class-name’のように<ruby>書<rt>か</rt></ruby>きます。</li>
-</ul>
-</li>
-<li>getElementById()
-<ul>
-<li>IDを<ruby>使<rt>つか</rt></ruby>って、<ruby>特定<rt>とくてい</rt></ruby>のHTML<ruby>要素<rt>ようそ</rt></ruby>をひとつだけ<ruby>探<rt>さが</rt></ruby>します。</li>
-</ul>
-</li>
-<li>querySelector()
-<ul>
-<li>CSSセレクタを<ruby>使<rt>つか</rt></ruby>って、<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う<ruby>最初<rt>さいしょ</rt></ruby>のHTML<ruby>要素<rt>ようそ</rt></ruby>をひとつ<ruby>探<rt>さが</rt></ruby>します。</li>
-</ul>
-</li>
-<li>querySelectorAll()
-<ul>
-<li>CSSセレクタを<ruby>使<rt>つか</rt></ruby>って、<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うHTML<ruby>要素<rt>ようそ</rt></ruby>をすべて<ruby>探<rt>さが</rt></ruby>して、リストとして<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ります。</li>
-</ul>
-</li>
-<li>.textContent
-<ul>
-<li><ruby>要素<rt>ようそ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にあるテキスト（<ruby>文字<rt>もじ</rt></ruby>だけ）を<ruby>取得<rt>しゅとく</rt></ruby>したり、<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えたりします。<ruby>安全<rt>あんぜん</rt></ruby>な<ruby>方法<rt>ほうほう</rt></ruby>です。</li>
-</ul>
-</li>
-<li>.innerHTML
-<ul>
-<li><ruby>要素<rt>ようそ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にあるHTMLタグも<ruby>含<rt>ふく</rt></ruby>めた<ruby>内容<rt>ないよう</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>を<ruby>取得<rt>しゅとく</rt></ruby>したり、<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えたりします。ユーザーからの<ruby>入力<rt>にゅうりょく</rt></ruby>をそのまま<ruby>使<rt>つか</rt></ruby>うと<ruby>危険<rt>きけん</rt></ruby>な<ruby>場合<rt>ばあい</rt></ruby>があります。</li>
-</ul>
-</li>
-<li>.style
-<ul>
-<li><ruby>要素<rt>ようそ</rt></ruby>のCSS（<ruby>色<rt>いろ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きさなど）を<ruby>変更<rt>へんこう</rt></ruby>します。</li>
-</ul>
-</li>
-<li><ruby>属性<rt>ぞくせい</rt></ruby>
-<ul>
-<li><code>&amp;lt;a&amp;gt;</code>タグのhrefや<code>&amp;lt;img&amp;gt;</code>タグのsrcなど、HTMLタグに<ruby>追加<rt>ついか</rt></ruby>される<ruby>情報<rt>じょうほう</rt></ruby>のことです。JavaScriptで<ruby>変更<rt>へんこう</rt></ruby>できます。</li>
-</ul>
-</li>
-</ul>
-<p>ページの<ruby>内容<rt>ないよう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えるのは、<ruby>多<rt>おお</rt></ruby>くの<ruby>場合<rt>ばあい</rt></ruby>、ユーザーが<ruby>何<rt>なに</rt></ruby>かをしたときです。<ruby>次<rt>つぎ</rt></ruby>に、そのユーザーの<ruby>操作<rt>そうさ</rt></ruby>にどう<ruby>対応<rt>たいおう</rt></ruby>するかを<ruby>学<rt>まな</rt></ruby>びましょう。</p>
-<hr>
-<h2 id="vii-ユーザーの操作そうさに対応たいおうする---イベント"><a class="header" href="#vii-ユーザーの操作そうさに対応たいおうする---イベント">VII. ユーザーの<ruby>操作<rt>そうさ</rt></ruby>に<ruby>対応<rt>たいおう</rt></ruby>する - イベント</a></h2>
-<p>ウェブページをインタラクティブにするためには、ユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があります。JavaScriptでは、ユーザーがボタンをクリックしたり、マウスを<ruby>動<rt>うご</rt></ruby>かしたりすることを「イベント」と<ruby>呼<rt>よ</rt></ruby>びます。JavaScriptはこれらのイベントを「<ruby>聞<rt>き</rt></ruby>いて」（<ruby>監視<rt>かんし</rt></ruby>して）、イベントが<ruby>起<rt>お</rt></ruby>きたときに<ruby>決<rt>き</rt></ruby>められた<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>することができます。</p>
-<ul>
-<li>イベント (event)
-<ul>
-<li>ユーザーがボタンをクリックするなど、ウェブページ<ruby>上<rt>じょう</rt></ruby>で<ruby>起<rt>お</rt></ruby>こる<ruby>出来事<rt>できごと</rt></ruby>のことです。</li>
-</ul>
-</li>
-<li>イベントハンドラ (event handler)
-<ul>
-<li>イベントが<ruby>起<rt>お</rt></ruby>きたときに<ruby>実行<rt>じっこう</rt></ruby>される<ruby>関数<rt>かんすう</rt></ruby>や<ruby>処理<rt>しょり</rt></ruby>のことです。</li>
-</ul>
-</li>
-<li>イベントリスナー (addEventListener)
-<ul>
-<li>HTML<ruby>要素<rt>ようそ</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して、「このイベントが<ruby>起<rt>お</rt></ruby>きたら、この<ruby>処理<rt>しょり</rt></ruby>をしてください」と<ruby>設定<rt>せってい</rt></ruby>するための<ruby>機能<rt>きのう</rt></ruby>です。</li>
-</ul>
-</li>
-<li>this
-<ul>
-<li>イベントが<ruby>起<rt>お</rt></ruby>きたとき、「<ruby>今<rt>いま</rt></ruby>、<ruby>操作<rt>そうさ</rt></ruby>されているHTML<ruby>要素<rt>ようそ</rt></ruby>そのもの」を<ruby>指<rt>さ</rt></ruby>す<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>言葉<rt>ことば</rt></ruby>です。</li>
-</ul>
-</li>
-</ul>
-<p>ユーザーの<ruby>操作<rt>そうさ</rt></ruby>に<ruby>対応<rt>たいおう</rt></ruby>するとき、たくさんのデータを<ruby>扱<rt>あつか</rt></ruby>うことがあります。<ruby>次<rt>つぎ</rt></ruby>は、そのデータを<ruby>便利<rt>べんり</rt></ruby>に<ruby>管理<rt>かんり</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>ていきましょう。</p>
-<hr>
-<h2 id="viii-データを便利べんりに扱あつかう"><a class="header" href="#viii-データを便利べんりに扱あつかう">VIII. データを<ruby>便利<rt>べんり</rt></ruby>に<ruby>扱<rt>あつか</rt></ruby>う</a></h2>
-<p>プログラムは、たくさんの<ruby>関連<rt>かんれん</rt></ruby>するデータをまとめて<ruby>扱<rt>あつか</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がよくあります。たとえば、たくさんの<ruby>学生<rt>がくせい</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>や、ショッピングサイトの<ruby>商品<rt>しょうひん</rt></ruby>リストなどです。JavaScriptには、このようなデータの<ruby>集<rt>あつ</rt></ruby>まりを<ruby>整理<rt>せいり</rt></ruby>して<ruby>管理<rt>かんり</rt></ruby>するための<ruby>強力<rt>きょうりょく</rt></ruby>な<ruby>方法<rt>ほうほう</rt></ruby>として、「<ruby>配列<rt>はいれつ</rt></ruby>」と「オブジェクト」があります。</p>
-<ul>
-<li><ruby>配列<rt>はいれつ</rt></ruby>
-<ul>
-<li><ruby>複数<rt>ふくすう</rt></ruby>のデータを<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>べた「リスト」のようなものです。</li>
-</ul>
-</li>
-<li>インデックス (index)
-<ul>
-<li><ruby>配列<rt>はいれつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>のデータが、<ruby>何番目<rt>なんばんめ</rt></ruby>にあるかを<ruby>示<rt>しめ</rt></ruby>す<ruby>番号<rt>ばんごう</rt></ruby>です。JavaScriptでは<ruby>必<rt>かなら</rt></ruby>ず0から<ruby>始<rt>はじ</rt></ruby>まります。<ruby>最後<rt>さいご</rt></ruby>の<ruby>要素<rt>ようそ</rt></ruby>のインデックスは「<ruby>配列<rt>はいれつ</rt></ruby>の<ruby>長<rt>なが</rt></ruby>さ - 1」でわかります。</li>
-</ul>
-</li>
-<li>.length
-<ul>
-<li><ruby>配列<rt>はいれつ</rt></ruby>にいくつのデータが<ruby>入<rt>はい</rt></ruby>っているか、その<ruby>数<rt>かず</rt></ruby>を<ruby>知<rt>し</rt></ruby>ることができます。</li>
-</ul>
-</li>
-<li>forEach
-<ul>
-<li><ruby>配列<rt>はいれつ</rt></ruby>の<ruby>各要素<rt>かくようそ</rt></ruby>に、5<ruby>章<rt>しょう</rt></ruby>で<ruby>学<rt>まな</rt></ruby>んだコールバック<ruby>関数<rt>かんすう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>同<rt>おな</rt></ruby>じ<ruby>処理<rt>しょり</rt></ruby>をするためのメソッドです。</li>
-</ul>
-</li>
-<li>オブジェクト (object)
-<ul>
-<li><ruby>名前<rt>なまえ</rt></ruby>と<ruby>値<rt>あたい</rt></ruby>をセットにして、<ruby>関連<rt>かんれん</rt></ruby>するデータをまとめたものです。RPGのキャラクターのように、「<ruby>名前<rt>なまえ</rt></ruby>」や「HP」といった<ruby>情報<rt>じょうほう</rt></ruby>と、「<ruby>攻撃<rt>こうげき</rt></ruby>する」といった<ruby>機能<rt>きのう</rt></ruby>を<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>管理<rt>かんり</rt></ruby>できます。</li>
-</ul>
-</li>
-<li><ruby>プロパティ<rt>ぷろぱてぃ</rt></ruby> (property)
-<ul>
-<li>オブジェクトが<ruby>持<rt>も</rt></ruby>っているキャラクターの「<ruby>名前<rt>なまえ</rt></ruby>」や「HP」のような「<ruby>情報<rt>じょうほう</rt></ruby>」のことです。</li>
-</ul>
-</li>
-<li>メソッド (method)
-<ul>
-<li>オブジェクトが<ruby>実行<rt>じっこう</rt></ruby>できる「<ruby>攻撃<rt>こうげき</rt></ruby>する」や「<ruby>回復<rt>かいふく</rt></ruby>する」のような「<ruby>機能<rt>きのう</rt></ruby>やアクション」のことです。オブジェクトに<ruby>属<rt>ぞく</rt></ruby>している5<ruby>章<rt>しょう</rt></ruby>で<ruby>学<rt>まな</rt></ruby>んだ<ruby>関数<rt>かんすう</rt></ruby>のことです。</li>
-</ul>
-</li>
-<li>オブジェクトの<ruby>配列<rt>はいれつ</rt></ruby> (オブジェクトの はいれつ)
-<ul>
-<li><ruby>複数<rt>ふくすう</rt></ruby>のオブジェクトをひとつの<ruby>配列<rt>はいれつ</rt></ruby>にまとめたものです。「<ruby>顧客<rt>こきゃく</rt></ruby>リスト」のように、<ruby>同<rt>おな</rt></ruby>じ<ruby>種類<rt>しゅるい</rt></ruby>のデータをたくさん<ruby>扱<rt>あつか</rt></ruby>うときに<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>便利<rt>べんり</rt></ruby>です。</li>
-</ul>
-</li>
-</ul>
-<p>JavaScriptは、これらのデータを<ruby>使<rt>つか</rt></ruby>って、ブラウザが<ruby>持<rt>も</rt></ruby>っている<ruby>他<rt>ほか</rt></ruby>の<ruby>便利<rt>べんり</rt></ruby>な<ruby>機能<rt>きのう</rt></ruby>も<ruby>操作<rt>そうさ</rt></ruby>できます。</p>
-<hr>
-<h2 id="viii-ブラウザの機能きのうを使つかう"><a class="header" href="#viii-ブラウザの機能きのうを使つかう">VIII. ブラウザの<ruby>機能<rt>きのう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う</a></h2>
-<p>Webブラウザには、JavaScriptから<ruby>使<rt>つか</rt></ruby>えるたくさんの<ruby>便利<rt>べんり</rt></ruby>な<ruby>道具<rt>どうぐ</rt></ruby>や<ruby>機能<rt>きのう</rt></ruby>が<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>入<rt>はい</rt></ruby>っています。これらの<ruby>機能<rt>きのう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと、コードが<ruby>正<rt>ただ</rt></ruby>しく<ruby>動<rt>うご</rt></ruby>いているかを<ruby>確認<rt>かくにん</rt></ruby>したり、ユーザーとやりとりしたり、<ruby>時間<rt>じかん</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる<ruby>処理<rt>しょり</rt></ruby>をコントロールしたりすることができます。</p>
-<ul>
-<li>コンソール (console.log)
-<ul>
-<li>ブラウザの<ruby>開発者<rt>かいはつしゃ</rt></ruby>ツールにある、コードの<ruby>途中<rt>とちゅう</rt></ruby><ruby>経過<rt>けいか</rt></ruby>や<ruby>変数<rt>へんすう</rt></ruby>の<ruby>中身<rt>なかみ</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>して、エラーを<ruby>確認<rt>かくにん</rt></ruby>できる<ruby>場所<rt>ばしょ</rt></ruby>です。</li>
-</ul>
-</li>
-<li>prompt()
-<ul>
-<li>ユーザーに<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>してもらうための、<ruby>小<rt>ちい</rt></ruby>さなウィンドウを<ruby>表示<rt>ひょうじ</rt></ruby>します。</li>
-</ul>
-</li>
-<li>parseInt()
-<ul>
-<li>「“100”」のような<ruby>文字列<rt>もじれつ</rt></ruby>のデータを、<ruby>計算<rt>けいさん</rt></ruby>で<ruby>使<rt>つか</rt></ruby>える<ruby>整数<rt>せいすう</rt></ruby>のデータに<ruby>変<rt>か</rt></ruby>えます。“55kg“のような<ruby>文字列<rt>もじれつ</rt></ruby>は55になります。</li>
-</ul>
-</li>
-<li>parseFloat()
-<ul>
-<li><ruby>文字列<rt>もじれつ</rt></ruby>のデータを、3.14のような<ruby>小数点<rt>しょうすうてん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>数値<rt>すうち</rt></ruby>に<ruby>変<rt>か</rt></ruby>えます。</li>
-</ul>
-</li>
-<li>NaN
-<ul>
-<li>“Not a Number” の<ruby>略<rt>りゃく</rt></ruby>で、<ruby>数値<rt>すうち</rt></ruby>への<ruby>変換<rt>へんかん</rt></ruby>に<ruby>失敗<rt>しっぱい</rt></ruby>したときなどに<ruby>表示<rt>ひょうじ</rt></ruby>される「<ruby>数値<rt>すうち</rt></ruby>ではない」ことを<ruby>示<rt>しめ</rt></ruby>す<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>値<rt>あたい</rt></ruby>です。</li>
-</ul>
-</li>
-<li>isNaN()
-<ul>
-<li>ある<ruby>値<rt>あたい</rt></ruby>がNaNかどうかをチェックするための<ruby>関数<rt>かんすう</rt></ruby>です。</li>
-</ul>
-</li>
-<li>setTimeout()
-<ul>
-<li><ruby>指定<rt>してい</rt></ruby>した<ruby>時間<rt>じかん</rt></ruby>が<ruby>過<rt>す</rt></ruby>ぎた<ruby>後<rt>あと</rt></ruby>に、<ruby>処理<rt>しょり</rt></ruby>を<ruby>一度<rt>いちど</rt></ruby>だけ<ruby>実行<rt>じっこう</rt></ruby>します。</li>
-</ul>
-</li>
-<li>setInterval()
-<ul>
-<li><ruby>指定<rt>してい</rt></ruby>した<ruby>時間<rt>じかん</rt></ruby>ごとに、<ruby>処理<rt>しょり</rt></ruby>を<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>実行<rt>じっこう</rt></ruby>します。</li>
-</ul>
-</li>
-<li><ruby>スコープ<rt>すこーぷ</rt></ruby> (scope)
-<ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>が、プログラムのどの<ruby>範囲<rt>はんい</rt></ruby>から<ruby>使<rt>つか</rt></ruby>えるかを<ruby>決<rt>き</rt></ruby>めるルールです。<ruby>主<rt>おも</rt></ruby>に3<ruby>種類<rt>しゅるい</rt></ruby>あります。
-<ul>
-<li>グローバルスコープ: プログラムのどこからでも<ruby>使<rt>つか</rt></ruby>える<ruby>変数<rt>へんすう</rt></ruby>ですが、バグの<ruby>原因<rt>げんいん</rt></ruby>になりやすいので<ruby>注意<rt>ちゅうい</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。</li>
-<li><ruby>関数<rt>かんすう</rt></ruby>スコープ: <ruby>関数<rt>かんすう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>だけで<ruby>使<rt>つか</rt></ruby>える<ruby>変数<rt>へんすう</rt></ruby>で、<ruby>昔<rt>むかし</rt></ruby>のvarがこれにあたります。</li>
-<li>ブロックスコープ: {}で<ruby>囲<rt>かこ</rt></ruby>まれた<ruby>範囲<rt>はんい</rt></ruby>だけで<ruby>使<rt>つか</rt></ruby>える<ruby>変数<rt>へんすう</rt></ruby>です。letやconstがこれにあたり、<ruby>安全<rt>あんぜん</rt></ruby>で<ruby>管理<rt>かんり</rt></ruby>しやすいため、<ruby>現在<rt>げんざい</rt></ruby>はこちらを<ruby>使<rt>つか</rt></ruby>うのが<ruby>一般的<rt>いっぱんてき</rt></ruby>です。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>この<ruby>用語集<rt>ようごしゅう</rt></ruby>が、あなたのJavaScript<ruby>学習<rt>がくしゅう</rt></ruby>の<ruby>旅<rt>たび</rt></ruby>で、<ruby>信頼<rt>しんらい</rt></ruby>できる<ruby>地図<rt>ちず</rt></ruby>になることを<ruby>願<rt>ねが</rt></ruby>っています。わからない<ruby>言葉<rt>ことば</rt></ruby>があったら、いつでもここに<ruby>戻<rt>もど</rt></ruby>ってきて、<ruby>自分<rt>じぶん</rt></ruby>のペースで<ruby>確認<rt>かくにん</rt></ruby>してくださいね。<ruby>楽<rt>たの</rt></ruby>しく<ruby>学<rt>まな</rt></ruby>んでいきましょう！</p>
-<p>&lt;a href=“javascript:history.back();”&gt;<ruby>戻<rt>もど</rt></ruby>る&lt;/a&gt;</p>
+<h2 id="まとめテーブル-17"><a class="header" href="#まとめテーブル-17">まとめテーブル</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>用語</th><th>英語</th><th>意味</th><th>道具の<ruby>例<rt>れい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><strong><ruby>入力<rt>にゅうりょく</rt></ruby></strong></td><td><strong>Input</strong></td><td>情報を入れる</td><td>キーボード、マウス</td></tr>
+<tr><td><strong><ruby>出力<rt>しゅつりょく</rt></ruby></strong></td><td><strong>Output</strong></td><td>結果を出す</td><td><ruby>画面<rt>がめん</rt></ruby>（モニター）、音</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote class="blockquote-tag blockquote-tag-tip">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>「I/O（アイオー）」ってなに？</strong>
+ITの世界では、InputとOutputを合わせて <strong>「I/O」</strong> と呼ぶことが多いです。「データのやり取り」のことだと思っておけば大丈夫だよ！と伝えてあげてください。</p>
+</blockquote>
+<p>いかがでしょうか？「入れる」と「出す」の関係がわかれば、プログラミングの<ruby>仕組<rt>しく</rt></ruby>みがぐっと理解しやすくなります。</p>
+<p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="関数かんすうのネスト"><a class="header" href="#関数かんすうのネスト"><ruby>関数<rt>かんすう</rt></ruby>のネスト</a></h1>
 <p><ruby>関数<rt>かんすう</rt></ruby>の中に、さらに<ruby>関数<rt>かんすう</rt></ruby>を書くことができます。これを <strong>「ネスト（入れ子）」</strong> と呼びます。これは、プログラムを整理して情報を守る <strong>「カプセル化（情報の保護）」</strong> に役立ちます。</p>
@@ -5735,9 +5497,9 @@ console.log("ぜんぶの合計は " + total + " です！");
 </code></pre>
 <hr>
 <h3 id="2-プログラムの動うごきを解説かいせつ"><a class="header" href="#2-プログラムの動うごきを解説かいせつ">2. プログラムの<ruby>動<rt>うご</rt></ruby>きを<ruby>解説<rt>かいせつ</rt></ruby></a></h3>
-<h4 id="①-let-total--0"><a class="header" href="#①-let-total--0">① <code>let total = 0;</code></a></h4>
+<h4 id="①-let-total--0-1"><a class="header" href="#①-let-total--0-1">① <code>let total = 0;</code></a></h4>
 <p>これは、<ruby>計算<rt>けいさん</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を入れておくための <strong>「<ruby>貯金箱<rt>ちょきんばこ</rt></ruby>」</strong> のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h4 id="②-コールバック関数かんすうの仕事"><a class="header" href="#②-コールバック関数かんすうの仕事">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事</a></h4>
+<h4 id="②-コールバック関数かんすうの仕事-1"><a class="header" href="#②-コールバック関数かんすうの仕事-1">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事</a></h4>
 <p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お<ruby>願<rt>ねが</rt></ruby>いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
 <ul>
 <li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
@@ -5756,97 +5518,254 @@ console.log("ぜんぶの合計は " + total + " です！");
 <hr>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="三つのfor"><a class="header" href="#三つのfor">三つのfor</a></h1>
-<h2 id="i-古典的なfor"><a class="header" href="#i-古典的なfor">I. 古典的なfor</a></h2>
-<pre><code class="language-JavaScript">for (let i = 0; i &lt; 3; i++) {
-  console.log(i + "番目：こんにちは！");
-}
-</code></pre>
-<h2 id="ii-配列はいれつの応用とforeach"><a class="header" href="#ii-配列はいれつの応用とforeach">II. <ruby>配列<rt>はいれつ</rt></ruby>の応用とforEach</a></h2>
-<p>大量のデータを<ruby>効率<rt>こうりつ</rt></ruby>よく処理するために、JavaScriptには forEach（フォーイーチ）という便利な道具があります。</p>
-<h3 id="1-foreachとコールバック関数かんすう"><a class="header" href="#1-foreachとコールバック関数かんすう">1. forEachとコールバック<ruby>関数<rt>かんすう</rt></ruby></a></h3>
-<p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」のようなものだと学びましたね。ボタンを押すと、中に入れた処理が実行されて結果が出てきます。</p>
-<p>forEach を使うときは、この<ruby>関数<rt>かんすう</rt></ruby>をさらに便利に使います。</p>
-<ul>
-<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
-</ul>
-<h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: <ruby>合計<rt>ごうけい</rt></ruby>を計算する</a></h3>
-<p>このプログラムは、リストの中にある数字を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>足<rt>た</rt></ruby>して、<ruby>最後<rt>さいご</rt></ruby>に答えを出します。</p>
-<pre><code class="language-javascript">// 1. 数字の「配列（はいれつ）」を作ります。
-const numbers = [10, 20, 30, 40];
-
-// 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
-let total = 0;
-
-// 3. forEach （上の例（たと）えでは「店員さん」）は、配列（はいれつ）の中身を一つずつ取って、メモ通りに処理します。
-numbers.forEach((num) =&gt; {
-  // ここがコールバック関数（かんすう）です！ 店員さんに「この仕事をしてください」と渡すメモです！
-  total = total + num; 
-  console.log(num + " を足しました。今は " + total + " です。");
-});
-
-// 4. 最後に答えを表示（ひょうじ）します
-console.log("ぜんぶの合計は " + total + " です！");
-
-</code></pre>
-<h3 id="3-プログラムの動うごきを解説かいせつ"><a class="header" href="#3-プログラムの動うごきを解説かいせつ">3. プログラムの<ruby>動<rt>うご</rt></ruby>きを<ruby>解説<rt>かいせつ</rt></ruby></a></h3>
-<h4 id="①-let-total--0-1"><a class="header" href="#①-let-total--0-1">① <code>let total = 0;</code></a></h4>
-<p>これは、<ruby>計算<rt>けいさん</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>を入れておくための**「<ruby>貯金箱<rt>ちょきんばこ</rt></ruby>」**のようなものです。最初は何も入っていないので <code>0</code> にしておきます。</p>
-<h4 id="②-コールバック関数かんすうの仕事-1"><a class="header" href="#②-コールバック関数かんすうの仕事-1">② コールバック<ruby>関数<rt>かんすう</rt></ruby>の仕事</a></h4>
-<p><code>numbers.forEach((num) =&gt; { ... });</code> の中（なか）が、お<ruby>願<rt>ねが</rt></ruby>いしたメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）です。</p>
-<ul>
-<li><code>forEach</code> がリストから <code>10</code> を見つける。</li>
-<li>コールバック<ruby>関数<rt>かんすう</rt></ruby>に <code>10</code> を<ruby>渡<rt>わた</rt></ruby>す。</li>
-<li><ruby>関数<rt>かんすう</rt></ruby>が <strong>「今の合計（0）に 10 を足してね！」</strong> と<ruby>実行<rt>じっこう</rt></ruby>する。</li>
-<li>次の <code>20</code> でも同じことをする。</li>
-</ul>
-<p>これを<ruby>繰り返<rt>くりかえ</rt></ruby>すことで、貯金箱の中身がどんどん増えていきます。</p>
-<p>So What?（なぜ大切なの？）</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th style="text-align: left">従来の for 文</th><th style="text-align: left">forEach メソッド</th></tr>
-</thead>
-<tbody>
-<tr><td style="text-align: left"><ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しの回数を自分で管理する</td><td style="text-align: left"><ruby>配列<rt>はいれつ</rt></ruby>が自<ruby>動的<rt>どうてき</rt></ruby>に回数を決めてくれる</td></tr>
-<tr><td style="text-align: left">コードが長くなりやすい</td><td style="text-align: left">短く、読みやすくなる</td></tr>
-</tbody>
-</table>
-</div>
-<p>コードが読みやすくなると、<ruby>開発<rt>かいはつ</rt></ruby>のスピードが上がり、ミスも減ります。</p>
+<h1 id="関数かんすうもオブジェクトである"><a class="header" href="#関数かんすうもオブジェクトである"><ruby>関数<rt>かんすう</rt></ruby>もオブジェクトである</a></h1>
+<p>皆さんにとって、「<ruby>関数<rt>かんすう</rt></ruby>もオブジェクトである」という考え方は、JavaScriptの<ruby>壁<rt>かべ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つになるかもしれません。</p>
+<p>これを理解してもらうために、<strong>「<ruby>関数<rt>かんすう</rt></ruby>は『動くおもちゃ』が入った箱だ」</strong> という<ruby>例<rt>たと</rt></ruby>えを使って説明します。</p>
 <hr>
-<h2 id="iii-繰くり返かえし処理の応用for-in文"><a class="header" href="#iii-繰くり返かえし処理の応用for-in文">III. <ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し処理の応用：for-in文</a></h2>
-<p>※ オブジェクトの性質を利用した応用的な<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し処理です。</p>
-<p><ruby>配列<rt>はいれつ</rt></ruby>ではなく「オブジェクト」の中身（プロパティ）をすべて確認したいときは、for-in 文を使います。</p>
+<h2 id="javascriptの関数かんすうは持ち運べる箱"><a class="header" href="#javascriptの関数かんすうは持ち運べる箱">JavaScriptの<ruby>関数<rt>かんすう</rt></ruby>は「持ち運べる箱」</a></h2>
+<p>普通のプログラミング言語では、<ruby>関数<rt>かんすう</rt></ruby>は「命令」です。でも、JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も <strong>「オブジェクト（モノ）」</strong> です。</p>
+<p>箱の中に「仕事のやり<ruby>方<rt>かた</rt></ruby>」が書かれた紙が入っているイメージです。箱なので、人にあげたり、受け取ったりできます。これを <strong>「第一級<ruby>関数<rt>かんすう</rt></ruby>」</strong> と呼びます。</p>
+<hr>
+<h3 id="1-変数へんすうに代入だいにゅうできる箱に名前をつける"><a class="header" href="#1-変数へんすうに代入だいにゅうできる箱に名前をつける">1. <ruby>変数<rt>へんすう</rt></ruby>に<ruby>代入<rt>だいにゅう</rt></ruby>できる（箱に名前をつける）</a></h3>
+<p><ruby>関数<rt>かんすう</rt></ruby>という箱に、新しい名前をつけて別の場所に置くことができます。</p>
+<pre><code class="language-javascript">// 1. 「挨拶をする」という関数（かんすう）を作る
+const hello = function() {
+  console.log("こんにちは！");
+};
+
+// 2. helloという箱を、別の変数（へんすう）にコピーする
+const sayHello = hello;
+
+// 3. 新しい名前で実行できる
+sayHello(); // "こんにちは！"
+
+</code></pre>
+<hr>
+<h3 id="2-引数ひきすうにできる箱をプレゼントする"><a class="header" href="#2-引数ひきすうにできる箱をプレゼントする">2. <ruby>引数<rt>ひきすう</rt></ruby>にできる（箱をプレゼントする）</a></h3>
+<p><ruby>関数<rt>かんすう</rt></ruby>を、別の<ruby>関数<rt>かんすう</rt></ruby>に「材料」として渡すことができます。これを <strong>「コールバック<ruby>関数<rt>かんすう</rt></ruby>」</strong> と言います。</p>
+<blockquote>
+<p><strong>留学生への<ruby>例<rt>れい</rt></ruby>え：</strong>
+「料理ロボット」に、「切る」という仕事をプレゼントするようなものです。</p>
+</blockquote>
+<pre><code class="language-javascript">// 「実行ボタン」という関数（かんすう）
+function pushButton(task) {
+  console.log("ボタンを押しました。");
+  task(); // 渡された関数（かんすう）を実行する
+}
+
+const clean = function() {
+  console.log("掃除をします！");
+};
+
+// 掃除という箱を引数（ひきすう）として渡す
+pushButton(clean); 
+
+</code></pre>
+<hr>
+<h3 id="3-返り値にできる箱を作って返す"><a class="header" href="#3-返り値にできる箱を作って返す">3. 返り値にできる（箱を作って返す）</a></h3>
+<p><ruby>関数<rt>かんすう</rt></ruby>を実行した結果として、新しい「<ruby>関数<rt>かんすう</rt></ruby>の箱」をもらうことができます。</p>
+<blockquote>
+<p><strong>留学生への<ruby>例<rt>たと</rt></ruby>え：</strong>
+「おもちゃの工場」に頼んで、自分だけの「特別なおもちゃ（<ruby>関数<rt>かんすう</rt></ruby>）」を作ってもらうイメージです。</p>
+</blockquote>
+<pre><code class="language-javascript">function makeRobot(name) {
+  // 新しい関数（かんすう）を作って、外に返す
+  return function() {
+    console.log("私は" + name + "ロボットです。");
+  };
+}
+
+const dora = makeRobot("ドラ");
+dora(); // "私はドラロボットです。"
+
+</code></pre>
+<hr>
+<h3 id="留学生へのまとめ青空文庫形式"><a class="header" href="#留学生へのまとめ青空文庫形式">留学生へのまとめ（青空文庫形式）</a></h3>
+<blockquote>
+<p>JavaScriptでは、<ruby>関数<rt>かんすう</rt></ruby>は単なる「動き」ではありません。
+それは、名前をつけたり、誰かに渡したりできる <strong>「大切なモノ（オブジェクト）」</strong> です。</p>
+<ol>
+<li><ruby>変数<rt>へんすう</rt></ruby>への<ruby>代入<rt>だいにゅう</rt></ruby>： 箱を棚に置くこと。</li>
+<li><ruby>引数<rt>ひきすう</rt></ruby>： 箱を友達に貸してあげること。</li>
+<li>返り値： 箱を新しく作って届けてもらうこと。</li>
+</ol>
+<p>この「箱をやり取りする」という考え方ができるようになると、JavaScriptがもっと楽しくなりますよ！</p>
+</blockquote>
+<hr>
+<p>いかがでしょうか。<ruby>関数<rt>かんすう</rt></ruby>を「命令」ではなく「持ち運べるオブジェクト」として見せることがポイントです。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="インスタンスとオブジェクト"><a class="header" href="#インスタンスとオブジェクト">インスタンスとオブジェクト</a></h1>
+<p>「オブジェクト」と「インスタンス」は、ベテランのエンジニアでも時々混ぜて使ってしまうほど似ている言葉です。</p>
+<p>留学生の方には、 <strong>「モノの種類（カテゴリー）」</strong> か、 <strong>「目の前にある実物（じつぶつ）」</strong> か、という<ruby>視点<rt>してん</rt></ruby>の違いで説明してあげるとスッキリします。</p>
+<hr>
+<h3 id="1-結論二つの違いは見ている角度"><a class="header" href="#1-結論二つの違いは見ている角度">1. 結論：二つの違いは「見ている角度」</a></h3>
+<ul>
+<li><strong>オブジェクト (Object)：</strong> 広い意味での「データのかたまり」という <strong><ruby>仕組<rt>しく</rt></ruby>み</strong> のこと。</li>
+<li><strong>インスタンス (Instance)：</strong> 設計図（クラス）から生まれた、<strong>「具体的な一つひとつの実物」</strong> のこと。</li>
+</ul>
+<hr>
+<h3 id="2-留学生への例たとえ話タイ焼やきと料理"><a class="header" href="#2-留学生への例たとえ話タイ焼やきと料理">2. 留学生への<ruby>例<rt>たと</rt></ruby>え話：タイ<ruby>焼<rt>や</rt></ruby>きと料理</a></h3>
+<p>この2つの<ruby>例<rt>たと</rt></ruby>えが<ruby>最強<rt>さいきょう</rt></ruby>に分かりやすいです。</p>
+<h4 id="例れい①タイ焼やき"><a class="header" href="#例れい①タイ焼やき"><strong><ruby>例<rt>れい</rt></ruby>①：タイ<ruby>焼<rt>や</rt></ruby>き</strong></a></h4>
+<ul>
+<li><strong>クラス：</strong> タイ<ruby>焼<rt>や</rt></ruby>きの「型（かた）」です。</li>
+</ul>
+<p><img src="img/taiyaki_yousyoku.jpg" alt="たい焼きの型"></p>
+<ul>
+<li><strong>オブジェクト：</strong> 「タイ<ruby>焼<rt>や</rt></ruby>き」という食べ物の<ruby>概念<rt>がいねん</rt></ruby>です。</li>
+</ul>
+<p><img src="img/taiyaki_gainen2.jpg" alt="たい焼きの概念"></p>
+<ul>
+<li><strong>インスタンス：</strong> 今、あなたの手にある <strong>「あんこが入った、温かいこの1つのタイ<ruby>焼<rt>や</rt></ruby>き」</strong> のことです。</li>
+</ul>
+<p><img src="img/sweets_taiyaki1_tsubuan01.png" alt="たい焼き"></p>
+<h4 id="例れい②料理のレシピ"><a class="header" href="#例れい②料理のレシピ"><strong><ruby>例<rt>れい</rt></ruby>②：料理のレシピ</strong></a></h4>
+<ul>
+<li><strong>クラス：</strong> カレーの「レシピ」です。</li>
+<li><strong>オブジェクト：</strong> プログラミングの世界における「料理」というデータの形です。</li>
+<li><strong>インスタンス：</strong> 今日の晩ごはんに作った <strong>「お皿に乗っているカレー」</strong> のことです。</li>
+</ul>
+<hr>
+<h3 id="3-会話での使つかい分わけここが重要"><a class="header" href="#3-会話での使つかい分わけここが重要">3. 会話での<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け（ここが重要！）</a></h3>
+<p><strong>「いつ、どっちの言葉を使うか」</strong> を教えてあげましょう。</p>
+<ul>
+<li><strong>「オブジェクト」と言うとき：</strong>
+「JavaScriptは <strong>オブジェクト</strong> を使ってデータをまとめます」のように、プログラミングの <strong>ルールや構造</strong> について話すときに使います。</li>
+</ul>
+<blockquote>
+<p><strong>イメージ：</strong> 「人間」という生き物。</p>
+</blockquote>
+<ul>
+<li><strong>「インスタンス」と言うとき：</strong>
+「<code>new Student()</code> で、アリさんの <strong>インスタンス</strong> を作りました」のように、<strong>実際にメモリの中に作られた具体的なデータ</strong> を指すときに使います。</li>
+</ul>
+<blockquote>
+<p><strong>イメージ：</strong> 「アリさん」という特定の個人。</p>
+</blockquote>
+<h3 id="4-まとめテーブル"><a class="header" href="#4-まとめテーブル">4. まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>ループの種類</th><th>対象</th><th>使いどころ</th></tr>
+<tr><th>比較ポイント</th><th>オブジェクト</th><th>インスタンス</th></tr>
 </thead>
 <tbody>
-<tr><td>for文</td><td><ruby>数値<rt>すうち</rt></ruby>の回数、<ruby>配列<rt>はいれつ</rt></ruby></td><td>決まった回数<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>したいとき</td></tr>
-<tr><td>while文</td><td>条件</td><td>条件が満たされるまで続けたいとき</td></tr>
-<tr><td>for-in文</td><td>オブジェクトのプロパティ</td><td>オブジェクトの「キー」を全部調べたいとき</td></tr>
+<tr><td><strong>意味</strong></td><td>モノ、対象（たいしょう）</td><td>具体的な実<ruby>例<rt>れい</rt></ruby>、実物</td></tr>
+<tr><td><strong>英語のニュアンス</strong></td><td>“A thing” (モノ)</td><td>“An example / One of them” (そのうちの一つ)</td></tr>
+<tr><td><strong>いつ使う？</strong></td><td>データの形を説明するとき</td><td><code>new</code> で何かを作ったとき</td></tr>
+<tr><td><strong>数</strong></td><td>概念なので数えにくい</td><td>「1つのインスタンス」と数えられる</td></tr>
 </tbody>
 </table>
 </div>
-<p>So What?（なぜ大切なの？） オブジェクトの中にどんなデータがいくつ入っているか、事前にはわからない場合があります。for-in を使えば、どんなに項目が多くても漏れなくすべて処理できるため、<ruby>柔軟<rt>じゅうなん</rt></ruby>なプログラムが作れます。</p>
+<hr>
+<h3 id="-留学生へのアドバイス-2"><a class="header" href="#-留学生へのアドバイス-2">📝 留学生へのアドバイス</a></h3>
+<blockquote>
+<p>最初は全部 <strong>『オブジェクト』</strong> と呼んでいても間違いじゃありません。
+でも、<strong>『設計図から生まれた、本物のデータ』</strong> だということを<ruby>強調<rt>きょうちょう</rt></ruby>（きょうちょう）したいときに <strong>『インスタンス』</strong> という言葉を使うと、『お、この人はプログラミングを深く理解しているな！』と思ってもらえます！</p>
+</blockquote>
+<hr>
+<p>いかがでしょうか？ 「実物（インスタンス）はオブジェクトの一種である」という関係性が伝われば<ruby>完璧<rt>かんぺき</rt></ruby>です。</p>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="かっこの種類"><a class="header" href="#かっこの種類">かっこの種類</a></h1>
+<h1 id="new演算えんざん子"><a class="header" href="#new演算えんざん子">new<ruby>演算<rt>えんざん</rt></ruby>子</a></h1>
+<p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
+これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す<ruby>魔法<rt>まほう</rt></ruby>の<ruby>呪文<rt>じゅもん</rt></ruby>**です。</p>
+<p>留学生の方には、<strong>「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ<ruby>納得<rt>なっとく</rt></ruby>してもらえます！</p>
+<hr>
+<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「<ruby>実体<rt>じったい</rt></ruby>を作る」もの</a></h2>
+<p>プログラミングの世界には、<strong>「<ruby>設計図<rt>せっけいず</rt></ruby>」</strong> と、その設計図から作られた <strong>「本物」</strong> の2つがあります。</p>
+<ul>
+<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「<ruby>鉄板<rt>てっぱん</rt></ruby>」です。これだけでは食べられません。</li>
+<li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい<ruby>焼<rt>や</rt></ruby>き」です。</li>
+</ul>
+<pre><code class="language-javascript">// Date という「時計の設計図」を使って、
+// new で「今動いている本物の時計」を新しく作る
+const myClock = new Date();
+
+</code></pre>
+<hr>
+<h2 id="ii-なぜ-new-が必要なの"><a class="header" href="#ii-なぜ-new-が必要なの">II. なぜ <code>new</code> が必要なの？</a></h2>
+<p><ruby>例<rt>たと</rt></ruby>えば、SNSの「ユーザー」というデータを作るとしましょう。
+全員の情報をバラバラに作るのは大変ですが、<code>new</code> を使えば同じ形のデータをいくつでも簡単に作れます。</p>
+<pre><code class="language-javascript">// 1. ユーザーの「設計図（型）」を作る
+function User(name) {
+  this.name = name;
+  this.sayHi = function() {
+    console.log("こんにちは、" + this.name + "です！");
+  };
+}
+
+// 2. new を使って、本物のユーザーをどんどん作る
+const user1 = new User("マリア");
+const user2 = new User("ジョン");
+
+user1.sayHi(); // 「こんにちは、マリアです！」
+user2.sayHi(); // 「こんにちは、ジョンです！」
+
+</code></pre>
+<ul>
+<li><code>User</code> はただの設計図です。</li>
+<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という<ruby>実体<rt>じったい</rt></ruby></strong> が誕生します。</li>
+</ul>
+<hr>
+<h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
+<p>留学生に教えるとき、<code>new</code> が<ruby>裏側<rt>うらがわ</rt></ruby>でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
+<ol>
+<li><strong>新しい空（から）の箱</strong> を作る。</li>
+<li>その箱に、名前や中身を <strong>コピー</strong> して入れる。</li>
+<li>完成した箱を <strong>「はい、どうぞ！」と渡す（return）</strong>。</li>
+</ol>
+<hr>
+<h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
+<p>ここが一番のポイントです。JavaScriptには2つのパターンがあります。</p>
+<ul>
+<li>
+<p><strong><code>new</code> が必要なもの（重いもの・複雑なもの）</strong></p>
+</li>
+<li>
+<p><code>new Date()</code> ：日付</p>
+</li>
+<li>
+<p><code>new User()</code> ：自分で作った特別な型</p>
+</li>
+<li>
+<p><strong><code>new</code> がいらないもの（軽くてシンプルなもの）</strong></p>
+</li>
+<li>
+<p><code>"Hello"</code> ：文字列（String型）</p>
+</li>
+<li>
+<p><code>123</code> ：数字（Number型）</p>
+</li>
+<li>
+<p><code>true</code> ：<ruby>真偽<rt>しんぎ</rt></ruby>値（Boolean型）</p>
+</li>
+</ul>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p><strong>留学生へのアドバイス：</strong>
+「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong> んだよ！」と教えてあげてください。</p>
+</blockquote>
+<hr>
+<h2 id="まとめ-5"><a class="header" href="#まとめ-5">まとめ</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>括弧の種類</th><th>日本語の呼び方</th><th>英語の呼び方</th></tr>
+<tr><th>言葉</th><th>意味</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
 </thead>
 <tbody>
-<tr><td><code>()</code></td><td>丸（まる）かっこ</td><td>parenthesis パーレンセシス<br> paren パーレン<br>round brackets</td></tr>
-<tr><td><code>[]</code></td><td>角（かく）かっこ</td><td>bracket ブラケット <br> square bracket</td></tr>
-<tr><td><code>{}</code></td><td>波（なみ）かっこ</td><td>brace ブレース<br> curly brace/curly bracket</td></tr>
-<tr><td><code>&lt;&gt;</code></td><td>山（やま）かっこ<br>小なり／大なり</td><td>angle bracket<br>less-than sign／greater-than sign</td></tr>
+<tr><td><strong>設計図（Class）</strong></td><td>データの形を決めたもの</td><td>たい<ruby>焼<rt>や</rt></ruby>きの型</td></tr>
+<tr><td><strong><code>new</code></strong></td><td><ruby>実体<rt>じったい</rt></ruby>を作るためのコマンド</td><td>記事を流し込む動作</td></tr>
+<tr><td><strong><ruby>実体<rt>じったい</rt></ruby>（Instance）</strong></td><td><code>new</code> で作られた本物のデータ</td><td><ruby>焼<rt>や</rt></ruby>きたてのたい<ruby>焼<rt>や</rt></ruby>き</td></tr>
 </tbody>
 </table>
 </div>
+<blockquote class="blockquote-tag blockquote-tag-tip">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>「new」のイメージ</strong>
+英語の「New（新しい）」そのままです。「新しい<ruby>実体<rt>じったい</rt></ruby>（じったい）を1つ、今ここで生み出すぞ！」という気持ちで使いましょう。</p>
+</blockquote>
+<hr>
+<p>いかがでしょうか？「型から本物を作る<ruby>呪文<rt>じゅもん</rt></ruby>」というイメージは持てましたか？</p>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="正規せいき表現ひょうげん"><a class="header" href="#正規せいき表現ひょうげん"><ruby>正規<rt>せいき</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby></a></h1>
@@ -6081,7 +6000,7 @@ const pattern2 = new RegExp("abc");
 </div>
 <p>いかがでしょうか？これで<ruby>正規<rt>せいき</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>の主要なパーツが<ruby>揃<rt>そろ</rt></ruby>いました。</p>
 <hr>
-<p><a href="#かっこの種類">参考: かっこの種類と日本語の呼び方</a></p>
+<p><a href="06_05_かっこの種類.html">参考: かっこの種類と日本語の呼び方</a></p>
 <h3 id="留学生へのアドバイス-3"><a class="header" href="#留学生へのアドバイス-3">留学生へのアドバイス</a></h3>
 <p>RegExpは、最初は<ruby>難<rt>むずか</rt></ruby>しくて「<ruby>暗号<rt>あんごう</rt></ruby>」に見えます。でも、全部覚える必要はありません！</p>
 <blockquote>
@@ -6228,322 +6147,220 @@ checkPassword("thisIsAVeryLongPassword"); // NG (長すぎる)
 <p>これで、郵便番号、電話番号、そしてパスワードのバリデーション（<ruby>入力<rt>にゅうりょく</rt></ruby>チェック）ができるようになりましたね！</p>
 <p><a href="javascript:history.back();">戻る</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="new演算えんざん子"><a class="header" href="#new演算えんざん子">new<ruby>演算<rt>えんざん</rt></ruby>子</a></h1>
-<p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
-これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す<ruby>魔法<rt>まほう</rt></ruby>の<ruby>呪文<rt>じゅもん</rt></ruby>**です。</p>
-<p>留学生の方には、<strong>「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ<ruby>納得<rt>なっとく</rt></ruby>してもらえます！</p>
-<hr>
-<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「<ruby>実体<rt>じったい</rt></ruby>を作る」もの</a></h2>
-<p>プログラミングの世界には、<strong>「<ruby>設計図<rt>せっけいず</rt></ruby>」</strong> と、その設計図から作られた <strong>「本物」</strong> の2つがあります。</p>
-<ul>
-<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「<ruby>鉄板<rt>てっぱん</rt></ruby>」です。これだけでは食べられません。</li>
-<li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい<ruby>焼<rt>や</rt></ruby>き」です。</li>
-</ul>
-<pre><code class="language-javascript">// Date という「時計の設計図」を使って、
-// new で「今動いている本物の時計」を新しく作る
-const myClock = new Date();
-
-</code></pre>
-<hr>
-<h2 id="ii-なぜ-new-が必要なの"><a class="header" href="#ii-なぜ-new-が必要なの">II. なぜ <code>new</code> が必要なの？</a></h2>
-<p><ruby>例<rt>たと</rt></ruby>えば、SNSの「ユーザー」というデータを作るとしましょう。
-全員の情報をバラバラに作るのは大変ですが、<code>new</code> を使えば同じ形のデータをいくつでも簡単に作れます。</p>
-<pre><code class="language-javascript">// 1. ユーザーの「設計図（型）」を作る
-function User(name) {
-  this.name = name;
-  this.sayHi = function() {
-    console.log("こんにちは、" + this.name + "です！");
-  };
-}
-
-// 2. new を使って、本物のユーザーをどんどん作る
-const user1 = new User("マリア");
-const user2 = new User("ジョン");
-
-user1.sayHi(); // 「こんにちは、マリアです！」
-user2.sayHi(); // 「こんにちは、ジョンです！」
-
-</code></pre>
-<ul>
-<li><code>User</code> はただの設計図です。</li>
-<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という<ruby>実体<rt>じったい</rt></ruby></strong> が誕生します。</li>
-</ul>
-<hr>
-<h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
-<p>留学生に教えるとき、<code>new</code> が<ruby>裏側<rt>うらがわ</rt></ruby>でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
-<ol>
-<li><strong>新しい空（から）の箱</strong> を作る。</li>
-<li>その箱に、名前や中身を <strong>コピー</strong> して入れる。</li>
-<li>完成した箱を <strong>「はい、どうぞ！」と渡す（return）</strong>。</li>
-</ol>
-<hr>
-<h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
-<p>ここが一番のポイントです。JavaScriptには2つのパターンがあります。</p>
-<ul>
-<li>
-<p><strong><code>new</code> が必要なもの（重いもの・複雑なもの）</strong></p>
-</li>
-<li>
-<p><code>new Date()</code> ：日付</p>
-</li>
-<li>
-<p><code>new User()</code> ：自分で作った特別な型</p>
-</li>
-<li>
-<p><strong><code>new</code> がいらないもの（軽くてシンプルなもの）</strong></p>
-</li>
-<li>
-<p><code>"Hello"</code> ：文字列（String型）</p>
-</li>
-<li>
-<p><code>123</code> ：数字（Number型）</p>
-</li>
-<li>
-<p><code>true</code> ：<ruby>真偽<rt>しんぎ</rt></ruby>値（Boolean型）</p>
-</li>
-</ul>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p><strong>留学生へのアドバイス：</strong>
-「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong> んだよ！」と教えてあげてください。</p>
-</blockquote>
-<hr>
-<h2 id="まとめ-5"><a class="header" href="#まとめ-5">まとめ</a></h2>
+<h1 id="補足ほそく資料しりょう集しゅう"><a class="header" href="#補足ほそく資料しりょう集しゅう"><ruby>補足<rt>ほそく</rt></ruby><ruby>資料<rt>しりょう</rt></ruby><ruby>集<rt>しゅう</rt></ruby></a></h1>
+<p>「<ruby>留学生<rt>りゅうがくせい</rt></ruby>のためのJavaScript<ruby>学習<rt>がくしゅう</rt></ruby>ガイド」を<ruby>学<rt>まな</rt></ruby>ぶ<ruby>上<rt>うえ</rt></ruby>で、<ruby>補足<rt>ほそく</rt></ruby>・<ruby>参考<rt>さんこう</rt></ruby>になる<ruby>資料<rt>しりょう</rt></ruby>をまとめました。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="留学生りゅうがくせいのためのjavascript学習がくしゅう必須ひっす用語ようご完全かんぜんガイド"><a class="header" href="#留学生りゅうがくせいのためのjavascript学習がくしゅう必須ひっす用語ようご完全かんぜんガイド"><ruby>留学生<rt>りゅうがくせい</rt></ruby>のためのJavaScript<ruby>学習<rt>がくしゅう</rt></ruby>：<ruby>必須<rt>ひっす</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>完全<rt>かんぜん</rt></ruby>ガイド</a></h1>
+<h2 id="1-はじめにはじめにweb開発かいはつの基礎きそを成すなす3つの技術ぎじゅつ"><a class="header" href="#1-はじめにはじめにweb開発かいはつの基礎きそを成すなす3つの技術ぎじゅつ">1. <ruby>はじめに<rt>はじめに</rt></ruby>：Web<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>基礎<rt>きそ</rt></ruby>を<ruby>成す<rt>なす</rt></ruby>3つの<ruby>技術<rt>ぎじゅつ</rt></ruby></a></h2>
+<p><ruby>Web開発<rt>うぇぶかいはつ</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶみなさん、こんにちは。プロのエンジニアを<ruby>目指<rt>めざ</rt></ruby>すうえで、<ruby>用語<rt>ようご</rt></ruby>の<ruby>正確<rt>せいかく</rt></ruby>な<ruby>理解<rt>りかい</rt></ruby>は「<ruby>設計図<rt>せっけいず</rt></ruby>」を<ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>くための<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>武器<rt>ぶき</rt></ruby>になります。</p>
+<p>Webサイトの<ruby>構造<rt>こうぞう</rt></ruby>は、よく「<ruby>家<rt>いえ</rt></ruby>」に<ruby>例<rt>たと</rt></ruby>えられます。HTMLは<ruby>家<rt>いえ</rt></ruby>の「<ruby>柱<rt>はしら</rt></ruby>」や「<ruby>壁<rt>かべ</rt></ruby>」といった<ruby>骨組<rt>ほねぐ</rt></ruby>み、CSSは「ペンキ」や「インテリア」などの<ruby>装飾<rt>そうしょく</rt></ruby>、そしてJavaScriptはボタンを<ruby>押<rt>お</rt></ruby>すとライトがつく「<ruby>電気設備<rt>でんきせつび</rt></ruby>」の<ruby>役割<rt>やくわり</rt></ruby>を<ruby>果<rt>は</rt></ruby>たします。</p>
+<p><ruby>基本<rt>きほん</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>言葉</th><th>意味</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>設計図（Class）</strong></td><td>データの形を決めたもの</td><td>たい<ruby>焼<rt>や</rt></ruby>きの型</td></tr>
-<tr><td><strong><code>new</code></strong></td><td><ruby>実体<rt>じったい</rt></ruby>を作るためのコマンド</td><td>記事を流し込む動作</td></tr>
-<tr><td><strong><ruby>実体<rt>じったい</rt></ruby>（Instance）</strong></td><td><code>new</code> で作られた本物のデータ</td><td><ruby>焼<rt>や</rt></ruby>きたてのたい<ruby>焼<rt>や</rt></ruby>き</td></tr>
+<tr><td>HTML</td><td>エイチティーエムエル</td><td><ruby>Webページ<rt>うぇぶぺーじ</rt></ruby>の<ruby>骨組<rt>ほねぐ</rt></ruby>みや<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るための<ruby>言語<rt>げんご</rt></ruby>。</td></tr>
+<tr><td>CSS</td><td>シーエスエス</td><td><ruby>Webページ<rt>うぇぶぺーじ</rt></ruby>の<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>をきれいに<ruby>整<rt>ととの</rt></ruby>えるための<ruby>言語<rt>げんご</rt></ruby>。</td></tr>
+<tr><td>JavaScript</td><td>ジャバスクリプト</td><td><ruby>Webページ<rt>うぇぶぺーじ</rt></ruby>に<ruby>動<rt>うご</rt></ruby>きや<ruby>機能<rt>きのう</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>するための<ruby>言語<rt>げんご</rt></ruby>。</td></tr>
+<tr><td>メタ情報</td><td>メタじょうほう</td><td>ブラウザに<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>える、<ruby>画面<rt>がめん</rt></ruby>には<ruby>表示<rt>ひょうじ</rt></ruby>されない<ruby>設定情報<rt>せっていじょうほう</rt></ruby>。</td></tr>
 </tbody>
 </table>
 </div>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「new」のイメージ</strong>
-英語の「New（新しい）」そのままです。「新しい<ruby>実体<rt>じったい</rt></ruby>（じったい）を1つ、今ここで生み出すぞ！」という気持ちで使いましょう。</p>
-</blockquote>
+<p><ruby>戦略的<rt>せんりゃくてき</rt></ruby>インパクト：<ruby>土台<rt>どだい</rt></ruby>としてのHTML</p>
+<p>HTMLはすべての「<ruby>土台<rt>どだい</rt></ruby>」です。たとえばメタ<ruby>情報<rt>じょうほう</rt></ruby>で「<ruby>文字<rt>もじ</rt></ruby>コード」の<ruby>設定<rt>せってい</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>えると、日本語が「<ruby>文字化<rt>もじば</rt></ruby>け」を起こして読めなくなります。<ruby>土台<rt>どだい</rt></ruby>が<ruby>壊<rt>こわ</rt></ruby>れていると、そのうえでJavaScriptという「<ruby>電気<rt>でんき</rt></ruby>」を流そうとしても、<ruby>配線<rt>はいせん</rt></ruby>が繋がらずに正しく動きません。<ruby>最初<rt>さいしょ</rt></ruby>の設定ミスは後の実装すべてに悪影響を与えることを忘れないでください。</p>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：<ruby>土台<rt>どだい</rt></ruby>となる<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>したところで、<ruby>次<rt>つぎ</rt></ruby>は<ruby>具体的<rt>ぐたいてき</rt></ruby>なページ<ruby>内<rt>ない</rt></ruby>の「<ruby>部品<rt>ぶひん</rt></ruby>」を<ruby>定義<rt>ていぎ</rt></ruby>する<ruby>用語<rt>ようご</rt></ruby>について<ruby>解説<rt>かいせつ</rt></ruby>します。</p>
 <hr>
-<p>いかがでしょうか？「型から本物を作る<ruby>呪文<rt>じゅもん</rt></ruby>」というイメージは持てましたか？</p>
-<p><a href="javascript:history.back();">戻る</a></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="入出力にゅうしゅつりょく"><a class="header" href="#入出力にゅうしゅつりょく"><ruby>入出力<rt>にゅうしゅつりょく</rt></ruby></a></h1>
-<p>コンピューターの世界で最も大切な基本、<strong>「<ruby>入力<rt>にゅうりょく</rt></ruby>（Input）」</strong> と <strong>「<ruby>出力<rt>しゅつりょく</rt></ruby>（Output）」</strong> について説明します。</p>
-<p>留学生の方には、コンピューターを <strong>「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」</strong> や <strong>「<ruby>料理<rt>りょうり</rt></ruby>」</strong> に<ruby>例<rt>たと</rt></ruby>えて教えてあげると、とても分かりやすくなります。</p>
-<hr>
-<h2 id="i-入力にゅうりょくinputとは"><a class="header" href="#i-入力にゅうりょくinputとは">I. <ruby>入力<rt>にゅうりょく</rt></ruby>（Input）とは？</a></h2>
-<p><ruby>入力<rt>にゅうりょく</rt></ruby>は、<strong>「人間がコンピューターに情報（じょうほう）を与えること」</strong> です。
-コンピューターに「これをやって！」とお願いするステップです。</p>
-<ul>
-<li><strong>キーボード：</strong> 文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する。</li>
-<li><strong>マウス：</strong> クリックして指示（しじ）を出す。</li>
-<li><strong>マイク：</strong> 声を音のデータとして入れる。</li>
-<li><strong>カメラ：</strong> 顔や景色を<ruby>画像<rt>がぞう</rt></ruby>として入れる。</li>
-</ul>
-<hr>
-<h2 id="ii-出力しゅつりょくoutputとは"><a class="header" href="#ii-出力しゅつりょくoutputとは">II. <ruby>出力<rt>しゅつりょく</rt></ruby>（Output）とは？</a></h2>
-<p><ruby>出力<rt>しゅつりょく</rt></ruby>は、**「コンピューターが人間に<ruby>結果<rt>けっか</rt></ruby>を返すこと」**です。
-コンピューターが頑張って計算したあとの「答え」を見せるステップです。</p>
-<ul>
-<li><strong>モニター（<ruby>画面<rt>がめん</rt></ruby>）：</strong> 文字や絵を<ruby>表示<rt>ひょうじ</rt></ruby>する。</li>
-<li><strong>スピーカー：</strong> 音を出す。</li>
-<li><strong>プリンター：</strong> 紙に印刷（いんさつ）する。</li>
-</ul>
-<hr>
-<h2 id="iii-分かりやすい例たとえ自動販売機vending-machine"><a class="header" href="#iii-分かりやすい例たとえ自動販売機vending-machine">III. 分かりやすい<ruby>例<rt>たと</rt></ruby>え：自動販売機（Vending Machine）</a></h2>
-<p>コンピューターの<ruby>動<rt>うご</rt></ruby>きを、自動販売機で考えてみましょう。</p>
-<ol>
-<li><strong><ruby>入力<rt>にゅうりょく</rt></ruby> (Input):</strong> あなたがお金を入れて、ボタンを押します。（指示を与える）</li>
-<li><strong>処理 (Process):</strong> 機械が「お金は足りるかな？」と計算します。（中での仕事）</li>
-<li><strong><ruby>出力<rt>しゅつりょく</rt></ruby> (Output):</strong> ジュースが出てきます！（結果が返ってくる）</li>
-</ol>
-<hr>
-<h2 id="iv-留学生へのアドバイスプログラムでの書かき方かた"><a class="header" href="#iv-留学生へのアドバイスプログラムでの書かき方かた">IV. 留学生へのアドバイス：プログラムでの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></a></h2>
-<p>JavaScriptなどのプログラミングを学ぶとき、最初に出会う「<ruby>入力<rt>にゅうりょく</rt></ruby>と<ruby>出力<rt>しゅつりょく</rt></ruby>」も教えてあげましょう。</p>
-<ul>
-<li><strong><ruby>入力<rt>にゅうりょく</rt></ruby>の代表：<code>prompt()</code></strong>
-ユーザーに文字を書いてもらうための<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>窓<rt>まど</rt></ruby>を出します。</li>
-<li><strong><ruby>出力<rt>しゅつりょく</rt></ruby>の代表：<code>console.log()</code></strong>
-プログラムの結果をコンソール<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>します。</li>
-</ul>
-<pre><code class="language-javascript">// 入力（にゅうりょく）（Input）
-const name = prompt("あなたのお名前は？");
-
-// 出力（しゅつりょく）（Output）
-console.log("こんにちは、" + name + "さん！");
-
-</code></pre>
-<hr>
-<h2 id="まとめテーブル-17"><a class="header" href="#まとめテーブル-17">まとめテーブル</a></h2>
+<h2 id="2-html要素ようそとwebページの構造化こうぞうか"><a class="header" href="#2-html要素ようそとwebページの構造化こうぞうか">2. HTML<ruby>要素<rt>ようそ</rt></ruby>とWebページの<ruby>構造化<rt>こうぞうか</rt></ruby></a></h2>
+<p>HTMLタグは単なる記号ではありません。情報の「<ruby>意味<rt>いみ</rt></ruby>」や「<ruby>役割<rt>やくわり</rt></ruby>」を決定する、Webページの<ruby>設計図<rt>せっけいず</rt></ruby>そのものです。留学生のみなさんにとって、この<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>把握<rt>はあく</rt></ruby>することは、誰にでも使いやすいアクセシビリティの高いサイトを作るために不可欠です。</p>
+<p><ruby>構造<rt>こうぞう</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>用語</th><th>英語</th><th>意味</th><th>道具の<ruby>例<rt>れい</rt></ruby></th></tr>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong><ruby>入力<rt>にゅうりょく</rt></ruby></strong></td><td><strong>Input</strong></td><td>情報を入れる</td><td>キーボード、マウス</td></tr>
-<tr><td><strong><ruby>出力<rt>しゅつりょく</rt></ruby></strong></td><td><strong>Output</strong></td><td>結果を出す</td><td><ruby>画面<rt>がめん</rt></ruby>（モニター）、音</td></tr>
+<tr><td>タグ</td><td>たぐ</td><td><ruby>情報<rt>じょうほう</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>すための<ruby>印<rt>しるし</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>&lt;h1&gt;</code>や
+<p>）。</p>
+</td></tr>
+<tr><td>見出し</td><td>みだし</td><td>ページの<ruby>題名<rt>だいめい</rt></ruby>や<ruby>内容<rt>ないよう</rt></ruby>の<ruby>区切<rt>くぎ</rt></ruby>りに<ruby>使<rt>つか</rt></ruby>う、<ruby>構造<rt>こうぞう</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>す<ruby>文字<rt>もじ</rt></ruby>。</td></tr>
+<tr><td>属性</td><td>ぞくせい</td><td>タグに<ruby>付加<rt>ふか</rt></ruby>する<ruby>詳細<rt>しょうさい</rt></ruby>な<ruby>設定<rt>せってい</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：リンク<ruby>先<rt>さき</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>すhref）。</td></tr>
+<tr><td>特殊記号</td><td>とくしゅきごう</td><td>&lt; や &gt; など、<ruby>言語<rt>げんご</rt></ruby>の<ruby>命令<rt>めいれい</rt></ruby>として<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>意味<rt>いみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ<ruby>文字<rt>もじ</rt></ruby>。</td></tr>
+<tr><td>実体参照</td><td>じったいさんしょう</td><td><ruby>特殊<rt>とくしゅ</rt></ruby>な<ruby>記号<rt>きごう</rt></ruby>を<ruby>画面<rt>がめん</rt></ruby>に「<ruby>文字<rt>もじ</rt></ruby>」として<ruby>表示<rt>ひょうじ</rt></ruby>するための<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>。</td></tr>
+<tr><td>入れ子構造</td><td>いれここうぞう</td><td>タグの<ruby>内側<rt>うちがわ</rt></ruby>に、さらに<ruby>別<rt>べつ</rt></ruby>のタグを<ruby>入<rt>い</rt></ruby>れる<ruby>階層的<rt>かいそうてき</rt></ruby>な<ruby>形<rt>かたち</rt></ruby>。</td></tr>
 </tbody>
 </table>
 </div>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「I/O（アイオー）」ってなに？</strong>
-ITの世界では、InputとOutputを合わせて <strong>「I/O」</strong> と呼ぶことが多いです。「データのやり取り」のことだと思っておけば大丈夫だよ！と伝えてあげてください。</p>
-</blockquote>
-<p>いかがでしょうか？「入れる」と「出す」の関係がわかれば、プログラミングの<ruby>仕組<rt>しく</rt></ruby>みがぐっと理解しやすくなります。</p>
-<p><a href="javascript:history.back();">戻る</a></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="インスタンスとオブジェクト"><a class="header" href="#インスタンスとオブジェクト">インスタンスとオブジェクト</a></h1>
-<p>「オブジェクト」と「インスタンス」は、ベテランのエンジニアでも時々混ぜて使ってしまうほど似ている言葉です。</p>
-<p>留学生の方には、 <strong>「モノの種類（カテゴリー）」</strong> か、 <strong>「目の前にある実物（じつぶつ）」</strong> か、という<ruby>視点<rt>してん</rt></ruby>の違いで説明してあげるとスッキリします。</p>
+<p>So What?：「id」と「class」がJavaScriptに<ruby>与える<rt>あたえる</rt></ruby><ruby>影響<rt>えいきょう</rt></ruby></p>
+<p>JavaScriptで<ruby>要素<rt>ようそ</rt></ruby>を<ruby>操作<rt>そうさ</rt></ruby>する<ruby>際<rt>さい</rt></ruby>、CSSセレクタの<ruby>知識<rt>ちしき</rt></ruby>を<ruby>応用<rt>おうよう</rt></ruby>して<ruby>要素<rt>ようそ</rt></ruby>を「<ruby>探し出す<rt>さがしだす</rt></ruby>」<ruby>必要<rt>ひつよう</rt></ruby>があります。</p>
+<ul>
+<li>id<ruby>属性<rt>ぞくせい</rt></ruby>： ページ<ruby>内<rt>ない</rt></ruby>で「たった<ruby>一つ<rt>ひとつ</rt></ruby>」の<ruby>固有<rt>こゆう</rt></ruby>の<ruby>住所<rt>じゅうしょ</rt></ruby>です。<ruby>特定<rt>とくてい</rt></ruby>の<ruby>部品<rt>ぶひん</rt></ruby>をピンポイントで<ruby>動かす<rt>うごかす</rt></ruby>ときに<ruby>使います<rt>つかいます</rt></ruby>。</li>
+<li>class<ruby>属性<rt>ぞくせい</rt></ruby>： <ruby>複数<rt>ふくすう</rt></ruby>の<ruby>要素<rt>ようそ</rt></ruby>を「グループ」にするための<ruby>名前<rt>なまえ</rt></ruby>です。<ruby>複数<rt>ふくすう</rt></ruby>のボタンを<ruby>一斉<rt>いっせい</rt></ruby>にデザイン<ruby>変更<rt>へんこう</rt></ruby>するときなどに<ruby>使います<rt>つかいます</rt></ruby>。 この<ruby>使い分け<rt>つかいわけ</rt></ruby>を<ruby>誤る<rt>あやまる</rt></ruby>と、JavaScriptで「<ruby>誰<rt>だれ</rt></ruby>に<ruby>命令<rt>めいれい</rt></ruby>を<ruby>出す<rt>だす</rt></ruby>か」を<ruby>正しく<rt>ただしく</rt></ruby><ruby>指定<rt>してい</rt></ruby>できず、<ruby>意図<rt>いと</rt></ruby>しない<ruby>挙動<rt>きょどう</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となります。</li>
+</ul>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：ページの<ruby>骨組み<rt>ほねぐみ</rt></ruby>が<ruby>完成<rt>かんせい</rt></ruby>したら、<ruby>次<rt>つぎ</rt></ruby>はプログラムを<ruby>動かす<rt>うごかす</rt></ruby>ための「データ」の<ruby>扱い方<rt>あつかいかた</rt></ruby>に<ruby>焦点<rt>しょうてん</rt></ruby>を<ruby>当てる<rt>あてる</rt></ruby>。</p>
 <hr>
-<h3 id="1-結論二つの違いは見ている角度"><a class="header" href="#1-結論二つの違いは見ている角度">1. 結論：二つの違いは「見ている角度」</a></h3>
-<ul>
-<li><strong>オブジェクト (Object)：</strong> 広い意味での「データのかたまり」という <strong><ruby>仕組<rt>しく</rt></ruby>み</strong> のこと。</li>
-<li><strong>インスタンス (Instance)：</strong> 設計図（クラス）から生まれた、<strong>「具体的な一つひとつの実物」</strong> のこと。</li>
-</ul>
-<hr>
-<h3 id="2-留学生への例たとえ話タイ焼やきと料理"><a class="header" href="#2-留学生への例たとえ話タイ焼やきと料理">2. 留学生への<ruby>例<rt>たと</rt></ruby>え話：タイ<ruby>焼<rt>や</rt></ruby>きと料理</a></h3>
-<p>この2つの<ruby>例<rt>たと</rt></ruby>えが<ruby>最強<rt>さいきょう</rt></ruby>に分かりやすいです。</p>
-<h4 id="例れい①タイ焼やき"><a class="header" href="#例れい①タイ焼やき"><strong><ruby>例<rt>れい</rt></ruby>①：タイ<ruby>焼<rt>や</rt></ruby>き</strong></a></h4>
-<ul>
-<li><strong>クラス：</strong> タイ<ruby>焼<rt>や</rt></ruby>きの「型（かた）」です。</li>
-</ul>
-<p><img src="img/taiyaki_yousyoku.jpg" alt="たい焼きの型"></p>
-<ul>
-<li><strong>オブジェクト：</strong> 「タイ<ruby>焼<rt>や</rt></ruby>き」という食べ物の<ruby>概念<rt>がいねん</rt></ruby>です。</li>
-</ul>
-<p><img src="img/taiyaki_gainen2.jpg" alt="たい焼きの概念"></p>
-<ul>
-<li><strong>インスタンス：</strong> 今、あなたの手にある <strong>「あんこが入った、温かいこの1つのタイ<ruby>焼<rt>や</rt></ruby>き」</strong> のことです。</li>
-</ul>
-<p><img src="img/sweets_taiyaki1_tsubuan01.png" alt="たい焼き"></p>
-<h4 id="例れい②料理のレシピ"><a class="header" href="#例れい②料理のレシピ"><strong><ruby>例<rt>れい</rt></ruby>②：料理のレシピ</strong></a></h4>
-<ul>
-<li><strong>クラス：</strong> カレーの「レシピ」です。</li>
-<li><strong>オブジェクト：</strong> プログラミングの世界における「料理」というデータの形です。</li>
-<li><strong>インスタンス：</strong> 今日の晩ごはんに作った <strong>「お皿に乗っているカレー」</strong> のことです。</li>
-</ul>
-<hr>
-<h3 id="3-会話での使つかい分わけここが重要"><a class="header" href="#3-会話での使つかい分わけここが重要">3. 会話での<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け（ここが重要！）</a></h3>
-<p><strong>「いつ、どっちの言葉を使うか」</strong> を教えてあげましょう。</p>
-<ul>
-<li><strong>「オブジェクト」と言うとき：</strong>
-「JavaScriptは <strong>オブジェクト</strong> を使ってデータをまとめます」のように、プログラミングの <strong>ルールや構造</strong> について話すときに使います。</li>
-</ul>
-<blockquote>
-<p><strong>イメージ：</strong> 「人間」という生き物。</p>
-</blockquote>
-<ul>
-<li><strong>「インスタンス」と言うとき：</strong>
-「<code>new Student()</code> で、アリさんの <strong>インスタンス</strong> を作りました」のように、<strong>実際にメモリの中に作られた具体的なデータ</strong> を指すときに使います。</li>
-</ul>
-<blockquote>
-<p><strong>イメージ：</strong> 「アリさん」という特定の個人。</p>
-</blockquote>
-<h3 id="4-まとめテーブル"><a class="header" href="#4-まとめテーブル">4. まとめテーブル</a></h3>
+<h2 id="3-javascriptの変数へんすうとデータ型かた情報じょうほうの入れ物いれもの"><a class="header" href="#3-javascriptの変数へんすうとデータ型かた情報じょうほうの入れ物いれもの">3. JavaScriptの<ruby>変数<rt>へんすう</rt></ruby>とデータ<ruby>型<rt>かた</rt></ruby>：<ruby>情報<rt>じょうほう</rt></ruby>の「<ruby>入れ物<rt>いれもの</rt></ruby>」</a></h2>
+<p>プログラミングにおける「<ruby>変数<rt>へんすう</rt></ruby>」とは、データを<ruby>保存<rt>ほぞん</rt></ruby>しておくための<ruby>名前付き<rt>なまえつき</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>です。<ruby>新しい<rt>あたらしい</rt></ruby><ruby>言語<rt>げんご</rt></ruby>の<ruby>単語<rt>たんご</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>して<ruby>覚える<rt>おぼえる</rt></ruby>ように、データを<ruby>整理<rt>せいり</rt></ruby>・<ruby>再利用<rt>さいりよう</rt></ruby>することは<ruby>論理的<rt>ろんりてき</rt></ruby><ruby>思考<rt>しこう</rt></ruby>を<ruby>組み立てる<rt>くみたてる</rt></ruby>うえで<ruby>非常に<rt>ひじょうに</rt></ruby><ruby>重要<rt>じゅうよう</rt></ruby>です。</p>
+<p><ruby>変数<rt>へんすう</rt></ruby>と<ruby>型<rt>かた</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>比較ポイント</th><th>オブジェクト</th><th>インスタンス</th></tr>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>意味</strong></td><td>モノ、対象（たいしょう）</td><td>具体的な実<ruby>例<rt>れい</rt></ruby>、実物</td></tr>
-<tr><td><strong>英語のニュアンス</strong></td><td>“A thing” (モノ)</td><td>“An example / One of them” (そのうちの一つ)</td></tr>
-<tr><td><strong>いつ使う？</strong></td><td>データの形を説明するとき</td><td><code>new</code> で何かを作ったとき</td></tr>
-<tr><td><strong>数</strong></td><td>概念なので数えにくい</td><td>「1つのインスタンス」と数えられる</td></tr>
+<tr><td>変数</td><td>へんすう</td><td><ruby>数値<rt>すうち</rt></ruby>や<ruby>文字<rt>もじ</rt></ruby>などのデータを<ruby>記憶<rt>きおく</rt></ruby>させておくための「<ruby>名前付<rt>なまえつ</rt></ruby>きの<ruby>箱<rt>はこ</rt></ruby>」。</td></tr>
+<tr><td>代入</td><td>だいにゅう</td><td><ruby>箱<rt>はこ</rt></ruby>（<ruby>変数<rt>へんすう</rt></ruby>）にデータを<ruby>入<rt>い</rt></ruby>れること。=を<ruby>使用<rt>しよう</rt></ruby>する。</td></tr>
+<tr><td>宣言</td><td>せんげん</td><td><ruby>新<rt>あたら</rt></ruby>しい<ruby>変数<rt>へんすう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことをシステムに<ruby>通知<rt>つうち</rt></ruby>すること。</td></tr>
+<tr><td>初期化</td><td>しょきか</td><td><ruby>変数<rt>へんすう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ると<ruby>同時<rt>どうじ</rt></ruby>に、<ruby>最初<rt>さいしょ</rt></ruby>のデータを<ruby>入<rt>い</rt></ruby>れること。</td></tr>
+<tr><td>定数（const）</td><td>ていすう</td><td><ruby>一度<rt>いちど</rt></ruby>データを<ruby>入<rt>い</rt></ruby>れたら、<ruby>中身<rt>なかみ</rt></ruby>を<ruby>変更<rt>へんこう</rt></ruby>できない<ruby>箱<rt>はこ</rt></ruby>。</td></tr>
+<tr><td>文字列型</td><td>もじれつがた</td><td>テキストデータの<ruby>種類<rt>しゅるい</rt></ruby>。“などで<ruby>囲<rt>かこ</rt></ruby>んで<ruby>表現<rt>ひょうげん</rt></ruby>する。</td></tr>
+<tr><td>数値型</td><td>すうちがた</td><td><ruby>整数<rt>せいすう</rt></ruby>や<ruby>小数<rt>しょうすう</rt></ruby>などの<ruby>数字<rt>すうじ</rt></ruby>データの<ruby>種類<rt>しゅるい</rt></ruby>。</td></tr>
+<tr><td>論理型</td><td>ろんりがた</td><td>true（<ruby>真<rt>しん</rt></ruby>）か false（<ruby>偽<rt>ぎ</rt></ruby>）のみを<ruby>扱<rt>あつか</rt></ruby>うデータの<ruby>種類<rt>しゅるい</rt></ruby>。</td></tr>
+<tr><td>未定義型（undefined）</td><td>みていぎがた</td><td><ruby>変数<rt>へんすう</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>するが、<ruby>中身<rt>なかみ</rt></ruby>が<ruby>何<rt>なに</rt></ruby>も<ruby>入<rt>い</rt></ruby>っていない<ruby>状態<rt>じょうたい</rt></ruby>。</td></tr>
 </tbody>
 </table>
 </div>
+<p>プロフェッショナルな<ruby>知見<rt>ちけん</rt></ruby>：<ruby>型変換<rt>かたへんかん</rt></ruby>の<ruby>戦略的<rt>せんりゃくてき</rt></ruby><ruby>必要性<rt>ひつようせい</rt></ruby></p>
+<p>Webサイトの<ruby>入力<rt>にゅうりょく</rt></ruby>フォームから<ruby>受け取る<rt>うけとる</rt></ruby>データは、たとえ<ruby>数字<rt>すうじ</rt></ruby>であっても<ruby>最初<rt>さいしょ</rt></ruby>はすべて「<ruby>文字列<rt>もじれつ</rt></ruby>」として<ruby>届きます<rt>とどきます</rt></ruby>。このまま<ruby>計算<rt>けいさん</rt></ruby>しようとするとバグが<ruby>発生<rt>はっせい</rt></ruby>するため、<ruby>必ず<rt>かならず</rt></ruby>Number()やparseInt()を<ruby>使って<rt>つかって</rt></ruby>「<ruby>数値型<rt>すうちがた</rt></ruby>」に<ruby>変換<rt>へんかん</rt></ruby>しなければなりません。</p>
+<p>また、<ruby>初心者<rt>しょしんしゃ</rt></ruby>が<ruby>最も<rt>もっとも</rt></ruby><ruby>陥りやすい<rt>おちいりやすい</rt></ruby><ruby>罠<rt>わな</rt></ruby>が「<ruby>全角<rt>ぜんかく</rt></ruby>スペース」の<ruby>使用<rt>しよう</rt></ruby>です。コード<ruby>内<rt>ない</rt></ruby>に<ruby>全角<rt>ぜんかく</rt></ruby><ruby>文字<rt>もじ</rt></ruby>が<ruby>一つ<rt>ひとつ</rt></ruby><ruby>混ざる<rt>まざる</rt></ruby>だけで、プログラムは<ruby>沈黙<rt>ちんもく</rt></ruby>します。<ruby>必ず<rt>かならず</rt></ruby><ruby>半角英数字<rt>はんかくえいすうじ</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby>することを<ruby>徹底<rt>てってい</rt></ruby>してください。</p>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：データを<ruby>保持<rt>ほじ</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>学んだ<rt>まなんだ</rt></ruby><ruby>後<rt>あと</rt></ruby>は、それらのデータを<ruby>加工<rt>かこう</rt></ruby>し、<ruby>判断<rt>はんだん</rt></ruby>を<ruby>下す<rt>くだす</rt></ruby>ための「<ruby>道具<rt>どうぐ</rt></ruby>」について<ruby>学ぶ<rt>まなぶ</rt></ruby>。</p>
 <hr>
-<h3 id="-留学生へのアドバイス-2"><a class="header" href="#-留学生へのアドバイス-2">📝 留学生へのアドバイス</a></h3>
-<blockquote>
-<p>最初は全部 <strong>『オブジェクト』</strong> と呼んでいても間違いじゃありません。
-でも、<strong>『設計図から生まれた、本物のデータ』</strong> だということを<ruby>強調<rt>きょうちょう</rt></ruby>（きょうちょう）したいときに <strong>『インスタンス』</strong> という言葉を使うと、『お、この人はプログラミングを深く理解しているな！』と思ってもらえます！</p>
-</blockquote>
+<h2 id="4-演算子えんざんしと制御文せいぎょぶんプログラムの判断はんだんと流れながれ"><a class="header" href="#4-演算子えんざんしと制御文せいぎょぶんプログラムの判断はんだんと流れながれ">4. <ruby>演算子<rt>えんざんし</rt></ruby>と<ruby>制御文<rt>せいぎょぶん</rt></ruby>：プログラムの「<ruby>判断<rt>はんだん</rt></ruby>」と「<ruby>流れ<rt>ながれ</rt></ruby>」</a></h2>
+<p>「<ruby>演算子<rt>えんざんし</rt></ruby>」はデータを<ruby>加工<rt>かこう</rt></ruby>するための「<ruby>道具<rt>どうぐ</rt></ruby>」、「<ruby>制御文<rt>せいぎょぶん</rt></ruby>」はプログラムの「<ruby>脳<rt>のう</rt></ruby>」です。これらを<ruby>組み合わせる<rt>くみあわせる</rt></ruby>ことで、システムに<ruby>高度<rt>こうど</rt></ruby>な「<ruby>判断力<rt>はんだんりょく</rt></ruby>」が<ruby>備わります<rt>そなわります</rt></ruby>。</p>
+<p><ruby>演算<rt>えんざん</rt></ruby>と<ruby>制御<rt>せいぎょ</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td>演算子</td><td>えんざんし</td><td><ruby>計算<rt>けいさん</rt></ruby>や<ruby>比較<rt>ひかく</rt></ruby>など、データに<ruby>対<rt>たい</rt></ruby>して<ruby>処理<rt>しょり</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うための<ruby>記号<rt>きごう</rt></ruby>。</td></tr>
+<tr><td>算術演算子</td><td>さんじゅつえんざんし</td><td><ruby>足<rt>た</rt></ruby>し<ruby>算<rt>ざん</rt></ruby>や<ruby>引<rt>ひ</rt></ruby>き<ruby>算<rt>ざん</rt></ruby>など、<ruby>数学的<rt>すうがくてき</rt></ruby>な<ruby>計算<rt>けいさん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>記号<rt>きごう</rt></ruby>。</td></tr>
+<tr><td>比較演算子</td><td>ひかくえんざんし</td><td>2つのデータを<ruby>比<rt>くら</rt></ruby>べて、その<ruby>大小<rt>だいしょう</rt></ruby>や<ruby>一致<rt>いっち</rt></ruby>を<ruby>判断<rt>はんだん</rt></ruby>する<ruby>記号<rt>きごう</rt></ruby>。</td></tr>
+<tr><td>論理演算子</td><td>ろんりえんざんし</td><td>「かつ」や「または」など、<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせるための<ruby>記号<rt>きごう</rt></ruby>。</td></tr>
+<tr><td>条件分岐（if文）</td><td>じょうけんぶんき</td><td>「もし〜なら」という<ruby>条件<rt>じょうけん</rt></ruby>によって、<ruby>実行<rt>じっこう</rt></ruby>する<ruby>処理<rt>しょり</rt></ruby>を<ruby>分<rt>わ</rt></ruby>けること。</td></tr>
+<tr><td>ループ（繰り返し）</td><td>るーぷ</td><td><ruby>決<rt>き</rt></ruby>まった<ruby>回数<rt>かいすう</rt></ruby>や<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>達<rt>たっ</rt></ruby>するまで、<ruby>同<rt>おな</rt></ruby>じ<ruby>処理<rt>しょり</rt></ruby>を<ruby>自動的<rt>じどうてき</rt></ruby>に<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>すこと。</td></tr>
+<tr><td>無限ループ</td><td>むげんるーぷ</td><td><ruby>終了条件<rt>しゅうりょうじょうけん</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れ、プログラムが<ruby>永久<rt>えいきゅう</rt></ruby>に<ruby>止<rt>と</rt></ruby>まらなくなる<ruby>危険<rt>きけん</rt></ruby>な<ruby>状態<rt>じょうたい</rt></ruby>。</td></tr>
+</tbody>
+</table>
+</div>
+<p><ruby>厳格<rt>げんかく</rt></ruby>な<ruby>比較<rt>ひかく</rt></ruby>の<ruby>重要性<rt>じゅうようせい</rt></ruby></p>
+<p>JavaScriptには==（<ruby>等しい<rt>ひとしい</rt></ruby>）と===（<ruby>厳密<rt>げんみつ</rt></ruby>に<ruby>等しい<rt>ひとしい</rt></ruby>）がありますが、<ruby>私<rt>わたし</rt></ruby>のクラスでは<ruby>必ず<rt>かならず</rt></ruby>===を<ruby>使って<rt>つかって</rt></ruby>ください。==はデータの「<ruby>型<rt>かた</rt></ruby>」を<ruby>無視<rt>むし</rt></ruby>してあいまいに<ruby>比較<rt>ひかく</rt></ruby>するため、<ruby>予期<rt>よき</rt></ruby>せぬバグ（お<ruby>節介<rt>せっかい</rt></ruby>な<ruby>自動<rt>じどう</rt></ruby><ruby>変換<rt>へんかん</rt></ruby>）を<ruby>招きます<rt>まねきます</rt></ruby>。プロの<ruby>現場<rt>げんば</rt></ruby>で==を<ruby>使う<rt>つかう</rt></ruby>ことは、<ruby>論理的<rt>ろんりてき</rt></ruby>なミスと<ruby>見なされる<rt>みなされる</rt></ruby>こともあります。<ruby>常に<rt>つねに</rt></ruby><ruby>正確<rt>せいかく</rt></ruby>な<ruby>比較<rt>ひかく</rt></ruby>を<ruby>心がけて<rt>こころがけて</rt></ruby>ください。</p>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>流れ<rt>ながれ</rt></ruby>を<ruby>制御<rt>せいぎょ</rt></ruby>できるようになったら、<ruby>次<rt>つぎ</rt></ruby>はそれらを<ruby>再利用<rt>さいりよう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>な「セット」にする<ruby>技術<rt>ぎじゅつ</rt></ruby>へと<ruby>進む<rt>すすむ</rt></ruby>。</p>
 <hr>
-<p>いかがでしょうか？ 「実物（インスタンス）はオブジェクトの一種である」という関係性が伝われば<ruby>完璧<rt>かんぺき</rt></ruby>です。</p>
-<p><a href="javascript:history.back();">戻る</a></p>
+<h2 id="5-関数かんすうとスコープ処理しょりの共通化きょうつうかと有効範囲ゆうこうはんい"><a class="header" href="#5-関数かんすうとスコープ処理しょりの共通化きょうつうかと有効範囲ゆうこうはんい">5. <ruby>関数<rt>かんすう</rt></ruby>とスコープ：<ruby>処理<rt>しょり</rt></ruby>の「<ruby>共通化<rt>きょうつうか</rt></ruby>」と「<ruby>有効範囲<rt>ゆうこうはんい</rt></ruby>」</a></h2>
+<p>「<ruby>関数<rt>かんすう</rt></ruby>」は、<ruby>一連<rt>いちれん</rt></ruby>の<ruby>命令<rt>めいれい</rt></ruby>をひとまとめにした「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」のようなものです。<ruby>同じ<rt>おなじ</rt></ruby>コードを<ruby>何度<rt>なんど</rt></ruby>も<ruby>書く<rt>かく</rt></ruby><ruby>無駄<rt>むだ</rt></ruby>を<ruby>省き<rt>はぶき</rt></ruby>、<ruby>巨大<rt>きょだい</rt></ruby>なプログラムを<ruby>管理<rt>かんり</rt></ruby><ruby>可能<rt>かのう</rt></ruby>なサイズに<ruby>分割<rt>ぶんかつ</rt></ruby>する<ruby>戦略的<rt>せんりゃくてき</rt></ruby><ruby>意義<rt>いぎ</rt></ruby>があります。</p>
+<p><ruby>関数<rt>かんすう</rt></ruby>と<ruby>範囲<rt>はんい</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td>関数</td><td>かんすう</td><td><ruby>一連<rt>いちれん</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>をひとまとめにしたもの。<ruby>名前<rt>なまえ</rt></ruby>で<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>して<ruby>再利用<rt>さいりよう</rt></ruby>できる。</td></tr>
+<tr><td>引数</td><td>ひきすう</td><td><ruby>関数<rt>かんすう</rt></ruby>という「ミキサー」に<ruby>投入<rt>とうにゅう</rt></ruby>する、<ruby>外部<rt>がいぶ</rt></ruby>からの<ruby>材料<rt>ざいりょう</rt></ruby>（データ）。</td></tr>
+<tr><td>戻り値（return）</td><td>もどりち</td><td><ruby>関数<rt>かんすう</rt></ruby>が<ruby>仕事<rt>しごと</rt></ruby>を<ruby>終<rt>お</rt></ruby>えたあとに、<ruby>最後<rt>さいご</rt></ruby>に<ruby>返<rt>かえ</rt></ruby>してくれる<ruby>処理結果<rt>しょりけっか</rt></ruby>。</td></tr>
+<tr><td>定義</td><td>ていぎ</td><td><ruby>関数<rt>かんすう</rt></ruby>の「<ruby>名前<rt>なまえ</rt></ruby>」と「<ruby>中身<rt>なかみ</rt></ruby>（<ruby>処理<rt>しょり</rt></ruby>）」を<ruby>作<rt>つく</rt></ruby>ること。</td></tr>
+<tr><td>呼び出し</td><td>よびだし</td><td><ruby>定義<rt>ていぎ</rt></ruby>された<ruby>関数<rt>かんすう</rt></ruby>を、実際にプログラムの中で<ruby>実行<rt>じっこう</rt></ruby>させること。</td></tr>
+<tr><td>スコープ</td><td>すこーぷ</td><td><ruby>変数<rt>へんすう</rt></ruby>が<ruby>有効<rt>ゆうこう</rt></ruby>な<ruby>範囲<rt>はんい</rt></ruby>。データの<ruby>衝突<rt>しょうとつ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐための<ruby>重要<rt>じゅうよう</rt></ruby>なルール。</td></tr>
+<tr><td>アロー関数</td><td>あろーかんすう</td><td>=&gt;（<ruby>矢印<rt>やじるし</rt></ruby>）を<ruby>使<rt>つか</rt></ruby>って<ruby>簡潔<rt>かんけつ</rt></ruby>に<ruby>記述<rt>きじゅつ</rt></ruby>する、モダンな<ruby>関数<rt>かんすう</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>。</td></tr>
+<tr><td>コールバック関数</td><td>こーるばっくかんすう</td><td>別の<ruby>関数<rt>かんすう</rt></ruby>に「あとで<ruby>実行<rt>じっこう</rt></ruby>してね」と<ruby>渡<rt>わた</rt></ruby>しておくための「<ruby>指示書<rt>しじしょ</rt></ruby>」としての<ruby>関数<rt>かんすう</rt></ruby>。</td></tr>
+</tbody>
+</table>
+</div>
+<p>プロフェッショナルな<ruby>知見<rt>ちけん</rt></ruby>：スコープ<ruby>管理<rt>かんり</rt></ruby>の<ruby>鉄則<rt>てっそく</rt></ruby></p>
+<p><ruby>変数<rt>へんすう</rt></ruby>の<ruby>有効範囲<rt>ゆうこうはんい</rt></ruby>（スコープ）は「できるだけ<ruby>狭く<rt>せまく</rt></ruby><ruby>保つ<rt>たもつ</rt></ruby>」のが<ruby>鉄則<rt>てっそく</rt></ruby>です。</p>
+<ul>
+<li>グローバル<ruby>変数<rt>へんすう</rt></ruby>： 「<ruby>公園<rt>こうえん</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>」のようにどこからでも<ruby>見えます<rt>みえます</rt></ruby>が、<ruby>誰<rt>だれ</rt></ruby>でも<ruby>書き換えられる<rt>かきかえられる</rt></ruby>ため<ruby>危険<rt>きけん</rt></ruby>です。</li>
+<li>ローカル<ruby>変数<rt>へんすう</rt></ruby>： 「<ruby>自分<rt>じぶん</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>の<ruby>電気<rt>でんき</rt></ruby>」のように<ruby>特定<rt>とくてい</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby><ruby>内<rt>ない</rt></ruby>だけで<ruby>有効<rt>ゆうこう</rt></ruby>です。varの<ruby>使用<rt>しよう</rt></ruby>は<ruby>避け<rt>さけ</rt></ruby>、constやletによる<ruby>適切<rt>てきせつ</rt></ruby>なスコープ<ruby>管理<rt>かんり</rt></ruby>を<ruby>行う<rt>おこなう</rt></ruby>ことが、<ruby>安全<rt>あんぜん</rt></ruby>なコードへの<ruby>第一歩<rt>だいいっぽ</rt></ruby>となります。</li>
+</ul>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：プログラムの<ruby>内部構造<rt>ないぶこうぞう</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>学んだ<rt>まなんだ</rt></ruby>ので、JavaScriptが<ruby>操作<rt>そうさ</rt></ruby>する<ruby>対象<rt>たいしょう</rt></ruby>である「ブラウザの<ruby>世界<rt>せかい</rt></ruby>」を<ruby>紐解く<rt>ひもとく</rt></ruby>。</p>
+<hr>
+<h2 id="6-ブラウザぶらうざオブジェクトとdomwebページとの対話たいわ"><a class="header" href="#6-ブラウザぶらうざオブジェクトとdomwebページとの対話たいわ">6. <ruby>ブラウザ<rt>ぶらうざ</rt></ruby>オブジェクトとDOM：Webページとの<ruby>対話<rt>たいわ</rt></ruby></a></h2>
+<p>JavaScriptがWebページを<ruby>操作<rt>そうさ</rt></ruby>する<ruby>際<rt>さい</rt></ruby>、ブラウザ<ruby>全体<rt>ぜんたい</rt></ruby>を<ruby>管理<rt>かんり</rt></ruby>する「Window」を「<ruby>社長<rt>しゃちょう</rt></ruby>」、その<ruby>中<rt>なか</rt></ruby>にあるページの<ruby>内容<rt>ないよう</rt></ruby>「Document」を「<ruby>現場監督<rt>げんばかんとく</rt></ruby>」として<ruby>捉える<rt>とらえる</rt></ruby>と<ruby>体系的<rt>たいけいてき</rt></ruby>に<ruby>理解<rt>りかい</rt></ruby>できます。</p>
+<p><ruby>ブラウザ<rt>ぶらうざ</rt></ruby>とDOMに<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td>オブジェクト</td><td>おぶじぇくと</td><td><ruby>関連<rt>かんれん</rt></ruby>する「データ」と「<ruby>動作<rt>どうさ</rt></ruby>」をひとまとめにした便利な<ruby>道具箱<rt>どうぐばこ</rt></ruby>。</td></tr>
+<tr><td>プロパティ</td><td>ぷろぱてぃ</td><td><ruby>オブジェクト<rt>おぶじぇくと</rt></ruby>の「<ruby>特徴<rt>とくちょう</rt></ruby>」や「<ruby>状態<rt>じょうたい</rt></ruby>」を<ruby>表<rt>あらわ</rt></ruby>すデータの<ruby>断片<rt>だんぺん</rt></ruby>。</td></tr>
+<tr><td>メソッド</td><td>めそっど</td><td><ruby>オブジェクト<rt>おぶじぇくと</rt></ruby>が<ruby>持<rt>も</rt></ruby>っている「<ruby>自分自身<rt>じぶんじしん</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かすための<ruby>機能<rt>きのう</rt></ruby>」。</td></tr>
+<tr><td>BOM</td><td>びーおーえむ</td><td>ブラウザそのものの<ruby>機能<rt>きのう</rt></ruby>（アラートやURLの<ruby>移動<rt>いどう</rt></ruby>など）を<ruby>操作<rt>そうさ</rt></ruby>する仕組み。</td></tr>
+<tr><td>DOM</td><td>どむ</td><td>HTMLをプログラムから<ruby>操作<rt>そうさ</rt></ruby>し、<ruby>中身<rt>なかみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えるための仕組み。</td></tr>
+<tr><td>DOMツリー</td><td>どむつりー</td><td>HTMLの<ruby>階層構造<rt>かいそうこうぞう</rt></ruby>を「<ruby>木<rt>き</rt></ruby>」のような<ruby>親子関係<rt>おやこかんけい</rt></ruby>として<ruby>表現<rt>ひょうげん</rt></ruby>したもの。</td></tr>
+<tr><td>ノード</td><td>のーど</td><td>DOMツリーの<ruby>中<rt>なか</rt></ruby>にあるタグやテキストのひとつひとつの「<ruby>節<rt>ふし</rt></ruby>」。</td></tr>
+<tr><td>要素の取得</td><td>ようそのしゅとく</td><td>getElementById などを<ruby>使<rt>つか</rt></ruby>い、<ruby>木<rt>き</rt></ruby>の中から<ruby>標的<rt>ひょうてき</rt></ruby>となるパーツを<ruby>特定<rt>とくてい</rt></ruby>すること。</td></tr>
+</tbody>
+</table>
+</div>
+<p>プロの<ruby>視点<rt>してん</rt></ruby>：constとオブジェクトの<ruby>意外<rt>いがい</rt></ruby>な<ruby>関係<rt>かんけい</rt></ruby></p>
+<p>ここで<ruby>一つ<rt>ひとつ</rt></ruby>、<ruby>皆さん<rt>みなさん</rt></ruby>が<ruby>混乱<rt>こんらん</rt></ruby>しやすい「<ruby>罠<rt>わな</rt></ruby>」を<ruby>教えましょう<rt>おしえましょう</rt></ruby>。constで<ruby>宣言<rt>せんげん</rt></ruby>した「<ruby>箱<rt>はこ</rt></ruby>」そのものは<ruby>別<rt>べつ</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>に<ruby>取り替える<rt>とりかえる</rt></ruby>（<ruby>再代入<rt>さいだいにゅう</rt></ruby>する）ことはできません。しかし、<ruby>中身<rt>なかみ</rt></ruby>がオブジェクトであれば、<ruby>箱<rt>はこ</rt></ruby>の<ruby>蓋<rt>ふた</rt></ruby>を<ruby>開けて<rt>あけて</rt></ruby>「<ruby>中<rt>なか</rt></ruby>のデータ（プロパティ）」を<ruby>書き換える<rt>かきかえる</rt></ruby>ことは<ruby>可能<rt>かのう</rt></ruby>です。この「<ruby>名札<rt>なふだ</rt></ruby>は<ruby>固定<rt>こてい</rt></ruby>されているが、<ruby>中身<rt>なかみ</rt></ruby>は<ruby>変えられる<rt>かえられる</rt></ruby>」という<ruby>性質<rt>せいしつ</rt></ruby>は、<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>開発<rt>かいはつ</rt></ruby>で<ruby>非常に<rt>ひじょうに</rt></ruby>よく<ruby>使われます<rt>つかわれます</rt></ruby>。</p>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：<ruby>操作対象<rt>そうさたいしょう</rt></ruby>が<ruby>見つかったら<rt>みつかったら</rt></ruby>、<ruby>次<rt>つぎ</rt></ruby>はユーザーの<ruby>動き<rt>うごき</rt></ruby>に<ruby>反応<rt>はんのう</rt></ruby>するための「<ruby>仕掛け<rt>しかけ</rt></ruby>」について<ruby>理解<rt>りかい</rt></ruby>を<ruby>深める<rt>ふかめる</rt></ruby>。</p>
+<hr>
+<h2 id="7-イベントいべんとと非同期処理ひどうきしょりユーザー操作そうさへの反応はんのう"><a class="header" href="#7-イベントいべんとと非同期処理ひどうきしょりユーザー操作そうさへの反応はんのう">7. <ruby>イベント<rt>いべんと</rt></ruby>と<ruby>非同期処理<rt>ひどうきしょり</rt></ruby>：ユーザー<ruby>操作<rt>そうさ</rt></ruby>への<ruby>反応<rt>はんのう</rt></ruby></a></h2>
+<p>Webページ<ruby>上<rt>じょう</rt></ruby>で<ruby>起こる<rt>おこる</rt></ruby>「クリック」や「<ruby>入力<rt>にゅうりょく</rt></ruby>」などの<ruby>出来事<rt>できごと</rt></ruby>はすべて「<ruby>事件<rt>じけん</rt></ruby>（イベント）」です。これに<ruby>対して<rt>たいして</rt></ruby>「<ruby>予約<rt>よやく</rt></ruby>（リスナー）」をしておくことで、ユーザー<ruby>体験<rt>たいけん</rt></ruby>（UX）を<ruby>劇的<rt>げきてき</rt></ruby>に<ruby>向上<rt>こうじょう</rt></ruby>させることができます。</p>
+<p><ruby>イベント<rt>いべんと</rt></ruby>と<ruby>対話<rt>たいわ</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td>イベント</td><td>いべんと</td><td>クリックや<ruby>画面<rt>がめん</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みなど、<ruby>発生<rt>はっせい</rt></ruby>した「<ruby>出来事<rt>できごと</rt></ruby>」そのもの。</td></tr>
+<tr><td>イベントリスナー</td><td>いべんとりすなー</td><td>特定のイベントが<ruby>起<rt>お</rt></ruby>きるのを「<ruby>耳<rt>みみ</rt></ruby>をすませて<ruby>待<rt>ま</rt></ruby>つ」ための<ruby>監視予約<rt>かんしよやく</rt></ruby>。</td></tr>
+<tr><td>イベントオブジェクト</td><td>いべんとおぶじぇくと</td><td>「いつ・どこで・誰が」その<ruby>事件<rt>じけん</rt></ruby>を<ruby>起<rt>お</rt></ruby>こしたかの<ruby>詳細<rt>しょうさい</rt></ruby>が<ruby>詰<rt>つ</rt></ruby>まった<ruby>報告書<rt>報告書</rt></ruby>。</td></tr>
+<tr><td>タイマー</td><td>たいまー</td><td>「○<ruby>秒後<rt>びょうご</rt></ruby>に<ruby>実行<rt>じっこう</rt></ruby>」など、プログラムの<ruby>動<rt>うご</rt></ruby>く「<ruby>時間<rt>じかん</rt></ruby>」を<ruby>操<rt>あやつ</rt></ruby>るための<ruby>道具<rt>どうぐ</rt></ruby>。</td></tr>
+<tr><td>クッキー（Cookie）</td><td>くっきー</td><td>ユーザーがページを<ruby>離<rt>はな</rt></ruby>れても<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>するための、ブラウザの「<ruby>覚<rt>おぼ</rt></ruby>え<ruby>書<rt>が</rt></ruby>き」。</td></tr>
+</tbody>
+</table>
+</div>
+<p>addEventListener の<ruby>戦略的<rt>せんりゃくてき</rt></ruby><ruby>優位性<rt>ゆういせい</rt></ruby></p>
+<p>かつての<ruby>古い<rt>ふるい</rt></ruby><ruby>手法<rt>しゅほう</rt></ruby>（onclick<ruby>属性<rt>ぞくせい</rt></ruby>など）は、<ruby>一つ<rt>ひとつ</rt></ruby>の<ruby>要素<rt>ようそ</rt></ruby>に<ruby>一つ<rt>ひとつ</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>しか<ruby>持たせられません<rt>もたせられません</rt></ruby>でした。しかし<ruby>現代<rt>げんだい</rt></ruby>のaddEventListenerは、<ruby>一つ<rt>ひとつ</rt></ruby>のボタンに「<ruby>色<rt>いろ</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>」「データを<ruby>送る<rt>おくる</rt></ruby>」といった「<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>予約<rt>よやく</rt></ruby>」を<ruby>重ねる<rt>かさねる</rt></ruby>ことができます。この<ruby>柔軟<rt>じゅうなん</rt></ruby>な<ruby>設計<rt>せっけい</rt></ruby>こそが、<ruby>複雑<rt>ふくざつ</rt></ruby>なWebアプリを<ruby>支えています<rt>ささえています</rt></ruby>。</p>
+<p><ruby>連結<rt>れんけつ</rt></ruby>：<ruby>最後<rt>さいご</rt></ruby>に、これまで<ruby>学んだ<rt>まなんだ</rt></ruby><ruby>概念<rt>がいねん</rt></ruby>をより<ruby>高度<rt>こうど</rt></ruby>に<ruby>扱う<rt>あつかう</rt></ruby>ための<ruby>応用<rt>おうよう</rt></ruby><ruby>用語<rt>ようご</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する。</p>
+<hr>
+<h2 id="8-応用おうよう概念がいねんデータの高度こうどな加工かこうと正規表現せいきひょうげん"><a class="header" href="#8-応用おうよう概念がいねんデータの高度こうどな加工かこうと正規表現せいきひょうげん">8. <ruby>応用<rt>おうよう</rt></ruby><ruby>概念<rt>がいねん</rt></ruby>：データの<ruby>高度<rt>こうど</rt></ruby>な<ruby>加工<rt>かこう</rt></ruby>と<ruby>正規表現<rt>せいきひょうげん</rt></ruby></a></h2>
+<p>データを<ruby>自由自在<rt>じゆうじざい</rt></ruby>に<ruby>操る<rt>あやつる</rt></ruby>ためには、<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>並べる<rt>ならべる</rt></ruby>「<ruby>配列<rt>はいれつ</rt></ruby>」や、<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>パターン<rt>ぱたーん</rt></ruby>を<ruby>瞬時<rt>しゅんじ</rt></ruby>に<ruby>見つける<rt>みつける</rt></ruby>「<ruby>正規表現<rt>せいきひょうげん</rt></ruby>」の<ruby>習得<rt>しゅうとく</rt></ruby>が<ruby>不可欠<rt>ふかけつ</rt></ruby>です。</p>
+<p><ruby>応用<rt>おうよう</rt></ruby><ruby>用語<rt>ようご</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>よみがな</th><th><ruby>意味<rt>いみ</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td>配列</td><td>はいれつ</td><td>複数のデータを<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>並<rt>なら</rt></ruby>べて<ruby>一括管理<rt>いっかつかんり</rt></ruby>するための「リスト」。</td></tr>
+<tr><td>インデックス</td><td>いんでっくす</td><td><ruby>配列<rt>はいれつ</rt></ruby>のデータの<ruby>位置<rt>いち</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>す<ruby>番号<rt>ばんごう</rt></ruby>。プロの世界では必ず「0」から<ruby>始<rt>はじ</rt></ruby>まる。</td></tr>
+<tr><td>連想配列</td><td>れんそうはいれつ</td><td><ruby>番号<rt>ばんごう</rt></ruby>ではなく「<ruby>名前<rt>なまえ</rt></ruby>」でデータを<ruby>管理<rt>かんり</rt></ruby>するオブジェクトの<ruby>形態<rt>けいたい</rt></ruby>。</td></tr>
+<tr><td>正規表現（RegExp）</td><td>せいきひょうげん</td><td><ruby>特定<rt>とくてい</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>ではなく「<ruby>文字<rt>もじ</rt></ruby>の<ruby>並<rt>なら</rt></ruby>びのルール」を<ruby>指定<rt>してい</rt></ruby>する<ruby>高度<rt>こうど</rt></ruby>な<ruby>検索法<rt>けんさくほう</rt></ruby>。</td></tr>
+<tr><td>インスタンス</td><td>いんすたんす</td><td><ruby>設計図<rt>せっけいず</rt></ruby>から<ruby>生成<rt>せいせい</rt></ruby>された、<ruby>実際<rt>じっさい</rt></ruby>にメモリの<ruby>上<rt>うえ</rt></ruby>に<ruby>存在<rt>そんざい</rt></ruby>する「<ruby>実物<rt>じつぶつ</rt></ruby>」。</td></tr>
+</tbody>
+</table>
+</div>
+<p><ruby>総括<rt>そうかつ</rt></ruby>：<ruby>正規表現<rt>せいきひょうげん</rt></ruby>という「ガードマン」</p>
+<p><ruby>入力<rt>にゅうりょく</rt></ruby>チェック（バリデーション）において、<ruby>正規表現<rt>せいきひょうげん</rt></ruby>は<ruby>強力<rt>きょうりょく</rt></ruby>な「ガードマン」として<ruby>機能<rt>きのう</rt></ruby>します。<ruby>特に<rt>とくに</rt></ruby><ruby>留学生<rt>りゅうがくせい</rt></ruby>の<ruby>皆さん<rt>みなさん</rt></ruby>が<ruby>開発<rt>かいはつ</rt></ruby>する<ruby>多言語対応<rt>たげんごたいおう</rt></ruby>アプリでは、<ruby>全角<rt>ぜんかく</rt></ruby>・<ruby>半角<rt>はんかく</rt></ruby>の<ruby>混在<rt>こんざい</rt></ruby>やメールアドレスの<ruby>形式<rt>けいしき</rt></ruby>チェックなど、<ruby>人間<rt>にんげん</rt></ruby>では<ruby>見落としがち<rt>みおとしがち</rt></ruby>なミスを<ruby>瞬時<rt>しゅんじ</rt></ruby>に<ruby>排除<rt>はいじょ</rt></ruby>します。これがシステムの<ruby>信頼性<rt>しんらいせい</rt></ruby>を<ruby>守る<rt>まもる</rt></ruby><ruby>最後<rt>さいご</rt></ruby>の<ruby>砦<rt>とりで</rt></ruby>となるのです。</p>
+<p><ruby>結び<rt>むすび</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby></p>
+<p><ruby>本<rt>ほん</rt></ruby>ガイドで<ruby>紹介<rt>しょうかい</rt></ruby>した<ruby>用語<rt>ようご</rt></ruby>は、<ruby>世界中<rt>せかいじゅう</rt></ruby>のエンジニアが<ruby>会話<rt>かいわ</rt></ruby>で<ruby>使う<rt>つかう</rt></ruby>「<ruby>共通言語<rt>きょうつうげんご</rt></ruby>」です。<ruby>一つ<rt>ひとつ</rt></ruby><ruby>一つ<rt>ひとつ</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>を<ruby>自分<rt>じぶん</rt></ruby>の<ruby>血肉<rt>けつにく</rt></ruby>とすることで、<ruby>初めて<rt>はじめて</rt></ruby>プロの<ruby>入り口<rt>いりぐち</rt></ruby>に<ruby>立つ<rt>たつ</rt></ruby>ことができます。<ruby>学び<rt>まなび</rt></ruby>の<ruby>途中<rt>とちゅう</rt></ruby>でエラーに<ruby>遭遇<rt>そうぐう</rt></ruby>しても<ruby>恐れないで<rt>おそれないで</rt></ruby>ください。それはあなたが<ruby>成長<rt>せいちょう</rt></ruby>している<ruby>証拠<rt>しょうこ</rt></ruby>です。<ruby>皆さん<rt>みなさん</rt></ruby>のエンジニアとしての<ruby>輝かしい<rt>かがやかしい</rt></ruby><ruby>未来<rt>みらい</rt></ruby>を、<ruby>心から<rt>こころから</rt></ruby><ruby>応援<rt>おうえん</rt></ruby>しています！</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="関数かんすうもオブジェクトである"><a class="header" href="#関数かんすうもオブジェクトである"><ruby>関数<rt>かんすう</rt></ruby>もオブジェクトである</a></h1>
-<p>皆さんにとって、「<ruby>関数<rt>かんすう</rt></ruby>もオブジェクトである」という考え方は、JavaScriptの<ruby>壁<rt>かべ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つになるかもしれません。</p>
-<p>これを理解してもらうために、<strong>「<ruby>関数<rt>かんすう</rt></ruby>は『動くおもちゃ』が入った箱だ」</strong> という<ruby>例<rt>たと</rt></ruby>えを使って説明します。</p>
-<hr>
-<h2 id="javascriptの関数かんすうは持ち運べる箱"><a class="header" href="#javascriptの関数かんすうは持ち運べる箱">JavaScriptの<ruby>関数<rt>かんすう</rt></ruby>は「持ち運べる箱」</a></h2>
-<p>普通のプログラミング言語では、<ruby>関数<rt>かんすう</rt></ruby>は「命令」です。でも、JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も <strong>「オブジェクト（モノ）」</strong> です。</p>
-<p>箱の中に「仕事のやり<ruby>方<rt>かた</rt></ruby>」が書かれた紙が入っているイメージです。箱なので、人にあげたり、受け取ったりできます。これを <strong>「第一級<ruby>関数<rt>かんすう</rt></ruby>」</strong> と呼びます。</p>
-<hr>
-<h3 id="1-変数へんすうに代入だいにゅうできる箱に名前をつける"><a class="header" href="#1-変数へんすうに代入だいにゅうできる箱に名前をつける">1. <ruby>変数<rt>へんすう</rt></ruby>に<ruby>代入<rt>だいにゅう</rt></ruby>できる（箱に名前をつける）</a></h3>
-<p><ruby>関数<rt>かんすう</rt></ruby>という箱に、新しい名前をつけて別の場所に置くことができます。</p>
-<pre><code class="language-javascript">// 1. 「挨拶をする」という関数（かんすう）を作る
-const hello = function() {
-  console.log("こんにちは！");
-};
-
-// 2. helloという箱を、別の変数（へんすう）にコピーする
-const sayHello = hello;
-
-// 3. 新しい名前で実行できる
-sayHello(); // "こんにちは！"
-
-</code></pre>
-<hr>
-<h3 id="2-引数ひきすうにできる箱をプレゼントする"><a class="header" href="#2-引数ひきすうにできる箱をプレゼントする">2. <ruby>引数<rt>ひきすう</rt></ruby>にできる（箱をプレゼントする）</a></h3>
-<p><ruby>関数<rt>かんすう</rt></ruby>を、別の<ruby>関数<rt>かんすう</rt></ruby>に「材料」として渡すことができます。これを <strong>「コールバック<ruby>関数<rt>かんすう</rt></ruby>」</strong> と言います。</p>
-<blockquote>
-<p><strong>留学生への<ruby>例<rt>れい</rt></ruby>え：</strong>
-「料理ロボット」に、「切る」という仕事をプレゼントするようなものです。</p>
-</blockquote>
-<pre><code class="language-javascript">// 「実行ボタン」という関数（かんすう）
-function pushButton(task) {
-  console.log("ボタンを押しました。");
-  task(); // 渡された関数（かんすう）を実行する
-}
-
-const clean = function() {
-  console.log("掃除をします！");
-};
-
-// 掃除という箱を引数（ひきすう）として渡す
-pushButton(clean); 
-
-</code></pre>
-<hr>
-<h3 id="3-返り値にできる箱を作って返す"><a class="header" href="#3-返り値にできる箱を作って返す">3. 返り値にできる（箱を作って返す）</a></h3>
-<p><ruby>関数<rt>かんすう</rt></ruby>を実行した結果として、新しい「<ruby>関数<rt>かんすう</rt></ruby>の箱」をもらうことができます。</p>
-<blockquote>
-<p><strong>留学生への<ruby>例<rt>たと</rt></ruby>え：</strong>
-「おもちゃの工場」に頼んで、自分だけの「特別なおもちゃ（<ruby>関数<rt>かんすう</rt></ruby>）」を作ってもらうイメージです。</p>
-</blockquote>
-<pre><code class="language-javascript">function makeRobot(name) {
-  // 新しい関数（かんすう）を作って、外に返す
-  return function() {
-    console.log("私は" + name + "ロボットです。");
-  };
-}
-
-const dora = makeRobot("ドラ");
-dora(); // "私はドラロボットです。"
-
-</code></pre>
-<hr>
-<h3 id="留学生へのまとめ青空文庫形式"><a class="header" href="#留学生へのまとめ青空文庫形式">留学生へのまとめ（青空文庫形式）</a></h3>
-<blockquote>
-<p>JavaScriptでは、<ruby>関数<rt>かんすう</rt></ruby>は単なる「動き」ではありません。
-それは、名前をつけたり、誰かに渡したりできる <strong>「大切なモノ（オブジェクト）」</strong> です。</p>
-<ol>
-<li><ruby>変数<rt>へんすう</rt></ruby>への<ruby>代入<rt>だいにゅう</rt></ruby>： 箱を棚に置くこと。</li>
-<li><ruby>引数<rt>ひきすう</rt></ruby>： 箱を友達に貸してあげること。</li>
-<li>返り値： 箱を新しく作って届けてもらうこと。</li>
-</ol>
-<p>この「箱をやり取りする」という考え方ができるようになると、JavaScriptがもっと楽しくなりますよ！</p>
-</blockquote>
-<hr>
-<p>いかがでしょうか。<ruby>関数<rt>かんすう</rt></ruby>を「命令」ではなく「持ち運べるオブジェクト」として見せることがポイントです。</p>
+<h1 id="日本語キーボードの記号"><a class="header" href="#日本語キーボードの記号">日本語キーボードの記号</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="かっこの種類"><a class="header" href="#かっこの種類">かっこの種類</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>括弧の種類</th><th>日本語の呼び方</th><th>英語の呼び方</th></tr>
+</thead>
+<tbody>
+<tr><td><code>()</code></td><td>丸（まる）かっこ</td><td>parenthesis パーレンセシス<br> paren パーレン<br>round brackets</td></tr>
+<tr><td><code>[]</code></td><td>角（かく）かっこ</td><td>bracket ブラケット <br> square bracket</td></tr>
+<tr><td><code>{}</code></td><td>波（なみ）かっこ</td><td>brace ブレース<br> curly brace/curly bracket</td></tr>
+<tr><td><code>&lt;&gt;</code></td><td>山（やま）かっこ<br>小なり／大なり</td><td>angle bracket<br>less-than sign／greater-than sign</td></tr>
+</tbody>
+</table>
+</div>
+<p><a href="javascript:history.back();">戻る</a></p>
 
                     </main>
 
@@ -6568,22 +6385,6 @@ dora(); // "私はドラロボットです。"
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>

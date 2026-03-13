@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-97c29d7e.js";
+            window.path_to_searchindex_js = "searchindex-bda876df.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-8186ac84.js"></script>
+        <script src="toc-136672e9.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -175,16 +175,19 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="はじめてのjavascript"><a class="header" href="#はじめてのjavascript">はじめてのJavaScript</a></h1>
-<p><strong>留学生のためのJavaScript<ruby>入門<rt>にゅうもん</rt></ruby>：最初の<ruby>一歩<rt>いっぽ</rt></ruby>を始めよう</strong></p>
+<h2 id="留学生のためのjavascript入門にゅうもん最初の一歩いっぽを始めよう"><a class="header" href="#留学生のためのjavascript入門にゅうもん最初の一歩いっぽを始めよう">留学生のためのJavaScript<ruby>入門<rt>にゅうもん</rt></ruby>：最初の<ruby>一歩<rt>いっぽ</rt></ruby>を始めよう</a></h2>
 <p>日本でITを学ぶ留学生のみなさん、こんにちは。</p>
 <p>前の章ではウェブページの骨組みやデザインを決めるHTMLやCSSについて説明しました。</p>
 <p>この章ではいよいよ「初めてのJavaScript（ジャバスクリプト）」を書いていきます。</p>
-<p>皆さんは、前の章の最初に説明したイメージを覚えているでしょうか？</p>
+<p>JavaScriptは</p>
 <ul>
-<li><strong>ウェブページの中には、たくさんのオブジェクトと呼ばれるものがいて、JavaScriptを使って、彼らに命令すれば、仕事をしてくれるらしい</strong></li>
+<li>「何が起きたら」（どのイベントに反応させるか？）</li>
+<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
+<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
 </ul>
-<p>JavaScriptは「誰が」「何をするか」を指示するマニュアルです。</p>
-<p>ここでは、「誰が」についての詳しい説明は省略して、まず　<strong>「何をするか」を命令する方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
+<p>を書くものです。</p>
+<p>が、すべてを一度に学ぶことはできません。</p>
+<p>ここでは、「何が起きたら」「誰に」についての詳しい説明は省略して、まず　<strong>「どういう仕事をさせるか？」を書く方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
 <p>プログラミングは、最初は<ruby>難<rt>むずか</rt></ruby>しく感じるかもしれません。でも、ルールを知れば、自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りにウェブページを動かせる「<ruby>魔法<rt>まほう</rt></ruby>」のような技術です。</p>
 <hr>
 <h2 id="i-初めてのプログラムhello-world-とポップアップ"><a class="header" href="#i-初めてのプログラムhello-world-とポップアップ">I. 初めてのプログラム：Hello World! とポップアップ</a></h2>
@@ -397,22 +400,6 @@
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
