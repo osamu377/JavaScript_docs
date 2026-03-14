@@ -1,6 +1,8 @@
 # I. はじめてのウェブサイト
 
-## 1. はじめに：ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へようこそ
+## 1. はじめに
+
+**ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へようこそ**
 
 みなさん、こんにちは！ ウェブサイトを<ruby>作<rt>つく</rt></ruby>ってみたいと<ruby>思<rt>おも</rt></ruby>ったことはありますか？ <ruby>今<rt>いま</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>では、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>えや<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えるために、ウェブサイトを<ruby>作<rt>つく</rt></ruby>る<ruby>技術<rt>ぎじゅつ</rt></ruby>はとても<ruby>大<rt>おお</rt></ruby>きな<ruby>力<rt>ちから</rt></ruby>になります。
 
@@ -15,11 +17,11 @@
 > [!note]
 > この<ruby>資料<rt>しりょう</rt></ruby>はMDNの<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website">「Your first website」</a>をやさしい<ruby>日本語<rt>にほんご</rt></ruby>にしたものです。
 
+***
 
---------------------------------------------------------------------------------
+## 2. <ruby>準備<rt>じゅんび</rt></ruby>するもの
 
-
-## 2. <ruby>準備<rt>じゅんび</rt></ruby>するもの：スタートラインに<ruby>立<rt>た</rt></ruby>つ
+**スタートラインに<ruby>立<rt>た</rt></ruby>つ**
 
 <ruby>実際<rt>じっさい</rt></ruby>にコード（コンピュータへの<ruby>命令<rt>めいれい</rt></ruby>）を<ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>める<ruby>前<rt>まえ</rt></ruby>に、<ruby>自分<rt>じぶん</rt></ruby>のコンピュータで<ruby>作業<rt>さぎょう</rt></ruby>ができる<ruby>準備<rt>じゅんび</rt></ruby>をすることが<ruby>大切<rt>たいせつ</rt></ruby>です。これを「<ruby>環境<rt>かんきょう</rt></ruby><ruby>構築<rt>こうちく</rt></ruby> / パソコンでサイトを<ruby>作<rt>つく</rt></ruby>るための<ruby>準備<rt>じゅんび</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>びます。
 
@@ -39,11 +41,11 @@
 
 <ruby>道具<rt>どうぐ</rt></ruby>がそろったら、<ruby>次<rt>つぎ</rt></ruby>は「どんなサイトを<ruby>作<rt>つく</rt></ruby>るか」という<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるステップです。
 
+***
 
---------------------------------------------------------------------------------
+## 3. <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる
 
-
-## 3. <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる：サイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を<ruby>決<rt>き</rt></ruby>める
+**サイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を<ruby>決<rt>き</rt></ruby>める**
 
 いきなりコードを<ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めるのは、<ruby>設計図<rt>せっけいず</rt></ruby>なしで<ruby>家<rt>いえ</rt></ruby>を<ruby>建<rt>た</rt></ruby>てるようなものです。まずは「<ruby>計画<rt>けいかく</rt></ruby>」から<ruby>始<rt>はじ</rt></ruby>めましょう。<ruby>最初<rt>さいしょ</rt></ruby>にしっかり<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てることで、<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>迷<rt>まよ</rt></ruby>わなくなり、<ruby>結果<rt>けっか</rt></ruby>として「<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>整理<rt>せいり</rt></ruby>された<ruby>見<rt>み</rt></ruby>やすいサイト」を<ruby>作<rt>つく</rt></ruby>ることができます。
 
@@ -58,11 +60,11 @@
 > <ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>: <ruby>外<rt>そと</rt></ruby>から<ruby>見<rt>み</rt></ruby>た<ruby>物事<rt>ものごと</rt></ruby>のありさま 
 > （<ruby>例<rt>れい</rt></ruby> その<ruby>車<rt>くるま</rt></ruby>は **<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>** は<ruby>美<rt>うつく</rt></ruby>しいが<ruby>中身<rt>なかみ</rt></ruby>は<ruby>壊<rt>こわ</rt></ruby>れている）
 
+***
 
---------------------------------------------------------------------------------
+## 4. サイトの「3つの<ruby>要素<rt>ようそ</rt></ruby>」
 
-
-## 4. サイトの「3つの<ruby>要素<rt>ようそ</rt></ruby>」：HTML、CSS、JavaScript
+**HTML、CSS、JavaScript**
 
 ウェブサイトは、<ruby>主<rt>おも</rt></ruby>に3つの<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わさってできています。これを「<ruby>家<rt>いえ</rt></ruby>づくり」に<ruby>例<rt>たと</rt></ruby>えて<ruby>見<rt>み</rt></ruby>てみましょう。
 
@@ -85,12 +87,11 @@
 > [!note]
 > <ruby>画像<rt>がぞう</rt></ruby>：<ruby>写真<rt>しゃしん</rt></ruby>や<ruby>絵<rt>え</rt></ruby>など
 
+***
 
+## 5. <ruby>世界<rt>せかい</rt></ruby>へ<ruby>公開<rt>こうかい</rt></ruby>する
 
---------------------------------------------------------------------------------
-
-
-## 5. <ruby>世界<rt>せかい</rt></ruby>へ<ruby>公開<rt>こうかい</rt></ruby>する：パブリッシング
+**パブリッシング**
 
 <ruby>自分<rt>じぶん</rt></ruby>のパソコンで<ruby>作<rt>つく</rt></ruby>ったファイルは、そのままでは<ruby>自分<rt>じぶん</rt></ruby>にしか<ruby>見<rt>み</rt></ruby>ることができません。これをインターネット<ruby>上<rt>じょう</rt></ruby>にアップロードして、<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>誰<rt>だれ</rt></ruby>でも<ruby>見<rt>み</rt></ruby>られる<ruby>状態<rt>じょうたい</rt></ruby>にすることを「<ruby>公開<rt>こうかい</rt></ruby>（パブリッシング）」と<ruby>言<rt>い</rt></ruby>います。
 
@@ -103,8 +104,7 @@
 > [!note]
 > <ruby>授業<rt>じゅぎょう</rt></ruby>では、このステップは<ruby>実施<rt>じっし</rt></ruby>しません。<ruby>興味<rt>きょうみ</rt></ruby>のある<ruby>方<rt>かた</rt></ruby>は、<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">ここをクリック</a>してMDNの<ruby>関連<rt>かんれん</rt></ruby>サイトを<ruby>参照<rt>さんしょう</rt></ruby>してください。
 
---------------------------------------------------------------------------------
-
+***
 
 ## 6. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
 

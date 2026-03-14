@@ -5,7 +5,7 @@
 
 このガイドでは、プログラミングが<ruby>初<rt>はじ</rt></ruby>めての<ruby>人<rt>ひと</rt></ruby>や、<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>中の<ruby>留学生<rt>りゅうがくせい</rt></ruby>にも<ruby>分<rt>わ</rt></ruby>かりやすく、JavaScriptの<ruby>基本<rt>きほん</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>します。
 
---------------------------------------------------------------------------------
+***
 
 ## 1. はじめに：JavaScriptとは<ruby>何<rt>なに</rt></ruby>か
 
@@ -24,7 +24,7 @@ JavaScriptを<ruby>使<rt>つか</rt></ruby>って、<ruby>以<rt>い</rt></ruby
 * デザインを<ruby>変<rt>か</rt></ruby>える： スタイル（<ruby>色<rt>いろ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きさ）を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えます。
 * アニメーション： <ruby>画像<rt>がぞう</rt></ruby>や<ruby>文字<rt>もじ</rt></ruby>をスムーズに<ruby>動<rt>うご</rt></ruby>かします。
 
---------------------------------------------------------------------------------
+***
 
 ## 2. プログラミングの「<ruby>基本<rt>きほん</rt></ruby>の<ruby>道具箱<rt>どうぐばこ</rt></ruby>」
 
@@ -35,7 +35,7 @@ JavaScriptを<ruby>使<rt>つか</rt></ruby>って、<ruby>以<rt>い</rt></ruby
 3. <ruby>条件分岐<rt>じょうけんぶんき</rt></ruby> (Conditionals)： 「もし〜ならA、そうでなければB」。
 4. イベント (Events)： 「クリックされた」などの<ruby>動作<rt>どうさ</rt></ruby>のきっかけ。
 
---------------------------------------------------------------------------------
+***
 
 ## 3. <ruby>実践<rt>じっせん</rt></ruby>：ウェブサイトにJavaScriptを<ruby>入<rt>い</rt></ruby>れる
 
@@ -64,7 +64,7 @@ myHeading.textContent = 'Hello world!';
 
 ヒント： `//` で<ruby>書<rt>か</rt></ruby>いた<ruby>行<rt>ぎょう</rt></ruby>はコメントとして<ruby>無視<rt>むし</rt></ruby>されます。
 
---------------------------------------------------------------------------------
+***
 
 ## 4. <ruby>応用<rt>おうよう</rt></ruby>：<ruby>画像<rt>がぞう</rt></ruby>チェンジャーと<ruby>条件分岐<rt>じょうけんぶんき</rt></ruby>
 
@@ -97,7 +97,7 @@ myImage.onclick = function() {
 * setAttribute： src を書き換える  
 * if...else： <ruby>条件<rt>じょうけん</rt></ruby>で<ruby>処理<rt>しょり</rt></ruby>を切り替え
 
---------------------------------------------------------------------------------
+***
 
 ## 6. <ruby>まとめ<rt>まとめ</rt></ruby>と<ruby>次<rt>つぎ</rt></ruby>のステップ
 
