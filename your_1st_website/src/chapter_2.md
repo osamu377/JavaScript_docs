@@ -6,7 +6,9 @@
 
 ***
 
-## 1. はじめに：なぜ「<ruby>計画<rt>けいかく</rt></ruby>」が<ruby>大切<rt>たいせつ</rt></ruby>なのか
+## 1. はじめに
+
+**なぜ「<ruby>計画<rt>けいかく</rt></ruby>」が<ruby>大切<rt>たいせつ</rt></ruby>なのか**
 
 <ruby>家<rt>いえ</rt></ruby>を<ruby>建<rt>た</rt></ruby>てるときに「<ruby>設計図<rt>せっけいず</rt></ruby>」が<ruby>必要<rt>ひつよう</rt></ruby>なように、ウェブサイトにも<ruby>計画<rt>けいかく</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。コードを<ruby>書<rt>か</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるのには、<ruby>大<rt>おお</rt></ruby>きな<ruby>理由<rt>りゆう</rt></ruby>があります。
 
@@ -38,7 +40,9 @@
 
 ***
 
-## 3. デザインのスケッチ：<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージを<ruby>作<rt>つく</rt></ruby>る
+## 3. デザインのスケッチ
+
+**<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージを<ruby>作<rt>つく</rt></ruby>る**
 
 ペンと<ruby>紙<rt>かみ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、サイトの<ruby>形<rt>かたち</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>描<rt>えが</rt></ruby>いてみましょう。これを「スケッチ」と<ruby>言<rt>い</rt></ruby>います。
 
@@ -68,7 +72,9 @@
 
 ***
 
-## 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>：ルールを<ruby>守<rt>まも</rt></ruby>って<ruby>探<rt>さが</rt></ruby>す<ruby>方法<rt>ほうほう</rt></ruby>
+## 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>
+
+**ルールを<ruby>守<rt>まも</rt></ruby>って<ruby>探<rt>さが</rt></ruby>す<ruby>方法<rt>ほうほう</rt></ruby>**
 
 インターネットにある<ruby>画像<rt>がぞう</rt></ruby>には「<ruby>持<rt>も</rt></ruby>ち<ruby>主<rt>ぬし</rt></ruby>」があります。これを **<ruby>著作権<rt>ちょさくけん</rt></ruby>（コピーライト）** と<ruby>言<rt>い</rt></ruby>います。<ruby>勝手<rt>かって</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うと<ruby>法律<rt>ほうりつ</rt></ruby>のトラブルになることがあるので、<ruby>注意<rt>ちゅうい</rt></ruby>してください。
 
