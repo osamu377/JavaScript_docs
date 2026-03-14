@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>New演算子 - 留学生のためのJavaScript学習ガイド</title>
+        <title>JavaScriptの記述ルール - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,117 +174,110 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="new演算えんざん子"><a class="header" href="#new演算えんざん子">new<ruby>演算<rt>えんざん</rt></ruby>子</a></h1>
-<p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
-これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す<ruby>魔法<rt>まほう</rt></ruby>の<ruby>呪文<rt>じゅもん</rt></ruby>**です。</p>
-<p>留学生の方には、<strong>「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ<ruby>納得<rt>なっとく</rt></ruby>してもらえます！</p>
-<hr>
-<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「<ruby>実体<rt>じったい</rt></ruby>を作る」もの</a></h2>
-<p>プログラミングの世界には、<strong>「<ruby>設計図<rt>せっけいず</rt></ruby>」</strong> と、その設計図から作られた <strong>「本物」</strong> の2つがあります。</p>
+                        <h1 id="-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ"><a class="header" href="#-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ">🧠 JavaScriptの<ruby>記述<rt>きじゅつ</rt></ruby>ルール（<ruby>初心者<rt>しょしんしゃ</rt></ruby><ruby>向け<rt>むけ</rt></ruby>まとめ）</a></h1>
+<h2 id="1-文ぶんの終わりおわりにはセミコロンをつける"><a class="header" href="#1-文ぶんの終わりおわりにはセミコロンをつける">1. <ruby>文<rt>ぶん</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にはセミコロン（<code>;</code>）をつける</a></h2>
 <ul>
-<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「<ruby>鉄板<rt>てっぱん</rt></ruby>」です。これだけでは食べられません。</li>
-<li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい<ruby>焼<rt>や</rt></ruby>き」です。</li>
+<li><ruby>命令<rt>めいれい</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にセミコロンをつけることで、コードの<ruby>区切り<rt>くぎり</rt></ruby>が<ruby>明確<rt>めいかく</rt></ruby>になります。</li>
 </ul>
-<pre><code class="language-javascript">// Date という「時計の設計図」を使って、
-// new で「今動いている本物の時計」を新しく作る
-const myClock = new Date();
-
+<pre><code class="language-javascript">let name = "Taro";
 </code></pre>
 <hr>
-<h2 id="ii-なぜ-new-が必要なの"><a class="header" href="#ii-なぜ-new-が必要なの">II. なぜ <code>new</code> が必要なの？</a></h2>
-<p><ruby>例<rt>たと</rt></ruby>えば、SNSの「ユーザー」というデータを作るとしましょう。
-全員の情報をバラバラに作るのは大変ですが、<code>new</code> を使えば同じ形のデータをいくつでも簡単に作れます。</p>
-<pre><code class="language-javascript">// 1. ユーザーの「設計図（型）」を作る
-function User(name) {
-  this.name = name;
-  this.sayHi = function() {
-    console.log("こんにちは、" + this.name + "です！");
-  };
+<h2 id="2-変数へんすうの宣言せんげんには-let-や-const-を使うつかう"><a class="header" href="#2-変数へんすうの宣言せんげんには-let-や-const-を使うつかう">2. <ruby>変数<rt>へんすう</rt></ruby>の<ruby>宣言<rt>せんげん</rt></ruby>には <code>let</code> や <code>const</code> を<ruby>使う<rt>つかう</rt></ruby></a></h2>
+<ul>
+<li><code>let</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>な<ruby>変数<rt>へんすう</rt></ruby></li>
+<li><code>const</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>不可<rt>ふか</rt></ruby>の<ruby>定数<rt>ていすう</rt></ruby></li>
+</ul>
+<pre><code class="language-javascript">let age = 20;
+const birthYear = 2005;
+</code></pre>
+<hr>
+<h2 id="3-文字列もじれつは---または---で囲むかこむ"><a class="header" href="#3-文字列もじれつは---または---で囲むかこむ">3. <ruby>文字列<rt>もじれつ</rt></ruby>は <code>" "</code> または <code>' '</code> で<ruby>囲む<rt>かこむ</rt></ruby></a></h2>
+<ul>
+<li>どちらでもOKですが、<ruby>統一<rt>とういつ</rt></ruby>して<ruby>使う<rt>つかう</rt></ruby>のが<ruby>良い<rt>よい</rt></ruby><ruby>習慣<rt>しゅうかん</rt></ruby>です。</li>
+</ul>
+<pre><code class="language-javascript">let greeting = "こんにちは";
+</code></pre>
+<hr>
+<h2 id="4-インデント字下げじさげでコードを見やすくみやすくする"><a class="header" href="#4-インデント字下げじさげでコードを見やすくみやすくする">4. インデント（<ruby>字下げ<rt>じさげ</rt></ruby>）でコードを<ruby>見やすく<rt>みやすく</rt></ruby>する</a></h2>
+<ul>
+<li><ruby>通常<rt>つうじょう</rt></ruby>はスペース2つまたは4つで<ruby>揃えます<rt>そろえます</rt></ruby>。</li>
+</ul>
+<pre><code class="language-javascript">function sayHello() {
+  console.log("こんにちは！");
 }
-
-// 2. new を使って、本物のユーザーをどんどん作る
-const user1 = new User("マリア");
-const user2 = new User("ジョン");
-
-user1.sayHi(); // 「こんにちは、マリアです！」
-user2.sayHi(); // 「こんにちは、ジョンです！」
-
 </code></pre>
+<hr>
+<h2 id="5-コメントを使ってつかって説明せつめいを書くかく"><a class="header" href="#5-コメントを使ってつかって説明せつめいを書くかく">5. コメントを<ruby>使って<rt>つかって</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>を<ruby>書く<rt>かく</rt></ruby></a></h2>
 <ul>
-<li><code>User</code> はただの設計図です。</li>
-<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という<ruby>実体<rt>じったい</rt></ruby></strong> が誕生します。</li>
+<li><code>//</code> を<ruby>使って<rt>つかって</rt></ruby>コードの<ruby>説明<rt>せつめい</rt></ruby>を<ruby>記述<rt>きじゅつ</rt></ruby>できます。</li>
 </ul>
+<pre><code class="language-javascript">// これは挨拶を表示する関数です
+function sayHello() {
+  console.log("こんにちは！");
+}
+</code></pre>
 <hr>
-<h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
-<p>留学生に教えるとき、<code>new</code> が<ruby>裏側<rt>うらがわ</rt></ruby>でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
-<ol>
-<li><strong>新しい空（から）の箱</strong> を作る。</li>
-<li>その箱に、名前や中身を <strong>コピー</strong> して入れる。</li>
-<li>完成した箱を <strong>「はい、どうぞ！」と渡す（return）</strong>。</li>
-</ol>
-<hr>
-<h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
-<p>ここが一番のポイントです。JavaScriptには2つのパターンがあります。</p>
+<h2 id="6-命名めいめいはわかりやすく英語えいごで書くかく"><a class="header" href="#6-命名めいめいはわかりやすく英語えいごで書くかく">6. <ruby>命名<rt>めいめい</rt></ruby>はわかりやすく、<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby></a></h2>
 <ul>
-<li>
-<p><strong><code>new</code> が必要なもの（重いもの・複雑なもの）</strong></p>
-</li>
-<li>
-<p><code>new Date()</code> ：日付</p>
-</li>
-<li>
-<p><code>new User()</code> ：自分で作った特別な型</p>
-</li>
-<li>
-<p><strong><code>new</code> がいらないもの（軽くてシンプルなもの）</strong></p>
-</li>
-<li>
-<p><code>"Hello"</code> ：文字列（String型）</p>
-</li>
-<li>
-<p><code>123</code> ：数字（Number型）</p>
-</li>
-<li>
-<p><code>true</code> ：<ruby>真偽<rt>しんぎ</rt></ruby>値（Boolean型）</p>
-</li>
+<li><ruby>変数<rt>へんすう</rt></ruby>や<ruby>関数名<rt>かんすうめい</rt></ruby>は<ruby>意味<rt>いみ</rt></ruby>のある<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby>のが<ruby>一般的<rt>いっぱんてき</rt></ruby>です。</li>
 </ul>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p><strong>留学生へのアドバイス：</strong>
-「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong> んだよ！」と教えてあげてください。</p>
-</blockquote>
+<pre><code class="language-javascript">let userName = "Taro";
+function showMessage() {
+  console.log("ようこそ！");
+}
+</code></pre>
 <hr>
-<h2 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h2>
+<h2 id="7-大文字おおもじと小文字こもじは区別くべつされる"><a class="header" href="#7-大文字おおもじと小文字こもじは区別くべつされる">7. <ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>は<ruby>区別<rt>くべつ</rt></ruby>される</a></h2>
+<ul>
+<li><code>Name</code> と <code>name</code> は<ruby>別<rt>べつ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>として<ruby>扱われます<rt>あつかわれます</rt></ruby>。</li>
+</ul>
+<pre><code class="language-javascript">let name = "Taro";
+let Name = "Hanako";  // ← 別の変数
+</code></pre>
+<hr>
+<h2 id="8-文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする"><a class="header" href="#8-文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする">8. <ruby>文字列<rt>もじれつ</rt></ruby>やコメント<ruby>以外<rt>いがい</rt></ruby>は<ruby>半角文字<rt>はんかくもじ</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby>する</a></h2>
+<ul>
+<li>JavaScriptのコードは<ruby>基本的<rt>きほんてき</rt></ruby>にすべて<ruby>半角英数字<rt>はんかくえいすうじ</rt></ruby>で<ruby>書きます<rt>かきます</rt></ruby>。</li>
+<li><code>"こんにちは"</code> や <code>// コメント</code> の<ruby>中<rt>なか</rt></ruby>は<ruby>全角<rt>ぜんかく</rt></ruby>でもOKですが、それ<ruby>以外<rt>いがい</rt></ruby>は<ruby>全角文字<rt>ぜんかくもじ</rt></ruby>を<ruby>使わない<rt>つかわない</rt></ruby>ように<ruby>注意<rt>ちゅうい</rt></ruby>しましょう。</li>
+</ul>
+<p>❌ ダメな<ruby>例<rt>れい</rt></ruby>（<ruby>全角<rt>ぜんかく</rt></ruby>スペースや<ruby>全角記号<rt>ぜんかくきごう</rt></ruby>）：</p>
+<pre><code class="language-javascript">ｌｅｔ　name＝"Taro";  // ← 全角が混ざっていてエラーになる可能性あり
+</code></pre>
+<p>✅ <ruby>正しい<rt>ただしい</rt></ruby><ruby>例<rt>れい</rt></ruby>（すべて<ruby>半角<rt>はんかく</rt></ruby>）：</p>
+<pre><code class="language-javascript">let name = "Taro";
+</code></pre>
+<hr>
+<h2 id="-まとめ表ひょう"><a class="header" href="#-まとめ表ひょう">✅ まとめ<ruby>表<rt>ひょう</rt></ruby></a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>言葉</th><th>意味</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
+<tr><th><ruby>項目<rt>こうもく</rt></ruby></th><th><ruby>内容<rt>ないよう</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>設計図（Class）</strong></td><td>データの形を決めたもの</td><td>たい<ruby>焼<rt>や</rt></ruby>きの型</td></tr>
-<tr><td><strong><code>new</code></strong></td><td><ruby>実体<rt>じったい</rt></ruby>を作るためのコマンド</td><td>記事を流し込む動作</td></tr>
-<tr><td><strong><ruby>実体<rt>じったい</rt></ruby>（Instance）</strong></td><td><code>new</code> で作られた本物のデータ</td><td><ruby>焼<rt>や</rt></ruby>きたてのたい<ruby>焼<rt>や</rt></ruby>き</td></tr>
+<tr><td>セミコロン</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>に<ruby>付ける<rt>つける</rt></ruby></td></tr>
+<tr><td><ruby>変数宣言<rt>へんすうせんげん</rt></ruby></td><td><code>let</code> や <code>const</code> を<ruby>使う<rt>つかう</rt></ruby></td></tr>
+<tr><td><ruby>文字列<rt>もじれつ</rt></ruby></td><td><code>" "</code> または <code>' '</code> で<ruby>囲む<rt>かこむ</rt></ruby></td></tr>
+<tr><td>インデント</td><td><ruby>見やすく<rt>みやすく</rt></ruby>するために<ruby>字下げ<rt>じさげ</rt></ruby></td></tr>
+<tr><td>コメント</td><td><code>//</code> で<ruby>説明<rt>せつめい</rt></ruby>を<ruby>書く<rt>かく</rt></ruby></td></tr>
+<tr><td><ruby>命名<rt>めいめい</rt></ruby></td><td><ruby>意味<rt>いみ</rt></ruby>のある<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby></td></tr>
+<tr><td><ruby>大文字小文字<rt>おおもじこもじ</rt></ruby></td><td><ruby>区別<rt>くべつ</rt></ruby>される</td></tr>
+<tr><td><ruby>半角文字<rt>はんかくもじ</rt></ruby></td><td><ruby>文字列<rt>もじれつ</rt></ruby>・コメント<ruby>以外<rt>いがい</rt></ruby>は<ruby>半角<rt>はんかく</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby></td></tr>
 </tbody>
 </table>
 </div>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「new」のイメージ</strong>
-英語の「New（新しい）」そのままです。「新しい<ruby>実体<rt>じったい</rt></ruby>（じったい）を1つ、今ここで生み出すぞ！」という気持ちで使いましょう。</p>
-</blockquote>
 <hr>
-<p>いかがでしょうか？「型から本物を作る<ruby>呪文<rt>じゅもん</rt></ruby>」というイメージは持てましたか？</p>
-<p><a href="javascript:history.back();">戻る</a></p>
+<div style="page-break-before:always"></div>
+
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="06_09_インスタンスとオブジェクト.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="06_00_付録.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_06_正規表現.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="06_12_イベントハンドラ.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -294,11 +287,11 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="06_09_インスタンスとオブジェクト.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="06_00_付録.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_06_正規表現.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="06_12_イベントハンドラ.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

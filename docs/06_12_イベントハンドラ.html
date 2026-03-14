@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>New演算子 - 留学生のためのJavaScript学習ガイド</title>
+        <title>イベントハンドラ - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,117 +174,103 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="new演算えんざん子"><a class="header" href="#new演算えんざん子">new<ruby>演算<rt>えんざん</rt></ruby>子</a></h1>
-<p>プログラミングでよく見る <strong><code>new</code></strong> という言葉、不思議ですよね。
-これは、新しいもの（オブジェクト）を作るための**「型（かた）」から「本物（ほんもの）」を生み出す<ruby>魔法<rt>まほう</rt></ruby>の<ruby>呪文<rt>じゅもん</rt></ruby>**です。</p>
-<p>留学生の方には、<strong>「たい<ruby>焼<rt>や</rt></ruby>きの型」と「本物のたい<ruby>焼<rt>や</rt></ruby>き」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明すると、とてもスッキリ<ruby>納得<rt>なっとく</rt></ruby>してもらえます！</p>
-<hr>
-<h2 id="i-new-は実体じったいを作るもの"><a class="header" href="#i-new-は実体じったいを作るもの">I. <code>new</code> は「<ruby>実体<rt>じったい</rt></ruby>を作る」もの</a></h2>
-<p>プログラミングの世界には、<strong>「<ruby>設計図<rt>せっけいず</rt></ruby>」</strong> と、その設計図から作られた <strong>「本物」</strong> の2つがあります。</p>
+                        <h1 id="イベントハンドラ"><a class="header" href="#イベントハンドラ">イベントハンドラ</a></h1>
+<h2 id="-イベントハンドラとは"><a class="header" href="#-イベントハンドラとは">🎯 イベントハンドラとは？</a></h2>
+<p><strong>イベントハンドラ</strong>とは、ユーザーの<ruby>操作<rt>そうさ</rt></ruby>（クリック、マウス<ruby>移動<rt>いどう</rt></ruby>、ページ<ruby>読み込み<rt>よみこみ</rt></ruby>など）に<ruby>応じて<rt>おうじて</rt></ruby>、JavaScriptで<ruby>何か<rt>なにか</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>する<ruby>仕組み<rt>しくみ</rt></ruby>です。</p>
 <ul>
-<li><strong>型（クラスやコンストラクタ）：</strong> たい<ruby>焼<rt>や</rt></ruby>きの「<ruby>鉄板<rt>てっぱん</rt></ruby>」です。これだけでは食べられません。</li>
-<li><strong><code>new</code> を使って作ったもの（インスタンス）：</strong> 実際に食べられる「本物のたい<ruby>焼<rt>や</rt></ruby>き」です。</li>
+<li>「イベント」＝ ユーザーの<ruby>操作<rt>そうさ</rt></ruby>やブラウザの<ruby>動き<rt>うごき</rt></ruby></li>
+<li>「ハンドラ」＝ そのイベントが<ruby>起きた<rt>おきた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>される<ruby>関数<rt>かんすう</rt></ruby>（<ruby>処理<rt>しょり</rt></ruby>）</li>
 </ul>
-<pre><code class="language-javascript">// Date という「時計の設計図」を使って、
-// new で「今動いている本物の時計」を新しく作る
-const myClock = new Date();
-
-</code></pre>
+<p>📌 <ruby>例<rt>れい</rt></ruby>：ボタンをクリックしたらメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>する</p>
 <hr>
-<h2 id="ii-なぜ-new-が必要なの"><a class="header" href="#ii-なぜ-new-が必要なの">II. なぜ <code>new</code> が必要なの？</a></h2>
-<p><ruby>例<rt>たと</rt></ruby>えば、SNSの「ユーザー」というデータを作るとしましょう。
-全員の情報をバラバラに作るのは大変ですが、<code>new</code> を使えば同じ形のデータをいくつでも簡単に作れます。</p>
-<pre><code class="language-javascript">// 1. ユーザーの「設計図（型）」を作る
-function User(name) {
-  this.name = name;
-  this.sayHi = function() {
-    console.log("こんにちは、" + this.name + "です！");
-  };
-}
-
-// 2. new を使って、本物のユーザーをどんどん作る
-const user1 = new User("マリア");
-const user2 = new User("ジョン");
-
-user1.sayHi(); // 「こんにちは、マリアです！」
-user2.sayHi(); // 「こんにちは、ジョンです！」
-
-</code></pre>
+<h2 id="-onclickクリックされたとき"><a class="header" href="#-onclickクリックされたとき">🖱️ <code>onclick</code>（クリックされたとき）</a></h2>
 <ul>
-<li><code>User</code> はただの設計図です。</li>
-<li><code>new User("マリア")</code> と書いた瞬間に、<strong>メモリの中に「マリア」という<ruby>実体<rt>じったい</rt></ruby></strong> が誕生します。</li>
+<li><ruby>要素<rt>ようそ</rt></ruby>が<strong>クリックされたとき</strong>に<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
+<li>よく<ruby>使われる<rt>つかわれる</rt></ruby>イベントの1つです。</li>
 </ul>
 <hr>
-<h2 id="iii-new-を使ったときに中で起きていること"><a class="header" href="#iii-new-を使ったときに中で起きていること">III. <code>new</code> を使ったときに中で起きていること</a></h2>
-<p>留学生に教えるとき、<code>new</code> が<ruby>裏側<rt>うらがわ</rt></ruby>でやってくれる「3つの仕事」を伝えると理解が深まります。</p>
-<ol>
-<li><strong>新しい空（から）の箱</strong> を作る。</li>
-<li>その箱に、名前や中身を <strong>コピー</strong> して入れる。</li>
-<li>完成した箱を <strong>「はい、どうぞ！」と渡す（return）</strong>。</li>
-</ol>
-<hr>
-<h2 id="iv-new-を使うもの使わないもの"><a class="header" href="#iv-new-を使うもの使わないもの">IV. <code>new</code> を使うもの・使わないもの</a></h2>
-<p>ここが一番のポイントです。JavaScriptには2つのパターンがあります。</p>
+<h2 id="-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき"><a class="header" href="#-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき">🐭 <code>onmouseover</code> / <code>onmouseout</code>（マウスが<ruby>乗った<rt>のった</rt></ruby>とき・<ruby>離れた<rt>はなれた</rt></ruby>とき）</a></h2>
 <ul>
-<li>
-<p><strong><code>new</code> が必要なもの（重いもの・複雑なもの）</strong></p>
-</li>
-<li>
-<p><code>new Date()</code> ：日付</p>
-</li>
-<li>
-<p><code>new User()</code> ：自分で作った特別な型</p>
-</li>
-<li>
-<p><strong><code>new</code> がいらないもの（軽くてシンプルなもの）</strong></p>
-</li>
-<li>
-<p><code>"Hello"</code> ：文字列（String型）</p>
-</li>
-<li>
-<p><code>123</code> ：数字（Number型）</p>
-</li>
-<li>
-<p><code>true</code> ：<ruby>真偽<rt>しんぎ</rt></ruby>値（Boolean型）</p>
-</li>
+<li><code>onmouseover</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>来た<rt>きた</rt></ruby>とき</li>
+<li><code>onmouseout</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</li>
 </ul>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p><strong>留学生へのアドバイス：</strong>
-「<code>String</code> や <code>Number</code> も <code>new</code> で作れるけど、基本的には使わないよ。<strong>『特別な機能を持った自分だけの道具』を作るときに <code>new</code> を使う</strong> んだよ！」と教えてあげてください。</p>
-</blockquote>
 <hr>
-<h2 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h2>
+<h2 id="-onloadページが読み込まれたよみこまれたとき"><a class="header" href="#-onloadページが読み込まれたよみこまれたとき">📦 <code>onload</code>（ページが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき）</a></h2>
+<ul>
+<li>ページ<ruby>全体<rt>ぜんたい</rt></ruby>が<ruby>読み込まれた<rt>よみこまれた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
+<li><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>などに<ruby>使います<rt>つかいます</rt></ruby>。</li>
+</ul>
+<hr>
+<h2 id="-よく使うつかうイベントハンドラ"><a class="header" href="#-よく使うつかうイベントハンドラ">🧩 よく<ruby>使う<rt>つかう</rt></ruby>イベントハンドラ</a></h2>
+<p><ruby>以下<rt>いか</rt></ruby>は、JavaScriptでよく<ruby>使われる<rt>つかわれる</rt></ruby><strong>イベントハンドラ</strong>を、3つの<ruby>カテゴリ<rt>かてごり</rt></ruby>に<ruby>整理<rt>せいり</rt></ruby>したものです。</p>
+<hr>
+<h3 id="-1-マウス操作そうさに関するかんするイベント"><a class="header" href="#-1-マウス操作そうさに関するかんするイベント">🖱️ 1. マウス<ruby>操作<rt>そうさ</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>言葉</th><th>意味</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>設計図（Class）</strong></td><td>データの形を決めたもの</td><td>たい<ruby>焼<rt>や</rt></ruby>きの型</td></tr>
-<tr><td><strong><code>new</code></strong></td><td><ruby>実体<rt>じったい</rt></ruby>を作るためのコマンド</td><td>記事を流し込む動作</td></tr>
-<tr><td><strong><ruby>実体<rt>じったい</rt></ruby>（Instance）</strong></td><td><code>new</code> で作られた本物のデータ</td><td><ruby>焼<rt>や</rt></ruby>きたてのたい<ruby>焼<rt>や</rt></ruby>き</td></tr>
+<tr><td><code>onclick</code></td><td><ruby>要素<rt>ようそ</rt></ruby>がクリックされたとき</td><td>ボタンを<ruby>押した<rt>おした</rt></ruby>ときに<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>ondblclick</code></td><td>ダブルクリックされたとき</td><td>2<ruby>回<rt>かい</rt></ruby>クリックで<ruby>別<rt>べつ</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>onmouseover</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>乗った<rt>のった</rt></ruby>とき</td><td>テキストの<ruby>色<rt>いろ</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
+<tr><td><code>onmouseout</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</td><td><ruby>元<rt>もと</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>に<ruby>戻す<rt>もどす</rt></ruby>など</td></tr>
+<tr><td><code>onmousemove</code></td><td>マウスが<ruby>動いた<rt>うごいた</rt></ruby>とき</td><td>マウス<ruby>位置<rt>いち</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
+<tr><td><code>oncontextmenu</code></td><td><ruby>右<rt>みぎ</rt></ruby>クリックされたとき</td><td>カスタムメニューを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
 </tbody>
 </table>
 </div>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「new」のイメージ</strong>
-英語の「New（新しい）」そのままです。「新しい<ruby>実体<rt>じったい</rt></ruby>（じったい）を1つ、今ここで生み出すぞ！」という気持ちで使いましょう。</p>
-</blockquote>
 <hr>
-<p>いかがでしょうか？「型から本物を作る<ruby>呪文<rt>じゅもん</rt></ruby>」というイメージは持てましたか？</p>
-<p><a href="javascript:history.back();">戻る</a></p>
-
+<h3 id="-2-ページの読み込みよみこみ移動いどうに関するかんするイベント"><a class="header" href="#-2-ページの読み込みよみこみ移動いどうに関するかんするイベント">📦 2. ページの<ruby>読み込み<rt>よみこみ</rt></ruby>・<ruby>移動<rt>いどう</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>onload</code></td><td>ページや<ruby>画像<rt>がぞう</rt></ruby>などが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき</td><td><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>onunload</code></td><td>ページが<ruby>閉じられる<rt>とじられる</rt></ruby>とき</td><td><ruby>確認<rt>かくにん</rt></ruby>メッセージを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
+<tr><td><code>onresize</code></td><td>ウィンドウサイズが<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>レイアウトを<ruby>調整<rt>ちょうせい</rt></ruby>するなど</td></tr>
+<tr><td><code>onscroll</code></td><td>ページがスクロールされたとき</td><td>スクロール<ruby>位置<rt>いち</rt></ruby>に<ruby>応じた<rt>おうじた</rt></ruby><ruby>処理<rt>しょり</rt></ruby></td></tr>
+<tr><td><code>onerror</code></td><td>エラーが<ruby>発生<rt>はっせい</rt></ruby>したとき</td><td><ruby>画像<rt>がぞう</rt></ruby>の<ruby>読み込み<rt>よみこみ</rt></ruby><ruby>失敗時<rt>しっぱいじ</rt></ruby>に<ruby>代替<rt>だいたい</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-3-フォーム関連かんれんのイベント"><a class="header" href="#-3-フォーム関連かんれんのイベント">📝 3. フォーム<ruby>関連<rt>かんれん</rt></ruby>のイベント</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>onchange</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>が<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>ドロップダウンの<ruby>選択<rt>せんたく</rt></ruby><ruby>変更<rt>へんこう</rt></ruby>など</td></tr>
+<tr><td><code>oninput</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>に<ruby>文字<rt>もじ</rt></ruby>が<ruby>入力<rt>にゅうりょく</rt></ruby>されたとき</td><td>リアルタイムで<ruby>文字数<rt>もじすう</rt></ruby>をカウント</td></tr>
+<tr><td><code>onsubmit</code></td><td>フォームが<ruby>送信<rt>そうしん</rt></ruby>されたとき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby>チェックを<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
+<tr><td><code>onreset</code></td><td>フォームがリセットされたとき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>を<ruby>初期化<rt>しょきか</rt></ruby>したときの<ruby>処理<rt>しょり</rt></ruby></td></tr>
+<tr><td><code>onfocus</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>が<ruby>選択<rt>せんたく</rt></ruby>されたとき</td><td><ruby>背景色<rt>はいけいしょく</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
+<tr><td><code>onblur</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>選択<rt>せんたく</rt></ruby>が<ruby>外れた<rt>はずれた</rt></ruby>とき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby>など</td></tr>
+<tr><td><code>onkeydown</code></td><td>キーが<ruby>押された<rt>おされた</rt></ruby>とき</td><td><ruby>特定<rt>とくてい</rt></ruby>のキー<ruby>操作<rt>そうさ</rt></ruby>に<ruby>反応<rt>はんのう</rt></ruby></td></tr>
+<tr><td><code>onkeyup</code></td><td>キーが<ruby>離された<rt>はなされた</rt></ruby>とき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby><ruby>完了後<rt>かんりょうご</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>など</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-補足ほそく"><a class="header" href="#-補足ほそく">✅ <ruby>補足<rt>ほそく</rt></ruby></a></h3>
+<ul>
+<li>これらのイベントは、HTMLタグに<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>&lt;input oninput="..." /&gt;</code>）と、JavaScriptで<ruby>後から<rt>あとから</rt></ruby><ruby>設定<rt>せってい</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>element.addEventListener(...)</code>）の<ruby>両方<rt>りょうほう</rt></ruby>で<ruby>使えます<rt>つかえます</rt></ruby>。</li>
+<li><ruby>初心者<rt>しょしんしゃ</rt></ruby>には、まずHTML<ruby>内<rt>ない</rt></ruby>に<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>が<ruby>理解<rt>りかい</rt></ruby>しやすいです。</li>
+</ul>
+<hr>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="06_09_インスタンスとオブジェクト.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="06_11_JavaScriptの記述ルール.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="06_06_正規表現.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="06_04_高度なループ処理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -294,11 +280,11 @@ user2.sayHi(); // 「こんにちは、ジョンです！」
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="06_09_インスタンスとオブジェクト.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="06_11_JavaScriptの記述ルール.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="06_06_正規表現.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="06_04_高度なループ処理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
