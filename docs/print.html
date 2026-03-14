@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-72f20778.js";
+            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-e0540f56.js"></script>
+        <script src="toc-a10e83d1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -792,17 +792,10 @@ document.getElementById("title").style.color = "red";
 <p>日本でITを学ぶ留学生のみなさん、こんにちは。</p>
 <p>前の章ではウェブページの骨組みやデザインを決めるHTMLやCSSについて説明しました。</p>
 <p>この章ではいよいよ「初めてのJavaScript（ジャバスクリプト）」を書いていきます。</p>
-<p>JavaScriptは</p>
-<ul>
-<li>「何が起きたら」（どのイベントに反応させるか？）</li>
-<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
-<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
-</ul>
-<p>を書くものです。</p>
-<p>が、すべてを一度に学ぶことはできません。</p>
-<p>ここでは、「何が起きたら」「誰に」についての詳しい説明は省略して、まず　<strong>「どういう仕事をさせるか？」を書く方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
 <p>プログラミングは、最初は<ruby>難<rt>むずか</rt></ruby>しく感じるかもしれません。でも、ルールを知れば、自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りにウェブページを動かせる「<ruby>魔法<rt>まほう</rt></ruby>」のような技術です。</p>
-<hr>
+<p>では、始めましょう。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="書いてみよう"><a class="header" href="#書いてみよう">書いてみよう</a></h1>
 <h2 id="i-初めてのプログラムhello-world-とポップアップ"><a class="header" href="#i-初めてのプログラムhello-world-とポップアップ">I. 初めてのプログラム：Hello World! とポップアップ</a></h2>
 <p>プログラミングの第<ruby>一歩<rt>いっぽ</rt></ruby>は、自分の指示がブラウザに伝わったことを確認することです。<ruby>画面<rt>がめん</rt></ruby>にメッセージを出す2つの方法を学びましょう。</p>
 <h3 id="alertユーザーへの通知"><a class="header" href="#alertユーザーへの通知">alert()：ユーザーへの通知</a></h3>
@@ -903,8 +896,72 @@ document.getElementById("title").style.color = "red";
 <li>HTMLの <code>&lt;body&gt;</code> タグの最後（閉じタグ <code>&lt;/body&gt;</code> の直前） に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みコードを書きます。</li>
 </ul>
 <p>なぜ <code>&lt;body&gt;</code> の最後に書くの？ ブラウザは上から順番に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みます。プログラムを最後に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>ませることで、ページの文字や<ruby>画像<rt>がぞう</rt></ruby>を先に出し、ユーザーを待たせない「スムーズな<ruby>表示<rt>ひょうじ</rt></ruby>」が可能になります。</p>
+<h3 id="留学生へのメッセージ"><a class="header" href="#留学生へのメッセージ">留学生へのメッセージ</a></h3>
+<p>最初はエラーが出るのが当たり前です。エラーメッセージはブラウザからの「ヒント」だと思って、楽しみながら<ruby>挑戦<rt>ちょうせん</rt></ruby>してください。あなたが自由自在にコードを書けるようになるまで、応援しています！</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ"><a class="header" href="#-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ">🧠 JavaScriptの<ruby>記述<rt>きじゅつ</rt></ruby>ルール（<ruby>初心者<rt>しょしんしゃ</rt></ruby><ruby>向け<rt>むけ</rt></ruby>まとめ）</a></h1>
+<h2 id="i-文ぶんの終わりおわりにはセミコロンをつける"><a class="header" href="#i-文ぶんの終わりおわりにはセミコロンをつける">I. <ruby>文<rt>ぶん</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にはセミコロン（<code>;</code>）をつける</a></h2>
+<ul>
+<li><ruby>命令<rt>めいれい</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にセミコロンをつけることで、コードの<ruby>区切り<rt>くぎり</rt></ruby>が<ruby>明確<rt>めいかく</rt></ruby>になります。</li>
+</ul>
+<pre><code class="language-javascript">let name = "Taro";
+</code></pre>
 <hr>
-<h2 id="iv--留学生への重要アドバイス半角はんかくと全角ぜんかく"><a class="header" href="#iv--留学生への重要アドバイス半角はんかくと全角ぜんかく">IV. ⚠️ 留学生への重要アドバイス：<ruby>半角<rt>はんかく</rt></ruby>と<ruby>全角<rt>ぜんかく</rt></ruby></a></h2>
+<h2 id="ii-変数へんすうの宣言せんげんには-let-や-const-を使うつかう"><a class="header" href="#ii-変数へんすうの宣言せんげんには-let-や-const-を使うつかう">II. <ruby>変数<rt>へんすう</rt></ruby>の<ruby>宣言<rt>せんげん</rt></ruby>には <code>let</code> や <code>const</code> を<ruby>使う<rt>つかう</rt></ruby></a></h2>
+<ul>
+<li><code>let</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>な<ruby>変数<rt>へんすう</rt></ruby></li>
+<li><code>const</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>不可<rt>ふか</rt></ruby>の<ruby>定数<rt>ていすう</rt></ruby></li>
+</ul>
+<pre><code class="language-javascript">let age = 20;
+const birthYear = 2005;
+</code></pre>
+<hr>
+<h2 id="iii-文字列もじれつは---または---で囲むかこむ"><a class="header" href="#iii-文字列もじれつは---または---で囲むかこむ">III. <ruby>文字列<rt>もじれつ</rt></ruby>は <code>" "</code> または <code>' '</code> で<ruby>囲む<rt>かこむ</rt></ruby></a></h2>
+<ul>
+<li>どちらでもOKですが、<ruby>統一<rt>とういつ</rt></ruby>して<ruby>使う<rt>つかう</rt></ruby>のが<ruby>良い<rt>よい</rt></ruby><ruby>習慣<rt>しゅうかん</rt></ruby>です。</li>
+</ul>
+<pre><code class="language-javascript">let greeting = "こんにちは";
+</code></pre>
+<hr>
+<h2 id="iv-インデント字下げじさげでコードを見やすくみやすくする"><a class="header" href="#iv-インデント字下げじさげでコードを見やすくみやすくする">IV. インデント（<ruby>字下げ<rt>じさげ</rt></ruby>）でコードを<ruby>見やすく<rt>みやすく</rt></ruby>する</a></h2>
+<ul>
+<li><ruby>通常<rt>つうじょう</rt></ruby>はスペース2つまたは4つで<ruby>揃えます<rt>そろえます</rt></ruby>。</li>
+</ul>
+<pre><code class="language-javascript">function sayHello() {
+  console.log("こんにちは！");
+}
+</code></pre>
+<hr>
+<h2 id="v-コメントを使ってつかって説明せつめいを書くかく"><a class="header" href="#v-コメントを使ってつかって説明せつめいを書くかく">V. コメントを<ruby>使って<rt>つかって</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>を<ruby>書く<rt>かく</rt></ruby></a></h2>
+<ul>
+<li><code>//</code> を<ruby>使って<rt>つかって</rt></ruby>コードの<ruby>説明<rt>せつめい</rt></ruby>を<ruby>記述<rt>きじゅつ</rt></ruby>できます。</li>
+</ul>
+<pre><code class="language-javascript">// これは挨拶を表示する関数です
+function sayHello() {
+  console.log("こんにちは！");
+}
+</code></pre>
+<hr>
+<h2 id="vi-命名めいめいはわかりやすく英語えいごで書くかく"><a class="header" href="#vi-命名めいめいはわかりやすく英語えいごで書くかく">VI. <ruby>命名<rt>めいめい</rt></ruby>はわかりやすく、<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby></a></h2>
+<ul>
+<li><ruby>変数<rt>へんすう</rt></ruby>や<ruby>関数名<rt>かんすうめい</rt></ruby>は<ruby>意味<rt>いみ</rt></ruby>のある<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby>のが<ruby>一般的<rt>いっぱんてき</rt></ruby>です。</li>
+</ul>
+<pre><code class="language-javascript">let userName = "Taro";
+function showMessage() {
+  console.log("ようこそ！");
+}
+</code></pre>
+<hr>
+<h2 id="vii-大文字おおもじと小文字こもじは区別くべつされる"><a class="header" href="#vii-大文字おおもじと小文字こもじは区別くべつされる">VII. <ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>は<ruby>区別<rt>くべつ</rt></ruby>される</a></h2>
+<ul>
+<li><code>Name</code> と <code>name</code> は<ruby>別<rt>べつ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>として<ruby>扱われます<rt>あつかわれます</rt></ruby>。</li>
+</ul>
+<pre><code class="language-javascript">let name = "Taro";
+let Name = "Hanako";  // ← 別の変数
+</code></pre>
+<hr>
+<hr>
+<h2 id="viii--留学生への重要アドバイス文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする"><a class="header" href="#viii--留学生への重要アドバイス文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする">VIII. ⚠️ 留学生への重要アドバイス：<ruby>文字列<rt>もじれつ</rt></ruby>やコメント<ruby>以外<rt>いがい</rt></ruby>は<ruby>半角文字<rt>はんかくもじ</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby>する</a></h2>
 <p>日本のパソコンやスマホを使うとき、最初にびっくりするのが <strong>「文字の大きさ（幅）」</strong> の違いだと思います。</p>
 <p>簡単に言うと、<strong>「スリムな文字」</strong> と <strong>「<ruby>太<rt>ふと</rt></ruby>っちょな文字」</strong> の2種類があります。</p>
 <p>これは日本だけではなく、漢字やハングルを使う東アジアの国々（CJK：China, Japan, Korea）に共通する特徴です。</p>
@@ -950,7 +1007,7 @@ document.getElementById("title").style.color = "red";
 </ol>
 <p>最初は少し面倒に感じるかもしれませんが、「日本の文字（漢字）は大きいから、<ruby>専用<rt>せんよう</rt></ruby>の広い席が必要なんだな」と思えばOKです！</p>
 <hr>
-<h2 id="v-まとめjavascript学習のルールと習慣"><a class="header" href="#v-まとめjavascript学習のルールと習慣">V. まとめ：JavaScript学習のルールと習慣</a></h2>
+<h2 id="ix-まとめjavascript学習のルールと習慣"><a class="header" href="#ix-まとめjavascript学習のルールと習慣">IX. まとめ：JavaScript学習のルールと習慣</a></h2>
 <p><strong>JavaScriptの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：これだけは守りたい8つのルール</strong></p>
 <p>最後に、ミスを防ぐための大切なルールをまとめました。</p>
 <p>たとえば<ruby>飲食<rt>いんしょく</rt></ruby>店でアルバイトをする場合も、わかりやすく書かれたマニュアルを見れば、ミスをすることなく作業することができます。マニュアルは、誰が読んでも同じ意味にとれるように、あいまいさのない、はっきり書かれたものでなければなりません。</p>
@@ -973,9 +1030,105 @@ document.getElementById("title").style.color = "red";
 <li>コメントを書きましょう： <code>//</code> のあとにメモを書きます。自分の母国語でメモを残すと学習がはかどります。</li>
 <li>コードはすべて「<ruby>半角<rt>はんかく</rt></ruby>（half-width）」で書きます： これが一番大切です。文字列の中とコメント以外で 「<ruby>全角<rt>ぜんかく</rt></ruby>」を使うと、コードは絶対に<ruby>動<rt>うご</rt></ruby>きません。</li>
 </ol>
+<hr><div style="break-before: page; page-break-before: always;"></div>
+<h1 id="イベントハンドラ"><a class="header" href="#イベントハンドラ">イベントハンドラ</a></h1>
+<h2 id="i--イベントハンドラとは"><a class="header" href="#i--イベントハンドラとは">I. 🎯 イベントハンドラとは？</a></h2>
+<p><strong>イベントハンドラ</strong>とは、ユーザーの<ruby>操作<rt>そうさ</rt></ruby>（クリック、マウス<ruby>移動<rt>いどう</rt></ruby>、ページ<ruby>読み込み<rt>よみこみ</rt></ruby>など）に<ruby>応じて<rt>おうじて</rt></ruby>、JavaScriptで<ruby>何か<rt>なにか</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>する<ruby>仕組み<rt>しくみ</rt></ruby>です。</p>
+<ul>
+<li>「イベント」＝ ユーザーの<ruby>操作<rt>そうさ</rt></ruby>やブラウザの<ruby>動き<rt>うごき</rt></ruby></li>
+<li>「ハンドラ」＝ そのイベントが<ruby>起きた<rt>おきた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>される<ruby>関数<rt>かんすう</rt></ruby>（<ruby>処理<rt>しょり</rt></ruby>）</li>
+</ul>
+<p>📌 <ruby>例<rt>れい</rt></ruby>：ボタンをクリックしたらメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>する</p>
 <hr>
-<h3 id="留学生へのメッセージ"><a class="header" href="#留学生へのメッセージ">留学生へのメッセージ</a></h3>
-<p>最初はエラーが出るのが当たり前です。エラーメッセージはブラウザからの「ヒント」だと思って、楽しみながら<ruby>挑戦<rt>ちょうせん</rt></ruby>してください。あなたが自由自在にコードを書けるようになるまで、応援しています！</p>
+<h3 id="-onclickクリックされたとき"><a class="header" href="#-onclickクリックされたとき">🖱️ <code>onclick</code>（クリックされたとき）</a></h3>
+<ul>
+<li><ruby>要素<rt>ようそ</rt></ruby>が<strong>クリックされたとき</strong>に<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
+<li>よく<ruby>使われる<rt>つかわれる</rt></ruby>イベントの1つです。</li>
+</ul>
+<hr>
+<h3 id="-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき"><a class="header" href="#-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき">🐭 <code>onmouseover</code> / <code>onmouseout</code>（マウスが<ruby>乗った<rt>のった</rt></ruby>とき・<ruby>離れた<rt>はなれた</rt></ruby>とき）</a></h3>
+<ul>
+<li><code>onmouseover</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>来た<rt>きた</rt></ruby>とき</li>
+<li><code>onmouseout</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</li>
+</ul>
+<hr>
+<h3 id="-onloadページが読み込まれたよみこまれたとき"><a class="header" href="#-onloadページが読み込まれたよみこまれたとき">📦 <code>onload</code>（ページが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき）</a></h3>
+<ul>
+<li>ページ<ruby>全体<rt>ぜんたい</rt></ruby>が<ruby>読み込まれた<rt>よみこまれた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
+<li><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>などに<ruby>使います<rt>つかいます</rt></ruby>。</li>
+</ul>
+<hr>
+<h2 id="ii--よく使うつかうイベントハンドラ"><a class="header" href="#ii--よく使うつかうイベントハンドラ">II. 🧩 よく<ruby>使う<rt>つかう</rt></ruby>イベントハンドラ</a></h2>
+<p><ruby>以下<rt>いか</rt></ruby>は、JavaScriptでよく<ruby>使われる<rt>つかわれる</rt></ruby><strong>イベントハンドラ</strong>を、3つの<ruby>カテゴリ<rt>かてごり</rt></ruby>に<ruby>整理<rt>せいり</rt></ruby>したものです。</p>
+<hr>
+<h3 id="-1-マウス操作そうさに関するかんするイベント"><a class="header" href="#-1-マウス操作そうさに関するかんするイベント">🖱️ 1. マウス<ruby>操作<rt>そうさ</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>onclick</code></td><td><ruby>要素<rt>ようそ</rt></ruby>がクリックされたとき</td><td>ボタンを<ruby>押した<rt>おした</rt></ruby>ときに<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>ondblclick</code></td><td>ダブルクリックされたとき</td><td>2<ruby>回<rt>かい</rt></ruby>クリックで<ruby>別<rt>べつ</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>onmouseover</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>乗った<rt>のった</rt></ruby>とき</td><td>テキストの<ruby>色<rt>いろ</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
+<tr><td><code>onmouseout</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</td><td><ruby>元<rt>もと</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>に<ruby>戻す<rt>もどす</rt></ruby>など</td></tr>
+<tr><td><code>onmousemove</code></td><td>マウスが<ruby>動いた<rt>うごいた</rt></ruby>とき</td><td>マウス<ruby>位置<rt>いち</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
+<tr><td><code>oncontextmenu</code></td><td><ruby>右<rt>みぎ</rt></ruby>クリックされたとき</td><td>カスタムメニューを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-2-ページの読み込みよみこみ移動いどうに関するかんするイベント"><a class="header" href="#-2-ページの読み込みよみこみ移動いどうに関するかんするイベント">📦 2. ページの<ruby>読み込み<rt>よみこみ</rt></ruby>・<ruby>移動<rt>いどう</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>onload</code></td><td>ページや<ruby>画像<rt>がぞう</rt></ruby>などが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき</td><td><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
+<tr><td><code>onunload</code></td><td>ページが<ruby>閉じられる<rt>とじられる</rt></ruby>とき</td><td><ruby>確認<rt>かくにん</rt></ruby>メッセージを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
+<tr><td><code>onresize</code></td><td>ウィンドウサイズが<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>レイアウトを<ruby>調整<rt>ちょうせい</rt></ruby>するなど</td></tr>
+<tr><td><code>onscroll</code></td><td>ページがスクロールされたとき</td><td>スクロール<ruby>位置<rt>いち</rt></ruby>に<ruby>応じた<rt>おうじた</rt></ruby><ruby>処理<rt>しょり</rt></ruby></td></tr>
+<tr><td><code>onerror</code></td><td>エラーが<ruby>発生<rt>はっせい</rt></ruby>したとき</td><td><ruby>画像<rt>がぞう</rt></ruby>の<ruby>読み込み<rt>よみこみ</rt></ruby><ruby>失敗時<rt>しっぱいじ</rt></ruby>に<ruby>代替<rt>だいたい</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-3-フォーム関連かんれんのイベント"><a class="header" href="#-3-フォーム関連かんれんのイベント">📝 3. フォーム<ruby>関連<rt>かんれん</rt></ruby>のイベント</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
+</thead>
+<tbody>
+<tr><td><code>onchange</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>が<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>ドロップダウンの<ruby>選択<rt>せんたく</rt></ruby><ruby>変更<rt>へんこう</rt></ruby>など</td></tr>
+<tr><td><code>oninput</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>に<ruby>文字<rt>もじ</rt></ruby>が<ruby>入力<rt>にゅうりょく</rt></ruby>されたとき</td><td>リアルタイムで<ruby>文字数<rt>もじすう</rt></ruby>をカウント</td></tr>
+<tr><td><code>onsubmit</code></td><td>フォームが<ruby>送信<rt>そうしん</rt></ruby>されたとき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby>チェックを<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
+<tr><td><code>onreset</code></td><td>フォームがリセットされたとき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>を<ruby>初期化<rt>しょきか</rt></ruby>したときの<ruby>処理<rt>しょり</rt></ruby></td></tr>
+<tr><td><code>onfocus</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>が<ruby>選択<rt>せんたく</rt></ruby>されたとき</td><td><ruby>背景色<rt>はいけいしょく</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
+<tr><td><code>onblur</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>選択<rt>せんたく</rt></ruby>が<ruby>外れた<rt>はずれた</rt></ruby>とき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby>など</td></tr>
+<tr><td><code>onkeydown</code></td><td>キーが<ruby>押された<rt>おされた</rt></ruby>とき</td><td><ruby>特定<rt>とくてい</rt></ruby>のキー<ruby>操作<rt>そうさ</rt></ruby>に<ruby>反応<rt>はんのう</rt></ruby></td></tr>
+<tr><td><code>onkeyup</code></td><td>キーが<ruby>離された<rt>はなされた</rt></ruby>とき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby><ruby>完了後<rt>かんりょうご</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>など</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="-補足ほそく"><a class="header" href="#-補足ほそく">✅ <ruby>補足<rt>ほそく</rt></ruby></a></h3>
+<ul>
+<li>これらのイベントは、HTMLタグに<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>&lt;input oninput="..." /&gt;</code>）と、JavaScriptで<ruby>後から<rt>あとから</rt></ruby><ruby>設定<rt>せってい</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>element.addEventListener(...)</code>）の<ruby>両方<rt>りょうほう</rt></ruby>で<ruby>使えます<rt>つかえます</rt></ruby>。</li>
+<li><ruby>初心者<rt>しょしんしゃ</rt></ruby>には、まずHTML<ruby>内<rt>ない</rt></ruby>に<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>が<ruby>理解<rt>りかい</rt></ruby>しやすいです。</li>
+</ul>
+<hr><div style="break-before: page; page-break-before: always;"></div>
+<h1 id="javascriptの基本文法"><a class="header" href="#javascriptの基本文法">JavaScriptの基本文法</a></h1>
+<p>JavaScriptは</p>
+<ul>
+<li>「何が起きたら」（どのイベントに反応させるか？）</li>
+<li>「誰に」（どのオブジェクトに仕事をさせるか？）</li>
+<li>「どういう仕事をさせるか？」（プログラムの内容）</li>
+</ul>
+<p>を書くものです。</p>
+<p>が、すべてを一度に学ぶことはできません。</p>
+<p>ここでは、「何が起きたら」「誰に」についての詳しい説明は省略して、まず　<strong>「どういう仕事をさせるか？」を書く方法</strong> について、IT<ruby>業界<rt>ぎょうかい</rt></ruby>の標準的な考え方と一緒に「やさしい日本語」で解説します。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="変数へんすう"><a class="header" href="#変数へんすう"><ruby>変数<rt>へんすう</rt></ruby></a></h1>
 <p><strong>JavaScriptの基礎：データの入れ物「<ruby>変数<rt>へんすう</rt></ruby>」をマスターしよう</strong></p>
@@ -3440,73 +3593,6 @@ badApple.remove(); // 画面（がめん）から消える
 <p>いかがでしょうか？「生成・追加・削除」ができるようになると、ユーザーがボタンを押すたびに<ruby>画面<rt>がめん</rt></ruby>がどんどん変わる、本格的なアプリが作れるようになります。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="イベント処理"><a class="header" href="#イベント処理">イベント処理</a></h1>
-<p>「イベント（何かが起きた瞬間）」を、実際にJavaScriptでつかまえて仕事をさせるための命令が <strong><code>addEventListener()</code></strong> です。</p>
-<p>留学生の方には、これを**「もし〜が起きたら、この仕事をやってね」という『<ruby>待<rt>ま</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせの約束』**だと教えてあげてください。</p>
-<hr>
-<h3 id="1-addeventlistener-の役割"><a class="header" href="#1-addeventlistener-の役割">1. <code>addEventListener</code> の役割</a></h3>
-<p>ブラウザ（主役のオブジェクト）に対して、「特定のイベントが起きたら、準備しておいたプログラムを動かして！」と予約（よやく）を入れます。</p>
-<hr>
-<h3 id="2-書かき方かたの基本3つのパーツ"><a class="header" href="#2-書かき方かたの基本3つのパーツ">2. <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の基本：3つのパーツ</a></h3>
-<p><code>addEventListener</code> を書くときは、次の3つの情報をセットにします。</p>
-<pre><code class="language-javascript">要素.addEventListener("いつ", どうするか);
-
-</code></pre>
-<ol>
-<li><strong>要素：</strong> だれに？（ボタン、<ruby>画像<rt>がぞう</rt></ruby>、<ruby>入力<rt>にゅうりょく</rt></ruby>欄など）</li>
-<li><strong>いつ（イベント名）：</strong> 何が起きたら？（<code>click</code>, <code>input</code>, <code>mouseover</code> など）</li>
-<li><strong>どうするか（<ruby>関数<rt>かんすう</rt></ruby>）：</strong> どんな仕事をするか？</li>
-</ol>
-<h4 id="具体的なコードの例れい"><a class="header" href="#具体的なコードの例れい"><strong>具体的なコードの<ruby>例<rt>れい</rt></ruby></strong></a></h4>
-<pre><code class="language-javascript">const btn = document.getElementById("myButton");
-
-// 1.「btn」に 2.「click」されたら 3.「中身のプログラム」を実行！
-btn.addEventListener("click", function() {
-  alert("ボタンが押されました！ 🚀");
-});
-
-</code></pre>
-<hr>
-<h3 id="3-留学生への例たとえ話ホテルのフロント"><a class="header" href="#3-留学生への例たとえ話ホテルのフロント">3. 留学生への<ruby>例<rt>たと</rt></ruby>え話：ホテルのフロント</a></h3>
-<p>これをホテルのサービスに<ruby>例<rt>たと</rt></ruby>えると、とても分かりやすくなります。</p>
-<blockquote>
-<p>「お客さん（あなた）がフロント（ブラウザ）に頼むんだ。
-<strong>『朝の7時（イベント）』になったら、『私を起こして（仕事）』ね。</strong>
-フロントの人は、その約束をメモに書いて、時間が来るのをじっと待っててくれる。これが <code>addEventListener</code> の<ruby>仕組<rt>しく</rt></ruby>みだよ！」</p>
-</blockquote>
-<hr>
-<h3 id="4-なぜリスナーlistenerと呼ぶの"><a class="header" href="#4-なぜリスナーlistenerと呼ぶの">4. なぜ「リスナー（Listener）」と呼ぶの？</a></h3>
-<p>この命令で<ruby>登録<rt>とうろく</rt></ruby>されたプログラムのことを、専門用語で「イベントリスナー」と呼びます。</p>
-<ul>
-<li><strong>Listen（リッスン）：</strong> <ruby>聴<rt>き</rt></ruby>（き）く、耳をすます。</li>
-<li><strong>Listener（リスナー）：</strong> <ruby>聞<rt>き</rt></ruby>き<ruby>手<rt>て</rt></ruby>。</li>
-</ul>
-<blockquote>
-<p>「プログラムがずっと**『耳をすませて』、イベントが起きる音を待っている**から、リスナーって呼ぶんだよ」と教えてあげてください。</p>
-</blockquote>
-<hr>
-<h3 id="5-addeventlistener-のすごいところ"><a class="header" href="#5-addeventlistener-のすごいところ">5. <code>addEventListener</code> のすごいところ</a></h3>
-<p>昔の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<code>onclick</code> など）と違って、1つのボタンに <strong>「2つ以上の約束」</strong> をすることができます。</p>
-<ul>
-<li>「クリックされたら、色を変えて」</li>
-<li>「クリックされたら、ログを記録して」</li>
-</ul>
-<p>このように、たくさんの約束を重ねて予約できるのが、この命令の強みです。</p>
-<hr>
-<h3 id="まとめテーブル-11"><a class="header" href="#まとめテーブル-11">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>パーツ</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>要素 (target)</strong></td><td>どこで起きるか</td><td>玄関のドア</td></tr>
-<tr><td><strong>イベント名 (type)</strong></td><td>何が起きるか</td><td>チャイムが鳴る</td></tr>
-<tr><td><strong>リスナー (function)</strong></td><td>何をするか</td><td>「はーい！」と返事をして開ける</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「予約を入れて、耳をすませて待つ」。このイメージができれば、JavaScriptでページを動かす準備はバッチリです！</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="window操作"><a class="header" href="#window操作">Window操作</a></h1>
 <h2 id="i-windowの操作"><a class="header" href="#i-windowの操作">I. Windowの操作</a></h2>
@@ -3587,7 +3673,7 @@ function goToTop() {
 <strong><ruby>本当<rt>ほんとう</rt></ruby>に大切なときだけ使うのが、良いエンジニアのルールだよ！</strong>」</p>
 </blockquote>
 <hr>
-<h3 id="まとめテーブル-12"><a class="header" href="#まとめテーブル-12">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-11"><a class="header" href="#まとめテーブル-11">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4646,7 +4732,7 @@ console.log("あなたのラッキーナンバーは：" + luckyNumber);
 √（ルート）の計算や、一番大きい数字を探すとき、自分で計算するのは大変だよね。そんなときは <code>Math.sqrt()</code> や <code>Math.max()</code> というボタンを押すだけで、JavaScriptがすぐに答えを教えてくれるんだよ！」</p>
 </blockquote>
 <hr>
-<h2 id="まとめテーブル-13"><a class="header" href="#まとめテーブル-13">まとめテーブル</a></h2>
+<h2 id="まとめテーブル-12"><a class="header" href="#まとめテーブル-12">まとめテーブル</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4776,7 +4862,7 @@ console.log(person[key]); // "Allen" と表示（ひょうじ）されます。k
 <p>もし、バラバラの<ruby>変数<rt>へんすう</rt></ruby>がたくさんあると、どこで何を使っているか分からなくなり、ミスが増えます。仕事でプログラムを書く「チーム<ruby>開発<rt>かいはつ</rt></ruby>」では、これは大きな問題です。他の人があなたのコードを読んだとき、すぐに理解できないと、プロジェクトが止まってしまうからです。</p>
 <p>そこで必要になるのが <strong>「オブジェクト」</strong> です。関連（かんれん）するデータと機能を一つの「箱（はこ）」にまとめることで、コードが整理（せいり）され、現実（げんじつ）の世界にあるものをプログラムの中で表現しやすくなります。</p>
 <hr>
-<h3 id="まとめテーブル-14"><a class="header" href="#まとめテーブル-14">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-13"><a class="header" href="#まとめテーブル-13">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4923,7 +5009,7 @@ console.log(numbers.double()); // [2, 4, 6]
 <blockquote>
 <p><strong>注意：</strong> ここではわかりやすい<ruby>例<rt>れい</rt></ruby>として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
 </blockquote>
-<h3 id="まとめテーブル-15"><a class="header" href="#まとめテーブル-15">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-14"><a class="header" href="#まとめテーブル-14">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4966,7 +5052,7 @@ console.log(numbers.double()); // [2, 4, 6]
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
 <p>「インスタンス」という言葉は、「オブジェクト」とほぼ同じ意味ですが、より具体的なイメージです。<ruby>例<rt>たと</rt></ruby>えで言えば、「オブジェクト」が「たい<ruby>焼<rt>や</rt></ruby>き」全般を指すとすると、「インスタンス」は、今、あなた食べようとしている目の前の「たい<ruby>焼<rt>や</rt></ruby>き」という具体的な存在を指すイメージです。</p>
 </blockquote>
-<p><a href="#インスタンスとオブジェクト">詳しくはこちら</a></p>
+<p><a href="06_09_インスタンスとオブジェクト.html">詳しくはこちら</a></p>
 <h3 id="2-コンストラクタconstructorとは"><a class="header" href="#2-コンストラクタconstructorとは">2. コンストラクタ（Constructor）とは？</a></h3>
 <p>コンストラクタは、クラスの中に書く <strong>「<ruby>初期化<rt>しょきか</rt></ruby>（しょきか）のための<ruby>魔法<rt>まほう</rt></ruby>」</strong> です。</p>
 <p>たい<ruby>焼<rt>や</rt></ruby>きを焼くときに、「中身は何にする？」「あんこ？ クリーム？」と決める作業のことです。オブジェクトが誕生する瞬間に、名前や年齢などのデータをセットする役割を持っています。</p>
@@ -5086,7 +5172,7 @@ user.introduce(); // 自分だけの新しい動（うご）き
 <li><strong>楽ができる：</strong> 同じことを何度も書かなくていいから、コードが短くなるよ。</li>
 <li><strong>間違いが減る：</strong> 基本のルール（親）を直せば、全員（子）に反映されるから便利だよ。</li>
 </ul>
-<h3 id="まとめテーブル-16"><a class="header" href="#まとめテーブル-16">まとめテーブル</a></h3>
+<h3 id="まとめテーブル-15"><a class="header" href="#まとめテーブル-15">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -5124,189 +5210,6 @@ user.introduce(); // 自分だけの新しい動（うご）き
 <p>これまでと違って、順番に見てゆく必要はありません。</p>
 <p>必要なところや興味を持ったところを、好きな順番で読んでください。</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ"><a class="header" href="#-javascriptの記述きじゅつルール初心者しょしんしゃ向けむけまとめ">🧠 JavaScriptの<ruby>記述<rt>きじゅつ</rt></ruby>ルール（<ruby>初心者<rt>しょしんしゃ</rt></ruby><ruby>向け<rt>むけ</rt></ruby>まとめ）</a></h1>
-<h2 id="1-文ぶんの終わりおわりにはセミコロンをつける"><a class="header" href="#1-文ぶんの終わりおわりにはセミコロンをつける">1. <ruby>文<rt>ぶん</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にはセミコロン（<code>;</code>）をつける</a></h2>
-<ul>
-<li><ruby>命令<rt>めいれい</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>にセミコロンをつけることで、コードの<ruby>区切り<rt>くぎり</rt></ruby>が<ruby>明確<rt>めいかく</rt></ruby>になります。</li>
-</ul>
-<pre><code class="language-javascript">let name = "Taro";
-</code></pre>
-<hr>
-<h2 id="2-変数へんすうの宣言せんげんには-let-や-const-を使うつかう"><a class="header" href="#2-変数へんすうの宣言せんげんには-let-や-const-を使うつかう">2. <ruby>変数<rt>へんすう</rt></ruby>の<ruby>宣言<rt>せんげん</rt></ruby>には <code>let</code> や <code>const</code> を<ruby>使う<rt>つかう</rt></ruby></a></h2>
-<ul>
-<li><code>let</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>な<ruby>変数<rt>へんすう</rt></ruby></li>
-<li><code>const</code>：<ruby>変更<rt>へんこう</rt></ruby><ruby>不可<rt>ふか</rt></ruby>の<ruby>定数<rt>ていすう</rt></ruby></li>
-</ul>
-<pre><code class="language-javascript">let age = 20;
-const birthYear = 2005;
-</code></pre>
-<hr>
-<h2 id="3-文字列もじれつは---または---で囲むかこむ"><a class="header" href="#3-文字列もじれつは---または---で囲むかこむ">3. <ruby>文字列<rt>もじれつ</rt></ruby>は <code>" "</code> または <code>' '</code> で<ruby>囲む<rt>かこむ</rt></ruby></a></h2>
-<ul>
-<li>どちらでもOKですが、<ruby>統一<rt>とういつ</rt></ruby>して<ruby>使う<rt>つかう</rt></ruby>のが<ruby>良い<rt>よい</rt></ruby><ruby>習慣<rt>しゅうかん</rt></ruby>です。</li>
-</ul>
-<pre><code class="language-javascript">let greeting = "こんにちは";
-</code></pre>
-<hr>
-<h2 id="4-インデント字下げじさげでコードを見やすくみやすくする"><a class="header" href="#4-インデント字下げじさげでコードを見やすくみやすくする">4. インデント（<ruby>字下げ<rt>じさげ</rt></ruby>）でコードを<ruby>見やすく<rt>みやすく</rt></ruby>する</a></h2>
-<ul>
-<li><ruby>通常<rt>つうじょう</rt></ruby>はスペース2つまたは4つで<ruby>揃えます<rt>そろえます</rt></ruby>。</li>
-</ul>
-<pre><code class="language-javascript">function sayHello() {
-  console.log("こんにちは！");
-}
-</code></pre>
-<hr>
-<h2 id="5-コメントを使ってつかって説明せつめいを書くかく"><a class="header" href="#5-コメントを使ってつかって説明せつめいを書くかく">5. コメントを<ruby>使って<rt>つかって</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>を<ruby>書く<rt>かく</rt></ruby></a></h2>
-<ul>
-<li><code>//</code> を<ruby>使って<rt>つかって</rt></ruby>コードの<ruby>説明<rt>せつめい</rt></ruby>を<ruby>記述<rt>きじゅつ</rt></ruby>できます。</li>
-</ul>
-<pre><code class="language-javascript">// これは挨拶を表示する関数です
-function sayHello() {
-  console.log("こんにちは！");
-}
-</code></pre>
-<hr>
-<h2 id="6-命名めいめいはわかりやすく英語えいごで書くかく"><a class="header" href="#6-命名めいめいはわかりやすく英語えいごで書くかく">6. <ruby>命名<rt>めいめい</rt></ruby>はわかりやすく、<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby></a></h2>
-<ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>や<ruby>関数名<rt>かんすうめい</rt></ruby>は<ruby>意味<rt>いみ</rt></ruby>のある<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby>のが<ruby>一般的<rt>いっぱんてき</rt></ruby>です。</li>
-</ul>
-<pre><code class="language-javascript">let userName = "Taro";
-function showMessage() {
-  console.log("ようこそ！");
-}
-</code></pre>
-<hr>
-<h2 id="7-大文字おおもじと小文字こもじは区別くべつされる"><a class="header" href="#7-大文字おおもじと小文字こもじは区別くべつされる">7. <ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>は<ruby>区別<rt>くべつ</rt></ruby>される</a></h2>
-<ul>
-<li><code>Name</code> と <code>name</code> は<ruby>別<rt>べつ</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>として<ruby>扱われます<rt>あつかわれます</rt></ruby>。</li>
-</ul>
-<pre><code class="language-javascript">let name = "Taro";
-let Name = "Hanako";  // ← 別の変数
-</code></pre>
-<hr>
-<h2 id="8-文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする"><a class="header" href="#8-文字列もじれつやコメント以外いがいは半角文字はんかくもじで記述きじゅつする">8. <ruby>文字列<rt>もじれつ</rt></ruby>やコメント<ruby>以外<rt>いがい</rt></ruby>は<ruby>半角文字<rt>はんかくもじ</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby>する</a></h2>
-<ul>
-<li>JavaScriptのコードは<ruby>基本的<rt>きほんてき</rt></ruby>にすべて<ruby>半角英数字<rt>はんかくえいすうじ</rt></ruby>で<ruby>書きます<rt>かきます</rt></ruby>。</li>
-<li><code>"こんにちは"</code> や <code>// コメント</code> の<ruby>中<rt>なか</rt></ruby>は<ruby>全角<rt>ぜんかく</rt></ruby>でもOKですが、それ<ruby>以外<rt>いがい</rt></ruby>は<ruby>全角文字<rt>ぜんかくもじ</rt></ruby>を<ruby>使わない<rt>つかわない</rt></ruby>ように<ruby>注意<rt>ちゅうい</rt></ruby>しましょう。</li>
-</ul>
-<p>❌ ダメな<ruby>例<rt>れい</rt></ruby>（<ruby>全角<rt>ぜんかく</rt></ruby>スペースや<ruby>全角記号<rt>ぜんかくきごう</rt></ruby>）：</p>
-<pre><code class="language-javascript">ｌｅｔ　name＝"Taro";  // ← 全角が混ざっていてエラーになる可能性あり
-</code></pre>
-<p>✅ <ruby>正しい<rt>ただしい</rt></ruby><ruby>例<rt>れい</rt></ruby>（すべて<ruby>半角<rt>はんかく</rt></ruby>）：</p>
-<pre><code class="language-javascript">let name = "Taro";
-</code></pre>
-<hr>
-<h2 id="-まとめ表ひょう"><a class="header" href="#-まとめ表ひょう">✅ まとめ<ruby>表<rt>ひょう</rt></ruby></a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th><ruby>項目<rt>こうもく</rt></ruby></th><th><ruby>内容<rt>ないよう</rt></ruby></th></tr>
-</thead>
-<tbody>
-<tr><td>セミコロン</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>終わり<rt>おわり</rt></ruby>に<ruby>付ける<rt>つける</rt></ruby></td></tr>
-<tr><td><ruby>変数宣言<rt>へんすうせんげん</rt></ruby></td><td><code>let</code> や <code>const</code> を<ruby>使う<rt>つかう</rt></ruby></td></tr>
-<tr><td><ruby>文字列<rt>もじれつ</rt></ruby></td><td><code>" "</code> または <code>' '</code> で<ruby>囲む<rt>かこむ</rt></ruby></td></tr>
-<tr><td>インデント</td><td><ruby>見やすく<rt>みやすく</rt></ruby>するために<ruby>字下げ<rt>じさげ</rt></ruby></td></tr>
-<tr><td>コメント</td><td><code>//</code> で<ruby>説明<rt>せつめい</rt></ruby>を<ruby>書く<rt>かく</rt></ruby></td></tr>
-<tr><td><ruby>命名<rt>めいめい</rt></ruby></td><td><ruby>意味<rt>いみ</rt></ruby>のある<ruby>英語<rt>えいご</rt></ruby>で<ruby>書く<rt>かく</rt></ruby></td></tr>
-<tr><td><ruby>大文字小文字<rt>おおもじこもじ</rt></ruby></td><td><ruby>区別<rt>くべつ</rt></ruby>される</td></tr>
-<tr><td><ruby>半角文字<rt>はんかくもじ</rt></ruby></td><td><ruby>文字列<rt>もじれつ</rt></ruby>・コメント<ruby>以外<rt>いがい</rt></ruby>は<ruby>半角<rt>はんかく</rt></ruby>で<ruby>記述<rt>きじゅつ</rt></ruby></td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<div style="page-break-before:always"></div>
-
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="イベントハンドラ"><a class="header" href="#イベントハンドラ">イベントハンドラ</a></h1>
-<h2 id="-イベントハンドラとは"><a class="header" href="#-イベントハンドラとは">🎯 イベントハンドラとは？</a></h2>
-<p><strong>イベントハンドラ</strong>とは、ユーザーの<ruby>操作<rt>そうさ</rt></ruby>（クリック、マウス<ruby>移動<rt>いどう</rt></ruby>、ページ<ruby>読み込み<rt>よみこみ</rt></ruby>など）に<ruby>応じて<rt>おうじて</rt></ruby>、JavaScriptで<ruby>何か<rt>なにか</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>する<ruby>仕組み<rt>しくみ</rt></ruby>です。</p>
-<ul>
-<li>「イベント」＝ ユーザーの<ruby>操作<rt>そうさ</rt></ruby>やブラウザの<ruby>動き<rt>うごき</rt></ruby></li>
-<li>「ハンドラ」＝ そのイベントが<ruby>起きた<rt>おきた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>される<ruby>関数<rt>かんすう</rt></ruby>（<ruby>処理<rt>しょり</rt></ruby>）</li>
-</ul>
-<p>📌 <ruby>例<rt>れい</rt></ruby>：ボタンをクリックしたらメッセージを<ruby>表示<rt>ひょうじ</rt></ruby>する</p>
-<hr>
-<h2 id="-onclickクリックされたとき"><a class="header" href="#-onclickクリックされたとき">🖱️ <code>onclick</code>（クリックされたとき）</a></h2>
-<ul>
-<li><ruby>要素<rt>ようそ</rt></ruby>が<strong>クリックされたとき</strong>に<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
-<li>よく<ruby>使われる<rt>つかわれる</rt></ruby>イベントの1つです。</li>
-</ul>
-<hr>
-<h2 id="-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき"><a class="header" href="#-onmouseover--onmouseoutマウスが乗ったのったとき離れたはなれたとき">🐭 <code>onmouseover</code> / <code>onmouseout</code>（マウスが<ruby>乗った<rt>のった</rt></ruby>とき・<ruby>離れた<rt>はなれた</rt></ruby>とき）</a></h2>
-<ul>
-<li><code>onmouseover</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>来た<rt>きた</rt></ruby>とき</li>
-<li><code>onmouseout</code>：マウスカーソルが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</li>
-</ul>
-<hr>
-<h2 id="-onloadページが読み込まれたよみこまれたとき"><a class="header" href="#-onloadページが読み込まれたよみこまれたとき">📦 <code>onload</code>（ページが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき）</a></h2>
-<ul>
-<li>ページ<ruby>全体<rt>ぜんたい</rt></ruby>が<ruby>読み込まれた<rt>よみこまれた</rt></ruby>ときに<ruby>実行<rt>じっこう</rt></ruby>されるイベント。</li>
-<li><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>などに<ruby>使います<rt>つかいます</rt></ruby>。</li>
-</ul>
-<hr>
-<h2 id="-よく使うつかうイベントハンドラ"><a class="header" href="#-よく使うつかうイベントハンドラ">🧩 よく<ruby>使う<rt>つかう</rt></ruby>イベントハンドラ</a></h2>
-<p><ruby>以下<rt>いか</rt></ruby>は、JavaScriptでよく<ruby>使われる<rt>つかわれる</rt></ruby><strong>イベントハンドラ</strong>を、3つの<ruby>カテゴリ<rt>かてごり</rt></ruby>に<ruby>整理<rt>せいり</rt></ruby>したものです。</p>
-<hr>
-<h3 id="-1-マウス操作そうさに関するかんするイベント"><a class="header" href="#-1-マウス操作そうさに関するかんするイベント">🖱️ 1. マウス<ruby>操作<rt>そうさ</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
-</thead>
-<tbody>
-<tr><td><code>onclick</code></td><td><ruby>要素<rt>ようそ</rt></ruby>がクリックされたとき</td><td>ボタンを<ruby>押した<rt>おした</rt></ruby>ときに<ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
-<tr><td><code>ondblclick</code></td><td>ダブルクリックされたとき</td><td>2<ruby>回<rt>かい</rt></ruby>クリックで<ruby>別<rt>べつ</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
-<tr><td><code>onmouseover</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>乗った<rt>のった</rt></ruby>とき</td><td>テキストの<ruby>色<rt>いろ</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
-<tr><td><code>onmouseout</code></td><td>マウスが<ruby>要素<rt>ようそ</rt></ruby>から<ruby>離れた<rt>はなれた</rt></ruby>とき</td><td><ruby>元<rt>もと</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>に<ruby>戻す<rt>もどす</rt></ruby>など</td></tr>
-<tr><td><code>onmousemove</code></td><td>マウスが<ruby>動いた<rt>うごいた</rt></ruby>とき</td><td>マウス<ruby>位置<rt>いち</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
-<tr><td><code>oncontextmenu</code></td><td><ruby>右<rt>みぎ</rt></ruby>クリックされたとき</td><td>カスタムメニューを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h3 id="-2-ページの読み込みよみこみ移動いどうに関するかんするイベント"><a class="header" href="#-2-ページの読み込みよみこみ移動いどうに関するかんするイベント">📦 2. ページの<ruby>読み込み<rt>よみこみ</rt></ruby>・<ruby>移動<rt>いどう</rt></ruby>に<ruby>関する<rt>かんする</rt></ruby>イベント</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
-</thead>
-<tbody>
-<tr><td><code>onload</code></td><td>ページや<ruby>画像<rt>がぞう</rt></ruby>などが<ruby>読み込まれた<rt>よみこまれた</rt></ruby>とき</td><td><ruby>初期化<rt>しょきか</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby></td></tr>
-<tr><td><code>onunload</code></td><td>ページが<ruby>閉じられる<rt>とじられる</rt></ruby>とき</td><td><ruby>確認<rt>かくにん</rt></ruby>メッセージを<ruby>表示<rt>ひょうじ</rt></ruby>するなど</td></tr>
-<tr><td><code>onresize</code></td><td>ウィンドウサイズが<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>レイアウトを<ruby>調整<rt>ちょうせい</rt></ruby>するなど</td></tr>
-<tr><td><code>onscroll</code></td><td>ページがスクロールされたとき</td><td>スクロール<ruby>位置<rt>いち</rt></ruby>に<ruby>応じた<rt>おうじた</rt></ruby><ruby>処理<rt>しょり</rt></ruby></td></tr>
-<tr><td><code>onerror</code></td><td>エラーが<ruby>発生<rt>はっせい</rt></ruby>したとき</td><td><ruby>画像<rt>がぞう</rt></ruby>の<ruby>読み込み<rt>よみこみ</rt></ruby><ruby>失敗時<rt>しっぱいじ</rt></ruby>に<ruby>代替<rt>だいたい</rt></ruby><ruby>処理<rt>しょり</rt></ruby>を<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h3 id="-3-フォーム関連かんれんのイベント"><a class="header" href="#-3-フォーム関連かんれんのイベント">📝 3. フォーム<ruby>関連<rt>かんれん</rt></ruby>のイベント</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th><ruby>イベント名<rt>いべんとめい</rt></ruby></th><th><ruby>説明<rt>せつめい</rt></ruby></th><th><ruby>使用例<rt>しようれい</rt></ruby></th></tr>
-</thead>
-<tbody>
-<tr><td><code>onchange</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>が<ruby>変更<rt>へんこう</rt></ruby>されたとき</td><td>ドロップダウンの<ruby>選択<rt>せんたく</rt></ruby><ruby>変更<rt>へんこう</rt></ruby>など</td></tr>
-<tr><td><code>oninput</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>に<ruby>文字<rt>もじ</rt></ruby>が<ruby>入力<rt>にゅうりょく</rt></ruby>されたとき</td><td>リアルタイムで<ruby>文字数<rt>もじすう</rt></ruby>をカウント</td></tr>
-<tr><td><code>onsubmit</code></td><td>フォームが<ruby>送信<rt>そうしん</rt></ruby>されたとき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby>チェックを<ruby>行う<rt>おこなう</rt></ruby>など</td></tr>
-<tr><td><code>onreset</code></td><td>フォームがリセットされたとき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>を<ruby>初期化<rt>しょきか</rt></ruby>したときの<ruby>処理<rt>しょり</rt></ruby></td></tr>
-<tr><td><code>onfocus</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>が<ruby>選択<rt>せんたく</rt></ruby>されたとき</td><td><ruby>背景色<rt>はいけいしょく</rt></ruby>を<ruby>変える<rt>かえる</rt></ruby>など</td></tr>
-<tr><td><code>onblur</code></td><td><ruby>入力欄<rt>にゅうりょくらん</rt></ruby>の<ruby>選択<rt>せんたく</rt></ruby>が<ruby>外れた<rt>はずれた</rt></ruby>とき</td><td><ruby>入力内容<rt>にゅうりょくないよう</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby>など</td></tr>
-<tr><td><code>onkeydown</code></td><td>キーが<ruby>押された<rt>おされた</rt></ruby>とき</td><td><ruby>特定<rt>とくてい</rt></ruby>のキー<ruby>操作<rt>そうさ</rt></ruby>に<ruby>反応<rt>はんのう</rt></ruby></td></tr>
-<tr><td><code>onkeyup</code></td><td>キーが<ruby>離された<rt>はなされた</rt></ruby>とき</td><td><ruby>入力<rt>にゅうりょく</rt></ruby><ruby>完了後<rt>かんりょうご</rt></ruby>の<ruby>処理<rt>しょり</rt></ruby>など</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h3 id="-補足ほそく"><a class="header" href="#-補足ほそく">✅ <ruby>補足<rt>ほそく</rt></ruby></a></h3>
-<ul>
-<li>これらのイベントは、HTMLタグに<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>&lt;input oninput="..." /&gt;</code>）と、JavaScriptで<ruby>後から<rt>あとから</rt></ruby><ruby>設定<rt>せってい</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>（<ruby>例<rt>れい</rt></ruby>：<code>element.addEventListener(...)</code>）の<ruby>両方<rt>りょうほう</rt></ruby>で<ruby>使えます<rt>つかえます</rt></ruby>。</li>
-<li><ruby>初心者<rt>しょしんしゃ</rt></ruby>には、まずHTML<ruby>内<rt>ない</rt></ruby>に<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>書く<rt>かく</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>が<ruby>理解<rt>りかい</rt></ruby>しやすいです。</li>
-</ul>
-<hr><div style="break-before: page; page-break-before: always;"></div>
 <h1 id="三つのfor"><a class="header" href="#三つのfor">三つのfor</a></h1>
 <h2 id="i-古典的なfor"><a class="header" href="#i-古典的なfor">I. 古典的なfor</a></h2>
 <pre><code class="language-JavaScript">for (let i = 0; i &lt; 3; i++) {
@@ -5431,7 +5334,7 @@ console.log("こんにちは、" + name + "さん！");
 
 </code></pre>
 <hr>
-<h2 id="まとめテーブル-17"><a class="header" href="#まとめテーブル-17">まとめテーブル</a></h2>
+<h2 id="まとめテーブル-16"><a class="header" href="#まとめテーブル-16">まとめテーブル</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>

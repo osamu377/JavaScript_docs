@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>CSS - 留学生のためのJavaScript学習ガイド</title>
+        <title>日本語キーボードの記号 - 留学生のためのJavaScript学習ガイド</title>
 
 
         <!-- Custom HTML head -->
@@ -174,179 +174,17 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="javascript学習者のためのcss基本ガイドウェブページのデザインを学ぼう"><a class="header" href="#javascript学習者のためのcss基本ガイドウェブページのデザインを学ぼう">JavaScript学習者のためのCSS基本ガイド：ウェブページのデザインを学ぼう</a></h1>
-<p><strong>なぜJavaScriptの前にCSSを学ぶ必要があるのか？</strong></p>
-<p>JavaScriptでデザインを変えるためには、CSSの知識がどうしても必要です。留学生の皆さんにもわかりやすい「やさしい日本語」で、大切なポイントを<ruby>解説<rt>かいせつ</rt></ruby>します。</p>
-<p>JavaScriptはCSSを操作（そうさ）して、デザインを<ruby>動的<rt>どうてき</rt></ruby>に変える役割を持っています。CSSを知っておくことには、次のような<ruby>戦略<rt>せんりゃく</rt></ruby>的（せんりゃくてき）なメリットがあります。</p>
-<ol>
-<li>CSSを知らないとJavaScriptが書けない： JavaScriptで「<ruby>背景<rt>はいけい</rt></ruby>色を変える」という<ruby>命令<rt>めいれい</rt></ruby>を出すとき、CSSのプロパティ名（backgroundColorなど）を知らないと、プログラムが書けません。</li>
-<li>無駄（むだ）なコードが減る： 簡単なデザインの変化（マウスを乗せたときに色を変えるなど）は、CSSだけで作れます。CSSでできることを知っていれば、JavaScriptのコードを短く、シンプルに<ruby>保<rt>たも</rt></ruby>つことができます。</li>
-<li>エラーを減らせる： CSSの<ruby>仕組<rt>しく</rt></ruby>みを理解していれば、JavaScriptでデザインを操作したときに「なぜか動かない」というミスを防ぐことができます。</li>
-</ol>
-<p><a href="./html/01_02_CSS_01.html">ここをクリック</a>してみましょう。</p>
-<p>これから、このHTMLをCSSを使って、デザインを変更してゆきます。</p>
-<p>まず、デザインの基本である「文字のスタイル」について学びましょう。</p>
-<hr>
-<h2 id="i-文字のスタイル文字のデザインを変える"><a class="header" href="#i-文字のスタイル文字のデザインを変える">I. 文字のスタイル（文字のデザインを変える）</a></h2>
-<p>Webサイトにおいて、文字は情報を伝えるための最も大切な要素です。文字の「読みやすさ」は、ユーザーの<ruby>体験<rt>たいけん</rt></ruby>（UX “User eXperience“のこと）に大きな影響を与えます。</p>
-<h3 id="基本の3つのプロパティ"><a class="header" href="#基本の3つのプロパティ">基本の3つのプロパティ</a></h3>
-<p>まずは、よく使われる以下の3つの命令（プロパティ）を覚えましょう。</p>
-<ol>
-<li>font-size： 文字の大きさ。</li>
-<li>color： 文字の色。</li>
-<li>text-align： 文字の並べ方。左（left）、<ruby>真<rt>しん</rt></ruby>ん中（center）、右（right）のどこに<ruby>揃<rt>そろ</rt></ruby>（そろ）えるかを決めます。</li>
-</ol>
-<h3 id="cssの書かき方かたの基本"><a class="header" href="#cssの書かき方かたの基本">CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の基本</a></h3>
-<p>CSSは、「どの場所に（セレクタ）」「何の項目を（プロパティ）」「どう変えるか（値）」というルールで書きます。</p>
-<pre><code class="language-css">/* h1タグ（見出し）のデザインを変える例（れい） */
-h1 {
-  font-size: 24px;      /* 大きさを24ピクセルにする */
-  color: blue;          /* 色を青にする */
-  text-align: center;   /* 真ん中（まんなか）に並べる */
-}
-</code></pre>
-<p><a href="./html/01_02_CSS_02.html">ここをクリック</a>してみましょう。</p>
-<h3 id="セレクタ"><a class="header" href="#セレクタ">セレクタ</a></h3>
-<p><strong>セレクタ</strong> はウェブページを分解して、その一部を取り出すときに、必要な部分を探すヒントとして使う、名前や特徴です。「タグ セレクタ」「クラス セレクタ」などがあります。</p>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p><strong>セレクタ</strong> はJavaScriptでも、とても大事です。JavaScriptを書くときは、仕事をしてもらうオブジェクトを指定しなければなりません。そのとき、この <strong>セレクタ</strong> を利用するのです。</p>
-</blockquote>
-<hr>
-<h2 id="ii-タグのスタイルhtml要素に直接命令する"><a class="header" href="#ii-タグのスタイルhtml要素に直接命令する">II. タグのスタイル（HTML要素に直接命令する）</a></h2>
-<p>「タグ セレクタ」とは、<code>&lt;h1&gt;</code>や<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code>といったHTMLのタグ名に対して、スタイルを適用する方法です。ページ全体のデザインを一度に整えるのにとても便利です。</p>
-<h3 id="テーブル表のスタイル例れい"><a class="header" href="#テーブル表のスタイル例れい">テーブル（表）のスタイル<ruby>例<rt>れい</rt></ruby></a></h3>
-<p>「テーブル（表）」をきれいに見せるためのプロパティを比較（ひかく）してみましょう。</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ名</th><th>意味（いみ）</th><th>具体的な<ruby>例<rt>れい</rt></ruby>と効果</th></tr>
-</thead>
-<tbody>
-<tr><td>border</td><td>枠線（わくせん）</td><td>1px solid black（1pxの太さの黒い<ruby>実線<rt>じっせん</rt></ruby>（じっせん））</td></tr>
-<tr><td>padding</td><td><ruby>内側<rt>うちがわ</rt></ruby>の余白</td><td>セルの中の文字と枠線の間のスペースを広げます。</td></tr>
-<tr><td>background-color</td><td><ruby>背景<rt>はいけい</rt></ruby>の色</td><td>表の<ruby>背景<rt>はいけい</rt></ruby>に色を塗ります。</td></tr>
-</tbody>
-</table>
-</div>
-<h3 id="border-collapse-collapse-は魔法まほうの言葉"><a class="header" href="#border-collapse-collapse-は魔法まほうの言葉">border-collapse: collapse; は「<ruby>魔法<rt>まほう</rt></ruby>の言葉」</a></h3>
-<p>テーブルのデザインで最も重要なのが border-collapse: collapse; です。 <ruby>通常<rt>つうじょう</rt></ruby>、テーブルの枠線はセルごとに分かれていて、そのままでは「二重線」のように見えてしまいます。このプロパティを <code>&lt;table&gt;</code>タグ に適用すると、隣（となり）り合う2本の線を1本にまとめることができます。まさに 「2本の線を1本にする<ruby>魔法<rt>まほう</rt></ruby>の言葉」 です。これを使うだけで、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>がスッキリとプロらしくなります。</p>
-<pre><code class="language-css">/* テーブルのデザインを変える例（れい） */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: sans-serif;
-}
-th, td {
-    border: 1px solid #333;
-}
-th, td {
-    padding: 12px 15px;
-}
-th {
-    background-color: #4CAF50; /* ヘッダーは緑 */
-    color: white;
-}
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-</code></pre>
-<blockquote class="blockquote-tag blockquote-tag-note">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>注意：border（枠線）は各セル（<code>&lt;th&gt;</code>や<code>&lt;td&gt;</code>）に<ruby>設定<rt>せってい</rt></ruby>し、border-collapseは全体の親である<code>&lt;table&gt;</code>に<ruby>設定<rt>せってい</rt></ruby>するのが正しいルールです。</p>
-</blockquote>
-<p><a href="./html/01_02_CSS_03.html">ここをクリック</a>してみましょう。</p>
-<hr>
-<h2 id="iii-特定の要素クラスのスタイル"><a class="header" href="#iii-特定の要素クラスのスタイル">III. 特定の要素（クラス）のスタイル</a></h2>
-<p>「クラス（Class）」を使うと、特定のグループに名前をつけて、その名前を呼ぶことでスタイルを適用できます。同じデザインを何度も書かなくて済むため、コードの管理がとても楽になります。</p>
-<p>タグの名前はあらかじめHTMLのルールで決まっていますが、<strong>クラスの名前はプログラマが自分で付けるもの</strong> です。</p>
-<h3 id="クラスを使うステップ"><a class="header" href="#クラスを使うステップ">クラスを使うステップ</a></h3>
-<ol>
-<li>HTMLで名前をつける： <code>&lt;p class="highlight"&gt;</code> のように書きます。</li>
-<li>CSSでデザインを決める： <code>.highlight { color: red; }</code> のように、先頭にドットをつけて書きます。</li>
-</ol>
-<h3 id="クラス名のルール"><a class="header" href="#クラス名のルール">クラス名のルール</a></h3>
-<ul>
-<li>名前の始まりには必ず .（ドット） をつけます（<ruby>例<rt>れい</rt></ruby>：.main-title）。</li>
-<li>名前は、そのグループが何であるかわかる 意味のある英語 を使います。</li>
-<li>複数の単語を繋げる場合は、JavaScriptと同じ camelCase（キャメルケース） （<ruby>例<rt>れい</rt></ruby>：.submitButton）を使うのがおすすめです。JSとCSSで名前の付け方を統一（とういつ）すると、ケアレスミス（不注意な間違い）を減らすことができます。</li>
-</ul>
-<h3 id="javascriptへの繋がり"><a class="header" href="#javascriptへの繋がり">JavaScriptへの繋がり</a></h3>
-<p>JavaScriptには、<code>getElementsByClassName()</code> という「クラス名を使って要素を見つける」命令があります。CSSでクラスを使ってグループ化しておけば、<ruby>後<rt>あと</rt></ruby>でJavaScriptからそのグループだけを一度に動かすことが非常に簡単になります。</p>
-<pre><code class="language-css">/* highlightクラスのデザインを変える例（れい） */
-.highlight { color: red; }
-</code></pre>
-<p><a href="./html/01_02_CSS_04.html">ここをクリック</a>してみましょう。</p>
-<hr>
-<h2 id="iv-特定の状態のスタイル"><a class="header" href="#iv-特定の状態のスタイル">IV. 特定の状態のスタイル</a></h2>
-<p>ウェブページには「<ruby>普段<rt>ふだん</rt></ruby>の状態」だけでなく、「マウスが乗ったとき」のような「特別な状態」があります。この特別な状態を <strong><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス</strong> と呼びます。</p>
-<p><strong>代表的な<ruby>疑似<rt>ぎじ</rt></ruby>クラス：:hover</strong></p>
-<p>最もよく使われるのが :hover（ホバー）です。これは「要素の上にマウスカーソルが乗ったとき」の状態を指します。</p>
-<ul>
-<li>CSSの :hover： マウスが乗ったときに、色をサッと変えることができます。</li>
-<li>JavaScriptの onmouseover / onmouseout： マウスが乗ったとき（over）と<ruby>離<rt>はな</rt></ruby>れたとき（out）に、より複雑（ふくざつ）な<ruby>動<rt>うご</rt></ruby>き（計算や<ruby>画面<rt>がめん</rt></ruby>の<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）をさせるときに使います。</li>
-</ul>
-<p><ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けの指針（ししん）： 「ボタンの色を少し明るくする」といった<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更だけなら CSS を使い、「ボタンに乗ったらデータを保存（ほぞん）する」といった機能の追加は JavaScript を使いましょう。</p>
-<pre><code class="language-css">a:link,
-a:visited {
-  color: rebeccapurple;
-  font-weight: bold;
-}
-a:hover {
-  color: hotpink;
-}
-</code></pre>
-<p><a href="./html/01_02_CSS_05.html">ここをクリック</a>してみましょう。</p>
-<hr>
-<h2 id="v-javascriptからcssを操作する重要ルール"><a class="header" href="#v-javascriptからcssを操作する重要ルール">V. JavaScriptからCSSを操作する重要ルール</a></h2>
-<p>JavaScriptを使ってデザインを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えるとき、CSSのプロパティ名の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が少し変わるという「重要なルール」があります。</p>
-<p><strong>キャメルケースへの<ruby>変換<rt>へんかん</rt></ruby>（へんかん）</strong></p>
-<p>CSSでハイフン（-）を使っていた名前は、JavaScriptではハイフンを消して、次の文字を大文字にする 「キャメルケース」 に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えます。</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></th><th>JavaScriptでの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></th><th>意味</th></tr>
-</thead>
-<tbody>
-<tr><td>font-size</td><td>fontSize</td><td>文字の大きさ</td></tr>
-<tr><td>background-color</td><td>backgroundColor</td><td><ruby>背景<rt>はいけい</rt></ruby>の色</td></tr>
-<tr><td>border-radius</td><td>borderRadius</td><td>角の丸み（かどのまるみ）</td></tr>
-</tbody>
-</table>
-</div>
-<p><strong>JavaScriptでの<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え構造：「道のり」で考える</strong></p>
-<p>JavaScriptからCSSを操作するときは、次のような構造で命令を出します。</p>
-<pre><code class="language-javascript">// ID名が "title" の要素の色を赤に変える
-document.getElementById("title").style.color = "red";
-</code></pre>
-<p>これを、目的地（もくてきち）までの 「道のり（みちのり）」 として分解（ぶんかい）してみましょう。</p>
-<ol>
-<li>document：このウェブページという「大きな書類」の中から、</li>
-<li>.getElementById(“title”)：IDが “title” の「場所」を見つけて、</li>
-<li>.style：「デザイン（スタイル）」の担当者に、</li>
-<li>.color = “red”：「文字の色」を「赤」に変えるように命令する。</li>
-</ol>
-<p>このように、ドット（.）で繋ぐことで、操作したい場所へ順番にたどり着くことができます。</p>
-<p>【参考】この「道のり」を英語を使って「パス(path)」と呼ぶことがあります。</p>
-<hr>
-<h2 id="vi-css基礎のまとめ"><a class="header" href="#vi-css基礎のまとめ">VI. CSS基礎のまとめ</a></h2>
-<ul>
-<li>文字スタイル： font-size や color で読みやすくする。</li>
-<li>タグスタイル： タグに直接命令し、border（1px solid black）などで整える。</li>
-<li>クラス： 名前をつけてグループ化し、JavaScriptからも操作しやすくする。</li>
-<li><ruby>疑似<rt>ぎじ</rt></ruby>（ぎじ）クラス： :hover でユーザーの<ruby>動<rt>うご</rt></ruby>きに<ruby>反応<rt>はんのう</rt></ruby>させる。</li>
-</ul>
-<p>HTMLをしっかり覚（おぼ）えることが、JavaScriptをマスターするための<ruby>近道<rt>ちかみち</rt></ruby>（ちかみち）です。また、CSSで自分の<ruby>思<rt>おも</rt></ruby>い<ruby>通<rt>どお</rt></ruby>りのデザインが作れるようになると、JavaScriptの学習はもっと楽しくなります。まずは <strong>「自分の書いたコードで<ruby>画面<rt>がめん</rt></ruby>が変わる楽しさ」</strong> を大切にしてください。</p>
+                        <h1 id="日本語キーボードの記号"><a class="header" href="#日本語キーボードの記号">日本語キーボードの記号</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="01_01_HTML.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="08_01_用語集.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="02_00_はじめてのJavaScript.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="08_03_かっこの種類.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -356,11 +194,11 @@ document.getElementById("title").style.color = "red";
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="01_01_HTML.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="08_01_用語集.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="02_00_はじめてのJavaScript.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="08_03_かっこの種類.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
