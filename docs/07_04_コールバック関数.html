@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-a10e83d1.js"></script>
@@ -192,7 +192,7 @@
 <p>この「できあがったら、〇〇してね」という <strong>「〇〇」の部分</strong> がコールバック<ruby>関数<rt>かんすう</rt></ruby>です。</p>
 <hr>
 <h2 id="iii-foreach-の中での動うごき"><a class="header" href="#iii-foreach-の中での動うごき">III. <code>forEach</code> の中での<ruby>動<rt>うご</rt></ruby>き</a></h2>
-<p><code>forEach</code> は、<ruby>配列<rt>はいれつ</rt></ruby>（データのリスト）の中身を一つずつ<ruby>見<rt>み</rt></ruby>ていく命令です。</p>
+<p><code>forEach</code> は、<ruby>配列<rt>はいれつ</rt></ruby>（データのリスト）の中身をひとつずつ<ruby>見<rt>み</rt></ruby>ていく命令です。</p>
 <pre><code class="language-javascript">// 果物（くだもの）の名前のリスト
 const fruits = ["りんご", "バナナ", "みかん"];
 
@@ -204,7 +204,7 @@ fruits.forEach((item) =&gt; {
 </code></pre>
 <h3 id="プログラムの中の会話かいわ"><a class="header" href="#プログラムの中の会話かいわ">プログラムの中の会話（かいわ）</a></h3>
 <ul>
-<li><strong>forEach:</strong> 「リストの中身を一つずつ取り出すよ！ 取り出すたびに、何をすればいい？」</li>
+<li><strong>forEach:</strong> 「リストの中身をひとつずつ取り出すよ！ 取り出すたびに、何をすればいい？」</li>
 <li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby>:</strong> 「取り出したものに『を食べます』をつけて<ruby>表示<rt>ひょうじ</rt></ruby>してね！」</li>
 <li><strong>forEach:</strong> 「わかった！ じゃあ、『りんご』を取り出したから、君（コールバック<ruby>関数<rt>かんすう</rt></ruby>）に<ruby>渡<rt>わた</rt></ruby>すね。<ruby>実行<rt>じっこう</rt></ruby>して！」</li>
 <li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby>:</strong> 「はい！『りんごを食べます』と出します！」</li>
@@ -222,7 +222,7 @@ fruits.forEach((item) =&gt; {
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
 <ul>
 <li><strong>コールバック<ruby>関数<rt>かんすう</rt></ruby></strong> ＝ 他のプログラムに「これ、あとで使ってね」と渡す<ruby>関数<rt>かんすう</rt></ruby>のこと。</li>
-<li><strong>forEach</strong> ＝ リストのデータ一つずつに、コールバック<ruby>関数<rt>かんすう</rt></ruby>を動かしてあげる<ruby>役割<rt>やくわり</rt></ruby>。</li>
+<li><strong>forEach</strong> ＝ リストのデータひとつずつに、コールバック<ruby>関数<rt>かんすう</rt></ruby>を動かしてあげる<ruby>役割<rt>やくわり</rt></ruby>。</li>
 </ul>
 <hr>
 <h2 id="v-プログラム例れい"><a class="header" href="#v-プログラム例れい">V. プログラム<ruby>例<rt>れい</rt></ruby></a></h2>
@@ -235,7 +235,7 @@ const numbers = [10, 20, 30, 40];
 // 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
 let total = 0;
 
-// 3. forEach を使って、一つずつ足していきます
+// 3. forEach を使って、ひとつずつ足していきます
 numbers.forEach((num) =&gt; {
   // ここがコールバック関数（かんすう）です！
   total = total + num; 

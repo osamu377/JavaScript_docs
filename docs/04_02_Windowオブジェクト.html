@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-a10e83d1.js"></script>
@@ -181,7 +181,7 @@
 <hr>
 <h2 id="i-windowオブジェクト"><a class="header" href="#i-windowオブジェクト">I. Windowオブジェクト</a></h2>
 <h3 id="1-windowオブジェクトとは"><a class="header" href="#1-windowオブジェクトとは">1. Windowオブジェクトとは？</a></h3>
-<p>ブラウザの「タブ」一つひとつが、一つの <code>window</code> です。
+<p>ブラウザの「タブ」ひとつひとつが、ひとつの <code>window</code> です。
 JavaScriptを実行するとき、<strong>最初からそこにいる「グローバルオブジェクト」</strong>（一番偉いオブジェクト）です。</p>
 <p>実は、私たちが普段使っている <code>console.log()</code> や <code>alert()</code> も、<ruby>本当<rt>ほんとう</rt></ruby>は <code>window.console.log()</code> や <code>window.alert()</code> という名前です。でも、社長さんは有名すぎるので、<strong><code>window.</code> を省略（しょうりゃく）して書くことができます。</strong></p>
 <hr>
@@ -315,13 +315,13 @@ message.style.color = "red";
 <p><strong>オブジェクトと const の意外な関係</strong></p>
 <p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>された<ruby>変数<rt>へんすう</rt></ruby>は、後から値を変更できないはずでは？」そう思った人は、<ruby>変数<rt>へんすう</rt></ruby>の説明をとてもよく覚えている人です。</p>
 <p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
-<p>JavaScriptの<ruby>初心者<rt>しょしんしゃ</rt></ruby>が混乱しやすい点の一つが、オブジェクトと <code>const</code> の意外な関係です。</p>
+<p>JavaScriptの<ruby>初心者<rt>しょしんしゃ</rt></ruby>が混乱しやすい点のひとつが、オブジェクトと <code>const</code> の意外な関係です。</p>
 <p>「 <code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>した<ruby>変数<rt>へんすう</rt></ruby>は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
 <ul>
 <li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ることはできません（別の箱に名札を付け替えるのは禁止）。</li>
 <li>中身の変更はOK：箱の中に入っている<ruby>個別<rt>こべつ</rt></ruby>のデータ（プロパティ）を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えることは可能です。</li>
 </ul>
-<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）を一つ開けて、中に入っているお菓子を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>たり、ジャムを塗ったりすることは自由なのです。</p>
+<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）をひとつ開けて、中に入っているお菓子を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>たり、ジャムを塗ったりすることは自由なのです。</p>
 <p><ruby>例<rt>たと</rt></ruby>えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えられるようなイメージです。</p>
 <p>先ほどの<ruby>例<rt>れい</rt></ruby>では、<code>const</code>を使って<ruby>宣言<rt>せんげん</rt></ruby>した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ました。これはエラーにはなりません。</p>
 <p>しかし、</p>
@@ -358,7 +358,7 @@ message = document.querySelector("p")
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「現場監督の document くん」がいれば、ウェブページを自由自在に<ruby>操<rt>あやつ</rt></ruby>れるようになります。</p>
+<p>いかがでしょうか？「現場監督の document くん」がいれば、ウェブページを思った通りに<ruby>操<rt>あやつ</rt></ruby>れるようになります。</p>
 <hr>
 <h2 id="iii-locationオブジェクト"><a class="header" href="#iii-locationオブジェクト">III. Locationオブジェクト</a></h2>
 <p><strong>Locationオブジェクト</strong> は、今ブラウザで見ているウェブサイトの「住所（URL）」を管理するオブジェクトです。</p>
@@ -455,7 +455,7 @@ function refreshPage() {
 </div>
 <hr>
 <p>いかがでしょうか？URLをパーツごとに理解できると、特定のページだけで動くプログラムを作ったり、ユーザーを別のページに誘導（ゆうどう）したりできるようになります。</p>
-<p><strong>次は、今のページから「一つ前に戻る」など、ブラウザの履歴をさらに詳しく<ruby>操<rt>あやつ</rt></ruby>る <code>History</code> オブジェクトについても見てみますか？</strong></p>
+<p><strong>次は、今のページから「ひとつ前に戻る」など、ブラウザの履歴をさらに詳しく<ruby>操<rt>あやつ</rt></ruby>る <code>History</code> オブジェクトについても見てみますか？</strong></p>
 <h2 id="iv-styleオブジェクト"><a class="header" href="#iv-styleオブジェクト">IV. Styleオブジェクト</a></h2>
 <p><strong>Styleオブジェクト</strong>は、JavaScriptを使ってウェブサイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（CSS）を自由に変えるための道具です。</p>
 <p>留学生の方には、Styleオブジェクトは**「パーツに新しい服を着せたり、メイクをしたりする『スタイリストさん』」**だと教えてあげてください。</p>

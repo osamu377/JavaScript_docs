@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-a10e83d1.js"></script>
@@ -186,7 +186,7 @@
 <p>以前、<ruby>関数<rt>かんすう</rt></ruby>は「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>」のようなものだと学びましたね。ボタンを押すと、中に入れた処理が実行されて結果が出てきます。</p>
 <p>forEach を使うときは、この<ruby>関数<rt>かんすう</rt></ruby>をさらに便利に使います。</p>
 <ul>
-<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）を一つ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
+<li><ruby>例<rt>たと</rt></ruby>え話: forEach は「店員さん」、渡す<ruby>関数<rt>かんすう</rt></ruby>は「店員さんに渡すチェックメモ（コールバック<ruby>関数<rt>かんすう</rt></ruby>）」です。 店員さんは、<ruby>配列<rt>はいれつ</rt></ruby>の中身（リンゴなど）をひとつ取るたびに、あなたが渡したメモを読んで「傷がないか確認する」などの作業を行ってくれます。</li>
 </ul>
 <h3 id="2-サンプルプログラム-合計ごうけいを計算する"><a class="header" href="#2-サンプルプログラム-合計ごうけいを計算する">2. サンプルプログラム: <ruby>合計<rt>ごうけい</rt></ruby>を計算する</a></h3>
 <p>このプログラムは、リストの中にある数字を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>足<rt>た</rt></ruby>して、<ruby>最後<rt>さいご</rt></ruby>に答えを出します。</p>
@@ -196,7 +196,7 @@ const numbers = [10, 20, 30, 40];
 // 2. 合計を入れる「空（から）の箱」を作ります。最初は 0 です。
 let total = 0;
 
-// 3. forEach （上の例（たと）えでは「店員さん」）は、配列（はいれつ）の中身を一つずつ取って、メモ通りに処理します。
+// 3. forEach （上の例（たと）えでは「店員さん」）は、配列（はいれつ）の中身をひとつずつ取って、メモ通りに処理します。
 numbers.forEach((num) =&gt; {
   // ここがコールバック関数（かんすう）です！ 店員さんに「この仕事をしてください」と渡すメモです！
   total = total + num; 

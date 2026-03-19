@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-a10e83d1.js"></script>
@@ -176,7 +176,7 @@
                     <main>
                         <h1 id="配列はいれつ"><a class="header" href="#配列はいれつ"><ruby>配列<rt>はいれつ</rt></ruby></a></h1>
 <h2 id="i-配列はいれつarrayの基本"><a class="header" href="#i-配列はいれつarrayの基本">I. <ruby>配列<rt>はいれつ</rt></ruby>（Array）の基本</a></h2>
-<p>たくさんのデータをバラバラに管理するのは大変です。そこで使うのが「<ruby>配列<rt>はいれつ</rt></ruby>（はいれつ）」という、複数のデータを一つにまとめて管理できるリストのような道具です。</p>
+<p>たくさんのデータをバラバラに管理するのは大変です。そこで使うのが「<ruby>配列<rt>はいれつ</rt></ruby>（はいれつ）」という、複数のデータをひとつにまとめて管理できるリストのような道具です。</p>
 <h3 id="配列はいれつはいれつはならんだ箱"><a class="header" href="#配列はいれつはいれつはならんだ箱"><ruby>配列<rt>はいれつ</rt></ruby>（はいれつ）は「ならんだ箱」</a></h3>
 <p>たくさんのデータを、ひとつのグループとしてまとめたいときに、「<ruby>配列<rt>はいれつ</rt></ruby>」を使います。留学生のみなさんには、<strong>「番号がついたロッカー」</strong> や <strong>「番号がついた部屋が並んでいるマンション」</strong> をイメージすると分かりやすくなります！</p>
 <blockquote class="blockquote-tag blockquote-tag-tip">
@@ -246,7 +246,7 @@ console.log(snacks); // ["チョコ", "アイス"]
 <ruby>全角<rt>ぜんかく</rt></ruby>の <strong><code>［ ］</code></strong> を使ってしまうとエラーになります。必ず<ruby>半角<rt>はんかく</rt></ruby>の <strong><code>[ ]</code></strong> を使いましょう！</p>
 </blockquote>
 <h3 id="配列はいれつの要素"><a class="header" href="#配列はいれつの要素"><ruby>配列<rt>はいれつ</rt></ruby>の要素</a></h3>
-<p><ruby>配列<rt>はいれつ</rt></ruby>の一つひとつの箱の中に入っているデータを<ruby>配列<rt>はいれつ</rt></ruby>の「要素（ようそ）」と言います。</p>
+<p><ruby>配列<rt>はいれつ</rt></ruby>のひとつひとつの箱の中に入っているデータを<ruby>配列<rt>はいれつ</rt></ruby>の「要素（ようそ）」と言います。</p>
 <p><ruby>配列<rt>はいれつ</rt></ruby>の要素の数は<code>length</code>プロパティで、知ることができます。オブジェクトのプロパティを取り出すときは、<strong>「.（ドット）」</strong> を使います。</p>
 <ul>
 <li><code>fruits.length</code> → 今、箱がいくつあるか（3つ）教えてくれます。</li>
@@ -290,7 +290,7 @@ train.push("車両（しゃりょう）C");
 console.log(train); // ["車両（しゃりょう）A", "車両（しゃりょう）B", "車両（しゃりょう）C"]
 
 </code></pre>
-<h4 id="popポップおしりを一つ消す"><a class="header" href="#popポップおしりを一つ消す"><code>pop</code>（ポップ）：おしりを一つ消す</a></h4>
+<h4 id="popポップおしりをひとつ消す"><a class="header" href="#popポップおしりをひとつ消す"><code>pop</code>（ポップ）：おしりをひとつ消す</a></h4>
 <p>一番最後（右側）のデータを1つ<ruby>取<rt>と</rt></ruby>り<ruby>除<rt>のぞ</rt></ruby>きます。</p>
 <ul>
 <li><strong>イメージ：</strong> 電車の最後の<ruby>車両<rt>しゃりょう</rt></ruby>を切り<ruby>離<rt>はな</rt></ruby>（はな）す。</li>
@@ -304,7 +304,7 @@ console.log(last);  // "車両（しゃりょう）C" （消えたもの）
 console.log(train); // ["車両（しゃりょう）A", "車両（しゃりょう）B"]
 
 </code></pre>
-<h4 id="shiftシフト先頭を一つ消す"><a class="header" href="#shiftシフト先頭を一つ消す"><code>shift</code>（シフト）：先頭を一つ消す</a></h4>
+<h4 id="shiftシフト先頭をひとつ消す"><a class="header" href="#shiftシフト先頭をひとつ消す"><code>shift</code>（シフト）：先頭をひとつ消す</a></h4>
 <p>一番最初（左側・0番目）のデータを消して、残りのデータを前にずらします。</p>
 <ul>
 <li><strong>イメージ：</strong> お店の行列で、先頭の人が店に入り、後ろの人が全員前にずれる。</li>
@@ -331,7 +331,7 @@ console.log(sub);     // ["B", "C"]
 console.log(members); // ["A", "B", "C", "D"] （元の配列（はいれつ）はそのまま！）
 
 </code></pre>
-<h4 id="unshiftアンシフト先頭に一つ追加する"><a class="header" href="#unshiftアンシフト先頭に一つ追加する"><code>unshift</code>（アンシフト）:先頭に一つ追加する**</a></h4>
+<h4 id="unshiftアンシフト先頭にひとつ追加する"><a class="header" href="#unshiftアンシフト先頭にひとつ追加する"><code>unshift</code>（アンシフト）:先頭にひとつ追加する**</a></h4>
 <p><ruby>配列<rt>はいれつ</rt></ruby>の**一番最初（先頭）**に、新しいデータを追加します。</p>
 <ul>
 <li><strong>イメージ：</strong> 行列の一番前に割り込み（わりこみ）をする感じです。</li>

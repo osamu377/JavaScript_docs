@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c9614fe0.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-a10e83d1.js"></script>
@@ -243,12 +243,12 @@ myName = "Chris"; // 後から値を代入（だいにゅう）する
 <ul>
 <li><strong>大文字と小文字は区別される</strong>: <code>Name</code> と <code>name</code> は別の<ruby>変数<rt>へんすう</rt></ruby>として扱われます。</li>
 <li><strong>使用できる文字</strong>: <ruby>半角<rt>はんかく</rt></ruby><ruby>英数字<rt>えいすうじ</rt></ruby>、アンダースコア（<code>_</code>）、ドル記号（<code>$</code>）が使えますが、<strong>数字から始めることはできません</strong>。</li>
-<li><strong>キャメルケース (camelCase)</strong>: 複数の単語を繋げる場合、2つ目以降の単語の先頭を大文字にする<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が一般的です。
+<li><strong>キャメルケース (camelCase)</strong>: 複数の単語を<ruby>繋<rt>つな</rt></ruby>げる場合、2つ目以降の単語の先頭を大文字にする<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が一般的です。
 <ul>
 <li><strong><ruby>例<rt>れい</rt></ruby></strong>: <code>finalOutputValue</code>、<code>userName</code></li>
 </ul>
 </li>
-<li><strong>意味のある名前</strong>: <code>a</code> や <code>b</code> といった一文字ではなく、<code>count</code> や <code>isRaining</code> など、<strong>中身が何であるか伝わる英語の名前</strong>を付けることが<ruby>推奨<rt>すいしょう</rt></ruby>されます。</li>
+<li><strong>意味のある名前</strong>: <code>a</code> や <code>b</code> といった一文字ではなく、<code>count</code> や <code>isRaining</code> など、<strong>中身が何であるか伝わる英語の名前</strong>を付けるのがよい、とされています。</li>
 </ul>
 <p>⚠️ 留学生への重要アドバイス：<ruby>半角<rt>はんかく</rt></ruby>と<ruby>全角<rt>ぜんかく</rt></ruby></p>
 <p>JavaScriptのコードを書く際、最も多いエラーの原因は<ruby>全角<rt>ぜんかく</rt></ruby>文字の使用です。<strong><ruby>変数<rt>へんすう</rt></ruby>の名前にも、<ruby>全角<rt>ぜんかく</rt></ruby>文字は使えません。</strong> すべて<ruby>半角<rt>はんかく</rt></ruby>文字にしてください。</p>
@@ -259,7 +259,7 @@ myName = "Chris"; // 後から値を代入（だいにゅう）する
 <li><strong><ruby>数値<rt>すうち</rt></ruby>型</strong>: <code>let age = 17;</code> （<ruby>引用符<rt>いんようふ</rt></ruby>は付けない）</li>
 <li><strong><ruby>論理<rt>ろんり</rt></ruby>型</strong>: <code>let iAmAlive = true;</code> （<code>true</code> または <code>false</code> の<ruby>真偽<rt>しんぎ</rt></ruby>値）</li>
 <li><strong><ruby>配列<rt>はいれつ</rt></ruby></strong>: <code>let myNameArray = ["Chris", "Bob", "Jim"];</code> （複数の値をまとめて管理するリスト）</li>
-<li><strong>オブジェクト</strong>: <code>let dog = { name: "ポチ", breed: "ダルメシアン" };</code> （関連するデータと機能をひとまとめにしたもの）</li>
+<li><strong>オブジェクト</strong>: <code>let dog = { name: "ポチ", breed: "ダルメシアン" };</code> （関連するデータと機能をひとつにまとめたもの）</li>
 </ul>
 <p>ここでは「文字列型」「<ruby>数値<rt>すうち</rt></ruby>型」「<ruby>論理<rt>ろんり</rt></ruby>型」について説明します。「<ruby>配列<rt>はいれつ</rt></ruby>」と「オブジェクト」については、あとの章で説明します。</p>
 <hr>
@@ -271,7 +271,7 @@ myName = "Chris"; // 後から値を代入（だいにゅう）する
 <li>シングルクォーテーション： <strong>‘こんにちは’</strong></li>
 <li>ダブルクォーテーション： <strong>“こんにちは”</strong></li>
 </ul>
-<p>どちらを使っても構いませんが、一つのプログラムの中で統一するのが良い習慣です。</p>
+<p>どちらを使っても構いませんが、ひとつのプログラムの中で統一するのが良い習慣です。</p>
 <h3 id="2-テンプレートリテラル最新さいしんのスマートな書かき方かた"><a class="header" href="#2-テンプレートリテラル最新さいしんのスマートな書かき方かた">2. テンプレートリテラル：<ruby>最新<rt>さいしん</rt></ruby>のスマートな<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby></a></h3>
 <p>バッククォート（ ` ）と ${ } を使った「テンプレートリテラル」を使うと、<ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>みや<ruby>改行<rt>かいぎょう</rt></ruby>が非常に簡単になります。</p>
 <pre><code class="language-javascript">const name = "佐藤";
