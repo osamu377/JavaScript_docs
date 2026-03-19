@@ -4,7 +4,7 @@
 
 HTMLは ウェブサイトの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」、つまり <ruby>構造<rt>こうぞう</rt></ruby>を <ruby>作<rt>つく</rt></ruby>るための <ruby>言葉<rt>ことば</rt></ruby>です。この <ruby>基本<rt>きほん</rt></ruby>を <ruby>正<rt>ただ</rt></ruby>しく <ruby>知<rt>し</rt></ruby>ることは、ウェブサイトを <ruby>作<rt>つく</rt></ruby>る <ruby>プロ<rt>ぷろ</rt></ruby>（<ruby>仕事<rt>しごと</rt></ruby>を する <ruby>人<rt>ひと</rt></ruby>）に なるために、とても <ruby>大切<rt>たいせつ</rt></ruby>なことです。
 
-> [!note]
+> [注意]
 > 「<ruby>骨組<rt>ほねぐ</rt></ruby>み」は、もとは「からだの<ruby>骨<rt>ほね</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て」のことですが、そこからの「<ruby>例<rt>たと</rt></ruby>え」で、<ruby>建造物<rt>けんぞうぶつ</rt></ruby>・<ruby>機械<rt>きかい</rt></ruby>などの<ruby>基礎<rt>きそ</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>構造<rt>こうぞう</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>のことも<ruby>指<rt>さ</rt></ruby>します。
 
 ***
@@ -59,7 +59,7 @@ HTMLは「タグの <ruby>中<rt>なか</rt></ruby>に <ruby>別<rt>べつ</rt><
 </html>
 ```
 
-> [!note]
+> [注意]
 > 「<ruby>入<rt>い</rt></ruby>れ<ruby>子<rt>こ</rt></ruby>」: <ruby>大<rt>おお</rt></ruby>きな<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>箱<rt>はこ</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っている、というように、あるものの<ruby>中<rt>なか</rt></ruby>に、よく<ruby>似<rt>に</rt></ruby>たあるものが<ruby>入<rt>はい</rt></ruby>っている<ruby>様子<rt>ようす</rt></ruby>を<ruby>指<rt>さ</rt></ruby>す<ruby>日本語<rt>にほんご</rt></ruby>です。
 
 ***

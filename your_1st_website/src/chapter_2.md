@@ -35,7 +35,7 @@
 
 <ruby>目的<rt>もくてき</rt></ruby>が<ruby>決<rt>き</rt></ruby>まったら、<ruby>次<rt>つぎ</rt></ruby>はそれを<ruby>絵<rt>え</rt></ruby>に<ruby>描<rt>か</rt></ruby>いてみましょう。
 
-> [!note]
+> [注意]
 > 「プロジェクト」は<ruby>一<rt>ひと</rt></ruby>つのウェブサイトやアプリケーションを<ruby>作<rt>つく</rt></ruby>るための<ruby>計画<rt>けいかく</rt></ruby>、あるいは、その<ruby>計画<rt>けいかく</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる<ruby>人々<rt>ひとびと</rt></ruby>のグループのことです。そうした<ruby>計画<rt>けいかく</rt></ruby>のためのデジタル<ruby>素材<rt>そざい</rt></ruby>やソースコードなどをまとめたものを<ruby>指<rt>さ</rt></ruby>すこともあります。
 
 ***
@@ -66,7 +66,7 @@
 1. <ruby>色<rt>いろ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ： カラーピッカーなどのツールで、<ruby>背景<rt>はいけい</rt></ruby>に<ruby>使<rt>つか</rt></ruby>いたい<ruby>色<rt>いろ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>します。
 2. コードをメモする： <ruby>色<rt>いろ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶと、#660066 のような「6つの<ruby>英数字<rt>えいすうじ</rt></ruby>」が<ruby>表示<rt>ひょうじ</rt></ruby>されます。これを **16<ruby>進数<rt>しんすう</rt></ruby>コード（hex code／ヘックスコード）** と<ruby>呼<rt>よ</rt></ruby>びます。
 
-> [!note]
+> [注意]
 > 16<ruby>進数<rt>しんすう</rt></ruby>コード（hex code）とは
 > コンピュータが「この<ruby>色<rt>いろ</rt></ruby>です！」と<ruby>正<rt>ただ</rt></ruby>しく<ruby>理解<rt>りかい</rt></ruby>するための<ruby>専用<rt>せんよう</rt></ruby>の<ruby>番号<rt>ばんごう</rt></ruby>です。あとでコードを<ruby>書<rt>か</rt></ruby>くときに<ruby>使<rt>つか</rt></ruby>うので、<ruby>必<rt>かなら</rt></ruby>ずメモしておきましょう。
 
