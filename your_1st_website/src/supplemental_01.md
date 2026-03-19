@@ -2,7 +2,6 @@
 
 ウェブサイトを<ruby>作<rt>つく</rt></ruby>るとき、たくさんのファイルを<ruby>使<rt>つか</rt></ruby>います。このガイドでは、プロのエンジニアが<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>覚<rt>おぼ</rt></ruby>える「ファイルの<ruby>整理<rt>せいり</rt></ruby>・<ruby>整頓<rt>せいとん</rt></ruby>」のルールを、やさしく<ruby>説明<rt>せつめい</rt></ruby>します。
 
-
 ***
 
 ## 1. はじめに：なぜファイルの<ruby>整理<rt>せいり</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>なのか
@@ -12,7 +11,6 @@
 もしファイルがバラバラな<ruby>場所<rt>ばしょ</rt></ruby>にあると、ウェブサイトは<ruby>正<rt>ただ</rt></ruby>しく<ruby>動<rt>うご</rt></ruby>きません。<ruby>最初<rt>さいしょ</rt></ruby>にしっかり<ruby>整理<rt>せいり</rt></ruby>するルールを<ruby>決<rt>き</rt></ruby>めることが、ウェブサイト<ruby>作<rt>づく</rt></ruby>りを<ruby>成功<rt>せいこう</rt></ruby>させる<ruby>一番<rt>いちばん</rt></ruby>の<ruby>近道<rt>ちかみち</rt></ruby>です。
 
 <ruby>次<rt>つぎ</rt></ruby>は、<ruby>自分<rt>じぶん</rt></ruby>のパソコンのどこにファイルを<ruby>作<rt>つく</rt></ruby>るべきか<ruby>説明<rt>せつめい</rt></ruby>します。
-
 
 ***
 
@@ -66,7 +64,6 @@ MDN（ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>標準<rt>ひょ
 
 <ruby>次<rt>つぎ</rt></ruby>は、ファイルの<ruby>名前<rt>なまえ</rt></ruby>の<ruby>付<rt>つ</rt></ruby>け<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>します。
 
-
 ***
 
 ## 3. ファイル<ruby>名<rt>めい</rt></ruby>とフォルダ<ruby>名<rt>めい</rt></ruby>の<ruby>絶対<rt>ぜったい</rt></ruby>ルール
@@ -90,7 +87,6 @@ MDN（ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>標準<rt>ひょ
 
 <ruby>次<rt>つぎ</rt></ruby>は、フォルダの<ruby>中<rt>なか</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>入<rt>い</rt></ruby>れるか<ruby>説明<rt>せつめい</rt></ruby>します。
 
-
 ***
 
 ## 4. <ruby>標準<rt>ひょうじゅん</rt></ruby>的なフォルダの<ruby>形<rt>かたち</rt></ruby>
@@ -107,7 +103,6 @@ MDN（ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>標準<rt>ひょ
 ![<ruby>標準<rt>ひょうじゅん</rt></ruby>的なフォルダの<ruby>形<rt>かたち</rt></ruby>](img/002/110.png)
 
 <ruby>次<rt>つぎ</rt></ruby>は、Windowsを<ruby>使<rt>つか</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>が<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>うべき<ruby>設定<rt>せってい</rt></ruby>について<ruby>説明<rt>せつめい</rt></ruby>します。
-
 
 ***
 
@@ -127,7 +122,6 @@ Windowsでは、ファイルの<ruby>種類<rt>しゅるい</rt></ruby>を<ruby>
 
 <ruby>最後<rt>さいご</rt></ruby>に、ファイル<ruby>同士<rt>どうし</rt></ruby>をつなぐ「ファイルパス」について<ruby>説明<rt>せつめい</rt></ruby>します。
 
-
 ***
 
 ## 6. ファイルパス：ファイル<ruby>同士<rt>どうし</rt></ruby>をつなぐ<ruby>道<rt>みち</rt></ruby>
@@ -143,7 +137,6 @@ Windowsでは、ファイルの<ruby>種類<rt>しゅるい</rt></ruby>を<ruby>
 **<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>注意点<rt>ちゅういてん</rt></ruby>**
 
 Windowsではフォルダの<ruby>区切<rt>くぎ</rt></ruby>りに「\（バックスラッシュ）」を<ruby>使<rt>つか</rt></ruby>いますが、ウェブ<ruby>開発<rt>かいはつ</rt></ruby>では**<ruby>必<rt>かなら</rt></ruby>ず「/（スラッシュ）」**を<ruby>使<rt>つか</rt></ruby>ってください。\ を<ruby>使<rt>つか</rt></ruby>うと、<ruby>自分<rt>じぶん</rt></ruby>のパソコンでは<ruby>動<rt>うご</rt></ruby>いても、インターネットに<ruby>公開<rt>こうかい</rt></ruby>した<ruby>瞬間<rt>しゅんかん</rt></ruby>にウェブサイトが<ruby>壊<rt>こわ</rt></ruby>れてしまいます。
-
 
 ***
 

@@ -1,41 +1,63 @@
-# Visual Studio Code の準備
+# Visual Studio Code の<ruby>準備<rt>じゅんび</rt></ruby>
 
-## Live Server拡張機能のインストール
+## Live Server<ruby>拡張機能<rt>かくちょうきのう</rt></ruby>の<ruby>インストール<rt>いんすとーる</rt></ruby>
 
-1. 拡張機能アイコンをクリックします
-<img src="img/001/201.png">
+1.  <ruby>拡張機能<rt>かくちょうきのう</rt></ruby>アイコンをクリックします
 
-1. 検索ウィンドウに"Live Server"と入力します
-<img src="img/001/202.png">
+![拡張機能アイコンクリック](img/001/201.jpg)
 
-1. "インストール"をクリックします
-<img src="img/001/203.png">
+2.  <ruby>検索<rt>けんさく</rt></ruby>ウィンドウに"Live Server"と<ruby>入力<rt>にゅうりょく</rt></ruby>します
 
-1. インストールされたことを確認します
-<img src="img/001/204.png">
+![検索ウィンドウにlive Serverと入力](img/001/202.jpg)
 
----
+3.  "インストール"をクリックします
 
+![インストール"をクリック](img/001/203.jpg)  
 
+4.  インストールされたことを<ruby>確認<rt>かくにん</rt></ruby>します
 
-## キーの働き
+![確認](img/001/204.png)
 
-|キー|働き|
-|---|---|
-|→|右へ|
-|←|左へ|
-|↓|下へ|
-|↑|上へ|
-|Shift+→|選択範囲を右へ広げる|
-|Shift←|選択範囲を左へ広げる|
-|Shift↓|選択範囲を下へ広げる|
-|Shift↑|選択範囲を上へ広げる|
-|Ctrl+C|コピー|
-|Ctrl+X|切り取り|
-|Ctrl+V|貼り付け|
-|Ctrl+F|検索|
-|CTrl+H|置換|
-|Ctrl+N|新規ファイル|
-|Ctrl+O|ファイルを開く |
-|Ctrl+S|保存|
-|Ctrl+Shift+S|名前を付けて保存|
+***
+
+## <ruby>言語<rt>げんご</rt></ruby><ruby>設定<rt>せってい</rt></ruby>
+
+1. <ruby>左下隅<rt>ひだりしたすみ</rt></ruby>の<ruby>歯車<rt>はぐるま</rt></ruby>アイコンをクリック
+
+![歯車アイコンクリック](img/003/301.jpg)
+
+1. 「<ruby>設定<rt>せってい</rt></ruby>」をクリック
+
+![設定をクリック](img/003/302.jpg)
+
+1. <ruby>検索<rt>けんさく</rt></ruby><ruby>窓<rt>まど</rt></ruby>に「emmet variables」と<ruby>入力<rt>にゅうりょく</rt></ruby>  
+
+![emmet variablesと入力](img/003/303.jpg)
+
+1. <ruby>項目<rt>こうもく</rt></ruby>「lang」に「ja」を<ruby>指定<rt>してい</rt></ruby>して「OK」をクリック  
+
+![langにjaを指定](img/003/304.jpg)
+
+***
+
+## キーの<ruby>働き<rt>はたらき</rt></ruby>
+
+| キー           | <ruby>働き<rt>はたらき</rt></ruby>                                                                                     |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| →            | <ruby>右<rt>みぎ</rt></ruby>へ                                                                                       |
+| ←            | <ruby>左<rt>ひだり</rt></ruby>へ                                                                                      |
+| ↓            | <ruby>下<rt>した</rt></ruby>へ                                                                                       |
+| ↑            | <ruby>上<rt>うえ</rt></ruby>へ                                                                                       |
+| Shift+→      | <ruby>選択<rt>せんたく</rt></ruby><ruby>範囲<rt>はんい</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>へ<ruby>広げる<rt>ひろげる</rt></ruby>  |
+| Shift+←      | <ruby>選択<rt>せんたく</rt></ruby><ruby>範囲<rt>はんい</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>へ<ruby>広げる<rt>ひろげる</rt></ruby> |
+| Shift+↓      | <ruby>選択<rt>せんたく</rt></ruby><ruby>範囲<rt>はんい</rt></ruby>を<ruby>下<rt>した</rt></ruby>へ<ruby>広げる<rt>ひろげる</rt></ruby>  |
+| Shift+↑      | <ruby>選択<rt>せんたく</rt></ruby><ruby>範囲<rt>はんい</rt></ruby>を<ruby>上<rt>うえ</rt></ruby>へ<ruby>広げる<rt>ひろげる</rt></ruby>  |
+| Ctrl+C       | コピー                                                                                                              |
+| Ctrl+X       | <ruby>切り取り<rt>きりとり</rt></ruby>                                                                                   |
+| Ctrl+V       | <ruby>貼り付け<rt>はりつけ</rt></ruby>                                                                                   |
+| Ctrl+F       | <ruby>検索<rt>けんさく</rt></ruby>                                                                                     |
+| CTrl+H       | <ruby>置換<rt>ちかん</rt></ruby>                                                                                      |
+| Ctrl+N       | <ruby>新規<rt>しんき</rt></ruby>ファイル                                                                                  |
+| Ctrl+O       | ファイルを<ruby>開く<rt>ひらく</rt></ruby>                                                                                 |
+| Ctrl+S       | <ruby>保存<rt>ほぞん</rt></ruby>                                                                                      |
+| Ctrl+Shift+S | <ruby>名前<rt>なまえ</rt></ruby>を<ruby>付けて<rt>つけて</rt></ruby><ruby>保存<rt>ほぞん</rt></ruby>                              |

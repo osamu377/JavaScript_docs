@@ -22,9 +22,7 @@ CSSを<ruby>使<rt>つか</rt></ruby>ってデザインを<ruby>整<rt>ととの
 
 <ruby>次<rt>つぎ</rt></ruby>のセクションでは、CSSを<ruby>実際<rt>じっさい</rt></ruby>にどうやって<ruby>書<rt>か</rt></ruby>くのか、その<ruby>基本<rt>きほん</rt></ruby>ルールを<ruby>学<rt>まな</rt></ruby>びましょう。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 2. CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<ruby>構文<rt>こうぶん</rt></ruby>）を<ruby>覚<rt>おぼ</rt></ruby>えましょう
 
@@ -53,12 +51,9 @@ p {
 }
 ```
 
-
 <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>したら、<ruby>次<rt>つぎ</rt></ruby>はCSSをHTMLに<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>ませる<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>しましょう。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 3. HTMLにCSSを<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>ませる<ruby>方法<rt>ほうほう</rt></ruby>
 
@@ -78,8 +73,7 @@ HTMLファイルの `<head>` （ヘッド：サイトの<ruby>設定<rt>せっ�
 フォルダ<ruby>名<rt>めい</rt></ruby>やファイル<ruby>名<rt>めい</rt></ruby>が1<ruby>文字<rt>もじ</rt></ruby>でも<ruby>間違<rt>まちが</rt></ruby>っていると、デザインは<ruby>全<rt>まった</rt></ruby>く<ruby>表示<rt>ひょうじ</rt></ruby>されません。  
 styles/style.css という「<ruby>道<rt>みち</rt></ruby>すじ（パス）」が<ruby>実際<rt>じっさい</rt></ruby>のフォルダ<ruby>構成<rt>こうせい</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているか<ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>確認<rt>かくにん</rt></ruby>しましょう。
 
---------------------------------------------------------------------------------
-
+***
 
 ## 4. <ruby>文字<rt>もじ</rt></ruby>のデザインをきれいにする（フォントとテキスト）
 
@@ -103,8 +97,7 @@ styles/style.css という「<ruby>道<rt>みち</rt></ruby>すじ（パス）�
 * line-height： <ruby>行間<rt>ぎょうかん</rt></ruby>  
 * letter-spacing： <ruby>文<rt>も</rt></ruby>字の<ruby>間隔<rt>かんかく</rt></ruby>
 
---------------------------------------------------------------------------------
-
+***
 
 ## 5. すべては「<ruby>箱<rt>はこ</rt></ruby>（ボックス）」でできている
 
@@ -117,8 +110,7 @@ CSS の<ruby>世界<rt>せかい</rt></ruby>では、すべての<ruby>要素<rt
 |Border|<ruby>枠線<rt>わくせん</rt></ruby>そのもの|
 |Margin|<ruby>枠線<rt>わくせん</rt></ruby>の<ruby>外側<rt>そとがわ</rt></ruby>の<ruby>余白<rt>よはく</rt></ruby>|
 
---------------------------------------------------------------------------------
-
+***
 
 ## 6. <ruby>ページ<rt>ぺーじ</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>のレイアウトを<ruby>整<rt>ととの</rt></ruby>える（<ruby>色<rt>いろ</rt></ruby>と<ruby>配置<rt>はいち</rt></ruby>）
 
@@ -158,8 +150,7 @@ img {
 }
 ```
 
---------------------------------------------------------------------------------
-
+***
 
 ## 7. おわりに：<ruby>素敵<rt>すてき</rt></ruby>なウェブサイトを<ruby>作<rt>つく</rt></ruby>るために
 

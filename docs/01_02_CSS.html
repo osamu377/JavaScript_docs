@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-72f20778.js";
+            window.path_to_searchindex_js = "searchindex-d41f80bc.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-e0540f56.js"></script>
+        <script src="toc-a10e83d1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -223,12 +223,16 @@ h1 {
 <tr><th>プロパティ名</th><th>意味（いみ）</th><th>具体的な<ruby>例<rt>れい</rt></ruby>と効果</th></tr>
 </thead>
 <tbody>
-<tr><td>border</td><td>枠線（わくせん）</td><td>1px solid black（1pxの太さの黒い<ruby>実線<rt>じっせん</rt></ruby>（じっせん））</td></tr>
+<tr><td>border</td><td>枠線（わくせん）</td><td>1px solid black（1pxの太さの黒い<ruby>実線<rt>じっせん</rt></ruby>）</td></tr>
 <tr><td>padding</td><td><ruby>内側<rt>うちがわ</rt></ruby>の余白</td><td>セルの中の文字と枠線の間のスペースを広げます。</td></tr>
 <tr><td>background-color</td><td><ruby>背景<rt>はいけい</rt></ruby>の色</td><td>表の<ruby>背景<rt>はいけい</rt></ruby>に色を塗ります。</td></tr>
 </tbody>
 </table>
 </div>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><ruby>実線<rt>じっせん</rt></ruby>：途中で切れず、ずっと続いている線</p>
+</blockquote>
 <h3 id="border-collapse-collapse-は魔法まほうの言葉"><a class="header" href="#border-collapse-collapse-は魔法まほうの言葉">border-collapse: collapse; は「<ruby>魔法<rt>まほう</rt></ruby>の言葉」</a></h3>
 <p>テーブルのデザインで最も重要なのが border-collapse: collapse; です。 <ruby>通常<rt>つうじょう</rt></ruby>、テーブルの枠線はセルごとに分かれていて、そのままでは「二重線」のように見えてしまいます。このプロパティを <code>&lt;table&gt;</code>タグ に適用すると、隣（となり）り合う2本の線を1本にまとめることができます。まさに 「2本の線を1本にする<ruby>魔法<rt>まほう</rt></ruby>の言葉」 です。これを使うだけで、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>がスッキリとプロらしくなります。</p>
 <pre><code class="language-css">/* テーブルのデザインを変える例（れい） */
@@ -271,7 +275,7 @@ tr:nth-child(even) {
 <li>名前は、そのグループが何であるかわかる 意味のある英語 を使います。</li>
 <li>複数の単語を繋げる場合は、JavaScriptと同じ camelCase（キャメルケース） （<ruby>例<rt>れい</rt></ruby>：.submitButton）を使うのがおすすめです。JSとCSSで名前の付け方を統一（とういつ）すると、ケアレスミス（不注意な間違い）を減らすことができます。</li>
 </ul>
-<h3 id="javascriptへの繋がり"><a class="header" href="#javascriptへの繋がり">JavaScriptへの繋がり</a></h3>
+<h3 id="javascriptへの繋つながり"><a class="header" href="#javascriptへの繋つながり">JavaScriptへの<ruby>繋<rt>つな</rt></ruby>がり</a></h3>
 <p>JavaScriptには、<code>getElementsByClassName()</code> という「クラス名を使って要素を見つける」命令があります。CSSでクラスを使ってグループ化しておけば、<ruby>後<rt>あと</rt></ruby>でJavaScriptからそのグループだけを一度に動かすことが非常に簡単になります。</p>
 <pre><code class="language-css">/* highlightクラスのデザインを変える例（れい） */
 .highlight { color: red; }
@@ -326,7 +330,7 @@ document.getElementById("title").style.color = "red";
 <li>.style：「デザイン（スタイル）」の担当者に、</li>
 <li>.color = “red”：「文字の色」を「赤」に変えるように命令する。</li>
 </ol>
-<p>このように、ドット（.）で繋ぐことで、操作したい場所へ順番にたどり着くことができます。</p>
+<p>このように、ドット（.）で<ruby>繋<rt>つな</rt></ruby>ぐことで、操作したい場所へ順番にたどり着くことができます。</p>
 <p>【参考】この「道のり」を英語を使って「パス(path)」と呼ぶことがあります。</p>
 <hr>
 <h2 id="vi-css基礎のまとめ"><a class="header" href="#vi-css基礎のまとめ">VI. CSS基礎のまとめ</a></h2>

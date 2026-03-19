@@ -4,11 +4,11 @@
 
 このガイドブックでは、ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>専門家<rt>せんもんか</rt></ruby>が、<ruby>留学生<rt>りゅうがくせい</rt></ruby>のみなさんにも<ruby>分<rt>わ</rt></ruby>かりやすい「やさしい<ruby>日本語<rt>にほんご</rt></ruby>」で、サイト<ruby>作<rt>づく</rt></ruby>りの<ruby>準備<rt>じゅんび</rt></ruby>について<ruby>教<rt>おし</rt></ruby>えます。
 
+***
 
---------------------------------------------------------------------------------
+## 1. はじめに
 
-
-## 1. はじめに：なぜ「<ruby>計画<rt>けいかく</rt></ruby>」が<ruby>大切<rt>たいせつ</rt></ruby>なのか
+**なぜ「<ruby>計画<rt>けいかく</rt></ruby>」が<ruby>大切<rt>たいせつ</rt></ruby>なのか**
 
 <ruby>家<rt>いえ</rt></ruby>を<ruby>建<rt>た</rt></ruby>てるときに「<ruby>設計図<rt>せっけいず</rt></ruby>」が<ruby>必要<rt>ひつよう</rt></ruby>なように、ウェブサイトにも<ruby>計画<rt>けいかく</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。コードを<ruby>書<rt>か</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるのには、<ruby>大<rt>おお</rt></ruby>きな<ruby>理由<rt>りゆう</rt></ruby>があります。
 
@@ -17,7 +17,7 @@
 
 <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てることは、プロのエンジニアも<ruby>一番<rt>いちばん</rt></ruby><ruby>大切<rt>たいせつ</rt></ruby>にしているステップです。
 
---------------------------------------------------------------------------------
+***
 
 ## 2. ウェブサイトの<ruby>目的<rt>もくてき</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する
 
@@ -35,12 +35,14 @@
 
 <ruby>目的<rt>もくてき</rt></ruby>が<ruby>決<rt>き</rt></ruby>まったら、<ruby>次<rt>つぎ</rt></ruby>はそれを<ruby>絵<rt>え</rt></ruby>に<ruby>描<rt>か</rt></ruby>いてみましょう。
 
-> [!note]
+> [注意]
 > 「プロジェクト」は<ruby>一<rt>ひと</rt></ruby>つのウェブサイトやアプリケーションを<ruby>作<rt>つく</rt></ruby>るための<ruby>計画<rt>けいかく</rt></ruby>、あるいは、その<ruby>計画<rt>けいかく</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる<ruby>人々<rt>ひとびと</rt></ruby>のグループのことです。そうした<ruby>計画<rt>けいかく</rt></ruby>のためのデジタル<ruby>素材<rt>そざい</rt></ruby>やソースコードなどをまとめたものを<ruby>指<rt>さ</rt></ruby>すこともあります。
 
---------------------------------------------------------------------------------
+***
 
-## 3. デザインのスケッチ：<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージを<ruby>作<rt>つく</rt></ruby>る
+## 3. デザインのスケッチ
+
+**<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージを<ruby>作<rt>つく</rt></ruby>る**
 
 ペンと<ruby>紙<rt>かみ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、サイトの<ruby>形<rt>かたち</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>描<rt>えが</rt></ruby>いてみましょう。これを「スケッチ」と<ruby>言<rt>い</rt></ruby>います。
 
@@ -55,7 +57,7 @@
 
 <ruby>今<rt>いま</rt></ruby>は、あなたがこの<ruby>両方<rt>りょうほう</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>をします。<ruby>自分<rt>じぶん</rt></ruby>のアイデアを<ruby>自由<rt>じゆう</rt></ruby>に<ruby>紙<rt>かみ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてみてください。
 
---------------------------------------------------------------------------------
+***
 
 ## 4. テーマカラー（<ruby>色<rt>いろ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>とコード）を<ruby>決<rt>き</rt></ruby>める
 
@@ -64,13 +66,15 @@
 1. <ruby>色<rt>いろ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ： カラーピッカーなどのツールで、<ruby>背景<rt>はいけい</rt></ruby>に<ruby>使<rt>つか</rt></ruby>いたい<ruby>色<rt>いろ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>します。
 2. コードをメモする： <ruby>色<rt>いろ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶと、#660066 のような「6つの<ruby>英数字<rt>えいすうじ</rt></ruby>」が<ruby>表示<rt>ひょうじ</rt></ruby>されます。これを **16<ruby>進数<rt>しんすう</rt></ruby>コード（hex code／ヘックスコード）** と<ruby>呼<rt>よ</rt></ruby>びます。
 
-> [!note]
+> [注意]
 > 16<ruby>進数<rt>しんすう</rt></ruby>コード（hex code）とは
 > コンピュータが「この<ruby>色<rt>いろ</rt></ruby>です！」と<ruby>正<rt>ただ</rt></ruby>しく<ruby>理解<rt>りかい</rt></ruby>するための<ruby>専用<rt>せんよう</rt></ruby>の<ruby>番号<rt>ばんごう</rt></ruby>です。あとでコードを<ruby>書<rt>か</rt></ruby>くときに<ruby>使<rt>つか</rt></ruby>うので、<ruby>必<rt>かなら</rt></ruby>ずメモしておきましょう。
 
---------------------------------------------------------------------------------
+***
 
-## 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>：ルールを<ruby>守<rt>まも</rt></ruby>って<ruby>探<rt>さが</rt></ruby>す<ruby>方法<rt>ほうほう</rt></ruby>
+## 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>
+
+**ルールを<ruby>守<rt>まも</rt></ruby>って<ruby>探<rt>さが</rt></ruby>す<ruby>方法<rt>ほうほう</rt></ruby>**
 
 インターネットにある<ruby>画像<rt>がぞう</rt></ruby>には「<ruby>持<rt>も</rt></ruby>ち<ruby>主<rt>ぬし</rt></ruby>」があります。これを **<ruby>著作権<rt>ちょさくけん</rt></ruby>（コピーライト）** と<ruby>言<rt>い</rt></ruby>います。<ruby>勝手<rt>かって</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うと<ruby>法律<rt>ほうりつ</rt></ruby>のトラブルになることがあるので、<ruby>注意<rt>ちゅうい</rt></ruby>してください。
 
@@ -81,7 +85,7 @@
 3. ライセンスを<ruby>選<rt>えら</rt></ruby>ぶ： その<ruby>下<rt>した</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>される「<ruby>使用権<rt>しようけん</rt></ruby>」をクリックし、「クリエイティブ・コモンズ ライセンス」を<ruby>選<rt>えら</rt></ruby>びます。
 4. <ruby>保存<rt>ほぞん</rt></ruby>する： <ruby>好<rt>す</rt></ruby>きな<ruby>画像<rt>がぞう</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけたら、<ruby>右<rt>みぎ</rt></ruby>クリック（Macは Ctrl + クリック）をして、「<ruby>名前<rt>なまえ</rt></ruby>を<ruby>付<rt>つ</rt></ruby>けて<ruby>画像<rt>がぞう</rt></ruby>を<ruby>保存<rt>ほぞん</rt></ruby>」を<ruby>選<rt>えら</rt></ruby>びます。
 
---------------------------------------------------------------------------------
+***
 
 ## 6. フォント（<ruby>文字<rt>もじ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>）の<ruby>選択<rt>せんたく</rt></ruby>
 
@@ -98,7 +102,7 @@
 
 ⚠️ <ruby>注意<rt>ちゅうい</rt></ruby>：<ruby>商業利用<rt>しょうぎょうりよう</rt></ruby>について フォントにもライセンスがあります。<ruby>勉強<rt>べんきょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>うのは<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですが、<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>仕事<rt>しごと</rt></ruby>でサイトを<ruby>作<rt>つく</rt></ruby>るときは、<ruby>必<rt>かなら</rt></ruby>ず「<ruby>商売<rt>しょうばい</rt></ruby>（ビジネス）で<ruby>使<rt>つか</rt></ruby>ってもいいか」を<ruby>確認<rt>かくにん</rt></ruby>しましょう。
 
---------------------------------------------------------------------------------
+***
 
 ## 7. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
 

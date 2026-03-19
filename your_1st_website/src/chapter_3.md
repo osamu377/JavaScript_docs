@@ -4,11 +4,10 @@
 
 HTMLは ウェブサイトの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」、つまり <ruby>構造<rt>こうぞう</rt></ruby>を <ruby>作<rt>つく</rt></ruby>るための <ruby>言葉<rt>ことば</rt></ruby>です。この <ruby>基本<rt>きほん</rt></ruby>を <ruby>正<rt>ただ</rt></ruby>しく <ruby>知<rt>し</rt></ruby>ることは、ウェブサイトを <ruby>作<rt>つく</rt></ruby>る <ruby>プロ<rt>ぷろ</rt></ruby>（<ruby>仕事<rt>しごと</rt></ruby>を する <ruby>人<rt>ひと</rt></ruby>）に なるために、とても <ruby>大切<rt>たいせつ</rt></ruby>なことです。
 
-> [!note]
+> [注意]
 > 「<ruby>骨組<rt>ほねぐ</rt></ruby>み」は、もとは「からだの<ruby>骨<rt>ほね</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て」のことですが、そこからの「<ruby>例<rt>たと</rt></ruby>え」で、<ruby>建造物<rt>けんぞうぶつ</rt></ruby>・<ruby>機械<rt>きかい</rt></ruby>などの<ruby>基礎<rt>きそ</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>構造<rt>こうぞう</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>のことも<ruby>指<rt>さ</rt></ruby>します。
 
---------------------------------------------------------------------------------
-
+***
 
 ## 1. HTMLとは<ruby>何<rt>なに</rt></ruby>？：ウェブの<ruby>基本<rt>きほん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する
 
@@ -21,9 +20,7 @@ HTMLの <ruby>役割<rt>やくわり</rt></ruby>を わかりやすく <ruby>例
 
 HTMLを <ruby>使<rt>つか</rt></ruby>う <ruby>理由<rt>りゆう</rt></ruby>： もし HTMLが なければ、すべての <ruby>文字<rt>もじ</rt></ruby>が <ruby>一行<rt>いちぎょう</rt></ruby>に つながってしまい、とても <ruby>読<rt>よ</rt></ruby>みにくくなります。また、<ruby>目<rt>め</rt></ruby>が <ruby>見<rt>み</rt></ruby>えにくい <ruby>人<rt>ひと</rt></ruby>が <ruby>使<rt>つか</rt></ruby>う「<ruby>音声<rt>おんせい</rt></ruby><ruby>読<rt>よ</rt></ruby>み<ruby>上<rt>あ</rt></ruby>げソフト」も、どこが <ruby>大事<rt>だいじ</rt></ruby>な <ruby>場所<rt>ばしょ</rt></ruby>なのか わからなくなってしまいます。HTMLで <ruby>正<rt>ただ</rt></ruby>しく <ruby>構造<rt>こうぞう</rt></ruby>を <ruby>作<rt>つく</rt></ruby>ることで、<ruby>誰<rt>だれ</rt></ruby>にでも <ruby>意味<rt>いみ</rt></ruby>が <ruby>伝<rt>つた</rt></ruby>わる ページに なります。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 2. HTMLファイルの<ruby>基本<rt>きほん</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>
 
@@ -62,12 +59,10 @@ HTMLは「タグの <ruby>中<rt>なか</rt></ruby>に <ruby>別<rt>べつ</rt><
 </html>
 ```
 
-
-> [!note]
+> [注意]
 > 「<ruby>入<rt>い</rt></ruby>れ<ruby>子<rt>こ</rt></ruby>」: <ruby>大<rt>おお</rt></ruby>きな<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>箱<rt>はこ</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っている、というように、あるものの<ruby>中<rt>なか</rt></ruby>に、よく<ruby>似<rt>に</rt></ruby>たあるものが<ruby>入<rt>はい</rt></ruby>っている<ruby>様子<rt>ようす</rt></ruby>を<ruby>指<rt>さ</rt></ruby>す<ruby>日本語<rt>にほんご</rt></ruby>です。
 
---------------------------------------------------------------------------------
-
+***
 
 ## 3. テキストに<ruby>意味<rt>いみ</rt></ruby>をつける：<ruby>見出<rt>みだ</rt></ruby>し、<ruby>段落<rt>だんらく</rt></ruby>、リスト
 
@@ -82,9 +77,7 @@ HTMLは「タグの <ruby>中<rt>なか</rt></ruby>に <ruby>別<rt>べつ</rt><
 
 HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>なか</rt></ruby>に `<!-- メモ -->` と <ruby>書<rt>か</rt></ruby>くと、ブラウザには <ruby>表示<rt>ひょうじ</rt></ruby>されません。これは「<ruby>自分<rt>じぶん</rt></ruby>や <ruby>仲間<rt>なかま</rt></ruby>」のための メモです。あとで <ruby>見直<rt>みなお</rt></ruby>したときに、<ruby>何<rt>なに</rt></ruby>をしたのか すぐに <ruby>分<rt>わ</rt></ruby>かるように なります。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 4. <ruby>画像<rt>がぞう</rt></ruby>を <ruby>表示<rt>ひょうじ</rt></ruby>する：`<img>`<ruby>要素<rt>ようそ</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>
 
@@ -99,9 +92,7 @@ HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>�
 
 ファイル<ruby>管理<rt>かんり</rt></ruby>のアドバイス： <ruby>画像<rt>がぞう</rt></ruby>は images/ という <ruby>名前<rt>なまえ</rt></ruby>の フォルダを <ruby>作<rt>つく</rt></ruby>って、その<ruby>中<rt>なか</rt></ruby>に <ruby>入<rt>い</rt></ruby>れましょう。HTMLからは `src="images/写真の名前.jpg"` の ように <ruby>指定<rt>してい</rt></ruby>します。こうすることで、たくさんの ファイルを きれいに <ruby>整<rt>せい</rt></ruby>りできます。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 5. リンクを<ruby>作<rt>つく</rt></ruby>ってページをつなぐ：`<a>`<ruby>要素<rt>ようそ</rt></ruby>
 
@@ -119,9 +110,7 @@ HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>�
 
 <ruby>大切<rt>たいせつ</rt></ruby>な <ruby>注意点<rt>ちゅういてん</rt></ruby>： アドレスを <ruby>書<rt>か</rt></ruby>くときは、<ruby>必<rt>かなら</rt></ruby>ず `https://` などの <ruby>通信<rt>つうしん</rt></ruby>の ルール（プロトコル） から <ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めてください。これがないと、リンクが <ruby>正<rt>ただ</rt></ruby>しく <ruby>動<rt>うご</rt></ruby>きません。また、リンクにする <ruby>言葉<rt>ことば</rt></ruby>は「ここを クリック」ではなく「Mozillaの ウェブサイト」の ように、どこに <ruby>行<rt>い</rt></ruby>くのか わかる <ruby>言葉<rt>ことば</rt></ruby>を <ruby>選<rt>えら</rt></ruby>びましょう。
 
-
---------------------------------------------------------------------------------
-
+***
 
 ## 6. まとめ：<ruby>自分<rt>じぶん</rt></ruby>のウェブサイトを<ruby>作<rt>つく</rt></ruby>ってみよう
 
