@@ -7,7 +7,7 @@
 
 ***
 
-## 1. はじめに：JavaScriptとは<ruby>何<rt>なに</rt></ruby>か
+### 1. はじめに：JavaScriptとは<ruby>何<rt>なに</rt></ruby>か
 
 ウェブサイトを<ruby>作<rt>つく</rt></ruby>るとき、HTMLは「<ruby>骨組<rt>ほねぐ</rt></ruby>み」を、CSSは「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>ります。そこに「<ruby>動<rt>うご</rt></ruby>き」を<ruby>加<rt>くわ</rt></ruby>えるのがJavaScriptの<ruby>役割<rt>やくわり</rt></ruby>です。
 
@@ -26,7 +26,7 @@ JavaScriptを<ruby>使<rt>つか</rt></ruby>って、<ruby>以<rt>い</rt></ruby
 
 ***
 
-## 2. プログラミングの「<ruby>基本<rt>きほん</rt></ruby>の<ruby>道具箱<rt>どうぐばこ</rt></ruby>」
+### 2. プログラミングの「<ruby>基本<rt>きほん</rt></ruby>の<ruby>道具箱<rt>どうぐばこ</rt></ruby>」
 
 プログラムを<ruby>作<rt>つく</rt></ruby>るとは、いくつかの<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせて「<ruby>命令<rt>めいれい</rt></ruby>」をつくることです。JavaScriptを<ruby>動<rt>うご</rt></ruby>かす4つの<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>概念<rt>がいねん</rt></ruby>があります。
 
@@ -37,7 +37,7 @@ JavaScriptを<ruby>使<rt>つか</rt></ruby>って、<ruby>以<rt>い</rt></ruby
 
 ***
 
-## 3. <ruby>実践<rt>じっせん</rt></ruby>：ウェブサイトにJavaScriptを<ruby>入<rt>い</rt></ruby>れる
+### 3. <ruby>実践<rt>じっせん</rt></ruby>：ウェブサイトにJavaScriptを<ruby>入<rt>い</rt></ruby>れる
 
 HTML、CSS、JavaScript の3つが<ruby>連携<rt>れんけい</rt></ruby>してページが<ruby>動<rt>うご</rt></ruby>きます。
 
@@ -66,7 +66,7 @@ myHeading.textContent = 'Hello world!';
 
 ***
 
-## 4. <ruby>応用<rt>おうよう</rt></ruby>：<ruby>画像<rt>がぞう</rt></ruby>チェンジャーと<ruby>条件分岐<rt>じょうけんぶんき</rt></ruby>
+### 4. <ruby>応用<rt>おうよう</rt></ruby>：<ruby>画像<rt>がぞう</rt></ruby>チェンジャーと<ruby>条件分岐<rt>じょうけんぶんき</rt></ruby>
 
 クリックで<ruby>画像<rt>がぞう</rt></ruby>が入れ替わる仕組みです。
 
@@ -99,7 +99,7 @@ myImage.onclick = function() {
 
 ***
 
-## 6. <ruby>まとめ<rt>まとめ</rt></ruby>と<ruby>次<rt>つぎ</rt></ruby>のステップ
+### 6. <ruby>まとめ<rt>まとめ</rt></ruby>と<ruby>次<rt>つぎ</rt></ruby>のステップ
 
 お<ruby>疲<rt>つか</rt></ruby>れさまでした！これでJavaScriptの<ruby>基礎<rt>きそ</rt></ruby>を学びました。
 

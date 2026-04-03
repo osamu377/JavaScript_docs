@@ -1,6 +1,6 @@
 # I. はじめてのウェブサイト
 
-## 1. はじめに
+### 1. はじめに
 
 **ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へようこそ**
 
@@ -17,7 +17,7 @@
 
 ***
 
-## 2. <ruby>準備<rt>じゅんび</rt></ruby>するもの
+### 2. <ruby>準備<rt>じゅんび</rt></ruby>するもの
 
 **スタートラインに<ruby>立<rt>た</rt></ruby>つ**
 
@@ -41,7 +41,7 @@
 
 ***
 
-## 3. <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる
+### 3. <ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる
 
 **サイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を<ruby>決<rt>き</rt></ruby>める**
 
@@ -60,7 +60,7 @@
 
 ***
 
-## 4. サイトの「3つの<ruby>要素<rt>ようそ</rt></ruby>」
+### 4. サイトの「3つの<ruby>要素<rt>ようそ</rt></ruby>」
 
 **HTML、CSS、JavaScript**
 
@@ -87,7 +87,7 @@
 
 ***
 
-## 5. <ruby>世界<rt>せかい</rt></ruby>へ<ruby>公開<rt>こうかい</rt></ruby>する
+### 5. <ruby>世界<rt>せかい</rt></ruby>へ<ruby>公開<rt>こうかい</rt></ruby>する
 
 > [注意]
 > <ruby>授業<rt>じゅぎょう</rt></ruby>では、このステップは<ruby>実施<rt>じっし</rt></ruby>しません。<ruby>興味<rt>きょうみ</rt></ruby>のある<ruby>方<rt>かた</rt></ruby>は、<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">ここをクリック</a>してMDNの<ruby>関連<rt>かんれん</rt></ruby>サイトを<ruby>参照<rt>さんしょう</rt></ruby>してください。
@@ -104,6 +104,6 @@
 
 ***
 
-## 6. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
+### 6. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
 
 ここまで、ウェブサイト<ruby>制作<rt>せいさく</rt></ruby>の<ruby>全体像<rt>ぜんたいぞう</rt></ruby>を<ruby>見<rt>み</rt></ruby>てきました。ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>学習<rt>がくしゅう</rt></ruby>は、<ruby>一度<rt>いちど</rt></ruby>で<ruby>完璧<rt>かんぺき</rt></ruby>にする<ruby>必要<rt>ひつよう</rt></ruby>はありません。<ruby>小<rt>ちい</rt></ruby>さな「できた！」を<ruby>積<rt>つ</rt></ruby>み<ruby>重<rt>かさ</rt></ruby>ねていくプロセスそのものが<ruby>大切<rt>たいせつ</rt></ruby>です。

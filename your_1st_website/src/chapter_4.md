@@ -1,6 +1,6 @@
 # IV. ウェブサイトをデザインするCSS
 
-## 1. はじめに：CSSとは<ruby>何<rt>なん</rt></ruby>でしょうか？
+### 1. はじめに：CSSとは<ruby>何<rt>なん</rt></ruby>でしょうか？
 
 ウェブサイトを<ruby>作<rt>つく</rt></ruby>るとき、<ruby>文字<rt>もじ</rt></ruby>や<ruby>画像<rt>がぞう</rt></ruby>などの「<ruby>内容<rt>ないよう</rt></ruby>」を<ruby>準備<rt>じゅんび</rt></ruby>するだけでは、まだデザインが<ruby>完成<rt>かんせい</rt></ruby>していません。そこで<ruby>使<rt>つか</rt></ruby>われるのが **CSS（シーエスエス）** です。
 
@@ -24,7 +24,7 @@ CSSを<ruby>使<rt>つか</rt></ruby>ってデザインを<ruby>整<rt>ととの
 
 ***
 
-## 2. CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<ruby>構文<rt>こうぶん</rt></ruby>）を<ruby>覚<rt>おぼ</rt></ruby>えましょう
+### 2. CSSの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<ruby>構文<rt>こうぶん</rt></ruby>）を<ruby>覚<rt>おぼ</rt></ruby>えましょう
 
 CSSを<ruby>書<rt>か</rt></ruby>くときには、<ruby>決<rt>き</rt></ruby>まった<ruby>形<rt>かたち</rt></ruby>（<ruby>構文<rt>こうぶん</rt></ruby>）があります。「どこの」「<ruby>何<rt>なに</rt></ruby>を」「どう変えるか」という<ruby>順番<rt>じゅんばん</rt></ruby>で<ruby>指示<rt>しじ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きます。
 
@@ -55,7 +55,7 @@ p {
 
 ***
 
-## 3. HTMLにCSSを<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>ませる<ruby>方法<rt>ほうほう</rt></ruby>
+### 3. HTMLにCSSを<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>ませる<ruby>方法<rt>ほうほう</rt></ruby>
 
 CSSを<ruby>書<rt>か</rt></ruby>くだけでは、ウェブサイトにデザインは<ruby>反映<rt>はんえい</rt></ruby>されません。HTMLとCSSを<ruby>正<rt>ただ</rt></ruby>しくつなぐ<ruby>手順<rt>てじゅん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。
 
@@ -75,7 +75,7 @@ styles/style.css という「<ruby>道<rt>みち</rt></ruby>すじ（パス）�
 
 ***
 
-## 4. <ruby>文字<rt>もじ</rt></ruby>のデザインをきれいにする（フォントとテキスト）
+### 4. <ruby>文字<rt>もじ</rt></ruby>のデザインをきれいにする（フォントとテキスト）
 
 <ruby>文字<rt>もじ</rt></ruby>の<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>は、サイトを<ruby>訪<rt>おとず</rt></ruby>れる<ruby>人<rt>ひと</rt></ruby>の「<ruby>読<rt>よ</rt></ruby>みやすさ」に<ruby>大<rt>おお</rt></ruby>きな<ruby>影響<rt>えいきょう</rt></ruby>があります。<ruby>適切<rt>てきせつ</rt></ruby>なフォント選びは、サイトを<ruby>信頼<rt>しんらい</rt></ruby>できる<ruby>印象<rt>いんしょう</rt></ruby>にするための<ruby>戦略<rt>せんりゃく</rt></ruby>です。
 
@@ -99,7 +99,7 @@ styles/style.css という「<ruby>道<rt>みち</rt></ruby>すじ（パス）�
 
 ***
 
-## 5. すべては「<ruby>箱<rt>はこ</rt></ruby>（ボックス）」でできている
+### 5. すべては「<ruby>箱<rt>はこ</rt></ruby>（ボックス）」でできている
 
 CSS の<ruby>世界<rt>せかい</rt></ruby>では、すべての<ruby>要素<rt>ようそ</rt></ruby>（<ruby>見出<rt>みだ</rt></ruby>し・<ruby>文章<rt>ぶんしょう</rt></ruby>・<ruby>画像<rt>がぞう</rt></ruby>など）は「<ruby>箱<rt>はこ</rt></ruby>」の<ruby>中<rt>なか</rt></ruby>にあると<ruby>考<rt>かんが</rt></ruby>えます。これを **ボックスモデル** と<ruby>呼<rt>よ</rt></ruby>びます。
 
@@ -112,7 +112,7 @@ CSS の<ruby>世界<rt>せかい</rt></ruby>では、すべての<ruby>要素<rt
 
 ***
 
-## 6. <ruby>ページ<rt>ぺーじ</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>のレイアウトを<ruby>整<rt>ととの</rt></ruby>える（<ruby>色<rt>いろ</rt></ruby>と<ruby>配置<rt>はいち</rt></ruby>）
+### 6. <ruby>ページ<rt>ぺーじ</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>のレイアウトを<ruby>整<rt>ととの</rt></ruby>える（<ruby>色<rt>いろ</rt></ruby>と<ruby>配置<rt>はいち</rt></ruby>）
 
 <ruby>背景<rt>はいけい</rt></ruby>に<ruby>色<rt>いろ</rt></ruby>をつけ、body の<ruby>幅<rt>はば</rt></ruby>を600pxにし、<ruby>中<rt>なか</rt></ruby>央寄せする<ruby>典型<rt>てんけい</rt></ruby>的な<ruby>設定<rt>せってい</rt></ruby>です。
 
@@ -152,7 +152,7 @@ img {
 
 ***
 
-## 7. おわりに：<ruby>素敵<rt>すてき</rt></ruby>なウェブサイトを<ruby>作<rt>つく</rt></ruby>るために
+### 7. おわりに：<ruby>素敵<rt>すてき</rt></ruby>なウェブサイトを<ruby>作<rt>つく</rt></ruby>るために
 
 CSS の<ruby>基礎<rt>きそ</rt></ruby>は、<ruby>将来<rt>しょうらい</rt></ruby>のアニメーションや高度レイアウトの<ruby>土台<rt>どだい</rt></ruby>になります。
 

@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4de4a157.js";
+            window.path_to_searchindex_js = "searchindex-a36723df.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-85429391.js"></script>
@@ -177,16 +177,16 @@
                         <h1 id="ウェブ開発かいはつのためのファイルとフォルダの基本きほんガイド"><a class="header" href="#ウェブ開発かいはつのためのファイルとフォルダの基本きほんガイド">ウェブ<ruby>開発<rt>かいはつ</rt></ruby>のためのファイルとフォルダの<ruby>基本<rt>きほん</rt></ruby>ガイド</a></h1>
 <p>ウェブサイトを<ruby>作<rt>つく</rt></ruby>るとき、たくさんのファイルを<ruby>使<rt>つか</rt></ruby>います。このガイドでは、プロのエンジニアが<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>覚<rt>おぼ</rt></ruby>える「ファイルの<ruby>整理<rt>せいり</rt></ruby>・<ruby>整頓<rt>せいとん</rt></ruby>」のルールを、やさしく<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="1-はじめになぜファイルの整理せいりが大切たいせつなのか"><a class="header" href="#1-はじめになぜファイルの整理せいりが大切たいせつなのか">1. はじめに：なぜファイルの<ruby>整理<rt>せいり</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>なのか</a></h2>
+<h3 id="1-はじめになぜファイルの整理せいりが大切たいせつなのか"><a class="header" href="#1-はじめになぜファイルの整理せいりが大切たいせつなのか">1. はじめに：なぜファイルの<ruby>整理<rt>せいり</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>なのか</a></h3>
 <p>ウェブサイトは、<ruby>文字<rt>もじ</rt></ruby>のデータ、プログラム、<ruby>画像<rt>がぞう</rt></ruby>など、<ruby>多<rt>おお</rt></ruby>くのファイルで<ruby>構成<rt>こうせい</rt></ruby>されています。これらのファイルは、お<ruby>互<rt>たが</rt></ruby>いに<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>し<ruby>合<rt>あ</rt></ruby>って<ruby>動<rt>うご</rt></ruby>いています。</p>
 <p>もしファイルがバラバラな<ruby>場所<rt>ばしょ</rt></ruby>にあると、ウェブサイトは<ruby>正<rt>ただ</rt></ruby>しく<ruby>動<rt>うご</rt></ruby>きません。<ruby>最初<rt>さいしょ</rt></ruby>にしっかり<ruby>整理<rt>せいり</rt></ruby>するルールを<ruby>決<rt>き</rt></ruby>めることが、ウェブサイト<ruby>作<rt>づく</rt></ruby>りを<ruby>成功<rt>せいこう</rt></ruby>させる<ruby>一番<rt>いちばん</rt></ruby>の<ruby>近道<rt>ちかみち</rt></ruby>です。</p>
 <p><ruby>次<rt>つぎ</rt></ruby>は、<ruby>自分<rt>じぶん</rt></ruby>のパソコンのどこにファイルを<ruby>作<rt>つく</rt></ruby>るべきか<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="2-ウェブサイトの場所ばしょを決きめよう"><a class="header" href="#2-ウェブサイトの場所ばしょを決きめよう">2. ウェブサイトの<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>決<rt>き</rt></ruby>めよう</a></h2>
+<h3 id="2-ウェブサイトの場所ばしょを決きめよう"><a class="header" href="#2-ウェブサイトの場所ばしょを決きめよう">2. ウェブサイトの<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>決<rt>き</rt></ruby>めよう</a></h3>
 <p>ウェブサイトのファイルは、<ruby>一<rt>ひと</rt></ruby>つのフォルダにまとめて<ruby>入<rt>い</rt></ruby>れます。このフォルダの<ruby>中身<rt>なかみ</rt></ruby>は、インターネット<ruby>上<rt>じょう</rt></ruby>のコンピュータ（サーバー）に<ruby>公開<rt>こうかい</rt></ruby>するときと「<ruby>同<rt>おな</rt></ruby>じ<ruby>形<rt>かたち</rt></ruby>」にする<ruby>必要<rt>ひつよう</rt></ruby>があります。これを「ミラー（<ruby>鏡<rt>かがみ</rt></ruby>）」と<ruby>呼<rt>よ</rt></ruby>びます。<ruby>自分<rt>じぶん</rt></ruby>のパソコンで<ruby>動<rt>うご</rt></ruby>くものは、サーバーでも<ruby>同<rt>おな</rt></ruby>じように<ruby>動<rt>うご</rt></ruby>かなければいけないからです。</p>
 <p><strong>おすすめのフォルダ<ruby>階層<rt>かいそう</rt></ruby></strong></p>
 <p>MDN（ウェブ<ruby>開発<rt>かいはつ</rt></ruby>の<ruby>標準<rt>ひょうじゅん</rt></ruby>的な<ruby>資料<rt>しりょう</rt></ruby>）では、<ruby>次<rt>つぎ</rt></ruby>のような<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>をすすめています。</p>
-<h3 id="1-まずすべてのプロジェクトを保存ほぞんする-web-projects-というフォルダを作つくります"><a class="header" href="#1-まずすべてのプロジェクトを保存ほぞんする-web-projects-というフォルダを作つくります">(1). まず、すべてのプロジェクトを<ruby>保存<rt>ほぞん</rt></ruby>する web-projects というフォルダを<ruby>作<rt>つく</rt></ruby>ります。</a></h3>
+<h4 id="1-まずすべてのプロジェクトを保存ほぞんする-web-projects-というフォルダを作つくります"><a class="header" href="#1-まずすべてのプロジェクトを保存ほぞんする-web-projects-というフォルダを作つくります">(1). まず、すべてのプロジェクトを<ruby>保存<rt>ほぞん</rt></ruby>する web-projects というフォルダを<ruby>作<rt>つく</rt></ruby>ります。</a></h4>
 <p><ruby>今回<rt>こんかい</rt></ruby>は、PC &gt; ローカルディスク(C:) &gt; ユーザー &gt; student1 &gt; source の<ruby>下<rt>した</rt></ruby>につくりましょう。</p>
 <ol>
 <li>
@@ -218,7 +218,7 @@
 <img src="img/002/108.png" alt="test-site"></p>
 </li>
 </ol>
-<h3 id="2-すぐに見みつけられるようにクイックアクセスにピン留どめしましょう"><a class="header" href="#2-すぐに見みつけられるようにクイックアクセスにピン留どめしましょう">(2). すぐに<ruby>見<rt>み</rt></ruby>つけられるように、クイックアクセスにピン<ruby>留<rt>ど</rt></ruby>めしましょう。</a></h3>
+<h4 id="2-すぐに見みつけられるようにクイックアクセスにピン留どめしましょう"><a class="header" href="#2-すぐに見みつけられるようにクイックアクセスにピン留どめしましょう">(2). すぐに<ruby>見<rt>み</rt></ruby>つけられるように、クイックアクセスにピン<ruby>留<rt>ど</rt></ruby>めしましょう。</a></h4>
 <ol>
 <li>
 <p>「web-projects」を<ruby>一度<rt>いちど</rt></ruby>クリックしてから、<ruby>右<rt>みぎ</rt></ruby>クリックします。</p>
@@ -232,7 +232,7 @@
 <img src="img/002/112.png" alt="test-site"></p>
 </li>
 </ol>
-<h3 id="3-web-projectsの中なかに個別こべつのサイト用のフォルダを作つくります"><a class="header" href="#3-web-projectsの中なかに個別こべつのサイト用のフォルダを作つくります">(3). 「web-projects」の<ruby>中<rt>なか</rt></ruby>に<ruby>個別<rt>こべつ</rt></ruby>のサイト用のフォルダを<ruby>作<rt>つく</rt></ruby>ります。</a></h3>
+<h4 id="3-web-projectsの中なかに個別こべつのサイト用のフォルダを作つくります"><a class="header" href="#3-web-projectsの中なかに個別こべつのサイト用のフォルダを作つくります">(3). 「web-projects」の<ruby>中<rt>なか</rt></ruby>に<ruby>個別<rt>こべつ</rt></ruby>のサイト用のフォルダを<ruby>作<rt>つく</rt></ruby>ります。</a></h4>
 <ol>
 <li>5.6.と<ruby>同<rt>おな</rt></ruby>じ<ruby>手順<rt>てじゅん</rt></ruby>で、「test-site」というフォルダを<ruby>作<rt>つく</rt></ruby>ります。これが<ruby>今回<rt>こんかい</rt></ruby>の<ruby>個別<rt>こべつ</rt></ruby>のサイト用のフォルダになります。
 <img src="img/002/109.png" alt="test-site"></li>
@@ -240,7 +240,7 @@
 <p><ruby>場所<rt>ばしょ</rt></ruby>は、デスクトップやホームフォルダなど、<ruby>自分<rt>じぶん</rt></ruby>ですぐに<ruby>見<rt>み</rt></ruby>つけられる<ruby>場所<rt>ばしょ</rt></ruby>にしてください。<ruby>場所<rt>ばしょ</rt></ruby>が<ruby>決<rt>き</rt></ruby>まっていると、<ruby>作業<rt>さぎょう</rt></ruby>のミスが<ruby>減<rt>へ</rt></ruby>り、<ruby>開発<rt>かいはつ</rt></ruby>のスピードが<ruby>速<rt>はや</rt></ruby>くなります。</p>
 <p><ruby>次<rt>つぎ</rt></ruby>は、ファイルの<ruby>名前<rt>なまえ</rt></ruby>の<ruby>付<rt>つ</rt></ruby>け<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="3-ファイル名めいとフォルダ名めいの絶対ぜったいルール"><a class="header" href="#3-ファイル名めいとフォルダ名めいの絶対ぜったいルール">3. ファイル<ruby>名<rt>めい</rt></ruby>とフォルダ<ruby>名<rt>めい</rt></ruby>の<ruby>絶対<rt>ぜったい</rt></ruby>ルール</a></h2>
+<h3 id="3-ファイル名めいとフォルダ名めいの絶対ぜったいルール"><a class="header" href="#3-ファイル名めいとフォルダ名めいの絶対ぜったいルール">3. ファイル<ruby>名<rt>めい</rt></ruby>とフォルダ<ruby>名<rt>めい</rt></ruby>の<ruby>絶対<rt>ぜったい</rt></ruby>ルール</a></h3>
 <p><ruby>名前<rt>なまえ</rt></ruby>を<ruby>付<rt>つ</rt></ruby>けるときは、<ruby>世界中<rt>せかいじゅう</rt></ruby>のエンジニアが<ruby>守<rt>まも</rt></ruby>っている「3つのルール」があります。</p>
 <ol>
 <li>すべて<ruby>小文字<rt>こもじ</rt></ruby>にする<br><ruby>多<rt>おお</rt></ruby>くのサーバー（Linuxなど）は、<ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>を<ruby>厳<rt>きび</rt></ruby>しく<ruby>区別<rt>くべつ</rt></ruby>します。MyImage.jpg と myimage.jpg は<ruby>別<rt>べつ</rt></ruby>のファイルだと<ruby>判断<rt>はんだん</rt></ruby>されるため、<ruby>大文字<rt>おおもじ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うとエラーの<ruby>原因<rt>げんいん</rt></ruby>になります。</li>
@@ -262,7 +262,7 @@
 </div>
 <p><ruby>次<rt>つぎ</rt></ruby>は、フォルダの<ruby>中<rt>なか</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>入<rt>い</rt></ruby>れるか<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="4-標準ひょうじゅん的なフォルダの形かたち"><a class="header" href="#4-標準ひょうじゅん的なフォルダの形かたち">4. <ruby>標準<rt>ひょうじゅん</rt></ruby>的なフォルダの<ruby>形<rt>かたち</rt></ruby></a></h2>
+<h3 id="4-標準ひょうじゅん的なフォルダの形かたち"><a class="header" href="#4-標準ひょうじゅん的なフォルダの形かたち">4. <ruby>標準<rt>ひょうじゅん</rt></ruby>的なフォルダの<ruby>形<rt>かたち</rt></ruby></a></h3>
 <p>ウェブ<ruby>開発<rt>かいはつ</rt></ruby>では、<ruby>誰<rt>だれ</rt></ruby>が<ruby>見<rt>み</rt></ruby>ても<ruby>中身<rt>なかみ</rt></ruby>がわかるように、<ruby>次<rt>つぎ</rt></ruby>のような<ruby>決<rt>き</rt></ruby>まった<ruby>形<rt>かたち</rt></ruby>でフォルダを<ruby>作<rt>つく</rt></ruby>ります。</p>
 <ul>
 <li>index.html：ウェブサイトの<ruby>最初<rt>さいしょ</rt></ruby>のページです。</li>
@@ -274,7 +274,7 @@
 <p><img src="img/002/110.png" alt="&lt;ruby&gt;標準&lt;rt&gt;ひょうじゅん&lt;/rt&gt;&lt;/ruby&gt;的なフォルダの&lt;ruby&gt;形&lt;rt&gt;かたち&lt;/rt&gt;&lt;/ruby&gt;"></p>
 <p><ruby>次<rt>つぎ</rt></ruby>は、Windowsを<ruby>使<rt>つか</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>が<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>うべき<ruby>設定<rt>せってい</rt></ruby>について<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="5-windowsの設定せってい拡張子かくちょうしを表示ひょうじする"><a class="header" href="#5-windowsの設定せってい拡張子かくちょうしを表示ひょうじする">5. Windowsの<ruby>設定<rt>せってい</rt></ruby>：<ruby>拡張子<rt>かくちょうし</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a></h2>
+<h3 id="5-windowsの設定せってい拡張子かくちょうしを表示ひょうじする"><a class="header" href="#5-windowsの設定せってい拡張子かくちょうしを表示ひょうじする">5. Windowsの<ruby>設定<rt>せってい</rt></ruby>：<ruby>拡張子<rt>かくちょうし</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する</a></h3>
 <p>Windowsでは、ファイルの<ruby>種類<rt>しゅるい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す「.html」や「.jpg」などの<ruby>拡張子<rt>かくちょうし</rt></ruby>が、<ruby>既定<rt>きてい</rt></ruby>の<ruby>設定<rt>せってい</rt></ruby>では<ruby>隠<rt>かく</rt></ruby>れています。</p>
 <p>しかし、<ruby>開発<rt>かいはつ</rt></ruby>では<ruby>拡張子<rt>かくちょうし</rt></ruby>が<ruby>重要<rt>じゅうよう</rt></ruby>です。.html ファイルなのか、<ruby>設定<rt>せってい</rt></ruby>用の .env ファイル（ドットファイル）なのかを<ruby>正<rt>ただ</rt></ruby>しく<ruby>判断<rt>はんだん</rt></ruby>するために、<ruby>必<rt>かなら</rt></ruby>ず<ruby>表示<rt>ひょうじ</rt></ruby>させてください。</p>
 <p><ruby>拡張子<rt>かくちょうし</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>する<ruby>手順<rt>てじゅん</rt></ruby></p>
@@ -287,7 +287,7 @@
 </ol>
 <p><ruby>最後<rt>さいご</rt></ruby>に、ファイル<ruby>同士<rt>どうし</rt></ruby>をつなぐ「ファイルパス」について<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <hr>
-<h2 id="6-ファイルパスファイル同士どうしをつなぐ道みち"><a class="header" href="#6-ファイルパスファイル同士どうしをつなぐ道みち">6. ファイルパス：ファイル<ruby>同士<rt>どうし</rt></ruby>をつなぐ<ruby>道<rt>みち</rt></ruby></a></h2>
+<h3 id="6-ファイルパスファイル同士どうしをつなぐ道みち"><a class="header" href="#6-ファイルパスファイル同士どうしをつなぐ道みち">6. ファイルパス：ファイル<ruby>同士<rt>どうし</rt></ruby>をつなぐ<ruby>道<rt>みち</rt></ruby></a></h3>
 <p>「ファイルパス」は、あるファイルから<ruby>別<rt>べつ</rt></ruby>のファイルを<ruby>探<rt>さが</rt></ruby>しにいくための「<ruby>道<rt>みち</rt></ruby>」のことです。</p>
 <p><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のパターン</p>
 <ul>
@@ -298,7 +298,7 @@
 <p><strong><ruby>大切<rt>たいせつ</rt></ruby>な<ruby>注意点<rt>ちゅういてん</rt></ruby></strong></p>
 <p>Windowsではフォルダの<ruby>区切<rt>くぎ</rt></ruby>りに「\（バックスラッシュ）」を<ruby>使<rt>つか</rt></ruby>いますが、ウェブ<ruby>開発<rt>かいはつ</rt></ruby>では**<ruby>必<rt>かなら</rt></ruby>ず「/（スラッシュ）」**を<ruby>使<rt>つか</rt></ruby>ってください。\ を<ruby>使<rt>つか</rt></ruby>うと、<ruby>自分<rt>じぶん</rt></ruby>のパソコンでは<ruby>動<rt>うご</rt></ruby>いても、インターネットに<ruby>公開<rt>こうかい</rt></ruby>した<ruby>瞬間<rt>しゅんかん</rt></ruby>にウェブサイトが<ruby>壊<rt>こわ</rt></ruby>れてしまいます。</p>
 <hr>
-<h2 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h2>
+<h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
 <ul>
 <li><ruby>整理整頓<rt>せいりせいとん</rt></ruby>：web-projects フォルダを<ruby>作<rt>つく</rt></ruby>り、<ruby>中身<rt>なかみ</rt></ruby>をミラー<ruby>構造<rt>こうぞう</rt></ruby>で<ruby>整理<rt>せいり</rt></ruby>しましょう。</li>
 <li><ruby>名前<rt>なまえ</rt></ruby>のルール：<ruby>小文字<rt>こもじ</rt></ruby>、スペースなし、ハイフンを<ruby>使<rt>つか</rt></ruby>いましょう。</li>

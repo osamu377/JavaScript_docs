@@ -6,7 +6,7 @@
 
 ***
 
-## 1. はじめに
+### 1. はじめに
 
 **なぜ「<ruby>計画<rt>けいかく</rt></ruby>」が<ruby>大切<rt>たいせつ</rt></ruby>なのか**
 
@@ -19,7 +19,7 @@
 
 ***
 
-## 2. ウェブサイトの<ruby>目的<rt>もくてき</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する
+### 2. ウェブサイトの<ruby>目的<rt>もくてき</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する
 
 <ruby>最初<rt>さいしょ</rt></ruby>のプロジェクトでは、<ruby>内容<rt>ないよう</rt></ruby>を「シンプル」にすることが<ruby>成功<rt>せいこう</rt></ruby>のヒミツです。<ruby>大<rt>おお</rt></ruby>きすぎる<ruby>目標<rt>もくひょう</rt></ruby>を<ruby>立<rt>た</rt></ruby>てると、<ruby>途中<rt>とちゅう</rt></ruby>で<ruby>嫌<rt>いや</rt></ruby>になって<ruby>諦<rt>あきら</rt></ruby>めてしまうからです。
 
@@ -40,7 +40,7 @@
 
 ***
 
-## 3. デザインのスケッチ
+### 3. デザインのスケッチ
 
 **<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>のイメージを<ruby>作<rt>つく</rt></ruby>る**
 
@@ -59,7 +59,7 @@
 
 ***
 
-## 4. テーマカラー（<ruby>色<rt>いろ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>とコード）を<ruby>決<rt>き</rt></ruby>める
+### 4. テーマカラー（<ruby>色<rt>いろ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>とコード）を<ruby>決<rt>き</rt></ruby>める
 
 サイトの<ruby>印象<rt>いんしょう</rt></ruby>を<ruby>決<rt>き</rt></ruby>める「<ruby>色<rt>いろ</rt></ruby>」を<ruby>選<rt>えら</rt></ruby>びましょう。
 
@@ -72,7 +72,7 @@
 
 ***
 
-## 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>
+### 5. <ruby>画像<rt>がぞう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>
 
 **ルールを<ruby>守<rt>まも</rt></ruby>って<ruby>探<rt>さが</rt></ruby>す<ruby>方法<rt>ほうほう</rt></ruby>**
 
@@ -87,7 +87,7 @@
 
 ***
 
-## 6. フォント（<ruby>文字<rt>もじ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>）の<ruby>選択<rt>せんたく</rt></ruby>
+### 6. フォント（<ruby>文字<rt>もじ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>）の<ruby>選択<rt>せんたく</rt></ruby>
 
 フォントには2つのタイプがあります。
 
@@ -104,7 +104,7 @@
 
 ***
 
-## 7. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
+### 7. まとめと<ruby>次<rt>つぎ</rt></ruby>のステップ
 
 お<ruby>疲<rt>つか</rt></ruby>れさまでした！これで「サイトの<ruby>設計図<rt>せっけいず</rt></ruby>」と「<ruby>素材<rt>そざい</rt></ruby>」がすべて<ruby>揃<rt>そろ</rt></ruby>いました。
 

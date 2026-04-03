@@ -9,7 +9,7 @@ HTMLは ウェブサイトの「<ruby>骨組<rt>ほねぐ</rt></ruby>み」、�
 
 ***
 
-## 1. HTMLとは<ruby>何<rt>なに</rt></ruby>？：ウェブの<ruby>基本<rt>きほん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する
+### 1. HTMLとは<ruby>何<rt>なに</rt></ruby>？：ウェブの<ruby>基本<rt>きほん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する
 
 **HTML（HyperText Markup Language）** は、テキスト（<ruby>文字<rt>もじ</rt></ruby>）に「<ruby>印<rt>しるし</rt></ruby>」を つけて、ウェブサイトの <ruby>構造<rt>こうぞう</rt></ruby>を <ruby>作<rt>つく</rt></ruby>るための「マークアップ<ruby>言語<rt>げんご</rt></ruby>」です。
 
@@ -22,7 +22,7 @@ HTMLを <ruby>使<rt>つか</rt></ruby>う <ruby>理由<rt>りゆう</rt></ruby>
 
 ***
 
-## 2. HTMLファイルの<ruby>基本<rt>きほん</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>
+### 2. HTMLファイルの<ruby>基本<rt>きほん</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>
 
 ウェブページを <ruby>正<rt>ただ</rt></ruby>しく <ruby>動<rt>うご</rt></ruby>かすためには、<ruby>決<rt>き</rt></ruby>まった「<ruby>型<rt>かた</rt></ruby>」が <ruby>必要<rt>ひつよう</rt></ruby>です。
 
@@ -64,7 +64,7 @@ HTMLは「タグの <ruby>中<rt>なか</rt></ruby>に <ruby>別<rt>べつ</rt><
 
 ***
 
-## 3. テキストに<ruby>意味<rt>いみ</rt></ruby>をつける：<ruby>見出<rt>みだ</rt></ruby>し、<ruby>段落<rt>だんらく</rt></ruby>、リスト
+### 3. テキストに<ruby>意味<rt>いみ</rt></ruby>をつける：<ruby>見出<rt>みだ</rt></ruby>し、<ruby>段落<rt>だんらく</rt></ruby>、リスト
 
 <ruby>文章<rt>ぶんしょう</rt></ruby>を <ruby>分<rt>わ</rt></ruby>かりやすくするために、<ruby>適切<rt>てきせつ</rt></ruby>な タグを <ruby>使<rt>つか</rt></ruby>います。
 
@@ -79,7 +79,7 @@ HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>�
 
 ***
 
-## 4. <ruby>画像<rt>がぞう</rt></ruby>を <ruby>表示<rt>ひょうじ</rt></ruby>する：`<img>`<ruby>要素<rt>ようそ</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>
+### 4. <ruby>画像<rt>がぞう</rt></ruby>を <ruby>表示<rt>ひょうじ</rt></ruby>する：`<img>`<ruby>要素<rt>ようそ</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>
 
 <ruby>画像<rt>がぞう</rt></ruby>を <ruby>表示<rt>ひょうじ</rt></ruby>するには `<img>` <ruby>要素<rt>ようそ</rt></ruby>を <ruby>使<rt>つか</rt></ruby>います。
 
@@ -94,7 +94,7 @@ HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>�
 
 ***
 
-## 5. リンクを<ruby>作<rt>つく</rt></ruby>ってページをつなぐ：`<a>`<ruby>要素<rt>ようそ</rt></ruby>
+### 5. リンクを<ruby>作<rt>つく</rt></ruby>ってページをつなぐ：`<a>`<ruby>要素<rt>ようそ</rt></ruby>
 
 ウェブ（<ruby>蜘蛛<rt>くも</rt></ruby>の<ruby>巣<rt>す</rt></ruby>：くものす）の <ruby>名前<rt>なまえ</rt></ruby>の とおり、ページどうしを つなぐのが「リンク」です。
 
@@ -112,7 +112,7 @@ HTMLコメント（`<!-- -->`）の メリット： コードの <ruby>中<rt>�
 
 ***
 
-## 6. まとめ：<ruby>自分<rt>じぶん</rt></ruby>のウェブサイトを<ruby>作<rt>つく</rt></ruby>ってみよう
+### 6. まとめ：<ruby>自分<rt>じぶん</rt></ruby>のウェブサイトを<ruby>作<rt>つく</rt></ruby>ってみよう
 
 「<ruby>構造<rt>こうぞう</rt></ruby>（HTML）」「テキスト」「<ruby>画像<rt>がぞう</rt></ruby>」「リンク」が <ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わさることで、<ruby>一<rt>ひと</rt></ruby>つの ページが <ruby>完成<rt>かんせい</rt></ruby>します。
 

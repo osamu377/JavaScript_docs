@@ -1,6 +1,6 @@
 # <ruby>記号<rt>きごう</rt></ruby>について
 
-## <ruby>日本語<rt>にほんご</rt></ruby>キーボード<ruby>上<rt>じょう</rt></ruby>の<ruby>記号<rt>きごう</rt></ruby>
+### <ruby>日本語<rt>にほんご</rt></ruby>キーボード<ruby>上<rt>じょう</rt></ruby>の<ruby>記号<rt>きごう</rt></ruby>
 
 ![日本語キーボード](img/jkbd.JPG)
 
@@ -29,7 +29,7 @@
 |`21`|`/` スラッシュ|`?` クエッション マーク / はてなマーク|
 |`22`|`\` バックスラッシュ / `¥` <ruby>円<rt>えん</rt></ruby>マーク|`_` アンダースコア / アンダーバー|
 
-## <ruby>日本語<rt>にほんご</rt></ruby>のかっこの<ruby>種類<rt>しゅるい</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby>
+### <ruby>日本語<rt>にほんご</rt></ruby>のかっこの<ruby>種類<rt>しゅるい</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby>
 
 |かっこの<ruby>種類<rt>しゅるい</rt></ruby>|<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby>|<ruby>英語<rt>えいご</rt></ruby>の<ruby>呼<rt>よ</rt></ruby>び<ruby>方<rt>かた</rt></ruby>|
 |---|---|---|
