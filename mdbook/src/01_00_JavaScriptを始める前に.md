@@ -182,7 +182,7 @@ JavaScripはマニュアルですから、「みんなで協力して、こう�
 
 JavaScriptが動く順番をイラストで描くとこんな風になります。
 
-![JavaScriptが動く順番](img/obj_working2.jpg)
+![JavaScriptが動く順番](img/obj_working2.JPG)
 
 つまり、JavaScriptでウェブページを動かすために
 
