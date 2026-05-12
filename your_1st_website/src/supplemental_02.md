@@ -1,5 +1,9 @@
 # Visual Studio Code の<ruby>準備<rt>じゅんび</rt></ruby>
 
+## 起動方法
+
+![起動方法](img/000/101.png)
+
 ## Live Server<ruby>拡張機能<rt>かくちょうきのう</rt></ruby>の<ruby>インストール<rt>いんすとーる</rt></ruby>
 
 1.  <ruby>拡張機能<rt>かくちょうきのう</rt></ruby>アイコンをクリックします
