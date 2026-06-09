@@ -2,9 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Textbook_Project/JavaScript"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "JavaScript_new"
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript"
 	}
 }
