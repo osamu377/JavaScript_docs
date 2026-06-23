@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-title">こんにちは！</h1>
+    <br>
+    <h3>getElementByID()メソッド</h3>
+    <p>コンソールを開いて、下のJavaScriptを入力してみましょう。</p>
+    <br>
+    <pre>
+        // 1. IDが "main-title" というパーツを探す
+        const message = document.getElementById("main-title");
+
+        // 2. その中身を書き換える
+        message.textContent = "こんにちは、日本へようこそ！";
+
+        // 3. スタイル（色）も変えちゃう
+        message.style.color = "red";
+    </pre>
+    <br>
+    <h2>メニュー</h2>
+    <li>
+        <ul class="menu-item">Coffee</ul>
+        <ul class="menu-item">Tea</ul>
+        <ul class="menu-item">Cola</ul>
+        <ul class="menu-item">Orange Juice</ul>
+        <ul class="menu-item">Apple Juice</ul>
+    </li>
+
+    <h3>getElementsByClassName()メソッド</h3>
+    <p>コンソールを開いて、下のJavaScriptを入力してみましょう。</p>
+    <pre>
+        // 1. IDが "menu-item" というパーツを探す
+        const items = document.getElementsByClassName("menu-item");
+
+        // 2. その中身を書き換える
+        items[0].textContent = "コーヒー";
+
+        // 3. スタイル（色）も変えちゃう
+        items[3].style.color = "Orange";
+    </pre>
+</body>
+</html>
