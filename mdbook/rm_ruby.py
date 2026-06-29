@@ -18,7 +18,9 @@ if not os.path.exists(w_directory_path):
 # file_list = sys.argv
 
 # ファイルリストを作成
-file_list = ["05_00_組み込みオブジェクト.md", "05_01_配列.md", "05_02_文字列.md"]
+#file_list = ["05_03_日付.md", "05_04_数学オブジェクト.md"]
+file_list = ["06_00_JavaScriptとオブジェクト指向.md","06_01_自分のオブジェクトを作る.md","06_02_オブジェクトを改造する.md","06_03_クラスはオブジェクトの設計図.md"]
+
 # ファイルを読み込む
 for item in file_list:
     if item == "SUMMARY.md":
