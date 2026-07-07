@@ -19,8 +19,9 @@ if not os.path.exists(w_directory_path):
 
 # ファイルリストを作成
 #file_list = ["05_03_日付.md", "05_04_数学オブジェクト.md"]
-file_list = ["05_05_正規表現.md"]
+# file_list = ["05_05_正規表現.md"]
 #file_list = ["06_00_JavaScriptとオブジェクト指向.md","06_01_自分のオブジェクトを作る.md","06_02_オブジェクトを改造する.md","06_03_クラスはオブジェクトの設計図.md"]
+file_list = ["04_00_ブラウザのオブジェクト.md","04_01_オブジェクトの中を見てみよう.md","04_02_Windowオブジェクト.md","04_03_DOMツリー.md","04_04_イベント処理.md","04_05_Window操作.md"]
 
 # ファイルを読み込む
 for item in file_list:
