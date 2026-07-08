@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="greeting">こんにちは！</h1>
+    <br>
+    <p>コンソールを開いて、下のJavaScriptを入力してみましょう。</p>
+    <br>
+    <pre>
+        // 1. IDが "greeting" というパーツを探す
+        const message = document.getElementById("greeting");
+
+        // 2. その中身を書き換える
+        message.textContent = "こんにちは、日本へようこそ！";
+
+        // 3. スタイル（色）も変えちゃう
+        message.style.color = "red";
+    </pre>
+    <br>
+
+    <h3 class="box">ボックス</h3>
+    <br>
+    <p>コンソールを開いて、下のJavaScriptを入力してみましょう。</p>
+    <br>
+    <pre>
+      const box = document.querySelector(".box");
+
+      // 1. 背景（はいけい）をオレンジ色にする
+      box.style.backgroundColor = "orange";
+
+      // 2. 文字を白くして、大きくする
+      box.style.color = "white";
+      box.style.fontSize = "24px"; // ⚠️ "px" を忘れないで！
+
+      // 3. 枠線（わくせん）をつける
+      box.style.border = "5px solid black";
+    </pre>
+    <br>
+    <a href="javascript:history.back();">戻る</a>
+</body>
+</html>
