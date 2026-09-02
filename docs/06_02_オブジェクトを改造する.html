@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,16 +174,16 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="オブジェクトを改造する"><a class="header" href="#オブジェクトを改造する">オブジェクトを改造する</a></h1>
-<p>既にあるオブジェクトを自分好みに作り変えることを、プログラミングの世界では <strong>「拡張（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と呼びます。</p>
-<p>これは <strong>「買ってきた自転車（じてんしゃ）に、ライトをつけたり色をぬったりして改造（かいぞう）すること」</strong> に<ruby>例<rt>たと</rt></ruby>えることができます。</p>
-<h2 id="i-オブジェクトを改造する"><a class="header" href="#i-オブジェクトを改造する">I. オブジェクトを改造する</a></h2>
-<h3 id="1-既にあるオブジェクトを改造する2つの方法"><a class="header" href="#1-既にあるオブジェクトを改造する2つの方法">1. 既にあるオブジェクトを改造する2つの方法</a></h3>
-<p>JavaScriptでは、すでに動いているオブジェクトに後から「新しいパーツ」を追加したり、「古いパーツ」を新しいものに取り替えたりできます。</p>
-<h4 id="a-追加する"><a class="header" href="#a-追加する">a) <strong>追加する</strong></a></h4>
-<p>特定の1人（1つのオブジェクト）だけに、新しいプロパティやメソッドを追加します。</p>
+                        <h1 id="オブジェクトを改造かいぞうする"><a class="header" href="#オブジェクトを改造かいぞうする">オブジェクトを<ruby>改造<rt>かいぞう</rt></ruby>する</a></h1>
+<p>すでにあるオブジェクトを<ruby>自分好<rt>じぶんごの</rt></ruby>みに<ruby>作<rt>つく</rt></ruby>り<ruby>変<rt>か</rt></ruby>えることを、プログラミングの<ruby>世界<rt>せかい</rt></ruby>では <strong>「<ruby>拡張<rt>かくちょう</rt></ruby>（かくちょう / Extension）」</strong> や <strong>「カスタマイズ」</strong> と<ruby>呼<rt>よ</rt></ruby>びます。</p>
+<p>これは <strong>「<ruby>買<rt>か</rt></ruby>ってきた<ruby>自転車<rt>じてんしゃ</rt></ruby>に、ライトをつけたり<ruby>色<rt>いろ</rt></ruby>をぬったりして<ruby>改造<rt>かいぞう</rt></ruby>すること」</strong> に<ruby>例<rt>たと</rt></ruby>えることができます。</p>
+<h2 id="i-オブジェクトを改造かいぞうする"><a class="header" href="#i-オブジェクトを改造かいぞうする">I. オブジェクトを<ruby>改造<rt>かいぞう</rt></ruby>する</a></h2>
+<h3 id="1-すでにあるオブジェクトを改造かいぞうする2つの方法ほうほう"><a class="header" href="#1-すでにあるオブジェクトを改造かいぞうする2つの方法ほうほう">1. すでにあるオブジェクトを<ruby>改造<rt>かいぞう</rt></ruby>する2つの<ruby>方法<rt>ほうほう</rt></ruby></a></h3>
+<p>JavaScriptでは、すでに<ruby>動<rt>うご</rt></ruby>いているオブジェクトに<ruby>後<rt>あと</rt></ruby>から「<ruby>新<rt>あたら</rt></ruby>しいパーツ」を<ruby>追加<rt>ついか</rt></ruby>したり、「<ruby>古<rt>ふる</rt></ruby>いパーツ」を<ruby>新<rt>あたら</rt></ruby>しいものに<ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えたりできます。</p>
+<h4 id="a-追加ついかする"><a class="header" href="#a-追加ついかする">a) <strong><ruby>追加<rt>ついか</rt></ruby>する</strong></a></h4>
+<p><ruby>特定<rt>とくてい</rt></ruby>の1<ruby>人<rt>にん</rt></ruby>（1つのオブジェクト）だけに、<ruby>新<rt>あたら</rt></ruby>しいプロパティやメソッドを<ruby>追加<rt>ついか</rt></ruby>します。</p>
 <ul>
-<li><strong>イメージ：</strong> 自分の自転車だけに、特別なステッカーを貼る。</li>
+<li><strong>イメージ：</strong> <ruby>自分<rt>じぶん</rt></ruby>の<ruby>自転車<rt>じてんしゃ</rt></ruby>だけに、<ruby>特別<rt>とくべつ</rt></ruby>なステッカーを<ruby>貼<rt>は</rt></ruby>る。</li>
 <li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>オブジェクト名.新しい名前 = 値;</code></li>
 </ul>
 <pre><code class="language-javascript">const myCar = { brand: "Toyota" };
@@ -197,26 +197,24 @@ myCar.horn = function() {
 };
 
 myCar.horn(); // 実行できる！
-
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><code>myCar.horn = function() {...</code> の部分は、<code>myCar.horn</code> に<ruby>関数<rt>かんすう</rt></ruby>を<ruby>代入<rt>だいにゅう</rt></ruby>していいます。
-このように、<strong>JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も<ruby>変数<rt>へんすう</rt></ruby>のようにあつかうことができます。</strong> <ruby>代入<rt>だいにゅう</rt></ruby>したり、<ruby>関数<rt>かんすう</rt></ruby>の<ruby>引数<rt>ひきすう</rt></ruby>にしたり、返り値にしたりできるのです。</p>
+<p><code>myCar.horn = function() {...</code> の<ruby>部分<rt>ぶぶん</rt></ruby>は、<code>myCar.horn</code> に<ruby>関数<rt>かんすう</rt></ruby>を<ruby>代入<rt>だいにゅう</rt></ruby>していいます。<br>このように、<strong>JavaScriptでは<ruby>関数<rt>かんすう</rt></ruby>も<ruby>変数<rt>へんすう</rt></ruby>のようにあつかうことができます。</strong> <ruby>代入<rt>だいにゅう</rt></ruby>したり、<ruby>関数<rt>かんすう</rt></ruby>の<ruby>引数<rt>ひきすう</rt></ruby>にしたり、<ruby>返<rt>かえ</rt></ruby>り<ruby>値<rt>ち</rt></ruby>にしたりできるのです。</p>
 </blockquote>
 <h4 id="b-オーバーライド上書うわがきする"><a class="header" href="#b-オーバーライド上書うわがきする">b) <strong>オーバーライド（<ruby>上書<rt>うわが</rt></ruby>き）する</strong></a></h4>
-<p>親から<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>いだ機能を、自分流のやり<ruby>方<rt>かた</rt></ruby>に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えます。</p>
+<p><ruby>親<rt>おや</rt></ruby>から<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>いだ<ruby>機能<rt>きのう</rt></ruby>を、<ruby>自分流<rt>じぶんりゅう</rt></ruby>のやり<ruby>方<rt>かた</rt></ruby>に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えます。</p>
 <ul>
-<li><strong>イメージ：</strong> お父さんからもらったカメラだけど、レンズを<ruby>最新<rt>さいしん</rt></ruby>のものに交換して使いやすくする。</li>
-<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> 同じ名前で新しく<ruby>定義<rt>ていぎ</rt></ruby>し直す。</li>
+<li><strong>イメージ：</strong> お<ruby>父<rt>とう</rt></ruby>さんからもらったカメラだけど、レンズを<ruby>最新<rt>さいしん</rt></ruby>のものに<ruby>交換<rt>こうかん</rt></ruby>して<ruby>使<rt>つか</rt></ruby>いやすくする。</li>
+<li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <ruby>同<rt>おな</rt></ruby>じ<ruby>名前<rt>なまえ</rt></ruby>で<ruby>新<rt>あたら</rt></ruby>しく<ruby>定義<rt>ていぎ</rt></ruby>し<ruby>直<rt>なお</rt></ruby>す。</li>
 </ul>
 <pre><code class="language-javascript">// 1. robotオブジェクトを作成
-const robot {
+const robot = {
   name: "ロビー",
   greet() {
     console.log("ハロー、ロボットです。");
   }
-}
+};
 
 // 2. 実行
 robot.greet(); // "ハロー、ロボットです。"（元のまま）
@@ -231,39 +229,39 @@ robot.greet(); // "こんにちは！ 私は特別な..."（上書（うわが�
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><code>robot.greet = function() {...</code> の部分は、<code>robot</code> の　<code>greet</code> というメソッド（<ruby>関数<rt>かんすう</rt></ruby>）に別の<ruby>関数<rt>かんすう</rt></ruby>を再<ruby>代入<rt>だいにゅう</rt></ruby>しています。</p>
+<p><code>robot.greet = function() {...</code> の<ruby>部分<rt>ぶぶん</rt></ruby>は、<code>robot</code> の <code>greet</code> というメソッド（<ruby>関数<rt>かんすう</rt></ruby>）に<ruby>別<rt>べつ</rt></ruby>の<ruby>関数<rt>かんすう</rt></ruby>を<ruby>再代入<rt>さいだいにゅう</rt></ruby>しています。</p>
 </blockquote>
-<h3 id="2-例たとえ話スマホ"><a class="header" href="#2-例たとえ話スマホ">2. <ruby>例<rt>たと</rt></ruby>え話：スマホ</a></h3>
+<h3 id="2-例たとえ話ばなしスマホ"><a class="header" href="#2-例たとえ話ばなしスマホ">2. <ruby>例<rt>たと</rt></ruby>え<ruby>話<rt>ばなし</rt></ruby>：スマホ</a></h3>
 <blockquote>
-<p>JavaScriptのオブジェクトは、一度作ったら終わりではありません。</p>
+<p>JavaScriptのオブジェクトは、<ruby>一度<rt>いちど</rt></ruby><ruby>作<rt>つく</rt></ruby>ったら<ruby>終<rt>お</rt></ruby>わりではありません。</p>
 <ol>
-<li><strong>直接追加：</strong> スマホに『お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りのストラップ』をつけるようなもの。</li>
-<li><strong>オーバーライド：</strong> 決まった『着信音（ちゃくしんおん）』を、自分の好きな音楽に変えるようなものだよ。</li>
+<li><strong><ruby>直接追加<rt>ちょくせつついか</rt></ruby>：</strong> スマホに『お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りのストラップ』をつけるようなもの。</li>
+<li><strong>オーバーライド：</strong> <ruby>決<rt>き</rt></ruby>まった『<ruby>着信音<rt>ちゃくしんおん</rt></ruby>』を、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>好<rt>す</rt></ruby>きな<ruby>音楽<rt>おんがく</rt></ruby>に<ruby>変<rt>か</rt></ruby>えるようなものだよ。</li>
 </ol>
-<p>こうやって、元の形を壊さずに自分らしく使いやすくするのが、JavaScriptの面白いところなんです。</p>
+<p>こうやって、<ruby>元<rt>もと</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>を<ruby>壊<rt>こわ</rt></ruby>さずに<ruby>自分<rt>じぶん</rt></ruby>らしく<ruby>使<rt>つか</rt></ruby>いやすくするのが、JavaScriptの<ruby>面白<rt>おもしろ</rt></ruby>いところなんです。</p>
 </blockquote>
 <h2 id="ii-プロトタイプとプロトタイプチェーン"><a class="header" href="#ii-プロトタイプとプロトタイプチェーン">II. プロトタイプとプロトタイプチェーン</a></h2>
-<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、多くの学習者がつまずく<ruby>難<rt>むずか</rt></ruby>しいところです。</p>
-<p>これを皆さんがイメージしやすいように、 <strong>「<ruby>家系図<rt>かけいず</rt></ruby>」</strong> や <strong>「秘密のレシピの<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>ぎ」</strong> に<ruby>例<rt>たと</rt></ruby>えて説明します。</p>
+<p>JavaScriptの「プロトタイプ（Prototype）」と「プロトタイプチェーン」は、<ruby>多<rt>おお</rt></ruby>くの<ruby>学習者<rt>がくしゅうしゃ</rt></ruby>がつまずく<ruby>難<rt>むずか</rt></ruby>しいところです。</p>
+<p>これを<ruby>皆<rt>みな</rt></ruby>さんがイメージしやすいように、 <strong>「<ruby>家系図<rt>かけいず</rt></ruby>」</strong> や <strong>「<ruby>秘密<rt>ひみつ</rt></ruby>のレシピの<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>ぎ」</strong> に<ruby>例<rt>たと</rt></ruby>えて<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 <h3 id="1-プロトタイプprototypeとは"><a class="header" href="#1-プロトタイプprototypeとは">1. プロトタイプ（Prototype）とは？</a></h3>
-<p>JavaScriptでは、多くのオブジェクトが「親（プロトタイプ）」を持っています。もし自分の中に必要な道具（メソッドやプロパティ）がなくても、**「親の持っている道具を借りて使う」**ことができる<ruby>仕組<rt>しく</rt></ruby>みです。</p>
+<p>JavaScriptでは、<ruby>多<rt>おお</rt></ruby>くのオブジェクトが「<ruby>親<rt>おや</rt></ruby>（プロトタイプ）」を<ruby>持<rt>も</rt></ruby>っています。もし<ruby>自分<rt>じぶん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>道具<rt>どうぐ</rt></ruby>（メソッドやプロパティ）がなくても、<strong>「<ruby>親<rt>おや</rt></ruby>の<ruby>持<rt>も</rt></ruby>っている<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>借<rt>か</rt></ruby>りて<ruby>使<rt>つか</rt></ruby>う」</strong> ことができる<ruby>仕組<rt>しく</rt></ruby>みです。</p>
 <h3 id="2-プロトタイプチェーンprototype-chainとは"><a class="header" href="#2-プロトタイプチェーンprototype-chainとは">2. プロトタイプチェーン（Prototype Chain）とは？</a></h3>
-<p>「自分になければ親、親になければそのまた親…」と、<strong>さかのぼって探しに行く「鎖（くさり）」のようなつながり</strong> のことです。</p>
-<h4 id="身近みじかな例たとえ秘密のカレーレシピを求めて"><a class="header" href="#身近みじかな例たとえ秘密のカレーレシピを求めて"><strong><ruby>身近<rt>みじか</rt></ruby>な<ruby>例<rt>たと</rt></ruby>え：秘密のカレーレシピを求めて</strong></a></h4>
+<p>「<ruby>自分<rt>じぶん</rt></ruby>になければ<ruby>親<rt>おや</rt></ruby>、<ruby>親<rt>おや</rt></ruby>になければそのまた<ruby>親<rt>おや</rt></ruby>…」と、<strong>さかのぼって<ruby>探<rt>さが</rt></ruby>しに<ruby>行<rt>い</rt></ruby>く「<ruby>鎖<rt>くさり</rt></ruby>」のようなつながり</strong> のことです。</p>
+<h4 id="身近みぢかな例たとえ秘密ひみつのカレーレシピを求もとめて"><a class="header" href="#身近みぢかな例たとえ秘密ひみつのカレーレシピを求もとめて"><strong><ruby>身近<rt>みぢか</rt></ruby>な<ruby>例<rt>たと</rt></ruby>え：<ruby>秘密<rt>ひみつ</rt></ruby>のカレーレシピを<ruby>求<rt>もと</rt></ruby>めて</strong></a></h4>
 <ol>
-<li><strong>あなた（インスタンス）：</strong> カレーを作ろうとします。</li>
-<li><strong>自分のキッチン：</strong> レシピがありません。</li>
-<li><strong>お父さんの家（自分のプロトタイプ）：</strong> 「カレーのレシピある？」と聞きます。「持っていない」と答えが返ってきました。</li>
-<li><strong>おじいさんの家（自分の親のプロトタイプ）：</strong> お父さんも持っていなければ、さらにおじいさんに聞きに行きます。「カレーのレシピある？」</li>
-<li><strong>先祖の家：</strong> そんな風に、レシピを持っている人を見つけるまで、先祖をたどって聞きに行きます。誰かがレシピを持っていれば、あなたはそれを使ってカレーが作れます。</li>
+<li><strong>あなた（インスタンス）：</strong> カレーを<ruby>作<rt>つく</rt></ruby>ろうとします。</li>
+<li><strong><ruby>自分<rt>じぶん</rt></ruby>のキッチン：</strong> レシピがありません。</li>
+<li><strong>お<ruby>父<rt>とう</rt></ruby>さんの<ruby>家<rt>いえ</rt></ruby>（<ruby>自分<rt>じぶん</rt></ruby>のプロトタイプ）：</strong> 「カレーのレシピある？」と<ruby>聞<rt>き</rt></ruby>きます。「<ruby>持<rt>も</rt></ruby>っていない」と<ruby>答<rt>こた</rt></ruby>えが<ruby>返<rt>かえ</rt></ruby>ってきました。</li>
+<li><strong>おじいさんの<ruby>家<rt>いえ</rt></ruby>（<ruby>自分<rt>じぶん</rt></ruby>の<ruby>親<rt>おや</rt></ruby>のプロトタイプ）：</strong> お<ruby>父<rt>とう</rt></ruby>さんも<ruby>持<rt>も</rt></ruby>っていなければ、さらにおじいさんに<ruby>聞<rt>き</rt></ruby>きに<ruby>行<rt>い</rt></ruby>きます。「カレーのレシピある？」</li>
+<li><strong><ruby>先祖<rt>せんぞ</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>：</strong> そんな<ruby>風<rt>ふう</rt></ruby>に、レシピを<ruby>持<rt>も</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけるまで、<ruby>先祖<rt>せんぞ</rt></ruby>をたどって<ruby>聞<rt>き</rt></ruby>きに<ruby>行<rt>い</rt></ruby>きます。<ruby>誰<rt>だれ</rt></ruby>かがレシピを<ruby>持<rt>も</rt></ruby>っていれば、あなたはそれを<ruby>使<rt>つか</rt></ruby>ってカレーが<ruby>作<rt>つく</rt></ruby>れます。</li>
 </ol>
 <h3 id="3-なぜこの仕組しくみがあるの"><a class="header" href="#3-なぜこの仕組しくみがあるの">3. なぜこの<ruby>仕組<rt>しく</rt></ruby>みがあるの？</a></h3>
-<p>もし100人の学生オブジェクトを作るとき、全員に「<ruby>自己<rt>じこ</rt></ruby>紹介メソッド」を持たせると、メモリー（コンピューターの<ruby><rt>脳</rt>のう</ruby>）をたくさん使ってしまいます。</p>
+<p>もし100<ruby>人<rt>にん</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>オブジェクトを<ruby>作<rt>つく</rt></ruby>るとき、<ruby>全員<rt>ぜんいん</rt></ruby>に「<ruby>自己紹介<rt>じこしょうかい</rt></ruby>メソッド」を<ruby>持<rt>も</rt></ruby>たせると、メモリーをたくさん<ruby>使<rt>つか</rt></ruby>ってしまいます。</p>
 <ul>
-<li><strong>プロトタイプを使わない：</strong> 全員が自分の辞書（じしょ）を持っている（重い！）</li>
-<li><strong>プロトタイプを使う：</strong> 教室に1冊だけ辞書を置き、全員でそれを<ruby>共有<rt>きょうゆう</rt></ruby>する（軽い！）</li>
+<li><strong>プロトタイプを<ruby>使<rt>つか</rt></ruby>わない：</strong> <ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>自分<rt>じぶん</rt></ruby>の<ruby>辞書<rt>じしょ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている（<ruby>重<rt>おも</rt></ruby>い！）</li>
+<li><strong>プロトタイプを<ruby>使<rt>つか</rt></ruby>う：</strong> <ruby>教室<rt>きょうしつ</rt></ruby>に1<ruby>冊<rt>さつ</rt></ruby>だけ<ruby>辞書<rt>じしょ</rt></ruby>を<ruby>置<rt>お</rt></ruby>き、<ruby>全員<rt>ぜんいん</rt></ruby>でそれを<ruby>共有<rt>きょうゆう</rt></ruby>する（<ruby>軽<rt>かる</rt></ruby>い！）</li>
 </ul>
-<h3 id="4-コードで見る探しに行く流れ"><a class="header" href="#4-コードで見る探しに行く流れ">4. コードで見る「探しに行く流れ」</a></h3>
+<h3 id="4-コードで見みる探さがしに行いく流ながれ"><a class="header" href="#4-コードで見みる探さがしに行いく流ながれ">4. コードで<ruby>見<rt>み</rt></ruby>る「<ruby>探<rt>さが</rt></ruby>しに<ruby>行<rt>い</rt></ruby>く<ruby>流<rt>なが</rt></ruby>れ」</a></h3>
 <pre><code class="language-javascript">const animal = {
   eats: true
 };
@@ -278,12 +276,11 @@ Object.setPrototypeOf(dog, animal);
 console.log(dog.barks); // true (自分の中にある)
 console.log(dog.eats);  // true (自分にはないが、親にあるので借りてきた！)
 console.log(dog.fly);   // undefined (家系図（かけいず）を最後まで探したけど、どこにもない)
-
 </code></pre>
-<h3 id="5-プロトタイプを使って新しいプロパティやメソッドを追加する"><a class="header" href="#5-プロトタイプを使って新しいプロパティやメソッドを追加する">5. プロトタイプを使って新しいプロパティやメソッドを追加する</a></h3>
-<p>ひとつのオブジェクトだけでなく、そのプロトタイプから生まれた「全員」に、新しい機能を持たせることができます。</p>
+<h3 id="5-プロトタイプを使つかって新あたらしいプロパティやメソッドを追加ついかする"><a class="header" href="#5-プロトタイプを使つかって新あたらしいプロパティやメソッドを追加ついかする">5. プロトタイプを<ruby>使<rt>つか</rt></ruby>って<ruby>新<rt>あたら</rt></ruby>しいプロパティやメソッドを<ruby>追加<rt>ついか</rt></ruby>する</a></h3>
+<p>ひとつのオブジェクトだけでなく、そのプロトタイプから<ruby>生<rt>う</rt></ruby>まれた「<ruby>全員<rt>ぜんいん</rt></ruby>」に、<ruby>新<rt>あたら</rt></ruby>しい<ruby>機能<rt>きのう</rt></ruby>を<ruby>持<rt>も</rt></ruby>たせることができます。</p>
 <ul>
-<li><strong>イメージ：</strong> マンションの住人全員が使える「<ruby>共有<rt>きょうゆう</rt></ruby>のラウンジ」に、新しいテレビを置く。</li>
+<li><strong>イメージ：</strong> マンションの<ruby>住人<rt>じゅうにん</rt></ruby><ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>使<rt>つか</rt></ruby>える「<ruby>共有<rt>きょうゆう</rt></ruby>のラウンジ」に、<ruby>新<rt>あたら</rt></ruby>しいテレビを<ruby>置<rt>お</rt></ruby>く。</li>
 <li><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>：</strong> <code>クラス名.prototype.メソッド名 = function() { ... };</code></li>
 </ul>
 <pre><code class="language-javascript">// 全ての配列（はいれつ）（Array）に「2倍にする」という新しい機能を追加してみる
@@ -293,33 +290,31 @@ Array.prototype.double = function() {
 
 const numbers = [1, 2, 3];
 console.log(numbers.double()); // [2, 4, 6]
-
 </code></pre>
 <blockquote>
-<p><strong>注意：</strong> ここではわかりやすい<ruby>例<rt>れい</rt></ruby>として<code>Array</code>にメソッドを追加しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、皆が使う標準（ひょうじゅん）の道具を勝手に改造はしません。他の人の書いたブログラムに影響する可能性があるからです。</p>
+<p><strong><ruby>注意<rt>ちゅうい</rt></ruby>：</strong> ここではわかりやすい<ruby>例<rt>れい</rt></ruby>として<code>Array</code>にメソッドを<ruby>追加<rt>ついか</rt></ruby>しましたが、ふつう、 <code>Array</code> や <code>Object</code> などの、<ruby>皆<rt>みな</rt></ruby>が<ruby>使<rt>つか</rt></ruby>う<ruby>標準<rt>ひょうじゅん</rt></ruby>の<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>勝手<rt>かって</rt></ruby>に<ruby>改造<rt>かいぞう</rt></ruby>はしません。<ruby>他<rt>ほか</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>書<rt>か</rt></ruby>いたブログラムに<ruby>影響<rt>えいきょう</rt></ruby>する<ruby>可能性<rt>かのうせい</rt></ruby>があるからです。</p>
 </blockquote>
 <h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>用語</th><th>やさしい日本語</th><th>英語のイメージ</th></tr>
+<tr><th><ruby>用語<rt>ようご</rt></ruby></th><th>やさしい<ruby>日本語<rt>にほんご</rt></ruby></th><th><ruby>英語<rt>えいご</rt></ruby>のイメージ</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Prototype</strong></td><td>共通の道具箱 / 秘密のレシピ</td><td>Blueprint / Shared assets</td></tr>
-<tr><td><strong>Prototype Chain</strong></td><td>先祖（せんぞ）をたどる鎖</td><td>Search link / DNA</td></tr>
-<tr><td><strong>Inheritance</strong></td><td><ruby>継承<rt>けいしょう</rt></ruby>（親の機能を使えること）</td><td>Inheritance</td></tr>
+<tr><td><strong>Prototype</strong></td><td><ruby>共通<rt>きょうつう</rt></ruby>の<ruby>道具箱<rt>どうぐばこ</rt></ruby> / <ruby>秘密<rt>ひみつ</rt></ruby>のレシピ</td><td>Blueprint / Shared assets</td></tr>
+<tr><td><strong>Prototype Chain</strong></td><td><ruby>先祖<rt>せんぞ</rt></ruby>（せんぞ）をたどる<ruby>鎖<rt>くさり</rt></ruby></td><td>Search link / DNA</td></tr>
+<tr><td><strong>Inheritance</strong></td><td><ruby>継承<rt>けいしょう</rt></ruby>（<ruby>親<rt>おや</rt></ruby>の<ruby>機能<rt>きのう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えること）</td><td>Inheritance</td></tr>
 </tbody>
 </table>
 </div>
-<p>「自分にないものは、先祖から借りればいい」。この考え方がJavaScriptの根本（こんぽん）にあります。</p>
+<p>「<ruby>自分<rt>じぶん</rt></ruby>にないものは、<ruby>先祖<rt>せんぞ</rt></ruby>から<ruby>借<rt>か</rt></ruby>りればいい」。この<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>がJavaScriptの<ruby>根本<rt>こんぽん</rt></ruby>にあります。</p>
 <hr>
-<h3 id="-留学生へのアドバイス"><a class="header" href="#-留学生へのアドバイス">📝 留学生へのアドバイス</a></h3>
+<h3 id="-学生がくせいへのアドバイス"><a class="header" href="#-学生がくせいへのアドバイス">📝 <ruby>学生<rt>がくせい</rt></ruby>へのアドバイス</a></h3>
 <blockquote>
-<p>改造はとても便利だけど、やりすぎると『元の形がどうだったか』が分からなくなって、他の人が困ることがあります。
-特に <strong><code>Array.prototype</code></strong> などを改造するときは、<strong>『みんなの<ruby>共有<rt>きょうゆう</rt></ruby>スペースに勝手に私物を置かない』</strong> というマナーがあることも、一緒に覚えておきましょう！</p>
+<p><ruby>改造<rt>かいぞう</rt></ruby>はとても<ruby>便利<rt>べんり</rt></ruby>だけど、やりすぎると『<ruby>元<rt>もと</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>がどうだったか』が<ruby>分<rt>わ</rt></ruby>からなくなって、<ruby>他<rt>ほか</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>困<rt>こま</rt></ruby>ることがあります。<br><ruby>特<rt>とく</rt></ruby>に <strong><code>Array.prototype</code></strong> などを<ruby>改造<rt>かいぞう</rt></ruby>するときは、<strong>『みんなの<ruby>共有<rt>きょうゆう</rt></ruby>スペースに<ruby>勝手<rt>かって</rt></ruby>に<ruby>私物<rt>しぶつ</rt></ruby>を<ruby>置<rt>お</rt></ruby>かない』</strong> というマナーがあることも、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>覚<rt>おぼ</rt></ruby>えておきましょう！</p>
 </blockquote>
 <hr>
-<p>いかがでしょうか？ 「後から自由に変えられる」というJavaScriptの<ruby>柔軟<rt>じゅうなん</rt></ruby>（じゅうなん）な性格が伝わればバッチリです。</p>
+<p>いかがでしょうか？ 「<ruby>後<rt>あと</rt></ruby>から<ruby>自由<rt>じゆう</rt></ruby>に<ruby>変<rt>か</rt></ruby>えられる」というJavaScriptの<ruby>柔軟<rt>じゅうなん</rt></ruby>な<ruby>性格<rt>せいかく</rt></ruby>が<ruby>伝<rt>つた</rt></ruby>わればバッチリです。</p>
 
                     </main>
 

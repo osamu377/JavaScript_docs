@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>正規表現 - 留学生のためのJavaScript学習ガイド</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-7aa69223.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">留学生のためのJavaScript学習ガイド</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="正規表現せいきひょうげん"><a class="header" href="#正規表現せいきひょうげん"><ruby>正規表現<rt>せいきひょうげん</rt></ruby></a></h1>
+<p>プログラミングを<ruby>勉強<rt>べんきょう</rt></ruby>していると<ruby>必<rt>かなら</rt></ruby>ず<ruby>出会<rt>であ</rt></ruby>う、<ruby>魔法<rt>まほう</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>のような<ruby>記号<rt>きごう</rt></ruby>の<ruby>羅列<rt>られつ</rt></ruby>。それが「<ruby>正規表現<rt>せいきひょうげん</rt></ruby>」です。<ruby>英語<rt>えいご</rt></ruby>で “Regular Expression” と<ruby>言<rt>い</rt></ruby>います。</p>
+<p>JavaScriptでは、<strong>RegExp（レグエクスプ）</strong> オブジェクトを<ruby>使<rt>つか</rt></ruby>います。</p>
+<p>RegExpは <strong>「<ruby>魔法<rt>まほう</rt></ruby>の<ruby>虫<rt>むし</rt></ruby>めがね」</strong> です。たくさんの<ruby>文字<rt>もじ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>から、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>探<rt>さが</rt></ruby>したい「パターン」だけをピカッと<ruby>光<rt>ひか</rt></ruby>らせて<ruby>見<rt>み</rt></ruby>つけることができます。</p>
+<hr>
+<h2 id="i-正規表現せいきひょうげんってなに"><a class="header" href="#i-正規表現せいきひょうげんってなに">I. 「<ruby>正規表現<rt>せいきひょうげん</rt></ruby>」ってなに？</a></h2>
+<p><ruby>普通<rt>ふつう</rt></ruby>の<ruby>検索<rt>けんさく</rt></ruby>（<code>indexOf</code> など）は、「<ruby>特定<rt>とくてい</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>」を<ruby>探<rt>さが</rt></ruby>します。<br>RegExpは、<strong>「<ruby>言葉<rt>ことば</rt></ruby>のパターン（ルール）」</strong> を<ruby>探<rt>さが</rt></ruby>します。</p>
+<ul>
+<li><strong><ruby>普通<rt>ふつう</rt></ruby>の<ruby>検索<rt>けんさく</rt></ruby>：</strong> 「『<ruby>田中<rt>たなか</rt></ruby>』さんを<ruby>探<rt>さが</rt></ruby>して」</li>
+<li><strong>RegExp：</strong> 「『<ruby>数字<rt>すうじ</rt></ruby>が3つ、ハイフン、<ruby>数字<rt>すうじ</rt></ruby>が4つ』の<ruby>形<rt>かたち</rt></ruby>（<ruby>電話番号<rt>でんわばんごう</rt></ruby>）を<ruby>探<rt>さが</rt></ruby>して」</li>
+</ul>
+<p>このように、あやふやなルールで<ruby>検索<rt>けんさく</rt></ruby>できるのがすごいところです。</p>
+<hr>
+<h2 id="ii-regexpオブジェクトの作つくり方かた"><a class="header" href="#ii-regexpオブジェクトの作つくり方かた">II. RegExpオブジェクトの<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby></a></h2>
+<p>2つの<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>がありますが、よく<ruby>使<rt>つか</rt></ruby>われるのは <strong><code>/ /</code>（スラッシュ）</strong> で<ruby>囲<rt>かこ</rt></ruby>む<ruby>方法<rt>ほうほう</rt></ruby>です。</p>
+<pre><code class="language-javascript">// 1. スラッシュで囲む（リテラル） ★おすすめ
+const pattern1 = /abc/;
+
+// 2. new を使う
+const pattern2 = new RegExp("abc");
+</code></pre>
+<hr>
+<h2 id="iii-よく使つかう魔法まほうの記号きごう１"><a class="header" href="#iii-よく使つかう魔法まほうの記号きごう１">III. よく<ruby>使<rt>つか</rt></ruby>う「<ruby>魔法<rt>まほう</rt></ruby>の<ruby>記号<rt>きごう</rt></ruby>」（１）</a></h2>
+<p><ruby>正規表現<rt>せいきひょうげん</rt></ruby>（RegExp）の <strong>メタ<ruby>文字<rt>もじ</rt></ruby></strong> は、<ruby>文字<rt>もじ</rt></ruby>の <strong>「<ruby>種類<rt>しゅるい</rt></ruby>」</strong> や <strong>「<ruby>数<rt>かず</rt></ruby>」</strong> を<ruby>指定<rt>してい</rt></ruby>する<ruby>特別<rt>とくべつ</rt></ruby>なルールです。<br><strong>「トランプのジョーカー」</strong> や <strong>「<ruby>算数<rt>さんすう</rt></ruby>のルール」</strong> に<ruby>例<rt>たと</rt></ruby>えて<ruby>説明<rt>せつめい</rt></ruby>すると、パズルのように<ruby>楽<rt>たの</rt></ruby>しく<ruby>理解<rt>りかい</rt></ruby>できます。</p>
+<p>よく<ruby>使<rt>つか</rt></ruby>われる7つの<ruby>記号<rt>きごう</rt></ruby>(メタ<ruby>文字<rt>もじ</rt></ruby>)
+を、やさしく<ruby>解説<rt>かいせつ</rt></ruby>します！</p>
+<hr>
+<h3 id="1--ドット"><a class="header" href="#1--ドット">1. <code>.</code> （ドット）</a></h3>
+<p><strong>→「なんでもいい一<ruby>文字<rt>もじ</rt></ruby>」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> トランプの「ジョーカー」や、クイズの「<ruby>穴埋<rt>あなう</rt></ruby>（あなう）め」です。</li>
+<li><strong>ルール：</strong> <ruby>数字<rt>すうじ</rt></ruby>でも、<ruby>漢字<rt>かんじ</rt></ruby>でも、アルファベットでも、**「とにかく1<ruby>文字<rt>もじ</rt></ruby>」**あればOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ.い/</code></p>
+<ul>
+<li>「あ<strong>い</strong>い」 … OK</li>
+<li>「あ<strong>あ</strong>い」 … OK</li>
+<li>「あ<strong>1</strong>い」 … OK</li>
+<li>「あい」 … NG（<ruby>文字<rt>もじ</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="2--アスタリスク"><a class="header" href="#2--アスタリスク">2. <code>*</code> （アスタリスク）</a></h3>
+<p><strong>→「0<ruby>回以上<rt>かいいじょう</rt></ruby>のくり<ruby>返<rt>かえ</rt></ruby>し」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> おかわり<ruby>自由<rt>じゆう</rt></ruby>。<strong>「なくてもいいし、<ruby>無限<rt>むげん</rt></ruby>（むげん）にあってもいい」</strong>。</li>
+<li><strong>ルール：</strong> <ruby>直前<rt>ちょくぜん</rt></ruby>（ちょくぜん）の<ruby>文字<rt>もじ</rt></ruby>が「0<ruby>個<rt>こ</rt></ruby>、1<ruby>個<rt>こ</rt></ruby>、2<ruby>個<rt>こ</rt></ruby>……」と、いくつ<ruby>続<rt>つづ</rt></ruby>いていてもOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ*い/</code></p>
+<ul>
+<li>「い」 … OK（「あ」が0<ruby>個<rt>こ</rt></ruby>でもいい）</li>
+<li>「あい」 … OK</li>
+<li>「あああい」 … OK</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="3--プラス"><a class="header" href="#3--プラス">3. <code>+</code> （プラス）</a></h3>
+<p><strong>→「1<ruby>回以上<rt>かいいじょう</rt></ruby>のくり<ruby>返<rt>かえ</rt></ruby>し」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <ruby>最低<rt>さいてい</rt></ruby>（さいてい）でも1つは<ruby>必要<rt>ひつよう</rt></ruby>。<strong>「1<ruby>個以上<rt>こいじょう</rt></ruby>なら、いくつでもいい」</strong>。</li>
+<li><strong>ルール：</strong> <ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>が「1<ruby>個<rt>こ</rt></ruby>、2<ruby>個<rt>こ</rt></ruby>、3<ruby>個<rt>こ</rt></ruby>……」と<ruby>続<rt>つづ</rt></ruby>いていればOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ+い/</code></p>
+<ul>
+<li>「い」 … <strong>NG</strong>（「あ」が<ruby>最低<rt>さいてい</rt></ruby>1つは<ruby>必要<rt>ひつよう</rt></ruby>！）</li>
+<li>「あい」 … OK</li>
+<li>「あああい」 … OK</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="4--クエスチョン"><a class="header" href="#4--クエスチョン">4. <code>?</code> （クエスチョン）</a></h3>
+<p><strong>→「0<ruby>回<rt>かい</rt></ruby>か 1<ruby>回<rt>かい</rt></ruby>だけ」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <strong>「あってもなくてもいい（<ruby>最大<rt>さいだい</rt></ruby>1つまで）」</strong>。</li>
+<li><strong>ルール：</strong> <ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>が「ない」か「1<ruby>個<rt>こ</rt></ruby>だけある」<ruby>状態<rt>じょうたい</rt></ruby>。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ?い/</code></p>
+<ul>
+<li>「い」 … OK</li>
+<li>「あい」 … OK</li>
+<li>「ああい」 … <strong>NG</strong>（2<ruby>個以上<rt>こいじょう</rt></ruby>はダメ）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="5-キャレット"><a class="header" href="#5-キャレット">5. <code>^</code>（キャレット）</a></h3>
+<p><strong>→「<ruby>行<rt>ぎょう</rt></ruby>がここから<ruby>始<rt>はじ</rt></ruby>まる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「スタートライン」です。</li>
+<li><strong>ルール：</strong> その<ruby>文字<rt>もじ</rt></ruby>で<ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/^おはよう/</code></p>
+<ul>
+<li>「おはようございます」 … OK</li>
+<li>「みんな、おはよう」 … <strong>NG</strong>（「みんな」から<ruby>始<rt>はじ</rt></ruby>まっているから）</li>
+</ul>
+</blockquote>
+<h3 id="6--ドル"><a class="header" href="#6--ドル">6. <code>$</code> （ドル）</a></h3>
+<p><strong>→「<ruby>行<rt>ぎょう</rt></ruby>の<ruby>最後<rt>さいご</rt></ruby>がこれでおわる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「ゴールテープ」です。</li>
+<li><strong>ルール：</strong> その<ruby>文字<rt>もじ</rt></ruby>で<ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/です$/</code></p>
+<ul>
+<li>「<ruby>田中<rt>たなか</rt></ruby>です」 … OK</li>
+<li>「<ruby>田中<rt>たなか</rt></ruby>ですよ」 … <strong>NG</strong>（「よ」で<ruby>終<rt>お</rt></ruby>わっているから）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="7--パイプ縦線たてせん"><a class="header" href="#7--パイプ縦線たてせん">7. <code>|</code> （パイプ・<ruby>縦線<rt>たてせん</rt></ruby>）</a></h3>
+<p><strong>→「または（OR）」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> レストランのメニュー。「A <strong>または</strong> B どちらか<ruby>選<rt>えら</rt></ruby>んで」というルール。</li>
+<li><strong>ルール：</strong> <ruby>左側<rt>ひだりがわ</rt></ruby>か<ruby>右側<rt>みぎがわ</rt></ruby>、どちらかの<ruby>文字<rt>もじ</rt></ruby>があればOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/りんご|みかん/</code></p>
+<ul>
+<li>「りんご」 … OK</li>
+<li>「みかん」 … OK</li>
+<li>「バナナ」 … NG</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="覚おぼえ方かたのまとめテーブル"><a class="header" href="#覚おぼえ方かたのまとめテーブル"><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>のまとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>記号<rt>きごう</rt></ruby></th><th><ruby>意味<rt>いみ</rt></ruby></th><th><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>のヒント</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>.</code></strong></td><td>なんでも1<ruby>文字<rt>もじ</rt></ruby></td><td><ruby>何<rt>なに</rt></ruby>が<ruby>入<rt>はい</rt></ruby>るかワクワクする「<ruby>穴<rt>あな</rt></ruby>」</td></tr>
+<tr><td><strong><code>*</code></strong></td><td>0<ruby>個以上<rt>こいじょう</rt></ruby></td><td>おかわり<ruby>自由<rt>じゆう</rt></ruby>（なくてもいい）</td></tr>
+<tr><td><strong><code>+</code></strong></td><td>1<ruby>個以上<rt>こいじょう</rt></ruby></td><td><strong><ruby>必<rt>かなら</rt></ruby>ず1つは<ruby>持<rt>も</rt></ruby>ってきて！</strong></td></tr>
+<tr><td><strong><code>?</code></strong></td><td>0か1<ruby>個<rt>こ</rt></ruby></td><td>オプション（あってもなくてもいい）</td></tr>
+<tr><td><strong><code>^</code></strong></td><td><ruby>始<rt>はじ</rt></ruby>まり</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>最初<rt>さいしょ</rt></ruby>にあるスタートライン</td></tr>
+<tr><td><strong><code>$</code></strong></td><td><ruby>終<rt>お</rt></ruby>わり</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>最後<rt>さいご</rt></ruby>にあるゴールテープ</td></tr>
+<tr><td><strong><code>|</code></strong></td><td>または</td><td>AかB、どちらか<ruby>好<rt>す</rt></ruby>きな<ruby>方<rt>ほう</rt></ruby>！</td></tr>
+</tbody>
+</table>
+</div>
+<p>いかがでしょうか？ <ruby>記号<rt>きごう</rt></ruby>の「パワー」を<ruby>知<rt>し</rt></ruby>ると、<ruby>短<rt>みじか</rt></ruby>いコードで<ruby>複雑<rt>ふくざつ</rt></ruby>なチェックができるようになります。</p>
+<hr>
+<h3 id="4--クエスチョン-1"><a class="header" href="#4--クエスチョン-1">4. <code>?</code> （クエスチョン）</a></h3>
+<p><strong>→「0<ruby>回<rt>かい</rt></ruby>か 1<ruby>回<rt>かい</rt></ruby>だけ」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <strong>「あってもなくてもいい（<ruby>最大<rt>さいだい</rt></ruby>1つまで）」</strong>。</li>
+<li><strong>ルール：</strong> <ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>が「ない」か「1<ruby>個<rt>こ</rt></ruby>だけある」<ruby>状態<rt>じょうたい</rt></ruby>。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/あ?い/</code></p>
+<ul>
+<li>「い」 … OK</li>
+<li>「あい」 … OK</li>
+<li>「ああい」 … <strong>NG</strong>（2<ruby>個以上<rt>こいじょう</rt></ruby>はダメ）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="5-キャレット-1"><a class="header" href="#5-キャレット-1">5. <code>^</code>（キャレット）</a></h3>
+<p><strong>→「<ruby>行<rt>ぎょう</rt></ruby>がここから<ruby>始<rt>はじ</rt></ruby>まる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「スタートライン」です。</li>
+<li><strong>ルール：</strong> その<ruby>文字<rt>もじ</rt></ruby>で<ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/^おはよう/</code></p>
+<ul>
+<li>「おはようございます」 … OK</li>
+<li>「みんな、おはよう」 … <strong>NG</strong>（「みんな」から<ruby>始<rt>はじ</rt></ruby>まっているから）</li>
+</ul>
+</blockquote>
+<h3 id="6--ドル-1"><a class="header" href="#6--ドル-1">6. <code>$</code> （ドル）</a></h3>
+<p><strong>→「<ruby>行<rt>ぎょう</rt></ruby>の<ruby>最後<rt>さいご</rt></ruby>がこれでおわる」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> マラソンの「ゴールテープ」です。</li>
+<li><strong>ルール：</strong> その<ruby>文字<rt>もじ</rt></ruby>で<ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わっていることをチェックします。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/です$/</code></p>
+<ul>
+<li>「<ruby>田中<rt>たなか</rt></ruby>です」 … OK</li>
+<li>「<ruby>田中<rt>たなか</rt></ruby>ですよ」 … <strong>NG</strong>（「よ」で<ruby>終<rt>お</rt></ruby>わっているから）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="7--パイプ縦線たてせん-1"><a class="header" href="#7--パイプ縦線たてせん-1">7. <code>|</code> （パイプ・<ruby>縦線<rt>たてせん</rt></ruby>）</a></h3>
+<p><strong>→「または（OR）」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> レストランのメニュー。「A <strong>または</strong> B どちらか<ruby>選<rt>えら</rt></ruby>んで」というルール。</li>
+<li><strong>ルール：</strong> <ruby>左側<rt>ひだりがわ</rt></ruby>か<ruby>右側<rt>みぎがわ</rt></ruby>、どちらかの<ruby>文字<rt>もじ</rt></ruby>があればOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/りんご|みかん/</code></p>
+<ul>
+<li>「りんご」 … OK</li>
+<li>「みかん」 … OK</li>
+<li>「バナナ」 … NG</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="覚おぼえ方かたのまとめテーブル-1"><a class="header" href="#覚おぼえ方かたのまとめテーブル-1"><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>のまとめテーブル</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>記号<rt>きごう</rt></ruby></th><th><ruby>意味<rt>いみ</rt></ruby></th><th><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>のヒント</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>.</code></strong></td><td>なんでも1<ruby>文字<rt>もじ</rt></ruby></td><td><ruby>何<rt>なに</rt></ruby>が<ruby>入<rt>はい</rt></ruby>るかワクワクする「<ruby>穴<rt>あな</rt></ruby>」</td></tr>
+<tr><td><strong><code>*</code></strong></td><td>0<ruby>個以上<rt>こいじょう</rt></ruby></td><td>おかわり<ruby>自由<rt>じゆう</rt></ruby>（なくてもいい）</td></tr>
+<tr><td><strong><code>+</code></strong></td><td>1<ruby>個以上<rt>こいじょう</rt></ruby></td><td><strong><ruby>必<rt>かなら</rt></ruby>ず1つは<ruby>持<rt>も</rt></ruby>ってきて！</strong></td></tr>
+<tr><td><strong><code>?</code></strong></td><td>0か1<ruby>個<rt>こ</rt></ruby></td><td>オプション（あってもなくてもいい）</td></tr>
+<tr><td><strong><code>^</code></strong></td><td><ruby>始<rt>はじ</rt></ruby>まり</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>最初<rt>さいしょ</rt></ruby>にあるスタートライン</td></tr>
+<tr><td><strong><code>$</code></strong></td><td><ruby>終<rt>お</rt></ruby>わり</td><td><ruby>文<rt>ぶん</rt></ruby>の<ruby>最後<rt>さいご</rt></ruby>にあるゴールテープ</td></tr>
+<tr><td><strong><code>|</code></strong></td><td>または</td><td>AかB、どちらか<ruby>好<rt>す</rt></ruby>きな<ruby>方<rt>ほう</rt></ruby>！</td></tr>
+</tbody>
+</table>
+</div>
+<p>いかがでしょうか？ <ruby>記号<rt>きごう</rt></ruby>の「パワー」を<ruby>知<rt>し</rt></ruby>ると、<ruby>短<rt>みじか</rt></ruby>いコードで<ruby>複雑<rt>ふくざつ</rt></ruby>なチェックができるようになります。</p>
+<hr>
+<h2 id="iv-よく使つかう魔法まほうの記号きごう２"><a class="header" href="#iv-よく使つかう魔法まほうの記号きごう２">IV. よく<ruby>使<rt>つか</rt></ruby>う「<ruby>魔法<rt>まほう</rt></ruby>の<ruby>記号<rt>きごう</rt></ruby>」（２）</a></h2>
+<p><ruby>正規表現<rt>せいきひょうげん</rt></ruby>（RegExp）のメタ<ruby>文字<rt>もじ</rt></ruby>、さらに<ruby>便利<rt>べんり</rt></ruby>なものを<ruby>紹介<rt>しょうかい</rt></ruby>します！   <ruby>今回<rt>こんかい</rt></ruby>は、<ruby>文字<rt>もじ</rt></ruby>を <strong>「グループ<ruby>化<rt>か</rt></ruby>」</strong> したり、<strong>「<ruby>回数<rt>かいすう</rt></ruby>を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>指定<rt>してい</rt></ruby>」</strong> したりする、<ruby>少<rt>すこ</rt></ruby>し<ruby>高度<rt>こうど</rt></ruby>なルールです。</p>
+<p><strong>「チーム<ruby>作<rt>づく</rt></ruby>り」</strong> や <strong>「<ruby>回数<rt>かいすう</rt></ruby>の<ruby>予約<rt>よやく</rt></ruby>」</strong> に<ruby>例<rt>たと</rt></ruby>えて<ruby>説明<rt>せつめい</rt></ruby>ます。</p>
+<h3 id="1--かっこ"><a class="header" href="#1--かっこ">1. <code>()</code> （かっこ）</a></h3>
+<p><strong>→「チーム（グループ）を<ruby>作<rt>つく</rt></ruby>る」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <ruby>複数<rt>ふくすう</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>をひとつにまとめて「1つのチーム」として<ruby>扱<rt>あつか</rt></ruby>います。</li>
+<li><strong>ルール：</strong> チームに<ruby>対<rt>たい</rt></ruby>して、さっき<ruby>勉強<rt>べんきょう</rt></ruby>した <code>*</code> や <code>+</code> を<ruby>使<rt>つか</rt></ruby>うことができます。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/(abc)+/</code></p>
+<ul>
+<li>「abc」 … OK</li>
+<li>「abcabcabc」 … OK（「abc」というチームが<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>されている）</li>
+<li>「abcc」 … NG（チーム<ruby>全員<rt>ぜんいん</rt></ruby>で<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>さないとダメ）</li>
+</ul>
+</blockquote>
+<h3 id="2--角かくかっこ"><a class="header" href="#2--角かくかっこ">2. <code>[]</code> （<ruby>角<rt>かく</rt></ruby>かっこ）</a></h3>
+<p><strong>→「この<ruby>中<rt>なか</rt></ruby>のどれか1<ruby>文字<rt>もじ</rt></ruby>」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> 「この<ruby>中<rt>なか</rt></ruby>（リスト）にある<ruby>文字<rt>もじ</rt></ruby>なら、<ruby>誰<rt>だれ</rt></ruby>でもいいよ」という <strong>メンバー<ruby>名簿<rt>めいぼ</rt></ruby></strong> です。</li>
+<li><strong>ルール：</strong> カッコの<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っている<ruby>文字<rt>もじ</rt></ruby>のどれか1つに<ruby>合<rt>あ</rt></ruby>えばOK。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/[ABC]くん/</code></p>
+<ul>
+<li>「Aくん」 … OK</li>
+<li>「Bくん」 … OK</li>
+<li>「Cくん」 … OK</li>
+<li>「Dくん」 … NG（<ruby>名簿<rt>めいぼ</rt></ruby>に<ruby>名前<rt>なまえ</rt></ruby>がない）</li>
+</ul>
+</blockquote>
+<p>このように<code>[]</code>で<ruby>囲<rt>かこ</rt></ruby>まれて『この<ruby>中<rt>なか</rt></ruby>のどれか1つに<ruby>合<rt>あ</rt></ruby>えばOK』という<ruby>文字<rt>もじ</rt></ruby>のグループを <strong><ruby>文字<rt>もじ</rt></ruby>クラス</strong> といいます。</p>
+<p><strong><ruby>文字<rt>もじ</rt></ruby>クラス</strong> にはいくつかのバリエーションがあります。</p>
+<ul>
+<li><strong><ruby>文字<rt>もじ</rt></ruby>クラスの<ruby>先頭<rt>せんとう</rt></ruby>に<code>^</code>をつけると、<ruby>文字<rt>もじ</rt></ruby>クラスの<ruby>否定<rt>ひてい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>します</strong> 。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/[^ABC]くん/</code></p>
+<ul>
+<li>「Aくん」 … NG</li>
+<li>「Bくん」 … NG</li>
+<li>「Cくん」 … NG</li>
+<li>「Dくん」 … OK（<ruby>名簿<rt>めいぼ</rt></ruby>に<ruby>名前<rt>なまえ</rt></ruby>がないものがOK）</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong><ruby>数字<rt>すうじ</rt></ruby>やアルファベットが<ruby>連続<rt>れんぞく</rt></ruby>しているとき、<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>と<ruby>最後<rt>さいご</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>を<code>-</code>でつなげて、<ruby>短<rt>みじか</rt></ruby>く<ruby>書<rt>か</rt></ruby>くことができます</strong>。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/[A-C]くん/</code></p>
+<ul>
+<li>「Aくん」 … OK</li>
+<li>「Bくん」 … OK</li>
+<li>「Cくん」 … OK</li>
+<li>「Dくん」 … NG（AからCのあいだにない<ruby>文字<rt>もじ</rt></ruby>）</li>
+</ul>
+</blockquote>
+<h3 id="3-n-n-n-m-波なみかっこ"><a class="header" href="#3-n-n-n-m-波なみかっこ">3. <code>{n}</code> <code>{n,}</code> <code>{n, m}</code> （<ruby>波<rt>なみ</rt></ruby>かっこ）</a></h3>
+<p><strong>→「<ruby>回数<rt>かいすう</rt></ruby>を<ruby>数字<rt>すうじ</rt></ruby>で<ruby>指定<rt>してい</rt></ruby>する」</strong></p>
+<p>これらは <code>+</code> や <code>*</code> よりも、もっと<ruby>細<rt>こま</rt></ruby>かく <strong>「<ruby>何回<rt>なんかい</rt></ruby>か」</strong> を<ruby>予約<rt>よやく</rt></ruby>する<ruby>記号<rt>きごう</rt></ruby>です。</p>
+<h4 id="n-ぴったり-n回かい"><a class="header" href="#n-ぴったり-n回かい"><code>{n}</code> ：ぴったり n<ruby>回<rt>かい</rt></ruby></a></h4>
+<ul>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3}/</code> （<ruby>数字<rt>すうじ</rt></ruby>が<strong>ぴったり3つ</strong>）</li>
+<li>「123」はOK、「12」はNG。</li>
+</ul>
+<h4 id="n-n回以上かいいじょういくらでも"><a class="header" href="#n-n回以上かいいじょういくらでも"><code>{n,}</code> ：n<ruby>回以上<rt>かいいじょう</rt></ruby>（いくらでも）</a></h4>
+<ul>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3,}/</code> （<ruby>数字<rt>すうじ</rt></ruby>が<strong>3つ<ruby>以上<rt>いじょう</rt></ruby></strong>）</li>
+<li>「123」も「12345」もOK。</li>
+</ul>
+<h4 id="n-m-n回かいから-m回かいのあいだ"><a class="header" href="#n-m-n回かいから-m回かいのあいだ"><code>{n, m}</code> ：n<ruby>回<rt>かい</rt></ruby>から m<ruby>回<rt>かい</rt></ruby>のあいだ</a></h4>
+<ul>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>/\d{3,5}/</code> （<ruby>数字<rt>すうじ</rt></ruby>が<strong>3つ、4つ、または5つ</strong>）</li>
+<li>「1234」はOK、「123456」はNG。</li>
+</ul>
+<h3 id="4--バックスラッシュ--円えんマーク"><a class="header" href="#4--バックスラッシュ--円えんマーク">4. <code>\</code> （バックスラッシュ / <ruby>円<rt>えん</rt></ruby>マーク）</a></h3>
+<p><strong>→「<ruby>魔法<rt>まほう</rt></ruby>を<ruby>消<rt>け</rt></ruby>して、<ruby>普通<rt>ふつう</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>す」</strong></p>
+<ul>
+<li><strong>イメージ：</strong> <strong>「エスケープ（<ruby>逃<rt>に</rt></ruby>がす）」</strong> といいます。<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>力<rt>ちから</rt></ruby>を<ruby>持<rt>も</rt></ruby>っているメタ<ruby>文字<rt>もじ</rt></ruby>から、<ruby>魔法<rt>まほう</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げます。</li>
+<li><strong>ルール：</strong> メタ<ruby>文字<rt>もじ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>書<rt>か</rt></ruby>くと、ただの「<ruby>記号<rt>きごう</rt></ruby>」として<ruby>探<rt>さが</rt></ruby>せるようになります。</li>
+</ul>
+<blockquote>
+<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> <ruby>普通<rt>ふつう</rt></ruby>のドット（.）を<ruby>探<rt>さが</rt></ruby>したいとき</p>
+<ul>
+<li><code>.</code> だけだと「なんでも1<ruby>文字<rt>もじ</rt></ruby>」という<ruby>魔法<rt>まほう</rt></ruby>が<ruby>発動<rt>はつどう</rt></ruby>します。</li>
+<li><code>/\./</code> と<ruby>書<rt>か</rt></ruby>くと、<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にある**「<ruby>点<rt>てん</rt></ruby>（ドット）」**そのものを<ruby>探<rt>さが</rt></ruby>せます。</li>
+</ul>
+</blockquote>
+<h3 id="まとめテーブル留学生向りゅうがくせいむけ"><a class="header" href="#まとめテーブル留学生向りゅうがくせいむけ">まとめテーブル（<ruby>留学生向<rt>りゅうがくせいむ</rt></ruby>け）</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th><ruby>記号<rt>きごう</rt></ruby></th><th><ruby>意味<rt>いみ</rt></ruby></th><th><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>のヒント</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><code>( )</code></strong></td><td>グループ<ruby>化<rt>か</rt></ruby></td><td>「みんなで1つのチームだよ！」</td></tr>
+<tr><td><strong><code>[ ]</code></strong></td><td>どれか1つ</td><td>「このリストの<ruby>中<rt>なか</rt></ruby>の<ruby>誰<rt>だれ</rt></ruby>か1<ruby>人<rt>り</rt></ruby>！」</td></tr>
+<tr><td><strong><code>{n}</code></strong></td><td>ぴったり n<ruby>回<rt>かい</rt></ruby></td><td>「<ruby>回数<rt>かいすう</rt></ruby>を<ruby>予約<rt>よやく</rt></ruby>（よやく）する」</td></tr>
+<tr><td><strong><code>{n, m}</code></strong></td><td>n<ruby>回<rt>かい</rt></ruby>〜m<ruby>回<rt>かい</rt></ruby></td><td>「<ruby>最小<rt>さいしょう</rt></ruby>と<ruby>最大<rt>さいだい</rt></ruby>を<ruby>決<rt>き</rt></ruby>める」</td></tr>
+<tr><td><strong><code>\</code></strong></td><td>エスケープ</td><td><strong>「<ruby>魔法<rt>まほう</rt></ruby>をキャンセル！」</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p>いかがでしょうか？これで<ruby>正規表現<rt>せいきひょうげん</rt></ruby>の<ruby>主要<rt>しゅよう</rt></ruby>なパーツが<ruby>揃<rt>そろ</rt></ruby>いました。</p>
+<hr>
+<h3 id="留学生りゅうがくせいへのアドバイス"><a class="header" href="#留学生りゅうがくせいへのアドバイス"><ruby>留学生<rt>りゅうがくせい</rt></ruby>へのアドバイス</a></h3>
+<p>RegExpは、<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しくて「<ruby>暗号<rt>あんごう</rt></ruby>」に<ruby>見<rt>み</rt></ruby>えます。でも、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>覚<rt>おぼ</rt></ruby>える<ruby>必要<rt>ひつよう</rt></ruby>はありません！</p>
+<blockquote>
+<p>「RegExpは <strong>『<ruby>文字<rt>もじ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>をチェックするルールブック』</strong> だよ。<br><ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>、メールアドレス、パスワードの<ruby>強<rt>つよ</rt></ruby>さ（<ruby>英数字<rt>えいすうじ</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っているか）を<ruby>調<rt>しら</rt></ruby>べるときに、<ruby>世界中<rt>せかいじゅう</rt></ruby>のプログラマーが<ruby>使<rt>つか</rt></ruby>っているんだ。<br><ruby>難<rt>むずか</rt></ruby>しいパターンは、インターネットで『RegExp <ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>』のように<ruby>検索<rt>けんさく</rt></ruby>してコピーすれば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だよ！」</p>
+</blockquote>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p><strong>スラッシュ <code>/ /</code> の<ruby>後<rt>あと</rt></ruby>ろにつけるオプション（フラグ）</strong></p>
+<ul>
+<li><code>/abc/i</code> ：<ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>を<ruby>区別<rt>くべつ</rt></ruby>しない（<strong>i</strong>gnore）。</li>
+<li><code>/abc/g</code> ：<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>探<rt>さが</rt></ruby>す（<strong>g</strong>lobal）。</li>
+</ul>
+<p>この2つを<ruby>知<rt>し</rt></ruby>ると、さらに<ruby>便利<rt>べんり</rt></ruby>に<ruby>使<rt>つか</rt></ruby>ってもらえます。</p>
+</blockquote>
+<p>いかがでしょうか？「<ruby>完璧<rt>かんぺき</rt></ruby>なパターンを<ruby>自分<rt>じぶん</rt></ruby>で<ruby>書<rt>か</rt></ruby>く」ことよりも、「ルールで<ruby>検索<rt>けんさく</rt></ruby>できる<ruby>便利<rt>べんり</rt></ruby>な<ruby>道具<rt>どうぐ</rt></ruby>がある」ことを<ruby>知<rt>し</rt></ruby>ることが<ruby>第一歩<rt>だいいっぽ</rt></ruby>です！</p>
+<hr>
+<h2 id="v-実際じっさいに使つかってみよう"><a class="header" href="#v-実際じっさいに使つかってみよう">V. <ruby>実際<rt>じっさい</rt></ruby>に<ruby>使<rt>つか</rt></ruby>ってみよう</a></h2>
+<p>よくある「メールアドレスの<ruby>入力<rt>にゅうりょく</rt></ruby>チェック」のようなイメージです。</p>
+<pre><code class="language-javascript">const myPattern = /apple/; // 「apple」という文字があるか？
+const text = "I have an apple.";
+
+// testメソッド：パターンに合っているかチェック（true / false）
+if (myPattern.test(text)) {
+  console.log("見つかりました！");
+}
+</code></pre>
+<h3 id="1-stringオブジェクトのmatchメソッドと連携れんけい"><a class="header" href="#1-stringオブジェクトのmatchメソッドと連携れんけい">1. Stringオブジェクトのmatch()メソッドと<ruby>連携<rt>れんけい</rt></ruby></a></h3>
+<p><ruby>上<rt>うえ</rt></ruby>の<ruby>例<rt>れい</rt></ruby>では、RegExpオブジェクトのtest()メソッドを<ruby>使<rt>つか</rt></ruby>って、そのパターンが<ruby>含<rt>ふく</rt></ruby>まれているかどうかをチェックしました。</p>
+<p>しかし、JavaScriptで<ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>から<ruby>特定<rt>とくてい</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>し<ruby>出<rt>だ</rt></ruby>すときに、<ruby>一番<rt>いちばん</rt></ruby>よく<ruby>使<rt>つか</rt></ruby>われるのは、<strong>「RegExpオブジェクト（パターン）」と「Stringメソッドの <code>match()</code>」の<ruby>連携<rt>れんけい</rt></ruby></strong> という、<ruby>強力<rt>きょうりょく</rt></ruby>な<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせです。</p>
+<p>RegExpの test() や exec() はパターンが<ruby>主語<rt>しゅご</rt></ruby>でしたが、match() は<ruby>文字列<rt>もじれつ</rt></ruby>が<ruby>主語<rt>しゅご</rt></ruby>になります。</p>
+<ul>
+<li><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>： <code>文字列もじれつ.match(パターン)</code></li>
+</ul>
+<p><ruby>例<rt>たと</rt></ruby>え： 「この<ruby>文章<rt>ぶんしょう</rt></ruby>のなかで（<ruby>文字列<rt>もじれつ</rt></ruby>）、このルールに<ruby>合<rt>あ</rt></ruby>うものを（パターン）、<ruby>集<rt>あつ</rt></ruby>めてちょうだい！（match）」</p>
+<p><strong><ruby>例<rt>れい</rt></ruby></strong></p>
+<pre><code class="language-javascript">const myRegExp = new RegExp("app.*"); // 「app.*」というパターンがあるか？
+const text = "I have an apple.";
+
+mat = text.match(myRegExp);
+if (mat !== null)
+  console.log("見つかりました！");
+  console.log(mat); // ['apple.', index: 10, input: 'I have an apple.', groups: undefined]
+</code></pre>
+<p>match()メソッドの<ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>は<ruby>配列<rt>はいれつ</rt></ruby>で、<ruby>上<rt>うえ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby></p>
+<ul>
+<li>マッチした<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>文字列<rt>もじれつ</rt></ruby> (<code>apple</code>)</li>
+<li>マッチした<ruby>文字<rt>もじ</rt></ruby>の<ruby>位置<rt>いち</rt></ruby> (<code>10</code>)</li>
+<li><ruby>調<rt>しら</rt></ruby>べた<ruby>対象<rt>たいしょう</rt></ruby>の<ruby>文字列<rt>もじれつ</rt></ruby> (<code>'I have an apple.'</code>)</li>
+</ul>
+<p>です（groupsについての<ruby>解説<rt>かいせつ</rt></ruby>は<ruby>省略<rt>しょうりゃく</rt></ruby>）。</p>
+<h3 id="2-正規表現せいきひょうげんの-g-フラグによる動うごきの変化へんか"><a class="header" href="#2-正規表現せいきひょうげんの-g-フラグによる動うごきの変化へんか">2. <ruby>正規表現<rt>せいきひょうげん</rt></ruby>の <code>g</code> フラグによる<ruby>動<rt>うご</rt></ruby>きの<ruby>変化<rt>へんか</rt></ruby></a></h3>
+<p><code>match()</code> の<ruby>本当<rt>ほんとう</rt></ruby>の<ruby>面白<rt>おもしろ</rt></ruby>さは、<ruby>正規表現<rt>せいきひょうげん</rt></ruby>の<ruby>後<rt>うし</rt></ruby>ろにつける**<code>g</code>（グローバルフラグ：<ruby>全部探<rt>ぜんぶさが</rt></ruby>すという<ruby>意味<rt>いみ</rt></ruby>）** があるかないかで、<ruby>返<rt>かえ</rt></ruby>ってくる<ruby>結果<rt>けっか</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>（データ<ruby>型<rt>がた</rt></ruby>）がガラリと<ruby>変<rt>か</rt></ruby>わることです。</p>
+<h4 id="g-フラグをとき-合あうものを全部集ぜんぶあつめてリストに"><a class="header" href="#g-フラグをとき-合あうものを全部集ぜんぶあつめてリストに"><code>g</code> フラグをとき： <ruby>合<rt>あ</rt></ruby>うものを<ruby>全部集<rt>ぜんぶあつ</rt></ruby>めてリストに</a></h4>
+<p><ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>上<rt>うえ</rt></ruby>から<ruby>下<rt>した</rt></ruby>まで<ruby>全部調<rt>ぜんぶしら</rt></ruby>べて、パターンに<ruby>合<rt>あ</rt></ruby>う<ruby>言葉<rt>ことば</rt></ruby>を「ただのきれいな<ruby>配列<rt>はいれつ</rt></ruby>（リスト）」にして<ruby>全部返<rt>ぜんぶかえ</rt></ruby>してくれます。<ruby>詳<rt>くわ</rt></ruby>しい<ruby>情報<rt>じょうほう</rt></ruby>は<ruby>入<rt>はい</rt></ruby>りません。</p>
+<pre><code class="language-javascript">const text = "私の学校には、Aクラス、Bクラス、Cクラスがあります。";
+
+const myRegExpG = new RegExp("クラス", "g"); // うしろに g をつけました！
+
+const resultG = text.match(myRegExpG);
+console.log(resultG); // ["クラス", "クラス", "クラス"] （3つぜんぶつかまえた！）
+console.log(resultG.length); // 3 （いくつ見つかったかもすぐわかります）
+</code></pre>
+<blockquote class="blockquote-tag blockquote-tag-note">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>もし<ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にパターンに<ruby>合<rt>あ</rt></ruby>う<ruby>言葉<rt>ことば</rt></ruby>が1つもなかった<ruby>場合<rt>ばあい</rt></ruby>、<code>match()</code> はどちらの<ruby>場合<rt>ばあい</rt></ruby>でも**<code>null</code>（<ruby>空<rt>から</rt></ruby>っぽ）** を<ruby>返<rt>かえ</rt></ruby>します。</p>
+</blockquote>
+<h3 id="3-i-フラグの-i-は何なにの略りゃく"><a class="header" href="#3-i-フラグの-i-は何なにの略りゃく">3. <code>i</code> フラグの <code>i</code> は<ruby>何<rt>なに</rt></ruby>の<ruby>略<rt>りゃく</rt></ruby>？</a></h3>
+<p>この <code>i</code> は、<ruby>英語<rt>えいご</rt></ruby>の <strong>IgnoreCase（イグノア・ケース：<ruby>大文字小文字<rt>おおもじこもじ</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する）</strong> という<ruby>言葉<rt>ことば</rt></ruby>の<ruby>頭文字<rt>かしらもじ</rt></ruby>です。</p>
+<p><ruby>通常<rt>つうじょう</rt></ruby>、JavaScriptの<ruby>正規表現<rt>せいきひょうげん</rt></ruby>は<ruby>大文字<rt>おおもじ</rt></ruby>と<ruby>小文字<rt>こもじ</rt></ruby>を「<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>別<rt>べつ</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>」として<ruby>区別<rt>くべつ</rt></ruby>します。しかし、<code>i</code> フラグをつけると、それらを <strong><ruby>同<rt>おな</rt></ruby>じ<ruby>文字<rt>もじ</rt></ruby></strong> として<ruby>扱<rt>あつか</rt></ruby>ってくれるようになります。</p>
+<h4 id="コードで見みる違ちがいフラグがある時ときない時とき"><a class="header" href="#コードで見みる違ちがいフラグがある時ときない時とき">コードで<ruby>見<rt>み</rt></ruby>る<ruby>違<rt>ちが</rt></ruby>い（フラグがある<ruby>時<rt>とき</rt></ruby>・ない<ruby>時<rt>とき</rt></ruby>）</a></h4>
+<p><ruby>自分<rt>じぶん</rt></ruby>のパソコンのブランド（Apple）について<ruby>書<rt>か</rt></ruby>いた<ruby>文章<rt>ぶんしょう</rt></ruby>から<ruby>文字<rt>もじ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>してみましょう。</p>
+<pre><code class="language-javascript">const text = "My computer is an apple MacBook."; // 小文字の apple
+
+// 1. i フラグを【つけない】とき（きびしく さがす）
+const regExp1 = new RegExp("Apple"); // 大文字の A
+console.log(text.match(regExp1) !== null); // false （大文字と小文字がちがうので、見つからない！）
+
+// 2. i フラグを【つける】とき（やさしく さがす）
+const regExp2 = new RegExp("Apple", "i"); // うしろに i をつけました！
+console.log(text.match(regExp2) !== null); // true  （大文字小文字をむしするので、見つかった！）
+</code></pre>
+<p>このように、パターンのスラッシュの<ruby>後<rt>あと</rt></ruby>ろに <code>/パターン/i</code> と<ruby>書<rt>か</rt></ruby>くだけで、<code>Apple</code> も <code>apple</code> も <code>APPLE</code> も、ぜんぶ<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>見<rt>み</rt></ruby>つけてくれるようになります。</p>
+<h4 id="前まえに習ならった-g-フラグと一緒いっしょに使つかえる"><a class="header" href="#前まえに習ならった-g-フラグと一緒いっしょに使つかえる"><ruby>前<rt>まえ</rt></ruby>に<ruby>習<rt>なら</rt></ruby>った <code>g</code> フラグと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>える？</a></h4>
+<p>はい、<strong><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>えます！</strong> <ruby>順番<rt>じゅんばん</rt></ruby>は <code>ig</code> でも <code>gi</code> でもどちらでも<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。<br>これらを<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせると、<strong>「<ruby>大文字小文字<rt>おおもじこもじ</rt></ruby>を<ruby>気<rt>き</rt></ruby>にせず（ <code>i</code> ）、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>からすべて<ruby>集<rt>あつ</rt></ruby>める（ <code>g</code> ）」</strong> という<ruby>強力<rt>きょうりょく</rt></ruby>な<ruby>捜査<rt>そうさ</rt></ruby>ができます。</p>
+<pre><code class="language-javascript">const text = "JavaScript is great. I love javascript!";
+
+// 大文字小文字を気にせず（i）、ぜんぶ集める（g）
+const myRegExp = new RegExp("javascript", "ig"); 
+
+const result = text.match(myRegExp);
+console.log(result); // ["JavaScript", "javascript"] （両方ともしっかり捕まえた！）
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="05_03_日付.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="06_00_JavaScriptとオブジェクト指向.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="05_03_日付.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="06_00_JavaScriptとオブジェクト指向.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="src/assets/fzf-17e59c4c.umd.js"></script>
+        <script src="src/assets/elasticlunr-04fe11a0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -175,906 +175,270 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="windowオブジェクト"><a class="header" href="#windowオブジェクト">Windowオブジェクト</a></h1>
-<p>さて、オブジェクトがどんなものか、を理解したら、次はブラウザのオブジェクトをもっとくわしく見てみましょう。こうしたオブジェクトはあらかじめ、JavaScriptに<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>まれているので、そのプロパティもメソッドも、いきなり呼び出して使うことができます。</p>
-<p>ブラウザで動くJavaScriptを学習するとき、一番大きな存在が <strong>Windowオブジェクト</strong> です。</p>
-<p>留学生の方には、Windowオブジェクトは <strong>「ブラウザの<ruby>画面<rt>がめん</rt></ruby>全体を管理している『社長さん』」</strong> だと教えてあげてください。JavaScriptでできることのほとんどは、この社長さんにお願いして動かしています。</p>
+<p>さて、オブジェクトがどんなものか、を<ruby>理解<rt>りかい</rt></ruby>したら、<ruby>次<rt>つぎ</rt></ruby>はブラウザのオブジェクトをもっとくわしく<ruby>見<rt>み</rt></ruby>てみましょう。こうしたオブジェクトはあらかじめ、JavaScriptに<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>まれているので、そのプロパティもメソッドも、いきなり<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>して<ruby>使<rt>つか</rt></ruby>うことができます。
+ブラウザで<ruby>動<rt>うご</rt></ruby>くJavaScriptを<ruby>学習<rt>がくしゅう</rt></ruby>するとき、<ruby>一番大<rt>いちばんおお</rt></ruby>きな<ruby>存在<rt>そんざい</rt></ruby>が <strong>Windowオブジェクト</strong> です。
+<ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby>には、Windowオブジェクトは <strong>「ブラウザの<ruby>画面全体<rt>がめんぜんたい</rt></ruby>を<ruby>管理<rt>かんり</rt></ruby>している『<ruby>社長<rt>しゃちょう</rt></ruby>さん』」</strong> だと<ruby>教<rt>おし</rt></ruby>えてあげてください。JavaScriptでできることのほとんどは、この<ruby>社長<rt>しゃちょう</rt></ruby>さんにお<ruby>願<rt>ねが</rt></ruby>いして<ruby>動<rt>うご</rt></ruby>かしています。</p>
 <hr>
-<h2 id="i-windowオブジェクト"><a class="header" href="#i-windowオブジェクト">I. Windowオブジェクト</a></h2>
-<h3 id="1-windowオブジェクトとは"><a class="header" href="#1-windowオブジェクトとは">1. Windowオブジェクトとは？</a></h3>
-<p>ブラウザの「タブ」ひとつひとつが、ひとつの <code>window</code> です。
-JavaScriptを実行するとき、<strong>最初からそこにいる「グローバルオブジェクト」</strong>（一番偉いオブジェクト）です。</p>
-<p>実は、私たちが普段使っている <code>console.log()</code> や <code>alert()</code> も、<ruby>本当<rt>ほんとう</rt></ruby>は <code>window.console.log()</code> や <code>window.alert()</code> という名前です。でも、社長さんは有名すぎるので、<strong><code>window.</code> を省略（しょうりゃく）して書くことができます。</strong></p>
+<h2 id="1-windowオブジェクトとは"><a class="header" href="#1-windowオブジェクトとは">1. Windowオブジェクトとは？</a></h2>
+<p>ブラウザの「タブ」ひとつひとつが、ひとつの <code>window</code> です。<br>JavaScriptを<ruby>実行<rt>じっこう</rt></ruby>するとき、<strong><ruby>最初<rt>さいしょ</rt></ruby>からそこにいる「グローバルオブジェクト」</strong>（<ruby>一番<rt>いちばん</rt></ruby>えらいオブジェクト）です。
+<ruby>実<rt>じつ</rt></ruby>は、<ruby>私<rt>わたし</rt></ruby>たちが<ruby>普段使<rt>ふだんつか</rt></ruby>っている <code>console.log()</code> や <code>alert()</code> も、<ruby>本当<rt>ほんとう</rt></ruby>は <code>window.console.log()</code> や <code>window.alert()</code> という<ruby>名前<rt>なまえ</rt></ruby>です。でも、<ruby>社長<rt>しゃちょう</rt></ruby>さんは<ruby>有名<rt>ゆうめい</rt></ruby>すぎるので、<strong><code>window.</code> を<ruby>省略<rt>しょうりゃく</rt></ruby>して<ruby>書<rt>か</rt></ruby>くことができます。</strong></p>
 <hr>
-<h3 id="2-よく使うプロパティ画面がめんの情報"><a class="header" href="#2-よく使うプロパティ画面がめんの情報">2. よく使うプロパティ（<ruby>画面<rt>がめん</rt></ruby>の情報）</a></h3>
-<p>社長さんが持っている「今のブラウザの状態（じょうたい）」についての情報です。</p>
-<h4 id="windowdocument"><a class="header" href="#windowdocument"><strong><code>window.document</code></strong></a></h4>
-<p>今見ている「ウェブサイトの中身（ページ）」そのものです。文字の色を変えたり、ボタンを作ったりするときに使います。</p>
-<h4 id="windowlocation"><a class="header" href="#windowlocation"><strong><code>window.location</code></strong></a></h4>
-<p>今の「URL（Web上の住所）」の情報です。</p>
+<h2 id="2-よく使つかうプロパティ画面がめんの情報じょうほう"><a class="header" href="#2-よく使つかうプロパティ画面がめんの情報じょうほう">2. よく<ruby>使<rt>つか</rt></ruby>うプロパティ（<ruby>画面<rt>がめん</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>）</a></h2>
+<p><ruby>社長<rt>しゃちょう</rt></ruby>さんが<ruby>持<rt>も</rt></ruby>っている「<ruby>今<rt>いま</rt></ruby>のブラウザの<ruby>状態<rt>じょうたい</rt></ruby>」についての<ruby>情報<rt>じょうほう</rt></ruby>です。</p>
+<h3 id="windowdocument"><a class="header" href="#windowdocument"><strong><code>window.document</code></strong></a></h3>
+<p><ruby>今見<rt>いまみ</rt></ruby>ている「ウェブサイトの<ruby>中身<rt>なかみ</rt></ruby>（ページ）」そのものです。<ruby>文字<rt>もじ</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたり、ボタンを<ruby>作<rt>つく</rt></ruby>ったりするときに<ruby>使<rt>つか</rt></ruby>います。</p>
+<h3 id="windowlocation"><a class="header" href="#windowlocation"><strong><code>window.location</code></strong></a></h3>
+<p><ruby>今<rt>いま</rt></ruby>の「URL（Web<ruby>上<rt>じょう</rt></ruby>の<ruby>住所<rt>じゅうしょ</rt></ruby>）」の<ruby>情報<rt>じょうほう</rt></ruby>です。</p>
 <ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>location.href = "https://google.com";</code> と書くと、別のサイトに移動できます。</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>location.href = "https://google.com";</code> と<ruby>書<rt>か</rt></ruby>くと、<ruby>別<rt>べつ</rt></ruby>のサイトに<ruby>移動<rt>いどう</rt></ruby>できます。</li>
 </ul>
-<h4 id="windowinnerwidth--innerheight"><a class="header" href="#windowinnerwidth--innerheight"><strong><code>window.innerWidth</code> / <code>innerHeight</code></strong></a></h4>
-<p>ブラウザの「中身の横幅（よこはば）と高さ」です。</p>
+<h3 id="windowinnerwidth--innerheight"><a class="header" href="#windowinnerwidth--innerheight"><strong><code>window.innerWidth</code> / <code>innerHeight</code></strong></a></h3>
+<p>ブラウザの「<ruby>中身<rt>なかみ</rt></ruby>の<ruby>横幅<rt>よこはば</rt></ruby>と<ruby>高<rt>たか</rt></ruby>さ」です。</p>
 <ul>
-<li><strong>イメージ：</strong> <ruby>画面<rt>がめん</rt></ruby>の大きさに合わせてデザインを変えたいときにチェックします。たとえば「パソコンでは、<ruby>画面<rt>がめん</rt></ruby>の横幅がスマートフォンより広いので、それに合わせ横にメニューなどを<ruby>表示<rt>ひょうじ</rt></ruby>する」というようなことをしたいときに、使います。</li>
+<li><strong>イメージ：</strong> <ruby>画面<rt>がめん</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさに<ruby>合<rt>あ</rt></ruby>わせてデザインを<ruby>変<rt>か</rt></ruby>えたいときにチェックします。たとえば「パソコンでは、<ruby>画面<rt>がめん</rt></ruby>の<ruby>横幅<rt>よこはば</rt></ruby>がスマートフォンより<ruby>広<rt>ひろ</rt></ruby>いので、それに<ruby>合<rt>あ</rt></ruby>わせ<ruby>横<rt>よこ</rt></ruby>にメニューなどを<ruby>表示<rt>ひょうじ</rt></ruby>する」というようなことをしたいときに、<ruby>使<rt>つか</rt></ruby>います。</li>
 </ul>
 <hr>
-<h3 id="3-よく使うメソッド社長さんができること"><a class="header" href="#3-よく使うメソッド社長さんができること">3. よく使うメソッド（社長さんができること）</a></h3>
-<h4 id="alert--prompt--confirm"><a class="header" href="#alert--prompt--confirm"><strong><code>alert()</code> / <code>prompt()</code> / <code>confirm()</code></strong></a></h4>
-<p>ユーザーにメッセージを出したり、質問をしたりする「小さな窓（ダイアログ）」を出します。</p>
+<h2 id="3-よく使つかうメソッド社長しゃちょうさんができること"><a class="header" href="#3-よく使つかうメソッド社長しゃちょうさんができること">3. よく<ruby>使<rt>つか</rt></ruby>うメソッド（<ruby>社長<rt>しゃちょう</rt></ruby>さんができること）</a></h2>
+<h3 id="alert--prompt--confirm"><a class="header" href="#alert--prompt--confirm"><strong><code>alert()</code> / <code>prompt()</code> / <code>confirm()</code></strong></a></h3>
+<p>ユーザーにメッセージを<ruby>出<rt>だ</rt></ruby>したり、<ruby>質問<rt>しつもん</rt></ruby>をしたりする「<ruby>小<rt>ちい</rt></ruby>さな<ruby>窓<rt>まど</rt></ruby>（ダイアログ）」を<ruby>出<rt>だ</rt></ruby>します。</p>
 <pre><code class="language-javascript">alert("こんにちは！"); // メッセージを出す
 let name = prompt("お名前は？"); // 名前を入力（にゅうりょく）してもらう
-
 </code></pre>
-<h4 id="settimeout--setinterval"><a class="header" href="#settimeout--setinterval"><strong><code>setTimeout()</code> / <code>setInterval()</code></strong></a></h4>
-<p>「タイマー」の仕事です。</p>
+<h3 id="settimeout--setinterval"><a class="header" href="#settimeout--setinterval"><strong><code>setTimeout()</code> / <code>setInterval()</code></strong></a></h3>
+<p>「タイマー」の<ruby>仕事<rt>しごと</rt></ruby>です。</p>
 <ul>
-<li><strong><code>setTimeout</code>：</strong> ○秒後に1回だけ実行する。</li>
-<li><strong><code>setInterval</code>：</strong> ○秒ごとに、ずっと繰り返す。</li>
+<li><strong><code>setTimeout</code>：</strong> ○<ruby>秒後<rt>びょうご</rt></ruby>に1<ruby>回<rt>かい</rt></ruby>だけ<ruby>実行<rt>じっこう</rt></ruby>する。</li>
+<li><strong><code>setInterval</code>：</strong> ○<ruby>秒<rt>びょう</rt></ruby>ごとに、ずっと<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す。</li>
 </ul>
-<h4 id="open--close"><a class="header" href="#open--close"><strong><code>open()</code> / <code>close()</code></strong></a></h4>
-<p>新しいタブを開いたり、今あるタブを閉じたりします。</p>
+<h3 id="open--close"><a class="header" href="#open--close"><strong><code>open()</code> / <code>close()</code></strong></a></h3>
+<p><ruby>新<rt>あたら</rt></ruby>しいタブを<ruby>開<rt>ひら</rt></ruby>いたり、<ruby>今<rt>いま</rt></ruby>あるタブを<ruby>閉<rt>と</rt></ruby>じたりします。</p>
 <hr>
-<h3 id="4-留学生への説明ポイントwindow-と-document-の違い"><a class="header" href="#4-留学生への説明ポイントwindow-と-document-の違い">4. 留学生への説明ポイント：<code>window</code> と <code>document</code> の違い</a></h3>
-<p>ここが一番混乱（こんらん）しやすいポイントです！</p>
+<h2 id="4-学生がくせいへの説明せつめいポイントwindow-と-document-の違ちがい"><a class="header" href="#4-学生がくせいへの説明せつめいポイントwindow-と-document-の違ちがい">4. <ruby>学生<rt>がくせい</rt></ruby>への<ruby>説明<rt>せつめい</rt></ruby>ポイント：<code>window</code> と <code>document</code> の<ruby>違<rt>ちが</rt></ruby>い</a></h2>
+<p>ここが<ruby>一番<rt>いちばん</rt></ruby><ruby>混乱<rt>こんらん</rt></ruby>しやすいポイントです！</p>
 <blockquote>
-<p><strong>「Window」は「ブラウザの枠（わく）全体」。</strong>
-<strong>「Document」は「その中にある紙（ページ）」のこと。</strong></p>
+<p><strong>「Window」は「ブラウザの<ruby>枠全体<rt>わくぜんたい</rt></ruby>」。</strong><br><strong>「Document」は「その<ruby>中<rt>なか</rt></ruby>にある<ruby>紙<rt>かみ</rt></ruby>（ページ）」のこと。</strong>
+<ruby>社長<rt>しゃちょう</rt></ruby>（window）は、<ruby>秘書<rt>ひしょ</rt></ruby>のドキュメントくん（document）に『このページを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えて！』と<ruby>命令<rt>めいれい</rt></ruby>しているんです。</p>
 </blockquote>
-<p>「社長（window）は、<ruby>秘書<rt>ひしょ</rt></ruby>のドキュメントくん（document）に『このページを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えて！』と命令しているんだよ」と教えてあげてください。</p>
 <hr>
-<h3 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h3>
+<h1 id="windowオブジェクト-1"><a class="header" href="#windowオブジェクト-1">Windowオブジェクト</a></h1>
+<p>さて、オブジェクトがどんなものか、を<ruby>理解<rt>りかい</rt></ruby>したら、<ruby>次<rt>つぎ</rt></ruby>はブラウザのオブジェクトをもっとくわしく<ruby>見<rt>み</rt></ruby>てみましょう。こうしたオブジェクトはあらかじめ、JavaScriptに<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>まれているので、そのプロパティもメソッドも、いきなり<ruby>呼<rt>よ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>して<ruby>使<rt>つか</rt></ruby>うことができます。
+ブラウザで<ruby>動<rt>うご</rt></ruby>くJavaScriptを<ruby>学習<rt>がくしゅう</rt></ruby>するとき、<ruby>一番大<rt>いちばんおお</rt></ruby>きな<ruby>存在<rt>そんざい</rt></ruby>が <strong>Windowオブジェクト</strong> です。
+<ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby>には、Windowオブジェクトは <strong>「ブラウザの<ruby>画面全体<rt>がめんぜんたい</rt></ruby>を<ruby>管理<rt>かんり</rt></ruby>している『<ruby>社長<rt>しゃちょう</rt></ruby>さん』」</strong> だと<ruby>教<rt>おし</rt></ruby>えてあげてください。JavaScriptでできることのほとんどは、この<ruby>社長<rt>しゃちょう</rt></ruby>さんにお<ruby>願<rt>ねが</rt></ruby>いして<ruby>動<rt>うご</rt></ruby>かしています。</p>
+<hr>
+<h2 id="1-windowオブジェクトとは-1"><a class="header" href="#1-windowオブジェクトとは-1">1. Windowオブジェクトとは？</a></h2>
+<p>ブラウザの「タブ」ひとつひとつが、ひとつの <code>window</code> です。<br>JavaScriptを<ruby>実行<rt>じっこう</rt></ruby>するとき、<strong><ruby>最初<rt>さいしょ</rt></ruby>からそこにいる「グローバルオブジェクト」</strong>（<ruby>一番<rt>いちばん</rt></ruby>えらいオブジェクト）です。
+<ruby>実<rt>じつ</rt></ruby>は、<ruby>私<rt>わたし</rt></ruby>たちが<ruby>普段使<rt>ふだんつか</rt></ruby>っている <code>console.log()</code> や <code>alert()</code> も、<ruby>本当<rt>ほんとう</rt></ruby>は <code>window.console.log()</code> や <code>window.alert()</code> という<ruby>名前<rt>なまえ</rt></ruby>です。でも、<ruby>社長<rt>しゃちょう</rt></ruby>さんは<ruby>有名<rt>ゆうめい</rt></ruby>すぎるので、<strong><code>window.</code> を<ruby>省略<rt>しょうりゃく</rt></ruby>して<ruby>書<rt>か</rt></ruby>くことができます。</strong></p>
+<hr>
+<h2 id="2-よく使つかうプロパティ画面がめんの情報じょうほう-1"><a class="header" href="#2-よく使つかうプロパティ画面がめんの情報じょうほう-1">2. よく<ruby>使<rt>つか</rt></ruby>うプロパティ（<ruby>画面<rt>がめん</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>）</a></h2>
+<p><ruby>社長<rt>しゃちょう</rt></ruby>さんが<ruby>持<rt>も</rt></ruby>っている「<ruby>今<rt>いま</rt></ruby>のブラウザの<ruby>状態<rt>じょうたい</rt></ruby>」についての<ruby>情報<rt>じょうほう</rt></ruby>です。</p>
+<h3 id="windowdocument-1"><a class="header" href="#windowdocument-1"><strong><code>window.document</code></strong></a></h3>
+<p><ruby>今見<rt>いまみ</rt></ruby>ている「ウェブサイトの<ruby>中身<rt>なかみ</rt></ruby>（ページ）」そのものです。<ruby>文字<rt>もじ</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたり、ボタンを<ruby>作<rt>つく</rt></ruby>ったりするときに<ruby>使<rt>つか</rt></ruby>います。</p>
+<h3 id="windowlocation-1"><a class="header" href="#windowlocation-1"><strong><code>window.location</code></strong></a></h3>
+<p><ruby>今<rt>いま</rt></ruby>の「URL（Web<ruby>上<rt>じょう</rt></ruby>の<ruby>住所<rt>じゅうしょ</rt></ruby>）」の<ruby>情報<rt>じょうほう</rt></ruby>です。</p>
+<ul>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>location.href = "https://google.com";</code> と<ruby>書<rt>か</rt></ruby>くと、<ruby>別<rt>べつ</rt></ruby>のサイトに<ruby>移動<rt>いどう</rt></ruby>できます。</li>
+</ul>
+<h3 id="windowinnerwidth--innerheight-1"><a class="header" href="#windowinnerwidth--innerheight-1"><strong><code>window.innerWidth</code> / <code>innerHeight</code></strong></a></h3>
+<p>ブラウザの「<ruby>中身<rt>なかみ</rt></ruby>の<ruby>横幅<rt>よこはば</rt></ruby>と<ruby>高<rt>たか</rt></ruby>さ」です。</p>
+<ul>
+<li><strong>イメージ：</strong> <ruby>画面<rt>がめん</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさに<ruby>合<rt>あ</rt></ruby>わせてデザインを<ruby>変<rt>か</rt></ruby>えたいときにチェックします。たとえば「パソコンでは、<ruby>画面<rt>がめん</rt></ruby>の<ruby>横幅<rt>よこはば</rt></ruby>がスマートフォンより<ruby>広<rt>ひろ</rt></ruby>いので、それに<ruby>合<rt>あ</rt></ruby>わせ<ruby>横<rt>よこ</rt></ruby>にメニューなどを<ruby>表示<rt>ひょうじ</rt></ruby>する」というようなことをしたいときに、<ruby>使<rt>つか</rt></ruby>います。</li>
+</ul>
+<hr>
+<h2 id="3-よく使つかうメソッド社長しゃちょうさんができること-1"><a class="header" href="#3-よく使つかうメソッド社長しゃちょうさんができること-1">3. よく<ruby>使<rt>つか</rt></ruby>うメソッド（<ruby>社長<rt>しゃちょう</rt></ruby>さんができること）</a></h2>
+<h3 id="alert--prompt--confirm-1"><a class="header" href="#alert--prompt--confirm-1"><strong><code>alert()</code> / <code>prompt()</code> / <code>confirm()</code></strong></a></h3>
+<p>ユーザーにメッセージを<ruby>出<rt>だ</rt></ruby>したり、<ruby>質問<rt>しつもん</rt></ruby>をしたりする「<ruby>小<rt>ちい</rt></ruby>さな<ruby>窓<rt>まど</rt></ruby>（ダイアログ）」を<ruby>出<rt>だ</rt></ruby>します。</p>
+<pre><code class="language-javascript">alert("こんにちは！"); // メッセージを出す
+let name = prompt("お名前は？"); // 名前を入力（にゅうりょく）してもらう
+</code></pre>
+<h3 id="settimeout--setinterval-1"><a class="header" href="#settimeout--setinterval-1"><strong><code>setTimeout()</code> / <code>setInterval()</code></strong></a></h3>
+<p>「タイマー」の<ruby>仕事<rt>しごと</rt></ruby>です。</p>
+<ul>
+<li><strong><code>setTimeout</code>：</strong> ○<ruby>秒後<rt>びょうご</rt></ruby>に1<ruby>回<rt>かい</rt></ruby>だけ<ruby>実行<rt>じっこう</rt></ruby>する。</li>
+<li><strong><code>setInterval</code>：</strong> ○<ruby>秒<rt>びょう</rt></ruby>ごとに、ずっと<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す。</li>
+</ul>
+<h3 id="open--close-1"><a class="header" href="#open--close-1"><strong><code>open()</code> / <code>close()</code></strong></a></h3>
+<p><ruby>新<rt>あたら</rt></ruby>しいタブを<ruby>開<rt>ひら</rt></ruby>いたり、<ruby>今<rt>いま</rt></ruby>あるタブを<ruby>閉<rt>と</rt></ruby>じたりします。</p>
+<hr>
+<h2 id="4-学生がくせいへの説明せつめいポイントwindow-と-document-の違ちがい-1"><a class="header" href="#4-学生がくせいへの説明せつめいポイントwindow-と-document-の違ちがい-1">4. <ruby>学生<rt>がくせい</rt></ruby>への<ruby>説明<rt>せつめい</rt></ruby>ポイント：<code>window</code> と <code>document</code> の<ruby>違<rt>ちが</rt></ruby>い</a></h2>
+<p>ここが<ruby>一番<rt>いちばん</rt></ruby><ruby>混乱<rt>こんらん</rt></ruby>しやすいポイントです！</p>
+<blockquote>
+<p><strong>「Window」は「ブラウザの<ruby>枠全体<rt>わくぜんたい</rt></ruby>」。</strong><br><strong>「Document」は「その<ruby>中<rt>なか</rt></ruby>にある<ruby>紙<rt>かみ</rt></ruby>（ページ）」のこと。</strong>
+<ruby>社長<rt>しゃちょう</rt></ruby>（window）は、<ruby>秘書<rt>ひしょ</rt></ruby>のドキュメントくん（document）に『このページを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えて！』と<ruby>命令<rt>めいれい</rt></ruby>しているんです。</p>
+</blockquote>
+<hr>
+<h2 id="まとめテーブル"><a class="header" href="#まとめテーブル">まとめテーブル</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>種類</th><th>名前</th><th>やっていること</th></tr>
+<tr><th><ruby>種類<rt>しゅるい</rt></ruby></th><th><ruby>名前<rt>なまえ</rt></ruby></th><th>やっていること</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>プロパティ</strong></td><td><strong><code>document</code></strong></td><td>ページの内容をいじる</td></tr>
-<tr><td><strong>プロパティ</strong></td><td><strong><code>location</code></strong></td><td>住所（URL）を確認・移動する</td></tr>
-<tr><td><strong>メソッド</strong></td><td><strong><code>alert()</code></strong></td><td>お知らせを<ruby>表示<rt>ひょうじ</rt></ruby>する</td></tr>
+<tr><td><strong>プロパティ</strong></td><td><strong><code>document</code></strong></td><td>ページの<ruby>内容<rt>ないよう</rt></ruby>をいじる</td></tr>
+<tr><td><strong>プロパティ</strong></td><td><strong><code>location</code></strong></td><td><ruby>住所<rt>じゅうしょ</rt></ruby>（URL）を<ruby>確認<rt>かくにん</rt></ruby>・<ruby>移動<rt>いどう</rt></ruby>する</td></tr>
+<tr><td><strong>メソッド</strong></td><td><strong><code>alert()</code></strong></td><td>お<ruby>知<rt>し</rt></ruby>らせを<ruby>表示<rt>ひょうじ</rt></ruby>する</td></tr>
 <tr><td><strong>メソッド</strong></td><td><strong><code>setTimeout()</code></strong></td><td>タイマーをセットする</td></tr>
-<tr><td><strong>メソッド</strong></td><td><strong><code>scrollTo()</code></strong></td><td><ruby>画面<rt>がめん</rt></ruby>を上や下に動かす（スクロール）</td></tr>
+<tr><td><strong>メソッド</strong></td><td><strong><code>scrollTo()</code></strong></td><td><ruby>画面<rt>がめん</rt></ruby>を<ruby>上<rt>うえ</rt></ruby>や<ruby>下<rt>した</rt></ruby>に<ruby>動<rt>うご</rt></ruby>かす（スクロール）</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>グローバル<ruby>変数<rt>へんすう</rt></ruby>に注意！</strong>
-自分で作った<ruby>変数<rt>へんすう</rt></ruby>も、実は <code>window</code> の持ちものになることがあります。
-「何でもかんでも <code>window</code> に入れると、社長さんの部屋が散らかって大変だよ（バグの原因になるよ）」と伝えてあげると、良いプログラミングの習慣（しゅうかん）が身につきます。</p>
-</blockquote>
-<p>いかがでしょうか？「ブラウザのボス」というイメージが伝われば、Windowオブジェクトの理解はバッチリです！</p>
-<h2 id="ii-documentオブジェクト"><a class="header" href="#ii-documentオブジェクト">II. Documentオブジェクト</a></h2>
-<p><ruby>前回<rt>ぜんかい</rt></ruby>、<strong><code>window</code> オブジェクト</strong> はブラウザ全体の「社長さん」だと説明しましたね。
-今回の <strong><code>document</code> オブジェクト</strong> は、<code>window</code> オブジェクトの下にあるプロパティで、その社長さんの下で働く <strong>「現場監督（げんばかんとく）」</strong> です。</p>
-<blockquote class="blockquote-tag blockquote-tag-important">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
-<p>オブジェクトは別のオブジェクトのプロパティになることがあります。</p>
-</blockquote>
-<p>留学生の方には、**「ウェブページという建物を管理し、中身を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えたり、新しくパーツを作ったりする責任者」**だと伝えるとイメージが湧きやすくなります！</p>
-<p>documentオブジェクトとは、ブラウザに<ruby>表示<rt>ひょうじ</rt></ruby>されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
-JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに<ruby>動<rt>うご</rt></ruby>きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
-<p>これを専門用語で <strong>DOM（ドム / Document Object Model）</strong> と呼びます。HTMLを「木の枝（えだ）」のような構造として管理しているのが特徴です。</p>
-<p>DOMツリーについては、次のセクションで、くわしく説明します。ここでは、Windowとdocumentの違いをしっかり頭に入れてください。</p>
-<h3 id="1-documentオブジェクトとは"><a class="header" href="#1-documentオブジェクトとは">1. documentオブジェクトとは？</a></h3>
-<p>ブラウザに<ruby>表示<rt>ひょうじ</rt></ruby>されている<strong>HTML（ウェブページの中身）</strong> そのものを指します。
-JavaScriptを使って、文字の色を変えたり、ボタンが押されたときに<ruby>動<rt>うご</rt></ruby>きをつけたりするのは、すべてこの「現場監督（document）」に命令を出しているからです。</p>
-<p>これを専門用語で <strong>DOM（ドム / Document Object Model）</strong> と呼びます。HTMLを「木の枝（えだ）」のような構造として管理しているのが特徴です。</p>
-<hr>
-<h3 id="2-よく使うプロパティページの情報"><a class="header" href="#2-よく使うプロパティページの情報">2. よく使うプロパティ（ページの情報）</a></h3>
-<p>現場監督が知っている、今のページの情報です。</p>
+<p>いかがでしょうか？ <strong>「ブラウザのボス」</strong> というイメージが<ruby>伝<rt>つた</rt></ruby>われば、Windowオブジェクトの<ruby>理解<rt>りかい</rt></ruby>はバッチリです！</p>
+<h3 id="プロパティとメソッド"><a class="header" href="#プロパティとメソッド">プロパティとメソッド</a></h3>
+<h5 id="-別べつのオブジェクト子分こぶんたち"><a class="header" href="#-別べつのオブジェクト子分こぶんたち">🌐 <ruby>別<rt>べつ</rt></ruby>のオブジェクト（<ruby>子分<rt>こぶん</rt></ruby>たち）</a></h5>
 <ul>
-<li><strong><code>document.title</code></strong>
-ブラウザのタブに<ruby>表示<rt>ひょうじ</rt></ruby>されている「ページのタイトル」です。JavaScriptで<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えることもできます。</li>
-<li><strong><code>document.body</code></strong>
-HTMLの <code>&lt;body&gt;</code> タグの中身全体です。ページ全体の<ruby>背景<rt>はいけい</rt></ruby>色を変えたいときなどに使います。</li>
-<li><strong><code>document.URL</code></strong>
-現在開いているページの住所（URL）を教えてくれます。</li>
+<li>
+<p><strong><code>document</code></strong>（ドキュメント）：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>今画面<rt>いまがめん</rt></ruby>に<ruby>見<rt>み</rt></ruby>えている「Webページの<ruby>白<rt>しろ</rt></ruby>い<ruby>紙<rt>かみ</rt></ruby>（HTMLの<ruby>中身<rt>なかみ</rt></ruby>）」を<ruby>捕<rt>つか</rt></ruby>まえるとき（<code>document.getElementById</code>）にいつも<ruby>使<rt>つか</rt></ruby>う<ruby>超重要<rt>ちょうじゅうよう</rt></ruby>プロパティです。</p>
+</li>
+<li>
+<p><strong><code>history</code></strong>（ヒストリー）：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ブラウザの「<ruby>戻<rt>もど</rt></ruby>る」「<ruby>進<rt>すす</rt></ruby>む」の<ruby>履歴<rt>りれき</rt></ruby>（<ruby>歴史<rt>れきし</rt></ruby>）を<ruby>管理<rt>かんり</rt></ruby>するオブジェクトです。</p>
+</li>
+<li>
+<p><strong><code>location</code></strong>（ロケーション）：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>今見<rt>いまみ</rt></ruby>ているWebページの「URL（<ruby>住所<rt>じゅうしょ</rt></ruby>）」の<ruby>情報<rt>じょうほう</rt></ruby>です。ここに<ruby>新<rt>あたら</rt></ruby>しいURLを<ruby>代入<rt>だいにゅう</rt></ruby>すると、<ruby>別<rt>べつ</rt></ruby>のページに<ruby>画面<rt>がめん</rt></ruby>が<ruby>変<rt>か</rt></ruby>わります。</p>
+</li>
 </ul>
-<hr>
-<h3 id="3-よく使うメソッド現場監督への命令"><a class="header" href="#3-よく使うメソッド現場監督への命令">3. よく使うメソッド（現場監督への命令）</a></h3>
-<p>これが一番大切です！特定の場所を探したり、中身を変えたりする命令です。</p>
-<h4 id="場所を探すセレクタ"><a class="header" href="#場所を探すセレクタ"><strong>場所を探す（セレクタ）</strong></a></h4>
+<h5 id="-画面がめんの大おおきさサイズ"><a class="header" href="#-画面がめんの大おおきさサイズ">🪟 <ruby>画面<rt>がめん</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさ（サイズ）</a></h5>
 <ul>
-<li><strong><code>getElementById("ID名")</code></strong>
-特定のIDがついたパーツを1つだけ探します。一番速くて正確です。</li>
-<li><strong><code>querySelector("セレクタ")</code></strong>
-CSSと同じ<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>（<code>.class</code> や <code>#id</code>）でパーツを探せます。とても便利です！</li>
+<li>
+<p><strong><code>innerWidth</code> / <code>innerHeight</code></strong>（インナー・ウィズ / ハイト）：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> Webページが<ruby>実際<rt>じっさい</rt></ruby>に<ruby>見<rt>み</rt></ruby>えている「<ruby>内側<rt>うちがわ</rt></ruby>の<ruby>白<rt>しろ</rt></ruby>い<ruby>部分<rt>ぶぶん</rt></ruby>の<ruby>幅<rt>はば</rt></ruby>と<ruby>高<rt>たか</rt></ruby>さ」（ピクセル<ruby>単位<rt>たんい</rt></ruby>）です。スクロールバーは<ruby>含<rt>ふく</rt></ruby>みません。</p>
+</li>
+<li>
+<p><strong><code>outerWidth</code> / <code>outerHeight</code></strong>（アウター・ウィズ / ハイト）：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ブラウザの<ruby>枠<rt>わく</rt></ruby>やメニューバーなども<ruby>全部合<rt>ぜんぶあ</rt></ruby>わせた「<ruby>一番外側<rt>いちばんそとがわ</rt></ruby>のウィンドウ<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>幅<rt>はば</rt></ruby>と<ruby>高<rt>たか</rt></ruby>さ」です。</p>
+</li>
 </ul>
-<p>これらは、以前にも出てきましたね。実はdocumentオブジェクトのメソッドだったのです！</p>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><code>document.getElementById("ID名")</code>のように書いてもかまいませんが、普通は<code>document.</code>を省略して、<code>getElementById("ID名")</code>と書きます。</p>
+<p>ユーザーの<ruby>画面<rt>がめん</rt></ruby>サイズに<ruby>合<rt>あ</rt></ruby>わせて<ruby>動<rt>うご</rt></ruby>き（レスポンシブ）を<ruby>変<rt>か</rt></ruby>えたいときは、<ruby>内側<rt>うちがわ</rt></ruby>のサイズである <code>innerWidth</code> をよく<ruby>使<rt>つか</rt></ruby>います。また、<ruby>一覧<rt>いちらん</rt></ruby>の <code>outeWridth</code> や <code>innerheight</code> は<ruby>大文字小文字<rt>おおもじこもじ</rt></ruby>のタイポ（<ruby>打<rt>う</rt></ruby>ち<ruby>間違<rt>まちが</rt></ruby>い）になりやすいので、<strong><code>innerWidth</code> / <code>innerHeight</code> / <code>outerWidth</code> / <code>outerHeight</code></strong> と<ruby>正<rt>ただ</rt></ruby>しく<ruby>教<rt>おし</rt></ruby>えてあげてください。</p>
 </blockquote>
-<h4 id="中身を書かき換かええる作る"><a class="header" href="#中身を書かき換かええる作る"><strong>中身を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>える・作る</strong></a></h4>
-<ul>
-<li><strong><code>createElement("タグ名")</code></strong>
-新しいパーツ（<code>&lt;div&gt;</code> や <code>&lt;li&gt;</code> など）をメモリの中に作ります。</li>
-<li><strong><code>write("文字")</code></strong>
-ページに直接文字を<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>みます（※最近はあまり使いませんが、基本として覚えます）。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう"><a class="header" href="#4-実際に動かしてみよう">4. 実際に動かしてみよう！</a></h3>
-<p>コンソールを開いて、<a href="./html/03_02_doc_method_01.html">ここをクリック</a>し、下のJavaScriptを<ruby>入力<rt>にゅうりょく</rt></ruby>してみましょう。</p>
-<blockquote>
-<p>コンソールを開くには、F12 キー（ノートPCは Fn + F12） または Ctrl + Shift + I を使います。</p>
-</blockquote>
-<pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
-const message = document.getElementById("greeting");
-
-// 2. その中身を書（か）き換（かえ）える
-message.textContent = "こんにちは、日本へようこそ！";
-
-// 3. スタイル（色）も変えちゃう
-message.style.color = "red";
-
-</code></pre>
-<p><strong>オブジェクトと const の意外な関係</strong></p>
-<p>上のコードを見て、疑問に思いませんでしたか？「<code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>された<ruby>変数<rt>へんすう</rt></ruby>は、後から値を変更できないはずでは？」そう思った人は、<ruby>変数<rt>へんすう</rt></ruby>の説明をとてもよく覚えている人です。</p>
-<p>しかし、上のコードはエラーになりません。それについて、説明しましょう。</p>
-<p>JavaScriptの<ruby>初心者<rt>しょしんしゃ</rt></ruby>が混乱しやすい点のひとつが、オブジェクトと <code>const</code> の意外な関係です。</p>
-<p>「 <code>const</code> で<ruby>宣言<rt>せんげん</rt></ruby>した<ruby>変数<rt>へんすう</rt></ruby>は中身を変えられない」と説明しましたが、オブジェクトの場合は少し違います。</p>
-<ul>
-<li>名札の固定（参照の不変性）：const で作ったオブジェクトそのものを別のオブジェクトに<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ることはできません（別の箱に名札を付け替えるのは禁止）。</li>
-<li>中身の変更はOK：箱の中に入っている<ruby>個別<rt>こべつ</rt></ruby>のデータ（プロパティ）を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えることは可能です。</li>
-</ul>
-<p>「強力なガムテープで名札が貼られた箱」をイメージしてください。ガムテープで固定されているので、名札を別の新しい箱に貼り直すことはできません。でも、箱の蓋（ふた）をひとつ開けて、中に入っているお菓子を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>たり、ジャムを塗ったりすることは自由なのです。</p>
-<p><ruby>例<rt>たと</rt></ruby>えるなら、「ファイルの保存場所（パス）」は固定されているけれど、「ファイルの中身」は自由に<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えられるようなイメージです。</p>
-<p>先ほどの<ruby>例<rt>れい</rt></ruby>では、<code>const</code>を使って<ruby>宣言<rt>せんげん</rt></ruby>した<code>message</code>という箱を開けて、中身を“こんにちは、日本へようこそ！“に<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>ました。これはエラーにはなりません。</p>
-<p>しかし、</p>
-<pre><code class="language-javascript">// 1. IDが "greeting" というパーツを探す
-const message = document.getElementById("greeting");
-
-// 2. タグがpのパーツを探す
-message = document.querySelector("p")
-</code></pre>
-<p>はエラーになります。<code>message</code> というラベルを「“greeting“というIDの箱」からはがして、「“p“というタグの別の箱」に貼ろうとしているからです。</p>
-<p><code>const</code> は <code>message</code> というラベルと、それを入れる入れ物との関係を固定して、ラベルの張替えを許しません。</p>
-<p>しかし、あくまで <strong>ラベルと入れ物との関係</strong> であって、 <strong>入れ物が同じであれば、その中身が変わっても、かまわない</strong> のです。</p>
-<hr>
-<h3 id="5-留学生へのアドバイスwindow-と-document-の使つかい分わけ"><a class="header" href="#5-留学生へのアドバイスwindow-と-document-の使つかい分わけ">5. 留学生へのアドバイス：<code>window</code> と <code>document</code> の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け</a></h3>
-<p>「どっちを使えばいいの？」と聞かれたら、こう答えてあげてください。</p>
-<blockquote>
-<p><strong>「ブラウザの機能（タイマー、アラート、URL移動）を使いたいときは <code>window</code>」</strong></p>
-<p><strong>「ページの中身（文字、<ruby>画像<rt>がぞう</rt></ruby>、ボタン）をいじりたいときは <code>document</code>」</strong></p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-1"><a class="header" href="#まとめテーブル-1">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>命令・情報の名前</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>title</code></strong></td><td>ページのタイトル</td><td>本の表紙の名前</td></tr>
-<tr><td><strong><code>getElementById()</code></strong></td><td>特定のパーツを指名する</td><td>「出席番号○番の人！」と呼ぶ</td></tr>
-<tr><td><strong><code>querySelector()</code></strong></td><td>自由にパーツを探す</td><td>「赤い服を着ている人！」と探す</td></tr>
-<tr><td><strong><code>textContent</code></strong></td><td>文字を<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>える</td><td>看板の文字を<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>す</td></tr>
-<tr><td><strong><code>createElement()</code></strong></td><td>新しい要素を作る</td><td>新しいレンガを用意する</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「現場監督の document くん」がいれば、ウェブページを思った通りに<ruby>操<rt>あやつ</rt></ruby>れるようになります。</p>
-<hr>
-<h2 id="iii-locationオブジェクト"><a class="header" href="#iii-locationオブジェクト">III. Locationオブジェクト</a></h2>
-<p><strong>Locationオブジェクト</strong> は、今ブラウザで見ているウェブサイトの「住所（URL）」を管理するオブジェクトです。</p>
-<p>留学生の方には、Locationオブジェクトは <strong>「ブラウザの住所録（じゅうしょろく）」</strong> や <strong>「カーナビ」</strong> だと教えてあげてください。今の場所を知ることもできるし、新しい場所へ移動することもできます。</p>
-<hr>
-<h3 id="1-locationオブジェクトとは"><a class="header" href="#1-locationオブジェクトとは">1. Locationオブジェクトとは？</a></h3>
-<p><code>window.location</code> を通じてアクセスします。URLを「プロトコル」「ドメイン」「パス」などのパーツに分けて持っているので、JavaScriptで簡単にURLの情報を調べたり、変更したりできます。</p>
-<hr>
-<h3 id="2-よく使うプロパティ住所の情報"><a class="header" href="#2-よく使うプロパティ住所の情報">2. よく使うプロパティ（住所の情報）</a></h3>
-<p>現在のURLの「どの部分を知りたいか」によって<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けます。
-<ruby>例<rt>れい</rt></ruby>：<code>https://example.com:8080/search?q=js#result</code> というURLの場合</p>
+<h5 id="-新あたらしいウィンドウタブの状態じょうたい"><a class="header" href="#-新あたらしいウィンドウタブの状態じょうたい">🆕 <ruby>新<rt>あたら</rt></ruby>しいウィンドウ・タブの<ruby>状態<rt>じょうたい</rt></ruby></a></h5>
 <ul>
 <li>
-<p><strong><code>href</code></strong>
-URLの<ruby>全部<rt>ぜんぶ</rt></ruby>です。</p>
+<p><strong><code>closed</code></strong>（クローズド）：</p>
 </li>
 <li>
-<p><code>console.log(location.href);</code></p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> そのウィンドウが「すでに<ruby>閉<rt>と</rt></ruby>じられているか・いないか」を <code>true</code> / <code>false</code> で<ruby>教<rt>おし</rt></ruby>えてくれます。</p>
 </li>
 <li>
-<p><strong><code>protocol</code></strong>
-「http:」や「https:」の部分です。</p>
+<p><strong><code>opener</code></strong>（オープナー）：</p>
 </li>
 <li>
-<p><strong><code>host</code></strong>
-ドメイン名とポート番号です。（<code>example.com:8080</code>）</p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>自分<rt>じぶん</rt></ruby>のウィンドウを<ruby>新<rt>あたら</rt></ruby>しく<ruby>開<rt>ひら</rt></ruby>いてくれた「<ruby>親<rt>おや</rt></ruby>のウィンドウ」を<ruby>指<rt>さ</rt></ruby>します。</p>
 </li>
 <li>
-<p><strong><code>pathname</code></strong>
-ドメインの後の「フォルダやファイル」の場所です。（<code>/search</code>）</p>
+<p><strong><code>name</code></strong>（ネーム）：</p>
 </li>
 <li>
-<p><strong><code>search</code></strong>
-<code>?</code> から始まる「クエリパラメータ」です。<ruby>検索<rt>けんさく</rt></ruby>キーワードなどが入ります。（<code>?q=js</code>）</p>
-</li>
-<li>
-<p><strong><code>hash</code></strong>
-<code>#</code> から始まる「アンカー（ページ内の場所）」です。（<code>#result</code>）</p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ウィンドウにつけられた「<ruby>名前<rt>なまえ</rt></ruby>」です。リンクを<ruby>別<rt>べつ</rt></ruby>のウィンドウで<ruby>開<rt>ひら</rt></ruby>くターゲット（<code>target="名前"</code>）に<ruby>使<rt>つか</rt></ruby>います。</p>
 </li>
 </ul>
-<hr>
-<h3 id="3-よく使うメソッド場所を移動する"><a class="header" href="#3-よく使うメソッド場所を移動する">3. よく使うメソッド（場所を移動する）</a></h3>
-<p>新しいページへ行きたいときや、今のページをやり直したいときに使います。</p>
-<h4 id="assignurl"><a class="header" href="#assignurl"><strong><code>assign("URL")</code></strong></a></h4>
-<p>指定したURLに移動します。</p>
+<h5 id="-ブラウザの下したのバー現在げんざいはあまり使つかわれません"><a class="header" href="#-ブラウザの下したのバー現在げんざいはあまり使つかわれません">💬 ブラウザの<ruby>下<rt>した</rt></ruby>のバー（<ruby>現在<rt>げんざい</rt></ruby>はあまり<ruby>使<rt>つか</rt></ruby>われません）</a></h5>
 <ul>
-<li><strong>特徴：</strong> ブラウザの「戻る」ボタンで、前のページに戻れます。</li>
-<li><code>location.assign("https://google.com");</code></li>
-</ul>
-<h4 id="replaceurl"><a class="header" href="#replaceurl"><strong><code>replace("URL")</code></strong></a></h4>
-<p>新しいURLに移動しますが、<strong>今のページの履歴（ひれき）を消します。</strong></p>
-<ul>
-<li><strong>特徴：</strong> 「戻る」ボタンを押しても、今のページには戻れません。ログイン後の<ruby>画面<rt>がめん</rt></ruby>などでよく使います。</li>
-</ul>
-<h4 id="reload"><a class="header" href="#reload"><strong><code>reload()</code></strong></a></h4>
-<p>今のページを「再読（さいよ）み込み」します。ブラウザの更新ボタンを押すのと同じです。</p>
-<hr>
-<h3 id="4-実際に動かしてみよう-1"><a class="header" href="#4-実際に動かしてみよう-1">4. 実際に動かしてみよう！</a></h3>
-<p>留学生がよく使う「ボタンを押して別のページへ行く」コードです。</p>
-<pre><code class="language-javascript">// 3秒後に自動（じどう）でGoogleへ移動する
-setTimeout(function() {
-  location.href = "https://google.com";
-  // 実は location.assign() と同じ意味になります
-}, 3000);
-
-// 「更新（こうしん）ボタン」を作るなら
-function refreshPage() {
-  location.reload();
-}
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイスhref-の書かき換かええが一番人気"><a class="header" href="#5-留学生へのアドバイスhref-の書かき換かええが一番人気">5. 留学生へのアドバイス：<code>href</code> の<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えが一番人気</a></h3>
-<p>URLを操作する方法はたくさんありますが、現場で一番よく使われるのは <strong><code>location.href</code></strong> への<ruby>代入<rt>だいにゅう</rt></ruby>です。</p>
-<blockquote>
-<p><strong>「一番簡単な移動（いどう）のやり<ruby>方<rt>かた</rt></ruby>は、<code>location.href</code> に新しい住所を<ruby>代入<rt>だいにゅう</rt></ruby>することだよ。一番覚えやすくて便利だよ！」</strong></p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-2"><a class="header" href="#まとめテーブル-2">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>href</code></strong></td><td>URLのすべて</td><td>正式な住所</td></tr>
-<tr><td><strong><code>pathname</code></strong></td><td>ファイルの場所</td><td>建物の「何階の何<ruby>号室<rt>ごうしつ</rt></ruby>」か</td></tr>
-<tr><td><strong><code>search</code></strong></td><td><ruby>検索<rt>けんさく</rt></ruby>データ</td><td>住所に添えられた「おまけ情報」</td></tr>
-<tr><td><strong><code>assign()</code></strong></td><td>ページを移動する</td><td>次の目的地へ歩いていく（戻れる）</td></tr>
-<tr><td><strong><code>replace()</code></strong></td><td>履歴を残さず移動</td><td>瞬間移動して前の場所を忘れる（戻れない）</td></tr>
-<tr><td><strong><code>reload()</code></strong></td><td>ページを更新する</td><td>同じ場所でもう一度やり直す</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？URLをパーツごとに理解できると、特定のページだけで動くプログラムを作ったり、ユーザーを別のページに誘導（ゆうどう）したりできるようになります。</p>
-<p><strong>次は、今のページから「ひとつ前に戻る」など、ブラウザの履歴をさらに詳しく<ruby>操<rt>あやつ</rt></ruby>る <code>History</code> オブジェクトについても見てみますか？</strong></p>
-<h2 id="iv-styleオブジェクト"><a class="header" href="#iv-styleオブジェクト">IV. Styleオブジェクト</a></h2>
-<p><strong>Styleオブジェクト</strong>は、JavaScriptを使ってウェブサイトの<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>（CSS）を自由に変えるための道具です。</p>
-<p>留学生の方には、Styleオブジェクトは**「パーツに新しい服を着せたり、メイクをしたりする『スタイリストさん』」**だと教えてあげてください。</p>
-<hr>
-<h3 id="1-styleオブジェクトとは"><a class="header" href="#1-styleオブジェクトとは">1. Styleオブジェクトとは？</a></h3>
-<p>HTMLの各要素（Element）が持っているオブジェクトです。これを使うと、ボタンの色を赤くしたり、文字を大きくしたり、アニメーションのように動かしたりできます。</p>
-<p>基本の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>はこうです：
-<code>要素.style.プロパティ = "値";</code></p>
-<hr>
-<h3 id="2-よく使うプロパティ見みた目めの変更"><a class="header" href="#2-よく使うプロパティ見みた目めの変更">2. よく使うプロパティ（<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>の変更）</a></h3>
-<p>CSSのプロパティ名とほぼ同じですが、<strong>1つだけ大きなルール</strong>があります。</p>
-<h4 id="キャメルケースで書く"><a class="header" href="#キャメルケースで書く"><strong>「キャメルケース」で書く！</strong></a></h4>
-<p>CSSでハイフン（<code>-</code>）を使う名前は、JavaScriptではハイフンを消して、次の文字を<strong>大文字</strong>にします。</p>
-<ul>
-<li><code>background-color</code> → <strong><code>backgroundColor</code></strong></li>
-<li><code>font-size</code> → <strong><code>fontSize</code></strong></li>
-<li><code>margin-top</code> → <strong><code>marginTop</code></strong></li>
-</ul>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>よく使うプロパティ</th><th>役割</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>color</code></strong></td><td>文字の色を変える</td></tr>
-<tr><td><strong><code>backgroundColor</code></strong></td><td><ruby>背景<rt>はいけい</rt></ruby>（はいけい）の色を変える</td></tr>
-<tr><td><strong><code>display</code></strong></td><td>パーツを<ruby>表示<rt>ひょうじ</rt></ruby>するか消す（<code>none</code>）か決める</td></tr>
-<tr><td>**<code>width</code> / <code>height**</code></td><td>幅と高さを変える（<strong>“100px”</strong> のように単位が必要！）</td></tr>
-<tr><td><strong><code>borderRadius</code></strong></td><td>角を丸くする</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h3 id="3-よく使うメソッドより高度な操作"><a class="header" href="#3-よく使うメソッドより高度な操作">3. よく使うメソッド（より高度な操作）</a></h3>
-<p><code>style.color = "red"</code> のような直接の変更以外に、便利な命令（メソッド）もあります。</p>
-<h4 id="setpropertyプロパティ名-値"><a class="header" href="#setpropertyプロパティ名-値"><strong><code>setProperty("プロパティ名", "値")</code></strong></a></h4>
-<p>CSSのプロパティをセットします。これを使うときは、CSSと同じ形（<code>background-color</code>）で書けます。</p>
-<ul>
-<li><code>element.style.setProperty("background-color", "blue");</code></li>
-</ul>
-<h4 id="removepropertyプロパティ名"><a class="header" href="#removepropertyプロパティ名"><strong><code>removeProperty("プロパティ名")</code></strong></a></h4>
-<p>JavaScriptで<ruby>設定<rt>せってい</rt></ruby>したスタイルを消して、元のCSSの状態に戻します。</p>
-<h4 id="getpropertyvalueプロパティ名"><a class="header" href="#getpropertyvalueプロパティ名"><strong><code>getPropertyValue("プロパティ名")</code></strong></a></h4>
-<p><ruby>設定<rt>せってい</rt></ruby>されているスタイルの値を<ruby>取得<rt>しゅとく</rt></ruby>します。</p>
-<hr>
-<h3 id="4-実際に動かしてみよう-2"><a class="header" href="#4-実際に動かしてみよう-2">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「マウスが乗ったら色が変わるボタン」の<ruby>仕組<rt>しく</rt></ruby>みを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
-<pre><code class="language-javascript">const box = document.querySelector(".box");
-
-// 1. 背景（はいけい）をオレンジ色にする
-box.style.backgroundColor = "orange";
-
-// 2. 文字を白くして、大きくする
-box.style.color = "white";
-box.style.fontSize = "24px"; // ⚠️ "px" を忘れないで！
-
-// 3. 枠線（わくせん）をつける
-box.style.border = "5px solid black";
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイスstyleオブジェクトの限界"><a class="header" href="#5-留学生へのアドバイスstyleオブジェクトの限界">5. 留学生へのアドバイス：Styleオブジェクトの限界</a></h3>
-<p>ここが<ruby>中級<rt>ちゅうきゅう</rt></ruby>者へのステップアップとして大切なポイントです。</p>
-<blockquote>
-<p>「<code>element.style</code> で調べられるのは、<strong>JavaScriptで直接つけたスタイルだけ</strong>なんだ。
-もともとCSSファイル（<code>.css</code>）に書いてあるスタイルを知りたいときは、<strong><code>getComputedStyle(element)</code></strong> という別の<ruby>魔法<rt>まほう</rt></ruby>を使う必要があるよ！」</p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-3"><a class="header" href="#まとめテーブル-3">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>特徴</th><th>内容</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>役割</strong></td><td>JavaScriptからCSSを操作する</td></tr>
-<tr><td><strong><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>のルール</strong></td><td>ハイフンなしの「キャメルケース」</td></tr>
-<tr><td><strong>値のルール</strong></td><td>必ず <strong>“ “</strong>（ダブルクォーテーション）で囲む文字列にする</td></tr>
-<tr><td><strong>単位</strong></td><td><ruby>数値<rt>すうち</rt></ruby>だけでなく <strong>“px”</strong> や <strong>“%”</strong> を必ずつける</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「スタイリストのStyleくん」を使えば、クリックしたときに<ruby>画面<rt>がめん</rt></ruby>を暗くしたり、メニューを横から出したりするような、リッチなサイトが作れるようになります。</p>
-<h2 id="v-historyオブジェクト"><a class="header" href="#v-historyオブジェクト">V. Historyオブジェクト</a></h2>
-<p><strong>Historyオブジェクト</strong>は、ブラウザの「戻る」ボタンや「進む」ボタンと同じ役割をするオブジェクトです。</p>
-<p>留学生の方には、Historyオブジェクトは**「ブラウザの中にある『タイムマシン』」**だと教えてあげてください。ユーザーが今までに見てきたページの履歴（ひれき）を管理しています。</p>
-<hr>
-<h3 id="1-historyオブジェクトとは"><a class="header" href="#1-historyオブジェクトとは">1. Historyオブジェクトとは？</a></h3>
-<p><code>window.history</code> を通じてアクセスします。ユーザーがそのタブでこれまでに訪れたページのリストを持っていて、JavaScriptから「1つ前のページに戻る」といった操作ができます。</p>
-<hr>
-<h3 id="2-よく使うプロパティ履歴の情報"><a class="header" href="#2-よく使うプロパティ履歴の情報">2. よく使うプロパティ（履歴の情報）</a></h3>
-<ul>
-<li><strong><code>length</code></strong>
-現在のタブの履歴リストに、全部でいくつページがあるかを教えてくれます。</li>
-<li><code>console.log(history.length);</code></li>
-<li>初めて開いたタブなら <code>1</code> になります。</li>
+<li><strong><code>status</code> / <code>defaultStatus</code></strong>（ステータス / デフォルト・ステータス）：</li>
+<li><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ブラウザの<ruby>一番下<rt>いちばんした</rt></ruby>に<ruby>昔<rt>むかし</rt></ruby>あった「ステータスバー」という<ruby>場所<rt>ばしょ</rt></ruby>に<ruby>文字<rt>もじ</rt></ruby>を<ruby>表示<rt>ひょうじ</rt></ruby>するための<ruby>設定<rt>せってい</rt></ruby>です。（※<ruby>現在<rt>げんざい</rt></ruby>のモダンなブラウザでは、セキュリティの<ruby>理由<rt>りゆう</rt></ruby>でほとんど<ruby>動<rt>うご</rt></ruby>きません）</li>
 </ul>
 <hr>
-<h3 id="3-よく使うメソッドタイムマシンを動かす"><a class="header" href="#3-よく使うメソッドタイムマシンを動かす">3. よく使うメソッド（タイムマシンを動かす）</a></h3>
-<p>直感的に使えるメソッドが<ruby>揃<rt>そろ</rt></ruby>っています。</p>
-<h4 id="back"><a class="header" href="#back"><strong><code>back()</code></strong></a></h4>
-<p>ブラウザの「戻る（←）」ボタンを押すのと同じです。1つ前のページに戻ります。</p>
-<ul>
-<li><code>history.back();</code></li>
-</ul>
-<h4 id="forward"><a class="header" href="#forward"><strong><code>forward()</code></strong></a></h4>
-<p>ブラウザの「進む（→）」ボタンを押すのと同じです。</p>
-<ul>
-<li><code>history.forward();</code></li>
-</ul>
-<h4 id="go数字"><a class="header" href="#go数字"><strong><code>go(数字)</code></strong></a></h4>
-<p>指定した数だけ、履歴を移動します。</p>
-<ul>
-<li><code>history.go(-1);</code> （1つ戻る。<code>back()</code> と同じ）</li>
-<li><code>history.go(-2);</code> （2つ戻る）</li>
-<li><code>history.go(1);</code> （1つ進む。<code>forward()</code> と同じ）</li>
-</ul>
-<hr>
-<h3 id="4-高度なメソッドurlを書かき換かええる履歴を作る"><a class="header" href="#4-高度なメソッドurlを書かき換かええる履歴を作る">4. 高度なメソッド：URLを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>える（履歴を作る）</a></h3>
-<p>最近のモダンなウェブサイト（SPAなど）でよく使われる、少し<ruby>魔法<rt>まほう</rt></ruby>のようなメソッドです。</p>
-<h4 id="pushstateデータ-タイトル-url"><a class="header" href="#pushstateデータ-タイトル-url"><strong><code>pushState(データ, タイトル, URL)</code></strong></a></h4>
-<p><strong>ページを読み直さずに、URLだけを新しく<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えて履歴に追加します。</strong></p>
-<ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <ruby>検索<rt>けんさく</rt></ruby>結果をフィルタリングしたときに、ページはそのままでURLだけを変えたいときに使います。</li>
-</ul>
-<h4 id="replacestateデータ-タイトル-url"><a class="header" href="#replacestateデータ-タイトル-url"><strong><code>replaceState(データ, タイトル, URL)</code></strong></a></h4>
-<p>今の履歴を、新しいURLで <strong><ruby>上書<rt>うわが</rt></ruby>き（<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え）</strong> します。</p>
-<hr>
-<h3 id="5-実際に動かしてみよう"><a class="header" href="#5-実際に動かしてみよう">5. 実際に動かしてみよう！</a></h3>
-<p>留学生に「戻るボタン」を自作する方法を教えてあげましょう。</p>
-<pre><code class="language-javascript">// 「戻る」ボタンを作るとき
-function goBack() {
-  // 履歴が1つ以上あれば戻る
-  if (history.length &gt; 1) {
-    history.back();
-  } else {
-    alert("戻るページがありません！");
-  }
-}
-
-</code></pre>
-<hr>
-<h3 id="6-留学生へのアドバイスプライバシーに注意"><a class="header" href="#6-留学生へのアドバイスプライバシーに注意">6. 留学生へのアドバイス：プライバシーに注意！</a></h3>
-<p>留学生が「ユーザーがどのサイトから来たか（URLの中身）」を知りたがることがありますが、それはできません。</p>
-<blockquote>
-<p><strong>「Historyオブジェクトは『何個戻れるか』や『戻れ！』という命令はできるけど、プライバシーを守るために『戻る先の具体的なURL』を覗（のぞ）くことはできないんだよ」</strong></p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-4"><a class="header" href="#まとめテーブル-4">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>length</code></strong></td><td>履歴の数</td><td>今まで何箇所（なんかしょ）の駅を通ったか</td></tr>
-<tr><td><strong><code>back()</code></strong></td><td>戻る</td><td>電車を1駅戻す</td></tr>
-<tr><td><strong><code>forward()</code></strong></td><td>進む</td><td>電車を1駅進める</td></tr>
-<tr><td><strong><code>go(-2)</code></strong></td><td>指定した数戻る</td><td>特急で2駅分戻る</td></tr>
-<tr><td><strong><code>pushState()</code></strong></td><td>履歴を<ruby>偽造<rt>ぎそう</rt></ruby>（？）する</td><td>実際に移動せずに、切符のスタンプだけ増やす</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「タイムマシンのボタン」をJavaScriptで操作できると、よりアプリらしい便利なサイトが作れるようになります。</p>
-<h2 id="vi-imageオブジェクト"><a class="header" href="#vi-imageオブジェクト">VI. Imageオブジェクト</a></h2>
-<p>JavaScriptで<ruby>画像<rt>がぞう</rt></ruby>を扱う <strong>Imageオブジェクト</strong> は、<ruby>画面<rt>がめん</rt></ruby>に写真やイラストを<ruby>表示<rt>ひょうじ</rt></ruby>するための特別な道具です。</p>
-<p>留学生の方には、Imageオブジェクトは**「デジタルの『写真立て』」**だと教えてあげてください。新しい写真（データ）を<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んで、それをウェブサイトという「部屋」の好きな場所に飾ることができます。</p>
-<hr>
-<h3 id="1-imageオブジェクトとは"><a class="header" href="#1-imageオブジェクトとは">1. Imageオブジェクトとは？</a></h3>
-<p>HTMLの <code>&lt;img&gt;</code> タグと同じ役割をしますが、JavaScriptの中で <strong>「まだ<ruby>画面<rt>がめん</rt></ruby>にない<ruby>画像<rt>がぞう</rt></ruby>」をあらかじめ準備する</strong> のにとても便利です。</p>
-<p>作り方は2通りあります：</p>
-<ol>
-<li><strong>HTMLから持ってくる：</strong> <code>document.getElementById("myImg")</code></li>
-<li><strong>新しく作る：</strong> <code>new Image()</code></li>
-</ol>
-<hr>
-<h3 id="2-よく使うプロパティ写真の状態"><a class="header" href="#2-よく使うプロパティ写真の状態">2. よく使うプロパティ（写真の状態）</a></h3>
-<p>写真がどんな大きさか、どこにあるかを知るための情報です。</p>
-<ul>
-<li><strong><code>src</code></strong>（ソース）
-<ruby>画像<rt>がぞう</rt></ruby>の「ファイルの場所（URL）」です。ここを<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えると、別の<ruby>画像<rt>がぞう</rt></ruby>に<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>わります。</li>
-<li>**<code>width</code> / <code>height**</code>
-<ruby>画像<rt>がぞう</rt></ruby>の「横幅（よこはば）」と「高さ」です。</li>
-<li><strong><code>complete</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが終わったかどうかを <code>true</code> / <code>false</code> で教えてくれます。</li>
-<li><strong><code>alt</code></strong>（オルト）
-<ruby>画像<rt>がぞう</rt></ruby>が<ruby>表示<rt>ひょうじ</rt></ruby>できなかったときに出る「説明文」です。</li>
-</ul>
-<hr>
-<h3 id="3-よく使うイベントメソッド的な役割"><a class="header" href="#3-よく使うイベントメソッド的な役割">3. よく使うイベント（メソッド的な役割）</a></h3>
-<p>Imageオブジェクトでは、メソッドよりも <strong>「状態が変わったときのイベント」</strong> をよく使います。</p>
-<ul>
-<li><strong><code>onload</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みが <strong>「成功（せいこう）」</strong> して、<ruby>表示<rt>ひょうじ</rt></ruby>できるようになったときに<ruby>動<rt>うご</rt></ruby>きます。</li>
-<li><strong><code>onerror</code></strong>
-<ruby>画像<rt>がぞう</rt></ruby>のファイルが見つからないなど、<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みに <strong>「失敗（しっぱい）」</strong> したときに<ruby>動<rt>うご</rt></ruby>きます。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう-3"><a class="header" href="#4-実際に動かしてみよう-3">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「JavaScriptで新しく<ruby>画像<rt>がぞう</rt></ruby>を作って<ruby>表示<rt>ひょうじ</rt></ruby>する」流れを説明するコード<ruby>例<rt>れい</rt></ruby>です。</p>
-<pre><code class="language-javascript">// 1. 新しい「写真立て（Imageオブジェクト）」を作る
-const myPic = new Image();
-
-// 2. 読（よ）み込（こ）みが終わったあとの「お祝い」を決める
-myPic.onload = function() {
-  console.log("画像（がぞう）の準備ができました！サイズは " + myPic.width + "px です。");
-  // 画面（がめん）に表示（ひょうじ）する（bodyに追加）
-  document.body.appendChild(myPic);
-};
-
-// 3. 失敗したとき（エラー）の準備
-myPic.onerror = function() {
-  console.log("画像（がぞう）が見つかりませんでした...");
-};
-
-// 4. 最後に「写真（データ）」を入れる（読（よ）み込（こ）みスタート！）
-myPic.src = "https://example.com/japan.jpg";
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイスプリロード先読さきよみ"><a class="header" href="#5-留学生へのアドバイスプリロード先読さきよみ">5. 留学生へのアドバイス：プリロード（<ruby>先読<rt>さきよ</rt></ruby>み）</a></h3>
-<p>「どうしてHTMLに書かずにJavaScriptで作るの？」と聞かれたら、こう答えてあげてください。</p>
-<blockquote>
-<p><strong>「ゲームや重いサイトでは、<ruby>画像<rt>がぞう</rt></ruby>が出るまで時間がかかるよね。JavaScriptで先に<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んでおけば（プリロード）、ユーザーがボタンを押した瞬間にパッと<ruby>画像<rt>がぞう</rt></ruby>を出せるから、親切なんだよ！」</strong></p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-5"><a class="header" href="#まとめテーブル-5">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・イベント</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>src</code></strong></td><td><ruby>画像<rt>がぞう</rt></ruby>の住所</td><td>どの写真を入れるか決める</td></tr>
-<tr><td>**<code>width</code> / <code>height**</code></td><td><ruby>画像<rt>がぞう</rt></ruby>のサイズ</td><td>写真の大きさ</td></tr>
-<tr><td><strong><code>onload</code></strong></td><td><ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>み完了</td><td>「写真の表示が完了した<ruby>現像<rt>げんぞう</rt></ruby>が終わったよ！」</td></tr>
-<tr><td><strong><code>onerror</code></strong></td><td><ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みエラー</td><td>「写真をなくしちゃった！」</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？Imageオブジェクトをマスターすると、スライドショーやキャラクターが動くゲームなどが作れるようになります。</p>
-<h2 id="vi-anchorオブジェクト"><a class="header" href="#vi-anchorオブジェクト">VI. Anchorオブジェクト</a></h2>
-<p><strong>Anchor（アンカー）オブジェクト</strong>は、ウェブサイトにある「リンク（<code>&lt;a&gt;</code> タグ）」のことです。</p>
-<p>留学生の方には、Anchorオブジェクトは**「別の場所へつなぐ『ワープの門（もん）』」**だと教えてあげてください。Locationオブジェクトと似ていますが、Locationが「ブラウザ自身」の<ruby>居場所<rt>いばしょ</rt></ruby>を扱うのに対し、Anchorは「ページ内にある<ruby>個別<rt>こべつ</rt></ruby>のリンク」を扱います。</p>
-<hr>
-<h3 id="1-anchorオブジェクトとは"><a class="header" href="#1-anchorオブジェクトとは">1. Anchorオブジェクトとは？</a></h3>
-<p>HTMLの <code>&lt;a&gt;</code> 要素（アンカー要素）が、JavaScriptの世界では「HTMLAnchorElement」というオブジェクトになります。</p>
-<p>JavaScriptからは、主に以下の方法でアクセスします。</p>
-<ol>
-<li><strong><code>document.links[0]</code></strong>（ページにある1番目のリンク）</li>
-<li><strong><code>document.getElementById("myLink")</code></strong>（IDで指定）</li>
-</ol>
-<hr>
-<h3 id="2-よく使うプロパティ門の設定せってい情報"><a class="header" href="#2-よく使うプロパティ門の設定せってい情報">2. よく使うプロパティ（門の<ruby>設定<rt>せってい</rt></ruby>情報）</a></h3>
-<p>Anchorオブジェクトは、移動先のURLをバラバラに分解して持っています。これは <strong>Locationオブジェクトとほぼ同じ</strong> です！</p>
+<h4 id="2-windowオブジェクトのメソッド命令めいれい"><a class="header" href="#2-windowオブジェクトのメソッド命令めいれい">2. windowオブジェクトのメソッド（<ruby>命令<rt>めいれい</rt></ruby>）</a></h4>
+<h5 id="-ウィンドウを動うごかす開ひらく"><a class="header" href="#-ウィンドウを動うごかす開ひらく">🖥️ ウィンドウを<ruby>動<rt>うご</rt></ruby>かす・<ruby>開<rt>ひら</rt></ruby>く</a></h5>
 <ul>
 <li>
-<p><strong><code>href</code></strong>
-リンク先のフルアドレス（住所）です。</p>
+<p><strong><code>open()</code> / <code>close()</code></strong>：</p>
 </li>
 <li>
-<p><code>myLink.href = "https://example.com";</code> と書けば、飛び先を自由に変えられます。</p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>新<rt>あたら</rt></ruby>しいウィンドウ（またはタブ）を**<ruby>開<rt>ひら</rt></ruby>く**<ruby>命令<rt>めいれい</rt></ruby>と、<ruby>今<rt>いま</rt></ruby>あるウィンドウを**<ruby>閉<rt>と</rt></ruby>じる**<ruby>命令<rt>めいれい</rt></ruby>です。</p>
 </li>
 <li>
-<p>**<code>protocol</code> / <code>host</code> / <code>pathname**</code>
-URLの「http:」の部分や、「ドメイン名」の部分だけを<ruby>個別<rt>こべつ</rt></ruby>に<ruby>読<rt>よ</rt></ruby>み<ruby>書<rt>か</rt></ruby>きできます。</p>
+<p><strong><code>moveTo(x, y)</code> / <code>moveBy(x, y)</code></strong>：</p>
 </li>
 <li>
-<p><strong><code>target</code></strong>
-リンクをどこで開くか（今のタブか、新しいタブか）の<ruby>設定<rt>せってい</rt></ruby>です。</p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ウィンドウの<ruby>画面上<rt>がめんじょう</rt></ruby>の<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かす<ruby>命令<rt>めいれい</rt></ruby>です。<code>moveTo</code> は<ruby>指定<rt>してい</rt></ruby>した<ruby>座標<rt>ざひょう</rt></ruby>（<ruby>絶対位置<rt>ぜったいいち</rt></ruby>）へジャンプし、<code>moveBy</code> は<ruby>今<rt>いま</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>から<ruby>指定<rt>してい</rt></ruby>した<ruby>数<rt>かず</rt></ruby>だけ（<ruby>相対位置<rt>そうたいいち</rt></ruby>）<ruby>動<rt>うご</rt></ruby>きます。</p>
 </li>
 <li>
-<p><code>"_blank"</code> にすると、新しいタブで開くようになります。</p>
+<p><strong><code>resizeTo(w, h)</code> / <code>resizeBy(w, h)</code></strong>：</p>
 </li>
 <li>
-<p><strong><code>text</code>（または <code>textContent</code>）</strong>
-<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>されている「リンクの文字」です。</p>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> ウィンドウの<ruby>大<rt>おお</rt></ruby>きさを<ruby>変<rt>か</rt></ruby>える<ruby>命令<rt>めいれい</rt></ruby>です。<code>resizeTo</code> は<ruby>指定<rt>してい</rt></ruby>した<ruby>幅<rt>はば</rt></ruby>と<ruby>高<rt>たか</rt></ruby>さに<ruby>変更<rt>へんこう</rt></ruby>し、<code>resizeBy</code> は<ruby>今<rt>いま</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさからプラスマイナスします。</p>
 </li>
 </ul>
-<hr>
-<h3 id="3-よく使うメソッド"><a class="header" href="#3-よく使うメソッド">3. よく使うメソッド</a></h3>
-<p>Anchorオブジェクト<ruby>専用<rt>せんよう</rt></ruby>の特別なメソッドは少ないですが、Elementオブジェクトから<ruby>受<rt>う</rt></ruby>け<ruby>継<rt>つ</rt></ruby>いだ大切なメソッドを使います。</p>
-<ul>
-<li><strong><code>click()</code></strong>
-人間がマウスでクリックしたのと同じことを、JavaScriptで実行します。</li>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> 「3秒後に自<ruby>動的<rt>どうてき</rt></ruby>にボタンをクリックしてワープさせる」といったことができます。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう-4"><a class="header" href="#4-実際に動かしてみよう-4">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「危ないリンクをチェックする」というイメージでコードを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. ページ内の最初のリンクを取得（しゅとく）
-const link = document.links[0];
-
-// 2. リンク先が「https」で始まっているかチェック（正規（せいき）表現（ひょうげん）の ^ を活用！）
-if (/^https:/.test(link.protocol)) {
-  console.log("このリンクは安全です。");
-} else {
-  // 安全じゃない場合は、色を赤くして警告（けいこく）する
-  link.style.color = "red";
-  link.text = "⚠️ 注意：安全ではないリンクです";
-}
-
-// 3. クリックしたときに新しいタブで開くようにする
-link.target = "_blank";
-
-</code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>正規表現は付録参照</p>
+<p>これらの<ruby>画面自体<rt>がめんじたい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしたりサイズを<ruby>変<rt>か</rt></ruby>えたりするメソッドは、ユーザーをびっくりさせないよう、<ruby>現在<rt>げんざい</rt></ruby>の<ruby>一般的<rt>いっぱんてき</rt></ruby>なブラウザではセキュリティガードがかかり、<ruby>動<rt>うご</rt></ruby>かない<ruby>設定<rt>せってい</rt></ruby>になっていることが<ruby>多<rt>おお</rt></ruby>いです。</p>
 </blockquote>
+<ul>
+<li><strong><code>focus()</code> / <code>blur()</code></strong>：</li>
+<li><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> そのウィンドウを<ruby>一番前<rt>いちばんまえ</rt></ruby>に<ruby>持<rt>も</rt></ruby>ってきてパソコンの<ruby>主役<rt>しゅやく</rt></ruby>にする（フォーカスを<ruby>当<rt>あ</rt></ruby>てる）<ruby>命令<rt>めいれい</rt></ruby>と、<ruby>逆<rt>ぎゃく</rt></ruby>に<ruby>主役<rt>しゅやく</rt></ruby>から<ruby>外<rt>はず</rt></ruby>す（フォーカスを<ruby>外<rt>はず</rt></ruby>す）<ruby>命令<rt>めいれい</rt></ruby>です。</li>
+</ul>
+<h5 id="-ユーザーへのメッセージダイアログ"><a class="header" href="#-ユーザーへのメッセージダイアログ">🚨 ユーザーへのメッセージ（ダイアログ）</a></h5>
+<ul>
+<li>
+<p><strong><code>alert("メッセージ")</code></strong>：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>画面<rt>がめん</rt></ruby>に「OK」ボタンだけの<ruby>警告<rt>けいこく</rt></ruby>メッセージを<ruby>出<rt>だ</rt></ruby>す、<ruby>一番<rt>いちばん</rt></ruby>おなじみの<ruby>命令<rt>めいれい</rt></ruby>です。</p>
+</li>
+<li>
+<p><strong><code>confirm("いいですか？")</code></strong>：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> 「OK」と「キャンセル」の2つのボタンを<ruby>出<rt>だ</rt></ruby>す<ruby>命令<rt>めいれい</rt></ruby>です。ユーザーが「OK」を<ruby>押<rt>お</rt></ruby>すと <code>true</code>、「キャンセル」を<ruby>押<rt>お</rt></ruby>すと <code>false</code> が<ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>として<ruby>返<rt>かえ</rt></ruby>ってきます。</p>
+</li>
+<li>
+<p><strong><code>prompt("名前は？")</code></strong>：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> <ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>できるボックスを<ruby>出<rt>だ</rt></ruby>す<ruby>命令<rt>めいれい</rt></ruby>です。<ruby>入力<rt>にゅうりょく</rt></ruby>された<ruby>文字<rt>もじ</rt></ruby>が<ruby>戻<rt>もど</rt></ruby>り<ruby>値<rt>ち</rt></ruby>になります。</p>
+</li>
+</ul>
+<h5 id="-タイマー時間じかんをコントロールする"><a class="header" href="#-タイマー時間じかんをコントロールする">⏱️ タイマー（<ruby>時間<rt>じかん</rt></ruby>をコントロールする）</a></h5>
+<p><ruby>学生<rt>がくせい</rt></ruby>のゲーム<ruby>作<rt>づく</rt></ruby>りやWebサイトの<ruby>動<rt>うご</rt></ruby>き（アニメーション）で<ruby>大活躍<rt>だいかつやく</rt></ruby>するツートップです！</p>
+<ul>
+<li>
+<p><strong><code>setTimeout(関数, ミリ秒)</code> / <code>clearTimeout(タイマーID)</code></strong>：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> 「<ruby>指定<rt>してい</rt></ruby>した<ruby>秒数<rt>びょうすう</rt></ruby>が<ruby>経<rt>た</rt></ruby>ったあとに、1<ruby>回<rt>かい</rt></ruby>だけ<ruby>関数<rt>かんすう</rt></ruby>を<ruby>実行<rt>じっこう</rt></ruby>する」<ruby>命令<rt>めいれい</rt></ruby>です（※1000ミリ<ruby>秒<rt>びょう</rt></ruby> ＝ 1<ruby>秒<rt>びょう</rt></ruby>）。<ruby>途中<rt>とちゅう</rt></ruby>でストップしたいときは <code>clearTimeout</code> を<ruby>使<rt>つか</rt></ruby>います。</p>
+</li>
+<li>
+<p><strong><code>setInterval(関数, ミリ秒)</code> / <code>clearInterval(タイマーID)</code></strong>：</p>
+</li>
+<li>
+<p><strong><ruby>意味<rt>いみ</rt></ruby>：</strong> 「<ruby>指定<rt>してい</rt></ruby>した<ruby>秒数<rt>びょうすう</rt></ruby>ごとに、ずーっと<ruby>何回<rt>なんかい</rt></ruby>も<ruby>関数<rt>かんすう</rt></ruby>を<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す」<ruby>命令<rt>めいれい</rt></ruby>です。<ruby>時計<rt>とけい</rt></ruby>やアクションゲームの<ruby>動<rt>うご</rt></ruby>きに<ruby>使<rt>つか</rt></ruby>います。<ruby>止<rt>と</rt></ruby>めるときは<ruby>必<rt>かなら</rt></ruby>ず <code>clearInterval</code> で<ruby>消<rt>け</rt></ruby>す<ruby>必要<rt>ひつよう</rt></ruby>があります。</p>
+</li>
+</ul>
 <hr>
-<h3 id="5-留学生へのアドバイスlocationとの違い"><a class="header" href="#5-留学生へのアドバイスlocationとの違い">5. 留学生へのアドバイス：Locationとの違い</a></h3>
-<p>「<code>window.location</code> と何が違うの？」と聞かれたら、こう答えてあげてください。</p>
+<h4 id="3-学生向がくせいむけのまとめ"><a class="header" href="#3-学生向がくせいむけのまとめ">3. <ruby>学生向<rt>がくせいむ</rt></ruby>けのまとめ</a></h4>
 <blockquote>
-<p><strong>「<code>location</code> は、今あなたが乗っている『船（ブラウザ）』そのものの操縦席（そうじゅうせき）だよ。<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>えると船が動く。
-<code>anchor</code> は、ページの中にたくさんある『ワープボタン』のこと。それをいじっても、クリックするまでは船は動かないんだよ」</strong></p>
+<p><strong>JavaScriptの<ruby>大<rt>だい</rt></ruby>ボス <code>window</code></strong><br><code>window</code> オブジェクトは、ブラウザの<ruby>画面全体<rt>がめんぜんたい</rt></ruby>を<ruby>支配<rt>しはい</rt></ruby>している「<ruby>一番大<rt>いちばんおお</rt></ruby>きなお<ruby>父<rt>とう</rt></ruby>さん」のようなオブジェクトです。<br><ruby>実<rt>じつ</rt></ruby>は、いつも<ruby>使<rt>つか</rt></ruby>っている <code>alert()</code> も、<ruby>正<rt>ただ</rt></ruby>しくは <strong><code>window.alert()</code></strong> と<ruby>書<rt>か</rt></ruby>きます。でも、<ruby>一番大<rt>いちばんおお</rt></ruby>ボスの<ruby>命令<rt>めいれい</rt></ruby>はいちいち <code>window.</code> と<ruby>書<rt>か</rt></ruby>かなくても、<ruby>省略<rt>しょうりゃく</rt></ruby>して <code>alert()</code> だけで<ruby>使<rt>つか</rt></ruby>っていいルールになっています。</p>
+<ul>
+<li><strong><ruby>中身<rt>なかみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>る（プロパティ）</strong>： <code>document</code>（ページの<ruby>中身<rt>なかみ</rt></ruby>）や <code>innerWidth</code>（<ruby>画面<rt>がめん</rt></ruby>の<ruby>幅<rt>はば</rt></ruby>）など、<ruby>今<rt>いま</rt></ruby>のブラウザの<ruby>状態<rt>じょうたい</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれます。</li>
+<li><strong>タイマーを<ruby>動<rt>うご</rt></ruby>かす（メソッド）</strong>： <strong><code>setTimeout</code></strong>（◯<ruby>秒後<rt>びょうご</rt></ruby>に1<ruby>回動<rt>かいうご</rt></ruby>かす）や <strong><code>setInterval</code></strong>（◯<ruby>秒<rt>びょう</rt></ruby>ごとに<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>動<rt>うご</rt></ruby>かす）は、Webサイトに<ruby>楽<rt>たの</rt></ruby>しい<ruby>動<rt>うご</rt></ruby>きやゲームを<ruby>作<rt>つく</rt></ruby>るために<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>命令<rt>めいれい</rt></ruby>なので、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をしっかり<ruby>覚<rt>おぼ</rt></ruby>えましょう！</li>
+</ul>
 </blockquote>
 <hr>
-<h3 id="まとめテーブル-6"><a class="header" href="#まとめテーブル-6">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>href</code></strong></td><td>リンク先の住所</td><td>どこにワープするか</td></tr>
-<tr><td><strong><code>target</code></strong></td><td>開き方の<ruby>設定<rt>せってい</rt></ruby></td><td>今の場所を<ruby>離<rt>はな</rt></ruby>れるか、新しい窓を作るか</td></tr>
-<tr><td><strong><code>text</code></strong></td><td><ruby>表示<rt>ひょうじ</rt></ruby>される文字</td><td>門に書いてある看板（かんばん）</td></tr>
-<tr><td><strong><code>click()</code></strong></td><td>クリックを実行</td><td>誰かの代わりにボタンを押してあげる</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「ワープの門」であるAnchorオブジェクトを操作できれば、ユーザーを正しいページに案内したり、安全なリンクだけを許可したりするプログラムが作れるようになります。</p>
-<h2 id="vii-navigatorナビゲーターオブジェクト"><a class="header" href="#vii-navigatorナビゲーターオブジェクト">VII. Navigator（ナビゲーター）オブジェクト</a></h2>
-<p><strong>Navigator（ナビゲーター）オブジェクト</strong>は、今使っている「ブラウザ（ChromeやSafariなど）」や「パソコン・スマホの状態」を教えてくれるオブジェクトです。</p>
-<p>留学生の方には、Navigatorオブジェクトは**「ブラウザの身分証明書（みぶんしょうめいしょ）」**だと教えてあげてください。どこの国の言葉を使っているか、インターネットにつながっているか、などの情報をすべて持っています。</p>
-<hr>
-<h3 id="1-navigatorオブジェクトとは"><a class="header" href="#1-navigatorオブジェクトとは">1. Navigatorオブジェクトとは？</a></h3>
-<p><code>window.navigator</code> を通じてアクセスします。このオブジェクトを見れば、ユーザーがどんな環境（かんきょう）でサイトを見ているかが分かります。</p>
-<hr>
-<h3 id="2-よく使うプロパティブラウザの情報"><a class="header" href="#2-よく使うプロパティブラウザの情報">2. よく使うプロパティ（ブラウザの情報）</a></h3>
-<p>「この人は誰？」「どんな<ruby>設定<rt>せってい</rt></ruby>？」を知るためのプロパティです。</p>
-<ul>
-<li>
-<p><strong><code>userAgent</code></strong>（ユーザーエージェント）
-ブラウザの名前やバージョン、OS（WindowsかMacか）などの詳細な情報です。</p>
-</li>
-<li>
-<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> これを見て「iPhoneの人にはiPhone用の<ruby>画面<rt>がめん</rt></ruby>を見せる」といった判断ができます。</p>
-</li>
-<li>
-<p><strong><code>language</code></strong>
-ブラウザで<ruby>設定<rt>せってい</rt></ruby>されている「言語（げんご）」です。</p>
-</li>
-<li>
-<p><strong><ruby>例<rt>れい</rt></ruby>：</strong> 日本語なら <code>ja</code>、英語なら <code>en-US</code> が返ってきます。これを使えば、自動でメッセージを英語に変えられます。</p>
-</li>
-<li>
-<p><strong><code>onLine</code></strong>
-今、インターネットに <strong>つながっているか（オンラインか）</strong> を <code>true</code> / <code>false</code> で教えてくれます。</p>
-</li>
-<li>
-<p><strong><code>cookieEnabled</code></strong>
-クッキー（ブラウザにデータを保存する機能）が使える<ruby>設定<rt>せってい</rt></ruby>になっているかを確認できます。</p>
-</li>
-</ul>
-<hr>
-<h3 id="3-よく使うメソッド便利な機能"><a class="header" href="#3-よく使うメソッド便利な機能">3. よく使うメソッド（便利な機能）</a></h3>
-<p>最近のブラウザでは、Navigatorを使って高度な機能（カメラ、位置情報、コピーなど）を動かすことができます。</p>
-<h4 id="clipboardwritetext"><a class="header" href="#clipboardwritetext"><strong><code>clipboard.writeText()</code></strong></a></h4>
-<p>文字を <strong>「クリップボードにコピー」</strong> します。</p>
-<ul>
-<li><code>navigator.clipboard.writeText("コピーしたい文字");</code></li>
-</ul>
-<h4 id="geolocationgetcurrentposition"><a class="header" href="#geolocationgetcurrentposition"><strong><code>geolocation.getCurrentPosition()</code></strong></a></h4>
-<p>ユーザーの <strong>「今の場所（GPS）」</strong> を<ruby>取得<rt>しゅとく</rt></ruby>します。</p>
-<ul>
-<li><strong>イメージ：</strong> 地図アプリなどを作る時に使います。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう-5"><a class="header" href="#4-実際に動かしてみよう-5">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「おもてなし（自動言語<ruby>切<rt>きり</rt></ruby>り<ruby>替<rt>か</rt></ruby>え）」のイメージでコードを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. ユーザーの言語をチェック
-const userLang = navigator.language;
-
-if (userLang.includes("ja")) {
-  console.log("こんにちは！");
-} else if (userLang.includes("en")) {
-  console.log("Hello!");
-}
-
-// 2. ネットがつながっているか監視（かんし）する
-if (navigator.onLine) {
-  console.log("オンラインです 🟢");
-} else {
-  alert("ネットワークが切れています 🔴");
-}
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイス情報の正確性せいかくせい"><a class="header" href="#5-留学生へのアドバイス情報の正確性せいかくせい">5. 留学生へのアドバイス：情報の正確性（せいかくせい）</a></h3>
-<p>「<code>userAgent</code> を見れば、100% 正確にブラウザがわかりますか？」と聞かれたら、こう答えてあげてください。</p>
-<blockquote>
-<p><strong>「<code>userAgent</code> は昔からの複雑な歴史があって、実は少しウソが混ざっていることもあるんだ（Chrome なのに Safari と書いてあったりする）。
-だから、あまり深く信じすぎず、『だいたいこんな感じ』と判断するために使うのがプロのコツだよ！」</strong></p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-7"><a class="header" href="#まとめテーブル-7">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>userAgent</code></strong></td><td>ブラウザ・OS情報</td><td><ruby>自己<rt>じこ</rt></ruby>紹介（名前や出身地）</td></tr>
-<tr><td><strong><code>language</code></strong></td><td>言語<ruby>設定<rt>せってい</rt></ruby></td><td>何語で話してほしいか</td></tr>
-<tr><td><strong><code>onLine</code></strong></td><td>通信状態</td><td>今、電話がつながっているか</td></tr>
-<tr><td><strong><code>clipboard</code></strong></td><td>コピー機能</td><td>メモをクリップで留める</td></tr>
-<tr><td><strong><code>geolocation</code></strong></td><td>位置情報</td><td>今どこにいるか教える</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「身分証明書」であるNavigatorオブジェクトを使えば、世界中のユーザー一人ひとりに合わせた親切なサイトが作れるようになります。</p>
-<h2 id="viii-cookieオブジェクト"><a class="header" href="#viii-cookieオブジェクト">VIII. Cookieオブジェクト</a></h2>
-<h3 id="1-クッキーcookieってなに"><a class="header" href="#1-クッキーcookieってなに">1. クッキー（Cookie）ってなに？</a></h3>
-<p><ruby>通常<rt>つうじょう</rt></ruby>、ブラウザはページを閉じると「さっきまで何をしていたか」を忘れてしまいます。そこで、**「ユーザーの情報をブラウザに保存しておいて、次にサイトに来たときに思い出せるようにする」**のがクッキーの仕事です。</p>
-<ul>
-<li><strong>ログイン維持：</strong> 「お帰りなさい！」と名前が出る。</li>
-<li><strong>買い物カゴ：</strong> ページを移動しても選んだ商品が消えない。</li>
-<li><strong><ruby>設定<rt>せってい</rt></ruby>保存：</strong> ダークモードなどの<ruby>設定<rt>せってい</rt></ruby>を覚えておく。</li>
-</ul>
-<hr>
-<h3 id="2-javascriptでのクッキー操作"><a class="header" href="#2-javascriptでのクッキー操作">2. JavaScriptでのクッキー操作</a></h3>
-<p>JavaScriptでは <code>document.cookie</code> という特別なプロパティを使って、このメモ帳を<ruby>読<rt>よ</rt></ruby>み<ruby>書<rt>か</rt></ruby>きします。</p>
-<h4 id="クッキーを保存する書く"><a class="header" href="#クッキーを保存する書く"><strong>クッキーを保存する（書く）</strong></a></h4>
-<p>クッキーは「名前=値」のセットで保存します。</p>
-<pre><code class="language-javascript">// 「username」という名前に「Taro」を保存する
-document.cookie = "username=Taro";
-
-</code></pre>
-<h4 id="クッキーに期限きげんをつける"><a class="header" href="#クッキーに期限きげんをつける"><strong>クッキーに期限（きげん）をつける</strong></a></h4>
-<p>期限を決めないと、ブラウザを閉じると消えてしまいます。ずっと覚えておいてほしいときは <code>max-age</code>（秒数）を使います。</p>
-<pre><code class="language-javascript">// 7日間（604800秒）覚えておいてね！
-document.cookie = "username=Taro; max-age=604800";
-
-</code></pre>
-<h4 id="クッキーを読み取る"><a class="header" href="#クッキーを読み取る"><strong>クッキーを読み取る</strong></a></h4>
-<p><code>document.cookie</code> を見ると、保存されているすべてのクッキーが1つの長い文字列で返ってきます。</p>
-<pre><code class="language-javascript">console.log(document.cookie); // "username=Taro; theme=dark"
-
-</code></pre>
-<hr>
-<h3 id="3-留学生への説明ポイントクッキーのルール"><a class="header" href="#3-留学生への説明ポイントクッキーのルール">3. 留学生への説明ポイント：クッキーの「ルール」</a></h3>
-<p>クッキーを扱うときには、留学生に以下の3つのルールを教えてあげてください。</p>
-<ol>
-<li><strong>サイズが小さい：</strong> 4KB（約2000文字）くらいしか保存できません。あくまで「短いメモ」用です。</li>
-<li><strong>有効期限（ゆうこうきげん）：</strong> 期限が切れると、<ruby>魔法<rt>まほう</rt></ruby>が解けるように消えてしまいます。</li>
-<li><strong>セキュリティ：</strong> クッキーにはパスワードなどの大事な情報は直接書かないのがルールです（盗まれる危険があるため）。</li>
-</ol>
-<hr>
-<h3 id="4-実際に動かしてみよう-6"><a class="header" href="#4-実際に動かしてみよう-6">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「名前を覚えるプログラム」のイメージを見せてあげましょう。</p>
-<pre><code class="language-javascript">// 1. クッキーをセットする関数（かんすう）
-function saveName() {
-  const name = prompt("あなたのお名前は？");
-  // 1日後まで保存
-  document.cookie = "userName=" + name + "; max-age=86400";
-  alert("保存しました！");
-}
-
-// 2. クッキーから名前を探す関数（かんすう）
-function greet() {
-  const cookies = document.cookie;
-  if (cookies.includes("userName")) {
-    // 文字列の中から名前の部分だけ取り出す（少し工夫が必要）
-    const nameValue = cookies.split("userName=")[1].split(";")[0];
-    alert("お帰りなさい、" + nameValue + "さん！");
-  } else {
-    alert("はじめまして！");
-  }
-}
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイスlocalstorageとの違い"><a class="header" href="#5-留学生へのアドバイスlocalstorageとの違い">5. 留学生へのアドバイス：LocalStorageとの違い</a></h3>
-<p>最近はクッキーの代わりに <strong><code>localStorage</code></strong> という新しい道具を使うことが多いです。</p>
-<blockquote>
-<p>「クッキーはサーバー（サイトの<ruby>裏側<rt>うらがわ</rt></ruby>）に自動で<ruby>送信<rt>そうしん</rt></ruby>されるメモ。
-<code>localStorage</code> は、ブラウザだけに保存する大きな物置（ものおき）。
-<strong>最近のプログラミングでは、大きなデータを保存するなら <code>localStorage</code> を使うのが主流だよ！</strong>」</p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-8"><a class="header" href="#まとめテーブル-8">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>特徴</th><th>内容</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>役割</strong></td><td>ユーザーの情報を一時保存</td><td>お店の「ポイントカード」</td></tr>
-<tr><td><strong>保存場所</strong></td><td>ブラウザの中</td><td>自分の財布（さいふ）の中</td></tr>
-<tr><td><strong>プロパティ名</strong></td><td><code>document.cookie</code></td><td><ruby>共有<rt>きょうゆう</rt></ruby>のメモ帳</td></tr>
-<tr><td><strong>最大サイズ</strong></td><td>約 4KB</td><td>付箋（ふせん）1枚分</td></tr>
-<tr><td><strong>主な用途</strong></td><td>ログイン状態の管理</td><td>「この人は会員です」という印</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？「ブラウザが持っている<ruby>記憶<rt>きおく</rt></ruby>の付箋」というイメージが伝われば、クッキーの基本は<ruby>完璧<rt>かんぺき</rt></ruby>です。</p>
-<h2 id="i-eventオブジェクト"><a class="header" href="#i-eventオブジェクト">I. Eventオブジェクト</a></h2>
-<p>JavaScriptはウェブページの上で起こるさまざまな「事件」に<ruby>反応<rt>はんのう</rt></ruby>して、<ruby>動<rt>うご</rt></ruby>きます。</p>
-<ul>
-<li>マウスでウェブページのボタンをクリックする</li>
-<li>ボックスに文字を<ruby>入力<rt>にゅうりょく</rt></ruby>する</li>
-<li><ruby>画面<rt>がめん</rt></ruby>をスクロールする</li>
-</ul>
-<p>そうした「事件」をJavaScriptでは <strong>「イベント」</strong> と呼びます。</p>
-<p>JavaScriptにおける <strong>Event（イベント）オブジェクト</strong> は、ウェブサイトで「何かが起きたとき」に作られる、たくさんの情報が詰まった <strong>「報告書（ほうこくしょ）」</strong> のようなものです。</p>
-<p><strong>「クリックやキー<ruby>入力<rt>にゅうりょく</rt></ruby>という『事件』が起きたときに、警察官が書くメモ」</strong> なのです。</p>
-<hr>
-<h3 id="1-eventオブジェクトとは"><a class="header" href="#1-eventオブジェクトとは">1. Eventオブジェクトとは？</a></h3>
-<p>マウスをクリックした、キーボードを叩いた、<ruby>画面<rt>がめん</rt></ruby>をスクロールした…。これらはすべて「イベント」です。
-イベントが発生したとき、JavaScriptは自<ruby>動的<rt>どうてき</rt></ruby>に「誰が、いつ、どこで何をしたか」という情報をまとめたオブジェクトを作ります。</p>
-<pre><code class="language-javascript">// ボタンがクリックされたとき
-button.addEventListener("click", function(event) {
-  // この「event」という引数（ひきすう）が、Eventオブジェクト（報告書）です
-  console.log(event); 
-});
-
-</code></pre>
-<hr>
-<h3 id="2-よく使うプロパティ何が起きたかの情報"><a class="header" href="#2-よく使うプロパティ何が起きたかの情報">2. よく使うプロパティ（何が起きたかの情報）</a></h3>
-<p>報告書に書かれている、大切なチェック項目です。</p>
-<h4 id="eventtargetターゲット"><a class="header" href="#eventtargetターゲット"><strong><code>event.target</code>（ターゲット）</strong></a></h4>
-<p>「誰が」事件を起こしたか、つまり <strong>イベントが発生したパーツ（要素）</strong> を指します。</p>
-<ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> クリックされた「ボタンそのもの」を指します。</li>
-</ul>
-<h4 id="eventtypeタイプ"><a class="header" href="#eventtypeタイプ"><strong><code>event.type</code>（タイプ）</strong></a></h4>
-<p>イベントの <strong>種類（なまえ）</strong> です。</p>
-<ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> “click”（クリック）、“keydown”（キーを押した）、“mouseover”（マウスが乗った）など。</li>
-</ul>
-<h4 id="eventkeyキー"><a class="header" href="#eventkeyキー"><strong><code>event.key</code>（キー）</strong></a></h4>
-<p>キーボードのイベント（keydownなど）のとき、<strong>どのキーを押したか</strong> を教えてくれます。</p>
-<ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> “Enter”、“a”、“ArrowUp”（上矢印）など。</li>
-</ul>
-<h4 id="eventclientx--eventclienty"><a class="header" href="#eventclientx--eventclienty">**<code>event.clientX</code> / <code>event.clientY**</code></a></h4>
-<p>マウスがクリックされたときの <strong><ruby>画面<rt>がめん</rt></ruby>上の座標（ざひょう）</strong>、つまり「場所」です。</p>
-<hr>
-<h3 id="3-よく使うメソッドイベントへの命令"><a class="header" href="#3-よく使うメソッドイベントへの命令">3. よく使うメソッド（イベントへの命令）</a></h3>
-<p>報告書を受け取ったあと、その後の<ruby>動<rt>うご</rt></ruby>きをコントロールする命令です。</p>
-<h4 id="eventpreventdefaultプリベントデフォルト"><a class="header" href="#eventpreventdefaultプリベントデフォルト"><strong><code>event.preventDefault()</code>（プリベント・デフォルト）</strong></a></h4>
-<p>ブラウザがもともと持っている <strong>「決まった<ruby>動<rt>うご</rt></ruby>き」をキャンセル</strong> します。</p>
-<ul>
-<li><strong>イメージ：</strong> 「リンク（<code>&lt;a&gt;</code>）を押したけど、ページを移動させないで！」というときに使います。</li>
-<li><strong>よく使う場所：</strong> フォームの<ruby>入力<rt>にゅうりょく</rt></ruby>が間違っているとき、<ruby>送信<rt>そうしん</rt></ruby>を止めるために使います。</li>
-</ul>
-<h4 id="eventstoppropagationストッププロパゲーション"><a class="header" href="#eventstoppropagationストッププロパゲーション"><strong><code>event.stopPropagation()</code>（ストップ・プロパゲーション）</strong></a></h4>
-<p>イベントが <strong>「親の要素」に伝わるのを止めます。</strong>（イベントのバブリング停止）</p>
-<ul>
-<li><strong>イメージ：</strong> 小さいボタンを押したのに、後ろにある大きい枠（わく）までクリックされたことになってしまうのを防ぎます。</li>
-</ul>
-<hr>
-<h3 id="4-実際に動かしてみよう-7"><a class="header" href="#4-実際に動かしてみよう-7">4. 実際に動かしてみよう！</a></h3>
-<p>留学生に「<ruby>入力<rt>にゅうりょく</rt></ruby>されたキーをチェックする」コードを見せてあげましょう。</p>
-<pre><code class="language-javascript">const input = document.querySelector("input");
-
-input.addEventListener("keydown", function(event) {
-  // どのキーを押したか報告書を見る
-  console.log("押されたキーは: " + event.key);
-  
-  // もし Enterキー だったら
-  if (event.key === "Enter") {
-    alert("Enterが押されました！送信（そうしん）します。");
-  }
-});
-
-</code></pre>
-<hr>
-<h3 id="5-留学生へのアドバイス名前は何でもいい"><a class="header" href="#5-留学生へのアドバイス名前は何でもいい">5. 留学生へのアドバイス：名前は何でもいい？</a></h3>
-<p><ruby>関数<rt>かんすう</rt></ruby>のカッコの中にある <code>(event)</code> という名前について、よく質問されます。</p>
-<blockquote>
-<p>「カッコの中の名前は <code>e</code> や <code>evt</code> と短く書くプログラマーも多いよ。
-でも、中身は同じ <strong>『イベントの報告書』</strong> だから安心してね！」</p>
-</blockquote>
-<hr>
-<h3 id="まとめテーブル-9"><a class="header" href="#まとめテーブル-9">まとめテーブル</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>プロパティ・メソッド</th><th>役割</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>target</code></strong></td><td>発生した場所</td><td>「犯人（はんにん）」はどのボタン？</td></tr>
-<tr><td><strong><code>type</code></strong></td><td>イベントの種類</td><td>「クリック事件」か「キー<ruby>入力<rt>にゅうりょく</rt></ruby>事件」か</td></tr>
-<tr><td><strong><code>preventDefault()</code></strong></td><td>元の<ruby>動<rt>うご</rt></ruby>きを止める</td><td>「勝手に動かないで！」とブレーキをかける</td></tr>
-<tr><td><strong><code>stopPropagation()</code></strong></td><td>伝言を止める</td><td>「周りの人には内緒（ないしょ）にして！」</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>いかがでしょうか？ Eventオブジェクトが使えるようになると、「ユーザーが何をしたか」に合わせた細かいリアクションができるようになります。</p>
+<p>いかがでしょうか。<ruby>数<rt>かず</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くて<ruby>圧倒<rt>あっとう</rt></ruby>されがちですが、<ruby>実務<rt>じつむ</rt></ruby>や<ruby>課題<rt>かだい</rt></ruby>で<ruby>今<rt>いま</rt></ruby>でも<ruby>主役<rt>しゅやく</rt></ruby>としてよく<ruby>使<rt>つか</rt></ruby>うのは、「<ruby>子分<rt>こぶん</rt></ruby>オブジェクト（<code>document</code>, <code>location</code>）」、「ダイアログ（<code>alert</code>, <code>confirm</code>）」、「タイマー（<code>setTimeout</code>, <code>setInterval</code>）」の3<ruby>大<rt>だい</rt></ruby>グループです。</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="04_01_オブジェクトの中を見てみよう.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="04_01_プロパティとメソッド.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="04_03_DOMツリー.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="04_04_Documentオブジェクト.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -1084,11 +448,11 @@ input.addEventListener("keydown", function(event) {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="04_01_オブジェクトの中を見てみよう.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="04_01_プロパティとメソッド.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="04_03_DOMツリー.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="04_04_Documentオブジェクト.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

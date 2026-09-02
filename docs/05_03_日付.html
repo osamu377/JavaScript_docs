@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,41 +174,39 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="日付date"><a class="header" href="#日付date">日付（Date）</a></h1>
-<p>プログラミングで「日付（ひづけ）」や「時間（じかん）」をあつかうときは、<strong>Dateオブジェクト</strong> を使います。</p>
-<p>留学生の方には、Dateオブジェクトは <strong>「世界中どこでも使える、<ruby>魔法<rt>まほう</rt></ruby>の時計（とけい）」</strong> だと教えてあげてください。</p>
+                        <h1 id="日付ひづけdate"><a class="header" href="#日付ひづけdate"><ruby>日付<rt>ひづけ</rt></ruby>（Date）</a></h1>
+<p>プログラミングで「<ruby>日付<rt>ひづけ</rt></ruby>」や「<ruby>時間<rt>じかん</rt></ruby>」をあつかうときは、<strong>Dateオブジェクト</strong> を<ruby>使<rt>つか</rt></ruby>います。</p>
+<p><ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby>には、Dateオブジェクトは <strong>「<ruby>世界中<rt>せかいじゅう</rt></ruby>どこでも<ruby>使<rt>つか</rt></ruby>える、<ruby>魔法<rt>まほう</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>（とけい）」</strong> だと<ruby>教<rt>おし</rt></ruby>えてあげてください。</p>
 <hr>
 <h2 id="i-dateオブジェクト"><a class="header" href="#i-dateオブジェクト">I. Dateオブジェクト</a></h2>
-<h3 id="1-dateオブジェクトの作り方"><a class="header" href="#1-dateオブジェクトの作り方">1. Dateオブジェクトの作り方</a></h3>
-<p>JavaScriptで時計を動かすには、まず <code>new Date()</code> と書きます。</p>
-<p>new を使うことで、メモリの中に新しい「日付というデータの箱」を作り、その場所を指し示すようになります。</p>
+<h3 id="1-dateオブジェクトの作つくり方かた"><a class="header" href="#1-dateオブジェクトの作つくり方かた">1. Dateオブジェクトの<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby></a></h3>
+<p>JavaScriptで<ruby>時計<rt>とけい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かすには、まず <code>new Date()</code> と<ruby>書<rt>か</rt></ruby>きます。</p>
+<p>new を<ruby>使<rt>つか</rt></ruby>うことで、メモリの<ruby>中<rt>なか</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しい「<ruby>日付<rt>ひづけ</rt></ruby>というデータの<ruby>箱<rt>はこ</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>り、その<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>指<rt>さ</rt></ruby>し<ruby>示<rt>しめ</rt></ruby>すようになります。</p>
 <pre><code class="language-javascript">// 今（現在）の日付と時間を手に入れる
 const now = new Date();
 console.log(now); 
 // 結果例（れい）：Fri Feb 20 2026 16:40:00 ...（実行した時の時間が出ます）
-
 </code></pre>
-<p>また、**「特定の日（過去や未来）」**の時計を作ることもできます。</p>
+<p>また、<strong>「<ruby>特定<rt>とくてい</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>（<ruby>過去<rt>かこ</rt></ruby>や<ruby>未来<rt>みらい</rt></ruby>）」</strong> の<ruby>時計<rt>とけい</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ることもできます。</p>
 <pre><code class="language-javascript">// 2026年1月1日の時計を作る
 const newYear = new Date("2026-01-01");
 
 // 2026年4月1日0時0分0秒の時計を作る(年, 月, 日, 時, 分, 秒)
 const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
-
 </code></pre>
-<p><strong>「プリミティブ型」と「オブジェクト型」の違い</strong></p>
-<p>ここで「プリミティブ型」と「オブジェクト型」の違いを理解しましょう。</p>
+<p><strong>「プリミティブ<ruby>型<rt>がた</rt></ruby>」と「オブジェクト<ruby>型<rt>がた</rt></ruby>」の<ruby>違<rt>ちが</rt></ruby>い</strong></p>
+<p>ここで「プリミティブ<ruby>型<rt>がた</rt></ruby>」と「オブジェクト<ruby>型<rt>がた</rt></ruby>」の<ruby>違<rt>ちが</rt></ruby>いを<ruby>理解<rt>りかい</rt></ruby>しましょう。</p>
 <ul>
-<li>プリミティブ型（<ruby>数値<rt>すうち</rt></ruby>や文字列）: データそのものが<ruby>変数<rt>へんすう</rt></ruby>に入っています。</li>
-<li>オブジェクト型（Dateなど）: データそのものではなく、データが保存されているメモリ上の「場所（参照：さんしょう）」が<ruby>変数<rt>へんすう</rt></ruby>に入っています。</li>
+<li>プリミティブ<ruby>型<rt>がた</rt></ruby>（<ruby>数値<rt>すうち</rt></ruby>や<ruby>文字列<rt>もじれつ</rt></ruby>）: データそのものが<ruby>変数<rt>へんすう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っています。</li>
+<li>オブジェクト<ruby>型<rt>がた</rt></ruby>（Dateなど）: データそのものではなく、データが<ruby>保存<rt>ほぞん</rt></ruby>されているメモリ<ruby>上<rt>じょう</rt></ruby>の「<ruby>場所<rt>ばしょ</rt></ruby>（<ruby>参照<rt>さんしょう</rt></ruby>）」が<ruby>変数<rt>へんすう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っています。</li>
 </ul>
-<p>So What?（なぜ大切なの？） これらの<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、<ruby>開発<rt>かいはつ</rt></ruby>スピードを劇的に速めることができます。</p>
-<h3 id="2-よく使うメソッド情報の取り出し方"><a class="header" href="#2-よく使うメソッド情報の取り出し方">2. よく使うメソッド（情報の取り出し方）</a></h3>
-<p>作った時計から、「年」「月」「日」をバラバラに取り出すことができます。</p>
+<p>So What?（なぜ<ruby>大切<rt>たいせつ</rt></ruby>なの？） これらの<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みオブジェクトを<ruby>使<rt>つか</rt></ruby>いこなすことは、プログラミングの<ruby>世界<rt>せかい</rt></ruby>で「<ruby>車輪<rt>しゃりん</rt></ruby>の<ruby>再発明<rt>さいはつめい</rt></ruby>（すでにあるものを<ruby>一<rt>いち</rt></ruby>から<ruby>作<rt>つく</rt></ruby>る<ruby>無駄<rt>むだ</rt></ruby>なこと）」を<ruby>防<rt>ふせ</rt></ruby>ぐことになります。<ruby>用意<rt>ようい</rt></ruby>された<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことで、<ruby>開発<rt>かいはつ</rt></ruby>スピードを<ruby>劇的<rt>げきてき</rt></ruby>に<ruby>速<rt>はや</rt></ruby>めることができます。</p>
+<h3 id="2-よく使つかうメソッド情報じょうほうの取とり出だし方かた"><a class="header" href="#2-よく使つかうメソッド情報じょうほうの取とり出だし方かた">2. よく<ruby>使<rt>つか</rt></ruby>うメソッド（<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し<ruby>方<rt>かた</rt></ruby>）</a></h3>
+<p><ruby>作<rt>つく</rt></ruby>った<ruby>時計<rt>とけい</rt></ruby>から、「<ruby>年<rt>ねん</rt></ruby>」「<ruby>月<rt>つき</rt></ruby>」「<ruby>日<rt>ひ</rt></ruby>」をバラバラに<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>すことができます。</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>知りたいこと</th><th>メソッド名</th><th>注意点（ここが<ruby>難<rt>むずか</rt></ruby>しい！）</th></tr>
+<tr><th><ruby>知<rt>し</rt></ruby>りたいこと</th><th>メソッド名</th><th><ruby>注意点<rt>ちゅういてん</rt></ruby>（ここが<ruby>難<rt>むずか</rt></ruby>しい！）</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>年</strong></td><td><code>getFullYear()</code></td><td><code>getYear</code> ではなく <code>Full</code> をつけます。</td></tr>
@@ -220,27 +218,26 @@ const aprilFool = new Date(2026, 3, 1, 0, 0, 0);
 </table>
 </div>
 <hr>
-<h3 id="3-初心者しょしんしゃが絶対ぜったいに間違えるポイント"><a class="header" href="#3-初心者しょしんしゃが絶対ぜったいに間違えるポイント">3. <ruby>初心者<rt>しょしんしゃ</rt></ruby>が絶対（ぜったい）に間違えるポイント</a></h3>
-<p>Dateオブジェクトには、<ruby>初心者<rt>しょしんしゃ</rt></ruby>泣かせの「ひっかけ問題」が2つあります。ここを優しく教えてあげましょう。</p>
-<h4 id="①-月monthは-0-から数える"><a class="header" href="#①-月monthは-0-から数える">① 月（Month）は 0 から数える</a></h4>
-<p><ruby>配列<rt>はいれつ</rt></ruby>と同じで、**1月は <code>0**</code> です。</p>
+<h3 id="3-初心者しょしんしゃが絶対ぜったいに間違まちがえるポイント"><a class="header" href="#3-初心者しょしんしゃが絶対ぜったいに間違まちがえるポイント">3. <ruby>初心者<rt>しょしんしゃ</rt></ruby>が<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>間違<rt>まちが</rt></ruby>えるポイント</a></h3>
+<p>Dateオブジェクトには、<ruby>初心者<rt>しょしんしゃ</rt></ruby><ruby>泣<rt>な</rt></ruby>かせの「ひっかけ<ruby>問題<rt>もんだい</rt></ruby>」が2つあります。ここを<ruby>優<rt>やさ</rt></ruby>しく<ruby>教<rt>おし</rt></ruby>えてあげましょう。</p>
+<h4 id="①-月つきmonthは-0-から数かぞえる"><a class="header" href="#①-月つきmonthは-0-から数かぞえる">① <ruby>月<rt>つき</rt></ruby>（Month）は 0 から<ruby>数<rt>かぞ</rt></ruby>える</a></h4>
+<p><ruby>配列<rt>はいれつ</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じで、<strong>1月は <code>0</code></strong> です。</p>
 <ul>
 <li>1月 → <code>0</code></li>
 <li>12月 → <code>11</code></li>
 </ul>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>解決策：</strong>
-<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>するときは、いつも <strong><code>getMonth() + 1</code></strong> と書こうね！と教えてあげてください。</p>
+<p><strong><ruby>解決策<rt>かいけつさく</rt></ruby>：</strong><br><ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>するときは、いつも <strong><code>getMonth() + 1</code></strong> と<ruby>書<rt>か</rt></ruby>こうね！と<ruby>教<rt>おし</rt></ruby>えてあげてください。</p>
 </blockquote>
-<h4 id="②-日と曜日の名前"><a class="header" href="#②-日と曜日の名前">② 「日」と「曜日」の名前</a></h4>
+<h4 id="②-日ひと曜日ようびの名前なまえ"><a class="header" href="#②-日ひと曜日ようびの名前なまえ">② 「<ruby>日<rt>ひ</rt></ruby>」と「<ruby>曜日<rt>ようび</rt></ruby>」の<ruby>名前<rt>なまえ</rt></ruby></a></h4>
 <ul>
-<li><strong><code>getDate()</code></strong> ： 1日、2日…という <strong>「日付」</strong></li>
-<li><strong><code>getDay()</code></strong> ： 月、火…という <strong>「曜日」</strong></li>
+<li><strong><code>getDate()</code></strong> ： 1日、2日…という <strong>「<ruby>日付<rt>ひづけ</rt></ruby>」</strong></li>
+<li><strong><code>getDay()</code></strong> ： 月、火…という <strong>「<ruby>曜日<rt>ようび</rt></ruby>」</strong></li>
 </ul>
 <hr>
-<h3 id="4-かっこいい日付の表示ひょうじかた日本でのマナー"><a class="header" href="#4-かっこいい日付の表示ひょうじかた日本でのマナー">4. かっこいい日付の<ruby>表示<rt>ひょうじ</rt></ruby>かた（日本でのマナー）</a></h3>
-<p>日本でよく使う「2026年2月20日」という形式にするコード<ruby>例<rt>れい</rt></ruby>です。</p>
+<h3 id="4-かっこいい日付ひづけの表示ひょうじかた日本にほんでのマナー"><a class="header" href="#4-かっこいい日付ひづけの表示ひょうじかた日本にほんでのマナー">4. かっこいい<ruby>日付<rt>ひづけ</rt></ruby>の<ruby>表示<rt>ひょうじ</rt></ruby>かた（<ruby>日本<rt>にほん</rt></ruby>でのマナー）</a></h3>
+<p><ruby>日本<rt>にほん</rt></ruby>でよく<ruby>使<rt>つか</rt></ruby>う「2026<ruby>年<rt>ねん</rt></ruby>2<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>」という<ruby>形式<rt>けいしき</rt></ruby>にするコード<ruby>例<rt>れい</rt></ruby>です。</p>
 <pre><code class="language-javascript">const today = new Date();
 
 const year = today.getFullYear();
@@ -249,25 +246,23 @@ const date = today.getDate();
 
 console.log(`${year}年${month}月${date}日`); 
 // 結果：2026年2月20日
-
 </code></pre>
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
-<p>留学生へのアドバイス：</p>
+<p><ruby>学生<rt>がくせい</rt></ruby>へのアドバイス：</p>
 <ol>
-<li><strong><code>new Date()</code></strong> は「今の時計」を作る合言葉！</li>
-<li><strong>月（Month）</strong> を使うときは、いつも心に <strong>「＋1」</strong> を！</li>
-<li><strong>曜日（Day）</strong> は数字で返ってくるから、日本語（月火水…）に直すときは<ruby>配列<rt>はいれつ</rt></ruby>を使うと便利だよ！</li>
+<li><strong><code>new Date()</code></strong> は「<ruby>今<rt>いま</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>る<ruby>合言葉<rt>あいことば</rt></ruby>！</li>
+<li><strong><ruby>月<rt>つき</rt></ruby>（Month）</strong> を<ruby>使<rt>つか</rt></ruby>うときは、いつも<ruby>心<rt>こころ</rt></ruby>に <strong>「＋1」</strong> を！</li>
+<li><strong><ruby>曜日<rt>ようび</rt></ruby>（Day）</strong> は<ruby>数字<rt>すうじ</rt></ruby>で<ruby>返<rt>かえ</rt></ruby>ってくるから、<ruby>日本語<rt>にほんご</rt></ruby>（<ruby>月火水<rt>げつかすい</rt></ruby>…）に<ruby>直<rt>なお</rt></ruby>すときは<ruby>配列<rt>はいれつ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと<ruby>便利<rt>べんり</rt></ruby>だよ！</li>
 </ol>
-<p>いかがでしょうか？「月が0から始まる」というルールさえクリアすれば、Dateオブジェクトはとても頼りになる道具になります。</p>
+<p>いかがでしょうか？「<ruby>月<rt>つき</rt></ruby>が0から<ruby>始<rt>はじ</rt></ruby>まる」というルールさえクリアすれば、Dateオブジェクトはとても<ruby>頼<rt>たよ</rt></ruby>りになる<ruby>道具<rt>どうぐ</rt></ruby>になります。</p>
 <hr>
-<h2 id="ii-日付の計算"><a class="header" href="#ii-日付の計算">II. 日付の計算</a></h2>
-<p>日付（ひづけ）の<ruby>計算<rt>けいさん</rt></ruby>は、プログラミングでとてもよく使います。
-<ruby>例<rt>たと</rt></ruby>えば、「今日から3日後はいつ？」「テストまであと何日？」という計算です。</p>
-<p><strong>「Dateオブジェクトは、数字を書きかえるだけで自動でカレンダーをめくってくれる、かしこい時計（とけい）」</strong> です。</p>
+<h2 id="ii-日付ひづけの計算けいさん"><a class="header" href="#ii-日付ひづけの計算けいさん">II. <ruby>日付<rt>ひづけ</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby></a></h2>
+<p><ruby>日付<rt>ひづけ</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby>は、プログラミングでとてもよく<ruby>使<rt>つか</rt></ruby>います。   <ruby>例<rt>たと</rt></ruby>えば、「<ruby>今日<rt>きょう</rt></ruby>から3<ruby>日後<rt>にちご</rt></ruby>はいつ？」「テストまであと<ruby>何日<rt>なんにち</rt></ruby>？」という<ruby>計算<rt>けいさん</rt></ruby>です。</p>
+<p><strong>「Dateオブジェクトは、<ruby>数字<rt>すうじ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きかえるだけで<ruby>自動<rt>じどう</rt></ruby>でカレンダーをめくってくれる、かしこい<ruby>時計<rt>とけい</rt></ruby>（とけい）」</strong> です。</p>
 <hr>
-<h3 id="1-基本きほんのやりかたset-メソッドを使う"><a class="header" href="#1-基本きほんのやりかたset-メソッドを使う">1. 基本（きほん）のやりかた：<code>set</code> メソッドを使う</a></h3>
-<p>日付を計算するときは、まず今の情報を「ゲット（<code>get</code>）」して、計算したあとに「セット（<code>set</code>）」しなおします。</p>
-<h4 id="例れい今日から5日後を計算する"><a class="header" href="#例れい今日から5日後を計算する"><ruby>例<rt>れい</rt></ruby>：今日から「5日後」を計算する</a></h4>
+<h3 id="1-基本きほんのやりかたset-メソッドを使つかう"><a class="header" href="#1-基本きほんのやりかたset-メソッドを使つかう">1. <ruby>基本<rt>きほん</rt></ruby>のやりかた：<code>set</code> メソッドを<ruby>使<rt>つか</rt></ruby>う</a></h3>
+<p><ruby>日付<rt>ひづけ</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>するときは、まず<ruby>今<rt>いま</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>を「ゲット（<code>get</code>）」して、<ruby>計算<rt>けいさん</rt></ruby>したあとに「セット（<code>set</code>）」しなおします。</p>
+<h4 id="例れい今日きょうから5日後にちごを計算けいさんする"><a class="header" href="#例れい今日きょうから5日後にちごを計算けいさんする"><ruby>例<rt>れい</rt></ruby>：<ruby>今日<rt>きょう</rt></ruby>から「5<ruby>日後<rt>にちご</rt></ruby>」を<ruby>計算<rt>けいさん</rt></ruby>する</a></h4>
 <pre><code class="language-javascript">const today = new Date(); // ① 今日の時計を作る
 
 // ② 今の「日（Date）」をゲットして、5を足す
@@ -277,27 +272,43 @@ const futureDate = today.getDate() + 5;
 today.setDate(futureDate);
 
 console.log(today.toLocaleDateString()); // 5日後の日付が出ます
-
 </code></pre>
-<h3 id="2-ここがすごい繰り上がりくりあがりの自動計算"><a class="header" href="#2-ここがすごい繰り上がりくりあがりの自動計算">2. ここがすごい！「繰り上がり（くりあがり）」の自動計算</a></h3>
-<p>留学生が一番感動（かんどう）するのは、JavaScriptが**「月末（げつまつ）」を勝手に計算してくれる**ところです。</p>
-<p><ruby>例<rt>たと</rt></ruby>えば、**「1月31日の1日後」**を計算するとします。
-普通なら「次は2月1日だ」と自分で考える必要がありますが、JavaScriptはこうなります：</p>
+<h3 id="2-ここがすごい繰くり上あがりの自動計算じどうけいさん"><a class="header" href="#2-ここがすごい繰くり上あがりの自動計算じどうけいさん">2. ここがすごい！「<ruby>繰<rt>く</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がり」の<ruby>自動計算<rt>じどうけいさん</rt></ruby></a></h3>
+<p><ruby>一番<rt>いちばん</rt></ruby><ruby>感動<rt>かんどう</rt></ruby>するのは、JavaScriptが <strong>「<ruby>月末<rt>げつまつ</rt></ruby>」を<ruby>勝手<rt>かって</rt></ruby>に<ruby>計算<rt>けいさん</rt></ruby>してくれる</strong> ところです。</p>
+<p><ruby>例<rt>たと</rt></ruby>えば、<strong>「1<ruby>月31日<rt>がつさんじゅういちにち</rt></ruby>の1<ruby>日後<rt>にちご</rt></ruby>」</strong> を<ruby>計算<rt>けいさん</rt></ruby>するとします。   <ruby>普通<rt>ふつう</rt></ruby>なら「<ruby>次<rt>つぎ</rt></ruby>は2<ruby>月1日<rt>がつついたち</rt></ruby>だ」と<ruby>自分<rt>じぶん</rt></ruby>で<ruby>考<rt>かんが</rt></ruby>える<ruby>必要<rt>ひつよう</rt></ruby>がありますが、JavaScriptはこうなります：</p>
 <pre><code class="language-javascript">const endOfMonth = new Date("2026-01-31");
 
 endOfMonth.setDate(endOfMonth.getDate() + 1);
 
 console.log(endOfMonth.toLocaleDateString()); // 自動で「2026/2/1」になる！
-
 </code></pre>
 <ul>
-<li><strong>32日になっても大丈夫：</strong> <code>setDate(32)</code> とすると、次の月の1日に自動で進みます。</li>
-<li><strong>13月になっても大丈夫：</strong> <code>setMonth(12)</code>（13番目の月）とすると、次の年の1月に進みます。</li>
+<li><strong>32<ruby>日<rt>にち</rt></ruby>になっても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>：</strong> <code>setDate(32)</code> とすると、<ruby>次<rt>つぎ</rt></ruby>の<ruby>月<rt>つき</rt></ruby>の1<ruby>日<rt>にち</rt></ruby>に<ruby>自動<rt>じどう</rt></ruby>で<ruby>進<rt>すす</rt></ruby>みます。</li>
+<li><strong>13<ruby>月<rt>がつ</rt></ruby>になっても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>：</strong> <code>setMonth(12)</code>（13<ruby>番目<rt>ばんめ</rt></ruby>の<ruby>月<rt>つき</rt></ruby>）とすると、<ruby>次<rt>つぎ</rt></ruby>の<ruby>年<rt>とし</rt></ruby>の1<ruby>月<rt>がつ</rt></ruby>に<ruby>進<rt>すす</rt></ruby>みます。</li>
 </ul>
 <hr>
-<h3 id="3-あと何日の計算ミリ秒のひき算"><a class="header" href="#3-あと何日の計算ミリ秒のひき算">3. 「あと何日？」の計算（ミリ秒のひき算）</a></h3>
-<p>「今日からイベントまであと何日？」を計算するときは、少し特殊な方法を使います。
-日付を <strong>「ミリ秒（とても小さな数字）」</strong> に直して<ruby>引<rt>ひ</rt></ruby>き<ruby>算<rt>ざん</rt></ruby>をします。</p>
+<h3 id="4-かっこいい日付ひづけの表示ひょうじかた日本にほんでのマナー-1"><a class="header" href="#4-かっこいい日付ひづけの表示ひょうじかた日本にほんでのマナー-1">4. かっこいい<ruby>日付<rt>ひづけ</rt></ruby>の<ruby>表示<rt>ひょうじ</rt></ruby>かた（<ruby>日本<rt>にほん</rt></ruby>でのマナー）</a></h3>
+<p><ruby>日本<rt>にほん</rt></ruby>でよく<ruby>使<rt>つか</rt></ruby>う「2026<ruby>年<rt>ねん</rt></ruby>2<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>」という<ruby>形式<rt>けいしき</rt></ruby>にするコード<ruby>例<rt>れい</rt></ruby>です。</p>
+<pre><code class="language-javascript">const today = new Date();
+
+const year = today.getFullYear();
+const month = today.getMonth() + 1; // 1を足すのを忘れないで！
+const date = today.getDate();
+
+console.log(`${year}年${month}月${date}日`); 
+// 結果：2026年2月20日
+</code></pre>
+<h3 id="まとめ-1"><a class="header" href="#まとめ-1">まとめ</a></h3>
+<p><ruby>学生<rt>がくせい</rt></ruby>へのアドバイス：</p>
+<ol>
+<li><strong><code>new Date()</code></strong> は「<ruby>今<rt>いま</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>」を<ruby>作<rt>つく</rt></ruby>る<ruby>合言葉<rt>あいことば</rt></ruby>！</li>
+<li><strong><ruby>月<rt>つき</rt></ruby>（Month）</strong> を<ruby>使<rt>つか</rt></ruby>うときは、いつも<ruby>心<rt>こころ</rt></ruby>に <strong>「＋1」</strong> を！</li>
+<li><strong><ruby>曜日<rt>ようび</rt></ruby>（Day）</strong> は<ruby>数字<rt>すうじ</rt></ruby>で<ruby>返<rt>かえ</rt></ruby>ってくるから、<ruby>日本語<rt>にほんご</rt></ruby>（<ruby>月火水<rt>げつかすい</rt></ruby>…）に<ruby>直<rt>なお</rt></ruby>すときは<ruby>配列<rt>はいれつ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと<ruby>便利<rt>べんり</rt></ruby>だよ！</li>
+</ol>
+<p>いかがでしょうか？「<ruby>月<rt>つき</rt></ruby>が0から<ruby>始<rt>はじ</rt></ruby>まる」というルールさえクリアすれば、Dateオブジェクトはとても<ruby>頼<rt>たよ</rt></ruby>りになる<ruby>道具<rt>どうぐ</rt></ruby>になります。</p>
+<hr>
+<h3 id="3-あと何日なんにちの計算けいさんミリ秒びょうのひき算ざん"><a class="header" href="#3-あと何日なんにちの計算けいさんミリ秒びょうのひき算ざん">3. 「あと<ruby>何日<rt>なんにち</rt></ruby>？」の<ruby>計算<rt>けいさん</rt></ruby>（ミリ<ruby>秒<rt>びょう</rt></ruby>のひき<ruby>算<rt>ざん</rt></ruby>）</a></h3>
+<p>「<ruby>今日<rt>きょう</rt></ruby>からイベントまであと<ruby>何日<rt>なんにち</rt></ruby>？」を<ruby>計算<rt>けいさん</rt></ruby>するときは、<ruby>少<rt>すこ</rt></ruby>し<ruby>特殊<rt>とくしゅ</rt></ruby>な<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>います。   <ruby>日付<rt>ひづけ</rt></ruby>を <strong>「ミリ<ruby>秒<rt>びょう</rt></ruby>（とても<ruby>小<rt>ちい</rt></ruby>さな<ruby>数字<rt>すうじ</rt></ruby>）」</strong> に<ruby>直<rt>なお</rt></ruby>してひき<ruby>算<rt>ざん</rt></ruby>をします。</p>
 <pre><code class="language-javascript">const today = new Date();
 const eventDay = new Date("2026-03-01");
 
@@ -309,35 +320,33 @@ const diffMs = eventDay - today;
 const diffDays = Math.ceil(diffMs / (24 * 60 * 60 * 1000));
 
 console.log(`イベントまであと ${diffDays} 日です！`);
-
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><strong>Math.ceil（マスシール）とは？</strong>
-小数点（しょうすうてん）を<ruby>切<rt>き</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げる<ruby>魔法<rt>まほう</rt></ruby>です。残り時間が「1.2日」だったら「あと2日」と<ruby>表示<rt>ひょうじ</rt></ruby>するために使います。Mathオブジェクト（数学の道具）についてはあとの章で説明します。</p>
+<p><strong>Math.ceil（マスシール）とは？</strong><br><ruby>小数点<rt>しょうすうてん</rt></ruby>（しょうすうてん）を<ruby>切<rt>き</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げる<ruby>魔法<rt>まほう</rt></ruby>です。<ruby>残<rt>のこ</rt></ruby>り<ruby>時間<rt>じかん</rt></ruby>が「1.2<ruby>日<rt>にち</rt></ruby>」だったら「あと2<ruby>日<rt>にち</rt></ruby>」と<ruby>表示<rt>ひょうじ</rt></ruby>するために<ruby>使<rt>つか</rt></ruby>います。Mathオブジェクト（<ruby>数学<rt>すうがく</rt></ruby>の<ruby>道具<rt>どうぐ</rt></ruby>）についてはあとの<ruby>章<rt>しょう</rt></ruby>で<ruby>説明<rt>せつめい</rt></ruby>します。</p>
 </blockquote>
 <hr>
-<h3 id="まとめ留学生へのアドバイス"><a class="header" href="#まとめ留学生へのアドバイス">まとめ：留学生へのアドバイス</a></h3>
-<p>日付の計算を教えるときの合言葉はこれです！</p>
+<h3 id="まとめ学生がくせいへのアドバイス"><a class="header" href="#まとめ学生がくせいへのアドバイス">まとめ：<ruby>学生<rt>がくせい</rt></ruby>へのアドバイス</a></h3>
+<p><ruby>日付<rt>ひづけ</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えるときの<ruby>合言葉<rt>あいことば</rt></ruby>はこれです！</p>
 <ol>
-<li><strong>「今の数字をゲットして、足して、セットする！」</strong></li>
-<li><strong>「カレンダーの終わり（2月が28日か29日か、など）は、JavaScriptが全部やってくれるから任せてOK！」</strong></li>
+<li><strong>「<ruby>今<rt>いま</rt></ruby>の<ruby>数字<rt>すうじ</rt></ruby>をゲットして、<ruby>足<rt>た</rt></ruby>して、セットする！」</strong></li>
+<li><strong>「カレンダーの<ruby>終<rt>お</rt></ruby>わり（2<ruby>月<rt>がつ</rt></ruby>が28<ruby>日<rt>にち</rt></ruby>か29<ruby>日<rt>にち</rt></ruby>か、など）は、JavaScriptが<ruby>全部<rt>ぜんぶ</rt></ruby>やってくれるから<ruby>任<rt>まか</rt></ruby>せてOK！」</strong></li>
 </ol>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>やりたいこと</th><th>使うメソッド</th></tr>
+<tr><th>やりたいこと</th><th><ruby>使<rt>つか</rt></ruby>うメソッド</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>日</strong>を進める</td><td><code>getDate()</code> + <code>setDate()</code></td></tr>
-<tr><td><strong>月</strong>を進める</td><td><code>getMonth()</code> + <code>setMonth()</code></td></tr>
-<tr><td><strong>年</strong>を進める</td><td><code>getFullYear()</code> + <code>setFullYear()</code></td></tr>
+<tr><td><strong>日</strong> を<ruby>進<rt>すす</rt></ruby>める</td><td><code>getDate()</code> + <code>setDate()</code></td></tr>
+<tr><td><strong>月</strong> を<ruby>進<rt>すす</rt></ruby>める</td><td><code>getMonth()</code> + <code>setMonth()</code></td></tr>
+<tr><td><strong>年</strong> を<ruby>進<rt>すす</rt></ruby>める</td><td><code>getFullYear()</code> + <code>setFullYear()</code></td></tr>
 </tbody>
 </table>
 </div>
 <hr>
-<p>いかがでしょうか？「自分でカレンダーをめくらなくていい」というメリットが伝われば、日付の計算が楽しくなりますよ。</p>
-<p>So What?（なぜ大切なの？） これらの<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みオブジェクトを使いこなすことは、プログラミングの世界で「車輪の再発明（しゃりんのさいはつめい：すでにあるものを一から作る無駄なこと）」を防ぐことになります。用意された道具を使うことで、<ruby>開発<rt>かいはつ</rt></ruby>スピードを劇的に速めることができます。</p>
+<p>いかがでしょうか？「<ruby>自分<rt>じぶん</rt></ruby>でカレンダーをめくらなくていい」というメリットが<ruby>伝<rt>つた</rt></ruby>われば、<ruby>日付<rt>ひづけ</rt></ruby>の<ruby>計算<rt>けいさん</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しくなりますよ。</p>
+<p>So What?（なぜ<ruby>大切<rt>たいせつ</rt></ruby>なの？） これらの<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みオブジェクトを<ruby>使<rt>つか</rt></ruby>いこなすことは、プログラミングの<ruby>世界<rt>せかい</rt></ruby>で「<ruby>車輪<rt>しゃりん</rt></ruby>の<ruby>再発明<rt>さいはつめい</rt></ruby>（しゃりんのさいはつめい：すでにあるものを<ruby>一<rt>いち</rt></ruby>から<ruby>作<rt>つく</rt></ruby>る<ruby>無駄<rt>むだ</rt></ruby>なこと）」を<ruby>防<rt>ふせ</rt></ruby>ぐことになります。<ruby>用意<rt>ようい</rt></ruby>された<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことで、<ruby>開発<rt>かいはつ</rt></ruby>スピードを<ruby>劇的<rt>げきてき</rt></ruby>に<ruby>速<rt>はや</rt></ruby>めることができます。</p>
 
                     </main>
 
@@ -347,7 +356,7 @@ console.log(`イベントまであと ${diffDays} 日です！`);
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="05_04_数学オブジェクト.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="05_04_正規表現.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -361,7 +370,7 @@ console.log(`イベントまであと ${diffDays} 日です！`);
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="05_04_数学オブジェクト.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="05_04_正規表現.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

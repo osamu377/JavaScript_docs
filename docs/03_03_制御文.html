@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -180,7 +180,7 @@
 <hr>
 <h2 id="i-はじめに制御せいぎょ文せいぎょぶんとは"><a class="header" href="#i-はじめに制御せいぎょ文せいぎょぶんとは">I. はじめに：<ruby>制御<rt>せいぎょ</rt></ruby>文（せいぎょぶん）とは？</a></h2>
 <p>ウェブページを作るとき、HTMLは「家の柱（はしら：骨組み）」、CSSは「壁のペンキ」のような<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>を整える役割です。そして、JavaScriptは家に「電気」を通したり、「機械装置（きかいそうち）」を動かしたりする役割を持っています。</p>
-<p>そして、<strong><ruby>制御<rt>せいぎょ</rt></ruby>文</strong> （Control Statement）は、その機械を動かすための「<ruby><rt>脳</rt>のう</ruby>（のう）」にあたります。「もしボタンが押されたら、電気をつける」「もしパスワードが違ったら、エラーを<ruby>表示<rt>ひょうじ</rt></ruby>する」といった判断（はんだん）をプログラムに教えるのが、<ruby>制御<rt>せいぎょ</rt></ruby>文の役割です。</p>
+<p>そして、<strong><ruby>制御<rt>せいぎょ</rt></ruby>文</strong> （Control Statement）は、その機械を動かすための「<ruby>脳<rt>のう</rt></ruby>」にあたります。「もしボタンが押されたら、電気をつける」「もしパスワードが違ったら、エラーを<ruby>表示<rt>ひょうじ</rt></ruby>する」といった判断（はんだん）をプログラムに教えるのが、<ruby>制御<rt>せいぎょ</rt></ruby>文の役割です。</p>
 <p>これを使えるようになると、Webサイトがまるで生きているように、ユーザーの<ruby>動<rt>うご</rt></ruby>きに合わせて<ruby><rt>賢</rt>かしこ</ruby>く<ruby>反応<rt>はんのう</rt></ruby>するようになります。まずは、最も基本的な判断のルールである「if文」から見ていきましょう。</p>
 <hr>
 <h2 id="ii-もしならを決めるif文イフぶん"><a class="header" href="#ii-もしならを決めるif文イフぶん">II. 「もし〜なら」を決める：if文（イフぶん）</a></h2>
@@ -192,19 +192,19 @@
 <li>条件１が間違っていて、条件２が正しいとき、処理２が<ruby>実行<rt>じっこう</rt></ruby>されます</li>
 <li>条件１も条件２が間違っているとき、処理３が実行されます。</li>
 </ul>
-<p>もう少し具体的に、留学生のみなさんにも<ruby><rt>馴染</rt>なじ</ruby>みのある「雨と傘（かさ）」の<ruby>例<rt>れい</rt></ruby>で考えてみましょう。</p>
+<p>もう少し具体的に、留学生のみなさんにも<ruby>馴染<rt>なじ</rt></ruby>みのある「雨と<ruby>傘<rt>かさ</rt></ruby>」の<ruby>例<rt>れい</rt></ruby>で考えてみましょう。</p>
 <ul>
-<li>「もし、雨が降っているなら、傘を持っていきます」</li>
-<li>「そうでなくて、くもりなら、折りたたみ傘を持っていきます」</li>
-<li>「それ以外（晴れ）なら、傘は持っていきません」</li>
+<li>「もし、雨が降っているなら、<ruby>傘<rt>かさ</rt></ruby>を持っていきます」</li>
+<li>「そうでなくて、くもりなら、折りたたみ<ruby>傘<rt>かさ</rt></ruby>を持っていきます」</li>
+<li>「それ以外（晴れ）なら、<ruby>傘<rt>かさ</rt></ruby>は持っていきません」</li>
 </ul>
 <p>これをJavaScriptのコードのフォーマットを使って書くと、次のようになります。</p>
 <pre><code>if (雨が降っています) {
-  傘を持っていきます
+  &lt;ruby&gt;傘&lt;rt&gt;かさ&lt;/rt&gt;&lt;/ruby&gt;を持っていきます
 } else if (くもりです) {
-  折りたたみ傘をもっていきます
+  折りたたみ&lt;ruby&gt;傘&lt;rt&gt;かさ&lt;/rt&gt;&lt;/ruby&gt;をもっていきます
 } else {
-  傘は持っていきません
+  &lt;ruby&gt;傘&lt;rt&gt;かさ&lt;/rt&gt;&lt;/ruby&gt;は持っていきません
 }
 </code></pre>
 <p>今度は実際のJavaScriptです。テストの評価を<ruby>例<rt>れい</rt></ruby>にして書いてみます。</p>
@@ -292,10 +292,8 @@ switch (dayNum) {
   console.log(i + "番目：こんにちは！");
 }
 </code></pre>
-<p>実際、どんなふうになるか見てみましょう。F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、下のボタンを押してみてください。</p>
-<p><button onclick="for (let i = 0; i &lt; 3; i++) {
-console.log(i + &#39;番目：こんにちは！&#39;);
-}">実行</button></p>
+<p>実際、どんなふうになるか見てみましょう。F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、上のコードを貼り付けて、Enterキーを押してみてください。</p>
+<p><img src="img/for文.jpg" alt=""></p>
 <hr>
 <h2 id="vi-条件が合うまで続けるwhile文ワイルぶん"><a class="header" href="#vi-条件が合うまで続けるwhile文ワイルぶん">VI. 条件が合うまで続ける：while文（ワイルぶん）</a></h2>
 <p>「何回繰り返すか」は決まっていないけれど、「条件が合っている間はずっと続けたい」という時は「while文」が便利です。</p>
@@ -305,12 +303,8 @@ while (count &lt;= 3) {
   count++;
 }
 </code></pre>
-<p>下のボタンを押すと、コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。</p>
-<p><button onclick="let count = 1;
-while (count &lt;= 3) {
-  console.log(count + &#39;回目の処理です&#39;);
-  count++;
-}">実行</button></p>
+<p>先ほどと同じように、F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、上のコードを貼り付けて、Enterキーを押してみてください。</p>
+<p><img src="img/while.png" alt=""></p>
 <p>⚠️ 警告：無限ループ（むげんループ）に注意！ while文で一番怖いのは、プログラムが止まらなくなる「無限ループ」です。条件がいつまでも true（正しい）のままだと、ブラウザが固まってしまいます。 特に continue（後述）を使うときは注意 です。数字を増やす処理（count++ など）の前に continue を書いてしまうと、数字が増えないまま次の回に進んでしまい、永遠にループが終わらなくなります。</p>
 <hr>
 <h2 id="vii-ループを自由にコントロールするbreak-と-continue"><a class="header" href="#vii-ループを自由にコントロールするbreak-と-continue">VII. ループを自由にコントロールする：break と continue</a></h2>
@@ -328,23 +322,16 @@ while (count &lt;= 3) {
   console.log(i);
 }
 </code></pre>
-<p>下のボタンを押すと、コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。<code>1</code> <code>2</code> <code>4</code> <code>5</code> が<ruby>表示<rt>ひょうじ</rt></ruby>されて、<code>3</code>だけ<ruby>表示<rt>ひょうじ</rt></ruby>されません。</p>
-<pre><code>&lt;button onclick="for (let i = 1; i &lt;= 5; i++) {
-  if (i === 3) {
-    // iが3のときだけ特別な動（うご）きをします
-    // continueなら「3」を表示（ひょうじ）せずに、すぐ「4」に進みます
-    continue;
-  }
-  console.log(i);
-}"&gt;実行&lt;/button&gt;
-</code></pre>
+<p>先ほどと同じように、F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、上のコードを貼り付けて、Enterキーを押してみてください。</p>
+<p>コンソールに実行した結果が<ruby>表示<rt>ひょうじ</rt></ruby>されます。<code>1</code> <code>2</code> <code>4</code> <code>5</code> が<ruby>表示<rt>ひょうじ</rt></ruby>されて、<code>3</code>だけ<ruby>表示<rt>ひょうじ</rt></ruby>されません。</p>
+<p><img src="img/break.png" alt=""></p>
 <p>これらを使いこなすことで、無駄な計算を減らし、プログラムをより<ruby>効率<rt>こうりつ</rt></ruby>的に動かせるようになります。</p>
 <hr>
 <h2 id="viii-まとめと学習のアドバイス"><a class="header" href="#viii-まとめと学習のアドバイス">VIII. まとめと学習のアドバイス</a></h2>
-<p>今日学んだ「<ruby>制御<rt>せいぎょ</rt></ruby>文」は、Webサイトに「知能（ちのう）」を与えるための基礎です。if文で判断し、ループで大量の仕事をこなす。これがプログラミングの核（かく）となる部分です。</p>
+<p>今日学んだ「<ruby>制御<rt>せいぎょ</rt></ruby>文」は、Webサイトに「<ruby>知能<rt>ちのう</rt></ruby>」を与えるための基礎です。if文で判断し、ループで大量の仕事をこなす。これがプログラミングの核（かく）となる部分です。</p>
 <p>上達するためのアドバイスです：</p>
 <ol>
-<li>ブラウザの「コンソール」を使おう： F12キーを押して、コンソールに直接コードを打ち込んでみてください。すぐに結果が見えるので、最高の練習になります。</li>
+<li>ブラウザの「コンソール」を使おう： F12（または Fn + F12）キーを押して、コンソールに直接コードを打ち込んでみてください。すぐに結果が見えるので、最高の練習になります。</li>
 <li>エラーは「ヒント」だと考えよう： 赤い文字でエラーが出ても、それは「間違いの場所」を教えてくれるメッセージです。恐れずに読みましょう。</li>
 <li>小さなゲームを作ってみよう： ソースコンテキストにある「数<ruby>当<rt>あ</rt></ruby>てゲーム」のように、小さな目標を作ってコードを書くのが一番の<ruby>近道<rt>ちかみち</rt></ruby>です。</li>
 </ol>

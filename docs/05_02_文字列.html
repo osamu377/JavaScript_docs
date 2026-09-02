@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,33 +174,33 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="文字列"><a class="header" href="#文字列">文字列</a></h1>
-<h2 id="i-string型-プリミティブ-とstringオブジェクト"><a class="header" href="#i-string型-プリミティブ-とstringオブジェクト">I. String型 (プリミティブ) とStringオブジェクト</a></h2>
-<p>プログラミングを学んでいると、同じ「文字列」を扱うのに、<strong>String型（プリミティブ）とStringオブジェクト</strong> という2つの言葉が出てきて混乱することがあります。</p>
-<p>留学生の方には、<strong>「中身だけのリンゴ」</strong> と <strong>「箱に入ったリンゴ」</strong> の違いに<ruby>例<rt>たと</rt></ruby>えて説明すると、スッキリ理解してもらえます！</p>
-<h3 id="1-二つの違いのイメージ"><a class="header" href="#1-二つの違いのイメージ">1. 二つの違いのイメージ</a></h3>
+                        <h1 id="文字列もじれつ"><a class="header" href="#文字列もじれつ"><ruby>文字列<rt>もじれつ</rt></ruby></a></h1>
+<h2 id="i-string型がた-プリミティブ-とstringオブジェクト"><a class="header" href="#i-string型がた-プリミティブ-とstringオブジェクト">I. String<ruby>型<rt>がた</rt></ruby> (プリミティブ) とStringオブジェクト</a></h2>
+<p>プログラミングを<ruby>学<rt>まな</rt></ruby>んでいると、<ruby>同<rt>おな</rt></ruby>じ「<ruby>文字列<rt>もじれつ</rt></ruby>」を<ruby>扱<rt>あつか</rt></ruby>うのに、<strong>String<ruby>型<rt>がた</rt></ruby>（プリミティブ）とStringオブジェクト</strong> という2つの<ruby>言葉<rt>ことば</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきて<ruby>混乱<rt>こんらん</rt></ruby>することがあります。</p>
+<p><ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby>には、<strong>「<ruby>中身<rt>なかみ</rt></ruby>だけのリンゴ」</strong> と <strong>「<ruby>箱<rt>はこ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったリンゴ」</strong> の<ruby>違<rt>ちが</rt></ruby>いに<ruby>例<rt>たと</rt></ruby>えて<ruby>説明<rt>せつめい</rt></ruby>すると、スッキリ<ruby>理解<rt>りかい</rt></ruby>してもらえるでしょう！</p>
+<h3 id="1-二つつの違ちがいのイメージ"><a class="header" href="#1-二つつの違ちがいのイメージ">1. 二<ruby>つ<rt>つ</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いのイメージ</a></h3>
 <ul>
 <li>
-<p><strong>String型（プリミティブ）：</strong></p>
+<p><strong>String<ruby>型<rt>がた</rt></ruby>（プリミティブ）：</strong></p>
 </li>
 <li>
-<p>ただの「値」そのものです。</p>
+<p>ただの「<ruby>値<rt>あたい</rt></ruby>」そのものです。</p>
 </li>
 <li>
-<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> お店で売っている「リンゴ」そのもの。軽くて、すぐ食べられます。</p>
+<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> お<ruby>店<rt>みせ</rt></ruby>で<ruby>売<rt>う</rt></ruby>っている「リンゴ」そのもの。<ruby>軽<rt>かる</rt></ruby>くて、すぐ<ruby>食<rt>た</rt></ruby>べられます。</p>
 </li>
 <li>
 <p><strong>Stringオブジェクト：</strong></p>
 </li>
 <li>
-<p><code>new String()</code> を使って作られる「特別な箱」です。</p>
+<p><code>new String()</code> を<ruby>使<rt>つか</rt></ruby>って<ruby>作<rt>つく</rt></ruby>られる「<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>箱<rt>はこ</rt></ruby>」です。</p>
 </li>
 <li>
-<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> 「豪華な箱に入ったリンゴ」です。箱の中にはリンゴだけでなく、説明書や道具も一緒に入っています。</p>
+<p><strong><ruby>例<rt>たと</rt></ruby>え：</strong> 「<ruby>豪華<rt>ごうか</rt></ruby>な<ruby>箱<rt>はこ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったリンゴ」です。<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にはリンゴだけでなく、<ruby>説明書<rt>せつめいしょ</rt></ruby>や<ruby>道具<rt>どうぐ</rt></ruby>も<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っています。</p>
 </li>
 </ul>
-<h3 id="2-コードで見てみよう"><a class="header" href="#2-コードで見てみよう">2. コードで見てみよう</a></h3>
-<p>実際にどう違うのか、JavaScriptで書いてみます。</p>
+<h3 id="2-コードで見みてみよう"><a class="header" href="#2-コードで見みてみよう">2. コードで<ruby>見<rt>み</rt></ruby>てみよう</a></h3>
+<p><ruby>実際<rt>じっさい</rt></ruby>にどう<ruby>違<rt>ちが</rt></ruby>うのか、JavaScriptで<ruby>書<rt>か</rt></ruby>いてみます。</p>
 <pre><code class="language-javascript">// 1. String型（プリミティブ）★ふだん使うのはこっち！
 let str1 = "こんにちは";
 console.log(typeof str1); // "string"
@@ -208,197 +208,153 @@ console.log(typeof str1); // "string"
 // 2. Stringオブジェクト（new を使う）
 let str2 = new String("こんにちは");
 console.log(typeof str2); // "object"
-
 </code></pre>
-<h4 id="ここが注意見みた目めは同じでも中身が違う"><a class="header" href="#ここが注意見みた目めは同じでも中身が違う">ここが注意！「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>は同じでも中身が違う」</a></h4>
+<h4 id="ここが注意ちゅうい見みた目めは同おなじでも中身なかみが違ちがう"><a class="header" href="#ここが注意ちゅうい見みた目めは同おなじでも中身なかみが違ちがう">ここが<ruby>注意<rt>ちゅうい</rt></ruby>！「<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>は<ruby>同<rt>おな</rt></ruby>じでも<ruby>中身<rt>なかみ</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>う」</a></h4>
 <pre><code class="language-javascript">let s1 = "hello";
 let s2 = new String("hello");
 
 console.log(s1 == s2);  // true （文字の中身は同じ）
 console.log(s1 === s2); // false （型が違うのでダメ！）
-
 </code></pre>
-<h3 id="3-不思議なルールなぜプリミティブでメソッドが使えるの"><a class="header" href="#3-不思議なルールなぜプリミティブでメソッドが使えるの">3. 不思議なルール：なぜプリミティブでメソッドが使えるの？</a></h3>
-<p>ここで学生からよく「先生、不思議です！」と質問が出ます。</p>
+<h3 id="3-不思議ふしぎなルールなぜプリミティブでメソッドが使つかえるの"><a class="header" href="#3-不思議ふしぎなルールなぜプリミティブでメソッドが使つかえるの">3. <ruby>不思議<rt>ふしぎ</rt></ruby>なルール：なぜプリミティブでメソッドが<ruby>使<rt>つか</rt></ruby>えるの？</a></h3>
+<p>ここで<ruby>学生<rt>がくせい</rt></ruby>からよく「<ruby>先生<rt>せんせい</rt></ruby>、<ruby>不思議<rt>ふしぎ</rt></ruby>です！」と<ruby>質問<rt>しつもん</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます。</p>
 <blockquote>
-<p>「プリミティブは『ただの値』なのに、なぜ <code>.length</code> や <code>.toUpperCase()</code> などの <strong>『道具（メソッド）』</strong> が使えるんですか？」</p>
+<p>「プリミティブは『ただの<ruby>値<rt>あたい</rt></ruby>』なのに、なぜ <code>.length</code> や <code>.toUpperCase()</code> などの <strong>『<ruby>道具<rt>どうぐ</rt></ruby>（メソッド）』</strong> が<ruby>使<rt>つか</rt></ruby>えるんですか？」</p>
 </blockquote>
-<p>実は、JavaScriptが<ruby>裏側<rt>うらがわ</rt></ruby>で <strong>一時的な<ruby>魔法<rt>まほう</rt></ruby></strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と呼びます。</p>
+<p><ruby>実<rt>じつ</rt></ruby>は、JavaScriptが<ruby>裏側<rt>うらがわ</rt></ruby>で <strong><ruby>一時的<rt>いちじてき</rt></ruby>な<ruby>魔法<rt>まほう</rt></ruby></strong> をかけているんです。これを <strong>「ラッパーオブジェクト」</strong> と<ruby>呼<rt>よ</rt></ruby>びます。</p>
 <ol>
-<li>あなたが <code>str1.toUpperCase()</code> と書く。</li>
-<li>JavaScriptが「あ、道具を使いたいんだな？」と判断する。</li>
-<li><strong>一瞬だけ</strong>、プリミティブを「オブジェクトの箱」に入れる。</li>
-<li>道具（メソッド）を使い終わったら、すぐに箱を捨てて「プリミティブ」に戻す。</li>
+<li>あなたが <code>str1.toUpperCase()</code> と<ruby>書<rt>か</rt></ruby>く。</li>
+<li>JavaScriptが「あ、<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>いたいんだな？」と<ruby>判断<rt>はんだん</rt></ruby>する。</li>
+<li><strong><ruby>一瞬<rt>いっしゅん</rt></ruby>だけ</strong>、プリミティブを「オブジェクトの<ruby>箱<rt>はこ</rt></ruby>」に<ruby>入<rt>い</rt></ruby>れる。</li>
+<li><ruby>道具<rt>どうぐ</rt></ruby>（メソッド）を<ruby>使<rt>つか</rt></ruby>い<ruby>終<rt>お</rt></ruby>わったら、すぐに<ruby>箱<rt>はこ</rt></ruby>を<ruby>捨<rt>す</rt></ruby>てて「プリミティブ」に<ruby>戻<rt>もど</rt></ruby>す。</li>
 </ol>
-<p>この<ruby>魔法<rt>まほう</rt></ruby>のおかげで、私たちは重い「オブジェクト」をずっと持っていなくても、必要なときだけ便利な道具を使えるのです。</p>
-<h3 id="4-どっちを使えばいい"><a class="header" href="#4-どっちを使えばいい">4. どっちを使えばいい？</a></h3>
-<p>留学生へのアドバイスは、とてもシンプルです。</p>
+<p>この<ruby>魔法<rt>まほう</rt></ruby>のおかげで、<ruby>私<rt>わたし</rt></ruby>たちは<ruby>重<rt>おも</rt></ruby>い「オブジェクト」をずっと<ruby>持<rt>も</rt></ruby>っていなくても、<ruby>必要<rt>ひつよう</rt></ruby>なときだけ<ruby>便利<rt>べんり</rt></ruby>な<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えるのです。</p>
+<h3 id="4-どっちを使つかえばいい"><a class="header" href="#4-どっちを使つかえばいい">4. どっちを<ruby>使<rt>つか</rt></ruby>えばいい？</a></h3>
+<p><ruby>学生<rt>がくせい</rt></ruby>へのアドバイスは、とてもシンプルです。</p>
 <ul>
-<li><strong>常に「String型（プリミティブ）」を使いましょう！</strong></li>
-<li><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が簡単（<code>""</code> で囲むだけ）。</li>
-<li>メモリを節約できて、<ruby>動<rt>うご</rt></ruby>きも速い。</li>
-<li><code>new String()</code> は、特別な理由がない限り、<strong>使わなくて大丈夫</strong>です。</li>
+<li><strong><ruby>常<rt>つね</rt></ruby>に「String<ruby>型<rt>がた</rt></ruby>（プリミティブ）」を<ruby>使<rt>つか</rt></ruby>いましょう！</strong></li>
+<li><ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>（<code>""</code> で<ruby>囲<rt>かこ</rt></ruby>むだけ）。</li>
+<li>メモリを<ruby>節約<rt>せつやく</rt></ruby>できて、<ruby>動<rt>うご</rt></ruby>きも<ruby>速<rt>はや</rt></ruby>い。</li>
+<li><code>new String()</code> は、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>理由<rt>りゆう</rt></ruby>がない<ruby>限<rt>かぎ</rt></ruby>り、**<ruby>使<rt>つか</rt></ruby>わなくて<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>**です。</li>
 </ul>
 <h3 id="まとめ"><a class="header" href="#まとめ">まとめ</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>特徴</th><th>String型 (Primitive)</th><th>Stringオブジェクト</th></tr>
+<tr><th><ruby>特徴<rt>とくちょう</rt></ruby></th><th>String<ruby>型<rt>がた</rt></ruby> (Primitive)</th><th>Stringオブジェクト</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>作り方</strong></td><td><code>"hello"</code></td><td><code>new String("hello")</code></td></tr>
-<tr><td><strong>データ型</strong></td><td><code>string</code></td><td><code>object</code></td></tr>
-<tr><td><strong>スピード</strong></td><td>速い</td><td>少し遅い（重い）</td></tr>
-<tr><td><strong>おすすめ</strong></td><td><strong>◎ 毎日使う！</strong></td><td>❌ ほとんど使わない</td></tr>
+<tr><td><strong><ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby></strong></td><td><code>"hello"</code></td><td><code>new String("hello")</code></td></tr>
+<tr><td><strong>データ<ruby>型<rt>がた</rt></ruby></strong></td><td><code>string</code></td><td><code>object</code></td></tr>
+<tr><td><strong>スピード</strong></td><td><ruby>速<rt>はや</rt></ruby>い</td><td><ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おそ</rt></ruby>い（<ruby>重<rt>おも</rt></ruby>い）</td></tr>
+<tr><td><strong>おすすめ</strong></td><td><strong>◎ <ruby>毎日<rt>まいにち</rt></ruby><ruby>使<rt>つか</rt></ruby>う！</strong></td><td>❌ ほとんど<ruby>使<rt>つか</rt></ruby>わない</td></tr>
 </tbody>
 </table>
 </div>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「ラッパー（Wrapper）」の意味</strong>
-お菓子やプレゼントを包む「ラッピング（wrapping）」と同じ言葉です。
-「値を一時的に包んで守る箱」だと教えると、イメージが<ruby>定着<rt>ていちゃく</rt></ruby>（ていちゃく）しやすいですよ！</p>
+<p><strong>「ラッパー（Wrapper）」の<ruby>意味<rt>いみ</rt></ruby></strong><br>お<ruby>菓子<rt>かし</rt></ruby>やプレゼントを<ruby>包<rt>つつ</rt></ruby>む「ラッピング（wrapping）」と<ruby>同<rt>おな</rt></ruby>じ<ruby>言葉<rt>ことば</rt></ruby>です。<br>「<ruby>値<rt>あたい</rt></ruby>を<ruby>一時的<rt>いちじてき</rt></ruby>に<ruby>包<rt>つつ</rt></ruby>んで<ruby>守<rt>まも</rt></ruby>る<ruby>箱<rt>はこ</rt></ruby>」だと<ruby>教<rt>おし</rt></ruby>えると、イメージが<ruby>定着<rt>ていちゃく</rt></ruby>しやすいですよ！</p>
 </blockquote>
-<p>いかがでしょうか？「<ruby>普段<rt>ふだん</rt></ruby>は<ruby>身軽<rt>みがる</rt></ruby>なプリミティブ、道具を使うときだけ<ruby>魔法<rt>まほう</rt></ruby>で<ruby>変身<rt>へんしん</rt></ruby>」という<ruby>仕組<rt>しく</rt></ruby>みは伝わりそうでしょうか。</p>
+<p>いかがでしょうか？「<ruby>普段<rt>ふだん</rt></ruby>は<ruby>身軽<rt>みがる</rt></ruby>なプリミティブ、<ruby>道具<rt>どうぐ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うときだけ<ruby>魔法<rt>まほう</rt></ruby>で<ruby>変身<rt>へんしん</rt></ruby>」という<ruby>仕組<rt>しくみ</rt></ruby>は<ruby>伝<rt>つた</rt></ruby>わりそうでしょうか。</p>
 <hr>
-<h2 id="ii-文字列の加工かこう"><a class="header" href="#ii-文字列の加工かこう">II. 文字列の<ruby>加工<rt>かこう</rt></ruby></a></h2>
-<p>Stringオブジェクト（文字列）には、文字を自由に<ruby>操<rt>あやつ</rt></ruby>るための便利な「道具（メソッド）」がたくさんあります。</p>
-<p>留学生の方には、<strong>「長い文章という『テープ』を、ハサミで切ったり、シールを貼ったりして<ruby>加工<rt>かこう</rt></ruby>する」</strong> イメージで説明すると伝わりやすいですよ。</p>
-<p>よく使われる5つのメソッドを紹介します。</p>
-<h3 id="1-sliceスライス好きなところを切きり取とる"><a class="header" href="#1-sliceスライス好きなところを切きり取とる">1. slice（スライス）：好きなところを<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>る</a></h3>
-<p><ruby>配列<rt>はいれつ</rt></ruby>のときと同じ名前ですね！文字列でも「○番目から○番目までを取り出す」ことができます。</p>
+<h2 id="ii-文字列もじれつの加工かこう"><a class="header" href="#ii-文字列もじれつの加工かこう">II. <ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>加工<rt>かこう</rt></ruby></a></h2>
+<p>Stringオブジェクト（<ruby>文字列<rt>もじれつ</rt></ruby>）には、<ruby>文字<rt>もじ</rt></ruby>を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>操<rt>あやつ</rt></ruby>るための<ruby>便利<rt>べんり</rt></ruby>な「<ruby>道具<rt>どうぐ</rt></ruby>（メソッド）」がたくさんあります。</p>
+<p><ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby>には、<strong>「<ruby>長<rt>なが</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>という『テープ』を、ハサミで<ruby>切<rt>き</rt></ruby>ったり、シールを<ruby>貼<rt>は</rt></ruby>ったりして<ruby>加工<rt>かこう</rt></ruby>する」</strong> イメージで<ruby>説明<rt>せつめい</rt></ruby>すると<ruby>伝<rt>つた</rt></ruby>わりやすいですよ。</p>
+<p>よく<ruby>使<rt>つか</rt></ruby>われる5つのメソッドを<ruby>紹介<rt>しょうかい</rt></ruby>します。</p>
+<h3 id="1-sliceスライス好すきなところを切きり取とる"><a class="header" href="#1-sliceスライス好すきなところを切きり取とる">1. slice（スライス）：<ruby>好<rt>す</rt></ruby>きなところを<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>る</a></h3>
+<p><ruby>配列<rt>はいれつ</rt></ruby>のときと<ruby>同<rt>おな</rt></ruby>じ<ruby>名前<rt>なまえ</rt></ruby>ですね！<ruby>文字列<rt>もじれつ</rt></ruby>でも「○<ruby>番目<rt>ばんめ</rt></ruby>から○<ruby>番目<rt>ばんめ</rt></ruby>までを<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す」ことができます。</p>
 <pre><code class="language-javascript">let text = "JavaScript";
 let sub = text.slice(0, 4); // 0番目から4番目の「手前」まで
 
 console.log(sub); // "Java"
-
 </code></pre>
 <ul>
-<li><strong>ポイント：</strong> 元の <code>text</code> は変わりません。新しい「<ruby>切<rt>き</rt></ruby>り<ruby>抜<rt>ぬ</rt></ruby>き」を作るだけです。</li>
+<li><strong>ポイント：</strong> <ruby>元<rt>もと</rt></ruby>の <code>text</code> は<ruby>変<rt>か</rt></ruby>わりません。<ruby>新<rt>あたら</rt></ruby>しい「<ruby>切<rt>き</rt></ruby>り<ruby>抜<rt>ぬ</rt></ruby>き」を<ruby>作<rt>つく</rt></ruby>るだけです。</li>
 </ul>
-<h3 id="2-replaceリプレイス文字を置おき換かえる"><a class="header" href="#2-replaceリプレイス文字を置おき換かえる">2. replace（リプレイス）：文字を<ruby>置<rt>お</rt></ruby>き<ruby>換<rt>か</rt></ruby>える</a></h3>
-<p>間違った文字を直したり、別の言葉に変えたりします。</p>
+<h3 id="2-replaceリプレイス文字もじを置おき換かえる"><a class="header" href="#2-replaceリプレイス文字もじを置おき換かえる">2. replace（リプレイス）：<ruby>文字<rt>もじ</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>換<rt>か</rt></ruby>える</a></h3>
+<p><ruby>間違<rt>まちが</rt></ruby>った<ruby>文字<rt>もじ</rt></ruby>を<ruby>直<rt>なお</rt></ruby>したり、<ruby>別<rt>べつ</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>に<ruby>変<rt>か</rt></ruby>えたりします。</p>
 <pre><code class="language-javascript">let greeting = "こんにちは、田中さん";
 let newGreeting = greeting.replace("田中", "マリア");
 
 console.log(newGreeting); // "こんにちは、マリアさん"
-
 </code></pre>
 <ul>
-<li><strong>覚え方：</strong> 「リプレイス」は「<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>る」という意味です。</li>
+<li><strong><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>：</strong> 「リプレイス」は「<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>か</rt></ruby>える」という<ruby>意味<rt>いみ</rt></ruby>です。</li>
 </ul>
 <h3 id="3-splitスプリットバラバラにわける"><a class="header" href="#3-splitスプリットバラバラにわける">3. split（スプリット）：バラバラにわける</a></h3>
-<p>長い文字列を、カンマやスペースで区切って「<ruby>配列<rt>はいれつ</rt></ruby>（リスト）」に変えます。</p>
+<p><ruby>長<rt>なが</rt></ruby>い<ruby>文字列<rt>もじれつ</rt></ruby>を、カンマやスペースで<ruby>区切<rt>くぎ</rt></ruby>って「<ruby>配列<rt>はいれつ</rt></ruby>（リスト）」に<ruby>変<rt>か</rt></ruby>えます。</p>
 <pre><code class="language-javascript">let tags = "日本,韓国,中国";
 let array = tags.split(","); // 「,」のところで切る
 
 console.log(array); // ["日本", "韓国", "中国"]
-
 </code></pre>
 <ul>
-<li><strong>覚え方：</strong> 「スプリット」は「<ruby>分裂<rt>ぶんれつ</rt></ruby>（ぶんれつ）する」という意味。<ruby>名簿<rt>めいぼ</rt></ruby>などを作るときにとても便利です！</li>
+<li><strong><ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>：</strong> 「スプリット」は「<ruby>分裂<rt>ぶんれつ</rt></ruby>（ぶんれつ）する」という<ruby>意味<rt>いみ</rt></ruby>。<ruby>名簿<rt>めいぼ</rt></ruby>などを<ruby>作<rt>つく</rt></ruby>るときにとても<ruby>便利<rt>べんり</rt></ruby>です！</li>
 </ul>
-<h3 id="4-touppercase--tolowercase大文字小文字にする"><a class="header" href="#4-touppercase--tolowercase大文字小文字にする">4. toUpperCase / toLowerCase：大文字・小文字にする</a></h3>
-<p>英語のアルファベットをすべて大文字、または小文字に変えます。</p>
+<h3 id="4-touppercase--tolowercase大文字おおもじ小文字こもじにする"><a class="header" href="#4-touppercase--tolowercase大文字おおもじ小文字こもじにする">4. toUpperCase / toLowerCase：<ruby>大文字<rt>おおもじ</rt></ruby>・<ruby>小文字<rt>こもじ</rt></ruby>にする</a></h3>
+<p><ruby>英語<rt>えいご</rt></ruby>のアルファベットをすべて<ruby>大文字<rt>おおもじ</rt></ruby>、または<ruby>小文字<rt>こもじ</rt></ruby>に<ruby>変<rt>か</rt></ruby>えます。</p>
 <pre><code class="language-javascript">let email = "Maria@Example.Com";
 
 console.log(email.toLowerCase()); // "maria@example.com"（すべて小文字）
 console.log(email.toUpperCase()); // "MARIA@EXAMPLE.COM"（すべて大文字）
-
 </code></pre>
 <ul>
-<li><strong>ポイント：</strong> ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したメールアドレスをきれいに整理するときによく使います。</li>
+<li><strong>ポイント：</strong> ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したメールアドレスをきれいに<ruby>整理<rt>せいり</rt></ruby>するときによく<ruby>使<rt>つか</rt></ruby>います。</li>
 </ul>
-<h3 id="5-trimトリムまわりの空白を消す"><a class="header" href="#5-trimトリムまわりの空白を消す">5. trim（トリム）：まわりの空白を消す</a></h3>
-<p>文字の前後に入ってしまった、いらない「スペース」を自動で消してくれます。</p>
+<h3 id="5-trimトリムまわりの空白くうはくを消けす"><a class="header" href="#5-trimトリムまわりの空白くうはくを消けす">5. trim（トリム）：まわりの<ruby>空白<rt>くうはく</rt></ruby>を<ruby>消<rt>け</rt></ruby>す</a></h3>
+<p><ruby>文字<rt>もじ</rt></ruby>の<ruby>前後<rt>ぜんご</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってしまった、いらない「スペース」を<ruby>自動<rt>じどう</rt></ruby>で<ruby>消<rt>け</rt></ruby>してくれます。</p>
 <pre><code class="language-javascript">let input = "   マリア   ";
 let cleanInput = input.trim();
 
 console.log(cleanInput); // "マリア"（きれいに消えた！）
-
 </code></pre>
 <ul>
-<li><strong><ruby>例<rt>たと</rt></ruby>え：</strong> 髪の毛を「トリミング（整える）」するのと同じです。</li>
+<li><strong><ruby>例<rt>たと</rt></ruby>え：</strong> <ruby>髪<rt>かみ</rt></ruby>の<ruby>毛<rt>け</rt></ruby>を「トリミング（<ruby>整<rt>ととの</rt></ruby>える）」するのと<ruby>同<rt>おな</rt></ruby>じです。</li>
 </ul>
-<h3 id="まとめテーブル留学生向け"><a class="header" href="#まとめテーブル留学生向け">まとめテーブル（留学生向け）</a></h3>
+<h3 id="まとめテーブル学生向がくせいむけ"><a class="header" href="#まとめテーブル学生向がくせいむけ">まとめテーブル（<ruby>学生向<rt>がくせいむ</rt></ruby>け）</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>メソッド名</th><th>やっていること</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
+<tr><th>メソッド名</th><th>やっていること</th><th><ruby>例<rt>たと</rt></ruby>え<ruby>話<rt>ばなし</rt></ruby></th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>slice</code></strong></td><td>一部を取り出す</td><td>ハサミで<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>る</td></tr>
-<tr><td><strong><code>replace</code></strong></td><td>文字を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>かえ</rt></ruby>る</td><td>修正テープで<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>す</td></tr>
-<tr><td><strong><code>split</code></strong></td><td><ruby>配列<rt>はいれつ</rt></ruby>に分ける</td><td>チョコをパキパキ割る</td></tr>
-<tr><td><strong><code>toLowerCase</code></strong></td><td>小文字にする</td><td>全部小さく書く</td></tr>
-<tr><td><strong><code>trim</code></strong></td><td>前後の<ruby>隙間<rt>すきま</rt></ruby>を消す</td><td>ムダ毛をカットする</td></tr>
+<tr><td><strong><code>slice</code></strong></td><td><ruby>一部<rt>いちぶ</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す</td><td>ハサミで<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>る</td></tr>
+<tr><td><strong><code>replace</code></strong></td><td><ruby>文字<rt>もじ</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>か</rt></ruby>える</td><td><ruby>修正<rt>しゅうせい</rt></ruby>テープで<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>す</td></tr>
+<tr><td><strong><code>split</code></strong></td><td><ruby>配列<rt>はいれつ</rt></ruby>に<ruby>分<rt>わ</rt></ruby>ける</td><td>チョコをパキパキ<ruby>割<rt>わ</rt></ruby>る</td></tr>
+<tr><td><strong><code>toLowerCase</code></strong></td><td><ruby>小文字<rt>こもじ</rt></ruby>にする</td><td><ruby>全部<rt>ぜんぶ</rt></ruby><ruby>小<rt>ちい</rt></ruby>さく<ruby>書<rt>か</rt></ruby>く</td></tr>
+<tr><td><strong><code>trim</code></strong></td><td><ruby>前後<rt>ぜんご</rt></ruby>の<ruby>隙間<rt>すきま</rt></ruby>を<ruby>消<rt>け</rt></ruby>す</td><td>ムダ<ruby>毛<rt>げ</rt></ruby>をカットする</td></tr>
 </tbody>
 </table>
 </div>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p><strong>「元の文字は変わらない」というルール</strong>
-文字列（String）のメソッドは、すべて**「<ruby>加工<rt>かこう</rt></ruby>したあとの新しい文字」**を返します。元の<ruby>変数<rt>へんすう</rt></ruby>を変えたいときは、<code>text = text.trim();</code> のように、もう一度<ruby>代入<rt>だいにゅう</rt></ruby>する必要があるよ、と教えてあげてください。</p>
+<p><strong>「<ruby>元<rt>もと</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>は<ruby>変<rt>か</rt></ruby>わらない」というルール</strong><br><ruby>文字列<rt>もじれつ</rt></ruby>（String）のメソッドは、すべて <strong>「<ruby>加工<rt>かこう</rt></ruby>したあとの<ruby>新<rt>あたら</rt></ruby>しい<ruby>文字<rt>もじ</rt></ruby>」</strong> を<ruby>返<rt>かえ</rt></ruby>します。<ruby>元<rt>もと</rt></ruby>の<ruby>変数<rt>へんすう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたいときは、<code>text = text.trim();</code> のように、もう<ruby>一度<rt>いちど</rt></ruby><ruby>代入<rt>だいにゅう</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があるよ、と<ruby>教<rt>おし</rt></ruby>えてあげてください。</p>
 </blockquote>
-<p>いかがでしょうか？ 「文字列の<ruby>加工<rt>かこう</rt></ruby>」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに整理できるようになります。</p>
+<p>いかがでしょうか？ 「<ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>加工<rt>かこう</rt></ruby>」ができるようになると、ユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>したデータをきれいに<ruby>整理<rt>せいり</rt></ruby>できるようになります。</p>
 <hr>
-<h2 id="iii-文字の検索けんさく"><a class="header" href="#iii-文字の検索けんさく">III. 文字の<ruby>検索<rt>けんさく</rt></ruby></a></h2>
-<p>文字列（String）の中から「特定の文字」を見つけたり、場所を調べたりするときに欠かせない <strong><code>charAt</code></strong> と <strong><code>indexOf</code></strong> について説明します。</p>
-<p>どちらも「何番目にあるか」という <strong>インデックス（番号）</strong> をキーワードにして<ruby>動<rt>うご</rt></ruby>きます。</p>
+<h2 id="iii-文字もじの検索けんさく"><a class="header" href="#iii-文字もじの検索けんさく">III. <ruby>文字<rt>もじ</rt></ruby>の<ruby>検索<rt>けんさく</rt></ruby></a></h2>
+<p><ruby>文字列<rt>もじれつ</rt></ruby>（String）の<ruby>中<rt>なか</rt></ruby>から「<ruby>特定<rt>とくてい</rt></ruby>の<ruby>文字<rt>もじ</rt></ruby>」を<ruby>見<rt>み</rt></ruby>つけたり、<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べたりするときに<ruby>欠<rt>か</rt></ruby>かせない <strong><code>indexOf</code></strong> について<ruby>説明<rt>せつめい</rt></ruby>します。</p>
+<p>「その<ruby>文字<rt>もじ</rt></ruby>が<ruby>何番目<rt>なんばんめ</rt></ruby>にあるか」という <strong>インデックス（<ruby>番号<rt>ばんごう</rt></ruby>）</strong> をキーワードにして<ruby>動<rt>うご</rt></ruby>きます。</p>
 <hr>
-<h3 id="1-charatキャラット番号から文字を知る"><a class="header" href="#1-charatキャラット番号から文字を知る">1. charAt（キャラット）：番号から「文字」を知る</a></h3>
-<p>指定した番号の場所に、どんな文字があるかを教えてくれます。</p>
+<h3 id="indexofインデックスオブ文字もじから番号ばんごうを知しる"><a class="header" href="#indexofインデックスオブ文字もじから番号ばんごうを知しる">indexOf（インデックスオブ）：<ruby>文字<rt>もじ</rt></ruby>から「<ruby>番号<rt>ばんごう</rt></ruby>」を<ruby>知<rt>し</rt></ruby>る</a></h3>
+<p><ruby>探<rt>さが</rt></ruby>したい<ruby>文字<rt>もじ</rt></ruby>が、<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>数<rt>かぞ</rt></ruby>えて**<ruby>何番目<rt>なんばんめ</rt></ruby>（インデックス）にあるか**を<ruby>教<rt>おし</rt></ruby>えてくれます。</p>
 <ul>
-<li><strong>イメージ：</strong> 「3番の部屋に住んでいるのは誰（どの文字）？」と聞く感じです。</li>
-<li><strong>書きかた：</strong> <code>文字列.charAt(インデックス)</code></li>
-</ul>
-<pre><code class="language-javascript">let word = "JavaScript";
-
-console.log(word.charAt(0)); // "J"（一番最初）
-console.log(word.charAt(4)); // "S"（5番目）
-
-</code></pre>
-<blockquote class="blockquote-tag blockquote-tag-tip">
-<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
-<p>最近のJavaScriptでは、<ruby>配列<rt>はいれつ</rt></ruby>と同じように <code>word[0]</code> と書いても同じ結果が得られますが、<code>charAt</code> は古いコードでもよく使われる大切な基本です。</p>
-</blockquote>
-<hr>
-<h3 id="2-indexofインデックスオブ文字から番号を知る"><a class="header" href="#2-indexofインデックスオブ文字から番号を知る">2. indexOf（インデックスオブ）：文字から「番号」を知る</a></h3>
-<p>探したい文字が、最初から数えて<strong>何番目（インデックス）にあるか</strong>を教えてくれます。</p>
-<ul>
-<li><strong>イメージ：</strong> 「『S』さんは何番の部屋に住んでいますか？」と聞く感じです。</li>
-<li><strong>書きかた：</strong> <code>文字列.indexOf("探したい文字")</code></li>
+<li><strong>イメージ：</strong> 「『S』さんは<ruby>何番<rt>なんばん</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか？」と<ruby>聞<rt>き</rt></ruby>く<ruby>感<rt>かん</rt></ruby>じです。</li>
+<li><strong><ruby>書<rt>か</rt></ruby>きかた：</strong> <code>文字列.indexOf("探したい文字")</code></li>
 </ul>
 <pre><code class="language-javascript">let text = "Hello World";
 
 console.log(text.indexOf("W")); // 6 （Wは7番目、つまりインデックスは6）
 console.log(text.indexOf("o")); // 4 （最初に見つかった「o」の場所）
-
 </code></pre>
-<h4 id="見つからなかったらどうなる"><a class="header" href="#見つからなかったらどうなる">見つからなかったらどうなる？</a></h4>
-<p>ここがテストや実務（じつむ）で一番大切なポイントです。
-探している文字がどこにもなかった場合、<code>indexOf</code> は <strong><code>-1</code></strong> という数字を返します。</p>
+<h4 id="見みつからなかったらどうなる"><a class="header" href="#見みつからなかったらどうなる"><ruby>見<rt>み</rt></ruby>つからなかったらどうなる？</a></h4>
+<p>ここがテストや<ruby>実務<rt>じつむ</rt></ruby>（じつむ）で<ruby>一番<rt>いちばん</rt></ruby><ruby>大切<rt>たいせつ</rt></ruby>なポイントです。   <ruby>探<rt>さが</rt></ruby>している<ruby>文字<rt>もじ</rt></ruby>がどこにもなかった<ruby>場合<rt>ばあい</rt></ruby>、<code>indexOf</code> は <strong><code>-1</code></strong> という<ruby>数字<rt>すうじ</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>します。</p>
 <pre><code class="language-javascript">let msg = "こんにちは";
 console.log(msg.indexOf("さようなら")); // -1
-
 </code></pre>
 <hr>
-<h3 id="3-二つのメソッドの違いまとめ"><a class="header" href="#3-二つのメソッドの違いまとめ">3. 二つのメソッドの違い（まとめ）</a></h3>
-<p>留学生の方には、この「逆（ぎゃく）」の関係を伝えてあげてください。</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>メソッド名</th><th>知りたいこと（答え）</th><th><ruby>入力<rt>にゅうりょく</rt></ruby>するもの</th><th><ruby>例<rt>たと</rt></ruby>え話</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><code>charAt</code></strong></td><td><strong>文字</strong>はなに？</td><td>番号 (Index)</td><td>「0番の席に座っているのは誰？」</td></tr>
-<tr><td><strong><code>indexOf</code></strong></td><td><strong>番号</strong>はどこ？</td><td>文字 (String)</td><td>「マリアさんは何番の席？」</td></tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h3 id="留学生へのアドバイスindexof-の便利な使い方"><a class="header" href="#留学生へのアドバイスindexof-の便利な使い方">留学生へのアドバイス：<code>indexOf</code> の便利な使い方</a></h3>
-<p>「あるかないか」を調べるために、<code>if</code> 文でよくこう書きます。</p>
+<h3 id="学生がくせいへのアドバイスindexof-の便利べんりな使つかい方かた"><a class="header" href="#学生がくせいへのアドバイスindexof-の便利べんりな使つかい方かた"><ruby>学生<rt>がくせい</rt></ruby>へのアドバイス：<code>indexOf</code> の<ruby>便利<rt>べんり</rt></ruby>な<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby></a></h3>
+<p>「あるかないか」を<ruby>調<rt>しら</rt></ruby>べるために、<code>if</code> <ruby>文<rt>ぶん</rt></ruby>でよくこう<ruby>書<rt>か</rt></ruby>きます。</p>
 <pre><code class="language-javascript">let email = "test@example.com";
 
 // 「@」が入っているかチェックする
@@ -407,29 +363,27 @@ if (email.indexOf("@") !== -1) {
 } else {
   console.log("「@」がありません！");
 }
-
 </code></pre>
 <blockquote class="blockquote-tag blockquote-tag-note">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><strong>「-1 じゃない（!== -1）」 ＝ 「どこかにある」</strong> という意味だよ！と教えると、コードの意味がスッと伝わります。</p>
+<p><strong>「-1 じゃない（!== -1）」 ＝ 「どこかにある」</strong> という<ruby>意味<rt>いみ</rt></ruby>だよ！と<ruby>教<rt>おし</rt></ruby>えると、コードの<ruby>意味<rt>いみ</rt></ruby>がスッと<ruby>伝<rt>つた</rt></ruby>わります。</p>
 </blockquote>
 <hr>
-<p>いかがでしょうか？「番号から文字」か「文字から番号」か、このペアで覚えるととても使いやすくなります。</p>
-<h2 id="iv-文字列の応用"><a class="header" href="#iv-文字列の応用">IV. 文字列の応用</a></h2>
-<p>Webサイトで扱う情報の多くは「テキスト（文字列）」です。これをどう操作するかが、プログラミングの腕の見せ所です。</p>
-<h3 id="文字列の作成と結合けつごう"><a class="header" href="#文字列の作成と結合けつごう">文字列の作成と<ruby>結合<rt>けつごう</rt></ruby></a></h3>
-<p><ruby>最新<rt>さいしん</rt></ruby>のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を使うのがとても便利です。</p>
+<h2 id="iv-文字列もじれつの応用おうよう"><a class="header" href="#iv-文字列もじれつの応用おうよう">IV. <ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>応用<rt>おうよう</rt></ruby></a></h2>
+<p>Webサイトで<ruby>扱<rt>あつか</rt></ruby>う<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くは「テキスト（<ruby>文字列<rt>もじれつ</rt></ruby>）」です。これをどう<ruby>操作<rt>そうさ</rt></ruby>するかが、プログラミングの<ruby>腕<rt>うで</rt></ruby>の<ruby>見<rt>み</rt></ruby>せ<ruby>所<rt>どころ</rt></ruby>です。</p>
+<h3 id="文字列もじれつの作成さくせいと結合けつごう"><a class="header" href="#文字列もじれつの作成さくせいと結合けつごう"><ruby>文字列<rt>もじれつ</rt></ruby>の<ruby>作成<rt>さくせい</rt></ruby>と<ruby>結合<rt>けつごう</rt></ruby></a></h3>
+<p><ruby>最新<rt>さいしん</rt></ruby>のJavaScriptでは、テンプレートリテラル（<strong>「`」</strong> バッククォート）を<ruby>使<rt>つか</rt></ruby>うのがとても<ruby>便利<rt>べんり</rt></ruby>です。</p>
 <ul>
-<li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>み: `こんにちは、${name}さん！` のように、${} で<ruby>変数<rt>へんすう</rt></ruby>を入れられます。</li>
-<li><ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）: テンプレートリテラルは、コードの中で<ruby>改行<rt>かいぎょう</rt></ruby>した場所をそのまま文字として扱ってくれます。HTMLのコードを文字として作りたいときに非常に役立ちます。</li>
+<li><ruby>変数<rt>へんすう</rt></ruby>の<ruby>埋<rt>う</rt></ruby>め<ruby>込<rt>こ</rt></ruby>み: `<code>こんにちは、${name}さん！</code>` のように、${} で<ruby>変数<rt>へんすう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れられます。</li>
+<li><ruby>改行<rt>かいぎょう</rt></ruby>（かいぎょう）: テンプレートリテラルは、コードの<ruby>中<rt>なか</rt></ruby>で<ruby>改行<rt>かいぎょう</rt></ruby>した<ruby>場所<rt>ばしょ</rt></ruby>をそのまま<ruby>文字<rt>もじ</rt></ruby>として<ruby>扱<rt>あつか</rt></ruby>ってくれます。HTMLのコードを<ruby>文字<rt>もじ</rt></ruby>として<ruby>作<rt>つく</rt></ruby>りたいときに<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>ちます。</li>
 </ul>
 <h3 id="数値すうちへの変換へんかん"><a class="header" href="#数値すうちへの変換へんかん"><ruby>数値<rt>すうち</rt></ruby>への<ruby>変換<rt>へんかん</rt></ruby></a></h3>
-<p>prompt()（プロンプト：<ruby>入力<rt>にゅうりょく</rt></ruby><ruby>画面<rt>がめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した数字は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が数字でも、プログラム上は「文字列」です。計算するには<ruby>変換<rt>へんかん</rt></ruby>が必要です。</p>
+<p>prompt()（プロンプト：<ruby>入力画面<rt>にゅうりょくがめん</rt></ruby>）でユーザーが<ruby>入力<rt>にゅうりょく</rt></ruby>した<ruby>数字<rt>すうじ</rt></ruby>は、<ruby>見<rt>み</rt></ruby>た<ruby>目<rt>め</rt></ruby>が<ruby>数字<rt>すうじ</rt></ruby>でも、プログラム<ruby>上<rt>じょう</rt></ruby>は「<ruby>文字列<rt>もじれつ</rt></ruby>」です。<ruby>計算<rt>けいさん</rt></ruby>するには<ruby>変換<rt>へんかん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。</p>
 <ul>
-<li>parseInt(): 整数（1, 2, 3…）に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
-<li>parseFloat(): 小数点を含む<ruby>数値<rt>すうち</rt></ruby>に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
+<li>parseInt(): <ruby>整数<rt>せいすう</rt></ruby>（1, 2, 3…）に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
+<li>parseFloat(): <ruby>小数点<rt>しょうすうてん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>数値<rt>すうち</rt></ruby>に<ruby>変換<rt>へんかん</rt></ruby>します。</li>
 </ul>
-<p>So What?（なぜ大切なの？） 数字ではない文字を無理に<ruby>数値<rt>すうち</rt></ruby>に変えようとすると NaN（Not a Number：<ruby>数値<rt>すうち</rt></ruby>ではないというエラー値）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが何を打つか分かりません。isNaN() <ruby>関数<rt>かんすう</rt></ruby>を使って「これは<ruby>本当<rt>ほんとう</rt></ruby>に数字かな？」とチェックすることは、プログラムが止まってしまう「クラッシュ」を防ぐためのプログラマーの責任です。</p>
+<p>So What?（なぜ<ruby>大切<rt>たいせつ</rt></ruby>なの？） <ruby>数字<rt>すうじ</rt></ruby>ではない<ruby>文字<rt>もじ</rt></ruby>を<ruby>無理<rt>むり</rt></ruby>に<ruby>数値<rt>すうち</rt></ruby>に<ruby>変<rt>か</rt></ruby>えようとすると NaN（Not a Number：<ruby>数値<rt>すうち</rt></ruby>ではないというエラー<ruby>値<rt>ち</rt></ruby>）になります。Web<ruby>開発<rt>かいはつ</rt></ruby>ではユーザーが<ruby>何<rt>なに</rt></ruby>を<ruby>打<rt>う</rt></ruby>つか<ruby>分<rt>わ</rt></ruby>かりません。isNaN() <ruby>関数<rt>かんすう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って「これは<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>数字<rt>すうじ</rt></ruby>かな？」とチェックすることは、プログラムが<ruby>止<rt>と</rt></ruby>まってしまう「クラッシュ」を<ruby>防<rt>ふせ</rt></ruby>ぐためのプログラマーの<ruby>責任<rt>せきにん</rt></ruby>です。</p>
 
                     </main>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function sayHello() {
+        alert("こんにちは！");
+    }
+    </script>
+
+    <button onclick="sayHello()">ボタンを押してね</button>
+
+    <br>
+
+    <script>
+    function sayHelloName(name) {
+    return "こんにちは、" + name + "さん！";
+    }
+    </script>
+
+    <hr>
+
+    <button onclick="let message = sayHelloName('田中');console.log(message);">実行</button>
+
+    <hr>
+
+    <br>
+</body>
+</html>

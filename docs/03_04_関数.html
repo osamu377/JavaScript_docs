@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-1bf24a4c.js";
+            window.path_to_searchindex_js = "searchindex-583711d1.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a10e83d1.js"></script>
+        <script src="toc-7aa69223.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -187,7 +187,7 @@
 <p>わかりやすく「<ruby>料理<rt>りょうり</rt></ruby>」に<ruby>例<rt>たと</rt></ruby>えて説明しますね。</p>
 <h3 id="演算えんざん子えんざんし-operator"><a class="header" href="#演算えんざん子えんざんし-operator"><ruby>演算<rt>えんざん</rt></ruby>子（えんざんし）／ Operator</a></h3>
 <p><strong>→「道具（どうぐ）」のこと</strong></p>
-<p>数字を足したり、比べたりするための「記号（きごう）」です。そのときにも <strong>「料理の道具」のようなもの</strong> と説明したのは、覚えているでしょうか？</p>
+<p>数字を足したり、比べたりするための「記号（きごう）」です。<strong>「料理の道具」のようなもの</strong> です。</p>
 <ul>
 <li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>=</code>, <code>&gt;</code>, <code>&amp;&amp;</code></li>
 <li><strong>料理でいうと：</strong> <ruby>包丁<rt>ほうちょう</rt></ruby>（ほうちょう）、お<ruby>鍋<rt>なべ</rt></ruby>（なべ）、フライパン</li>
@@ -197,7 +197,7 @@
 <p><strong>→「<ruby>計算<rt>けいさん</rt></ruby>のフレーズ」のこと</strong></p>
 <p><ruby>演算<rt>えんざん</rt></ruby>子（道具）を使って、<strong>「答え（値）」を出すもの</strong>です。</p>
 <ul>
-<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>10 + 5</code> （答えは15）、<code>a == b</code> （答えは「はい」か「いいえ」）</li>
+<li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>10 + 5</code> （答えは15）、<code>a === b</code> （答えは「はい」か「いいえ」）</li>
 <li><strong>料理でいうと：</strong> 「野菜（やさい）を切る」「お肉を焼く」</li>
 <li>何かのアクションをして、<strong>「切った野菜」という結果</strong>が生まれます。</li>
 </ul>
@@ -208,7 +208,7 @@
 <ul>
 <li><strong><ruby>例<rt>れい</rt></ruby>：</strong> <code>let x = 10 + 5;</code> （xという箱に、15を入れてください！）</li>
 <li><strong>料理でいうと：</strong> 「カレーを作ってください！」</li>
-<li>道具（<ruby>演算<rt>えんざん</rt></ruby>子）を使い、ステップ（式）を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせて、**ひとつの仕事（文）**を終わらせます。</li>
+<li>道具（<ruby>演算<rt>えんざん</rt></ruby>子）を使い、ステップ（式）を<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせて、<strong>ひとつの仕事（文）</strong> を終わらせます。</li>
 </ul>
 <h3 id="まとめの比較表"><a class="header" href="#まとめの比較表">まとめの比較表</a></h3>
 <div class="table-wrapper">
@@ -218,8 +218,8 @@
 </thead>
 <tbody>
 <tr><td><strong><ruby>演算<rt>えんざん</rt></ruby>子</strong></td><td>Operator</td><td>道具</td><td><code>+</code> や <code>=</code> などの記号</td></tr>
-<tr><td><strong>式</strong></td><td>Expression</td><td>フレーズ</td><td>何かの* <em>「値（あたい）」</em>* になるもの</td></tr>
-<tr><td><strong>文</strong></td><td>Statement</td><td>命令（文）</td><td>コンピューターに**「動作」**をさせるもの</td></tr>
+<tr><td><strong>式</strong></td><td>Expression</td><td>フレーズ</td><td>何かの <strong>「値（あたい）」</strong> になるもの</td></tr>
+<tr><td><strong>文</strong></td><td>Statement</td><td>命令（文）</td><td>コンピューターに <strong>「動作」</strong> をさせるもの</td></tr>
 </tbody>
 </table>
 </div>
@@ -250,7 +250,7 @@
 <ul>
 <li><strong>楽ができます：</strong> 一度作れば、名前を呼ぶだけで何度でも使えます。同じことを何度も書かなくてよくなります。</li>
 <li><strong>直しやすくなります：</strong> 挨拶の言葉を変えたいとき、1ヶ所（<ruby>関数<rt>かんすう</rt></ruby>の中）を直すだけで全部変わる。</li>
-<li>**整理しやすくなります： 長いコードがスッキリします。</li>
+<li><strong>整理しやすくなります</strong>： 長いコードがスッキリします。</li>
 </ul>
 <p>次は、この便利な「<ruby>関数<rt>かんすう</rt></ruby>」をどうやって作るのか、ルールを見ていきましょう。</p>
 <hr>
@@ -297,14 +297,6 @@ function sayHello() {
     alert("こんにちは！");
 }
 </code></pre>
-<p>実際、どんなふうになるか見てみましょう。下のボタンを押してみてください。</p>
-<script>
-function sayHello() {
-    alert("こんにちは！");
-}
-</script>
-<p><button onclick="sayHello()">ボタンを押してね</button></p>
-<br>
 <h2 id="v-引数ひきすうひきすうの活用と注意点"><a class="header" href="#v-引数ひきすうひきすうの活用と注意点">V. <ruby>引数<rt>ひきすう</rt></ruby>（ひきすう）の活用と注意点</a></h2>
 <p>今度は<ruby>引数<rt>ひきすう</rt></ruby>をとる<ruby>関数<rt>かんすう</rt></ruby>を作ってみましょう。</p>
 <p>「名前を呼んで、挨拶（あいさつ）をしてくれるマシン」を作ってみましょう。</p>
@@ -331,14 +323,6 @@ console.log(message); // 「こんにちは、田中さん！」と出る
 <li>実<ruby>引数<rt>ひきすう</rt></ruby>（じつひきすう）： 呼び出すときに実際に渡す「中身」のデータ。ここでは“田中“という文字列</li>
 </ul>
 <p>というふうに呼びます。この呼び方もよく使うので、覚えてください。</p>
-<p>では、実際、どんなふうに動くか見てみましょう。F12 キー（ノートPCは Fn + F12）を使ってコンソールを開いてから、下のボタンを押してみてください。</p>
-<script>
-function sayHelloName(name) {
-  return "こんにちは、" + name + "さん！";
-}
-</script>
-<p><button onclick="let message = sayHelloName(&#39;田中&#39;);console.log(message);">実行</button></p>
-<br>
 <p>次は、<ruby>変数<rt>へんすう</rt></ruby>の「使える範囲」について学びます。</p>
 <hr>
 <h2 id="vi-変数へんすうのスコープscope変数へんすうの見える範囲"><a class="header" href="#vi-変数へんすうのスコープscope変数へんすうの見える範囲">VI. <ruby>変数<rt>へんすう</rt></ruby>のスコープ（Scope）：<ruby>変数<rt>へんすう</rt></ruby>の見える範囲</a></h2>
@@ -404,7 +388,7 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 </table>
 </div>
 <h3 id="なぜこれが大事なの"><a class="header" href="#なぜこれが大事なの">なぜこれが大事なの？</a></h3>
-<p>もし、すべての<ruby>変数<rt>へんすう</rt></ruby>を「グローバル（どこでも使える）」にすると、知らないうちに別の場所で**データが<ruby>上書<rt>うわが</rt></ruby>き（書きかえ）**されてしまい、バグの原因になります。</p>
+<p>もし、すべての<ruby>変数<rt>へんすう</rt></ruby>を「グローバル（どこでも使える）」にすると、知らないうちに別の場所で <strong>データが<ruby>上書<rt>うわが</rt></ruby>き（書きかえ）</strong> されてしまい、バグの原因になります。</p>
 <blockquote class="blockquote-tag blockquote-tag-tip">
 <p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
 <p><strong>「できるだけ狭（せま）く」が基本！</strong>
@@ -422,9 +406,9 @@ console.log(fruit); // ❌ エラー！箱の外には出せません。
 <tr><th>種類</th><th>スコープ（範囲）</th><th>値の<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>かえ</rt></ruby>え</th><th>同じ名前で作り直し</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><code>var</code></strong></td><td>**<ruby>関数<rt>かんすう</rt></ruby>**スコープ（広い）</td><td>OK</td><td>OK（危ない！）</td></tr>
-<tr><td><strong><code>let</code></strong></td><td><strong>ブロック</strong>スコープ（狭い）</td><td>OK</td><td>❌ だめ</td></tr>
-<tr><td><strong><code>const</code></strong></td><td><strong>ブロック</strong>スコープ（狭い）</td><td>❌ だめ</td><td>❌ だめ</td></tr>
+<tr><td><strong><code>var</code></strong></td><td><strong><ruby>関数<rt>かんすう</rt></ruby></strong> スコープ（広い）</td><td>OK</td><td>OK（危ない！）</td></tr>
+<tr><td><strong><code>let</code></strong></td><td><strong>ブロック</strong> スコープ（狭い）</td><td>OK</td><td>❌ だめ</td></tr>
+<tr><td><strong><code>const</code></strong></td><td><strong>ブロック</strong> スコープ（狭い）</td><td>❌ だめ</td><td>❌ だめ</td></tr>
 </tbody>
 </table>
 </div>
@@ -566,7 +550,7 @@ setTimeout(() =&gt; {
 <li>スコープ： <ruby>変数<rt>へんすう</rt></ruby>は const を使い、なるべく {} の中で安全に管理しましょう。</li>
 <li>無名<ruby>関数<rt>かんすう</rt></ruby>： 一度きりの処理は、名前をつけずにスマートに書きましょう。</li>
 </ul>
-<p>So What?（だから何？） <ruby>関数<rt>かんすう</rt></ruby>を学ぶことは、ただコードを書くことではありません。大きな問題（プログラム）を、小さくて扱いやすい「<ruby>関数<rt>かんすう</rt></ruby>のセット」に分けて考えることです。これが**「プログラマーのように考える」**ための第<ruby>一歩<rt>いっぽ</rt></ruby>です。</p>
+<p>So What?（だから何？） <ruby>関数<rt>かんすう</rt></ruby>を学ぶことは、ただコードを書くことではありません。大きな問題（プログラム）を、小さくて扱いやすい「<ruby>関数<rt>かんすう</rt></ruby>のセット」に分けて考えることです。これが <strong>「プログラマーのように考える」</strong> ための第<ruby>一歩<rt>いっぽ</rt></ruby>です。</p>
 <h3 id="留学生向けの言葉のガイド"><a class="header" href="#留学生向けの言葉のガイド">留学生向けの言葉のガイド</a></h3>
 <p><ruby>難<rt>むずか</rt></ruby>しい専門用語を、もっと簡単な日本語に言いかえてみましょう。</p>
 <div class="table-wrapper">
